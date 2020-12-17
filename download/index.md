@@ -11,7 +11,7 @@ Precompiled windows libraries require matching libraries from [SFML 2.5.1](https
 
 Minimum supported compilers: GCC 5, Clang 3.6, VS2017
 <p>
-  {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9-dev.zip" style="Orange" %}<br><br>
+  {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.9-dev.zip" style="Orange" %}<br><br>
   {% include button.ext text="Visual C++16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-dev-vc16-32bit-for-SFML-2.5.1.zip" style="Orange" %}
   {% include button.ext text="Visual C++16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-dev-vc16-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 SFML binaries)
 </p>
