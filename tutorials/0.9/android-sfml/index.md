@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Android
+title: Android (SFML backend)
 breadcrumb: android
+redirect_from: /tutorials/0.9/android/
 ---
+
+<p><span class="Red">Although using TGUI with SFML likely still works, I am unable to verify this because I am no longer capable of running SFML on android.</span>
+You can alternatively still use the <a href="../android-sdl">SDL backend on Android</a>.</p>
 
 ### Requirements
 

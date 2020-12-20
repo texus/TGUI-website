@@ -14,7 +14,9 @@ breadcrumb: 0.9
 
 [Linux (also BSD and Raspberry Pi)](linux)
 
-[Android](android)
+[Android (SFML)](android-sfml)
+
+[Android (SDL)](android-sdl)
 
 [iOS](ios)
 
