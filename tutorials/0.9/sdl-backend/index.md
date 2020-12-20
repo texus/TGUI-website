@@ -115,3 +115,75 @@ while (!quit)
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
 To draw all widgets in the gui, you need to call `gui.draw()` once per frame. All widgets are drawn at once, the SDL backend currently doesn't provide a way to render SDL contents inbetween TGUI widgets (without creating a custom widget).
+
+
+### Multiple windows
+
+You can use TGUI for multiple SDL windows, but you have to make sure that the correct OpenGL context is activated. If you want to access the gui, you first have to call `SDL_GL_MakeCurrent` with the associated window and opengl context for that gui object.
+```c++
+const Uint32 windowId1 = SDL_GetWindowID(window1);
+const Uint32 windowId2 = SDL_GetWindowID(window2);
+
+SDL_GL_MakeCurrent(window1, glContext1);
+tgui::GuiSDL gui1(window1);
+
+SDL_GL_MakeCurrent(window2, glContext2);
+tgui::GuiSDL gui2(window2);
+
+bool quit = false;
+while (!quit)
+{
+    SDL_Event event;
+    while (SDL_PollEvent(&event) != 0)
+    {
+        // Make sure the application stops when all windows are closed
+        if (event.type == SDL_QUIT)
+            quit = true;
+
+        // Close the window when its close button is pressed
+        else if ((event.type == SDL_WINDOWEVENT) && (event.window.event == SDL_WINDOWEVENT_CLOSE))
+        {
+            if (window1 && (event.window.windowID == windowId1))
+            {
+                SDL_DestroyWindow(window1);
+                window1 = nullptr;
+            }
+            else if (window2 && (event.window.windowID == windowId2))
+            {
+                SDL_DestroyWindow(window2);
+                window2 = nullptr;
+            }
+        }
+
+        // Pass the event to the correct gui
+        if (window1 && (event.window.windowID == windowId1))
+        {
+            SDL_GL_MakeCurrent(window1, glContext1);
+            gui1.handleEvent(event);
+        }
+        else if (window2 && (event.window.windowID == windowId2))
+        {
+            SDL_GL_MakeCurrent(window2, glContext2);
+            gui2.handleEvent(event);
+        }
+    }
+
+    // Draw the contents of the first window (if it is still open)
+    if (window1)
+    {
+        SDL_GL_MakeCurrent(window1, glContext1);
+        glClear(GL_COLOR_BUFFER_BIT);
+        gui1.draw();
+        SDL_GL_SwapWindow(window1);
+    }
+
+    // Draw the contents of the second window (if it is still open)
+    if (window2)
+    {
+        SDL_GL_MakeCurrent(window2, glContext2);
+        glClear(GL_COLOR_BUFFER_BIT);
+        gui2.draw();
+        SDL_GL_SwapWindow(window2);
+    }
+}
+```
