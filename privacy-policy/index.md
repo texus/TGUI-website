@@ -13,4 +13,4 @@ Matomo respects the [Do Not Track header](https://en.wikipedia.org/wiki/Do_Not_T
 
 ### Policy changes
 This privacy policy can change at any time without a warning.  
-However, because the site is open-source and hosted on Github Pages, you can follow all changes on [github](https://github.com/texus/TGUI/commits/gh-pages/privacy-policy/index.md).
+However, because the site is open-source and hosted on Github Pages, you can follow all changes on [github](https://github.com/texus/TGUI-website/commits/master/privacy-policy/index.md).
