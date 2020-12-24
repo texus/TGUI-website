@@ -106,5 +106,5 @@ Note that when using this method, the optional parameters are not supported (as 
 If you intent to create a single callback function for all signals then you can make use of the `connectEx` function. The callback function passed to this function has 2 parameters: the widget that triggers the signal and the name of the signal.
 ```c++
 void callbackFunc(Widget::Ptr widget, const String& signalName);
-widget->getSignal(signalName).connect(callbackFunc);
+widget->getSignal(signalName).connectEx(callbackFunc);
 ```
