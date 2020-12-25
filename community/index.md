@@ -13,3 +13,5 @@ redirect_from: /contact/
 [![Facebook](/resources/ButtonFacebook.png){:width="242" height="52"}](https://www.facebook.com/TexusGUI)
 
 [![Twitter](/resources/ButtonTwitter.png){:width="242" height="52"}](https://twitter.com/TexusGUI)
+
+[![Patreon](/resources/ButtonPatreon.png){:width="242" height="52"}](https://www.patreon.com/tgui)
