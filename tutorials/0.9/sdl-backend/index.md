@@ -8,7 +8,6 @@ If you build TGUI yourself with CMake then you have the option to build the SDL 
 ```c++
 #include <SDL.h>            // SDL 2.0 required
 #include <SDL_ttf.h>        // Minimum 2.0.14 (released Feb 2016)
-#include <SDL_image.h>
 #include <SDL_opengl.h>
 
 #include <TGUI/Core.hpp>
@@ -41,15 +40,13 @@ int main()
 
     glClearColor(0.8f, 0.8f, 0.8f, 1.f);
 
-    // SDL_Image and SDL_TTF need to be initialized before using TGUI
-    IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG);
+    // SDL_TTF needs to be initialized before using TGUI
     TTF_Init();
 
     run_application(window);
 
-    // All TGUI resources must be destroyed before SDL_Image and SDL_TTF are cleaned up
+    // All TGUI resources must be destroyed before SDL_TTF is cleaned up
     TTF_Quit();
-    IMG_Quit();
 
     SDL_GL_DeleteContext(glContext);
     SDL_DestroyWindow(window);

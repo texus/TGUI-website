@@ -31,17 +31,16 @@ ndk.dir=/path/to/NDK
 
 The example project also builds SDL and TGUI, but you need to create symbolic links to those libraries so that the example knows where to find them.
 
-Make sure you have SDL, SDL\_image and SDL\_ttf downloaded (for SDL 2 and NOT for SDL 1.2) and then run the following commands inside the app/jni folder:
+Make sure you have SDL and SDL\_ttf downloaded (for SDL 2 and NOT for SDL 1.2) and then run the following commands inside the app/jni folder:
 ```
 ln -s /path/to/SDL SDL
-ln -s /path/to/SDL_image SDL_image
 ln -s /path/to/SDL_ttf SDL_ttf
 ln -s /path/to/TGUI TGUI
 ```
 
 Because the Android.mk file in app/jni will search for Android.mk files in all subdirectories, these links will cause it to find the files from SDL, TGUI and the example (in the src folder).
 
-Currently the Android.mk file in the root of the TGUI folder expects to find the SDL folders next to the TGUI directory. If you have SDL installed somewhere else then you will have to manually fix the value of the SDL\_PATH, SDL\_IMAGE\_PATH and SDL\_TTF\_PATH properties in that file.
+Currently the Android.mk file in the root of the TGUI folder expects to find the SDL folders next to the TGUI directory. If you have SDL installed somewhere else then you will have to manually fix the value of the SDL\_PATH and SDL\_TTF\_PATH properties in that file.
 
 
 ### Changing settings
