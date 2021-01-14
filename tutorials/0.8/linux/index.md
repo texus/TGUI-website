@@ -14,12 +14,6 @@ sudo apt-get update
 sudo apt-get install libtgui-dev
 ```
 
-#### Arch Linux
-You can download, build and install the latest tgui version with the "tgui-git" package from the [AUR](https://aur.archlinux.org/packages/tgui-git/). There are multiple ways to do this, here is one:
-```bash
-yay -S tgui-git
-```
-
 #### Other distros / FreeBSD
 Download the source code from the [download page](/download).
 

@@ -6,6 +6,14 @@ breadcrumb: linux
 
 ### Getting TGUI
 
+#### Arch Linux
+You can download, build and install the latest tgui version with the "tgui-git" package from the [AUR](https://aur.archlinux.org/packages/tgui-git/). There are multiple ways to do this, here is one:
+```bash
+yay -S tgui-git
+```
+
+#### Other distros
+
 You can download the source code from the [download page](/download) and follow the ['building with CMake' tutorial](../cmake) for a guide on how to build TGUI.  
 After you ran `make` like explained in the tutorial, you should call `sudo make install` to install the libraries which you just built.
 
