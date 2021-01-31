@@ -7,6 +7,25 @@ changelog:
   minors:
   - version: 9
     patches:
+    - version: 0-RC
+      date: 31 January 2021
+      changes: |
+        Up and down arrows now change selected item in ListBox and ListView ([PR #146](https://github.com/texus/TGUI/pull/146))
+        Horizontal scrollbar can now depend on item width in ListView ([PR #147](https://github.com/texus/TGUI/pull/147))
+        Added support to copy selected ListView items to clipboard ([PR #148](https://github.com/texus/TGUI/pull/148))
+        Add setTextSize for SubwidgetContainer ([PR #149](https://github.com/texus/TGUI/pull/149))
+        SDL backend is now compatible with OpenGL 4.1 and OpenGL ES 3.0
+        Added new FileDialog widget
+        Added new ToggleButton widget
+        Added new SeparatorLine widget
+        Added RoundedBorderRadius property to button renderer
+        Added String::fromNumberRounded to convert float to string with a fixed amount of decimals
+        Added startsWith and endsWith helper functions to String
+        Added TextureSelectedTrack property to RangeSlider renderer
+        Selected part of RangeSlider wasn't drawn when using textures
+        Search resources in form file relative to form file path
+        Print warning for invalid layout strings
+        Binding left and top in layouts now works correctly when the origin is changed
     - version: 0-beta
       date: 18 September 2020
       changes: |
