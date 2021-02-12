@@ -6,6 +6,14 @@ breadcrumb: linux
 
 ### Getting TGUI
 
+#### Ubuntu
+You can install tgui by adding the [PPA](https://launchpad.net/~texus/+archive/ubuntu/tgui/) to your system and install the "libtgui-0.9-dev" package:
+```bash
+sudo add-apt-repository ppa:texus/tgui
+sudo apt-get update
+sudo apt-get install libtgui-0.9-dev
+```
+
 #### Arch Linux
 You can download, build and install the latest tgui version with the "tgui-git" package from the [AUR](https://aur.archlinux.org/packages/tgui-git/). There are multiple ways to do this, here is one:
 ```bash

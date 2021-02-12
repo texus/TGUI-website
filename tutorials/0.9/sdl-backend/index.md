@@ -26,7 +26,7 @@ int main()
 {
     SDL_Init(SDL_INIT_VIDEO);
 
-    // The SDL backend in TGUI currently requires at least OpenGL 4.1 (or OpenGL ES 3.0 on Android)
+    // The SDL backend in TGUI currently requires at least OpenGL 4.1 (or OpenGL ES 3.0)
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);

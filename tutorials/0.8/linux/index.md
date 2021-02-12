@@ -7,11 +7,11 @@ breadcrumb: linux
 ### Installing
 
 #### Ubuntu 16.04 or higher
-You can install tgui by adding the [PPA](https://launchpad.net/~texus/+archive/ubuntu/tgui-0.8/) to your system and install the "libtgui-dev" package:
+You can install tgui by adding the [PPA](https://launchpad.net/~texus/+archive/ubuntu/tgui/) to your system and install the "libtgui-0.8-dev" package:
 ```bash
-sudo add-apt-repository ppa:texus/tgui-0.8
+sudo add-apt-repository ppa:texus/tgui
 sudo apt-get update
-sudo apt-get install libtgui-dev
+sudo apt-get install libtgui-0.8-dev
 ```
 
 #### Other distros / FreeBSD

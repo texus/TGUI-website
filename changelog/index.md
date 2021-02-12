@@ -7,33 +7,21 @@ changelog:
   minors:
   - version: 9
     patches:
-    - version: 0-RC
-      date: 31 January 2021
-      changes: |
-        Up and down arrows now change selected item in ListBox and ListView ([PR #146](https://github.com/texus/TGUI/pull/146))
-        Horizontal scrollbar can now depend on item width in ListView ([PR #147](https://github.com/texus/TGUI/pull/147))
-        Added support to copy selected ListView items to clipboard ([PR #148](https://github.com/texus/TGUI/pull/148))
-        Add setTextSize for SubwidgetContainer ([PR #149](https://github.com/texus/TGUI/pull/149))
-        SDL backend is now compatible with OpenGL 4.1 and OpenGL ES 3.0
-        Added new FileDialog widget
-        Added new ToggleButton widget
-        Added new SeparatorLine widget
-        Added RoundedBorderRadius property to button renderer
-        Added String::fromNumberRounded to convert float to string with a fixed amount of decimals
-        Added startsWith and endsWith helper functions to String
-        Added TextureSelectedTrack property to RangeSlider renderer
-        Selected part of RangeSlider wasn't drawn when using textures
-        Search resources in form file relative to form file path
-        Print warning for invalid layout strings
-        Binding left and top in layouts now works correctly when the origin is changed
-    - version: 0-beta
-      date: 18 September 2020
+    - version: 1
+      date: 12 February 2021
       changes: |
         Added new SpinControl widget (combination of EditBox and SpinButton) ([PR #135](https://github.com/texus/TGUI/pull/135))
         Added new TabContainer widget (combination of Tabs with Panel below) ([PR #139](https://github.com/texus/TGUI/pull/139))
         Holding down arrow on SpinButton will now keep chaning the value ([PR #137](https://github.com/texus/TGUI/pull/137))
         Added insertItem function to ListView ([PR #138](https://github.com/texus/TGUI/pull/138))
+        Up and down arrows now change selected item in ListBox and ListView ([PR #146](https://github.com/texus/TGUI/pull/146))
+        Horizontal scrollbar can now depend on item width in ListView ([PR #147](https://github.com/texus/TGUI/pull/147))
+        Added support to copy selected ListView items to clipboard ([PR #148](https://github.com/texus/TGUI/pull/148))
+        Add setTextSize for SubwidgetContainer ([PR #149](https://github.com/texus/TGUI/pull/149))
         Rewrote signal system again, `b->connect("Pressed",...)` is now `b->onPress(...)`
+        Added new FileDialog widget
+        Added new ToggleButton widget
+        Added new SeparatorLine widget
         Added support for setting mouse cursor + use them on resizable child windows
         Added timers and optional gui.mainLoop()
         Added experimental setOrigin, setScale and setRotation functions to Widget
@@ -41,7 +29,13 @@ changelog:
         Added DoubleClick signal to Panel
         Added ViewChanged signal to GuiBase
         Added hover and selected border colors for Tabs
+        Added TextureSelectedTrack property to RangeSlider renderer
+        Added String::fromNumberRounded to convert float to string with a fixed amount of decimals
+        Added startsWith and endsWith helper functions to String
+        Added RoundedBorderRadius property to button renderer
+        Separators can be added to MenuBar by inserting menu items with "-" string
         ListBox and ListView can now store user data in their items
+        ListView icons can be given a fixed size to rescale all icons to requested size
         Replaced all std::string and sf::String by tgui::String
         Replaced Text, Color, Rect and Vector2 classes from SFML with own versions
         Replaced sf::Text::Style with tgui::TextStyle
@@ -70,9 +64,25 @@ changelog:
         Gui::getFont now returns the global font if no font was set in the Gui
         Container now translates the widget position before calling draw function
         Dragging scrollbar inside child window didn't work when mouse left child window
+        Selected part of RangeSlider wasn't drawn when using textures
         Removed all code that was marked as deprecated
+        Binding left and top in layouts now works correctly when the origin is changed
+        Some other small changes that weren't added to the changelog
   - version: 8
     patches:
+    - version: 9
+      date: 12 February 2021
+      changes: |
+        ColorPicker widget added ([PR #145](https://github.com/texus/TGUI/pull/145))
+        Added sortWidgets to Container to update the z-order of all widgets ([PR #141](https://github.com/texus/TGUI/pull/141))
+        Added getWidgetBelowMouseCursor to Gui and getWidgetAtPosition to Container/Gui
+        Added moveWidgetForward/moveWidgetBackward to Container to move widget one step in z-order
+        Added parameter to focusNextWidget/focusPreviousWidget in Container to not look recursively
+        Added enableSkipDrawingWidgetsOutsideView() to ScrollablePanel to enable optimization
+        Tabs::remove didn't recalculate the tabs width
+        SubwidgetContainer wasn't being compiled into the library
+        Text orientation in Button wasn't updated when size changed
+        Text position in EditBox didn't update when increasing width if text didn't fit before
     - version: 8
       date: 20 June 2020
       changes: |
