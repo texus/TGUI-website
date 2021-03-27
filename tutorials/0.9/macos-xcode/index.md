@@ -8,10 +8,15 @@ Tip: The SFML example comes with a `resourcePath()` function which you have to p
 
 ### Getting TGUI
 
-You can download the source code from the [download page](/download) and follow the ['building with CMake' tutorial](../cmake) for a guide on how to build TGUI.  
+If you use homebrew then you can install the [unofficial TGUI formula](https://formulae.brew.sh/formula/tgui) by executing:
+```bash
+brew install tgui
+```
+
+Alternatively, you can download the source code from the [download page](/download) and follow the ['building with CMake' tutorial](../cmake) for a guide on how to build TGUI.  
 After you ran `make` like explained in the tutorial, you should call `sudo make install` to install the libraries which you just built.
 
-Instructions are provided below for using either a dylib or framework library.
+Instructions are provided below for using either a dylib or framework library. When TGUI is installed with homebrew, you will have dylib files.
 
 ### Using TGUI (dylib)
 
