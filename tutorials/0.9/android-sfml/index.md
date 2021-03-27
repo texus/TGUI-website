@@ -5,9 +5,6 @@ breadcrumb: android
 redirect_from: /tutorials/0.9/android/
 ---
 
-<p><span class="Red">Although using TGUI with SFML likely still works, I am unable to verify this because I am no longer capable of running SFML on android.</span>
-You can alternatively still use the <a href="../android-sdl">SDL backend on Android</a>.</p>
-
 ### Requirements
 
 The tutorial assumes that the Android SDK and Android NDK are already installed correctly. TGUI was tested up to NDK r18b, as SFML 2.5.1 didn't work out of the box with newer NDK versions (it failed to find the GLES library).
@@ -45,20 +42,19 @@ make install
 
 To test if everything is working, you can build the example code.
 
-Open the `TGUI/examples/android` folder. Add a "local.properties" file with the following contents, specifying the android SDK and NDK paths:
+Open the `TGUI/examples/android` folder. Add a "local.properties" file with the following contents, specifying the android SDK paths:
 ```bash
 sdk.dir=/path/to/android-sdk
-ndk.dir=/path/to/android-ndk
 ```
 
-Make sure to check the `abiFilters` in `app/build.gradle` and `APP_ABI` in `app/src/main/jni/Application.mk` inside the android example folder, they have to match the `CMAKE_ANDROID_ARCH_ABI` that was passed to cmake. The error that TGUI.hpp is not found can mean that this value is wrong.
+Verify that the `ndkVersion` in `app/build.gradle` inside the android example folder matches the NDK version that you are using. In the same file, also check that `abiFilters` matches the `CMAKE_ANDROID_ARCH_ABI` that was passed to cmake. The error that TGUI.hpp is not found can mean that the abiFilters value is wrong.
 
 Now you should be able to build project with gradle by running the following from the command line in the `TGUI/examples/android` directory:
 ```bash
-./gradlew build
+./gradlew buildDebug
 ```
 
-If this results in an error stating `Could not open terminal for stdout: could not get termcap entry` then set the TERM variable to dumb (e.g. run `TERM=dumb ./gradlew build` on Linux).
+If this results in an error stating `Could not open terminal for stdout: could not get termcap entry` then set the TERM variable to dumb (e.g. run `TERM=dumb ./gradlew buildDebug` on Linux).
 
 If all goes well then you can now install the apk to a device (or a running simulator) by running
 ```bash
