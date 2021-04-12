@@ -40,6 +40,8 @@ breadcrumb: 0.9
 
 [Signals (event callbacks)](signals)
 
+[Strings](strings)
+
 
 ### Intermediate tutorials
 
