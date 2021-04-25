@@ -42,14 +42,14 @@ breadcrumb: 0.9
 
 [Strings](strings)
 
-
-### Intermediate tutorials
-
 [Layouts](layouts)
 
 [Renderers](renderers)
 
 [Using themes/skins](using-themes)
+
+
+### Intermediate tutorials
 
 [Show/Hide animations](show-hide-animations)
 
@@ -62,7 +62,11 @@ breadcrumb: 0.9
 
 [Creating your own themes](custom-themes)
 
+[Creating your own widgets](custom-widgets)
+
 [Loading from zip file](loading-from-zip)
+
+[Merging themes at runtime](merging-themes-runtime)
 
 
 <br>
