@@ -20,6 +20,14 @@ Minimum supported compilers: GCC 5, Clang 4, VS2017
   {% include button.ext text="MinGW 7.3.0 (SEH) - 64-bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Green" %}<br><br>
 </p>
 
+Packages:  
+vcpkg (Windows,Linux,macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial, supports multiple backends)  
+PPA (Ubuntu Linux): [libtgui-0.9-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, uses SFML backend)  
+AUR (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, uses SFML backend)  
+AUR (Arch Linux): [tgui](https://aur.archlinux.org/packages/tgui/) (unofficial, uses SFML backend)  
+brew (macOS): [tgui](https://formulae.brew.sh/formula/tgui) (unofficial, uses SFML backend)
+
+
 ### TGUI 0.8.9
 **Previous version**.
 
