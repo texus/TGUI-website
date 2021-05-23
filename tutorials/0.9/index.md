@@ -6,67 +6,69 @@ breadcrumb: 0.9
 
 ### Installation tutorials
 
-[Windows (Visual Studio)](visual-studio)
+[Windows (Visual Studio)](visual-studio/)
 
-[Windows (CodeBlocks)](windows-codeblocks)
+[Windows (CodeBlocks)](windows-codeblocks/)
 
-[macOS (Xcode)](macos-xcode)
+[macOS (Xcode)](macos-xcode/)
 
-[Linux (also BSD and Raspberry Pi)](linux)
+[Linux (also BSD and Raspberry Pi)](linux/)
 
-[Android (SFML)](android-sfml)
+[Android (SFML)](android-sfml/)
 
-[Android (SDL)](android-sdl)
+[Android (SDL)](android-sdl/)
 
-[iOS](ios)
+[iOS](ios/)
 
-[Building TGUI from source code with CMake](cmake)
+[Building TGUI from source code with CMake](cmake/)
 
-[Selecting backend in CMake](backends)
+[Selecting backend in CMake](backends/)
 
 
 ### Getting started
 
-[SFML backend](sfml-backend)
+[SFML backend](sfml-backend/)
 
-[SDL backend](sdl-backend)
+[SDL backend](sdl-backend/)
 
 
 ### Introduction tutorials
 
-[Creating, copying and removing widgets](creating-widgets)
+[Creating, copying and removing widgets](creating-widgets/)
 
-[Basic widget functions](basic-widget-functions)
+[Basic widget functions](basic-widget-functions/)
 
-[Signals (event callbacks)](signals)
+[Signals (event callbacks)](signals/)
 
-[Strings](strings)
+[Strings](strings/)
 
-[Layouts](layouts)
+[Layouts](layouts/)
 
-[Renderers](renderers)
+[Renderers](renderers/)
 
-[Using themes/skins](using-themes)
+[Using themes/skins](using-themes/)
+
+[Switching between menu screens / forms](switching-screens/)
 
 
 ### Intermediate tutorials
 
-[Show/Hide animations](show-hide-animations)
+[Show/Hide animations](show-hide-animations/)
 
-[Tool Tips](tool-tips)
+[Tool Tips](tool-tips/)
 
-[HorizontalLayout and VerticalLayout](box-layouts)
+[HorizontalLayout and VerticalLayout](box-layouts/)
 
 
 ### Advanced tutorials
 
-[Creating your own themes](custom-themes)
+[Creating your own themes](custom-themes/)
 
-[Creating your own widgets](custom-widgets)
+[Creating your own widgets](custom-widgets/)
 
-[Loading from zip file](loading-from-zip)
+[Loading from zip file](loading-from-zip/)
 
-[Merging themes at runtime](merging-themes-runtime)
+[Merging themes at runtime](merging-themes-runtime/)
 
 
 <br>
