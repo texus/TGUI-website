@@ -4,6 +4,8 @@ title: Tabs
 breadcrumb: tabs
 redirect_from: /example-code/v0.7/tabs/
 ---
+<span class="Red">TGUI 0.7 is no longer supported, use a newer TGUI version instead.</span>
+
 In the example below, two tabs are created with a corresponding panel for each. Only one of the panels is shown at a time depending on which tab is selected.
 
 Note that this example uses the [optional unbound parameter](https://tgui.eu/tutorials/v0.7/signals-optional-parameters/) feature of the connect function, it will not compile on VS2013.
