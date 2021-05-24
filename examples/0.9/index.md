@@ -8,8 +8,12 @@ breadcrumb: "0.9"
 
 [SDL backend](sdl-backend/)
 
-The examples below are not complete because the exact code depends on the backend you are using. The examples consists of a "runExample" function, which is called as shown in the backend examples above.
+The examples below don't contain a main function because the exact code depends on the backend you are using. The examples start in a "runExample" function, which is called as shown in the backend examples above.
 
 [Scalable login screen](scalable-login-screen/)
 
 [Many different widgets](many-different-widgets/)
+
+[Scrollable panel](scrollable-panel/)
+
+[Block events outside child window](blocking-events-outside-child-window/)
