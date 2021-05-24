@@ -59,6 +59,8 @@ breadcrumb: 0.9
 
 [HorizontalLayout and VerticalLayout](box-layouts/)
 
+[Changing mouse cursor](mouse-cursor/)
+
 
 ### Advanced tutorials
 
