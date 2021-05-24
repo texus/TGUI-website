@@ -6,7 +6,7 @@ breadcrumb: "switching screens"
 
 When your program consists of multiple screens then you need a method to replace your gui widgets with different ones. There are multiple ways to do this, you can either create the widgets when switching or you can load all widgets in advance so that you just have to hide one form and show another one.
 
-### 1. Removing all widgets and creating new ones
+### Approach 1: Removing all widgets and creating new ones
 
 The first method is the most straigtforward one, simly call `removeAllWidgets` and create all the new widgets that need to be shown.
 ```c++
@@ -29,7 +29,7 @@ void showScreen2()
 }
 ```
 
-### 2. Loading a new form file
+### Approach 2: Loading a new form file
 
 If you wish to load widgets from a form file (which can be created with the Gui Builder) instead of manually creating them in c++ then you can use the `loadWidgetsFromFile` function to replace all widgets.
 ```c++
@@ -48,7 +48,7 @@ void showScreen2()
 }
 ```
 
-### 3. Loading upfront and swapping group
+### Approach 3: Loading upfront and swapping group
 
 Loading a handful of widgets shouldn't be slow, but if you want to make sure that the transition happens without any delay or that there can't be any errors during a screen change then you can load everything upfront. Group widgets are ideal to bundle all widgets of a screen: they are invisible (i.e. they have no background color like Panel) and they fill the entire parent area if you don't manually specify a size. Once all widgets are loaded into groups, all you need to do when switching screens is to hide one group and show the other.
 ```c++
