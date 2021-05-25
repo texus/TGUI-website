@@ -19,3 +19,5 @@ The examples below don't contain a main function because the exact code depends 
 [Block events outside child window](blocking-events-outside-child-window/)
 
 [Pop-up / context menu](popup-menu/)
+
+[Tabs](tabs/)
