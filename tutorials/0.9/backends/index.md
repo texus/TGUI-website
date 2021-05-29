@@ -15,12 +15,12 @@ Note that the the file you need is called exactly "SFMLConfig.cmake", the "SFMLC
 
 ### SDL
 
-TGUI also has a backend based on SDL. It uses SDL2, SDL\_TTF and OpenGL. At least OpenGL 4.1 or OpenGL ES 3.0 is required.
+TGUI also has a backend based on SDL. It uses SDL2, SDL\_TTF and OpenGL. At least OpenGL 3.2 or OpenGL ES 2.0 is required.
 
 If SDL2 isn't found automatically in CMake then fill in the SDL2\_PATH variable with the root folder of the development libraries that you download from the [SDL download page](https://libsdl.org/download-2.0.php).  
 If SDL\_ttf isn't found automatically then fill in the SDL2\_TTF\_PATH variable with the root folder of the development libraries that can be downloaded from the [SDL\_ttf download page](https://www.libsdl.org/projects/SDL_ttf/).  
 
-You can set the hidden `TGUI_USE_GLES` option to TRUE if you want to use OpenGL ES instead of OpenGL (you have to manually create the entry if you use the CMake gui). This property is automatically set to TRUE when building for Android. You should set the property manually when building for Raspberry Pi.
+You can set the hidden `TGUI_USE_GLES` option to TRUE if you want to use OpenGL ES instead of OpenGL (you have to manually create the entry if you use the CMake gui). This property must be set to TRUE when building for Android and setting it to TRUE is also recommended when building for the Raspberry Pi.
 
 ### Custom
 

@@ -39,9 +39,9 @@ int main()
 {
     SDL_Init(SDL_INIT_VIDEO);
 
-    // The SDL backend in TGUI currently requires at least OpenGL 4.1 (or OpenGL ES 3.0)
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+    // The SDL backend in TGUI requires at least OpenGL 3.2 (or OpenGL ES 2.0 if built with TGUI_USE_GLES=1)
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
     // TGUI requires a window created with the SDL_WINDOW_OPENGL flag and an OpenGL context

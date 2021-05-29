@@ -54,7 +54,7 @@ To choose the architectures to build, change the abiFilters property in app/buil
 
 From inside the android-sdl folder, execute the following command to build everything. This will build any changes to SDL, TGUI and the example for all architectures and bundle everything into a single apk file.
 ```
-./gradlew build
+./gradlew buildDebug
 ```
 
 If you have an emulator or device connected then you can install the apk with the following command:
@@ -67,7 +67,7 @@ If you have an emulator or device connected then you can install the apk with th
 
 If the application crashes, you should run "adb logcat" and look for log output that shows the reason of the crash.
 
-When running in an emulator, you may e.g. see the following error if GLES 3 is not enabled or unsupported by the emulator:
+If the program exits due to an exception being thrown then you will find a line like this in the output followed by the error message:
 ```
-"terminating with uncaught exception of type tgui::Exception: BackendSDL expects at least OpenGL ES 3.0"
+"terminating with uncaught exception of type tgui::Exception:"
 ```
