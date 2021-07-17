@@ -4,6 +4,8 @@ title: Community
 redirect_from: /contact/
 ---
 
+[![GitHub](/resources/ButtonGitHub.png){:width="242" height="52"}](https://github.com/texus/TGUI/)
+
 [![TGUI forum](/resources/ButtonForum.png){:width="242" height="52"}](https://forum.tgui.eu)
 
 [![Chat on Discord](/resources/ButtonDiscord.png){:width="242" height="52"}](https://discord.gg/Msf4vyx)
