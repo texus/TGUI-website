@@ -9,8 +9,8 @@ title: Download
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.9.zip" style="Orange" %}<br><br>
-  {% include button.ext text="Visual C++16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-vc16-32bit-for-SFML-2.5.1.zip" style="Orange" %}
-  {% include button.ext text="Visual C++16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-vc16-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange" %}
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
 </p>
 
 ### TGUI 0.9.1
