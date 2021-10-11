@@ -25,24 +25,6 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Related Pages",url:"pages.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"},
-{text:"Namespace Members",url:"namespacemembers.html",children:[
-{text:"All",url:"namespacemembers.html",children:[
-{text:"b",url:"namespacemembers.html#index_b"},
-{text:"g",url:"namespacemembers.html#index_g"},
-{text:"i",url:"namespacemembers.html#index_i"},
-{text:"o",url:"namespacemembers.html#index_o"},
-{text:"s",url:"namespacemembers.html#index_s"},
-{text:"t",url:"namespacemembers.html#index_t"}]},
-{text:"Functions",url:"namespacemembers_func.html",children:[
-{text:"b",url:"namespacemembers_func.html#index_b"},
-{text:"g",url:"namespacemembers_func.html#index_g"},
-{text:"i",url:"namespacemembers_func.html#index_i"},
-{text:"o",url:"namespacemembers_func.html#index_o"},
-{text:"s",url:"namespacemembers_func.html#index_s"},
-{text:"t",url:"namespacemembers_func.html#index_t"}]},
-{text:"Enumerations",url:"namespacemembers_enum.html"}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},

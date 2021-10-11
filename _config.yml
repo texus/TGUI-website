@@ -4,3 +4,6 @@ highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+sass:
+  style: compressed

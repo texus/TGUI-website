@@ -1,3 +1,9 @@
+---
+---
+
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) { @content }
+}
 
 /* GENERAL */
 
@@ -9,18 +15,46 @@ html, body {
 }
 
 body {
+  color: black;
   background-color: #e0e0e0;
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
+
+  // Font selection taken from doxygen-awesome-css
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+  @include dark-mode {
+    color: #c9d1d9;
+    background-color: black;
+  }
+}
+
+a {
+  @include dark-mode {
+    color: #93b3ec;
+  }
+}
+
+// TODO: Setting :visited state interferes with other CSS code that sets a custom color for a tags
+a:visited {
+  @include dark-mode {
+    color: #aa80cc;
+  }
 }
 
 #body {
   min-height: 100%;
   position: relative;
   background-color: #fbfbfb;
+  outline-color: #808080;
   outline-style: solid;
   outline-width: 2px;
+
+  @include dark-mode {
+    background-color: #0d1117;
+    outline-color: #404040;
+  }
 }
 
 #contents {
@@ -36,10 +70,14 @@ body {
 }
 
 #footer {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   background: #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+
+  @include dark-mode {
+    background-color: #21262e;
+  }
 }
 
 #footer p {
@@ -49,7 +87,20 @@ body {
 }
 
 #footer p a {
-  margin-left: 0.5em
+  margin-left: 0.5em;
+
+	text-decoration: underline; // Fighting doxygen
+  font-weight: normal;
+  color: revert !important; // Fighting doxygen-awesome-css
+  @include dark-mode {
+    color: #93b3ec !important; // Fighting doxygen-awesome-css
+  }
+}
+#footer p a:visited {
+  color: revert !important; // Fighting doxygen-awesome-css
+  @include dark-mode {
+    color: #aa80cc !important; // Fighting doxygen-awesome-css
+  }
 }
 
 p, li {
@@ -62,6 +113,10 @@ span.Red {
 
 span.Blue {
   color: blue;
+
+  @include dark-mode {
+    color: #0b88ff;
+  }
 }
 
 .FloatLeft {
@@ -73,12 +128,22 @@ span.Blue {
 }
 
 a.HeaderLink {
-  color: #000;
+  color: black;
   text-decoration: none;
+
+  @include dark-mode {
+    color: #c9d1d9;
+  }
 }
 
 hr.sectionEnd {
   margin-bottom: 1.5em;
+}
+
+img {
+  @include dark-mode {
+    filter: brightness(78%);
+  }
 }
 
 /* NAVIGATION */
@@ -87,12 +152,16 @@ hr.sectionEnd {
   position: absolute;
   background-color: #333333;
   z-index: 10000; /* Get in front of documentation navigation bar */
-  
+
   left: 0;
   top: 0;
   width: 100%;
   height: 50px;
   margin-bottom: 100px;
+
+  @include dark-mode {
+    background-color: #21262e;
+  }
 }
 
 a#navbar-title {
@@ -108,6 +177,10 @@ a#navbar-title h1 {
   color: #aaaaaa;
   padding: 0 20px 0 20px;
   border-right: 1px solid #808080;
+
+  @include dark-mode {
+    border-right: 1px solid #404040;
+  }
 }
 a#navbar-title:hover h1 {
   color: white;
@@ -139,11 +212,11 @@ a#navbar-title:hover h1 {
   .navbar-toggle:hover {
     color: white;
   }
-  
+
   #navbar-toggle-open {
     display: none;
   }
-  
+
   #navbar-list-div {
     position: absolute;
     left: 0px;
@@ -165,26 +238,32 @@ a#navbar-title:hover h1 {
     margin: 0;
     padding: 0;
   }
-  
+
   #navbar-list-div ul li a {
     display: block;
     font-size: 18px;
-    color: #aaaaaa;
+    font-weight: normal;
+    color: #aaaaaa !important; // Fighting doxygen-awesome-css
     text-decoration: none;
     background-color: #333333;
     margin: 0;
     padding: 10px 0px;
     text-align: center;
     border-left: 1px solid #808080;
+
+    @include dark-mode {
+      background-color: #21262e;
+      border-color: #404040;
+    }
   }
   #navbar-list-div ul li a:hover {
-    color: white
+    color: white !important; // Fighting doxygen-awesome-css
   }
-  
+
   #navbar-list-div ul ul {
     display: none
   }
-  
+
   #navbar-check:checked ~ #navbar-toggle-closed {
     display: none
   }
@@ -223,43 +302,58 @@ a#navbar-title:hover h1 {
 
   #navbar ul li a {
     display: block;
-      
+
     font-size: 18px;
-    color: #aaaaaa;
+    font-weight: normal;
+    color: #aaaaaa !important; // Fighting doxygen-awesome-css
     text-decoration: none;
     height: 28px;
-    
+
     margin: 0;
     padding: 15px 10px 7px 10px;
-      
+
     min-width: 80px;
     text-align: center;
 
     border-right: 1px solid #808080;
+
+    @include dark-mode {
+      color: #aaaaaa;
+      border-color: #404040;
+    }
   }
   #navbar ul li a:hover {
-    color: white;
+    color: white !important; // Fighting doxygen-awesome-css
   }
-  
+
   #navbar ul ul {
     display: none;
     left: inherit;
-    background: #333333;
+    background-color: #333333;
+
+    @include dark-mode {
+      background-color: #21262e;
+    }
   }
 
   #navbar ul ul li {
     float: none;
     border-top: 1px solid #808080;
     position: relative;
+
+    @include dark-mode {
+      border-color: #404040;
+    }
   }
-  
+
   #navbar ul ul li a {
     height: 1em;
     padding: 12px 10px;
+    border-right: 0px;
     color: #aaaaaa;
-  }    
+  }
   #navbar ul ul li a:hover {
-    color: white;
+    color: white !important; // Fighting doxygen-awesome-css
   }
 }
 
@@ -267,10 +361,10 @@ a#navbar-title:hover h1 {
   #navbar {
     left: -moz-calc((100% - 1060px) / 2);
     width: -moz-calc(1060px);
-    
+
     left: -webkit-calc((100% - 1060px) / 2);
     width: -webkit-calc(1060px);
-    
+
     left: calc((100% - 1060px) / 2);
     width: calc(1060px);
   }
@@ -278,12 +372,12 @@ a#navbar-title:hover h1 {
 
 
 /* Android (webkit) hack */
-body { 
-  -webkit-animation: bugfix infinite 1s; 
+body {
+  -webkit-animation: bugfix infinite 1s;
 }
-@-webkit-keyframes bugfix { 
-  from {padding:0;} 
-  to {padding:0;} 
+@-webkit-keyframes bugfix {
+  from {padding:0;}
+  to {padding:0;}
 }
 
 
@@ -328,7 +422,7 @@ a.img {
   display: inline-block;
   margin-top: 0em;
   margin-bottom: 1em;
-  
+
   max-width: 100%;
 }
 
@@ -337,37 +431,41 @@ a.img.SmallBottomMargin {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 
 /* LIGHTBOX */
 
 #LightBox {
-    position: fixed;
-    z-index: 1001;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0 , 0, .7);
+  position: fixed;
+  z-index: 1001;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0 , 0, .7);
 }
 
 #LightBox img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  @include dark-mode {
+    filter: brightness(100%);
+  }
 }
 
 
 /* BUTTONS */
 
-.buttonWhite {
+.buttonWhite[href] { // href attribute selector to also overwrite :visited color
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -392,6 +490,10 @@ img {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
+
+  @include dark-mode {
+    filter: brightness(78%);
+  }
 }
 .buttonWhite:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
@@ -408,7 +510,7 @@ img {
 	top:1px;
 }
 
-.buttonBlue {
+.buttonBlue[href] { // href attribute selector to also overwrite :visited color
 	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	box-shadow:inset 0px 1px 0px 0px #97c4fe;
@@ -433,6 +535,10 @@ img {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1570cd;
+
+  @include dark-mode {
+    filter: brightness(78%);
+  }
 }
 .buttonBlue:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
@@ -449,7 +555,7 @@ img {
 	top:1px;
 }
 
-.buttonGreen {
+.buttonGreen[href] { // href attribute selector to also overwrite :visited color
 	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
 	box-shadow:inset 0px 1px 0px 0px #a4e271;
@@ -474,6 +580,10 @@ img {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #528009;
+
+  @include dark-mode {
+    filter: brightness(78%);
+  }
 }
 .buttonGreen:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
@@ -490,7 +600,7 @@ img {
 	top:1px;
 }
 
-.buttonOrange {
+.buttonOrange[href] { // href attribute selector to also overwrite :visited color
 	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
 	box-shadow:inset 0px 1px 0px 0px #fff6af;
@@ -515,6 +625,10 @@ img {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
+
+  @include dark-mode {
+    filter: brightness(74%);
+  }
 }
 .buttonOrange:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
@@ -531,7 +645,6 @@ img {
 	top:1px;
 }
 
-
 /* TEXT */
 
 ul {
@@ -541,7 +654,7 @@ ul {
 p.SmallText {
   font-size: 0.8em;
 }
-  
+
 p.SmallBottomMargin {
   margin-top: 0em;
   margin-bottom: 0.2em;
@@ -583,6 +696,21 @@ p.SmallBottomMargin {
 
 
 /* HIGHLIGHT */
+
+pre {
+  padding: 0.2em 0em 0.3em 0.5em;
+  line-height: 1.4em;
+  margin: 0;
+  width: 99%;
+  overflow: auto;
+  background-color: #f8f8ff;
+  border: 1px solid #dedede;
+
+  @include dark-mode {
+    background-color: #21262e;
+    border: 1px solid #080808;
+  }
+}
 
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
@@ -646,18 +774,40 @@ p.SmallBottomMargin {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
+@include dark-mode {
+  .highlight {
+    color: #d0d0d0;
+    .ge, .gr, .go, .gs, .gu, .gt, .nb, .nd, .ni, .ne, .nf, .nl, .nv, .bp, .vc, .vg, .vi { color: #d0d0d0; } // Remove color set by light theme
+    .w { color: #d0d0d0; }
+    .err {color: #151515; background-color: #ac4142; }
+    .c, .cd, .cm, .c1, .cs { color: #848484; }
+    .cp { color: #f4bf75; }
+    .nt { color: #f4bf75; }
+    .o, .ow { color: #d0d0d0; }
+    .p, .pi { color: #d0d0d0; }
+    .gi { color: #90a959; }
+    .gd { color: #ac4142; }
+    .gh { color: #6a9fb5; background-color: #151515; font-weight: bold; }
+    .k, .kn, .kp, .kr, .kv { color: #aa759f; }
+    .kc { color: #d28445; }
+    .kt { color: #d28445; }
+    .kd { color: #d28445; }
+    .s, .sb, .sc, .sd, .s2, .sh, .sx, .s1 { color: #90a959; }
+    .sr { color: #75b5aa; }
+    .si { color: #8f5536; }
+    .se { color: #8f5536; }
+    .nn { color: #f4bf75; }
+    .nc { color: #f4bf75; }
+    .no { color: #f4bf75; }
+    .na { color: #6a9fb5; }
+    .m, .mf, .mh, .mi, .il, .mo, .mb, .mx { color: #90a959; }
+    .ss { color: #90a959; }
+  }
+}
+
 /* figure.highlight is used for code blocks defined by highlight tags and div.highlighter-rouge and div.highlight are used for code blocks defined by backticks */
 figure.highlight, div.highlighter-rouge, div.highlight {
   margin: 0;
-}
-
-pre {
-  line-height: 1.4em;
-  margin: 0;
-  width: 99%;
-  overflow: auto;
-  background-color: #f8f8ff;
-  border: 1px solid #dedede;
 }
 
 
@@ -721,4 +871,8 @@ a.HomePageScreenshotThumbnail img {
 span.ChangelogDate {
   color: #9e9e9e;
   font-size: 0.7em;
+
+  @include dark-mode {
+    color: #9e9e9e;
+  }
 }

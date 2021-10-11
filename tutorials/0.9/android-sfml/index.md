@@ -42,7 +42,7 @@ make install
 
 To test if everything is working, you can build the example code.
 
-Open the `TGUI/examples/android` folder. Add a "local.properties" file with the following contents, specifying the android SDK paths:
+If the ANDROID_SDK_ROOT environment variable isn't set then open the `TGUI/examples/android` folder add a "local.properties" file with the following contents, specifying the android SDK paths:
 ```bash
 sdk.dir=/path/to/android-sdk
 ```

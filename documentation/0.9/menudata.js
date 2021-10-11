@@ -24,28 +24,6 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"},
-{text:"Namespace Members",url:"namespacemembers.html",children:[
-{text:"All",url:"namespacemembers.html",children:[
-{text:"b",url:"namespacemembers.html#index_b"},
-{text:"g",url:"namespacemembers.html#index_g"},
-{text:"i",url:"namespacemembers.html#index_i"},
-{text:"o",url:"namespacemembers.html#index_o"},
-{text:"r",url:"namespacemembers.html#index_r"},
-{text:"s",url:"namespacemembers.html#index_s"},
-{text:"t",url:"namespacemembers.html#index_t"},
-{text:"u",url:"namespacemembers.html#index_u"}]},
-{text:"Functions",url:"namespacemembers_func.html",children:[
-{text:"b",url:"namespacemembers_func.html#index_b"},
-{text:"g",url:"namespacemembers_func.html#index_g"},
-{text:"i",url:"namespacemembers_func.html#index_i"},
-{text:"o",url:"namespacemembers_func.html#index_o"},
-{text:"r",url:"namespacemembers_func.html#index_r"},
-{text:"s",url:"namespacemembers_func.html#index_s"}]},
-{text:"Typedefs",url:"namespacemembers_type.html"},
-{text:"Enumerations",url:"namespacemembers_enum.html"},
-{text:"Enumerator",url:"namespacemembers_eval.html"}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -88,6 +66,7 @@ var menudata={children:[
 {text:"h",url:"functions_func_h.html#index_h"},
 {text:"i",url:"functions_func_i.html#index_i"},
 {text:"j",url:"functions_func_j.html#index_j"},
+{text:"k",url:"functions_func_k.html#index_k"},
 {text:"l",url:"functions_func_l.html#index_l"},
 {text:"m",url:"functions_func_m.html#index_m"},
 {text:"o",url:"functions_func_o.html#index_o"},
@@ -121,7 +100,8 @@ var menudata={children:[
 {text:"y",url:"functions_vars.html#index_y"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
 {text:"c",url:"functions_type.html#index_c"},
-{text:"p",url:"functions_type.html#index_p"}]},
+{text:"p",url:"functions_type.html#index_p"},
+{text:"t",url:"functions_type.html#index_t"}]},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"}]}]},
 {text:"Files",url:"files.html",children:[

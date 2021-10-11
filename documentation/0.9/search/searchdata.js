@@ -3,9 +3,9 @@ var indexSectionsWithContent =
   0: "abcdefghijklmnopqrstuvwxyz~",
   1: "abcdefghiklmnoprstvw",
   2: "t",
-  3: "abcdefghijlmoprstuvw~",
+  3: "abcdefghijklmoprstuvw~",
   4: "abcdfghiklmorstuwxy",
-  5: "cps",
+  5: "cpst",
   6: "acefhkmopstv",
   7: "abcdefghijklmnopqrstuvwxyz",
   8: "t"

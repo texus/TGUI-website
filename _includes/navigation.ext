@@ -1,11 +1,11 @@
 <div id="header" class="NoMargin">
 <div id="navbar" class="NoMargin">
     <a id="navbar-title" href="/"><h1>TGUI</h1></a>
-    
+
     <input type="checkbox" id="navbar-check"/>
     <label id="navbar-toggle-closed" class="navbar-toggle" onclick="" title="Menu" for="navbar-check">=</label>
     <label id="navbar-toggle-open" class="navbar-toggle" onclick="" title="Menu" for="navbar-check">=</label>
-    
+
     <div id="navbar-list-div" class="NoMargin">
     <ul>
         <li><a href="/download/">Download</a></li>
@@ -19,7 +19,7 @@
         <li>
             <a href="/documentation/">Documentation</a>
             <ul>
-                <li><a href="/documentation/0.9/">0.9</a></li>
+                <li><a href="/documentation/0.9/annotated.html">0.9</a></li>
                 <li><a href="/documentation/0.8/">0.8</a></li>
             </ul>
         </li>

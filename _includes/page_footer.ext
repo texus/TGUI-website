@@ -5,5 +5,5 @@
   <a href="/changelog/">Changelog</a>
   <a href="/sitemap.xml">Sitemap</a>
 </p>
-<p class="FloatRight">Copyright &copy; 2013-{{ site.time | date: '%Y' }} <a href="https://texus.me">Bruno Van de Velde</a></p>
+<p class="FloatRight">Copyright &copy; 2012-{{ site.time | date: '%Y' }} <a href="https://texus.me">Bruno Van de Velde</a></p>
 </div>
