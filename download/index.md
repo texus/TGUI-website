@@ -13,6 +13,10 @@ title: Download
   {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.10-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
 </p>
 
+Packages:  
+**PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
+**AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui/) (official, contains all backends)  
+
 ### TGUI 0.9.1
 **Latest stable version**. Minimum supported compilers: GCC 5, Clang 4, VS2017
 
