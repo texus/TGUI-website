@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    #include &lt;SFML/Graphics/Color.hpp&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -161,7 +161,7 @@ $(function() {
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#if TGUI_COMPILED_WITH_CPP_VER &gt;= 20</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#if TGUI_COMPILED_WITH_CPP_VER &gt;= 17</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classtgui_1_1Color.html">   59</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classtgui_1_1Color.html">Color</a></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>#else</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    class TGUI_API <a class="code hl_class" href="classtgui_1_1Color.html">Color</a></div>
@@ -186,8 +186,8 @@ $(function() {
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        TGUI_CONSTEXPR <a class="code hl_function" href="classtgui_1_1Color.html#aa90ab4e892b292a3885fc82868257848">Color</a>(<span class="keyword">const</span> sf::Color&amp; color) :</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classtgui_1_1Color.html#a032dc4dbf6a0748f870b1e4758eac813">   97</a></span>        TGUI_CONSTEXPR <a class="code hl_function" href="classtgui_1_1Color.html#a032dc4dbf6a0748f870b1e4758eac813">Color</a>(<span class="keyword">const</span> sf::Color&amp; color) :</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            m_isSet{true},</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            m_red  {color.r},</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            m_green{color.g},</div>
@@ -224,8 +224,8 @@ $(function() {
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">return</span> m_isSet;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keyword">operator</span> sf::Color()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classtgui_1_1Color.html#ac7d26aa6b54d5846bf6320e2151450c9">  167</a></span>        <span class="keyword">operator</span> sf::Color()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">return</span> sf::Color(m_red, m_green, m_blue, m_alpha);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
@@ -297,11 +297,11 @@ $(function() {
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordtype">bool</span> m_isSet = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        std::uint8_t m_red = 0;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        std::uint8_t m_green = 0;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        std::uint8_t m_blue = 0;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        std::uint8_t m_alpha = 0;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordtype">bool</span> m_isSet;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        std::uint8_t m_red;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        std::uint8_t m_green;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        std::uint8_t m_blue;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        std::uint8_t m_alpha;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    };</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
@@ -311,37 +311,37 @@ $(function() {
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#if TGUI_COMPILED_WITH_CPP_VER &gt;= 20 </span><span class="comment">// Although technically available since c++17, we put the bar higher to allow building TGUI with c++17 in VS2017</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a6e24621cb5489ced76a0daeb5df7faea">Color::Black</a>      {  0,   0,   0};</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#aa01b43e54eca75f0141ebf6c22f2f2ee">Color::White</a>      {255, 255, 255};</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ae4d33a5b1bfc6bec0a67c256974fede6">Color::Red</a>        {255,   0,   0};</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">Color::Green</a>      {  0, 255,   0};</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#aebe98eac6c156af03fba15bbebd3f0a0">Color::Blue</a>       {  0,   0, 255};</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ae49a93d30059bf30c5afa99d1228ef8b">Color::Yellow</a>     {255, 255,   0};</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ad882fe860994837e785ebc5da6e9e796">Color::Magenta</a>    {255,   0, 255};</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ac61a60d44a7feb08be2fd0303f9ccd01">Color::Cyan</a>       {  0, 255, 255};</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a1f089362e40f84d6a2d43e5a5146a246">Color::Transparent</a>{  0,   0,   0,   0};</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> std::array&lt;std::pair&lt;StringView, Color&gt;, 9&gt; Color::colorNamesMap</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        {{U<span class="stringliteral">&quot;black&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a6e24621cb5489ced76a0daeb5df7faea">Color::Black</a>},</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>         {U<span class="stringliteral">&quot;white&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#aa01b43e54eca75f0141ebf6c22f2f2ee">Color::White</a>},</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>         {U<span class="stringliteral">&quot;red&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ae4d33a5b1bfc6bec0a67c256974fede6">Color::Red</a>},</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>         {U<span class="stringliteral">&quot;yellow&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ae49a93d30059bf30c5afa99d1228ef8b">Color::Yellow</a>},</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>         {U<span class="stringliteral">&quot;green&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">Color::Green</a>},</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>         {U<span class="stringliteral">&quot;cyan&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ac61a60d44a7feb08be2fd0303f9ccd01">Color::Cyan</a>},</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>         {U<span class="stringliteral">&quot;blue&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#aebe98eac6c156af03fba15bbebd3f0a0">Color::Blue</a>},</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>         {U<span class="stringliteral">&quot;magenta&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ad882fe860994837e785ebc5da6e9e796">Color::Magenta</a>},</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>         {U<span class="stringliteral">&quot;transparent&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a1f089362e40f84d6a2d43e5a5146a246">Color::Transparent</a>}}</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    };</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_COLOR_HPP</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#if TGUI_COMPILED_WITH_CPP_VER &gt;= 17</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a6e24621cb5489ced76a0daeb5df7faea">Color::Black</a>      {  0,   0,   0};</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#aa01b43e54eca75f0141ebf6c22f2f2ee">Color::White</a>      {255, 255, 255};</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ae4d33a5b1bfc6bec0a67c256974fede6">Color::Red</a>        {255,   0,   0};</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">Color::Green</a>      {  0, 255,   0};</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#aebe98eac6c156af03fba15bbebd3f0a0">Color::Blue</a>       {  0,   0, 255};</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ae49a93d30059bf30c5afa99d1228ef8b">Color::Yellow</a>     {255, 255,   0};</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ad882fe860994837e785ebc5da6e9e796">Color::Magenta</a>    {255,   0, 255};</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#ac61a60d44a7feb08be2fd0303f9ccd01">Color::Cyan</a>       {  0, 255, 255};</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> Color <a class="code hl_variable" href="classtgui_1_1Color.html#a1f089362e40f84d6a2d43e5a5146a246">Color::Transparent</a>{  0,   0,   0,   0};</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> std::array&lt;std::pair&lt;StringView, Color&gt;, 9&gt; Color::colorNamesMap</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        {{U<span class="stringliteral">&quot;black&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a6e24621cb5489ced76a0daeb5df7faea">Color::Black</a>},</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>         {U<span class="stringliteral">&quot;white&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#aa01b43e54eca75f0141ebf6c22f2f2ee">Color::White</a>},</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>         {U<span class="stringliteral">&quot;red&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ae4d33a5b1bfc6bec0a67c256974fede6">Color::Red</a>},</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>         {U<span class="stringliteral">&quot;yellow&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ae49a93d30059bf30c5afa99d1228ef8b">Color::Yellow</a>},</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>         {U<span class="stringliteral">&quot;green&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">Color::Green</a>},</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>         {U<span class="stringliteral">&quot;cyan&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ac61a60d44a7feb08be2fd0303f9ccd01">Color::Cyan</a>},</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>         {U<span class="stringliteral">&quot;blue&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#aebe98eac6c156af03fba15bbebd3f0a0">Color::Blue</a>},</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>         {U<span class="stringliteral">&quot;magenta&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#ad882fe860994837e785ebc5da6e9e796">Color::Magenta</a>},</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>         {U<span class="stringliteral">&quot;transparent&quot;</span>, <a class="code hl_variable" href="classtgui_1_1Color.html#a1f089362e40f84d6a2d43e5a5146a246">Color::Transparent</a>}}</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    };</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_COLOR_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1Color_html"><div class="ttname"><a href="classtgui_1_1Color.html">tgui::Color</a></div><div class="ttdoc">Wrapper for colors.</div><div class="ttdef"><b>Definition:</b> Color.hpp:63</div></div>
+<div class="ttc" id="aclasstgui_1_1Color_html_a032dc4dbf6a0748f870b1e4758eac813"><div class="ttname"><a href="classtgui_1_1Color.html#a032dc4dbf6a0748f870b1e4758eac813">tgui::Color::Color</a></div><div class="ttdeci">TGUI_CONSTEXPR Color(const sf::Color &amp;color)</div><div class="ttdoc">Creates the object from an sf::Color.</div><div class="ttdef"><b>Definition:</b> Color.hpp:97</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html_a1f089362e40f84d6a2d43e5a5146a246"><div class="ttname"><a href="classtgui_1_1Color.html#a1f089362e40f84d6a2d43e5a5146a246">tgui::Color::Transparent</a></div><div class="ttdeci">static const Color Transparent</div><div class="ttdoc">Transparent (black) predefined color.</div><div class="ttdef"><b>Definition:</b> Color.hpp:261</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html_a22111afcd69cb5c966efe5df0744c1e9"><div class="ttname"><a href="classtgui_1_1Color.html#a22111afcd69cb5c966efe5df0744c1e9">tgui::Color::getGreen</a></div><div class="ttdeci">TGUI_CONSTEXPR std::uint8_t getGreen() const</div><div class="ttdoc">Returns the green component of the color.</div><div class="ttdef"><b>Definition:</b> Color.hpp:200</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html_a5cf732e6d265f810040edb3b0bfd8b1d"><div class="ttname"><a href="classtgui_1_1Color.html#a5cf732e6d265f810040edb3b0bfd8b1d">tgui::Color::applyOpacity</a></div><div class="ttdeci">static TGUI_CONSTEXPR Color applyOpacity(const Color &amp;color, float alpha)</div><div class="ttdoc">Returns the color with its alpha channel multiplied with the alpha parameter.</div><div class="ttdef"><b>Definition:</b> Color.hpp:69</div></div>
@@ -370,7 +370,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:13 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -382,6 +382,7 @@ Generated on Mon Oct 11 2021 11:30:13 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

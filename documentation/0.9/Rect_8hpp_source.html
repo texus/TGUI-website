@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;TGUI/Vector2.hpp&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    #include &lt;SFML/Graphics/Rect.hpp&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
@@ -167,8 +167,8 @@ $(function() {
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">explicit</span> TGUI_CONSTEXPR <a class="code hl_function" href="classtgui_1_1Rect.html#a1818b18ba63ee9e14fb95c5ee0557683">Rect</a>(sf::Rect&lt;T&gt; rect) :</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">   72</a></span>        <span class="keyword">explicit</span> TGUI_CONSTEXPR <a class="code hl_function" href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">Rect</a>(sf::Rect&lt;T&gt; rect) :</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="classtgui_1_1Rect.html#aa443a7aa53bc45beece9fccca11c4471">left</a>  {rect.<a class="code hl_variable" href="classtgui_1_1Rect.html#aa443a7aa53bc45beece9fccca11c4471">left</a>},</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384">top</a>   {rect.<a class="code hl_variable" href="classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384">top</a>},</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_variable" href="classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be">width</a> {rect.<a class="code hl_variable" href="classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be">width</a>},</div>
@@ -220,8 +220,8 @@ $(function() {
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">return</span> {<a class="code hl_variable" href="classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be">width</a>, <a class="code hl_variable" href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">height</a>};</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML_GRAPHICS</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">explicit</span> <span class="keyword">operator</span> sf::Rect&lt;T&gt;()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#if TGUI_HAS_BACKEND_SFML</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classtgui_1_1Rect.html#a86d6a8baff06e15270d8f14cc12f03b5">  162</a></span>        <span class="keyword">explicit</span> <span class="keyword">operator</span> sf::Rect&lt;T&gt;()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">return</span> sf::Rect&lt;T&gt;{<a class="code hl_variable" href="classtgui_1_1Rect.html#aa443a7aa53bc45beece9fccca11c4471">left</a>, <a class="code hl_variable" href="classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384">top</a>, <a class="code hl_variable" href="classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be">width</a>, <a class="code hl_variable" href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">height</a>};</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
@@ -285,6 +285,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1Rect_html_a4d5ccd7cdd807d5527dcec5520ba61be"><div class="ttname"><a href="classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be">tgui::Rect::width</a></div><div class="ttdeci">T width</div><div class="ttdoc">Width of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:212</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html_a5681d6ac5a4208ca1203600d86df191d"><div class="ttname"><a href="classtgui_1_1Rect.html#a5681d6ac5a4208ca1203600d86df191d">tgui::Rect::getSize</a></div><div class="ttdeci">TGUI_CONSTEXPR Vector2&lt; T &gt; getSize() const</div><div class="ttdoc">Returns the size of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:153</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html_a609ba0a2a45fbe46b8c4176cdb68a23e"><div class="ttname"><a href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">tgui::Rect::height</a></div><div class="ttdeci">T height</div><div class="ttdoc">Height of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:213</div></div>
+<div class="ttc" id="aclasstgui_1_1Rect_html_a6458025bcce1f48022f96924bad0e6ce"><div class="ttname"><a href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">tgui::Rect::Rect</a></div><div class="ttdeci">TGUI_CONSTEXPR Rect(sf::Rect&lt; T &gt; rect)</div><div class="ttdoc">Constructs the rectangle from an sf::Rect.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:72</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html_a6e3d181967b336e9b9cf078b94d013ea"><div class="ttname"><a href="classtgui_1_1Rect.html#a6e3d181967b336e9b9cf078b94d013ea">tgui::Rect::getPosition</a></div><div class="ttdeci">TGUI_CONSTEXPR Vector2&lt; T &gt; getPosition() const</div><div class="ttdoc">Returns the position of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:130</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html_a9c69bfd2b4770c1d94d655dd229a68e9"><div class="ttname"><a href="classtgui_1_1Rect.html#a9c69bfd2b4770c1d94d655dd229a68e9">tgui::Rect::setPosition</a></div><div class="ttdeci">TGUI_CONSTEXPR void setPosition(Vector2&lt; T &gt; position)</div><div class="ttdoc">Sets the position of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:118</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html_aa443a7aa53bc45beece9fccca11c4471"><div class="ttname"><a href="classtgui_1_1Rect.html#aa443a7aa53bc45beece9fccca11c4471">tgui::Rect::left</a></div><div class="ttdeci">T left</div><div class="ttdoc">Left coordinate of the rectangle.</div><div class="ttdef"><b>Definition:</b> Rect.hpp:210</div></div>
@@ -301,7 +302,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:13 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -313,6 +314,7 @@ Generated on Mon Oct 11 2021 11:30:13 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

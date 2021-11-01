@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -110,12 +110,9 @@ $(function() {
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>handleEvent()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#aa9aeccb7ef5164f64cfb7a91307a0bb4">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a9b24c1126b3d4fc2cc4012070ecb498a">tgui::BackendGuiSDL</a>, <a class="el" href="classtgui_1_1BackendGuiSFML.html#a2e9338d9f4c2577c6858baefa01f98b7">tgui::BackendGuiSFML</a></li>
-<li>hasFontBackend()&#160;:&#160;<a class="el" href="classtgui_1_1Backend.html#ad0a76a11027258ff077ab1120a8e3407">tgui::Backend</a></li>
+<li>handleEvent()&#160;:&#160;<a class="el" href="classtgui_1_1GuiBase.html#a023f18e74debb53655d783753cc7da74">tgui::GuiBase</a>, <a class="el" href="classtgui_1_1GuiSDL.html#a970aaed6dbe7f48054f5123b23b29d7d">tgui::GuiSDL</a>, <a class="el" href="classtgui_1_1GuiSFML.html#ad02eac7347ad38e045f7b2df539eacb8">tgui::GuiSFML</a></li>
 <li>hasGenericIcons()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialogIconLoader.html#a390418f6cac1bb6ed4fb7226c1d694a4">tgui::FileDialogIconLoader</a></li>
-<li>hasGlyph()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#ac46a7f03d237d03a661613cb7a07bbcc">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#add72088ab592e893d3774bc521873839">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad5a3c687581045426b29a1eb042276b7">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a265ef5265180dfab0b7c67b8644760d1">tgui::BackendFontSFML</a></li>
-<li>hasRenderer()&#160;:&#160;<a class="el" href="classtgui_1_1Backend.html#af76c5d38caf92a2d934caa00a830c7b4">tgui::Backend</a></li>
-<li>height&#160;:&#160;<a class="el" href="structtgui_1_1BackendFontFreetype_1_1Row.html#a5eb90f2758becd5f744aab816d88af6c">tgui::BackendFontFreetype::Row</a>, <a class="el" href="structtgui_1_1Event_1_1SizeEvent.html#a4766bf0b51a5eea70a31f1eeb2cc4eb4">tgui::Event::SizeEvent</a>, <a class="el" href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">tgui::Rect&lt; T &gt;</a></li>
+<li>height&#160;:&#160;<a class="el" href="structtgui_1_1Event_1_1SizeEvent.html#a4766bf0b51a5eea70a31f1eeb2cc4eb4">tgui::Event::SizeEvent</a>, <a class="el" href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">tgui::Rect&lt; T &gt;</a></li>
 <li>hideWithEffect()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a474ece5e6b37b56c2421f033192fe81c">tgui::Widget</a></li>
 <li>HorizontalAlignment&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#afcabdb6aa458f5883f6831ccc731cb3b">tgui::Label</a></li>
 </ul>
@@ -123,7 +120,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -135,6 +132,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

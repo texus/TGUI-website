@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ $(function() {
 <p>Base class for widgets that consist of subwidgets that act together as if they are a single widget.  
  <a href="classtgui_1_1SubwidgetContainer.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="SubwidgetContainer_8hpp_source.html">/home/texus/Documents/TGUI-0.9/include/TGUI/SubwidgetContainer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SubwidgetContainer_8hpp_source.html">TGUI/SubwidgetContainer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tgui::SubwidgetContainer:</div>
 <div class="dyncontent">
@@ -308,9 +308,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Container.html">Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">getParent</a> () const</td></tr>
 <tr class="memdesc:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the parent widget.  <a href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">More...</a><br /></td></tr>
 <tr class="separator:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">getParentGui</a> () const</td></tr>
-<tr class="memdesc:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">More...</a><br /></td></tr>
-<tr class="separator:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">getParentGui</a> () const</td></tr>
+<tr class="memdesc:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">More...</a><br /></td></tr>
+<tr class="separator:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">isAnimationPlaying</a> () const</td></tr>
 <tr class="memdesc:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there is an active animation (started with showWithEffect or hideWithEffect)  <a href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">More...</a><br /></td></tr>
 <tr class="separator:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,9 +405,9 @@ std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign=
 void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</td></tr>
 <tr class="memdesc:af97127734acf80a4847191be4cdd9494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes. <br /></td></tr>
 <tr class="separator:af97127734acf80a4847191be4cdd9494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae99f6856ab469b4573a2bda6721998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SubwidgetContainer.html#a6ae99f6856ab469b4573a2bda6721998">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
-<tr class="memdesc:a6ae99f6856ab469b4573a2bda6721998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the subwidgets to a render target.  <a href="classtgui_1_1SubwidgetContainer.html#a6ae99f6856ab469b4573a2bda6721998">More...</a><br /></td></tr>
-<tr class="separator:a6ae99f6856ab469b4573a2bda6721998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eac0b118a20760665b920ffbeca2d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SubwidgetContainer.html#a3eac0b118a20760665b920ffbeca2d68">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
+<tr class="memdesc:a3eac0b118a20760665b920ffbeca2d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the subwidgets to a render target.  <a href="classtgui_1_1SubwidgetContainer.html#a3eac0b118a20760665b920ffbeca2d68">More...</a><br /></td></tr>
+<tr class="separator:a3eac0b118a20760665b920ffbeca2d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classtgui_1_1Widget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classtgui_1_1Widget')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:a7fea2c7fd134088ce7d9f86b0d7d421a inherit pro_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7fea2c7fd134088ce7d9f86b0d7d421a">rendererChanged</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property)</td></tr>
 <tr class="memdesc:a7fea2c7fd134088ce7d9f86b0d7d421a inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when one of the properties of the renderer is changed.  <a href="classtgui_1_1Widget.html#a7fea2c7fd134088ce7d9f86b0d7d421a">More...</a><br /></td></tr>
@@ -457,8 +457,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >Base class for widgets that consist of subwidgets that act together as if they are a single widget. </p>
 <p >Subwidgets need to be added to the m_container member. Widgets in this container will get drawn and receive events. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ae99f6856ab469b4573a2bda6721998" name="a6ae99f6856ab469b4573a2bda6721998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ae99f6856ab469b4573a2bda6721998">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a3eac0b118a20760665b920ffbeca2d68" name="a3eac0b118a20760665b920ffbeca2d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eac0b118a20760665b920ffbeca2d68">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -469,7 +469,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void tgui::SubwidgetContainer::draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
@@ -500,7 +500,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Widget.html#a365775b84c12fe31dc7d87f4534c8e35">tgui::Widget</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1Widget.html#acebee3873b7516fb2513ae3a9e8ba73d">tgui::Widget</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <p>When a widget is focused, the previously focused widget will be unfocused.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This function only works properly when the widget was already added to its parent (e.g. the <a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a>). </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function only works properly when the widget was already added to its parent (e.g. the Gui). </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#ac5cd2e875bf4e25edd80d9ab0f2072d2">tgui::Widget</a>.</p>
 
@@ -787,7 +787,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -799,6 +799,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

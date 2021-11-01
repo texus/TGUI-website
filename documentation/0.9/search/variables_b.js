@@ -43,5 +43,5 @@ var searchData=
   ['onuncheck_40',['onUncheck',['../classtgui_1_1RadioButton.html#a9e35af39553bbfb50cd405b0510df0d3',1,'tgui::RadioButton']]],
   ['onunfocus_41',['onUnfocus',['../classtgui_1_1Widget.html#a22d40dc010d14acdcb0d791adfddb3d6',1,'tgui::Widget']]],
   ['onvaluechange_42',['onValueChange',['../classtgui_1_1Knob.html#a8d8fc2efce0de3a8e950f80d29e67613',1,'tgui::Knob::onValueChange()'],['../classtgui_1_1ProgressBar.html#a5818a3bd4dc50e6a5f5735c1aeed512e',1,'tgui::ProgressBar::onValueChange()'],['../classtgui_1_1Scrollbar.html#a61e8a45811025b1a35373756693f8d90',1,'tgui::Scrollbar::onValueChange()'],['../classtgui_1_1Slider.html#aa6f6487cb6cdd3ad9df5eefbbb281db0',1,'tgui::Slider::onValueChange()'],['../classtgui_1_1SpinButton.html#aa3da56b8c6f778e006df115abd877e42',1,'tgui::SpinButton::onValueChange()'],['../classtgui_1_1SpinControl.html#a59064a5c728da1618764728c664c611d',1,'tgui::SpinControl::onValueChange()']]],
-  ['onviewchange_43',['onViewChange',['../classtgui_1_1BackendGui.html#ae432fc673ac8a41f259d05610e1ec3d3',1,'tgui::BackendGui']]]
+  ['onviewchange_43',['onViewChange',['../classtgui_1_1GuiBase.html#afcf957fe8983e692b5b0a6017467c599',1,'tgui::GuiBase']]]
 ];

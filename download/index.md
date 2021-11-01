@@ -3,14 +3,14 @@ layout: page
 title: Download
 ---
 
-### TGUI 0.9-dev
+### TGUI 0.10-dev
 
-**In development version** from [github](https://github.com/texus/TGUI/).
+**In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 6, Clang 6, VS2017
 
 <p>
-  {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.9.zip" style="Orange" %}<br><br>
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange" %}
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.9-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
+  {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.10.zip" style="Orange" %}<br><br>
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.10-nightly-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange" %}
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.10-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
 </p>
 
 ### TGUI 0.9.1
@@ -29,7 +29,7 @@ Precompiled libraries for Windows with SFML backend: (require matching libraries
 </p>
 
 Packages:  
-**vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial, supports multiple backends)  
+**vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial, supports SFML and SDL backends)  
 **PPA** (Ubuntu Linux): [libtgui-0.9-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, uses SFML backend)  
 **AUR** (Arch Linux): [tgui](https://aur.archlinux.org/packages/tgui/) (unofficial, uses SFML backend)  
 **brew** (macOS): [tgui](https://formulae.brew.sh/formula/tgui) (unofficial, uses SFML backend)  

@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(function() {
 <p><a class="el" href="classtgui_1_1Group.html" title="Group widget.">Group</a> of widgets that has a background color and optional borders.  
  <a href="classtgui_1_1Panel.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Panel_8hpp_source.html">/home/texus/Documents/TGUI-0.9/include/TGUI/Widgets/Panel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Panel_8hpp_source.html">TGUI/Widgets/Panel.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tgui::Panel:</div>
 <div class="dyncontent">
@@ -197,9 +197,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9904650f511bec8812ec3770c3ea31f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Panel.html#a9904650f511bec8812ec3770c3ea31f7">isMouseOnWidget</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override</td></tr>
 <tr class="memdesc:a9904650f511bec8812ec3770c3ea31f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <a href="classtgui_1_1Panel.html#a9904650f511bec8812ec3770c3ea31f7">More...</a><br /></td></tr>
 <tr class="separator:a9904650f511bec8812ec3770c3ea31f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8f2b09e2267c1eefda34dae9ef3f431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Panel.html#ac8f2b09e2267c1eefda34dae9ef3f431">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
-<tr class="memdesc:ac8f2b09e2267c1eefda34dae9ef3f431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <a href="classtgui_1_1Panel.html#ac8f2b09e2267c1eefda34dae9ef3f431">More...</a><br /></td></tr>
-<tr class="separator:ac8f2b09e2267c1eefda34dae9ef3f431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a59d28443efab3cbeaa397ee755528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Panel.html#a68a59d28443efab3cbeaa397ee755528">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
+<tr class="memdesc:a68a59d28443efab3cbeaa397ee755528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <a href="classtgui_1_1Panel.html#a68a59d28443efab3cbeaa397ee755528">More...</a><br /></td></tr>
+<tr class="separator:a68a59d28443efab3cbeaa397ee755528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa593c0cf9c1dca1393e60849719417cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Panel.html#aa593c0cf9c1dca1393e60849719417cf">setSize</a> (const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;size)</td></tr>
 <tr class="memdesc:aa593c0cf9c1dca1393e60849719417cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the widget.  <a href="classtgui_1_1Panel.html#aa593c0cf9c1dca1393e60849719417cf">More...</a><br /></td></tr>
 <tr class="separator:aa593c0cf9c1dca1393e60849719417cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,9 +468,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Container.html">Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">getParent</a> () const</td></tr>
 <tr class="memdesc:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the parent widget.  <a href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">More...</a><br /></td></tr>
 <tr class="separator:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">getParentGui</a> () const</td></tr>
-<tr class="memdesc:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">More...</a><br /></td></tr>
-<tr class="separator:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">getParentGui</a> () const</td></tr>
+<tr class="memdesc:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">More...</a><br /></td></tr>
+<tr class="separator:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">isAnimationPlaying</a> () const</td></tr>
 <tr class="memdesc:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there is an active animation (started with showWithEffect or hideWithEffect)  <a href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">More...</a><br /></td></tr>
 <tr class="separator:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -761,8 +761,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidg
 
 </div>
 </div>
-<a id="ac8f2b09e2267c1eefda34dae9ef3f431" name="ac8f2b09e2267c1eefda34dae9ef3f431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f2b09e2267c1eefda34dae9ef3f431">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a68a59d28443efab3cbeaa397ee755528" name="a68a59d28443efab3cbeaa397ee755528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a59d28443efab3cbeaa397ee755528">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -773,7 +773,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidg
         <tr>
           <td class="memname">void tgui::Panel::draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
@@ -804,9 +804,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidg
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Group.html#abadf72662e35777bd510a17ee091ec66">tgui::Group</a>.</p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1Group.html#ac92d14f306c69640453b99536cb520b9">tgui::Group</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1ScrollablePanel.html#aa74ee05842cbf37dac615364d1c71283">tgui::ScrollablePanel</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1ScrollablePanel.html#a3ed982a92a5ec68bb3f2f7cfddae49f0">tgui::ScrollablePanel</a>.</p>
 
 </div>
 </div>
@@ -867,8 +867,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidg
 <dl class="section return"><dt>Returns</dt><dd>Size without borders and padding </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Group.html#a65861b658a208e8984b5e5208734c66c">tgui::Group</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classtgui_1_1ScrollablePanel.html#ad4990fab77e545215d26020d75e7fec7">tgui::ScrollablePanel</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1161,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidg
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -1175,6 +1173,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

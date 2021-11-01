@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6268677ed5820712120d31dd6d78e1c"><td class="memTemplItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtgui_1_1Rect.html#ae6268677ed5820712120d31dd6d78e1c">Rect</a> (const <a class="el" href="classtgui_1_1Rect.html">Rect</a>&lt; U &gt; &amp;rect)</td></tr>
 <tr class="memdesc:ae6268677ed5820712120d31dd6d78e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the rectangle from an another <a class="el" href="classtgui_1_1Rect.html">Rect</a> with a different type.  <a href="classtgui_1_1Rect.html#ae6268677ed5820712120d31dd6d78e1c">More...</a><br /></td></tr>
 <tr class="separator:ae6268677ed5820712120d31dd6d78e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6458025bcce1f48022f96924bad0e6ce"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">Rect</a> (sf::Rect&lt; T &gt; rect)</td></tr>
+<tr class="memdesc:a6458025bcce1f48022f96924bad0e6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the rectangle from an sf::Rect.  <a href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">More...</a><br /></td></tr>
+<tr class="separator:a6458025bcce1f48022f96924bad0e6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19bc41d560ba6e3482c038763b5ce6b6"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Rect.html#a19bc41d560ba6e3482c038763b5ce6b6">Rect</a> (T rectLeft, T rectTop, T rectWidth, T rectHeight)</td></tr>
 <tr class="memdesc:a19bc41d560ba6e3482c038763b5ce6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the rectangle from its position and size.  <a href="classtgui_1_1Rect.html#a19bc41d560ba6e3482c038763b5ce6b6">More...</a><br /></td></tr>
 <tr class="separator:a19bc41d560ba6e3482c038763b5ce6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5681d6ac5a4208ca1203600d86df191d"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR <a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Rect.html#a5681d6ac5a4208ca1203600d86df191d">getSize</a> () const</td></tr>
 <tr class="memdesc:a5681d6ac5a4208ca1203600d86df191d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the rectangle.  <a href="classtgui_1_1Rect.html#a5681d6ac5a4208ca1203600d86df191d">More...</a><br /></td></tr>
 <tr class="separator:a5681d6ac5a4208ca1203600d86df191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d6a8baff06e15270d8f14cc12f03b5"><td class="memItemLeft" align="right" valign="top"><a id="a86d6a8baff06e15270d8f14cc12f03b5" name="a86d6a8baff06e15270d8f14cc12f03b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator sf::Rect&lt; T &gt;</b> () const</td></tr>
+<tr class="memdesc:a86d6a8baff06e15270d8f14cc12f03b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="classtgui_1_1Rect.html">Rect</a> to an sf::Rect. <br /></td></tr>
+<tr class="separator:a86d6a8baff06e15270d8f14cc12f03b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fb8c54cd5100ce3604220e8869c933"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Rect.html#af2fb8c54cd5100ce3604220e8869c933">contains</a> (const <a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;pos) const</td></tr>
 <tr class="memdesc:af2fb8c54cd5100ce3604220e8869c933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is inside the rectangle's area.  <a href="classtgui_1_1Rect.html#af2fb8c54cd5100ce3604220e8869c933">More...</a><br /></td></tr>
 <tr class="separator:af2fb8c54cd5100ce3604220e8869c933"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +181,7 @@ T&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> = 0</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1818b18ba63ee9e14fb95c5ee0557683" name="a1818b18ba63ee9e14fb95c5ee0557683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1818b18ba63ee9e14fb95c5ee0557683">&#9670;&nbsp;</a></span>Rect() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1818b18ba63ee9e14fb95c5ee0557683">&#9670;&nbsp;</a></span>Rect() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +211,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae6268677ed5820712120d31dd6d78e1c" name="ae6268677ed5820712120d31dd6d78e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6268677ed5820712120d31dd6d78e1c">&#9670;&nbsp;</a></span>Rect() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6268677ed5820712120d31dd6d78e1c">&#9670;&nbsp;</a></span>Rect() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,8 +248,44 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
+<a id="a6458025bcce1f48022f96924bad0e6ce" name="a6458025bcce1f48022f96924bad0e6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6458025bcce1f48022f96924bad0e6ce">&#9670;&nbsp;</a></span>Rect() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_CONSTEXPR <a class="el" href="classtgui_1_1Rect.html">tgui::Rect</a>&lt; T &gt;::<a class="el" href="classtgui_1_1Rect.html">Rect</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Rect&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the rectangle from an sf::Rect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>Rectangle to initialize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a19bc41d560ba6e3482c038763b5ce6b6" name="a19bc41d560ba6e3482c038763b5ce6b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19bc41d560ba6e3482c038763b5ce6b6">&#9670;&nbsp;</a></span>Rect() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bc41d560ba6e3482c038763b5ce6b6">&#9670;&nbsp;</a></span>Rect() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +346,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a295509b6203d29cbcc10a1d05410c187" name="a295509b6203d29cbcc10a1d05410c187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a295509b6203d29cbcc10a1d05410c187">&#9670;&nbsp;</a></span>Rect() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a295509b6203d29cbcc10a1d05410c187">&#9670;&nbsp;</a></span>Rect() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,7 +609,7 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -578,6 +621,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

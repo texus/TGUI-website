@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -196,23 +196,19 @@ $(function() {
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a4216c56ca5aeaac3c65fae0104b3f13a">  193</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Transform.html#a4216c56ca5aeaac3c65fae0104b3f13a">roundPosition</a>();</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a3251ff97d3dd082928916f4b8611da42">  199</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Transform.html#a3251ff97d3dd082928916f4b8611da42">roundPositionForText</a>();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordtype">float</span> m_matrix[16]; </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    };</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordtype">float</span> m_matrix[16]; </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    };</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_TRANSFORM_HPP</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_TRANSFORM_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html"><div class="ttname"><a href="classtgui_1_1Rect.html">tgui::Rect&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html"><div class="ttname"><a href="classtgui_1_1Transform.html">tgui::Transform</a></div><div class="ttdoc">Defines a transform matrix.</div><div class="ttdef"><b>Definition:</b> Transform.hpp:43</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a0e60eeea9aecd6d68e091036751621d7"><div class="ttname"><a href="classtgui_1_1Transform.html#a0e60eeea9aecd6d68e091036751621d7">tgui::Transform::transformRect</a></div><div class="ttdeci">FloatRect transformRect(const FloatRect &amp;rectangle) const</div><div class="ttdoc">Transform a rectangle.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a19fbeda8f3ea04a19222b9ab834a456b"><div class="ttname"><a href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">tgui::Transform::Transform</a></div><div class="ttdeci">Transform(float a00, float a01, float a02, float a10, float a11, float a12, float a20, float a21, float a22)</div><div class="ttdoc">Construct a transform from a 3x3 matrix.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a1aff851a22afd5279719daac0ab92e02"><div class="ttname"><a href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">tgui::Transform::translate</a></div><div class="ttdeci">Transform &amp; translate(const Vector2f &amp;offset)</div><div class="ttdoc">Combine the current transform with a translation.</div></div>
-<div class="ttc" id="aclasstgui_1_1Transform_html_a3251ff97d3dd082928916f4b8611da42"><div class="ttname"><a href="classtgui_1_1Transform.html#a3251ff97d3dd082928916f4b8611da42">tgui::Transform::roundPositionForText</a></div><div class="ttdeci">void roundPositionForText()</div><div class="ttdoc">Rounds the position stored in the transform to the nearest integer.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a4216c56ca5aeaac3c65fae0104b3f13a"><div class="ttname"><a href="classtgui_1_1Transform.html#a4216c56ca5aeaac3c65fae0104b3f13a">tgui::Transform::roundPosition</a></div><div class="ttdeci">void roundPosition()</div><div class="ttdoc">Rounds the position stored in the transform to the nearest integer.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a6e46064b67a8f63909ee367c0ca13f56"><div class="ttname"><a href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">tgui::Transform::combine</a></div><div class="ttdeci">Transform &amp; combine(const Transform &amp;other)</div><div class="ttdoc">Combine the current transform with another one.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a769f4c5ee5234191c83b2bb41921e578"><div class="ttname"><a href="classtgui_1_1Transform.html#a769f4c5ee5234191c83b2bb41921e578">tgui::Transform::Transform</a></div><div class="ttdeci">Transform(const float matrix[16])</div><div class="ttdoc">Constructs a transform from a 4x4 matrix.</div></div>
@@ -228,7 +224,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -240,6 +236,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

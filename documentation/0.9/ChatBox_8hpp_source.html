@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -295,7 +295,7 @@ $(function() {
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classtgui_1_1ChatBox.html#aa90dfefcc3a5b8edf3200593aaa24b17">  423</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1ChatBox.html#aa90dfefcc3a5b8edf3200593aaa24b17">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classtgui_1_1ChatBox.html#a69aa83ccfb2675714b3f6eebfd69e6b2">  423</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1ChatBox.html#a69aa83ccfb2675714b3f6eebfd69e6b2">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="classtgui_1_1ChatBox.html#a15b56e661bd2db98eca228e7f1a9c5ba">  432</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1ChatBox.html#a15b56e661bd2db98eca228e7f1a9c5ba">rendererChanged</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1String.html">String</a>&amp; property) <span class="keyword">override</span>;</div>
@@ -348,7 +348,7 @@ $(function() {
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span> </div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_TEXT_BOX_HPP</span></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderTarget_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderTargetBase_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTargetBase.html">tgui::BackendRenderTargetBase</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBoxRenderer_html"><div class="ttname"><a href="classtgui_1_1ChatBoxRenderer.html">tgui::ChatBoxRenderer</a></div><div class="ttdef"><b>Definition:</b> ChatBoxRenderer.hpp:37</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html"><div class="ttname"><a href="classtgui_1_1ChatBox.html">tgui::ChatBox</a></div><div class="ttdef"><b>Definition:</b> ChatBox.hpp:43</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a00b6023fb68bce1c55d36b7070db969a"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a00b6023fb68bce1c55d36b7070db969a">tgui::ChatBox::getScrollbarValue</a></div><div class="ttdeci">unsigned int getScrollbarValue() const</div><div class="ttdoc">Returns the thumb position of the scrollbar.</div></div>
@@ -366,6 +366,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a590306119a990f0cd69765192b06c49a"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a590306119a990f0cd69765192b06c49a">tgui::ChatBox::addLine</a></div><div class="ttdeci">void addLine(const String &amp;text, Color color)</div><div class="ttdoc">Adds a new line of text to the chat box.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a66b1c69ccaa4dd79fd17748966bc325a"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a66b1c69ccaa4dd79fd17748966bc325a">tgui::ChatBox::getLineLimit</a></div><div class="ttdeci">std::size_t getLineLimit()</div><div class="ttdoc">Returns the maximum amount of lines in the chat box.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a6740e3cb71bf21a9d32c5f781ec5169a"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a6740e3cb71bf21a9d32c5f781ec5169a">tgui::ChatBox::addLine</a></div><div class="ttdeci">void addLine(const String &amp;text, Color color, TextStyles style)</div><div class="ttdoc">Adds a new line of text to the chat box.</div></div>
+<div class="ttc" id="aclasstgui_1_1ChatBox_html_a69aa83ccfb2675714b3f6eebfd69e6b2"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a69aa83ccfb2675714b3f6eebfd69e6b2">tgui::ChatBox::draw</a></div><div class="ttdeci">void draw(BackendRenderTargetBase &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a7094a5d1c781adfc29ae9b101f52759d"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a7094a5d1c781adfc29ae9b101f52759d">tgui::ChatBox::getTextColor</a></div><div class="ttdeci">const Color &amp; getTextColor() const</div><div class="ttdoc">Returns the default color of the text.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a7db373e09920c30456989f4be5ef82de"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a7db373e09920c30456989f4be5ef82de">tgui::ChatBox::save</a></div><div class="ttdeci">std::unique_ptr&lt; DataIO::Node &gt; save(SavingRenderersMap &amp;renderers) const override</div><div class="ttdoc">Saves the widget as a tree node in order to save it to a file.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a7e84f116b0626483bcdb44f7c539842b"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a7e84f116b0626483bcdb44f7c539842b">tgui::ChatBox::isMouseOnWidget</a></div><div class="ttdeci">bool isMouseOnWidget(Vector2f pos) const override</div><div class="ttdoc">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget...</div></div>
@@ -375,7 +376,6 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_a9d9f808b82a3885ad8a17d9f6ab84833"><div class="ttname"><a href="classtgui_1_1ChatBox.html#a9d9f808b82a3885ad8a17d9f6ab84833">tgui::ChatBox::setSize</a></div><div class="ttdeci">void setSize(const Layout2d &amp;size) override</div><div class="ttdoc">Changes the size of the chat box.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_aa5956671b8287b3141c67e23b2a4f969"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aa5956671b8287b3141c67e23b2a4f969">tgui::ChatBox::setNewLinesBelowOthers</a></div><div class="ttdeci">void setNewLinesBelowOthers(bool newLinesBelowOthers=true)</div><div class="ttdoc">Sets whether new lines are added below the other lines or above them.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_aa9085d879d0c486dd38617b07978dcf5"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aa9085d879d0c486dd38617b07978dcf5">tgui::ChatBox::getSharedRenderer</a></div><div class="ttdeci">ChatBoxRenderer * getSharedRenderer()</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
-<div class="ttc" id="aclasstgui_1_1ChatBox_html_aa90dfefcc3a5b8edf3200593aaa24b17"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aa90dfefcc3a5b8edf3200593aaa24b17">tgui::ChatBox::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_aa9c0e99ff09a9253354a61898faaa98e"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aa9c0e99ff09a9253354a61898faaa98e">tgui::ChatBox::getTextStyle</a></div><div class="ttdeci">TextStyles getTextStyle() const</div><div class="ttdoc">Returns the default text style.</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_aaa36242b970d5f511390009192acf76a"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aaa36242b970d5f511390009192acf76a">tgui::ChatBox::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; ChatBox &gt; Ptr</div><div class="ttdoc">Shared widget pointer.</div><div class="ttdef"><b>Definition:</b> ChatBox.hpp:46</div></div>
 <div class="ttc" id="aclasstgui_1_1ChatBox_html_aabe54b12745703a8a5626b68c41be3dc"><div class="ttname"><a href="classtgui_1_1ChatBox.html#aabe54b12745703a8a5626b68c41be3dc">tgui::ChatBox::getLineTextStyle</a></div><div class="ttdeci">TextStyles getLineTextStyle(std::size_t lineIndex) const</div><div class="ttdoc">Returns the text style of the requested line.</div></div>
@@ -391,7 +391,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1CopiedSharedPtr_html"><div class="ttname"><a href="classtgui_1_1CopiedSharedPtr.html">tgui::CopiedSharedPtr</a></div><div class="ttdef"><b>Definition:</b> CopiedSharedPtr.hpp:40</div></div>
 <div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition:</b> Layout.hpp:262</div></div>
 <div class="ttc" id="aclasstgui_1_1Outline_html"><div class="ttname"><a href="classtgui_1_1Outline.html">tgui::Outline</a></div><div class="ttdef"><b>Definition:</b> Outline.hpp:39</div></div>
-<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:45</div></div>
+<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:49</div></div>
 <div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition:</b> String.hpp:79</div></div>
 <div class="ttc" id="aclasstgui_1_1TextStyles_html"><div class="ttname"><a href="classtgui_1_1TextStyles.html">tgui::TextStyles</a></div><div class="ttdoc">Wrapper for text styles.</div><div class="ttdef"><b>Definition:</b> TextStyle.hpp:58</div></div>
 <div class="ttc" id="aclasstgui_1_1Text_html"><div class="ttname"><a href="classtgui_1_1Text.html">tgui::Text</a></div><div class="ttdef"><b>Definition:</b> Text.hpp:44</div></div>
@@ -406,7 +406,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -418,6 +418,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

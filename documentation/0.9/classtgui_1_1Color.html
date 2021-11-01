@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -123,13 +123,16 @@ $(function() {
 <p>Wrapper for colors.  
  <a href="classtgui_1_1Color.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Color_8hpp_source.html">/home/texus/Documents/TGUI-0.9/include/TGUI/Color.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Color_8hpp_source.html">TGUI/Color.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa90ab4e892b292a3885fc82868257848"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#aa90ab4e892b292a3885fc82868257848">Color</a> ()</td></tr>
 <tr class="memdesc:aa90ab4e892b292a3885fc82868257848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the object without a color.  <a href="classtgui_1_1Color.html#aa90ab4e892b292a3885fc82868257848">More...</a><br /></td></tr>
 <tr class="separator:aa90ab4e892b292a3885fc82868257848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032dc4dbf6a0748f870b1e4758eac813"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#a032dc4dbf6a0748f870b1e4758eac813">Color</a> (const sf::Color &amp;color)</td></tr>
+<tr class="memdesc:a032dc4dbf6a0748f870b1e4758eac813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the object from an sf::Color.  <a href="classtgui_1_1Color.html#a032dc4dbf6a0748f870b1e4758eac813">More...</a><br /></td></tr>
+<tr class="separator:a032dc4dbf6a0748f870b1e4758eac813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc5447ea586e400fc72b04e55ec1a94d"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#afc5447ea586e400fc72b04e55ec1a94d">Color</a> (std::uint8_t red, std::uint8_t green, std::uint8_t blue, std::uint8_t alpha=255)</td></tr>
 <tr class="memdesc:afc5447ea586e400fc72b04e55ec1a94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the object from an the RGB or RGBA values.  <a href="classtgui_1_1Color.html#afc5447ea586e400fc72b04e55ec1a94d">More...</a><br /></td></tr>
 <tr class="separator:afc5447ea586e400fc72b04e55ec1a94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb687dd9adde92a5d6fb84a1f07329ec"><td class="memItemLeft" align="right" valign="top">TGUI_CONSTEXPR bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#afb687dd9adde92a5d6fb84a1f07329ec">isSet</a> () const</td></tr>
 <tr class="memdesc:afb687dd9adde92a5d6fb84a1f07329ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a color was set.  <a href="classtgui_1_1Color.html#afb687dd9adde92a5d6fb84a1f07329ec">More...</a><br /></td></tr>
 <tr class="separator:afb687dd9adde92a5d6fb84a1f07329ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d26aa6b54d5846bf6320e2151450c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#ac7d26aa6b54d5846bf6320e2151450c9">operator sf::Color</a> () const</td></tr>
+<tr class="memdesc:ac7d26aa6b54d5846bf6320e2151450c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this object into an sf::Color object.  <a href="classtgui_1_1Color.html#ac7d26aa6b54d5846bf6320e2151450c9">More...</a><br /></td></tr>
+<tr class="separator:ac7d26aa6b54d5846bf6320e2151450c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe250413ace3e1b8b90bc5248d12d02a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Color.html#abe250413ace3e1b8b90bc5248d12d02a">operator Vertex::Color</a> () const</td></tr>
 <tr class="memdesc:abe250413ace3e1b8b90bc5248d12d02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this object into a <a class="el" href="structtgui_1_1Vertex_1_1Color.html">Vertex::Color</a> object.  <a href="classtgui_1_1Color.html#abe250413ace3e1b8b90bc5248d12d02a">More...</a><br /></td></tr>
 <tr class="separator:abe250413ace3e1b8b90bc5248d12d02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +226,7 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 </ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa90ab4e892b292a3885fc82868257848" name="aa90ab4e892b292a3885fc82868257848"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa90ab4e892b292a3885fc82868257848">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90ab4e892b292a3885fc82868257848">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,8 +253,42 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 
 </div>
 </div>
+<a id="a032dc4dbf6a0748f870b1e4758eac813" name="a032dc4dbf6a0748f870b1e4758eac813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032dc4dbf6a0748f870b1e4758eac813">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_CONSTEXPR tgui::Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Color &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the object from an sf::Color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td><a class="el" href="classtgui_1_1Color.html" title="Wrapper for colors.">Color</a> to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afc5447ea586e400fc72b04e55ec1a94d" name="afc5447ea586e400fc72b04e55ec1a94d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5447ea586e400fc72b04e55ec1a94d">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5447ea586e400fc72b04e55ec1a94d">&#9670;&nbsp;</a></span>Color() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,7 +347,7 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 </div>
 </div>
 <a id="afd5a5d8d7659aa0f59d6ad9fdb9ca0ce" name="afd5a5d8d7659aa0f59d6ad9fdb9ca0ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd5a5d8d7659aa0f59d6ad9fdb9ca0ce">&#9670;&nbsp;</a></span>Color() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5a5d8d7659aa0f59d6ad9fdb9ca0ce">&#9670;&nbsp;</a></span>Color() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +382,7 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 </div>
 </div>
 <a id="aa9e4053a43d22fa354a676cb28a92706" name="aa9e4053a43d22fa354a676cb28a92706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e4053a43d22fa354a676cb28a92706">&#9670;&nbsp;</a></span>Color() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e4053a43d22fa354a676cb28a92706">&#9670;&nbsp;</a></span>Color() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,6 +557,34 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 
 </div>
 </div>
+<a id="ac7d26aa6b54d5846bf6320e2151450c9" name="ac7d26aa6b54d5846bf6320e2151450c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d26aa6b54d5846bf6320e2151450c9">&#9670;&nbsp;</a></span>operator sf::Color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tgui::Color::operator sf::Color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts this object into an sf::Color object. </p>
+<dl class="section return"><dt>Returns</dt><dd>The color stored in this object, or the default color if no color was set </dd></dl>
+
+</div>
+</div>
 <a id="abe250413ace3e1b8b90bc5248d12d02a" name="abe250413ace3e1b8b90bc5248d12d02a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe250413ace3e1b8b90bc5248d12d02a">&#9670;&nbsp;</a></span>operator Vertex::Color()</h2>
 
@@ -552,7 +620,7 @@ static const <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><t
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -564,6 +632,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

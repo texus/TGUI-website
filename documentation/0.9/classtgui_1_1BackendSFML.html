@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -119,13 +119,18 @@ $(function() {
   <div class="headertitle"><div class="title">tgui::BackendSFML Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Backend that uses SFML.  
+ <a href="classtgui_1_1BackendSFML.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BackendSFML_8hpp_source.html">TGUI/Backends/SFML/BackendSFML.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tgui::BackendSFML:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classtgui_1_1BackendSFML.png" usemap="#tgui::BackendSFML_map" alt=""/>
   <map id="tgui::BackendSFML_map" name="tgui::BackendSFML_map">
-<area href="classtgui_1_1Backend.html" title="Base class for the backend." alt="tgui::Backend" shape="rect" coords="0,0,121,24"/>
+<area href="classtgui_1_1BackendBase.html" title="Base class for the backend." alt="tgui::BackendBase" shape="rect" coords="0,0,121,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,24 +141,33 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a456563bfd1fa33caf8fe24aaa5581f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">setGuiWindow</a> (<a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *gui, sf::Window *window)</td></tr>
-<tr class="memdesc:a456563bfd1fa33caf8fe24aaa5581f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend which window belongs to the gui.  <a href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">More...</a><br /></td></tr>
-<tr class="separator:a456563bfd1fa33caf8fe24aaa5581f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f4204a4a87367f254e7bb4c0555045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#ae1f4204a4a87367f254e7bb4c0555045">attachGui</a> (<a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *gui) override</td></tr>
-<tr class="memdesc:ae1f4204a4a87367f254e7bb4c0555045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend that a new gui object has been created.  <a href="classtgui_1_1BackendSFML.html#ae1f4204a4a87367f254e7bb4c0555045">More...</a><br /></td></tr>
-<tr class="separator:ae1f4204a4a87367f254e7bb4c0555045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09961c1ebd8fdeeb490aec027479bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">detatchGui</a> (<a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *gui) override</td></tr>
-<tr class="memdesc:aa09961c1ebd8fdeeb490aec027479bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend that a gui object is being destroyed.  <a href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">More...</a><br /></td></tr>
-<tr class="separator:aa09961c1ebd8fdeeb490aec027479bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50c5fd4c47376cd5545a614173bdd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a5c50c5fd4c47376cd5545a614173bdd5">attachGui</a> (<a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *gui) override</td></tr>
+<tr class="memdesc:a5c50c5fd4c47376cd5545a614173bdd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend that a new gui object has been created.  <a href="classtgui_1_1BackendSFML.html#a5c50c5fd4c47376cd5545a614173bdd5">More...</a><br /></td></tr>
+<tr class="separator:a5c50c5fd4c47376cd5545a614173bdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e38c734b92c6474b51ccf270544bb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#af9e38c734b92c6474b51ccf270544bb5">detatchGui</a> (<a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *gui) override</td></tr>
+<tr class="memdesc:af9e38c734b92c6474b51ccf270544bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend that a gui object is being destroyed.  <a href="classtgui_1_1BackendSFML.html#af9e38c734b92c6474b51ccf270544bb5">More...</a><br /></td></tr>
+<tr class="separator:af9e38c734b92c6474b51ccf270544bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada434f9261914ee583f16fd70295cf63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#ada434f9261914ee583f16fd70295cf63">createDefaultFont</a> () override</td></tr>
+<tr class="memdesc:ada434f9261914ee583f16fd70295cf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns the default font for all widgets.  <a href="classtgui_1_1BackendSFML.html#ada434f9261914ee583f16fd70295cf63">More...</a><br /></td></tr>
+<tr class="separator:ada434f9261914ee583f16fd70295cf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190ed2534a25fe0b933a40bb93e3ed6f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFontBase.html">BackendFontBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a190ed2534a25fe0b933a40bb93e3ed6f">createFont</a> () override</td></tr>
+<tr class="memdesc:a190ed2534a25fe0b933a40bb93e3ed6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new font object.  <a href="classtgui_1_1BackendSFML.html#a190ed2534a25fe0b933a40bb93e3ed6f">More...</a><br /></td></tr>
+<tr class="separator:a190ed2534a25fe0b933a40bb93e3ed6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04aa769a354a585d1f5f092bb44d3b49"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTextBase.html">BackendTextBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a04aa769a354a585d1f5f092bb44d3b49">createText</a> () override</td></tr>
+<tr class="memdesc:a04aa769a354a585d1f5f092bb44d3b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new text object.  <a href="classtgui_1_1BackendSFML.html#a04aa769a354a585d1f5f092bb44d3b49">More...</a><br /></td></tr>
+<tr class="separator:a04aa769a354a585d1f5f092bb44d3b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb16fd34763a4808be2bb0541803231"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTextureBase.html">BackendTextureBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#acbb16fd34763a4808be2bb0541803231">createTexture</a> () override</td></tr>
+<tr class="memdesc:acbb16fd34763a4808be2bb0541803231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new texture object.  <a href="classtgui_1_1BackendSFML.html#acbb16fd34763a4808be2bb0541803231">More...</a><br /></td></tr>
+<tr class="separator:acbb16fd34763a4808be2bb0541803231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f07a5c119bdefa3c5563bc6e7f41e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">setMouseCursorStyle</a> (<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, const std::uint8_t *pixels, <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> size, <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> hotspot) override</td></tr>
 <tr class="memdesc:a3f07a5c119bdefa3c5563bc6e7f41e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the look of a certain mouse cursor by using a bitmap.  <a href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">More...</a><br /></td></tr>
 <tr class="separator:a3f07a5c119bdefa3c5563bc6e7f41e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df66bfcc6a649d8d49c776db9718539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">resetMouseCursorStyle</a> (<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) override</td></tr>
 <tr class="memdesc:a7df66bfcc6a649d8d49c776db9718539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the look of a certain mouse cursor back to the system theme.  <a href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">More...</a><br /></td></tr>
 <tr class="separator:a7df66bfcc6a649d8d49c776db9718539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c791276b27781a6637faa005f2f984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">setMouseCursor</a> (<a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *gui, <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) override</td></tr>
-<tr class="memdesc:af0c791276b27781a6637faa005f2f984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the mouse cursor when the mouse is on top of the window to which the gui is attached.  <a href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">More...</a><br /></td></tr>
-<tr class="separator:af0c791276b27781a6637faa005f2f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfd852c01af0fe7c23d3cd997cf96a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#aecfd852c01af0fe7c23d3cd997cf96a1">setMouseCursor</a> (<a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *gui, <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) override</td></tr>
+<tr class="memdesc:aecfd852c01af0fe7c23d3cd997cf96a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the mouse cursor when the mouse is on top of the window to which the gui is attached.  <a href="classtgui_1_1BackendSFML.html#aecfd852c01af0fe7c23d3cd997cf96a1">More...</a><br /></td></tr>
+<tr class="separator:aecfd852c01af0fe7c23d3cd997cf96a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c0020bd43be66ef911d1b6a6880f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">openVirtualKeyboard</a> (const <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> &amp;inputRect) override</td></tr>
 <tr class="memdesc:aa3c0020bd43be66ef911d1b6a6880f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the virtual keyboard on Android and iOS.  <a href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">More...</a><br /></td></tr>
 <tr class="separator:aa3c0020bd43be66ef911d1b6a6880f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,51 +184,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closeVirtualKeyboard<
 <tr class="memitem:a8f08da1b358027c9a95fde146bf071a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a8f08da1b358027c9a95fde146bf071a5">getClipboard</a> () const override</td></tr>
 <tr class="memdesc:a8f08da1b358027c9a95fde146bf071a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the contents of the clipboard.  <a href="classtgui_1_1BackendSFML.html#a8f08da1b358027c9a95fde146bf071a5">More...</a><br /></td></tr>
 <tr class="separator:a8f08da1b358027c9a95fde146bf071a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classtgui_1_1Backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtgui_1_1Backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtgui_1_1Backend.html">tgui::Backend</a></td></tr>
-<tr class="memitem:af81e8be2e4f7de13dfa437d49193caf0 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top"><a id="af81e8be2e4f7de13dfa437d49193caf0" name="af81e8be2e4f7de13dfa437d49193caf0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Backend</b> ()=default</td></tr>
-<tr class="memdesc:af81e8be2e4f7de13dfa437d49193caf0 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:af81e8be2e4f7de13dfa437d49193caf0 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce378a9e57ef5544d05b2d7bca2bebe inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top"><a id="a9ce378a9e57ef5544d05b2d7bca2bebe" name="a9ce378a9e57ef5544d05b2d7bca2bebe"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Backend</b> ()=default</td></tr>
-<tr class="memdesc:a9ce378a9e57ef5544d05b2d7bca2bebe inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
-<tr class="separator:a9ce378a9e57ef5544d05b2d7bca2bebe inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3daf024f41ca0ea00c83ab5c2910685 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#ad3daf024f41ca0ea00c83ab5c2910685">setDestroyOnLastGuiDetatch</a> (bool destroyOnDetatch)</td></tr>
-<tr class="memdesc:ad3daf024f41ca0ea00c83ab5c2910685 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend whether it should destroy itself when the last <a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a> is detached from it.  <a href="classtgui_1_1Backend.html#ad3daf024f41ca0ea00c83ab5c2910685">More...</a><br /></td></tr>
-<tr class="separator:ad3daf024f41ca0ea00c83ab5c2910685 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf2f1182874f9055fc2e07dbbbc18496 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtgui_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#adf2f1182874f9055fc2e07dbbbc18496">createDefaultFont</a> ()</td></tr>
-<tr class="memdesc:adf2f1182874f9055fc2e07dbbbc18496 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns the default font for all widgets.  <a href="classtgui_1_1Backend.html#adf2f1182874f9055fc2e07dbbbc18496">More...</a><br /></td></tr>
-<tr class="separator:adf2f1182874f9055fc2e07dbbbc18496 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e25760fbc5e7286aff182fb791fdb35 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFont.html">BackendFont</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#a5e25760fbc5e7286aff182fb791fdb35">createFont</a> ()</td></tr>
-<tr class="memdesc:a5e25760fbc5e7286aff182fb791fdb35 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new font object.  <a href="classtgui_1_1Backend.html#a5e25760fbc5e7286aff182fb791fdb35">More...</a><br /></td></tr>
-<tr class="separator:a5e25760fbc5e7286aff182fb791fdb35 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafde080cbd0bc4de89517f2e806bb3bf inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendText.html">BackendText</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#aafde080cbd0bc4de89517f2e806bb3bf">createText</a> ()</td></tr>
-<tr class="memdesc:aafde080cbd0bc4de89517f2e806bb3bf inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new text object.  <a href="classtgui_1_1Backend.html#aafde080cbd0bc4de89517f2e806bb3bf">More...</a><br /></td></tr>
-<tr class="separator:aafde080cbd0bc4de89517f2e806bb3bf inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1abd14043aeff35104fff8e1a97b2faa inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#a1abd14043aeff35104fff8e1a97b2faa">createTexture</a> ()</td></tr>
-<tr class="memdesc:a1abd14043aeff35104fff8e1a97b2faa inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new texture object.  <a href="classtgui_1_1Backend.html#a1abd14043aeff35104fff8e1a97b2faa">More...</a><br /></td></tr>
-<tr class="separator:a1abd14043aeff35104fff8e1a97b2faa inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f72309821690fde955c6be8f3458bb9 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; std::uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#a5f72309821690fde955c6be8f3458bb9">readFileFromAndroidAssets</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;filename, std::size_t &amp;fileSize) const</td></tr>
-<tr class="memdesc:a5f72309821690fde955c6be8f3458bb9 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the AssetManager on Android to read a file and return its contents.  <a href="classtgui_1_1Backend.html#a5f72309821690fde955c6be8f3458bb9">More...</a><br /></td></tr>
-<tr class="separator:a5f72309821690fde955c6be8f3458bb9 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af76c5d38caf92a2d934caa00a830c7b4 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#af76c5d38caf92a2d934caa00a830c7b4">hasRenderer</a> () const</td></tr>
-<tr class="memdesc:af76c5d38caf92a2d934caa00a830c7b4 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a renderer has been attached to the backend.  <a href="classtgui_1_1Backend.html#af76c5d38caf92a2d934caa00a830c7b4">More...</a><br /></td></tr>
-<tr class="separator:af76c5d38caf92a2d934caa00a830c7b4 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5802c474eb777d167c79c1016fd216 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendRenderer.html">BackendRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#abb5802c474eb777d167c79c1016fd216">getRenderer</a> () const</td></tr>
-<tr class="memdesc:abb5802c474eb777d167c79c1016fd216 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer.  <a href="classtgui_1_1Backend.html#abb5802c474eb777d167c79c1016fd216">More...</a><br /></td></tr>
-<tr class="separator:abb5802c474eb777d167c79c1016fd216 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20dc483423d9180b4029a073a7080f1d inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#a20dc483423d9180b4029a073a7080f1d">setRenderer</a> (std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendRenderer.html">BackendRenderer</a> &gt; renderer)</td></tr>
-<tr class="memdesc:a20dc483423d9180b4029a073a7080f1d inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the renderer that the backend should use.  <a href="classtgui_1_1Backend.html#a20dc483423d9180b4029a073a7080f1d">More...</a><br /></td></tr>
-<tr class="separator:a20dc483423d9180b4029a073a7080f1d inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a76a11027258ff077ab1120a8e3407 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#ad0a76a11027258ff077ab1120a8e3407">hasFontBackend</a> () const</td></tr>
-<tr class="memdesc:ad0a76a11027258ff077ab1120a8e3407 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a font factory has been attached to the backend.  <a href="classtgui_1_1Backend.html#ad0a76a11027258ff077ab1120a8e3407">More...</a><br /></td></tr>
-<tr class="separator:ad0a76a11027258ff077ab1120a8e3407 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdc54cff0472dec73d2a8e0ed2a3d53 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFontFactory.html">BackendFontFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#a0cdc54cff0472dec73d2a8e0ed2a3d53">getFontBackend</a> () const</td></tr>
-<tr class="memdesc:a0cdc54cff0472dec73d2a8e0ed2a3d53 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font factory.  <a href="classtgui_1_1Backend.html#a0cdc54cff0472dec73d2a8e0ed2a3d53">More...</a><br /></td></tr>
-<tr class="separator:a0cdc54cff0472dec73d2a8e0ed2a3d53 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac923c3c7246acc013af297fe26207b30 inherit pub_methods_classtgui_1_1Backend"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Backend.html#ac923c3c7246acc013af297fe26207b30">setFontBackend</a> (std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFontFactory.html">BackendFontFactory</a> &gt; fontBackend)</td></tr>
-<tr class="memdesc:ac923c3c7246acc013af297fe26207b30 inherit pub_methods_classtgui_1_1Backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font factory that the backend should use.  <a href="classtgui_1_1Backend.html#ac923c3c7246acc013af297fe26207b30">More...</a><br /></td></tr>
-<tr class="separator:ac923c3c7246acc013af297fe26207b30 inherit pub_methods_classtgui_1_1Backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f807e566cb0788020b2a620c780fd43"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; BackendRenderTargetSFML &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a6f807e566cb0788020b2a620c780fd43">createGuiRenderTarget</a> (<a class="el" href="classtgui_1_1GuiSFML.html">GuiSFML</a> *gui, sf::RenderTarget &amp;target)</td></tr>
+<tr class="memdesc:a6f807e566cb0788020b2a620c780fd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SFML target to which the gui will render and returns a new render target object to interact with.  <a href="classtgui_1_1BackendSFML.html#a6f807e566cb0788020b2a620c780fd43">More...</a><br /></td></tr>
+<tr class="separator:a6f807e566cb0788020b2a620c780fd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classtgui_1_1BackendBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtgui_1_1BackendBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td></tr>
+<tr class="memitem:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="aed3b8680771a35d6bc9d8fda2e2131ff" name="aed3b8680771a35d6bc9d8fda2e2131ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BackendBase</b> ()=default</td></tr>
+<tr class="memdesc:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="a5f4bb719d74eb4740cf85d65d73883f8" name="a5f4bb719d74eb4740cf85d65d73883f8"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendBase</b> ()=default</td></tr>
+<tr class="memdesc:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad745f744ecd9d889637424be9c2d4d0d inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendBase.html#ad745f744ecd9d889637424be9c2d4d0d">setDestroyOnLastGuiDetatch</a> (bool destroyOnDetatch)</td></tr>
+<tr class="memdesc:ad745f744ecd9d889637424be9c2d4d0d inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the backend whether it should destroy itself when the last Gui is detached from it.  <a href="classtgui_1_1BackendBase.html#ad745f744ecd9d889637424be9c2d4d0d">More...</a><br /></td></tr>
+<tr class="separator:ad745f744ecd9d889637424be9c2d4d0d inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3d01be92759ff3d6468a88335219a9 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; std::uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendBase.html#abe3d01be92759ff3d6468a88335219a9">readFileFromAndroidAssets</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;filename, std::size_t &amp;fileSize) const</td></tr>
+<tr class="memdesc:abe3d01be92759ff3d6468a88335219a9 inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the AssetManager on Android to read a file and return its contents.  <a href="classtgui_1_1BackendBase.html#abe3d01be92759ff3d6468a88335219a9">More...</a><br /></td></tr>
+<tr class="separator:abe3d01be92759ff3d6468a88335219a9 inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -222,9 +209,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae6be90a5579cd7cecd8debb724112b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that converts an SFML event to a TGUI event.  <a href="classtgui_1_1BackendSFML.html#ae6be90a5579cd7cecd8debb724112b9e">More...</a><br /></td></tr>
 <tr class="separator:ae6be90a5579cd7cecd8debb724112b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae1f4204a4a87367f254e7bb4c0555045" name="ae1f4204a4a87367f254e7bb4c0555045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1f4204a4a87367f254e7bb4c0555045">&#9670;&nbsp;</a></span>attachGui()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Backend that uses SFML. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5c50c5fd4c47376cd5545a614173bdd5" name="a5c50c5fd4c47376cd5545a614173bdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c50c5fd4c47376cd5545a614173bdd5">&#9670;&nbsp;</a></span>attachGui()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +224,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void tgui::BackendSFML::attachGui </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td>
           <td class="paramname"><em>gui</em></td><td>)</td>
           <td></td>
         </tr>
@@ -255,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#ada423f06119380980ab0bb466c41e467">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a91aca0eb3816f37125e52e85893b40b4">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -305,8 +294,166 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa09961c1ebd8fdeeb490aec027479bc7" name="aa09961c1ebd8fdeeb490aec027479bc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa09961c1ebd8fdeeb490aec027479bc7">&#9670;&nbsp;</a></span>detatchGui()</h2>
+<a id="ada434f9261914ee583f16fd70295cf63" name="ada434f9261914ee583f16fd70295cf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada434f9261914ee583f16fd70295cf63">&#9670;&nbsp;</a></span>createDefaultFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1Font.html">Font</a> tgui::BackendSFML::createDefaultFont </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates and returns the default font for all widgets. </p>
+<dl class="section return"><dt>Returns</dt><dd>Default font </dd></dl>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a3ebcbc849902546602554ad20fc284e6">tgui::BackendBase</a>.</p>
+
+</div>
+</div>
+<a id="a190ed2534a25fe0b933a40bb93e3ed6f" name="a190ed2534a25fe0b933a40bb93e3ed6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190ed2534a25fe0b933a40bb93e3ed6f">&#9670;&nbsp;</a></span>createFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFontBase.html">BackendFontBase</a> &gt; tgui::BackendSFML::createFont </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new font object. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Font.html">Font</a> that is specific to the backend </dd></dl>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a956cc00dbf1652f496fdba4898e0cbd2">tgui::BackendBase</a>.</p>
+
+</div>
+</div>
+<a id="a6f807e566cb0788020b2a620c780fd43" name="a6f807e566cb0788020b2a620c780fd43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f807e566cb0788020b2a620c780fd43">&#9670;&nbsp;</a></span>createGuiRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; BackendRenderTargetSFML &gt; tgui::BackendSFML::createGuiRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1GuiSFML.html">GuiSFML</a> *&#160;</td>
+          <td class="paramname"><em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderTarget &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the SFML target to which the gui will render and returns a new render target object to interact with. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gui</td><td>The gui for which the render target should be created </td></tr>
+    <tr><td class="paramname">target</td><td>SFML render target to draw on</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Render target that abstracts the SFML drawing code </dd></dl>
+
+</div>
+</div>
+<a id="a04aa769a354a585d1f5f092bb44d3b49" name="a04aa769a354a585d1f5f092bb44d3b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04aa769a354a585d1f5f092bb44d3b49">&#9670;&nbsp;</a></span>createText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTextBase.html">BackendTextBase</a> &gt; tgui::BackendSFML::createText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new text object. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Text.html">Text</a> that is specific to the backend </dd></dl>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a1a6bb957fc500a0080be0c0152d56de6">tgui::BackendBase</a>.</p>
+
+</div>
+</div>
+<a id="acbb16fd34763a4808be2bb0541803231" name="acbb16fd34763a4808be2bb0541803231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb16fd34763a4808be2bb0541803231">&#9670;&nbsp;</a></span>createTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTextureBase.html">BackendTextureBase</a> &gt; tgui::BackendSFML::createTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new texture object. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Texture.html">Texture</a> that is specific to the backend </dd></dl>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a801738cfb1c5f220a0608fc433cf6f82">tgui::BackendBase</a>.</p>
+
+</div>
+</div>
+<a id="af9e38c734b92c6474b51ccf270544bb5" name="af9e38c734b92c6474b51ccf270544bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e38c734b92c6474b51ccf270544bb5">&#9670;&nbsp;</a></span>detatchGui()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +464,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void tgui::BackendSFML::detatchGui </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td>
           <td class="paramname"><em>gui</em></td><td>)</td>
           <td></td>
         </tr>
@@ -332,12 +479,12 @@ Static Public Member Functions</h2></td></tr>
 <p>Informs the backend that a gui object is being destroyed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gui</td><td><a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a> object that is about to be deconstructed </td></tr>
+    <tr><td class="paramname">gui</td><td>Gui object that is about to be deconstructed </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#a1d134ed81cf90adad96f9dbf2857c839">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#aa16048c0bba82c0ab17070619b133a9a">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -367,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the contents of the clipboard. </p>
 <dl class="section return"><dt>Returns</dt><dd>Clipboard contents </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Backend.html#a792ef8edc342fa3598f395d11a869aff">tgui::Backend</a>.</p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1BackendBase.html#a411aa8e6f130479958e261e8f6e3cd23">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -404,7 +551,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether queries modifier key is being pressed </dd></dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#a90668797eec9908088c6341c31d4d112">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a98c870001da247228e7bb417947e25ff">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -440,7 +587,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Backend.html#aa5f89d746ae15b5b7d2de1a22174a251">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#ad0cd2a5dc7e4196be66ef22a43b8bb6b">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -476,7 +623,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#a6621444d72cca74caaf1d119c7913148">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a2261a9186c7bbfcefc348909c68f49ff">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -512,50 +659,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Backend.html#a03c75f53ec64da205272fa15358dfcbf">tgui::Backend</a>.</p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1BackendBase.html#a057569ad168c048a6fde8a5093d8e148">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
-<a id="a456563bfd1fa33caf8fe24aaa5581f17" name="a456563bfd1fa33caf8fe24aaa5581f17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a456563bfd1fa33caf8fe24aaa5581f17">&#9670;&nbsp;</a></span>setGuiWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tgui::BackendSFML::setGuiWindow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td>
-          <td class="paramname"><em>gui</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Window *&#160;</td>
-          <td class="paramname"><em>window</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Informs the backend which window belongs to the gui. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gui</td><td><a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a> that was passed earlier via the attachGui function </td></tr>
-    <tr><td class="paramname">window</td><td>The window to associate with this gui</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This function is called by the gui itself when it is given a window. </p>
-
-</div>
-</div>
-<a id="af0c791276b27781a6637faa005f2f984" name="af0c791276b27781a6637faa005f2f984"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c791276b27781a6637faa005f2f984">&#9670;&nbsp;</a></span>setMouseCursor()</h2>
+<a id="aecfd852c01af0fe7c23d3cd997cf96a1" name="aecfd852c01af0fe7c23d3cd997cf96a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfd852c01af0fe7c23d3cd997cf96a1">&#9670;&nbsp;</a></span>setMouseCursor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,7 +675,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void tgui::BackendSFML::setMouseCursor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td>
           <td class="paramname"><em>gui</em>, </td>
         </tr>
         <tr>
@@ -597,7 +706,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#a4b754a5c1cf61a6ff1cca9a7edf0c31b">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#aeaebf04cedc5ba5be53299bd0f2346ca">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -658,18 +767,18 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Backend.html#a21e91caf5927acdf8e141ffa1f0bbb50">tgui::Backend</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#aebea3c6344ea1cf2b9b434b9b6fc32ae">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Window/SFML/<a class="el" href="BackendSFML_8hpp_source.html">BackendSFML.hpp</a></li>
+<li>include/TGUI/Backends/SFML/<a class="el" href="BackendSFML_8hpp_source.html">BackendSFML.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -681,6 +790,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

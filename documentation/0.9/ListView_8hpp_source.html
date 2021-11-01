@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -437,7 +437,7 @@ $(function() {
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>        <span class="keywordtype">void</span> keyPressed(<span class="keyword">const</span> <a class="code hl_struct" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a>&amp; event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span> </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno"><a class="line" href="classtgui_1_1ListView.html#a9d6f4e8c911ffc1d4e71f8a1cb612a7a">  813</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1ListView.html#a9d6f4e8c911ffc1d4e71f8a1cb612a7a">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno"><a class="line" href="classtgui_1_1ListView.html#a752e9cbc1cf9ab30773a42678e9d4e03">  813</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1ListView.html#a752e9cbc1cf9ab30773a42678e9d4e03">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keyword">protected</span>:</div>
@@ -549,11 +549,11 @@ $(function() {
 <div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span> </div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>        <span class="comment">// Draw the header text for a single column</span></div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span><span class="comment"></span>        <span class="keywordtype">void</span> drawHeaderText(<a class="code hl_class" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states, <span class="keywordtype">float</span> columnWidth, <span class="keywordtype">float</span> headerHeight, std::size_t column) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span><span class="comment"></span>        <span class="keywordtype">void</span> drawHeaderText(<a class="code hl_class" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states, <span class="keywordtype">float</span> columnWidth, <span class="keywordtype">float</span> headerHeight, std::size_t column) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span> </div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        <span class="comment">// Draw the texts in a single column</span></div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span><span class="comment"></span>        <span class="keywordtype">void</span> drawColumn(<a class="code hl_class" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states, std::size_t firstItem, std::size_t lastItem, std::size_t column, <span class="keywordtype">float</span> columnWidth) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span><span class="comment"></span>        <span class="keywordtype">void</span> drawColumn(<a class="code hl_class" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states, std::size_t firstItem, std::size_t lastItem, std::size_t column, <span class="keywordtype">float</span> columnWidth) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span> </div>
 <div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        <span class="comment">// This function is called every frame with the time passed since the last frame.</span></div>
@@ -635,7 +635,7 @@ $(function() {
 <div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span> </div>
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span> </div>
 <div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_LIST_VIEW_HPP</span></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderTarget_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderTargetBase_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTargetBase.html">tgui::BackendRenderTargetBase</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html"><div class="ttname"><a href="classtgui_1_1Color.html">tgui::Color</a></div><div class="ttdoc">Wrapper for colors.</div><div class="ttdef"><b>Definition:</b> Color.hpp:63</div></div>
 <div class="ttc" id="aclasstgui_1_1CopiedSharedPtr_html"><div class="ttname"><a href="classtgui_1_1CopiedSharedPtr.html">tgui::CopiedSharedPtr</a></div><div class="ttdef"><b>Definition:</b> CopiedSharedPtr.hpp:40</div></div>
 <div class="ttc" id="aclasstgui_1_1Duration_html"><div class="ttname"><a href="classtgui_1_1Duration.html">tgui::Duration</a></div><div class="ttdoc">Wrapper for durations.</div><div class="ttdef"><b>Definition:</b> Duration.hpp:52</div></div>
@@ -690,6 +690,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1ListView_html_a72571d91bff3e8d2f3377d05c8fffaa5"><div class="ttname"><a href="classtgui_1_1ListView.html#a72571d91bff3e8d2f3377d05c8fffaa5">tgui::ListView::insertItem</a></div><div class="ttdeci">void insertItem(std::size_t index, const std::vector&lt; String &gt; &amp;item)</div><div class="ttdoc">Inserts an item into the list.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a7263e706d5abc0c6540783200749ad41"><div class="ttname"><a href="classtgui_1_1ListView.html#a7263e706d5abc0c6540783200749ad41">tgui::ListView::setItemIcon</a></div><div class="ttdeci">void setItemIcon(std::size_t index, const Texture &amp;texture)</div><div class="ttdoc">Sets a small icon in front of the item.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a72a2c980ffe2fca4ae7e10ad7b6d95c9"><div class="ttname"><a href="classtgui_1_1ListView.html#a72a2c980ffe2fca4ae7e10ad7b6d95c9">tgui::ListView::getColumnWidth</a></div><div class="ttdeci">float getColumnWidth(std::size_t index) const</div><div class="ttdoc">Returns the width of a column.</div></div>
+<div class="ttc" id="aclasstgui_1_1ListView_html_a752e9cbc1cf9ab30773a42678e9d4e03"><div class="ttname"><a href="classtgui_1_1ListView.html#a752e9cbc1cf9ab30773a42678e9d4e03">tgui::ListView::draw</a></div><div class="ttdeci">void draw(BackendRenderTargetBase &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a776d0b468b1616eb4c69294817932647"><div class="ttname"><a href="classtgui_1_1ListView.html#a776d0b468b1616eb4c69294817932647">tgui::ListView::setVerticalScrollbarPolicy</a></div><div class="ttdeci">void setVerticalScrollbarPolicy(Scrollbar::Policy policy)</div><div class="ttdoc">Changes when the vertical scrollbar should be displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a7c0bbf132c8ee2d2a1cc7f18a117fc6e"><div class="ttname"><a href="classtgui_1_1ListView.html#a7c0bbf132c8ee2d2a1cc7f18a117fc6e">tgui::ListView::setFixedIconSize</a></div><div class="ttdeci">void setFixedIconSize(Vector2f iconSize)</div><div class="ttdoc">Sets a size to which all icons should be scaled.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a878032fb53fdccdd0538d73a3038b41c"><div class="ttname"><a href="classtgui_1_1ListView.html#a878032fb53fdccdd0538d73a3038b41c">tgui::ListView::ColumnAlignment</a></div><div class="ttdeci">ColumnAlignment</div><div class="ttdoc">The text alignment for all texts within a column.</div><div class="ttdef"><b>Definition:</b> ListView.hpp:56</div></div>
@@ -700,7 +701,6 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1ListView_html_a9b1a05a629fac850e656e398f57bf945"><div class="ttname"><a href="classtgui_1_1ListView.html#a9b1a05a629fac850e656e398f57bf945">tgui::ListView::getAutoScroll</a></div><div class="ttdeci">bool getAutoScroll() const</div><div class="ttdoc">Returns whether the list view scrolls to the bottom when a new item is added.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a9c51f8c815563653b8a8b62123ab972f"><div class="ttname"><a href="classtgui_1_1ListView.html#a9c51f8c815563653b8a8b62123ab972f">tgui::ListView::setHeaderHeight</a></div><div class="ttdeci">void setHeaderHeight(float height)</div><div class="ttdoc">Changes the height of the header row.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a9c5e40c90f54cb242cc21dc801bce6d0"><div class="ttname"><a href="classtgui_1_1ListView.html#a9c5e40c90f54cb242cc21dc801bce6d0">tgui::ListView::setShowHorizontalGridLines</a></div><div class="ttdeci">void setShowHorizontalGridLines(bool showGridLines)</div><div class="ttdoc">Changes whether lines are drawn between items.</div></div>
-<div class="ttc" id="aclasstgui_1_1ListView_html_a9d6f4e8c911ffc1d4e71f8a1cb612a7a"><div class="ttname"><a href="classtgui_1_1ListView.html#a9d6f4e8c911ffc1d4e71f8a1cb612a7a">tgui::ListView::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_a9f84cbcddb20e56d7da05c0e53af4878"><div class="ttname"><a href="classtgui_1_1ListView.html#a9f84cbcddb20e56d7da05c0e53af4878">tgui::ListView::deselectItems</a></div><div class="ttdeci">void deselectItems()</div><div class="ttdoc">Deselects the selected items.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_aa0574fe957ff827adbc93954a7ec257f"><div class="ttname"><a href="classtgui_1_1ListView.html#aa0574fe957ff827adbc93954a7ec257f">tgui::ListView::addMultipleItems</a></div><div class="ttdeci">void addMultipleItems(const std::vector&lt; std::vector&lt; String &gt; &gt; &amp;items)</div><div class="ttdoc">Adds multiple items to the list.</div></div>
 <div class="ttc" id="aclasstgui_1_1ListView_html_aa247dae713a8c4b01eaa9a8a37b06c34"><div class="ttname"><a href="classtgui_1_1ListView.html#aa247dae713a8c4b01eaa9a8a37b06c34">tgui::ListView::setExpandLastColumn</a></div><div class="ttdeci">void setExpandLastColumn(bool expand)</div><div class="ttdoc">Changes whether the last column is expanded to fill the list view (if all columns fit inside the list...</div></div>
@@ -733,7 +733,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1Scrollbar_html_a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d"><div class="ttname"><a href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d">tgui::Scrollbar::Policy::Automatic</a></div><div class="ttdeci">@ Automatic</div><div class="ttdoc">Show the scrollbar only when needed (default)</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; int &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1Signal_html"><div class="ttname"><a href="classtgui_1_1Signal.html">tgui::Signal</a></div><div class="ttdoc">Signal to which the user can subscribe to get callbacks from.</div><div class="ttdef"><b>Definition:</b> Signal.hpp:58</div></div>
-<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:45</div></div>
+<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:49</div></div>
 <div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition:</b> String.hpp:79</div></div>
 <div class="ttc" id="aclasstgui_1_1Text_html"><div class="ttname"><a href="classtgui_1_1Text.html">tgui::Text</a></div><div class="ttdef"><b>Definition:</b> Text.hpp:44</div></div>
 <div class="ttc" id="aclasstgui_1_1Texture_html"><div class="ttname"><a href="classtgui_1_1Texture.html">tgui::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.hpp:49</div></div>
@@ -750,7 +750,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -762,6 +762,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

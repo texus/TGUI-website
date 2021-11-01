@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -261,7 +261,7 @@ $(function() {
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordtype">void</span> leftMouseButtonNoLongerDown() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classtgui_1_1Label.html#a354dbc1a3077b6a372aeaa10622ef919">  342</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Label.html#a354dbc1a3077b6a372aeaa10622ef919">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classtgui_1_1Label.html#a6197ec744bfc8b5c01a84b71bb36009b">  342</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Label.html#a6197ec744bfc8b5c01a84b71bb36009b">draw</a>(<a class="code hl_class" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a>&amp; target, <a class="code hl_struct" href="structtgui_1_1RenderStates.html">RenderStates</a> states) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keyword">protected</span>:</div>
@@ -336,7 +336,7 @@ $(function() {
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_LABEL_HPP</span></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderTarget_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderTargetBase_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTargetBase.html">tgui::BackendRenderTargetBase</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition:</b> BackendRenderTarget.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1ClickableWidget_html"><div class="ttname"><a href="classtgui_1_1ClickableWidget.html">tgui::ClickableWidget</a></div><div class="ttdoc">Clickable widget.</div><div class="ttdef"><b>Definition:</b> ClickableWidget.hpp:40</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html"><div class="ttname"><a href="classtgui_1_1Color.html">tgui::Color</a></div><div class="ttdoc">Wrapper for colors.</div><div class="ttdef"><b>Definition:</b> Color.hpp:63</div></div>
 <div class="ttc" id="aclasstgui_1_1Container_html"><div class="ttname"><a href="classtgui_1_1Container.html">tgui::Container</a></div><div class="ttdoc">Container widget.</div><div class="ttdef"><b>Definition:</b> Container.hpp:47</div></div>
@@ -354,10 +354,10 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1Label_html_a244e38f5ccc87d4d973af832d9b378be"><div class="ttname"><a href="classtgui_1_1Label.html#a244e38f5ccc87d4d973af832d9b378be">tgui::Label::clone</a></div><div class="ttdeci">Widget::Ptr clone() const override</div><div class="ttdoc">Makes a copy of the widget if you don't know its exact type.</div><div class="ttdef"><b>Definition:</b> Label.hpp:396</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a2974ef71da25253342a8b3660b6d094c"><div class="ttname"><a href="classtgui_1_1Label.html#a2974ef71da25253342a8b3660b6d094c">tgui::Label::VerticalAlignment</a></div><div class="ttdeci">VerticalAlignment</div><div class="ttdoc">The vertical text alignment.</div><div class="ttdef"><b>Definition:</b> Label.hpp:65</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a32bbfe0091524b8f43d09a47fa33cbb3"><div class="ttname"><a href="classtgui_1_1Label.html#a32bbfe0091524b8f43d09a47fa33cbb3">tgui::Label::ignoreMouseEvents</a></div><div class="ttdeci">void ignoreMouseEvents(bool ignore=true)</div><div class="ttdoc">Sets whether the widget should completely ignore mouse events and let them pass to the widgets behind...</div></div>
-<div class="ttc" id="aclasstgui_1_1Label_html_a354dbc1a3077b6a372aeaa10622ef919"><div class="ttname"><a href="classtgui_1_1Label.html#a354dbc1a3077b6a372aeaa10622ef919">tgui::Label::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a379e559273c82cdcdd79f5cd48c51e1a"><div class="ttname"><a href="classtgui_1_1Label.html#a379e559273c82cdcdd79f5cd48c51e1a">tgui::Label::load</a></div><div class="ttdeci">void load(const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</div><div class="ttdoc">Loads the widget from a tree of nodes.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a3b3a9da9382f1c077091ec6a2c87be06"><div class="ttname"><a href="classtgui_1_1Label.html#a3b3a9da9382f1c077091ec6a2c87be06">tgui::Label::getRenderer</a></div><div class="ttdeci">LabelRenderer * getRenderer()</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a48b7c06839765ebae6928526f83eb192"><div class="ttname"><a href="classtgui_1_1Label.html#a48b7c06839765ebae6928526f83eb192">tgui::Label::getMaximumTextWidth</a></div><div class="ttdeci">float getMaximumTextWidth() const</div><div class="ttdoc">Returns the maximum width that the text will have.</div></div>
+<div class="ttc" id="aclasstgui_1_1Label_html_a6197ec744bfc8b5c01a84b71bb36009b"><div class="ttname"><a href="classtgui_1_1Label.html#a6197ec744bfc8b5c01a84b71bb36009b">tgui::Label::draw</a></div><div class="ttdeci">void draw(BackendRenderTargetBase &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a6af7e00a88a1e196931e2badf2ac5eb3"><div class="ttname"><a href="classtgui_1_1Label.html#a6af7e00a88a1e196931e2badf2ac5eb3">tgui::Label::setVerticalAlignment</a></div><div class="ttdeci">void setVerticalAlignment(VerticalAlignment alignment)</div><div class="ttdoc">Changes the vertical text alignment.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a84ab890ed940fe83e977b9335cab7024"><div class="ttname"><a href="classtgui_1_1Label.html#a84ab890ed940fe83e977b9335cab7024">tgui::Label::getSharedRenderer</a></div><div class="ttdeci">LabelRenderer * getSharedRenderer()</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a8e025076fe6c01a6030856aedd13d309"><div class="ttname"><a href="classtgui_1_1Label.html#a8e025076fe6c01a6030856aedd13d309">tgui::Label::isIgnoringMouseEvents</a></div><div class="ttdeci">bool isIgnoringMouseEvents() const</div><div class="ttdoc">Returns whether the widget is ignoring mouse events and letting them pass to the widgets behind it.</div></div>
@@ -382,7 +382,7 @@ $(function() {
 <div class="ttc" id="aclasstgui_1_1Scrollbar_html_a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d"><div class="ttname"><a href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d">tgui::Scrollbar::Policy::Automatic</a></div><div class="ttdeci">@ Automatic</div><div class="ttdoc">Show the scrollbar only when needed (default)</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; const String &amp; &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1Signal_html"><div class="ttname"><a href="classtgui_1_1Signal.html">tgui::Signal</a></div><div class="ttdoc">Signal to which the user can subscribe to get callbacks from.</div><div class="ttdef"><b>Definition:</b> Signal.hpp:58</div></div>
-<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:45</div></div>
+<div class="ttc" id="aclasstgui_1_1Sprite_html"><div class="ttname"><a href="classtgui_1_1Sprite.html">tgui::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.hpp:49</div></div>
 <div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition:</b> String.hpp:79</div></div>
 <div class="ttc" id="aclasstgui_1_1TextStyles_html"><div class="ttname"><a href="classtgui_1_1TextStyles.html">tgui::TextStyles</a></div><div class="ttdoc">Wrapper for text styles.</div><div class="ttdef"><b>Definition:</b> TextStyle.hpp:58</div></div>
 <div class="ttc" id="aclasstgui_1_1Vector2_html"><div class="ttname"><a href="classtgui_1_1Vector2.html">tgui::Vector2&lt; float &gt;</a></div></div>
@@ -394,7 +394,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -406,6 +406,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

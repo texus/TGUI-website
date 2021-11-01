@@ -18,6 +18,7 @@ changelog:
         Horizontal scrollbar can now depend on item width in ListView ([PR #147](https://github.com/texus/TGUI/pull/147))
         Added support to copy selected ListView items to clipboard ([PR #148](https://github.com/texus/TGUI/pull/148))
         Add setTextSize for SubwidgetContainer ([PR #149](https://github.com/texus/TGUI/pull/149))
+        Added SDL/OpenGL backend as alternative for default SFML backend
         Rewrote signal system again, `b->connect("Pressed",...)` is now `b->onPress(...)`
         Added new FileDialog widget
         Added new ToggleButton widget

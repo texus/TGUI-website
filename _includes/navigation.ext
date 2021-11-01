@@ -12,6 +12,7 @@
         <li>
             <a href="/tutorials/">Tutorials</a>
             <ul>
+                <li><a href="/tutorials/0.10/">0.10</a></li>
                 <li><a href="/tutorials/0.9/">0.9</a></li>
                 <li><a href="/tutorials/0.8/">0.8</a></li>
             </ul>
@@ -19,6 +20,7 @@
         <li>
             <a href="/documentation/">Documentation</a>
             <ul>
+                <li><a href="/documentation/0.10/annotated.html">0.10</a></li>
                 <li><a href="/documentation/0.9/annotated.html">0.9</a></li>
                 <li><a href="/documentation/0.8/">0.8</a></li>
             </ul>
@@ -26,6 +28,7 @@
         <li>
             <a href="/examples/">Examples</a>
             <ul>
+                <li><a href="/examples/0.10/">0.10</a></li>
                 <li><a href="/examples/0.9/">0.9</a></li>
                 <li><a href="/examples/0.8/">0.8</a></li>
             </ul>

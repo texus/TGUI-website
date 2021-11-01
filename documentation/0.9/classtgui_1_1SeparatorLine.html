@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(function() {
 <p><a class="el" href="classtgui_1_1Widget.html" title="The parent class for every widget.">Widget</a> that is drawn as a filled rectangle and can be used as a line to visually separate widgets from each other.  
  <a href="classtgui_1_1SeparatorLine.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="SeparatorLine_8hpp_source.html">/home/texus/Documents/TGUI-0.9/include/TGUI/Widgets/SeparatorLine.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SeparatorLine_8hpp_source.html">TGUI/Widgets/SeparatorLine.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tgui::SeparatorLine:</div>
 <div class="dyncontent">
@@ -173,9 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a301a2973945887341e22cc330c7a89db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1SeparatorLineRenderer.html">SeparatorLineRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SeparatorLine.html#a301a2973945887341e22cc330c7a89db">getRenderer</a> ()</td></tr>
 <tr class="memdesc:a301a2973945887341e22cc330c7a89db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <a href="classtgui_1_1SeparatorLine.html#a301a2973945887341e22cc330c7a89db">More...</a><br /></td></tr>
 <tr class="separator:a301a2973945887341e22cc330c7a89db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6dfc1fafe8e185005424a84fde392d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SeparatorLine.html#abd6dfc1fafe8e185005424a84fde392d">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
-<tr class="memdesc:abd6dfc1fafe8e185005424a84fde392d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <a href="classtgui_1_1SeparatorLine.html#abd6dfc1fafe8e185005424a84fde392d">More...</a><br /></td></tr>
-<tr class="separator:abd6dfc1fafe8e185005424a84fde392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41addba961c64ac22019a034dd0af67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SeparatorLine.html#a41addba961c64ac22019a034dd0af67d">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
+<tr class="memdesc:a41addba961c64ac22019a034dd0af67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <a href="classtgui_1_1SeparatorLine.html#a41addba961c64ac22019a034dd0af67d">More...</a><br /></td></tr>
+<tr class="separator:a41addba961c64ac22019a034dd0af67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtgui_1_1ClickableWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtgui_1_1ClickableWidget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtgui_1_1ClickableWidget.html">tgui::ClickableWidget</a></td></tr>
 <tr class="memitem:a327727306b412af7bab8a0c0e7fb276a inherit pub_methods_classtgui_1_1ClickableWidget"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ClickableWidget.html#a327727306b412af7bab8a0c0e7fb276a">isMouseOnWidget</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override</td></tr>
 <tr class="memdesc:a327727306b412af7bab8a0c0e7fb276a inherit pub_methods_classtgui_1_1ClickableWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <a href="classtgui_1_1ClickableWidget.html#a327727306b412af7bab8a0c0e7fb276a">More...</a><br /></td></tr>
@@ -312,9 +312,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Container.html">Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">getParent</a> () const</td></tr>
 <tr class="memdesc:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the parent widget.  <a href="classtgui_1_1Widget.html#a4a5c8a458bf6b0cf0ff962991c2a67b9">More...</a><br /></td></tr>
 <tr class="separator:a4a5c8a458bf6b0cf0ff962991c2a67b9 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1BackendGui.html">BackendGui</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">getParentGui</a> () const</td></tr>
-<tr class="memdesc:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#abf9d61e3450b99c69d4e81964063b29e">More...</a><br /></td></tr>
-<tr class="separator:abf9d61e3450b99c69d4e81964063b29e inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">getParentGui</a> () const</td></tr>
+<tr class="memdesc:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the gui to which this widget belongs.  <a href="classtgui_1_1Widget.html#a5ec8ab6ad75e463c5f4544bc3683c840">More...</a><br /></td></tr>
+<tr class="separator:a5ec8ab6ad75e463c5f4544bc3683c840 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">isAnimationPlaying</a> () const</td></tr>
 <tr class="memdesc:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there is an active animation (started with showWithEffect or hideWithEffect)  <a href="classtgui_1_1Widget.html#a9bbc486406cde9da03ce27fb8769c994">More...</a><br /></td></tr>
 <tr class="separator:a9bbc486406cde9da03ce27fb8769c994 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -600,8 +600,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="abd6dfc1fafe8e185005424a84fde392d" name="abd6dfc1fafe8e185005424a84fde392d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd6dfc1fafe8e185005424a84fde392d">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a41addba961c64ac22019a034dd0af67d" name="a41addba961c64ac22019a034dd0af67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41addba961c64ac22019a034dd0af67d">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,7 +612,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void tgui::SeparatorLine::draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
@@ -643,7 +643,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1ClickableWidget.html#a728e19b77c533b9e67e83d14a8ea0b71">tgui::ClickableWidget</a>.</p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1ClickableWidget.html#abf0d324d19456262546cdff0f99680fb">tgui::ClickableWidget</a>.</p>
 
 </div>
 </div>
@@ -731,7 +731,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -743,6 +743,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

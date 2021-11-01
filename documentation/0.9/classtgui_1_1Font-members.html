@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -121,26 +121,24 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#ae9a988a437f60f17613aa0e155328108">Font</a>(const String &amp;id)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#aa5c0dc1c5b7a43d03fd485636d6c7eb4">Font</a>(const char *id)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#aa54f50f019ef069ba32becd12f76e468">Font</a>(const void *data, std::size_t sizeInBytes)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a4d937902e99e64da228a070f66e484aa">Font</a>(std::shared_ptr&lt; BackendFont &gt; backendFont, const String &amp;id)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a935c4371f82a9be13d787999e7fa3dea">getBackendFont</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#ae9a40aa1f7e52900ad6fc318b4830cf5">Font</a>(std::shared_ptr&lt; BackendFontBase &gt; backendFont, const String &amp;id)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a92bd07e36aaaf2ce958792694ff3e8c0">getBackendFont</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a6f0af84cfca7040a163a0308fb6ba4fe">getGlobalFont</a>()</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#afe303cdd3d7fc12959c3347249e3019f">getGlyph</a>(char32_t codePoint, unsigned int characterSize, bool bold, float outlineThickness=0) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a9b5d2cfcc17e1fd3b3b22f49b78db830">getId</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a70fd837b32903674fd6875ae3c733b81">getKerning</a>(char32_t first, char32_t second, unsigned int characterSize, bool bold=false) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a14ff0d188168302a201d15508c1d6e62">getLineSpacing</a>(unsigned int characterSize) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a3043176c8b483816b5415e68fd67e1d8">isSmooth</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a1f58d44c9f82f8911cba6fda0ff143c0">operator bool</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a5a26e1b60fdb9fc320354b4c883a144a">operator!=</a>(std::nullptr_t) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#af95b123fcadb466b1dd1599973ecdd45">operator!=</a>(const Font &amp;right) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a07505147b4cfca7ae25395fbbb2be3b1">operator==</a>(std::nullptr_t) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a2640d7d7846a9a63f3197c4e6184e101">operator==</a>(const Font &amp;right) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a3010c32b765776638327dc49ed612fa1">setGlobalFont</a>(const Font &amp;font)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#ab01c3b927be5f8516ec6d829c50e512f">setSmooth</a>(bool smooth)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a1f58d44c9f82f8911cba6fda0ff143c0">operator bool</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a5a26e1b60fdb9fc320354b4c883a144a">operator!=</a>(std::nullptr_t) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#af95b123fcadb466b1dd1599973ecdd45">operator!=</a>(const Font &amp;right) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a07505147b4cfca7ae25395fbbb2be3b1">operator==</a>(std::nullptr_t) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a2640d7d7846a9a63f3197c4e6184e101">operator==</a>(const Font &amp;right) const</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Font.html#a3010c32b765776638327dc49ed612fa1">setGlobalFont</a>(const Font &amp;font)</td><td class="entry"><a class="el" href="classtgui_1_1Font.html">tgui::Font</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -152,6 +150,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {

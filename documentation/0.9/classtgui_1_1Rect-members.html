@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9-dev</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
   </td>
  </tr>
@@ -123,8 +123,10 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a609ba0a2a45fbe46b8c4176cdb68a23e">height</a></td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#afa4f802b6af0e7644bc692b922e85d8a">intersects</a>(const Rect&lt; T &gt; &amp;rect) const</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#aa443a7aa53bc45beece9fccca11c4471">left</a></td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a1818b18ba63ee9e14fb95c5ee0557683">Rect</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#ae6268677ed5820712120d31dd6d78e1c">Rect</a>(const Rect&lt; U &gt; &amp;rect)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a86d6a8baff06e15270d8f14cc12f03b5">operator sf::Rect&lt; T &gt;</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a1818b18ba63ee9e14fb95c5ee0557683">Rect</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#ae6268677ed5820712120d31dd6d78e1c">Rect</a>(const Rect&lt; U &gt; &amp;rect)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a6458025bcce1f48022f96924bad0e6ce">Rect</a>(sf::Rect&lt; T &gt; rect)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a19bc41d560ba6e3482c038763b5ce6b6">Rect</a>(T rectLeft, T rectTop, T rectWidth, T rectHeight)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a295509b6203d29cbcc10a1d05410c187">Rect</a>(Vector2&lt; T &gt; position, Vector2&lt; T &gt; size)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Rect.html#a9c69bfd2b4770c1d94d655dd229a68e9">setPosition</a>(Vector2&lt; T &gt; position)</td><td class="entry"><a class="el" href="classtgui_1_1Rect.html">tgui::Rect&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -135,7 +137,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
@@ -147,6 +149,7 @@ Generated on Mon Oct 11 2021 11:30:14 for TGUI by &#160;<a href="http://www.doxy
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
+<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
 if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
 {
