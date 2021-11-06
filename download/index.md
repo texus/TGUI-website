@@ -15,21 +15,21 @@ title: Download
 
 Packages:  
 **PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
-**AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui/) (official, contains all backends)  
+**AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
 
-### TGUI 0.9.1
+### TGUI 0.9.2
 **Latest stable version**. Minimum supported compilers: GCC 5, Clang 4, VS2017
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.1.zip" style="Green" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.2.zip" style="Green" %}
 <br>
 Precompiled libraries for Windows with SFML backend: (require matching libraries from [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/))
 <p>
-  {% include button.ext text="Visual C++16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-vc16-32bit-for-SFML-2.5.1.zip" style="Green" %}
-  {% include button.ext text="Visual C++16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-vc16-64bit-for-SFML-2.5.1.zip" style="Green" %} (use with VS2017 SFML binaries)<br><br>
-  {% include button.ext text="Visual C++15 (2017) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-vc15-32bit-for-SFML-2.5.1.zip" style="Green" %}
-  {% include button.ext text="Visual C++15 (2017) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-vc15-64bit-for-SFML-2.5.1.zip" style="Green" %}<br><br>
-  {% include button.ext text="MinGW 7.3.0 (DW2) - 32-bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Green" %}
-  {% include button.ext text="MinGW 7.3.0 (SEH) - 64-bit" link="https://github.com/texus/TGUI/releases/download/v0.9.1/TGUI-0.9.1-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Green" %}<br><br>
+  {% include button.ext text="Visual C++16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-vc16-32bit-for-SFML-2.5.1.zip" style="Green" %}
+  {% include button.ext text="Visual C++16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-vc16-64bit-for-SFML-2.5.1.zip" style="Green" %} (use with VS2017 SFML binaries)<br><br>
+  {% include button.ext text="Visual C++15 (2017) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-vc15-32bit-for-SFML-2.5.1.zip" style="Green" %}
+  {% include button.ext text="Visual C++15 (2017) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-vc15-64bit-for-SFML-2.5.1.zip" style="Green" %}<br><br>
+  {% include button.ext text="MinGW 7.3.0 (DW2) - 32-bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Green" %}
+  {% include button.ext text="MinGW 7.3.0 (SEH) - 64-bit" link="https://github.com/texus/TGUI/releases/download/v0.9.2/TGUI-0.9.2-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Green" %}<br><br>
 </p>
 
 Packages:  

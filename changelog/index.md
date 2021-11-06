@@ -7,6 +7,27 @@ changelog:
   minors:
   - version: 9
     patches:
+    - version: 2
+      date: 1 November 2021
+      changes: |
+        Arrow keys can now be used to navigate TreeView
+        Control/shift now affect using arrow keys in multi-select ListView
+        Added Texture::setDefaultSmooth to choose default interpolation setting
+        String::split now takes an optional boolean to trim the returned values
+        Kerning calculation now takes bold text style into account (only if SFML >= 2.6)
+        Added setWidgetIndex and getWidgetIndex functions to container
+        Added String::contains function
+        saveWidgetsToFile now makes paths relative to the form path
+        Tool tips will no longer be displayed outside the window when close to the side
+        Exception is now thrown when loading a font fails
+        TabContainer can now create the panels internally
+        Button text was lost when copying button
+        Down state of button wasn't displayed properly anymore when a focus state existed
+        Image in BitmapButton was searched in wrong directory when loading from form file
+        Form files didn't load on Windows when path contained non-ANSI characters
+        Modification time in FileDialog was empty when MinGW compiler was used
+        Clipping in SDL backend was incorrect when view and viewport were changed
+        Opacity of color wheel wasn't set when making ColorPicker transparent
     - version: 1
       date: 12 February 2021
       changes: |
