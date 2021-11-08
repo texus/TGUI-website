@@ -104,4 +104,24 @@ while (!quit)
 
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
-To draw all widgets in the gui, you need to call `gui.draw()` once per frame. All widgets are drawn at once, the SDL\_RENDERER backend currently doesn't provide a way to render SDL contents inbetween TGUI widgets (without creating a custom widget).
+To draw all widgets in the gui, you need to call `gui.draw()` once per frame, between the calls to `SDL_RenderClear` and `SDL_RenderPresent`.
+
+
+### Canvas
+
+When calling `gui.draw()`, all (visible) widgets are drawn at once. If you wish to manually render something with SDL inbetween TGUI widgets (e.g. to the background of a child window) then you need to use the CanvasSDL widget. The canvas acts as a render target: you first render your SDL contents to the canvas and then when TGUI draws its widgets, it will draw the contents of the canvas widget to the screen.
+
+Creating the canvas is done like any other widget:
+```c++
+auto canvas = tgui::CanvasSDL::create();
+canvas->setSize({400, 300});
+gui.add(canvas);
+```
+
+Replacing the contents of the canvas is done as follows:
+```c++
+SDL_SetRenderTarget(renderer, canvas->getTextureTarget());  // Let drawing happen on the canvas instead of the window
+SDL_RenderClear(renderer);                                  // Clear the contents of the canvas
+SDL_RenderCopy(renderer, imgTexture, nullptr, nullptr);     // Draw an image to the canvas
+SDL_SetRenderTarget(renderer, nullptr);                     // Let further drawing happen on the window again
+```
