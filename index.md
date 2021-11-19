@@ -34,33 +34,33 @@ The gui is easy to use, with only a few lines you can e.g. have a fully function
   </div>
   <div class="HomePageLargerColumn">
     <h3>Cross-platform</h3>
-    <p>TGUI will work on multiple platforms, it can be used on <b>Windows</b>, <b>Linux</b>, <b>macOS</b>, <b>FreeBSD</b> and experimentally on <b>Raspberry Pi</b>, <b>Android</b> and <b>iOS</b>.</p>
+    <p>TGUI will work on multiple platforms. Not only does it work on <b>Windows</b>, <b>Linux</b> and <b>macOS</b>, but also on <b>Android</b> and <b>iOS</b>. It has also been reported to work on <b>Raspberry Pi</b> and <b>FreeBSD</b>.</p>
   </div>
 </div>
 
 
 <!-- Make some of the images use a lightbox when javascript is enabled -->
 <script type="text/javascript">
-    function showLightBox(event, href) {
-        if (event.ctrlKey || event.shiftKey) {
-            return true;
-        }
-
-        var background = document.createElement("div");
-        background.id = "LightBox";
-        background.onclick = function() { hideLightBox(); }
-        document.getElementById("contents").appendChild(background);
-
-        var image = document.createElement("img");
-        image.src = href;
-        background.appendChild(image);
-        return false;
+  function showLightBox(event, href) {
+    if (event.ctrlKey || event.shiftKey) {
+      return true;
     }
 
-    function hideLightBox() {
-        var lightbox = document.getElementById("LightBox");
-        if (lightbox) {
-            document.getElementById("contents").removeChild(lightbox);
-        }
+    var background = document.createElement("div");
+    background.id = "LightBox";
+    background.onclick = function() { hideLightBox(); }
+    document.getElementById("contents").appendChild(background);
+
+    var image = document.createElement("img");
+    image.src = href;
+    background.appendChild(image);
+    return false;
+  }
+
+  function hideLightBox() {
+    var lightbox = document.getElementById("LightBox");
+    if (lightbox) {
+      document.getElementById("contents").removeChild(lightbox);
     }
+  }
 </script>

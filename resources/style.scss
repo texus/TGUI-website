@@ -400,7 +400,7 @@ p {
   margin: 0.3em 0;
 }
 
-p + p {
+p + p, table + p, div.highlighter-rouge + p, figure.highlight + p {
   margin-top: 1.2em;
 }
 
@@ -408,13 +408,6 @@ p + h3, a + h3, li + h3, ul + h3, div + h3, figure + h3 {
   margin-top: 2.0em;
 }
 
-div.highlighter-rouge + p {
-  margin-top: 1.2em;
-}
-
-figure.highlight + p {
-  margin-top: 1.2em;
-}
 
 /* IMAGES */
 
@@ -871,6 +864,44 @@ a.HomePageScreenshotThumbnail img {
 span.ChangelogDate {
   color: #9e9e9e;
   font-size: 0.7em;
+
+  @include dark-mode {
+    color: #9e9e9e;
+  }
+}
+
+/* Backends */
+
+table.backends-table {
+  border-collapse: collapse;
+}
+
+table.backends-table, table.backends-table th, table.backends-table td {
+  border: 1px solid black;
+  padding: 6px 13px;
+
+  @include dark-mode {
+    border-color: #4d535b;
+  }
+}
+
+div.platform-icon {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+div.platform-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+span.BackendDependencyVersion {
+  color: #888888;
 
   @include dark-mode {
     color: #9e9e9e;

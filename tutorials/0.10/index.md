@@ -6,6 +6,10 @@ breadcrumb: 0.10
 
 ### Installation tutorials
 
+[Selecting backend in CMake](backends/)
+
+[Building TGUI from source code with CMake](cmake/)
+
 [Windows (Visual Studio)](visual-studio/)
 
 [Windows (CodeBlocks)](windows-codeblocks/)
@@ -19,10 +23,6 @@ breadcrumb: 0.10
 [Android (SDL_TTF_GLES2)](android-sdl-ttf-gles2/)
 
 [iOS (SFML_GRAPHICS)](ios-sfml-graphics/)
-
-[Building TGUI from source code with CMake](cmake/)
-
-[Selecting backend in CMake](backends/)
 
 
 ### Getting started
