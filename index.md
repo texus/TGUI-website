@@ -6,7 +6,7 @@ redirect_from: "/v0.7-dev/index.html"
 
 TGUI is a cross-platform modern c++ GUI library.
 
-Although TGUI was created for [SFML](https://www.sfml-dev.org), it now also has backends for SDL and GLFW.
+Although TGUI was created for SFML, it now also has built-in backends for SDL and GLFW.
 
 <h3>Easy and customizable</h3>
 The gui is easy to use, with only a few lines you can e.g. have a fully functional TextBox on your screen. The widgets can be created by just using colors or by using images, making the look very customizable.
@@ -35,6 +35,22 @@ The gui is easy to use, with only a few lines you can e.g. have a fully function
   <div class="HomePageLargerColumn">
     <h3>Cross-platform</h3>
     <p>TGUI will work on multiple platforms. Not only does it work on <b>Windows</b>, <b>Linux</b> and <b>macOS</b>, but also on <b>Android</b> and <b>iOS</b>. It has also been reported to work on <b>Raspberry Pi</b> and <b>FreeBSD</b>.</p>
+  </div>
+</div>
+
+<div>
+  <div class="HomePageLargerColumn">
+    <h3>Modular backends</h3>
+    <p>The core of TGUI and its widgets are independent from the rendering, only the backend depends on external libraries.</p>
+    <p>Each backend itself is also divided in three reusable components: event input, font loading and rendering. The SFML_OPENGL3 and GLFW_OPENGL3 backends for example share their rendering and font loading code. Custom backends can thus also reuse parts of existing backends.</p>
+  </div>
+  <div class="HomePageSmallerColumn">
+    <a class="light-mode-only" href="/resources/BackendList.png" onclick="return showLightBox(event, href);">
+        <img src="/resources/BackendList.png"/>
+    </a>
+    <a class="dark-mode-only" href="/resources/BackendList-dark.png" onclick="return showLightBox(event, href);">
+        <img src="/resources/BackendList-dark.png" class="dark-compatible"/>
+    </a>
   </div>
 </div>
 
