@@ -135,7 +135,7 @@ auto func3 = [x,&y]{ y = x; };  // x is copied due to "x", y is reference due to
 
 The gui object can't be copied, it must always be passed as a reference (but if you store a pointer to it then you can obviously pass that pointer by value):
 ```c++
-tgui::GuiSFML gui;
+tgui::Gui gui;
 button1->onPress([&]{ gui.setOpacity(0.5f); });
 ```
 

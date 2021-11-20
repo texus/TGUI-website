@@ -9,7 +9,7 @@ TGUI is not a standalone library, it depends on libraries such as SFML, SDL or G
 When building the library with CMake, the TGUI\_BACKEND property has to be set to the wanted backend. It is also possible to build the library with multiple backends (or with none if you want to provide one yourself) by setting TGUI\_BACKEND to "Custom" and setting the boolean TGUI\_HAS\_BACKEND\_XXX values.
 
 The following backends exist and can be given as value to TGUI\_BACKEND:
-<table class="backends-table">
+<table class="with-borders">
   <thead>
     <tr>
       <th>Backend</th>
@@ -23,9 +23,14 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Android.svg" title="Android"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/iOS.svg" title="iOS"/></div>
+        <div class="platform-icon">
+          <picture class="dark-compatible">
+            <source srcset="/resources/PlatformIcons/iOS-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/resources/PlatformIcons/iOS.svg" title="iOS"/>
+          </picture>
+        </div>
       </td>
       <td>sfml-graphics <span class="BackendDependencyVersion">(>=&nbsp;2.5)</span></td>
     </tr>
@@ -34,7 +39,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
@@ -45,9 +50,14 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Android.svg" title="Android"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/iOS.svg" title="iOS"/></div>
+        <div class="platform-icon">
+          <picture class="dark-compatible">
+            <source srcset="/resources/PlatformIcons/iOS-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/resources/PlatformIcons/iOS.svg" title="iOS"/>
+          </picture>
+        </div>
       </td>
       <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.18) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14)</span></td>
     </tr>
@@ -56,7 +66,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
@@ -78,7 +88,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
@@ -100,7 +110,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>

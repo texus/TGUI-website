@@ -146,7 +146,7 @@ class MyCustomWidget : public tgui::SubwidgetContainer
     }
 
     // The draw function will be called when it is time to render the widget to the screen
-    void draw(tgui::BackendRenderTargetBase& target, tgui::RenderStates states) const override
+    void draw(tgui::BackendRenderTarget& target, tgui::RenderStates states) const override
     {
         // To render something you can call functions on the "target" object.
         // Note that the position in "states" is already relative to this widget,

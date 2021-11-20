@@ -25,17 +25,17 @@ protected:
 
 Even when theme files are taken care of, images will still load from filenames by default. In order to change this you will need to write a function that somehow loads the image and store its size and an array of RGBA pixels.
 ```c++
-bool customTextureLoader(tgui::BackendTextureBase& texture, const tgui::String& imageId)
+bool customTextureLoader(tgui::BackendTexture& texture, const tgui::String& imageId, bool smooth)
 {
     tgui::Vector2u imageSize;
-    std::uint8_t* pixels;
+    std::unique_ptr<std::uint8_t[]> pixels;
 
     // Load the image from the zip file here.
     // Set imageSize to the width and height of the loaded image.
-    // Set pixels to the address of an RGBA pixel array of imageSize.x * imageSize.y * 4 bytes 
+    // Allocate and store an RGBA pixel array of imageSize.x * imageSize.y * 4 bytes in the pixels variable
     // Return false on error.
 
-    return texture.loadFromPixelData(imageSize, pixels);
+    return texture.load(imageSize, std::move(pixels), smooth);
 }
 ```
 

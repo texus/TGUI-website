@@ -36,7 +36,6 @@ a {
   }
 }
 
-// TODO: Setting :visited state interferes with other CSS code that sets a custom color for a tags
 a:visited {
   @include dark-mode {
     color: #aa80cc;
@@ -143,6 +142,26 @@ hr.sectionEnd {
 img {
   @include dark-mode {
     filter: brightness(78%);
+  }
+}
+
+picture.dark-compatible img, img.dark-compatible {
+  @include dark-mode {
+    filter: brightness(100%);
+  }
+}
+
+.light-mode-only {
+  display: initial;
+  @include dark-mode {
+    display: none;
+  }
+}
+
+.dark-mode-only {
+  display: none;
+  @include dark-mode {
+    display: initial;
   }
 }
 
@@ -439,6 +458,10 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0 , 0, .7);
+
+  @include dark-mode {
+    background-color: rgba(0, 0 , 0, .8);
+  }
 }
 
 #LightBox img {
@@ -870,19 +893,23 @@ span.ChangelogDate {
   }
 }
 
-/* Backends */
+/* Tutorials */
 
-table.backends-table {
+table.with-borders {
   border-collapse: collapse;
 }
 
-table.backends-table, table.backends-table th, table.backends-table td {
+table.with-borders, table.with-borders th, table.with-borders td {
   border: 1px solid black;
-  padding: 6px 13px;
+  padding: 4px 10px;
 
   @include dark-mode {
     border-color: #4d535b;
   }
+}
+
+table.second-column-max-width td + td {
+  width: 100%;
 }
 
 div.platform-icon {
@@ -901,7 +928,7 @@ div.platform-icon img {
 }
 
 span.BackendDependencyVersion {
-  color: #888888;
+  color: #808080;
 
   @include dark-mode {
     color: #9e9e9e;

@@ -25,7 +25,8 @@ If SFML isn't found then set SFML\_DIR to the folder where you build SFML.
 Verify that the FreeType_LIB (or FREETYPE\_LIBRARY) variable is set to the libfreetype.a file from the SFML/extlibs/libs-ios folder (you may have to check "Advanced" in the top right corner to see it). If this is not the case and a macOS library was found then you must manually set the correct path.  
 [![CMake set FreeType_LIB](/resources/Tutorials/0.9/iosCMakeFreeType.png){:width="888" height="410"}](/resources/Tutorials/0.9/iosCMakeFreeType.png)
 
-If you want to use the library in the iOS simulator then you must also change the IOS\_PLATFORM value from "OS" to "SIMULATOR".  
+If you want to use the library in the iOS simulator then you must also change the PLATFORM value from "OS64" to "SIMULATOR64".  
+<!-- TODO: This screenshot is outdated -->
 [![CMake set IOS_PLATFORM](/resources/Tutorials/0.9/iosCMakePlatformSimulator.png){:width="888" height="534"}](/resources/Tutorials/0.9/iosCMakePlatformSimulator.png)
 
 ### Building the library

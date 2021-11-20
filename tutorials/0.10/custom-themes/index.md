@@ -82,7 +82,7 @@ Because in almost all cases you want the space on the left and top in the middle
 Texture = "image.png" Part(20, 10, 50, 30) Middle(6, 6);
 ```
 
-At the very end of the value, the "Smooth" or "NoSmooth" word can be added to override the default setting. The NoSmooth option will use Nearest Neighbor while the Smooth option will choose bilinear interpolation when scaling the image.
+At the very end of the value, the "Smooth" or "NoSmooth" word can be added to override the default setting (which can be set with the static `tgui::Texture::setDefaultSmooth(bool)` function). The NoSmooth option will use Nearest Neighbor while the Smooth option will choose bilinear interpolation when scaling the image.
 ```
 Texture = "image.png" NoSmooth;
 Texture = "image.png" Middle(10, 10) Smooth;
