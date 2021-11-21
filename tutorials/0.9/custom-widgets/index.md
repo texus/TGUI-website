@@ -156,13 +156,14 @@ class MyCustomWidget : public tgui::SubwidgetContainer
         // The m_opacityCached variable is defined in the Widget base class and contains
         // the value of the Opacity property of the widget renderer.
 
-        target.drawBorders(states, tgui::Borders{2}, getSize(),
-            tgui::Color::applyOpacity(tgui::Color::Blue, m_opacityCached));
+        const tgui::Borders borders{2}; // Borders are 2 pixels thick on any side
 
-        states.transform.translate(m_bordersCached.getOffset());
+        target.drawBorders(states, borders, getSize(), tgui::Color::applyOpacity(tgui::Color::Blue, m_opacityCached));
+
+        states.transform.translate(borders.getOffset());
 
         target.drawFilledRect(states,
-            {getSize().x - 4, getSize().y - 4},
+            {getSize().x - borders.getLeft() - borders.getRight(), getSize().y - borders.getTop() - borders.getBottom()},
             tgui::Color::applyOpacity(tgui::Color::Red, m_opacityCached));
     }
 };
