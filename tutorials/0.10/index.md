@@ -75,6 +75,8 @@ breadcrumb: 0.10
 
 [Changing mouse cursor](mouse-cursor/)
 
+[Canvas](canvas/)
+
 
 ### Advanced tutorials
 

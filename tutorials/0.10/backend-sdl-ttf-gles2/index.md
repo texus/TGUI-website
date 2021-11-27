@@ -110,4 +110,4 @@ while (!quit)
 
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
-To draw all widgets in the gui, you need to call `gui.draw()` once per frame. All widgets are drawn at once, the SDL\_TTF\_GLES2 backend currently doesn't provide a way to render OpenGL contents inbetween TGUI widgets (without creating a custom widget).
+To draw all widgets in the gui, you need to call `gui.draw()` once per frame. All widgets are drawn at once, if you wish to render OpenGL ES contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).

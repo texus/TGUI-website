@@ -80,24 +80,4 @@ while (window.isOpen())
 
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
-To draw all widgets in the gui, you need to call `gui.draw()` once per frame, between the calls to `clear()` and `display()`.
-
-
-### Canvas
-
-When calling `gui.draw()`, all (visible) widgets are drawn at once. If you wish to manually render something with SFML inbetween TGUI widgets (e.g. to the background of a child window) then you need to use the CanvasSFML widget. The canvas acts as a render target: you first render your SFML contents to the canvas and then when TGUI draws its widgets, it will draw the contents of the canvas widget to the screen.
-
-Creating the canvas is done like any other widget:
-```c++
-auto canvas = tgui::CanvasSFML::create();
-canvas->setSize({400, 300});
-gui.add(canvas);
-```
-
-Rendering to the CanvasSFML widget is the same as rendering to an `sf::RenderTarget`:
-```c++
-canvas->clear();      // Erasing the contents
-canvas->draw(sprite); // Drawing sf::Sprite
-canvas->draw(text);   // Drawing sf::Text
-canvas->display();    // Saving the drawing to the canvas
-```
+To draw all widgets in the gui, you need to call `gui.draw()` once per frame, between the calls to `clear()` and `display()`. All widgets are drawn at once, if you wish to render SFML contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).

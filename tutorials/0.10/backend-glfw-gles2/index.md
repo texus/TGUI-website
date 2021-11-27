@@ -121,4 +121,4 @@ while (!glfwWindowShouldClose(window))
 }
 ```
 
-The TGUI widgets are drawn with the call to `gui.draw()`. All widgets are drawn at once, the GLFW\_GLES2 backend currently doesn't provide a way to render OpenGL contents inbetween TGUI widgets (without creating a custom widget).
+The TGUI widgets are drawn with the call to `gui.draw()`. All widgets are drawn at once, if you wish to render OpenGL ES contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).
