@@ -133,7 +133,7 @@ To create a custom widget that isn't based on any of the existing widgets, you h
 There are 2 functions that you must implement in your custom widget: `isMouseOnWidget()` and `draw()`.
 
 ```c++
-class MyCustomWidget : public tgui::SubwidgetContainer
+class MyCustomWidget : public tgui::Widget
 {
     // Add functions that are explained in "Basic functionality" section
 
