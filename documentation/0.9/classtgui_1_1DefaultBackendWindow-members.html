@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -119,18 +117,20 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#ab13053183d917bce342a30cb67e988ce">close</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#af9730e300cbda630ce0e919462a4a118">create</a>(unsigned int width, unsigned int height, const String &amp;title)</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a6f29355966149bec47b8e7687852c6e4">draw</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#ae4d86cc424f2e51ec8cc85b4cfd959a4">getGui</a>() const =0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a4a7bb0acb703d66e68c68115ebf681ba">isOpen</a>() const =0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a6011216e9a0f5359fec2e55c3e54ff13">mainLoop</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#af203bf130babd8a745a1c86d217b8c26">pollEvent</a>(Event &amp;event)=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a26156fee3b4b838b19350aba462780ee">setIcon</a>(const String &amp;filename)=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>DefaultBackendWindow</b>()=default (defined in <a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a>)</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a6f29355966149bec47b8e7687852c6e4">draw</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#ae4d86cc424f2e51ec8cc85b4cfd959a4">getGui</a>() const =0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a4a7bb0acb703d66e68c68115ebf681ba">isOpen</a>() const =0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a6011216e9a0f5359fec2e55c3e54ff13">mainLoop</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#af203bf130babd8a745a1c86d217b8c26">pollEvent</a>(Event &amp;event)=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html#a26156fee3b4b838b19350aba462780ee">setIcon</a>(const String &amp;filename)=0</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~DefaultBackendWindow</b>()=default (defined in <a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a>)</td><td class="entry"><a class="el" href="classtgui_1_1DefaultBackendWindow.html">tgui::DefaultBackendWindow</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -141,12 +141,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

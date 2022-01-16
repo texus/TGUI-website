@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -119,15 +117,19 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a91aca0eb3816f37125e52e85893b40b4">attachGui</a>(GuiBase *gui)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aed3b8680771a35d6bc9d8fda2e2131ff">BackendBase</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aae0788252587d7294ba9cc22e7f378cb">closeVirtualKeyboard</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a3ebcbc849902546602554ad20fc284e6">createDefaultFont</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a956cc00dbf1652f496fdba4898e0cbd2">createFont</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a1a6bb957fc500a0080be0c0152d56de6">createText</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a801738cfb1c5f220a0608fc433cf6f82">createTexture</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aa16048c0bba82c0ab17070619b133a9a">detatchGui</a>(GuiBase *gui)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a411aa8e6f130479958e261e8f6e3cd23">getClipboard</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a98c870001da247228e7bb417947e25ff">isKeyboardModifierPressed</a>(Event::KeyModifier modifierKey)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#ad0cd2a5dc7e4196be66ef22a43b8bb6b">openVirtualKeyboard</a>(const FloatRect &amp;inputRect)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BackendBase</b>(const BackendBase &amp;)=delete (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aae0788252587d7294ba9cc22e7f378cb">closeVirtualKeyboard</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a3ebcbc849902546602554ad20fc284e6">createDefaultFont</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a956cc00dbf1652f496fdba4898e0cbd2">createFont</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a1a6bb957fc500a0080be0c0152d56de6">createText</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a801738cfb1c5f220a0608fc433cf6f82">createTexture</a>()=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aa16048c0bba82c0ab17070619b133a9a">detatchGui</a>(GuiBase *gui)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a411aa8e6f130479958e261e8f6e3cd23">getClipboard</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a98c870001da247228e7bb417947e25ff">isKeyboardModifierPressed</a>(Event::KeyModifier modifierKey)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_clipboardContents</b> (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_destroyOnLastGuiDetatch</b> (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#ad0cd2a5dc7e4196be66ef22a43b8bb6b">openVirtualKeyboard</a>(const FloatRect &amp;inputRect)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const BackendBase &amp;)=delete (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#abe3d01be92759ff3d6468a88335219a9">readFileFromAndroidAssets</a>(const String &amp;filename, std::size_t &amp;fileSize) const</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a2261a9186c7bbfcefc348909c68f49ff">resetMouseCursorStyle</a>(Cursor::Type type)=0</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a057569ad168c048a6fde8a5093d8e148">setClipboard</a>(const String &amp;contents)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -139,8 +141,8 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -151,12 +153,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

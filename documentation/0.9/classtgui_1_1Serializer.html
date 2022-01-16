@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -112,6 +110,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classtgui_1_1Serializer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::Serializer Class Reference</div></div>
 </div><!--header-->
@@ -121,6 +121,25 @@ $(function() {
  <a href="classtgui_1_1Serializer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Serializer_8hpp_source.html">TGUI/Loading/Serializer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afb5ef3b28dc2e87e177375aca05b2387"><td class="memItemLeft" align="right" valign="top"><a id="afb5ef3b28dc2e87e177375aca05b2387" name="afb5ef3b28dc2e87e177375aca05b2387"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeFunc</b> = std::function&lt; <a class="el" href="classtgui_1_1String.html">String</a>(<a class="el" href="classtgui_1_1ObjectConverter.html">ObjectConverter</a> &amp;&amp;)&gt;</td></tr>
+<tr class="separator:afb5ef3b28dc2e87e177375aca05b2387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa9f1b9bfb3a6a7d0f0f0547f28375fef"><td class="memItemLeft" align="right" valign="top"><a id="aa9f1b9bfb3a6a7d0f0f0547f28375fef" name="aa9f1b9bfb3a6a7d0f0f0547f28375fef"></a>
+static <a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (<a class="el" href="classtgui_1_1ObjectConverter.html">ObjectConverter</a> &amp;&amp;object)</td></tr>
+<tr class="separator:aa9f1b9bfb3a6a7d0f0f0547f28375fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad859682847423b2da181d6ec8f9cf36e"><td class="memItemLeft" align="right" valign="top"><a id="ad859682847423b2da181d6ec8f9cf36e" name="ad859682847423b2da181d6ec8f9cf36e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFunction</b> (ObjectConverter::Type type, const SerializeFunc &amp;serializer)</td></tr>
+<tr class="separator:ad859682847423b2da181d6ec8f9cf36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e5ff45ded6360ecf66bec5f82ef82c"><td class="memItemLeft" align="right" valign="top"><a id="a30e5ff45ded6360ecf66bec5f82ef82c" name="a30e5ff45ded6360ecf66bec5f82ef82c"></a>
+static const SerializeFunc &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFunction</b> (ObjectConverter::Type type)</td></tr>
+<tr class="separator:a30e5ff45ded6360ecf66bec5f82ef82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Serializes an settable property. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
@@ -130,8 +149,8 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -142,12 +161,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

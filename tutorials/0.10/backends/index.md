@@ -155,6 +155,8 @@ Note that the the file you need is called exactly "SFMLConfig.cmake", the "SFMLC
 
 Usually you will use static SFML libraries when linking TGUI statically, but if for some reason you want to link to SFML dynamically while TGUI\_SHARED\_LIBS=FALSE then you can set SFML\_STATIC\_LIBRARIES to FALSE.
 
+Both SFML 2 and 3 are supported. As SFML 3 is still in development, there might however be moments where TGUI temporarily fails to build with SFML 3 after an API breaking change was just made in SFML.
+
 #### SDL
 
 TGUI will first attempt to find an SDL2Config.cmake file. If CMake can't find it and you have such file (usually in a lib/cmake/SDL2 subfolder) then you can set the SDL2\_DIR property to the path containing this file.
@@ -184,4 +186,4 @@ CMake provides 3 properties that have to be set in order to find FreeType:
 
 If you downloaded the Windows libraries from [github.com/ubawurinna/freetype-windows-binaries](https://github.com/ubawurinna/freetype-windows-binaries) then you can set FREETYPE\_WINDOWS\_BINARIES\_PATH to the root directory to automatically select the correct include and library files. Otherwise you can ignore this property and set the 3 properties listed above.
 
-Warning: due to a bug in FreeType, version 2.11.0 can NOT be used on Windows.
+Warning: due to a bug in FreeType, version 2.11.0 can NOT be used on Windows. Both newer and older versions will work.

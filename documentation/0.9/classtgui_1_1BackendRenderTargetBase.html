@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -114,6 +112,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classtgui_1_1BackendRenderTargetBase-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::BackendRenderTargetBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -178,6 +177,21 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9f1d33cc949fad43f6d5e7982c7a6c41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTargetBase.html#a9f1d33cc949fad43f6d5e7982c7a6c41">updateClipping</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> clipRect, <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> clipViewport)</td></tr>
 <tr class="memdesc:a9f1d33cc949fad43f6d5e7982c7a6c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from addClippingLayer and removeClippingLayer to apply the clipping.  <a href="classtgui_1_1BackendRenderTargetBase.html#a9f1d33cc949fad43f6d5e7982c7a6c41">More...</a><br /></td></tr>
 <tr class="separator:a9f1d33cc949fad43f6d5e7982c7a6c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a6bfad7161d8c6eb692a9e264f74c5e8a"><td class="memItemLeft" align="right" valign="top"><a id="a6bfad7161d8c6eb692a9e264f74c5e8a" name="a6bfad7161d8c6eb692a9e264f74c5e8a"></a>
+<a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewRect</b></td></tr>
+<tr class="separator:a6bfad7161d8c6eb692a9e264f74c5e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac168722bf445bbc35c973a8d0447d582"><td class="memItemLeft" align="right" valign="top"><a id="ac168722bf445bbc35c973a8d0447d582" name="ac168722bf445bbc35c973a8d0447d582"></a>
+<a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewport</b></td></tr>
+<tr class="separator:ac168722bf445bbc35c973a8d0447d582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97afd4c3544f33dfd64e400c059bca84"><td class="memItemLeft" align="right" valign="top"><a id="a97afd4c3544f33dfd64e400c059bca84" name="a97afd4c3544f33dfd64e400c059bca84"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetSize</b></td></tr>
+<tr class="separator:a97afd4c3544f33dfd64e400c059bca84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23bc005fea64d80175e9f5f83cbe245"><td class="memItemLeft" align="right" valign="top"><a id="ae23bc005fea64d80175e9f5f83cbe245" name="ae23bc005fea64d80175e9f5f83cbe245"></a>
+std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatRect</a>, <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_clipLayers</b></td></tr>
+<tr class="separator:ae23bc005fea64d80175e9f5f83cbe245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for render targets. </p>
@@ -938,8 +952,8 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -950,12 +964,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

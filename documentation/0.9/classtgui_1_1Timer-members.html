@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -117,22 +115,29 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a1468b97cafc90140fb3a57336f9f5b3e">create</a>(const std::function&lt; void()&gt; &amp;callback, Duration interval, bool enable=true)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#ada0b074dc5c54628b6f0fa6af35a4de7">create</a>(const std::function&lt; void(std::shared_ptr&lt; Timer &gt;)&gt; &amp;callback, Duration interval, bool enable=true)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a105f389392d114106a8259e712164123">getInterval</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>clearTimers</b>() (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a1468b97cafc90140fb3a57336f9f5b3e">create</a>(const std::function&lt; void()&gt; &amp;callback, Duration interval, bool enable=true)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#ada0b074dc5c54628b6f0fa6af35a4de7">create</a>(const std::function&lt; void(std::shared_ptr&lt; Timer &gt;)&gt; &amp;callback, Duration interval, bool enable=true)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a105f389392d114106a8259e712164123">getInterval</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getNextScheduledTime</b>() (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a06fd7220150f722ead103d0e9d0235e1">isEnabled</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const Timer &amp;)=delete (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Ptr</b> typedef (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a1a759d08f4c608cf5659cddc0ddc02d3">restart</a>()</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a7114cf53984451c475d1b3bb4fe90f0d">scheduleCallback</a>(std::function&lt; void()&gt; callback, Duration interval=Duration())</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#aa0bcc63d06471ce08fb350cc62d0cc5d">setCallback</a>(const std::function&lt; void()&gt; &amp;callback)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a1859085e9e9143f31e23739619358b62">setCallback</a>(const std::function&lt; void(std::shared_ptr&lt; Timer &gt;)&gt; &amp;callback)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a60557ba29c2bb1bb56f0ca64e4a8016f">setEnabled</a>(bool enabled)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Timer.html#a43d310ac631055331f879626db6c3638">setInterval</a>(Duration interval)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Timer</b>(const Timer &amp;)=delete (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Timer</b>()=default (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateTime</b>(Duration elapsedTime) (defined in <a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Timer.html">tgui::Timer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -143,12 +148,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

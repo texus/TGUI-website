@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -115,6 +113,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classtgui_1_1DefaultThemeLoader-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::DefaultThemeLoader Class Reference</div></div>
 </div><!--header-->
@@ -162,6 +161,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad044b3892d14cd0445737a066ae3edd1"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#ad044b3892d14cd0445737a066ae3edd1">readFile</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;filename) const</td></tr>
 <tr class="memdesc:ad044b3892d14cd0445737a066ae3edd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and return the contents of the entire file.  <a href="classtgui_1_1DefaultThemeLoader.html#ad044b3892d14cd0445737a066ae3edd1">More...</a><br /></td></tr>
 <tr class="separator:ad044b3892d14cd0445737a066ae3edd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classtgui_1_1BaseThemeLoader"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classtgui_1_1BaseThemeLoader')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a></td></tr>
+<tr class="memitem:a3f0addc9da2cbafe03971bf5602d694d inherit pro_methods_classtgui_1_1BaseThemeLoader"><td class="memItemLeft" align="right" valign="top"><a id="a3f0addc9da2cbafe03971bf5602d694d" name="a3f0addc9da2cbafe03971bf5602d694d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>injectThemePath</b> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;path) const</td></tr>
+<tr class="separator:a3f0addc9da2cbafe03971bf5602d694d inherit pro_methods_classtgui_1_1BaseThemeLoader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3998befee5d42f6767135960c05c22b inherit pro_methods_classtgui_1_1BaseThemeLoader"><td class="memItemLeft" align="right" valign="top"><a id="ab3998befee5d42f6767135960c05c22b" name="ab3998befee5d42f6767135960c05c22b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b> (std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, std::reference_wrapper&lt; const std::unique_ptr&lt; DataIO::Node &gt; &gt; &gt; &amp;sections, const std::unique_ptr&lt; DataIO::Node &gt; &amp;node) const</td></tr>
+<tr class="separator:ab3998befee5d42f6767135960c05c22b inherit pro_methods_classtgui_1_1BaseThemeLoader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ac3ca1728437fb4ed02cb587ecdedb12a"><td class="memItemLeft" align="right" valign="top"><a id="ac3ca1728437fb4ed02cb587ecdedb12a" name="ac3ca1728437fb4ed02cb587ecdedb12a"></a>
+static std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertiesCache</b></td></tr>
+<tr class="separator:ac3ca1728437fb4ed02cb587ecdedb12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Default implementation for theme loading. </p>
@@ -389,8 +401,8 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -401,12 +413,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

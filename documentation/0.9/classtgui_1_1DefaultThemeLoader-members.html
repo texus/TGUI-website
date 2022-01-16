@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -119,16 +117,19 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#a3f1a5dd4173d1b86477e3d6717fb0dd9">canLoad</a>(const String &amp;filename, const String &amp;section) override</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#a3e082424cb6a1a6553ffa741940006da">flushCache</a>(const String &amp;filename=&quot;&quot;)</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#ac26e75126696593c4eb4e36bc7e03694">load</a>(const String &amp;filename, const String &amp;section) override</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>injectThemePath</b>(const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const String &amp;path) const (defined in <a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#ac26e75126696593c4eb4e36bc7e03694">load</a>(const String &amp;filename, const String &amp;section) override</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_propertiesCache</b> (defined in <a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a>)</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#afb985f1d11b0da5dae0efb048015920d">preload</a>(const String &amp;filename) override</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html#ad044b3892d14cd0445737a066ae3edd1">readFile</a>(const String &amp;filename) const</td><td class="entry"><a class="el" href="classtgui_1_1DefaultThemeLoader.html">tgui::DefaultThemeLoader</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html#ab43fb2866b0f51f853446b9bf2c6174c">~BaseThemeLoader</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>resolveReferences</b>(std::map&lt; String, std::reference_wrapper&lt; const std::unique_ptr&lt; DataIO::Node &gt; &gt; &gt; &amp;sections, const std::unique_ptr&lt; DataIO::Node &gt; &amp;node) const (defined in <a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html#ab43fb2866b0f51f853446b9bf2c6174c">~BaseThemeLoader</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BaseThemeLoader.html">tgui::BaseThemeLoader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -139,12 +140,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

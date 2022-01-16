@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -117,6 +115,8 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classtgui_1_1SignalManager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::SignalManager Class Reference</div></div>
 </div><!--header-->
@@ -139,6 +139,18 @@ typedef std::shared_ptr&lt; <a class="el" href="classtgui_1_1SignalManager.html"
 typedef std::shared_ptr&lt; const <a class="el" href="classtgui_1_1SignalManager.html">SignalManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConstPtr</b></td></tr>
 <tr class="memdesc:a14a23e89f9f973387b9cdfff3e93e719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared constant widget pointer. <br /></td></tr>
 <tr class="separator:a14a23e89f9f973387b9cdfff3e93e719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0198363b55ebf377114484855359ff98"><td class="memItemLeft" align="right" valign="top"><a id="a0198363b55ebf377114484855359ff98" name="a0198363b55ebf377114484855359ff98"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Delegate</b> = std::function&lt; void()&gt;</td></tr>
+<tr class="separator:a0198363b55ebf377114484855359ff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66748ab22b08dc3bd49e88d9cc05beeb"><td class="memItemLeft" align="right" valign="top"><a id="a66748ab22b08dc3bd49e88d9cc05beeb" name="a66748ab22b08dc3bd49e88d9cc05beeb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DelegateEx</b> = std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;)&gt;</td></tr>
+<tr class="separator:a66748ab22b08dc3bd49e88d9cc05beeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab162a30f4445c9d0a480fc41fd16738e"><td class="memItemLeft" align="right" valign="top"><a id="ab162a30f4445c9d0a480fc41fd16738e" name="ab162a30f4445c9d0a480fc41fd16738e"></a>
+typedef std::weak_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Weak</b></td></tr>
+<tr class="separator:ab162a30f4445c9d0a480fc41fd16738e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1ae6adf2a1f180a322158396d8091f"><td class="memItemLeft" align="right" valign="top"><a id="a0b1ae6adf2a1f180a322158396d8091f" name="a0b1ae6adf2a1f180a322158396d8091f"></a>
+typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SignalID</b></td></tr>
+<tr class="separator:a0b1ae6adf2a1f180a322158396d8091f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -165,6 +177,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~SignalManager</b>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnectAll</b> ()</td></tr>
 <tr class="memdesc:a6261b468a6fca2eb7bc65e578615ddf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect all signal handler. <br /></td></tr>
 <tr class="separator:a6261b468a6fca2eb7bc65e578615ddf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa68be088d2c712cee6dd6c9ee1c075"><td class="memItemLeft" align="right" valign="top"><a id="a0aa68be088d2c712cee6dd6c9ee1c075" name="a0aa68be088d2c712cee6dd6c9ee1c075"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const <a class="el" href="classtgui_1_1Widget.html#a388912f13898735531886bc676b14f81">Widget::Ptr</a> &amp;widgetPtr)</td></tr>
+<tr class="separator:a0aa68be088d2c712cee6dd6c9ee1c075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1160411ce1381b73561af76bc2e97f"><td class="memItemLeft" align="right" valign="top"><a id="a6b1160411ce1381b73561af76bc2e97f" name="a6b1160411ce1381b73561af76bc2e97f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (<a class="el" href="classtgui_1_1Widget.html">Widget</a> *widget)</td></tr>
+<tr class="separator:a6b1160411ce1381b73561af76bc2e97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -177,9 +195,33 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa340ad89a833fc32722803eba32e50d9"><td class="memItemLeft" align="right" valign="top"><a id="aa340ad89a833fc32722803eba32e50d9" name="aa340ad89a833fc32722803eba32e50d9"></a>
+std::pair&lt; Delegate, DelegateEx &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeSignal</b> (const Delegate &amp;)</td></tr>
+<tr class="separator:aa340ad89a833fc32722803eba32e50d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81037cc2d9b5f80bc4da6d5c2c3b9a0"><td class="memItemLeft" align="right" valign="top"><a id="af81037cc2d9b5f80bc4da6d5c2c3b9a0" name="af81037cc2d9b5f80bc4da6d5c2c3b9a0"></a>
+std::pair&lt; Delegate, DelegateEx &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeSignalEx</b> (const DelegateEx &amp;)</td></tr>
+<tr class="separator:af81037cc2d9b5f80bc4da6d5c2c3b9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5f804e2f57b06efaadcb2f0f0992db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SignalManager.html#a0b5f804e2f57b06efaadcb2f0f0992db">connect</a> (SignalID id)</td></tr>
 <tr class="memdesc:a0b5f804e2f57b06efaadcb2f0f0992db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is called each time new signal is created with it id.  <a href="classtgui_1_1SignalManager.html#a0b5f804e2f57b06efaadcb2f0f0992db">More...</a><br /></td></tr>
 <tr class="separator:a0b5f804e2f57b06efaadcb2f0f0992db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad000c4f16173ab59d59d151171a7af77"><td class="memItemLeft" align="right" valign="top"><a id="ad000c4f16173ab59d59d151171a7af77" name="ad000c4f16173ab59d59d151171a7af77"></a>
+std::vector&lt; Weak &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_widgets</b></td></tr>
+<tr class="separator:ad000c4f16173ab59d59d151171a7af77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8fee9825807f975912ae976305eb50"><td class="memItemLeft" align="right" valign="top"><a id="add8fee9825807f975912ae976305eb50" name="add8fee9825807f975912ae976305eb50"></a>
+std::map&lt; SignalID, <a class="el" href="structtgui_1_1SignalManager_1_1SignalTuple.html">SignalTuple</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_signals</b></td></tr>
+<tr class="separator:add8fee9825807f975912ae976305eb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca179b4ed829017bb6d90b017e10673"><td class="memItemLeft" align="right" valign="top"><a id="afca179b4ed829017bb6d90b017e10673" name="afca179b4ed829017bb6d90b017e10673"></a>
+std::vector&lt; <a class="el" href="structtgui_1_1SignalManager_1_1ConnectedSignalTuple.html">ConnectedSignalTuple</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectedSignals</b></td></tr>
+<tr class="separator:afca179b4ed829017bb6d90b017e10673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ab1afde542195a0ab97bd2459b95dee08"><td class="memItemLeft" align="right" valign="top"><a id="ab1afde542195a0ab97bd2459b95dee08" name="ab1afde542195a0ab97bd2459b95dee08"></a>
+static <a class="el" href="classtgui_1_1SignalManager.html#aae0f7405edc2f4d9b6928d310f2d8288">SignalManager::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_manager</b></td></tr>
+<tr class="separator:ab1afde542195a0ab97bd2459b95dee08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0b5f804e2f57b06efaadcb2f0f0992db" name="a0b5f804e2f57b06efaadcb2f0f0992db"></a>
@@ -428,8 +470,8 @@ template&lt;typename Func , typename... Args, typename std::enable_if&lt; std::i
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -440,12 +482,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

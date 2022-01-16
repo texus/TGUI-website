@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -115,7 +113,10 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classtgui_1_1Widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::Widget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -164,6 +165,9 @@ typedef std::shared_ptr&lt; const <a class="el" href="classtgui_1_1Widget.html">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a939669a57efe24732880c22e10ba2e8d"><td class="memItemLeft" align="right" valign="top"><a id="a939669a57efe24732880c22e10ba2e8d" name="a939669a57efe24732880c22e10ba2e8d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Widget</b> (const char *typeName, bool initRenderer)</td></tr>
+<tr class="separator:a939669a57efe24732880c22e10ba2e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4ca51beee3a57d6b49a39f42aa6183"><td class="memItemLeft" align="right" valign="top"><a id="a8f4ca51beee3a57d6b49a39f42aa6183" name="a8f4ca51beee3a57d6b49a39f42aa6183"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Widget</b> (const <a class="el" href="classtgui_1_1Widget.html">Widget</a> &amp;)</td></tr>
 <tr class="memdesc:a8f4ca51beee3a57d6b49a39f42aa6183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
@@ -190,9 +194,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:ad95f2bd63d6e55efd4cabbbf8d6a3866"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ad95f2bd63d6e55efd4cabbbf8d6a3866">getSharedRenderer</a> ()</td></tr>
 <tr class="memdesc:ad95f2bd63d6e55efd4cabbbf8d6a3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <a href="classtgui_1_1Widget.html#ad95f2bd63d6e55efd4cabbbf8d6a3866">More...</a><br /></td></tr>
 <tr class="separator:ad95f2bd63d6e55efd4cabbbf8d6a3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30098cb53964c85a1f09e66e4199d4d"><td class="memItemLeft" align="right" valign="top"><a id="ab30098cb53964c85a1f09e66e4199d4d" name="ab30098cb53964c85a1f09e66e4199d4d"></a>
+const <a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSharedRenderer</b> () const</td></tr>
+<tr class="separator:ab30098cb53964c85a1f09e66e4199d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34eaf155c6f0dc6a5d22d1033fa2e7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ab34eaf155c6f0dc6a5d22d1033fa2e7f">getRenderer</a> ()</td></tr>
 <tr class="memdesc:ab34eaf155c6f0dc6a5d22d1033fa2e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <a href="classtgui_1_1Widget.html#ab34eaf155c6f0dc6a5d22d1033fa2e7f">More...</a><br /></td></tr>
 <tr class="separator:ab34eaf155c6f0dc6a5d22d1033fa2e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d842d243f1df6ce8089dc36a7197205"><td class="memItemLeft" align="right" valign="top"><a id="a2d842d243f1df6ce8089dc36a7197205" name="a2d842d243f1df6ce8089dc36a7197205"></a>
+const <a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getRenderer</b> () const</td></tr>
+<tr class="separator:a2d842d243f1df6ce8089dc36a7197205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc57c2d17eebd0a528e7f5ca8e088011"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#afc57c2d17eebd0a528e7f5ca8e088011">setPosition</a> (const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;position)</td></tr>
 <tr class="memdesc:afc57c2d17eebd0a528e7f5ca8e088011"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the position of the widget  <a href="classtgui_1_1Widget.html#afc57c2d17eebd0a528e7f5ca8e088011">More...</a><br /></td></tr>
 <tr class="separator:afc57c2d17eebd0a528e7f5ca8e088011"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,12 +275,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:afdc40ac003ba3a736ab1cf0e986f9a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#afdc40ac003ba3a736ab1cf0e986f9a13">getRotationOrigin</a> () const</td></tr>
 <tr class="memdesc:afdc40ac003ba3a736ab1cf0e986f9a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the origin used for rotations.  <a href="classtgui_1_1Widget.html#afdc40ac003ba3a736ab1cf0e986f9a13">More...</a><br /></td></tr>
 <tr class="separator:afdc40ac003ba3a736ab1cf0e986f9a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a915e615cd0a516b0f166913e880764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a0a915e615cd0a516b0f166913e880764">showWithEffect</a> (<a class="el" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437da">ShowAnimationType</a> type, <a class="el" href="classtgui_1_1Duration.html">Duration</a> duration)</td></tr>
-<tr class="memdesc:a0a915e615cd0a516b0f166913e880764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the widget by introducing it with an animation.  <a href="classtgui_1_1Widget.html#a0a915e615cd0a516b0f166913e880764">More...</a><br /></td></tr>
-<tr class="separator:a0a915e615cd0a516b0f166913e880764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474ece5e6b37b56c2421f033192fe81c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a474ece5e6b37b56c2421f033192fe81c">hideWithEffect</a> (<a class="el" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437da">ShowAnimationType</a> type, <a class="el" href="classtgui_1_1Duration.html">Duration</a> duration)</td></tr>
-<tr class="memdesc:a474ece5e6b37b56c2421f033192fe81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the widget by making it leave with an animation.  <a href="classtgui_1_1Widget.html#a474ece5e6b37b56c2421f033192fe81c">More...</a><br /></td></tr>
-<tr class="separator:a474ece5e6b37b56c2421f033192fe81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034fa32cf22d4f70e7e7968a80040502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a034fa32cf22d4f70e7e7968a80040502">showWithEffect</a> (<a class="el" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2">ShowEffectType</a> type, <a class="el" href="classtgui_1_1Duration.html">Duration</a> duration)</td></tr>
+<tr class="memdesc:a034fa32cf22d4f70e7e7968a80040502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the widget by introducing it with an animation.  <a href="classtgui_1_1Widget.html#a034fa32cf22d4f70e7e7968a80040502">More...</a><br /></td></tr>
+<tr class="separator:a034fa32cf22d4f70e7e7968a80040502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacd2fa30e6e2b15ac2234ec581e3262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#afacd2fa30e6e2b15ac2234ec581e3262">hideWithEffect</a> (<a class="el" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2">ShowEffectType</a> type, <a class="el" href="classtgui_1_1Duration.html">Duration</a> duration)</td></tr>
+<tr class="memdesc:afacd2fa30e6e2b15ac2234ec581e3262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the widget by making it leave with an animation.  <a href="classtgui_1_1Widget.html#afacd2fa30e6e2b15ac2234ec581e3262">More...</a><br /></td></tr>
+<tr class="separator:afacd2fa30e6e2b15ac2234ec581e3262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb6526cef6006135d3c8a400573b099"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#acfb6526cef6006135d3c8a400573b099">setVisible</a> (bool visible)</td></tr>
 <tr class="memdesc:acfb6526cef6006135d3c8a400573b099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows or hides a widget.  <a href="classtgui_1_1Widget.html#acfb6526cef6006135d3c8a400573b099">More...</a><br /></td></tr>
 <tr class="separator:acfb6526cef6006135d3c8a400573b099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,9 +381,75 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a950792e7a622b0886a5de63d045606d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtgui_1_1Signal.html">Signal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a950792e7a622b0886a5de63d045606d4">getSignal</a> (<a class="el" href="classtgui_1_1String.html">String</a> signalName)</td></tr>
 <tr class="memdesc:a950792e7a622b0886a5de63d045606d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a signal based on its name.  <a href="classtgui_1_1Widget.html#a950792e7a622b0886a5de63d045606d4">More...</a><br /></td></tr>
 <tr class="separator:a950792e7a622b0886a5de63d045606d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b6b11693ce4b8059ccf8fa1296ce9a"><td class="memItemLeft" align="right" valign="top"><a id="a94b6b11693ce4b8059ccf8fa1296ce9a" name="a94b6b11693ce4b8059ccf8fa1296ce9a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="classtgui_1_1Container.html">Container</a> *parent)</td></tr>
+<tr class="separator:a94b6b11693ce4b8059ccf8fa1296ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064df67da566b14ef132aeb1c1e878fe"><td class="memItemLeft" align="right" valign="top"><a id="a064df67da566b14ef132aeb1c1e878fe" name="a064df67da566b14ef132aeb1c1e878fe"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a class="el" href="classtgui_1_1Duration.html">Duration</a> elapsedTime)</td></tr>
+<tr class="separator:a064df67da566b14ef132aeb1c1e878fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada6f2200d774320d3b07536d7255550"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#aada6f2200d774320d3b07536d7255550">isMouseOnWidget</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const =0</td></tr>
 <tr class="memdesc:aada6f2200d774320d3b07536d7255550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <a href="classtgui_1_1Widget.html#aada6f2200d774320d3b07536d7255550">More...</a><br /></td></tr>
 <tr class="separator:aada6f2200d774320d3b07536d7255550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782b6775647e378c3dc8355b71158d61"><td class="memItemLeft" align="right" valign="top"><a id="a782b6775647e378c3dc8355b71158d61" name="a782b6775647e378c3dc8355b71158d61"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>leftMousePressed</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:a782b6775647e378c3dc8355b71158d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306eef0d777366fc1980eee3fdaf81f3"><td class="memItemLeft" align="right" valign="top"><a id="a306eef0d777366fc1980eee3fdaf81f3" name="a306eef0d777366fc1980eee3fdaf81f3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>leftMouseReleased</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:a306eef0d777366fc1980eee3fdaf81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dac16aaf0aaa9e9552180648db0f36"><td class="memItemLeft" align="right" valign="top"><a id="af2dac16aaf0aaa9e9552180648db0f36" name="af2dac16aaf0aaa9e9552180648db0f36"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rightMousePressed</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:af2dac16aaf0aaa9e9552180648db0f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0056113a6e31ec1c18bab44494fe6477"><td class="memItemLeft" align="right" valign="top"><a id="a0056113a6e31ec1c18bab44494fe6477" name="a0056113a6e31ec1c18bab44494fe6477"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rightMouseReleased</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:a0056113a6e31ec1c18bab44494fe6477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd8a548c72bacb7a89252d63efb135b"><td class="memItemLeft" align="right" valign="top"><a id="adfd8a548c72bacb7a89252d63efb135b" name="adfd8a548c72bacb7a89252d63efb135b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressed</b> (<a class="el" href="structtgui_1_1Event.html#a369666e9b529309b223263eb0297ac9b">Event::MouseButton</a> button, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:adfd8a548c72bacb7a89252d63efb135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc4fb949e19db7b4f17379ded6cc2e4"><td class="memItemLeft" align="right" valign="top"><a id="adbc4fb949e19db7b4f17379ded6cc2e4" name="adbc4fb949e19db7b4f17379ded6cc2e4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleased</b> (<a class="el" href="structtgui_1_1Event.html#a369666e9b529309b223263eb0297ac9b">Event::MouseButton</a> button, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:adbc4fb949e19db7b4f17379ded6cc2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5043e1b5329495fafdab55ebce266dec"><td class="memItemLeft" align="right" valign="top"><a id="a5043e1b5329495fafdab55ebce266dec" name="a5043e1b5329495fafdab55ebce266dec"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoved</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:a5043e1b5329495fafdab55ebce266dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcb1b709d95c413916650bb0e2b3cb1"><td class="memItemLeft" align="right" valign="top"><a id="addcb1b709d95c413916650bb0e2b3cb1" name="addcb1b709d95c413916650bb0e2b3cb1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;event)</td></tr>
+<tr class="separator:addcb1b709d95c413916650bb0e2b3cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858046a9f464a6d3db03527edfdc2a67"><td class="memItemLeft" align="right" valign="top"><a id="a858046a9f464a6d3db03527edfdc2a67" name="a858046a9f464a6d3db03527edfdc2a67"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>textEntered</b> (char32_t key)</td></tr>
+<tr class="separator:a858046a9f464a6d3db03527edfdc2a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a686df93545517c671a2683c32189bc"><td class="memItemLeft" align="right" valign="top"><a id="a2a686df93545517c671a2683c32189bc" name="a2a686df93545517c671a2683c32189bc"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseWheelScrolled</b> (float delta, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
+<tr class="separator:a2a686df93545517c671a2683c32189bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7b49637037055fb42047d6b80c14b3"><td class="memItemLeft" align="right" valign="top"><a id="a7a7b49637037055fb42047d6b80c14b3" name="a7a7b49637037055fb42047d6b80c14b3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseNoLongerOnWidget</b> ()</td></tr>
+<tr class="separator:a7a7b49637037055fb42047d6b80c14b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0335d55766e9e386065a66af7a25c07e"><td class="memItemLeft" align="right" valign="top"><a id="a0335d55766e9e386065a66af7a25c07e" name="a0335d55766e9e386065a66af7a25c07e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>leftMouseButtonNoLongerDown</b> ()</td></tr>
+<tr class="separator:a0335d55766e9e386065a66af7a25c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb12db49df8c9eb223ebd5ef0b2ef0d"><td class="memItemLeft" align="right" valign="top"><a id="a0bb12db49df8c9eb223ebd5ef0b2ef0d" name="a0bb12db49df8c9eb223ebd5ef0b2ef0d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rightMouseButtonNoLongerDown</b> ()</td></tr>
+<tr class="separator:a0bb12db49df8c9eb223ebd5ef0b2ef0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eab82dfee95001b657106db3a01ab5d"><td class="memItemLeft" align="right" valign="top"><a id="a2eab82dfee95001b657106db3a01ab5d" name="a2eab82dfee95001b657106db3a01ab5d"></a>
+virtual <a class="el" href="classtgui_1_1Widget.html#a388912f13898735531886bc676b14f81">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>askToolTip</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> mousePos)</td></tr>
+<tr class="separator:a2eab82dfee95001b657106db3a01ab5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dc0791e7390db1399da19dc19085fc"><td class="memItemLeft" align="right" valign="top"><a id="a88dc0791e7390db1399da19dc19085fc" name="a88dc0791e7390db1399da19dc19085fc"></a>
+const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionLayout</b> () const</td></tr>
+<tr class="separator:a88dc0791e7390db1399da19dc19085fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78172b11e812ec4579b4c2db45131a89"><td class="memItemLeft" align="right" valign="top"><a id="a78172b11e812ec4579b4c2db45131a89" name="a78172b11e812ec4579b4c2db45131a89"></a>
+const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSizeLayout</b> () const</td></tr>
+<tr class="separator:a78172b11e812ec4579b4c2db45131a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56346a8bfed3d42649dfdfbff80a3a23"><td class="memItemLeft" align="right" valign="top"><a id="a56346a8bfed3d42649dfdfbff80a3a23" name="a56346a8bfed3d42649dfdfbff80a3a23"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bindPositionLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
+<tr class="separator:a56346a8bfed3d42649dfdfbff80a3a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5735b1d87dbede767d46083e1962829"><td class="memItemLeft" align="right" valign="top"><a id="aa5735b1d87dbede767d46083e1962829" name="aa5735b1d87dbede767d46083e1962829"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindPositionLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
+<tr class="separator:aa5735b1d87dbede767d46083e1962829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add471d8094976b6ff02755a6cb34b4ed"><td class="memItemLeft" align="right" valign="top"><a id="add471d8094976b6ff02755a6cb34b4ed" name="add471d8094976b6ff02755a6cb34b4ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bindSizeLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
+<tr class="separator:add471d8094976b6ff02755a6cb34b4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b01afa102a7d9a44750b5ed5cee5e6f"><td class="memItemLeft" align="right" valign="top"><a id="a1b01afa102a7d9a44750b5ed5cee5e6f" name="a1b01afa102a7d9a44750b5ed5cee5e6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindSizeLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
+<tr class="separator:a1b01afa102a7d9a44750b5ed5cee5e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acebee3873b7516fb2513ae3a9e8ba73d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#acebee3873b7516fb2513ae3a9e8ba73d">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTargetBase.html">BackendRenderTargetBase</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const =0</td></tr>
 <tr class="memdesc:acebee3873b7516fb2513ae3a9e8ba73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <a href="classtgui_1_1Widget.html#acebee3873b7516fb2513ae3a9e8ba73d">More...</a><br /></td></tr>
 <tr class="separator:acebee3873b7516fb2513ae3a9e8ba73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,32 +493,157 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseLeave</b> = {&quot;MouseLeft&quot;}</td></tr>
 <tr class="memdesc:ace62ad49b3e1fb9056f0a6431f1dcc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse left the widget. <br /></td></tr>
 <tr class="separator:ace62ad49b3e1fb9056f0a6431f1dcc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e97977c2a1a6a05c9523451a40dd68"><td class="memItemLeft" align="right" valign="top"><a id="a83e97977c2a1a6a05c9523451a40dd68" name="a83e97977c2a1a6a05c9523451a40dd68"></a>
-<a class="el" href="classtgui_1_1SignalAnimation.html">SignalAnimation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onAnimationFinish</b> = {&quot;AnimationFinished&quot;}</td></tr>
-<tr class="memdesc:a83e97977c2a1a6a05c9523451a40dd68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A show or hide animation finished. Optional parameters: animation type, new widget visibility or both. <br /></td></tr>
-<tr class="separator:a83e97977c2a1a6a05c9523451a40dd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918045dadc916f7a7f04e830dd460e4c"><td class="memItemLeft" align="right" valign="top"><a id="a918045dadc916f7a7f04e830dd460e4c" name="a918045dadc916f7a7f04e830dd460e4c"></a>
+<a class="el" href="classtgui_1_1SignalShowEffect.html">SignalShowEffect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onAnimationFinish</b> = {&quot;AnimationFinished&quot;}</td></tr>
+<tr class="separator:a918045dadc916f7a7f04e830dd460e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ec282abc6b00b79b3abb9d22845c3f"><td class="memItemLeft" align="right" valign="top"><a id="ae9ec282abc6b00b79b3abb9d22845c3f" name="ae9ec282abc6b00b79b3abb9d22845c3f"></a>
+<a class="el" href="classtgui_1_1SignalShowEffect.html">SignalShowEffect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onShowEffectFinish</b> = {&quot;ShowEffectFinished&quot;}</td></tr>
+<tr class="memdesc:ae9ec282abc6b00b79b3abb9d22845c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A show or hide animation finished. Optional parameters: animation type, new widget visibility or both. <br /></td></tr>
+<tr class="separator:ae9ec282abc6b00b79b3abb9d22845c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a00bfd018cf07652f10227ef7e9128033"><td class="memItemLeft" align="right" valign="top"><a id="a00bfd018cf07652f10227ef7e9128033" name="a00bfd018cf07652f10227ef7e9128033"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SavingRenderersMap</b> = std::map&lt; const <a class="el" href="classtgui_1_1Widget.html">Widget</a> *, std::pair&lt; std::unique_ptr&lt; DataIO::Node &gt;, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &gt;</td></tr>
+<tr class="separator:a00bfd018cf07652f10227ef7e9128033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefee7f5790f568b48ac547e13cd85f7f"><td class="memItemLeft" align="right" valign="top"><a id="aefee7f5790f568b48ac547e13cd85f7f" name="aefee7f5790f568b48ac547e13cd85f7f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap</b> = std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">RendererData</a> &gt; &gt;</td></tr>
+<tr class="separator:aefee7f5790f568b48ac547e13cd85f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7fea2c7fd134088ce7d9f86b0d7d421a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7fea2c7fd134088ce7d9f86b0d7d421a">rendererChanged</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property)</td></tr>
 <tr class="memdesc:a7fea2c7fd134088ce7d9f86b0d7d421a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when one of the properties of the renderer is changed.  <a href="classtgui_1_1Widget.html#a7fea2c7fd134088ce7d9f86b0d7d421a">More...</a><br /></td></tr>
 <tr class="separator:a7fea2c7fd134088ce7d9f86b0d7d421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f995f627c2b5c6f7dc73ed25438cab"><td class="memItemLeft" align="right" valign="top"><a id="a85f995f627c2b5c6f7dc73ed25438cab" name="a85f995f627c2b5c6f7dc73ed25438cab"></a>
-virtual std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (SavingRenderersMap &amp;renderers) const</td></tr>
-<tr class="memdesc:a85f995f627c2b5c6f7dc73ed25438cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the widget as a tree node in order to save it to a file. <br /></td></tr>
+<tr class="memitem:a85f995f627c2b5c6f7dc73ed25438cab"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a85f995f627c2b5c6f7dc73ed25438cab">save</a> (SavingRenderersMap &amp;renderers) const</td></tr>
+<tr class="memdesc:a85f995f627c2b5c6f7dc73ed25438cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the widget as a tree node in order to save it to a file.  <a href="classtgui_1_1Widget.html#a85f995f627c2b5c6f7dc73ed25438cab">More...</a><br /></td></tr>
 <tr class="separator:a85f995f627c2b5c6f7dc73ed25438cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5133ca1115809411c3c94c8c860fa7"><td class="memItemLeft" align="right" valign="top"><a id="a8f5133ca1115809411c3c94c8c860fa7" name="a8f5133ca1115809411c3c94c8c860fa7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers)</td></tr>
-<tr class="memdesc:a8f5133ca1115809411c3c94c8c860fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes. <br /></td></tr>
+<tr class="memitem:a8f5133ca1115809411c3c94c8c860fa7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a8f5133ca1115809411c3c94c8c860fa7">load</a> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers)</td></tr>
+<tr class="memdesc:a8f5133ca1115809411c3c94c8c860fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes.  <a href="classtgui_1_1Widget.html#a8f5133ca1115809411c3c94c8c860fa7">More...</a><br /></td></tr>
 <tr class="separator:a8f5133ca1115809411c3c94c8c860fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3bbdea21eb583b3239103329e22f9b"><td class="memItemLeft" align="right" valign="top"><a id="a6e3bbdea21eb583b3239103329e22f9b" name="a6e3bbdea21eb583b3239103329e22f9b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseEnteredWidget</b> ()</td></tr>
-<tr class="memdesc:a6e3bbdea21eb583b3239103329e22f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse enters the widget. <br /></td></tr>
+<tr class="memitem:a6e3bbdea21eb583b3239103329e22f9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a6e3bbdea21eb583b3239103329e22f9b">mouseEnteredWidget</a> ()</td></tr>
+<tr class="memdesc:a6e3bbdea21eb583b3239103329e22f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse enters the widget.  <a href="classtgui_1_1Widget.html#a6e3bbdea21eb583b3239103329e22f9b">More...</a><br /></td></tr>
 <tr class="separator:a6e3bbdea21eb583b3239103329e22f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="memItemLeft" align="right" valign="top"><a id="a7b37e4367a219d7b9f385f1c85e7fe8d" name="a7b37e4367a219d7b9f385f1c85e7fe8d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeftWidget</b> ()</td></tr>
-<tr class="memdesc:a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse leaves the widget. <br /></td></tr>
+<tr class="memitem:a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7b37e4367a219d7b9f385f1c85e7fe8d">mouseLeftWidget</a> ()</td></tr>
+<tr class="memdesc:a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse leaves the widget.  <a href="classtgui_1_1Widget.html#a7b37e4367a219d7b9f385f1c85e7fe8d">More...</a><br /></td></tr>
 <tr class="separator:a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a94d040fb97b2af149dabef7149bf7732"><td class="memItemLeft" align="right" valign="top"><a id="a94d040fb97b2af149dabef7149bf7732" name="a94d040fb97b2af149dabef7149bf7732"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b></td></tr>
+<tr class="separator:a94d040fb97b2af149dabef7149bf7732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3aa1e06b993f49f1e4fddd1600677c"><td class="memItemLeft" align="right" valign="top"><a id="a4e3aa1e06b993f49f1e4fddd1600677c" name="a4e3aa1e06b993f49f1e4fddd1600677c"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a4e3aa1e06b993f49f1e4fddd1600677c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b851197af4cbeb40a3a2b6372beb2c"><td class="memItemLeft" align="right" valign="top"><a id="a10b851197af4cbeb40a3a2b6372beb2c" name="a10b851197af4cbeb40a3a2b6372beb2c"></a>
+<a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_position</b></td></tr>
+<tr class="separator:a10b851197af4cbeb40a3a2b6372beb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0322cad4ececac6481830d373bd26d"><td class="memItemLeft" align="right" valign="top"><a id="a0b0322cad4ececac6481830d373bd26d" name="a0b0322cad4ececac6481830d373bd26d"></a>
+<a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
+<tr class="separator:a0b0322cad4ececac6481830d373bd26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885b832761b24c6ab091a7e4bcabdf22"><td class="memItemLeft" align="right" valign="top"><a id="a885b832761b24c6ab091a7e4bcabdf22" name="a885b832761b24c6ab091a7e4bcabdf22"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_textSize</b> = 0</td></tr>
+<tr class="separator:a885b832761b24c6ab091a7e4bcabdf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb0cef69a7be93986a09d1efc50bc5e"><td class="memItemLeft" align="right" valign="top"><a id="aceb0cef69a7be93986a09d1efc50bc5e" name="aceb0cef69a7be93986a09d1efc50bc5e"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_origin</b></td></tr>
+<tr class="separator:aceb0cef69a7be93986a09d1efc50bc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964afee33341062f9fb38d20b1749748"><td class="memItemLeft" align="right" valign="top"><a id="a964afee33341062f9fb38d20b1749748" name="a964afee33341062f9fb38d20b1749748"></a>
+Optional&lt; <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rotationOrigin</b></td></tr>
+<tr class="separator:a964afee33341062f9fb38d20b1749748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14de9c31e1b6a83cb519008dcb80d3a"><td class="memItemLeft" align="right" valign="top"><a id="ab14de9c31e1b6a83cb519008dcb80d3a" name="ab14de9c31e1b6a83cb519008dcb80d3a"></a>
+Optional&lt; <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleOrigin</b></td></tr>
+<tr class="separator:ab14de9c31e1b6a83cb519008dcb80d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6882fd71682d0c00ade7b8165d77c703"><td class="memItemLeft" align="right" valign="top"><a id="a6882fd71682d0c00ade7b8165d77c703" name="a6882fd71682d0c00ade7b8165d77c703"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleFactors</b> = {1, 1}</td></tr>
+<tr class="separator:a6882fd71682d0c00ade7b8165d77c703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466b7f2ab4d6bb8f9212dbc5b9e628a3"><td class="memItemLeft" align="right" valign="top"><a id="a466b7f2ab4d6bb8f9212dbc5b9e628a3" name="a466b7f2ab4d6bb8f9212dbc5b9e628a3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_rotationDeg</b> = 0</td></tr>
+<tr class="separator:a466b7f2ab4d6bb8f9212dbc5b9e628a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56449e7325759e10d2da9ce87b6b8e09"><td class="memItemLeft" align="right" valign="top"><a id="a56449e7325759e10d2da9ce87b6b8e09" name="a56449e7325759e10d2da9ce87b6b8e09"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_prevPosition</b></td></tr>
+<tr class="separator:a56449e7325759e10d2da9ce87b6b8e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766817af0c110a32cfadb67c0066d8cd"><td class="memItemLeft" align="right" valign="top"><a id="a766817af0c110a32cfadb67c0066d8cd" name="a766817af0c110a32cfadb67c0066d8cd"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_prevSize</b></td></tr>
+<tr class="separator:a766817af0c110a32cfadb67c0066d8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adddd90eb3e42e31bba1b49627d88ba"><td class="memItemLeft" align="right" valign="top"><a id="a9adddd90eb3e42e31bba1b49627d88ba" name="a9adddd90eb3e42e31bba1b49627d88ba"></a>
+std::unordered_set&lt; <a class="el" href="classtgui_1_1Layout.html">Layout</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundPositionLayouts</b></td></tr>
+<tr class="separator:a9adddd90eb3e42e31bba1b49627d88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffd036bfda469c1c85df0b5000ac7b5"><td class="memItemLeft" align="right" valign="top"><a id="a6ffd036bfda469c1c85df0b5000ac7b5" name="a6ffd036bfda469c1c85df0b5000ac7b5"></a>
+std::unordered_set&lt; <a class="el" href="classtgui_1_1Layout.html">Layout</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundSizeLayouts</b></td></tr>
+<tr class="separator:a6ffd036bfda469c1c85df0b5000ac7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e684c6a1af98b8360feac986f372ee"><td class="memItemLeft" align="right" valign="top"><a id="a86e684c6a1af98b8360feac986f372ee" name="a86e684c6a1af98b8360feac986f372ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enabled</b> = true</td></tr>
+<tr class="separator:a86e684c6a1af98b8360feac986f372ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d6e0c30e9513379809cfc5d284e3b3"><td class="memItemLeft" align="right" valign="top"><a id="ac3d6e0c30e9513379809cfc5d284e3b3" name="ac3d6e0c30e9513379809cfc5d284e3b3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_visible</b> = true</td></tr>
+<tr class="separator:ac3d6e0c30e9513379809cfc5d284e3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b145df7b479b8b9c07031891b861f7f"><td class="memItemLeft" align="right" valign="top"><a id="a6b145df7b479b8b9c07031891b861f7f" name="a6b145df7b479b8b9c07031891b861f7f"></a>
+<a class="el" href="classtgui_1_1Container.html">Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b> = nullptr</td></tr>
+<tr class="separator:a6b145df7b479b8b9c07031891b861f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad647011d537921217df07e046a1dd9a2"><td class="memItemLeft" align="right" valign="top"><a id="ad647011d537921217df07e046a1dd9a2" name="ad647011d537921217df07e046a1dd9a2"></a>
+<a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentGui</b> = nullptr</td></tr>
+<tr class="separator:ad647011d537921217df07e046a1dd9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb97c8d4dbc795d9381b83bb1c11c99c"><td class="memItemLeft" align="right" valign="top"><a id="afb97c8d4dbc795d9381b83bb1c11c99c" name="afb97c8d4dbc795d9381b83bb1c11c99c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseHover</b> = false</td></tr>
+<tr class="separator:afb97c8d4dbc795d9381b83bb1c11c99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded39d83efc7dbbd2e1d719d3c45dcb3"><td class="memItemLeft" align="right" valign="top"><a id="aded39d83efc7dbbd2e1d719d3c45dcb3" name="aded39d83efc7dbbd2e1d719d3c45dcb3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDown</b> = false</td></tr>
+<tr class="separator:aded39d83efc7dbbd2e1d719d3c45dcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3410f2361872074f4c8ad048a28b2f5f"><td class="memItemLeft" align="right" valign="top"><a id="a3410f2361872074f4c8ad048a28b2f5f" name="a3410f2361872074f4c8ad048a28b2f5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_focused</b> = false</td></tr>
+<tr class="separator:a3410f2361872074f4c8ad048a28b2f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f163b01c92249401baeac35b798781"><td class="memItemLeft" align="right" valign="top"><a id="aa8f163b01c92249401baeac35b798781" name="aa8f163b01c92249401baeac35b798781"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_focusable</b> = true</td></tr>
+<tr class="separator:aa8f163b01c92249401baeac35b798781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb5aa03d4491423e1c949e338d8e21f"><td class="memItemLeft" align="right" valign="top"><a id="a9eb5aa03d4491423e1c949e338d8e21f" name="a9eb5aa03d4491423e1c949e338d8e21f"></a>
+<a class="el" href="classtgui_1_1Duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_animationTimeElapsed</b></td></tr>
+<tr class="separator:a9eb5aa03d4491423e1c949e338d8e21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36220cab79e70c6bbccf207ba210f666"><td class="memItemLeft" align="right" valign="top"><a id="a36220cab79e70c6bbccf207ba210f666" name="a36220cab79e70c6bbccf207ba210f666"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_draggableWidget</b> = false</td></tr>
+<tr class="separator:a36220cab79e70c6bbccf207ba210f666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae21c3279e16d24557cadce180f34c3"><td class="memItemLeft" align="right" valign="top"><a id="aeae21c3279e16d24557cadce180f34c3" name="aeae21c3279e16d24557cadce180f34c3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_containerWidget</b> = false</td></tr>
+<tr class="separator:aeae21c3279e16d24557cadce180f34c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f78d161cba61a00e1044c439030254"><td class="memItemLeft" align="right" valign="top"><a id="aa4f78d161cba61a00e1044c439030254" name="aa4f78d161cba61a00e1044c439030254"></a>
+<a class="el" href="classtgui_1_1Widget.html#a388912f13898735531886bc676b14f81">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTip</b> = nullptr</td></tr>
+<tr class="separator:aa4f78d161cba61a00e1044c439030254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df01084944d70c79dc999e8d1dbf204"><td class="memItemLeft" align="right" valign="top"><a id="a6df01084944d70c79dc999e8d1dbf204" name="a6df01084944d70c79dc999e8d1dbf204"></a>
+aurora::CopiedPtr&lt; <a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_renderer</b> = nullptr</td></tr>
+<tr class="separator:a6df01084944d70c79dc999e8d1dbf204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0dcddeb1a44f33f9ff44f02ad4c331"><td class="memItemLeft" align="right" valign="top"><a id="a5a0dcddeb1a44f33f9ff44f02ad4c331" name="a5a0dcddeb1a44f33f9ff44f02ad4c331"></a>
+std::vector&lt; std::shared_ptr&lt; priv::Animation &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_showAnimations</b></td></tr>
+<tr class="separator:a5a0dcddeb1a44f33f9ff44f02ad4c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c5b52c3c04aab15000a83fd73656c9"><td class="memItemLeft" align="right" valign="top"><a id="a77c5b52c3c04aab15000a83fd73656c9" name="a77c5b52c3c04aab15000a83fd73656c9"></a>
+<a class="el" href="classtgui_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_inheritedFont</b></td></tr>
+<tr class="separator:a77c5b52c3c04aab15000a83fd73656c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea41a9f3667a05988a9e37997962ca7e"><td class="memItemLeft" align="right" valign="top"><a id="aea41a9f3667a05988a9e37997962ca7e" name="aea41a9f3667a05988a9e37997962ca7e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_inheritedOpacity</b> = 1</td></tr>
+<tr class="separator:aea41a9f3667a05988a9e37997962ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89185693ede7d556c9139aedb52bc684"><td class="memItemLeft" align="right" valign="top"><a id="a89185693ede7d556c9139aedb52bc684" name="a89185693ede7d556c9139aedb52bc684"></a>
+<a class="el" href="classtgui_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontCached</b> = <a class="el" href="classtgui_1_1Font.html#a6f0af84cfca7040a163a0308fb6ba4fe">Font::getGlobalFont</a>()</td></tr>
+<tr class="separator:a89185693ede7d556c9139aedb52bc684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdef38502c7317c0d940a4c93a5f8d4"><td class="memItemLeft" align="right" valign="top"><a id="a5bdef38502c7317c0d940a4c93a5f8d4" name="a5bdef38502c7317c0d940a4c93a5f8d4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_opacityCached</b> = 1</td></tr>
+<tr class="separator:a5bdef38502c7317c0d940a4c93a5f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee59f5be14808ab5d494b90cae2d478c"><td class="memItemLeft" align="right" valign="top"><a id="aee59f5be14808ab5d494b90cae2d478c" name="aee59f5be14808ab5d494b90cae2d478c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_transparentTextureCached</b> = false</td></tr>
+<tr class="separator:aee59f5be14808ab5d494b90cae2d478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340681e065b0adcbcacae3fb11782a7e"><td class="memItemLeft" align="right" valign="top"><a id="a340681e065b0adcbcacae3fb11782a7e" name="a340681e065b0adcbcacae3fb11782a7e"></a>
+Any&#160;</td><td class="memItemRight" valign="bottom"><b>m_userData</b></td></tr>
+<tr class="separator:a340681e065b0adcbcacae3fb11782a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc45615b5d24e92338cb4adac4b7fec"><td class="memItemLeft" align="right" valign="top"><a id="a3dc45615b5d24e92338cb4adac4b7fec" name="a3dc45615b5d24e92338cb4adac4b7fec"></a>
+<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
+<tr class="separator:a3dc45615b5d24e92338cb4adac4b7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6373341268f3f895a71e734a0f4c1072"><td class="memItemLeft" align="right" valign="top"><a id="a6373341268f3f895a71e734a0f4c1072" name="a6373341268f3f895a71e734a0f4c1072"></a>
+std::function&lt; void(const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rendererChangedCallback</b> = [this](const <a class="el" href="classtgui_1_1String.html">String</a>&amp; property){ rendererChangedCallback(property); }</td></tr>
+<tr class="separator:a6373341268f3f895a71e734a0f4c1072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aee29d97f7e87f0263024133085c28e3d"><td class="memItemLeft" align="right" valign="top"><a id="aee29d97f7e87f0263024133085c28e3d" name="aee29d97f7e87f0263024133085c28e3d"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Container</b></td></tr>
+<tr class="separator:aee29d97f7e87f0263024133085c28e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The parent class for every widget. </p>
@@ -1160,8 +1361,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a474ece5e6b37b56c2421f033192fe81c" name="a474ece5e6b37b56c2421f033192fe81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474ece5e6b37b56c2421f033192fe81c">&#9670;&nbsp;</a></span>hideWithEffect()</h2>
+<a id="afacd2fa30e6e2b15ac2234ec581e3262" name="afacd2fa30e6e2b15ac2234ec581e3262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacd2fa30e6e2b15ac2234ec581e3262">&#9670;&nbsp;</a></span>hideWithEffect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,7 +1370,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void tgui::Widget::hideWithEffect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437da">ShowAnimationType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2">ShowEffectType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -1196,9 +1397,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtgui_1_1Widget.html#a0a915e615cd0a516b0f166913e880764" title="Shows the widget by introducing it with an animation.">showWithEffect</a></dd></dl>
-<p>Usage example: </p><div class="fragment"><div class="line">widget-&gt;hideWithEffect(<a class="code hl_enumvalue" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437daa32adbe5629238fc4f536d19aa387edde">tgui::ShowAnimationType::SlideToRight</a>, std::chrono::milliseconds(500));</div>
-<div class="ttc" id="anamespacetgui_html_ae5f90d6756ae21ba5dd08f84138437daa32adbe5629238fc4f536d19aa387edde"><div class="ttname"><a href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437daa32adbe5629238fc4f536d19aa387edde">tgui::ShowAnimationType::SlideToRight</a></div><div class="ttdeci">@ SlideToRight</div><div class="ttdoc">Slide to the right to hide or from left to show.</div></div>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtgui_1_1Widget.html#a034fa32cf22d4f70e7e7968a80040502" title="Shows the widget by introducing it with an animation.">showWithEffect</a></dd></dl>
+<p>Usage example: </p><div class="fragment"><div class="line">widget-&gt;hideWithEffect(<a class="code hl_enumvalue" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a32adbe5629238fc4f536d19aa387edde">tgui::ShowEffectType::SlideToRight</a>, std::chrono::milliseconds(500));</div>
+<div class="ttc" id="anamespacetgui_html_a21282b64e97068d726c1ba6b8fe17cf2a32adbe5629238fc4f536d19aa387edde"><div class="ttname"><a href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a32adbe5629238fc4f536d19aa387edde">tgui::ShowEffectType::SlideToRight</a></div><div class="ttdeci">@ SlideToRight</div><div class="ttdoc">Slide to the right to hide or from left to show.</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1420,6 +1621,104 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a8f5133ca1115809411c3c94c8c860fa7" name="a8f5133ca1115809411c3c94c8c860fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5133ca1115809411c3c94c8c860fa7">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::Widget::load </td>
+          <td>(</td>
+          <td class="paramtype">const std::unique_ptr&lt; DataIO::Node &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LoadingRenderersMap &amp;&#160;</td>
+          <td class="paramname"><em>renderers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the widget from a tree of nodes. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1Container.html#a84d0d923673c8947af92adfbff59d03b">tgui::Container</a>, <a class="el" href="classtgui_1_1SubwidgetContainer.html#af97127734acf80a4847191be4cdd9494">tgui::SubwidgetContainer</a>, <a class="el" href="classtgui_1_1BitmapButton.html#af5954a691ee180061b72dc22b180ccda">tgui::BitmapButton</a>, <a class="el" href="classtgui_1_1BoxLayoutRatios.html#a7b75e988c76a830a181a2ec3e5dc7070">tgui::BoxLayoutRatios</a>, <a class="el" href="classtgui_1_1ButtonBase.html#a8070881aebb2e90c0af8730defe76972">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1ChatBox.html#a205f160dc923f96679460e8328f2d574">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1ChildWindow.html#ab1937a4aad01926980ae477d83a3d6df">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1ColorPicker.html#a3f6cd1c08f1c341f3fa9938b73040b6d">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1ComboBox.html#a9b451972535eb6ffa93168795a2f7929">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1EditBox.html#afd067fec3f6dba07e38236cbeae90dc7">tgui::EditBox</a>, <a class="el" href="classtgui_1_1FileDialog.html#a4e3ae9fc1000e56d505cb4cf7a9dbfb5">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1Grid.html#a49aec70d5e283b5d57f5c9905303c978">tgui::Grid</a>, <a class="el" href="classtgui_1_1Knob.html#a2482f2541b314f0f8bf68c1782e199b3">tgui::Knob</a>, <a class="el" href="classtgui_1_1Label.html#a379e559273c82cdcdd79f5cd48c51e1a">tgui::Label</a>, <a class="el" href="classtgui_1_1ListBox.html#a8aa4ee625fb6b1612caeb5e187a6e658">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#a99620e660095e558ac0ccfc32f377e31">tgui::ListView</a>, <a class="el" href="classtgui_1_1MenuBar.html#a7762619172e68f37bc200e4dfe7f1a16">tgui::MenuBar</a>, <a class="el" href="classtgui_1_1MessageBox.html#a0b5b81d54ae50b950a8be230917e5646">tgui::MessageBox</a>, <a class="el" href="classtgui_1_1Picture.html#ad85315f10f8bf8e277ff099ed9195a1e">tgui::Picture</a>, <a class="el" href="classtgui_1_1ProgressBar.html#aeeeb47a5683f2b6348c8e0008dd6d7fa">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1RadioButton.html#ada827ebc7dcc958100a2eaea270ae253">tgui::RadioButton</a>, <a class="el" href="classtgui_1_1RangeSlider.html#acfb408167a2a6833bb9451127888fea2">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#af05ba89f5c9ba4dae70d7095e81960a3">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1Scrollbar.html#a10d5f058f69ef7f3b8a58a0765aef983">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Slider.html#a862199f2a0bbfed6c8b7f4e792a48093">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a4094b9213524681d0cbd987f478fbe3d">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#aed679b48673d0f0e77a4cc878637acc1">tgui::SpinControl</a>, <a class="el" href="classtgui_1_1TabContainer.html#a9eddcf693fe33ad4d6c919167987ef10">tgui::TabContainer</a>, <a class="el" href="classtgui_1_1Tabs.html#a4f5a689fd111dabc20790caa251d8b66">tgui::Tabs</a>, and <a class="el" href="classtgui_1_1TextArea.html#a242aa57e7a4061d23874bc700a4486ca">tgui::TextArea</a>.</p>
+
+</div>
+</div>
+<a id="a6e3bbdea21eb583b3239103329e22f9b" name="a6e3bbdea21eb583b3239103329e22f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3bbdea21eb583b3239103329e22f9b">&#9670;&nbsp;</a></span>mouseEnteredWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::Widget::mouseEnteredWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the mouse enters the widget. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#ac4c94c4df1ad79727f682ca9b7b7cd6e">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1Button.html#a9bf1b2287c6f96885a02e2e2333e72e5">tgui::Button</a>, <a class="el" href="classtgui_1_1ButtonBase.html#af10ba31dbb7c5b4d7eb2de3cfded748d">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1ChildWindow.html#ad7831f58e1206ad06b55e2665fdc955e">tgui::ChildWindow</a>, and <a class="el" href="classtgui_1_1RadioButton.html#aafce04efebccc3487de30e07493bf085">tgui::RadioButton</a>.</p>
+
+</div>
+</div>
+<a id="a7b37e4367a219d7b9f385f1c85e7fe8d" name="a7b37e4367a219d7b9f385f1c85e7fe8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b37e4367a219d7b9f385f1c85e7fe8d">&#9670;&nbsp;</a></span>mouseLeftWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::Widget::mouseLeftWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the mouse leaves the widget. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#ac0abc4fbd97cc00992f6946733ef8aa1">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1Button.html#a1a9d240b3d3e91e2d0270528ceb35a75">tgui::Button</a>, <a class="el" href="classtgui_1_1ButtonBase.html#af24ee3e8d3b310f4075a2c7e049fac78">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a9441ef1b1304312f6421eb18b12f04a1">tgui::ChildWindow</a>, and <a class="el" href="classtgui_1_1RadioButton.html#a6e1155cc26a015202d419b52192381db">tgui::RadioButton</a>.</p>
+
+</div>
+</div>
 <a id="a828879b43785d167a5fb917cec3761ad" name="a828879b43785d167a5fb917cec3761ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a828879b43785d167a5fb917cec3761ad">&#9670;&nbsp;</a></span>moveToBack()</h2>
 
@@ -1493,6 +1792,36 @@ template&lt;typename T &gt; </div>
 </dl>
 
 <p>Reimplemented in <a class="el" href="classtgui_1_1Container.html#a4745c29756cc44cb83d269c860ce94a2">tgui::Container</a>, <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#a8922a0cae593ddd2b7ea155946348ad0">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1BitmapButton.html#a235b7b40b612ab5c1d407c13db8b143b">tgui::BitmapButton</a>, <a class="el" href="classtgui_1_1BoxLayout.html#a30e5271a234cc0a34e0ef9e70caf3eae">tgui::BoxLayout</a>, <a class="el" href="classtgui_1_1ButtonBase.html#a5b246c912adfc5d57e7aebe5498cba0b">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1CanvasSFML.html#a8fd6e0ace45b0ccb0e886702b7a4a324">tgui::CanvasSFML</a>, <a class="el" href="classtgui_1_1ChatBox.html#a15b56e661bd2db98eca228e7f1a9c5ba">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1CheckBox.html#a85a577fb521932700de9ba085ef4e87a">tgui::CheckBox</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a7957555264206479e85d3c7fd56d0927">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1ColorPicker.html#a6c5ff34f9969b8d616c234d70366dd7c">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1ComboBox.html#aa2d9ae1c2f9e759f64fad4b2faa06c1c">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1EditBox.html#a393ea82ec9964cfa21695af73f543dd1">tgui::EditBox</a>, <a class="el" href="classtgui_1_1FileDialog.html#aba49f04ad8082597ca266162e5a79bdc">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1Group.html#a5f623fb76bf946b6ad3128d952af9d3d">tgui::Group</a>, <a class="el" href="classtgui_1_1Knob.html#a3af8833fe9705f5f984d16d0d86de986">tgui::Knob</a>, <a class="el" href="classtgui_1_1Label.html#ae101a52873c5dc0b6629c0010000ad34">tgui::Label</a>, <a class="el" href="classtgui_1_1ListBox.html#ac5bc222b8c4a336698ccc330fdf894ad">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#ae1ff0d5f011abd2edfdd31cef8ba4549">tgui::ListView</a>, <a class="el" href="classtgui_1_1MenuBar.html#a316ee0f456fa331e1093c3f87a70c57e">tgui::MenuBar</a>, <a class="el" href="classtgui_1_1MessageBox.html#a919e3eb986387243cfd4ab6f0e05fb5a">tgui::MessageBox</a>, <a class="el" href="classtgui_1_1Panel.html#a8831b657f480c73d1d56918fd4c17769">tgui::Panel</a>, <a class="el" href="classtgui_1_1Picture.html#a6dcfa5b3b95f66f396b12389334721a1">tgui::Picture</a>, <a class="el" href="classtgui_1_1ProgressBar.html#ad8b9ef7c79de3080689d65ca2a2c58a2">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1RadioButton.html#a84e34b4095dffd6e5dd86ca0bcbc3bfc">tgui::RadioButton</a>, <a class="el" href="classtgui_1_1RangeSlider.html#a856f98cd6d6bf8b64a7ab5e6c526542e">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#ab18e2acefaf43cc76e0a0a17a0f9fe3e">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1Scrollbar.html#a0997c19f5e6ac555d178ead9d4262b14">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1SeparatorLine.html#a9cc814a15c741a6c4ae4751b1467756b">tgui::SeparatorLine</a>, <a class="el" href="classtgui_1_1Slider.html#aadb1ac616059bdcf108075c06cb755e3">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#adf3ae458790dd13786c68bf107d8caf1">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1Tabs.html#a6ccf1f56dddd9ec7929ef4266fd20522">tgui::Tabs</a>, <a class="el" href="classtgui_1_1TextArea.html#ab2cd35162cf4054f177056b70aad954d">tgui::TextArea</a>, and <a class="el" href="classtgui_1_1TreeView.html#ae6cf9264e3d04dc87609eab233af96c9">tgui::TreeView</a>.</p>
+
+</div>
+</div>
+<a id="a85f995f627c2b5c6f7dc73ed25438cab" name="a85f995f627c2b5c6f7dc73ed25438cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f995f627c2b5c6f7dc73ed25438cab">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; DataIO::Node &gt; tgui::Widget::save </td>
+          <td>(</td>
+          <td class="paramtype">SavingRenderersMap &amp;&#160;</td>
+          <td class="paramname"><em>renderers</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the widget as a tree node in order to save it to a file. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1Container.html#a3539eba17427e44773c03573c0c6cb34">tgui::Container</a>, <a class="el" href="classtgui_1_1SubwidgetContainer.html#aabf64a4ca371e25ec7c397758ec76b1f">tgui::SubwidgetContainer</a>, <a class="el" href="classtgui_1_1BitmapButton.html#af8e9ed640395fcbde84aa0e74064cd84">tgui::BitmapButton</a>, <a class="el" href="classtgui_1_1BoxLayoutRatios.html#ab837b6d1cde85c0123a3bbcdca2a496d">tgui::BoxLayoutRatios</a>, <a class="el" href="classtgui_1_1ButtonBase.html#ad9bdd68c0de5e6805896de3d265a7fe9">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1ChatBox.html#a7db373e09920c30456989f4be5ef82de">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a3c1b136a646f9998af9b67ce5752df59">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1ColorPicker.html#af2e44fa66edb8d11ddcc79fe86171375">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1ComboBox.html#aff92e8a9917f097972be18b960b13677">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1EditBox.html#a9a1c7f720697264c7c7ea85b10080e16">tgui::EditBox</a>, <a class="el" href="classtgui_1_1FileDialog.html#a4b7b548240ce0a76082ffcf7b664dece">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1Grid.html#a3d47ab975f6a049e77625e2e2ba69e04">tgui::Grid</a>, <a class="el" href="classtgui_1_1Knob.html#ad8df5772d0f115afd2b9ba2a2fc412c4">tgui::Knob</a>, <a class="el" href="classtgui_1_1Label.html#ad48e470e4cda8296f620e390e90ab578">tgui::Label</a>, <a class="el" href="classtgui_1_1ListBox.html#ae751305e177663590f9f5f3508689900">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#a5afff02c7ff35222bf89a6c6e78e67b0">tgui::ListView</a>, <a class="el" href="classtgui_1_1MenuBar.html#a2a1140bf85cadc26415a5c3c517998bd">tgui::MenuBar</a>, <a class="el" href="classtgui_1_1MessageBox.html#a5d1e136260c8464ed887ec694585ad84">tgui::MessageBox</a>, <a class="el" href="classtgui_1_1Picture.html#ae8a7cb51096442f5b26b99652181569c">tgui::Picture</a>, <a class="el" href="classtgui_1_1ProgressBar.html#afb1c734ef169e361b50b41ce0c181f4b">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1RadioButton.html#aa1083703496df810dbe5695d22a93285">tgui::RadioButton</a>, <a class="el" href="classtgui_1_1RangeSlider.html#aa0da09c31b76ea9b9a00c37835017ff7">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a7346666d3f20de349a344769e6373096">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1Scrollbar.html#a7f9a26bdd813a403de802dd8d0e84773">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Slider.html#a03b0c01a214860bfc201452093dad0aa">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a56e419b944ac01634d7178b54c73d59d">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#a50edeec252e73084cdc74e93a6a92a19">tgui::SpinControl</a>, <a class="el" href="classtgui_1_1Tabs.html#ac9c218ac80ffc0e458f9a2484d3049b9">tgui::Tabs</a>, <a class="el" href="classtgui_1_1TextArea.html#ad6d414a1f0dd1219746b6eb140b8a275">tgui::TextArea</a>, and <a class="el" href="classtgui_1_1TreeView.html#a3337f0239362e1548e3fbfc5d90e72ab">tgui::TreeView</a>.</p>
 
 </div>
 </div>
@@ -2420,8 +2749,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0a915e615cd0a516b0f166913e880764" name="a0a915e615cd0a516b0f166913e880764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a915e615cd0a516b0f166913e880764">&#9670;&nbsp;</a></span>showWithEffect()</h2>
+<a id="a034fa32cf22d4f70e7e7968a80040502" name="a034fa32cf22d4f70e7e7968a80040502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034fa32cf22d4f70e7e7968a80040502">&#9670;&nbsp;</a></span>showWithEffect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2429,7 +2758,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void tgui::Widget::showWithEffect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437da">ShowAnimationType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2">ShowEffectType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -2456,9 +2785,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtgui_1_1Widget.html#a474ece5e6b37b56c2421f033192fe81c" title="Hides the widget by making it leave with an animation.">hideWithEffect</a></dd></dl>
-<p>Usage example: </p><div class="fragment"><div class="line">widget-&gt;showWithEffect(<a class="code hl_enumvalue" href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437daa7eceaa1479b5b4cdea7c6d1cce219f77">tgui::ShowAnimationType::SlideFromLeft</a>, std::chrono::milliseconds(500));</div>
-<div class="ttc" id="anamespacetgui_html_ae5f90d6756ae21ba5dd08f84138437daa7eceaa1479b5b4cdea7c6d1cce219f77"><div class="ttname"><a href="namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437daa7eceaa1479b5b4cdea7c6d1cce219f77">tgui::ShowAnimationType::SlideFromLeft</a></div><div class="ttdeci">@ SlideFromLeft</div><div class="ttdoc">Slide from left to show or to the right to hide.</div></div>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtgui_1_1Widget.html#afacd2fa30e6e2b15ac2234ec581e3262" title="Hides the widget by making it leave with an animation.">hideWithEffect</a></dd></dl>
+<p>Usage example: </p><div class="fragment"><div class="line">widget-&gt;showWithEffect(<a class="code hl_enumvalue" href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a7eceaa1479b5b4cdea7c6d1cce219f77">tgui::ShowEffectType::SlideFromLeft</a>, std::chrono::milliseconds(500));</div>
+<div class="ttc" id="anamespacetgui_html_a21282b64e97068d726c1ba6b8fe17cf2a7eceaa1479b5b4cdea7c6d1cce219f77"><div class="ttname"><a href="namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a7eceaa1479b5b4cdea7c6d1cce219f77">tgui::ShowEffectType::SlideFromLeft</a></div><div class="ttdeci">@ SlideFromLeft</div><div class="ttdoc">Slide from left to show or to the right to hide.</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -2469,8 +2798,8 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -2481,12 +2810,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

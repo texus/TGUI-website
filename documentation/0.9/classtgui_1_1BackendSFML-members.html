@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -119,30 +117,39 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a5c50c5fd4c47376cd5545a614173bdd5">attachGui</a>(GuiBase *gui) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#aed3b8680771a35d6bc9d8fda2e2131ff">BackendBase</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">closeVirtualKeyboard</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#ae6be90a5579cd7cecd8debb724112b9e">convertEvent</a>(const sf::Event &amp;eventSFML, Event &amp;eventTGUI)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#ada434f9261914ee583f16fd70295cf63">createDefaultFont</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a190ed2534a25fe0b933a40bb93e3ed6f">createFont</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a6f807e566cb0788020b2a620c780fd43">createGuiRenderTarget</a>(GuiSFML *gui, sf::RenderTarget &amp;target)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BackendBase</b>(const BackendBase &amp;)=delete (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">closeVirtualKeyboard</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#ae6be90a5579cd7cecd8debb724112b9e">convertEvent</a>(const sf::Event &amp;eventSFML, Event &amp;eventTGUI)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#ada434f9261914ee583f16fd70295cf63">createDefaultFont</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a190ed2534a25fe0b933a40bb93e3ed6f">createFont</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a6f807e566cb0788020b2a620c780fd43">createGuiRenderTarget</a>(GuiSFML *gui, sf::RenderTarget &amp;target)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>createSystemCursor</b>(Cursor::Type type) (defined in <a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a04aa769a354a585d1f5f092bb44d3b49">createText</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#acbb16fd34763a4808be2bb0541803231">createTexture</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#af9e38c734b92c6474b51ccf270544bb5">detatchGui</a>(GuiBase *gui) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a8f08da1b358027c9a95fde146bf071a5">getClipboard</a>() const override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a2abce84aff06e720998560e70e48ca39">isKeyboardModifierPressed</a>(Event::KeyModifier modifierKey) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_clipboardContents</b> (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_destroyOnLastGuiDetatch</b> (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_guis</b> (defined in <a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_mouseCursors</b> (defined in <a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">openVirtualKeyboard</a>(const FloatRect &amp;inputRect) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#abe3d01be92759ff3d6468a88335219a9">readFileFromAndroidAssets</a>(const String &amp;filename, std::size_t &amp;fileSize) const</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">resetMouseCursorStyle</a>(Cursor::Type type) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">setClipboard</a>(const String &amp;contents) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#ad745f744ecd9d889637424be9c2d4d0d">setDestroyOnLastGuiDetatch</a>(bool destroyOnDetatch)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#aecfd852c01af0fe7c23d3cd997cf96a1">setMouseCursor</a>(GuiBase *gui, Cursor::Type type) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">setMouseCursorStyle</a>(Cursor::Type type, const std::uint8_t *pixels, Vector2u size, Vector2u hotspot) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a5f4bb719d74eb4740cf85d65d73883f8">~BackendBase</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator=</b>(const BackendBase &amp;)=delete (defined in <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#abe3d01be92759ff3d6468a88335219a9">readFileFromAndroidAssets</a>(const String &amp;filename, std::size_t &amp;fileSize) const</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">resetMouseCursorStyle</a>(Cursor::Type type) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">setClipboard</a>(const String &amp;contents) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#ad745f744ecd9d889637424be9c2d4d0d">setDestroyOnLastGuiDetatch</a>(bool destroyOnDetatch)</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#aecfd852c01af0fe7c23d3cd997cf96a1">setMouseCursor</a>(GuiBase *gui, Cursor::Type type) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">setMouseCursorStyle</a>(Cursor::Type type, const std::uint8_t *pixels, Vector2u size, Vector2u hotspot) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateMouseCursor</b>(Cursor::Type type, std::unique_ptr&lt; sf::Cursor &gt; cursor) (defined in <a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>updateMouseCursor</b>(sf::Window *window, Cursor::Type type) (defined in <a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html#a5f4bb719d74eb4740cf85d65d73883f8">~BackendBase</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -153,12 +160,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

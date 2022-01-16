@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -193,9 +191,15 @@ Protected Attributes</h2></td></tr>
 std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">RendererData</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_renderers</b></td></tr>
 <tr class="memdesc:a345d8a49665316af5793d92a62a9ae8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps ids to renderer datas. <br /></td></tr>
 <tr class="separator:a345d8a49665316af5793d92a62a9ae8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ea5f77ac63884b0277fb56ad8ccb13"><td class="memItemLeft" align="right" valign="top"><a id="a89ea5f77ac63884b0277fb56ad8ccb13" name="a89ea5f77ac63884b0277fb56ad8ccb13"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_primary</b></td></tr>
+<tr class="separator:a89ea5f77ac63884b0277fb56ad8ccb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a8f7bf1e67b644c23f19c17839bfe4118"><td class="memItemLeft" align="right" valign="top"><a id="a8f7bf1e67b644c23f19c17839bfe4118" name="a8f7bf1e67b644c23f19c17839bfe4118"></a>
+static std::shared_ptr&lt; <a class="el" href="classtgui_1_1Theme.html">Theme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultTheme</b></td></tr>
+<tr class="separator:a8f7bf1e67b644c23f19c17839bfe4118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4e37599faf420ea1614c11683cdedd"><td class="memItemLeft" align="right" valign="top"><a id="a1e4e37599faf420ea1614c11683cdedd" name="a1e4e37599faf420ea1614c11683cdedd"></a>
 static std::shared_ptr&lt; <a class="el" href="classtgui_1_1BaseThemeLoader.html">BaseThemeLoader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_themeLoader</b></td></tr>
 <tr class="memdesc:a1e4e37599faf420ea1614c11683cdedd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtgui_1_1Theme.html" title="This class can be used to manage the widget renderers.">Theme</a> loader which will do the actual loading. <br /></td></tr>
@@ -609,8 +613,8 @@ static std::shared_ptr&lt; <a class="el" href="classtgui_1_1BaseThemeLoader.html
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -621,12 +625,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

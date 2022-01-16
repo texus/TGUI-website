@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -114,6 +112,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classtgui_1_1GuiBase-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::GuiBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -136,6 +136,12 @@ Inheritance diagram for tgui::GuiBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af28bd7fb63ff569f562f2ab85fd42c95"><td class="memItemLeft" align="right" valign="top"><a id="af28bd7fb63ff569f562f2ab85fd42c95" name="af28bd7fb63ff569f562f2ab85fd42c95"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GuiBase</b> (const <a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> &amp;copy)=delete</td></tr>
+<tr class="separator:af28bd7fb63ff569f562f2ab85fd42c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95507fd87b63fd0231455f41155c57a8"><td class="memItemLeft" align="right" valign="top"><a id="a95507fd87b63fd0231455f41155c57a8" name="a95507fd87b63fd0231455f41155c57a8"></a>
+<a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> &amp;right)=delete</td></tr>
+<tr class="separator:a95507fd87b63fd0231455f41155c57a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f257f6b7ed2bbe78dc5a27fce4edfaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1GuiBase.html#a2f257f6b7ed2bbe78dc5a27fce4edfaf">setAbsoluteViewport</a> (const <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> &amp;viewport)</td></tr>
 <tr class="memdesc:a2f257f6b7ed2bbe78dc5a27fce4edfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the part of the screen to which the gui will render in pixels.  <a href="classtgui_1_1GuiBase.html#a2f257f6b7ed2bbe78dc5a27fce4edfaf">More...</a><br /></td></tr>
 <tr class="separator:a2f257f6b7ed2bbe78dc5a27fce4edfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,9 +171,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabKeyUsageEnabled
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTabKeyUsageEnabled</b> () const</td></tr>
 <tr class="memdesc:a3417ed62dce647502c9c884177f60459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab key usage is enabled (if so, pressing tab will focus another widget) <br /></td></tr>
 <tr class="separator:a3417ed62dce647502c9c884177f60459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26509ad58c1c0c3763e3a8464529faf4"><td class="memItemLeft" align="right" valign="top"><a id="a26509ad58c1c0c3763e3a8464529faf4" name="a26509ad58c1c0c3763e3a8464529faf4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()=0</td></tr>
-<tr class="memdesc:a26509ad58c1c0c3763e3a8464529faf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui. <br /></td></tr>
+<tr class="memitem:a26509ad58c1c0c3763e3a8464529faf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1GuiBase.html#a26509ad58c1c0c3763e3a8464529faf4">draw</a> ()=0</td></tr>
+<tr class="memdesc:a26509ad58c1c0c3763e3a8464529faf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui.  <a href="classtgui_1_1GuiBase.html#a26509ad58c1c0c3763e3a8464529faf4">More...</a><br /></td></tr>
 <tr class="separator:a26509ad58c1c0c3763e3a8464529faf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797bd3ee388bbee719f938022e788b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1RootContainer.html#abee2de15d1f94adf1ae229089d1d214c">RootContainer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1GuiBase.html#a797bd3ee388bbee719f938022e788b0a">getContainer</a> () const</td></tr>
 <tr class="memdesc:a797bd3ee388bbee719f938022e788b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal container of the Gui.  <a href="classtgui_1_1GuiBase.html#a797bd3ee388bbee719f938022e788b0a">More...</a><br /></td></tr>
@@ -280,6 +285,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unfocusAllWidgets</b>
 <tr class="memitem:ab428a0ff0b4d565efad7a4ea742e7917"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1GuiBase.html#ab428a0ff0b4d565efad7a4ea742e7917">updateTime</a> ()</td></tr>
 <tr class="memdesc:ab428a0ff0b4d565efad7a4ea742e7917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the internal clock (for timers, animations and blinking edit cursors)  <a href="classtgui_1_1GuiBase.html#ab428a0ff0b4d565efad7a4ea742e7917">More...</a><br /></td></tr>
 <tr class="separator:ab428a0ff0b4d565efad7a4ea742e7917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2842d9f359c74d0da69ab397c78a5e83"><td class="memItemLeft" align="right" valign="top"><a id="a2842d9f359c74d0da69ab397c78a5e83" name="a2842d9f359c74d0da69ab397c78a5e83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a class="el" href="classtgui_1_1Duration.html">Duration</a> elapsedTime)</td></tr>
+<tr class="separator:a2842d9f359c74d0da69ab397c78a5e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa086f3b2bbcc107e6836f8611e6d51e8"><td class="memItemLeft" align="right" valign="top"><a id="aa086f3b2bbcc107e6836f8611e6d51e8" name="aa086f3b2bbcc107e6836f8611e6d51e8"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mapPixelToView</b> (int x, int y) const</td></tr>
+<tr class="separator:aa086f3b2bbcc107e6836f8611e6d51e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8dfa81bbb9e2f147a1c45160184612"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1GuiBase.html#a5a8dfa81bbb9e2f147a1c45160184612">mainLoop</a> ()=0</td></tr>
 <tr class="memdesc:a5a8dfa81bbb9e2f147a1c45160184612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the gui control over the main loop.  <a href="classtgui_1_1GuiBase.html#a5a8dfa81bbb9e2f147a1c45160184612">More...</a><br /></td></tr>
 <tr class="separator:a5a8dfa81bbb9e2f147a1c45160184612"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,6 +301,63 @@ Public Attributes</h2></td></tr>
 <a class="el" href="namespacetgui.html#a0a18bffadf93af330e7a9892bfa77701">SignalFloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onViewChange</b> = {&quot;ViewChanged&quot;}</td></tr>
 <tr class="memdesc:afcf957fe8983e692b5b0a6017467c599"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view was changed. Optional parameter: new view rectangle. <br /></td></tr>
 <tr class="separator:afcf957fe8983e692b5b0a6017467c599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acb31910b857d7a7a16a4c7610b21b629"><td class="memItemLeft" align="right" valign="top"><a id="acb31910b857d7a7a16a4c7610b21b629" name="acb31910b857d7a7a16a4c7610b21b629"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="separator:acb31910b857d7a7a16a4c7610b21b629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc32aa2741b5689da8edfea9d467a8a"><td class="memItemLeft" align="right" valign="top"><a id="a1dc32aa2741b5689da8edfea9d467a8a" name="a1dc32aa2741b5689da8edfea9d467a8a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateContainerSize</b> ()</td></tr>
+<tr class="separator:a1dc32aa2741b5689da8edfea9d467a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a12b7f5a6d0abdfc597f1757f2eca8e6a"><td class="memItemLeft" align="right" valign="top"><a id="a12b7f5a6d0abdfc597f1757f2eca8e6a" name="a12b7f5a6d0abdfc597f1757f2eca8e6a"></a>
+std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastUpdateTime</b></td></tr>
+<tr class="separator:a12b7f5a6d0abdfc597f1757f2eca8e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac204c018d25dcc7e3b48269452463507"><td class="memItemLeft" align="right" valign="top"><a id="ac204c018d25dcc7e3b48269452463507" name="ac204c018d25dcc7e3b48269452463507"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_windowFocused</b> = true</td></tr>
+<tr class="separator:ac204c018d25dcc7e3b48269452463507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67c598d375dfbb68fca0812bf19ab48"><td class="memItemLeft" align="right" valign="top"><a id="ac67c598d375dfbb68fca0812bf19ab48" name="ac67c598d375dfbb68fca0812bf19ab48"></a>
+<a class="el" href="classtgui_1_1RootContainer.html#abee2de15d1f94adf1ae229089d1d214c">RootContainer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_container</b> = nullptr</td></tr>
+<tr class="separator:ac67c598d375dfbb68fca0812bf19ab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20e75eda1a85811206c8bcd55570e00"><td class="memItemLeft" align="right" valign="top"><a id="ac20e75eda1a85811206c8bcd55570e00" name="ac20e75eda1a85811206c8bcd55570e00"></a>
+<a class="el" href="classtgui_1_1Widget.html#a388912f13898735531886bc676b14f81">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_visibleToolTip</b> = nullptr</td></tr>
+<tr class="separator:ac20e75eda1a85811206c8bcd55570e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa296aa1621b13d78888a8b8b8630fe2f"><td class="memItemLeft" align="right" valign="top"><a id="aa296aa1621b13d78888a8b8b8630fe2f" name="aa296aa1621b13d78888a8b8b8630fe2f"></a>
+<a class="el" href="classtgui_1_1Duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_tooltipTime</b></td></tr>
+<tr class="separator:aa296aa1621b13d78888a8b8b8630fe2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4c14dde2b9e91ba0ddcbc7e5c87e19"><td class="memItemLeft" align="right" valign="top"><a id="afa4c14dde2b9e91ba0ddcbc7e5c87e19" name="afa4c14dde2b9e91ba0ddcbc7e5c87e19"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tooltipPossible</b> = false</td></tr>
+<tr class="separator:afa4c14dde2b9e91ba0ddcbc7e5c87e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f7813f26464fdc691e3cef4ea586dd"><td class="memItemLeft" align="right" valign="top"><a id="a60f7813f26464fdc691e3cef4ea586dd" name="a60f7813f26464fdc691e3cef4ea586dd"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipRelativePos</b></td></tr>
+<tr class="separator:a60f7813f26464fdc691e3cef4ea586dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1039d3d4afe30169f863e01338af5d7"><td class="memItemLeft" align="right" valign="top"><a id="ac1039d3d4afe30169f863e01338af5d7" name="ac1039d3d4afe30169f863e01338af5d7"></a>
+<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastMousePos</b></td></tr>
+<tr class="separator:ac1039d3d4afe30169f863e01338af5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdd2a50c66ab50ae6486df49d6fd8fe"><td class="memItemLeft" align="right" valign="top"><a id="aafdd2a50c66ab50ae6486df49d6fd8fe" name="aafdd2a50c66ab50ae6486df49d6fd8fe"></a>
+<a class="el" href="structtgui_1_1RelFloatRect.html">RelFloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewport</b> {<a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{1}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{1}}</td></tr>
+<tr class="separator:aafdd2a50c66ab50ae6486df49d6fd8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543260ea72b60a5a2bd42c5967134fa4"><td class="memItemLeft" align="right" valign="top"><a id="a543260ea72b60a5a2bd42c5967134fa4" name="a543260ea72b60a5a2bd42c5967134fa4"></a>
+<a class="el" href="structtgui_1_1RelFloatRect.html">RelFloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b> {<a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{1}, <a class="el" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{1}}</td></tr>
+<tr class="separator:a543260ea72b60a5a2bd42c5967134fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e9840208ae650e09a29992070496f4"><td class="memItemLeft" align="right" valign="top"><a id="a30e9840208ae650e09a29992070496f4" name="a30e9840208ae650e09a29992070496f4"></a>
+<a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastView</b></td></tr>
+<tr class="separator:a30e9840208ae650e09a29992070496f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1087ec75711fe32fcd51caaf44c500ae"><td class="memItemLeft" align="right" valign="top"><a id="a1087ec75711fe32fcd51caaf44c500ae" name="a1087ec75711fe32fcd51caaf44c500ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawUpdatesTime</b> = true</td></tr>
+<tr class="separator:a1087ec75711fe32fcd51caaf44c500ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc08fffc37499a49d75d68c41ddcb0d5"><td class="memItemLeft" align="right" valign="top"><a id="abc08fffc37499a49d75d68c41ddcb0d5" name="abc08fffc37499a49d75d68c41ddcb0d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabKeyUsageEnabled</b> = true</td></tr>
+<tr class="separator:abc08fffc37499a49d75d68c41ddcb0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464cfbb7cd8746409f3231b5ebb15dd0"><td class="memItemLeft" align="right" valign="top"><a id="a464cfbb7cd8746409f3231b5ebb15dd0" name="a464cfbb7cd8746409f3231b5ebb15dd0"></a>
+<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedMouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
+<tr class="separator:a464cfbb7cd8746409f3231b5ebb15dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d3ab2d9bb31fb96f02e38bb3fedaf7"><td class="memItemLeft" align="right" valign="top"><a id="a65d3ab2d9bb31fb96f02e38bb3fedaf7" name="a65d3ab2d9bb31fb96f02e38bb3fedaf7"></a>
+std::stack&lt; <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_overrideMouseCursors</b></td></tr>
+<tr class="separator:a65d3ab2d9bb31fb96f02e38bb3fedaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for the Gui. </p>
@@ -329,6 +397,35 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>The widget name should not contain whitespace </dd></dl>
+
+</div>
+</div>
+<a id="a26509ad58c1c0c3763e3a8464529faf4" name="a26509ad58c1c0c3763e3a8464529faf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26509ad58c1c0c3763e3a8464529faf4">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::GuiBase::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws all the widgets that were added to the gui. </p>
+
+<p>Implemented in <a class="el" href="classtgui_1_1GuiSDL.html#a691b0014a36f857c56488e18dae6bae3">tgui::GuiSDL</a>, and <a class="el" href="classtgui_1_1GuiSFML.html#a8fa72a956c161669069970448a57430a">tgui::GuiSFML</a>.</p>
 
 </div>
 </div>
@@ -1435,8 +1532,8 @@ template&lt;class T &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -1447,12 +1544,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

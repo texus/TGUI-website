@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -136,9 +134,11 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a4642138eef6843cc5d8216cd246c3712">getTextStyle</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a84737271388f505ea8ce923fc41aa6fc">getTextureBackground</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html#a4db55079e61032581c86ef7f382c6748">getTransparentTexture</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a9f1265cb91165b7bda479d6b302fc5f1">setBackgroundColor</a>(Color color)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a9ec230bfc72557d8bebe0fa06a35e80f">setBorderColor</a>(Color color)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#ad351681542aa968da16f6ce0d6f5f484">setBorders</a>(const Borders &amp;borders)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_data</b> (defined in <a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a9f1265cb91165b7bda479d6b302fc5f1">setBackgroundColor</a>(Color color)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#a9ec230bfc72557d8bebe0fa06a35e80f">setBorderColor</a>(Color color)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html#ad351681542aa968da16f6ce0d6f5f484">setBorders</a>(const Borders &amp;borders)</td><td class="entry"><a class="el" href="classtgui_1_1LabelRenderer.html">tgui::LabelRenderer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setData</b>(const std::shared_ptr&lt; RendererData &gt; &amp;data) (defined in <a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a>)</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html#af3974563f296fe6ba3f69222f15440aa">setFont</a>(Font font)</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html#ae5d54bd30e28da1c41f34b6f86fa3dc4">setOpacity</a>(float opacity)</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html#ac55884caa735e246d8aa631c4b638def">setOpacityDisabled</a>(float opacity)</td><td class="entry"><a class="el" href="classtgui_1_1WidgetRenderer.html">tgui::WidgetRenderer</a></td><td class="entry"></td></tr>
@@ -161,8 +161,8 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -173,12 +173,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

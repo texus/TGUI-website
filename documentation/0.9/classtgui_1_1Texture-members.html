@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -117,6 +115,8 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a>, including all inherited members.</p>
 <table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BackendTextureLoaderFunc</b> typedef (defined in <a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>CallbackFunc</b> typedef (defined in <a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a5ad9892d4a64eb48d6ddb8de12612394">getBackendTextureLoader</a>()</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#adb70c923ce34fb7dfc3ef6d62363abe4">getColor</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a30c39ca130b56713eca952a09f953d30">getData</a>() const</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
@@ -151,13 +151,14 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a7d597eef2709970a617e2eaa49f23183">Texture</a>(const sf::Texture &amp;texture, const UIntRect &amp;partRect=UIntRect(0, 0, 0, 0), const UIntRect &amp;middlePart=UIntRect(0, 0, 0, 0))</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a140a10082082e5c0201453587ab70184">Texture</a>(const Texture &amp;)</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a44f1cc3684a7130c1e506c91fe55e911">Texture</a>(Texture &amp;&amp;) noexcept</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a9203f38ba93caabbdd525a48c668d686">~Texture</a>()</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>TextureLoaderFunc</b> typedef (defined in <a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a>)</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1Texture.html#a9203f38ba93caabbdd525a48c668d686">~Texture</a>()</td><td class="entry"><a class="el" href="classtgui_1_1Texture.html">tgui::Texture</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -168,12 +169,5 @@ Generated on Mon Nov 1 2021 13:03:03 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

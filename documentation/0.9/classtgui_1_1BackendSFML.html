@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -115,6 +113,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classtgui_1_1BackendSFML-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::BackendSFML Class Reference</div></div>
 </div><!--header-->
@@ -171,9 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3c0020bd43be66ef911d1b6a6880f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">openVirtualKeyboard</a> (const <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> &amp;inputRect) override</td></tr>
 <tr class="memdesc:aa3c0020bd43be66ef911d1b6a6880f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the virtual keyboard on Android and iOS.  <a href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">More...</a><br /></td></tr>
 <tr class="separator:aa3c0020bd43be66ef911d1b6a6880f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea706fa57c6c46edca0a9276be199a76"><td class="memItemLeft" align="right" valign="top"><a id="aea706fa57c6c46edca0a9276be199a76" name="aea706fa57c6c46edca0a9276be199a76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeVirtualKeyboard</b> () override</td></tr>
-<tr class="memdesc:aea706fa57c6c46edca0a9276be199a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the virtual keyboard on Android and iOS. <br /></td></tr>
+<tr class="memitem:aea706fa57c6c46edca0a9276be199a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">closeVirtualKeyboard</a> () override</td></tr>
+<tr class="memdesc:aea706fa57c6c46edca0a9276be199a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the virtual keyboard on Android and iOS.  <a href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">More...</a><br /></td></tr>
 <tr class="separator:aea706fa57c6c46edca0a9276be199a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abce84aff06e720998560e70e48ca39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#a2abce84aff06e720998560e70e48ca39">isKeyboardModifierPressed</a> (<a class="el" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey) override</td></tr>
 <tr class="memdesc:a2abce84aff06e720998560e70e48ca39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the state for one of the modifier keys.  <a href="classtgui_1_1BackendSFML.html#a2abce84aff06e720998560e70e48ca39">More...</a><br /></td></tr>
@@ -192,6 +191,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closeVirtualKeyboard<
 &#160;</td><td class="memItemRight" valign="bottom"><b>BackendBase</b> ()=default</td></tr>
 <tr class="memdesc:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d20f6d2fdd09ad6a2f8c254aab33a6 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="ad1d20f6d2fdd09ad6a2f8c254aab33a6" name="ad1d20f6d2fdd09ad6a2f8c254aab33a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BackendBase</b> (const <a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;)=delete</td></tr>
+<tr class="separator:ad1d20f6d2fdd09ad6a2f8c254aab33a6 inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd4570a660740b60d2dfc6aa1cc429e inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="a7dd4570a660740b60d2dfc6aa1cc429e" name="a7dd4570a660740b60d2dfc6aa1cc429e"></a>
+<a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;)=delete</td></tr>
+<tr class="separator:a7dd4570a660740b60d2dfc6aa1cc429e inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="a5f4bb719d74eb4740cf85d65d73883f8" name="a5f4bb719d74eb4740cf85d65d73883f8"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendBase</b> ()=default</td></tr>
 <tr class="memdesc:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
@@ -208,6 +213,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6be90a5579cd7cecd8debb724112b9e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSFML.html#ae6be90a5579cd7cecd8debb724112b9e">convertEvent</a> (const sf::Event &amp;eventSFML, <a class="el" href="structtgui_1_1Event.html">Event</a> &amp;eventTGUI)</td></tr>
 <tr class="memdesc:ae6be90a5579cd7cecd8debb724112b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that converts an SFML event to a TGUI event.  <a href="classtgui_1_1BackendSFML.html#ae6be90a5579cd7cecd8debb724112b9e">More...</a><br /></td></tr>
 <tr class="separator:ae6be90a5579cd7cecd8debb724112b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a37a017d0080f0c6ec3676895afb1e3b8"><td class="memItemLeft" align="right" valign="top"><a id="a37a017d0080f0c6ec3676895afb1e3b8" name="a37a017d0080f0c6ec3676895afb1e3b8"></a>
+std::unique_ptr&lt; sf::Cursor &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSystemCursor</b> (<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type)</td></tr>
+<tr class="separator:a37a017d0080f0c6ec3676895afb1e3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a36003c6ed9fa20cea626f0c79f106b"><td class="memItemLeft" align="right" valign="top"><a id="a9a36003c6ed9fa20cea626f0c79f106b" name="a9a36003c6ed9fa20cea626f0c79f106b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateMouseCursor</b> (<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, std::unique_ptr&lt; sf::Cursor &gt; cursor)</td></tr>
+<tr class="separator:a9a36003c6ed9fa20cea626f0c79f106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a0cd0bea473c79ba016c9793c2ca40"><td class="memItemLeft" align="right" valign="top"><a id="ac1a0cd0bea473c79ba016c9793c2ca40" name="ac1a0cd0bea473c79ba016c9793c2ca40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateMouseCursor</b> (sf::Window *window, <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type)</td></tr>
+<tr class="separator:ac1a0cd0bea473c79ba016c9793c2ca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0fad91d406d56ea972d486d125ed66a5"><td class="memItemLeft" align="right" valign="top"><a id="a0fad91d406d56ea972d486d125ed66a5" name="a0fad91d406d56ea972d486d125ed66a5"></a>
+std::map&lt; <a class="el" href="classtgui_1_1GuiBase.html">GuiBase</a> *, GuiResources &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_guis</b></td></tr>
+<tr class="separator:a0fad91d406d56ea972d486d125ed66a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27ef09d5e77c520cda1cb3084e50eb1"><td class="memItemLeft" align="right" valign="top"><a id="af27ef09d5e77c520cda1cb3084e50eb1" name="af27ef09d5e77c520cda1cb3084e50eb1"></a>
+std::map&lt; <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>, std::unique_ptr&lt; sf::Cursor &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseCursors</b></td></tr>
+<tr class="separator:af27ef09d5e77c520cda1cb3084e50eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classtgui_1_1BackendBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classtgui_1_1BackendBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td></tr>
+<tr class="memitem:aada71627d7a6d2f6e9b8ecba87adec27 inherit pro_attribs_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="aada71627d7a6d2f6e9b8ecba87adec27" name="aada71627d7a6d2f6e9b8ecba87adec27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_destroyOnLastGuiDetatch</b> = false</td></tr>
+<tr class="separator:aada71627d7a6d2f6e9b8ecba87adec27 inherit pro_attribs_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef687c61c7b65b2c03edfc57f47e132d inherit pro_attribs_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="aef687c61c7b65b2c03edfc57f47e132d" name="aef687c61c7b65b2c03edfc57f47e132d"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_clipboardContents</b></td></tr>
+<tr class="separator:aef687c61c7b65b2c03edfc57f47e132d inherit pro_attribs_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Backend that uses SFML. </p>
@@ -245,6 +278,35 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classtgui_1_1BackendBase.html#a91aca0eb3816f37125e52e85893b40b4">tgui::BackendBase</a>.</p>
+
+</div>
+</div>
+<a id="aea706fa57c6c46edca0a9276be199a76" name="aea706fa57c6c46edca0a9276be199a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea706fa57c6c46edca0a9276be199a76">&#9670;&nbsp;</a></span>closeVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendSFML::closeVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the virtual keyboard on Android and iOS. </p>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#aae0788252587d7294ba9cc22e7f378cb">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -778,8 +840,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -790,12 +852,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

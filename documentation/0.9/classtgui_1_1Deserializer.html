@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -112,6 +110,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classtgui_1_1Deserializer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tgui::Deserializer Class Reference</div></div>
 </div><!--header-->
@@ -121,6 +121,28 @@ $(function() {
  <a href="classtgui_1_1Deserializer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Deserializer_8hpp_source.html">TGUI/Loading/Deserializer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a319a3cc3b00a103603a882c65133b0c8"><td class="memItemLeft" align="right" valign="top"><a id="a319a3cc3b00a103603a882c65133b0c8" name="a319a3cc3b00a103603a882c65133b0c8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeserializeFunc</b> = std::function&lt; <a class="el" href="classtgui_1_1ObjectConverter.html">ObjectConverter</a>(const <a class="el" href="classtgui_1_1String.html">String</a> &amp;)&gt;</td></tr>
+<tr class="separator:a319a3cc3b00a103603a882c65133b0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1a7be722e7e0838d623fd0e86a45d028"><td class="memItemLeft" align="right" valign="top"><a id="a1a7be722e7e0838d623fd0e86a45d028" name="a1a7be722e7e0838d623fd0e86a45d028"></a>
+static <a class="el" href="classtgui_1_1ObjectConverter.html">ObjectConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>deserialize</b> (ObjectConverter::Type type, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;serializedString)</td></tr>
+<tr class="separator:a1a7be722e7e0838d623fd0e86a45d028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94d93e9d37991645fc3ca4fed679893"><td class="memItemLeft" align="right" valign="top"><a id="ab94d93e9d37991645fc3ca4fed679893" name="ab94d93e9d37991645fc3ca4fed679893"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFunction</b> (ObjectConverter::Type type, const DeserializeFunc &amp;deserializer)</td></tr>
+<tr class="separator:ab94d93e9d37991645fc3ca4fed679893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cd08ef784e20f35ed2d3d81e8423dc"><td class="memItemLeft" align="right" valign="top"><a id="a22cd08ef784e20f35ed2d3d81e8423dc" name="a22cd08ef784e20f35ed2d3d81e8423dc"></a>
+static const DeserializeFunc &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFunction</b> (ObjectConverter::Type type)</td></tr>
+<tr class="separator:a22cd08ef784e20f35ed2d3d81e8423dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86887484459eff85e8481b0f96f9d93b"><td class="memItemLeft" align="right" valign="top"><a id="a86887484459eff85e8481b0f96f9d93b" name="a86887484459eff85e8481b0f96f9d93b"></a>
+static std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>split</b> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;str, char delim)</td></tr>
+<tr class="separator:a86887484459eff85e8481b0f96f9d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Deserializes a settable property. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
@@ -130,8 +152,8 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -142,12 +164,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

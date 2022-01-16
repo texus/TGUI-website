@@ -15,8 +15,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM 1 -->
 <!-- --{{""}}>
 {% include head.ext %}
@@ -66,7 +64,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">0.9.2</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -174,9 +172,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0a1398ceaf3436f7f8e9fffc2b4476a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSDL.html#ae0a1398ceaf3436f7f8e9fffc2b4476a">openVirtualKeyboard</a> (const <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> &amp;inputRect) override</td></tr>
 <tr class="memdesc:ae0a1398ceaf3436f7f8e9fffc2b4476a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the virtual keyboard on Android and iOS.  <a href="classtgui_1_1BackendSDL.html#ae0a1398ceaf3436f7f8e9fffc2b4476a">More...</a><br /></td></tr>
 <tr class="separator:ae0a1398ceaf3436f7f8e9fffc2b4476a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f61ccb2e95881d8971e925da84152d"><td class="memItemLeft" align="right" valign="top"><a id="a19f61ccb2e95881d8971e925da84152d" name="a19f61ccb2e95881d8971e925da84152d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeVirtualKeyboard</b> () override</td></tr>
-<tr class="memdesc:a19f61ccb2e95881d8971e925da84152d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the virtual keyboard on Android and iOS. <br /></td></tr>
+<tr class="memitem:a19f61ccb2e95881d8971e925da84152d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSDL.html#a19f61ccb2e95881d8971e925da84152d">closeVirtualKeyboard</a> () override</td></tr>
+<tr class="memdesc:a19f61ccb2e95881d8971e925da84152d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the virtual keyboard on Android and iOS.  <a href="classtgui_1_1BackendSDL.html#a19f61ccb2e95881d8971e925da84152d">More...</a><br /></td></tr>
 <tr class="separator:a19f61ccb2e95881d8971e925da84152d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c28ae9ac9c0946592059c3656aec7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSDL.html#a38c28ae9ac9c0946592059c3656aec7b">isKeyboardModifierPressed</a> (<a class="el" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey) override</td></tr>
 <tr class="memdesc:a38c28ae9ac9c0946592059c3656aec7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the state for one of the modifier keys.  <a href="classtgui_1_1BackendSDL.html#a38c28ae9ac9c0946592059c3656aec7b">More...</a><br /></td></tr>
@@ -198,6 +195,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closeVirtualKeyboard<
 &#160;</td><td class="memItemRight" valign="bottom"><b>BackendBase</b> ()=default</td></tr>
 <tr class="memdesc:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:aed3b8680771a35d6bc9d8fda2e2131ff inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d20f6d2fdd09ad6a2f8c254aab33a6 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="ad1d20f6d2fdd09ad6a2f8c254aab33a6" name="ad1d20f6d2fdd09ad6a2f8c254aab33a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BackendBase</b> (const <a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;)=delete</td></tr>
+<tr class="separator:ad1d20f6d2fdd09ad6a2f8c254aab33a6 inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd4570a660740b60d2dfc6aa1cc429e inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="a7dd4570a660740b60d2dfc6aa1cc429e" name="a7dd4570a660740b60d2dfc6aa1cc429e"></a>
+<a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classtgui_1_1BackendBase.html">BackendBase</a> &amp;)=delete</td></tr>
+<tr class="separator:a7dd4570a660740b60d2dfc6aa1cc429e inherit pub_methods_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="a5f4bb719d74eb4740cf85d65d73883f8" name="a5f4bb719d74eb4740cf85d65d73883f8"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendBase</b> ()=default</td></tr>
 <tr class="memdesc:a5f4bb719d74eb4740cf85d65d73883f8 inherit pub_methods_classtgui_1_1BackendBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
@@ -214,6 +217,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab12275e360ac2f9fc853759c86d107dd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendSDL.html#ab12275e360ac2f9fc853759c86d107dd">convertEvent</a> (const SDL_Event &amp;eventSDL, <a class="el" href="structtgui_1_1Event.html">Event</a> &amp;eventTGUI)</td></tr>
 <tr class="memdesc:ab12275e360ac2f9fc853759c86d107dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that converts an SDL event to a TGUI event.  <a href="classtgui_1_1BackendSDL.html#ab12275e360ac2f9fc853759c86d107dd">More...</a><br /></td></tr>
 <tr class="separator:ab12275e360ac2f9fc853759c86d107dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classtgui_1_1BackendBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classtgui_1_1BackendBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtgui_1_1BackendBase.html">tgui::BackendBase</a></td></tr>
+<tr class="memitem:aada71627d7a6d2f6e9b8ecba87adec27 inherit pro_attribs_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="aada71627d7a6d2f6e9b8ecba87adec27" name="aada71627d7a6d2f6e9b8ecba87adec27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_destroyOnLastGuiDetatch</b> = false</td></tr>
+<tr class="separator:aada71627d7a6d2f6e9b8ecba87adec27 inherit pro_attribs_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef687c61c7b65b2c03edfc57f47e132d inherit pro_attribs_classtgui_1_1BackendBase"><td class="memItemLeft" align="right" valign="top"><a id="aef687c61c7b65b2c03edfc57f47e132d" name="aef687c61c7b65b2c03edfc57f47e132d"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_clipboardContents</b></td></tr>
+<tr class="separator:aef687c61c7b65b2c03edfc57f47e132d inherit pro_attribs_classtgui_1_1BackendBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Backend that uses SDL. </p>
@@ -289,6 +302,35 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>This function has to be used instead of glBindTexture so that the backend knows the last used texture </p>
+
+</div>
+</div>
+<a id="a19f61ccb2e95881d8971e925da84152d" name="a19f61ccb2e95881d8971e925da84152d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f61ccb2e95881d8971e925da84152d">&#9670;&nbsp;</a></span>closeVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendSDL::closeVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the virtual keyboard on Android and iOS. </p>
+
+<p>Implements <a class="el" href="classtgui_1_1BackendBase.html#aae0788252587d7294ba9cc22e7f378cb">tgui::BackendBase</a>.</p>
 
 </div>
 </div>
@@ -822,8 +864,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.svg" alt="doxygen"/>
+Generated on Sat Jan 15 2022 19:45:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.9.2
 </small></address>
 <!-- BEGIN CUSTOM 3 -->
@@ -834,12 +876,5 @@ Generated on Mon Nov 1 2021 13:03:02 for TGUI by &#160;<a href="http://www.doxyg
 {% include footer.ext %}
 <{{""}}!{{""}}-{{""}}- -->
 <!-- END CUSTOM 3 -->
-<!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
-<script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
-{
-    toggleLevel(2);
-}
-</script>
 </body>
 </html>

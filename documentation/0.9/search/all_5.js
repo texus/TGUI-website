@@ -16,7 +16,7 @@ var searchData=
   ['f7_13',['F7',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a47489eb597b7db34caa24b1fc78fc839',1,'tgui::Event']]],
   ['f8_14',['F8',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a4787509ad9f9d747a81a30e9dde3d4a7',1,'tgui::Event']]],
   ['f9_15',['F9',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a892a245e287c163080b23db737d3c4c9',1,'tgui::Event']]],
-  ['fade_16',['Fade',['../namespacetgui.html#ae5f90d6756ae21ba5dd08f84138437daa04e0385c10aefee8e4681617d2f3ef40',1,'tgui']]],
+  ['fade_16',['Fade',['../namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a04e0385c10aefee8e4681617d2f3ef40',1,'tgui']]],
   ['filedialog_17',['FileDialog',['../classtgui_1_1FileDialog.html#adb9b791b0952a865f45796fdc61c5c15',1,'tgui::FileDialog::FileDialog(FileDialog &amp;&amp;copy) noexcept'],['../classtgui_1_1FileDialog.html#aeb204575636502fd16d9878e5a885cd3',1,'tgui::FileDialog::FileDialog(const FileDialog &amp;copy)'],['../classtgui_1_1FileDialog.html',1,'tgui::FileDialog']]],
   ['filedialogiconloader_18',['FileDialogIconLoader',['../classtgui_1_1FileDialogIconLoader.html#ac9d718cad748e920a261127b4c8575e1',1,'tgui::FileDialogIconLoader::FileDialogIconLoader()'],['../classtgui_1_1FileDialogIconLoader.html',1,'tgui::FileDialogIconLoader']]],
   ['filedialogrenderer_19',['FileDialogRenderer',['../classtgui_1_1FileDialogRenderer.html',1,'tgui']]],
