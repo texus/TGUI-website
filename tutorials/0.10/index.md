@@ -24,6 +24,8 @@ breadcrumb: 0.10
 
 [iOS (SFML_GRAPHICS)](ios-sfml-graphics/)
 
+[iOS (SDL_RENDERER)](ios-sdl-renderer/)
+
 
 ### Getting started
 
