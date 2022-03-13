@@ -20,6 +20,8 @@ breadcrumb: 0.10
 
 [Android (SFML_GRAPHICS)](android-sfml-graphics/)
 
+[Android (SDL_RENDERER)](android-sdl-renderer/)
+
 [Android (SDL_TTF_GLES2)](android-sdl-ttf-gles2/)
 
 [iOS (SFML_GRAPHICS)](ios-sfml-graphics/)
