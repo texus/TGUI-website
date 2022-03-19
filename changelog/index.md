@@ -5,6 +5,21 @@ title: Changelog
 changelog:
 - version: 0
   minors:
+  - version: 10
+    patches:
+    - version: beta
+      date: 19 March 2022
+      changes: |
+        Existing backends were rewritten
+        Added SFML/OpenGL backend (sfml-window + OpenGL >= 3.3)
+        Added GLFW/OpenGL backend (glfw3 + OpenGL >= 3.3 or GLES >= 2.0)
+        Added SDL\_Renderer backend (SDL + SDL\_ttf)
+        Added moveWithAnimation and resizeWithAnimation functions to Widget
+        Added case-insensitive variants of startsWith and endsWith to String
+        ClientSize of ChildWindow can now be a layout instead of only a constant
+        Typing in FileDialog now selects the first file starting with the typed letter
+        TextSize can now also be set in theme file
+        Tool tips are now shown on disabled widgets by default
   - version: 9
     patches:
     - version: 3

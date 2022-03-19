@@ -5,5 +5,5 @@ var searchData=
   ['hasgenericicons_2',['hasGenericIcons',['../classtgui_1_1FileDialogIconLoader.html#a390418f6cac1bb6ed4fb7226c1d694a4',1,'tgui::FileDialogIconLoader']]],
   ['hasglyph_3',['hasGlyph',['../classtgui_1_1BackendFont.html#ac46a7f03d237d03a661613cb7a07bbcc',1,'tgui::BackendFont::hasGlyph()'],['../classtgui_1_1BackendFontFreetype.html#add72088ab592e893d3774bc521873839',1,'tgui::BackendFontFreetype::hasGlyph()'],['../classtgui_1_1BackendFontSDLttf.html#ad5a3c687581045426b29a1eb042276b7',1,'tgui::BackendFontSDLttf::hasGlyph()'],['../classtgui_1_1BackendFontSFML.html#a265ef5265180dfab0b7c67b8644760d1',1,'tgui::BackendFontSFML::hasGlyph()']]],
   ['hasrenderer_4',['hasRenderer',['../classtgui_1_1Backend.html#af76c5d38caf92a2d934caa00a830c7b4',1,'tgui::Backend']]],
-  ['hidewitheffect_5',['hideWithEffect',['../classtgui_1_1Widget.html#a474ece5e6b37b56c2421f033192fe81c',1,'tgui::Widget']]]
+  ['hidewitheffect_5',['hideWithEffect',['../classtgui_1_1Widget.html#afacd2fa30e6e2b15ac2234ec581e3262',1,'tgui::Widget']]]
 ];

@@ -10,5 +10,6 @@ var searchData=
   ['mousebuttonreleased_7',['MouseButtonReleased',['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0aa7584c169de594c27f00084b93186fd7c',1,'tgui::Event']]],
   ['mousemoved_8',['MouseMoved',['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0aac2770ad109c8063ce69a3608a9a16c08',1,'tgui::Event']]],
   ['mousewheelscrolled_9',['MouseWheelScrolled',['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0aa9787e93d7821ce61637e6f9f19ef955b',1,'tgui::Event']]],
-  ['multiply_10',['Multiply',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9ae257376d913f3b53cbb4a9b19d770648',1,'tgui::Event']]]
+  ['move_10',['Move',['../namespacetgui.html#aa728b924b1e93f5e2edd555dffffadbaa6bc362dbf494c61ea117fe3c71ca48a5',1,'tgui']]],
+  ['multiply_11',['Multiply',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9ae257376d913f3b53cbb4a9b19d770648',1,'tgui::Event']]]
 ];

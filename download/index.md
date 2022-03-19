@@ -14,14 +14,35 @@ title: Download
 </p>
 
 Packages:  
-**PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
 **AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
+
+### TGUI 0.10-beta
+
+**Beta for upcoming version**. Minimum supported compilers: GCC 6, Clang 6, VS2017
+
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.10-beta.zip" style="Orange" %}
+
+Precompiled libraries for Windows with SFML_GRAPHICS backend: (require matching libraries from [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/))
+
+<table>
+<tr>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+</tr>
+<tr>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+</tr>
+</table>
+
+Packages:  
+**PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)
 
 ### TGUI 0.9.3
 **Latest stable version**. Minimum supported compilers: GCC 5, Clang 4, VS2017
 
 {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.3.zip" style="Green" %}
-<br>
+
 Precompiled libraries for Windows with SFML backend: (require matching libraries from [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/))
 <p>
   {% include button.ext text="Visual C++16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.3/TGUI-0.9.3-vc16-32bit-for-SFML-2.5.1.zip" style="Green" %}
