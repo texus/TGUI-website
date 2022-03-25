@@ -31,6 +31,8 @@ breadcrumb: 0.10
 
 ### Getting started
 
+[Using TGUI from a CMake project](using-from-cmake/)
+
 [SFML_GRAPHICS backend](backend-sfml-graphics/) &nbsp; (Uses sfml-graphics for everything)
 
 [SFML_OPENGL3 backend](backend-sfml-opengl3/) &nbsp; (Uses sfml-window and FreeType, using OpenGL to draw)
