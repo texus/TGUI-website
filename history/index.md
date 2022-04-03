@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Histroy
+title: History
 breadcrumb: history
 redirect_from: /screenshots/
 ---
@@ -29,3 +29,6 @@ For v0.6 I rewrote a lot of stuff so I needed to test all objects again. For thi
 
 Somewhere between 0.6 and 0.7, support for transparent widgets was added:  
 [![Screenshot v0.6 Transparency](/resources/Screenshot_v0.6_Transparency.jpg){:width="480" height="378"}](/resources/Screenshot_v0.6_Transparency.jpg)
+
+By the time TGUI 0.10 was released, many new widgets and features were added. A new form was created to showcase TGUI's capabilities:  
+[![Screenshot v0.6 Transparency](/resources/Screenshots/v0.10-White.png){:width="480" height="360"}](/resources/Screenshots/v0.10-White.png)

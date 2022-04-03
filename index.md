@@ -12,9 +12,9 @@ Although TGUI was created for SFML, it now also has built-in backends for SDL an
 The gui is easy to use, with only a few lines you can e.g. have a fully functional TextBox on your screen. The widgets can be created by just using colors or by using images, making the look very customizable.
 
 <div>
-  <a href="/resources/Screenshots/White.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/White-small.jpg" alt="White theme" width="246" height="185"/></a>
-  <a href="/resources/Screenshots/Black.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/Black-small.jpg" alt="Black theme" width="246" height="185"/></a>
-  <a href="/resources/Screenshots/BabyBlue.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/BabyBlue-small.jpg" alt="BabyBlue theme" width="246" height="185"/></a>
+  <a href="/resources/Screenshots/v0.10-White.png" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/v0.10-White-small.png" alt="TGUI 0.10 White theme" width="246" height="185"/></a>
+  <a href="/resources/Screenshots/Black.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/Black-small.jpg" alt="TGUI 0.6 Black theme" width="246" height="185"/></a>
+  <a href="/resources/Screenshots/BabyBlue.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/BabyBlue-small.jpg" alt="TGUI 0.4 BabyBlue theme" width="246" height="185"/></a>
   <a href="/resources/Screenshots/KronosGame.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/KronosGame-small.jpg" alt="Kronos Game theme" width="246" height="185"/></a>
 </div>
 

@@ -38,6 +38,7 @@ This is a list of TGUI related properties that you might want to specify in CMak
       <td>
         <p>Sets whether you want to build shared or static libraries.</p>
         <p>Static libraries are included inside your executable while shared/dynamic libraries will require you to include the library as a separate file when distributing your executable (the .dll file on Windows). Static TGUI libraries will have "-s" at the end of their name.</p>
+        <p>Projects that use static TGUI libraries must add "TGUI_STATIC" to their preprocessor definitions.</p>
       </td>
     </tr>
     <tr>
