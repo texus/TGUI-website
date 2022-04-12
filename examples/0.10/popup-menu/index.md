@@ -40,7 +40,7 @@ void rightClickCallback(tgui::BackendGui& gui, tgui::Vector2f position)
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "TGUI window");
-    tgui::GuiSFML gui(window);
+    tgui::Gui gui(window);
 
     while (window.isOpen())
     {
