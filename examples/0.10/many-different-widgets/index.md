@@ -10,7 +10,7 @@ This example was written to demonstrate most widgets, but many new widgets and f
 ``` c++
 #include <iostream>
 
-bool runExample(tgui::GuiBase& gui)
+bool runExample(tgui::BackendGui& gui)
 {
     try
     {

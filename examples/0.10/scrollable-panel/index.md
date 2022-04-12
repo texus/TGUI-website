@@ -9,7 +9,7 @@ Although TGUI provides a Scrollbar widget, the easiest method to add a scrollbar
 The ScrollablePanel has a size and content size. Once the content size becomes larger than the size, scrollbars will become visible.
 
 ```c++
-bool runExample(tgui::GuiBase& gui)
+bool runExample(tgui::BackendGui& gui)
 {
     // Create the panel that will take up 400x500 pixels on the screen.
     // Once the contents of the panel exceeds this size, scrollbars will become visible.

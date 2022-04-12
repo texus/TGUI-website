@@ -23,7 +23,7 @@ void popupMenuCallback(tgui::String item)
 }
 
 // Called when a right click is detected while popup menu isn't shown
-void rightClickCallback(tgui::GuiBase& gui, tgui::Vector2f position)
+void rightClickCallback(tgui::BackendGui& gui, tgui::Vector2f position)
 {
     popupMenu = tgui::ListBox::create();
     popupMenu->addItem("Option 1");

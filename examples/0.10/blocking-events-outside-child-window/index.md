@@ -11,7 +11,7 @@ A simple way to accomplish this is to render a Panel widget behind the window. S
 ```c++
 // Keep a global pointer to the gui to make it accessible everywhere.
 // This is bad practice, but it keeps the example code short and simple.
-tgui::GuiBase* guiPtr = nullptr;
+tgui::BackendGui* guiPtr = nullptr;
 
 void closeWindow()
 {
@@ -34,7 +34,7 @@ void openWindow()
     window->onClose([]{ closeWindow(); });
 }
 
-bool runExample(tgui::GuiBase& gui)
+bool runExample(tgui::BackendGui& gui)
 {
     guiPtr = &gui;
 

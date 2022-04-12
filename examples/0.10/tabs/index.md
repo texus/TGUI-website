@@ -9,7 +9,7 @@ TGUI provides a Tabs widget which contains just the tabs without any contents re
 ### TabContainer widget
 
 ```c++
-int runExample(tgui::GuiBase& gui)
+int runExample(tgui::BackendGui& gui)
 {
     // Create the tabs and their panels
     tgui::TabContainer::Ptr tabContainer = tgui::TabContainer::create();
@@ -35,7 +35,7 @@ int runExample(tgui::GuiBase& gui)
 The example below does the same as the above example, but we have to manage the panels ourselves here since we use the Tabs widget directly. You get much more control with this method though: the panels could be positioned somewhere else, or there don't even need to be any panels and the tabs e.g. act as alternative to radio buttons.
 
 ```c++
-void onTabSelected(tgui::GuiBase& gui, tgui::String selectedTab)
+void onTabSelected(tgui::BackendGui& gui, tgui::String selectedTab)
 {
     // Show a different panel depending on which tab is selected
     if (selectedTab == "First")
@@ -50,7 +50,7 @@ void onTabSelected(tgui::GuiBase& gui, tgui::String selectedTab)
     }
 }
 
-int runExample(tgui::GuiBase& gui)
+int runExample(tgui::BackendGui& gui)
 {
     tgui::Tabs::Ptr tabs = tgui::Tabs::create();
     tabs->add("First");
