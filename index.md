@@ -13,8 +13,8 @@ The gui is easy to use, with only a few lines you can e.g. have a fully function
 
 <div>
   <a href="/resources/Screenshots/v0.10-White.png" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/v0.10-White-small.png" alt="TGUI 0.10 White theme" width="246" height="185"/></a>
-  <a href="/resources/Screenshots/Black.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/Black-small.jpg" alt="TGUI 0.6 Black theme" width="246" height="185"/></a>
-  <a href="/resources/Screenshots/BabyBlue.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/BabyBlue-small.jpg" alt="TGUI 0.4 BabyBlue theme" width="246" height="185"/></a>
+  <a href="/resources/Screenshots/v0.10-Black.png" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/v0.10-Black-small.png" alt="TGUI 0.10 Black theme" width="246" height="185"/></a>
+  <a href="/resources/Screenshots/v0.10-BabyBlue.png" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/v0.10-BabyBlue-small.png" alt="TGUI 0.10 BabyBlue theme" width="246" height="185"/></a>
   <a href="/resources/Screenshots/KronosGame.jpg" onclick="return showLightBox(event, href);"><img src="/resources/Screenshots/KronosGame-small.jpg" alt="Kronos Game theme" width="246" height="185"/></a>
 </div>
 
