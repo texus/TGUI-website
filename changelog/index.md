@@ -22,6 +22,23 @@ changelog:
         Tool tips are now shown on disabled widgets by default
   - version: 9
     patches:
+    - version: 4
+      date: 15 June 2022
+      changes: |
+        Default theme no longer affects loading widgets from file
+        Added TextAlignment property to ListBox
+        Added onScroll signal to ListBox
+        Added option to show tool tips on disabled widgets
+        Up and down keys in ListBox now move scrollbar if needed
+        Renderers shared in form files no longer save in random order
+        Pasting still worked in TextArea when it was read-only
+        ListBox::setMaximumItems didn't reset selected item when removed
+        Fixed issue with renderer property within custom renderer outside tgui namespace
+        Parsing invalid UTF-8 character could trigger a debug assert in Visual Studio
+        Widget could remain in hover state after hiding it
+        Fixed broken text rendering in SDL/OpenGL backend
+        List of ComboBox did not use the font set in the ComboBox
+        Keeping child window inside parent didn't take origin into account
     - version: 3
       date: 15 January 2022
       changes: |

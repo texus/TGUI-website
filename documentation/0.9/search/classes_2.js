@@ -18,6 +18,9 @@ var searchData=
   ['constnode_15',['ConstNode',['../structtgui_1_1TreeView_1_1ConstNode.html',1,'tgui::TreeView']]],
   ['container_16',['Container',['../classtgui_1_1Container.html',1,'tgui']]],
   ['copiedsharedptr_17',['CopiedSharedPtr',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['cursor_18',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
-  ['customwidgetforbindings_19',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
+  ['copiedsharedptr_3c_20tgui_3a_3abutton_20_3e_18',['CopiedSharedPtr&lt; tgui::Button &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3agroup_20_3e_19',['CopiedSharedPtr&lt; tgui::Group &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3ascrollbarchildwidget_20_3e_20',['CopiedSharedPtr&lt; tgui::ScrollbarChildWidget &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['cursor_21',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
+  ['customwidgetforbindings_22',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
 ];
