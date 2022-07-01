@@ -209,19 +209,6 @@ bool runExample(tgui::BackendGui& gui)
         chatbox->addLine("Me: The widgets rock ^^", tgui::Color::Yellow);
         gui.add(chatbox);
 
-        sf::Texture texture;
-        sf::Sprite  sprite;
-        texture.loadFromFile("../ThinkLinux.jpg");
-        sprite.setTexture(texture);
-        sprite.setScale(200.f / texture.getSize().x, 140.f / texture.getSize().y);
-
-        auto canvas = tgui::Canvas::create({200, 140});
-        canvas->setPosition(420, 430);
-        canvas->clear();
-        canvas->draw(sprite);
-        canvas->display();
-        gui.add(canvas);
-
         button = tgui::Button::create();
         button->setRenderer(theme.getRenderer("Button"));
         button->setPosition(gui.getView().getSize().x - 115.f, gui.getView().getSize().y - 50.f);
