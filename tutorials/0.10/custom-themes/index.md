@@ -77,7 +77,7 @@ There are 4 ways that an image can be scaled:
 - If the left differs from 0 but the top is 0 then the middle rectangle only splits the image in 3 parts (assuming the height of the middle rectangle is the same as the height of the part rectangle, otherwise 9-slice scaling is still used). The left and right parts of the image will maintain their ratio when scaled while the center part is stretched in both directions. This is useful for buttons that have half a circle on each side.
 - If the left is 0 but the top differs from 0 (and width of middle rect corresponds to the width of the part rect), then the middle rectangle splits the image in 3 parts above each other. The top and bottom part will maintain their ratio when scaled while the center part is stretched in both directions.
 
-Because in almost all cases you want the space on the left and top in the middle rectangle to be equal to the space on the right and bottom, you can also specify it with only 2 values:
+Because in almost all cases you want the space on the left and top in the middle rectangle to be equal to the space on the right and bottom, you can also specify it with only 2 values. Specifying `(x,y)` is equivalent to `(x, y, width - 2*x, height - 2*y)`.
 ```
 Texture = "image.png" Part(20, 10, 50, 30) Middle(6, 6);
 ```
