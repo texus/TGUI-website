@@ -60,6 +60,7 @@ This is a list of TGUI related properties that you might want to specify in CMak
       <td>
         <p>Sets whether TGUI should link to the dynamic or static version of the std library. Note that this has no relation to TGUI_SHARED_LIBS and that you do NOT have to check this when you want static TGUI libraries.</p>
         <p>This option changes "/MD" to "/MT" in Visual Studio and adds "-static-libstdc++" to the linker for MinGW. Those are settings that have to match with your project and other dependencies of your application, so if you aren't touching these settings on your own project then you must keep this option at FALSE.</p>
+        <p>This option will only be shown in the CMake GUI if "Advanced" is checked.</p>
       </td>
     </tr>
     <tr>
