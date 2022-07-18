@@ -38,21 +38,21 @@ Precompiled libraries for Windows with SFML_GRAPHICS backend: (require matching 
 Packages:  
 **PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)
 
-### TGUI 0.9.4
+### TGUI 0.9.5
 **Latest stable version**. Minimum supported compilers: GCC 5, Clang 4, VS2017
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.4.zip" style="Green" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.5.zip" style="Green" %}
 
 Precompiled libraries for Windows with SFML backend: (require matching libraries from [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.4/TGUI-0.9.4-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.4/TGUI-0.9.4-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.4/TGUI-0.9.4-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.4/TGUI-0.9.4-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 

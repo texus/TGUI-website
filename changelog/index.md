@@ -22,6 +22,11 @@ changelog:
         Tool tips are now shown on disabled widgets by default
   - version: 9
     patches:
+    - version: 5
+      date: 17 July 2022
+      changes: |
+        Fixed Gui Builder crash when creating or loading any form
+        Fixed crash when position of ChildWindow depends on its size
     - version: 4
       date: 15 June 2022
       changes: |
