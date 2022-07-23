@@ -65,7 +65,8 @@ Although TGUI provides a `gui.mainLoop()` function for convenience, in many case
 
 A minimal main loop would look like this:
 ```c++
-while (window.isOpen())
+bool windowOpen = window.isOpen();
+while (windowOpen)
 {
     sf::Event event;
     while (window.pollEvent(event))
@@ -73,7 +74,7 @@ while (window.isOpen())
         gui.handleEvent(event);
 
         if (event.type == sf::Event::Closed)
-            window.close();
+            windowOpen = false;
     }
 
     glClear(GL_COLOR_BUFFER_BIT);
@@ -87,3 +88,5 @@ while (window.isOpen())
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
 To draw all widgets in the gui, you need to call `gui.draw()` once per frame. All widgets are drawn at once, if you wish to render OpenGL contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).
+
+Note that we aren't calling `window.close()` to close the window: doing so would destroy our OpenGL context and cause some errors at shutdown. The close function will automatically be called when the window is destroyed.
