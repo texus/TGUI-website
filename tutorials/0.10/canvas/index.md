@@ -80,6 +80,8 @@ Before rendering, you must tell OpenGL that further commands should render to th
 canvas->bindFramebuffer();
 ```
 
+You may also want to call `glViewport(0, 0, canvas->getSize().x, canvas->getSize().y);` to scale rendering to the canvas size instead of the window size.
+
 Afterwards you can draw just like you would normally draw on the window:
 ```c++
 glClear(GL_COLOR_BUFFER_BIT);
@@ -104,6 +106,8 @@ Before rendering, you must tell OpenGL ES that further commands should render to
 ```c++
 canvas->bindFramebuffer();
 ```
+
+You may also want to call `glViewport(0, 0, canvas->getSize().x, canvas->getSize().y);` to scale rendering to the canvas size instead of the window size.
 
 Afterwards you can draw just like you would normally draw on the window:
 ```c++
