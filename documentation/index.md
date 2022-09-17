@@ -4,7 +4,7 @@ title: Documentation
 breadcrumb: "documentation"
 ---
 Click on the version that you would like to see the documentation from.
-{% include button.ext text="TGUI 0.10" link="0.10/annotated.html" style="Orange" %}
+{% include button.ext text="TGUI 1.0-dev" link="1.0/annotated.html" style="Orange" %}
 {% include button.ext text="TGUI 0.9" link="0.9/annotated.html" style="Green" %}
 {% include button.ext text="TGUI 0.8" link="0.8/" style="White" %}
 {% include button.ext text="TGUI 0.7" link="v0.7/" style="White" %}

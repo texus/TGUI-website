@@ -3,40 +3,40 @@ layout: page
 title: Download
 ---
 
-### TGUI 0.10-dev
+### TGUI 1.0-dev
 
 **In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 6, Clang 6, VS2017
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.10.zip" style="Orange" %}<br><br>
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.10-nightly-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange" %}
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-0.10-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.0-nightly-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange" %}
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.0-nightly-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange" %} (use with VS2017 <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a> binaries)<br>
 </p>
 
 Packages:  
 **AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
 
-### TGUI 0.10-beta
+### TGUI 1.0-alpha
 
 **Beta for upcoming version**. Minimum supported compilers: GCC 6, Clang 6, VS2017
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.10-beta.zip" style="Orange" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.0-alpha.zip" style="Orange" %}
 
 Precompiled libraries for Windows with SFML_GRAPHICS backend: (require matching libraries from [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.0-alpha/TGUI-1.0-alpha-VisualStudio-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.0-alpha/TGUI-1.0-alpha-VisualStudio-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.10-beta/TGUI-0.10-beta-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v1.0-alpha/TGUI-1.0-alpha-mingw-7.3.0-32bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 7.3.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v1.0-alpha/TGUI-1.0-alpha-mingw-7.3.0-64bit-for-SFML-2.5.1.zip" style="Orange DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 
 Packages:  
-**PPA** (Ubuntu Linux): [libtgui-0.10-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)
+**PPA** (Ubuntu Linux): [libtgui-1.0-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)
 
 ### TGUI 0.9.5
 **Latest stable version**. Minimum supported compilers: GCC 5, Clang 4, VS2017

@@ -3,23 +3,39 @@ layout: page
 title: Changelog
 
 changelog:
-- version: 0
+- version: 1
   minors:
-  - version: 10
+  - version: 0
     patches:
-    - version: beta
-      date: 19 March 2022
+    - version: alpha
+      date: 17 September 2022
       changes: |
-        Existing backends were rewritten
-        Added SFML/OpenGL backend (sfml-window + OpenGL >= 3.3)
-        Added GLFW/OpenGL backend (glfw3 + OpenGL >= 3.3 or GLES >= 2.0)
         Added SDL\_Renderer backend (SDL + SDL\_ttf)
-        Added moveWithAnimation and resizeWithAnimation functions to Widget
-        Added case-insensitive variants of startsWith and endsWith to String
+        Added GLFW/OpenGL backend (glfw3 + OpenGL >= 3.3 or GLES >= 2.0)
+        Added SFML/OpenGL backend (sfml-window + OpenGL >= 3.3)
+        Existing SFML-Graphics and SDL/OpenGL backends were redesigned
+        Black, BabyBlue and TransparentGrey themes can now be used for all widgets
         ClientSize of ChildWindow can now be a layout instead of only a constant
         Typing in FileDialog now selects the first file starting with the typed letter
         TextSize can now also be set in theme file
+        Added moveWithAnimation and resizeWithAnimation functions to Widget
+        Added case-insensitive variants of startsWith and endsWith to String
+        Textures can now be loaded from base64 string
+        ListView columns can now be resizable
+        ListView icons can also be saved in form file
+        Position of text in buttons can now be changed
+        Added changeMenuItem function to MenuBar to change the text of a menu
+        Added SizeHorizontal and SizeVertical mouse cursors
+        Added hasUserData to Widget
+        Added LabelAlignment and ButtonAlignment to MessageBox
+        Added ScrollbarValue to Label
+        Theme files now support global properties
+        Theme files now support inheritance between sections
         Tool tips are now shown on disabled widgets by default
+        Word-wrapped lines no longer begin with whitespace
+        Filter CR in TextArea to prevent issues when pasting CRLF on Windows
+- version: 0
+  minors:
   - version: 9
     patches:
     - version: 5
@@ -639,7 +655,7 @@ changelog:
 {% for major in page.changelog %}
   {% for minor in major.minors %}
     {% for patch in minor.patches %}
-      {% capture version %}0.{{minor.version}}.{{patch.version}}{% endcapture %}
+      {% capture version %}{{major.version}}.{{minor.version}}.{{patch.version}}{% endcapture %}
 <h3 id="{{version}}">TGUI {{version}} <span class="ChangelogDate">({{patch.date}})</span></h3>
         {% assign changes = patch.changes | newline_to_br | strip_newlines | split: '<br />' %}
         {% for change in changes %}
@@ -652,4 +668,9 @@ changelog:
 <hr>
     {% endif %}
   {% endfor %}
+
+  {% if forloop.last == false %}
+<br>
+<hr>
+  {% endif %}
 {% endfor %}
