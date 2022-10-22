@@ -33,7 +33,7 @@ void run_application(SDL_Window* window, SDL_Renderer* renderer)
 }
 
 // Note that no error checking is performed on SDL initialization in this example code
-int main()
+int main(int, char**)
 {
     SDL_Init(SDL_INIT_VIDEO);
 
@@ -54,5 +54,6 @@ int main()
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
+    return 0;
 }
 ```
