@@ -14,7 +14,7 @@ More information about the minimal code can be found in the [SDL_RENDERER backen
 #include <TGUI/TGUI.hpp>
 #include <TGUI/Backend/SDL-Renderer.hpp>
 
-#include <SDL.h>      // At least 2.0.17
+#include <SDL.h>      // At least 2.0.18
 #include <SDL_ttf.h>  // At least 2.0.14
 
 bool runExample(tgui::BackendGui& gui)
