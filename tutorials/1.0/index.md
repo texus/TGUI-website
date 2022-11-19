@@ -83,6 +83,8 @@ breadcrumb: 1.0
 
 [Canvas](canvas/)
 
+[DPI awareness and scaling](dpi-scaling/)
+
 
 ### Advanced tutorials
 
