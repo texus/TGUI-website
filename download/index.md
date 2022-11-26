@@ -5,7 +5,7 @@ title: Download
 
 ### TGUI 1.0-dev
 
-**In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 7, Clang 6, VS2017
+**In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 7, Clang 6, VS2017 15.7 (`_MSC_VER` >= 1914)
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/0.10.zip" style="Orange" %}<br><br>
