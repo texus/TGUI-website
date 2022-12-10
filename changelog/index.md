@@ -7,6 +7,15 @@ changelog:
   minors:
   - version: 0
     patches:
+    - version: beta
+      date: 10 December 2022
+      changes: |
+        Added RichTextLabel widget
+        Added font scaling to keep text sharp while view is smaller than window size
+        Added tab alignment and fixed tab size to TabContainer ([PR #174](https://github.com/texus/TGUI/pull/174))
+        onFileSelect signal in FileDialog is no longer called on cancel
+        Removed padding from RadioButtonGroup
+        Close button was broken when ChildWindow was copied
     - version: alpha
       date: 17 September 2022
       changes: |

@@ -24,15 +24,15 @@ var searchData=
   ['fileinfo_21',['FileInfo',['../structtgui_1_1Filesystem_1_1FileInfo.html',1,'tgui::Filesystem']]],
   ['filesystem_22',['Filesystem',['../classtgui_1_1Filesystem.html',1,'tgui']]],
   ['filldirection_23',['FillDirection',['../classtgui_1_1ProgressBar.html#ab11de6f12673d6c8c357f0fbf16fb85e',1,'tgui::ProgressBar']]],
-  ['findbesttextsize_24',['findBestTextSize',['../classtgui_1_1Text.html#a21f2c9292ab0db2bb31847c8746c6963',1,'tgui::Text']]],
+  ['findbesttextsize_24',['findBestTextSize',['../classtgui_1_1Text.html#ad47753d78fa6a0ade0a1018702acb73e',1,'tgui::Text']]],
   ['findcharacterpos_25',['findCharacterPos',['../classtgui_1_1Text.html#ab2390fc1d8ad7d2a397f1d4479e81216',1,'tgui::Text::findCharacterPos()'],['../classtgui_1_1BackendText.html#a514db9c8ca10f28ccaca5b417361bceb',1,'tgui::BackendText::findCharacterPos()']]],
   ['finishallanimations_26',['finishAllAnimations',['../classtgui_1_1Widget.html#aaaf522b3826a4b5d426b3b916016a0f3',1,'tgui::Widget']]],
   ['float_27',['Float',['../structtgui_1_1EditBox_1_1Validator.html#a6e927a7f007897f8aa55fd1a214a479f',1,'tgui::EditBox::Validator']]],
   ['flushcache_28',['flushCache',['../classtgui_1_1DefaultThemeLoader.html#a3e082424cb6a1a6553ffa741940006da',1,'tgui::DefaultThemeLoader']]],
   ['focusnextwidget_29',['focusNextWidget',['../classtgui_1_1Container.html#a68cad5d523343e11a1ff8f9d246493e0',1,'tgui::Container::focusNextWidget()'],['../classtgui_1_1BackendGui.html#aaa281e5c351d4a5e843b968d59564d02',1,'tgui::BackendGui::focusNextWidget()']]],
   ['focuspreviouswidget_30',['focusPreviousWidget',['../classtgui_1_1Container.html#a34a067515faeaf05b4c5706d970681ae',1,'tgui::Container::focusPreviousWidget()'],['../classtgui_1_1BackendGui.html#a7b0feae87afd0e88e70dddaf40dc792a',1,'tgui::BackendGui::focusPreviousWidget()']]],
-  ['font_31',['Font',['../classtgui_1_1Font.html#a928348bd4d2edfd194d7e72ad10ef817',1,'tgui::Font::Font(std::nullptr_t=nullptr)'],['../classtgui_1_1Font.html#ae9a988a437f60f17613aa0e155328108',1,'tgui::Font::Font(const String &amp;id)'],['../classtgui_1_1Font.html#aa5c0dc1c5b7a43d03fd485636d6c7eb4',1,'tgui::Font::Font(const char *id)'],['../classtgui_1_1Font.html#aa54f50f019ef069ba32becd12f76e468',1,'tgui::Font::Font(const void *data, std::size_t sizeInBytes)'],['../classtgui_1_1Font.html#a4d937902e99e64da228a070f66e484aa',1,'tgui::Font::Font(std::shared_ptr&lt; BackendFont &gt; backendFont, const String &amp;id)'],['../classtgui_1_1Font.html',1,'tgui::Font']]],
+  ['font_31',['Font',['../classtgui_1_1Font.html#a2655726e74c22de4fc928cc92035c2f6',1,'tgui::Font::Font(std::nullptr_t=nullptr) noexcept'],['../classtgui_1_1Font.html#ae9a988a437f60f17613aa0e155328108',1,'tgui::Font::Font(const String &amp;id)'],['../classtgui_1_1Font.html#aa5c0dc1c5b7a43d03fd485636d6c7eb4',1,'tgui::Font::Font(const char *id)'],['../classtgui_1_1Font.html#aa54f50f019ef069ba32becd12f76e468',1,'tgui::Font::Font(const void *data, std::size_t sizeInBytes)'],['../classtgui_1_1Font.html#a31b9d068bab37073f9635b91e0786f2f',1,'tgui::Font::Font(std::shared_ptr&lt; BackendFont &gt; backendFont, String id)'],['../classtgui_1_1Font.html',1,'tgui::Font']]],
   ['fontglyph_32',['FontGlyph',['../structtgui_1_1FontGlyph.html',1,'tgui']]],
   ['fromnumber_33',['fromNumber',['../classtgui_1_1String.html#a3eccff1e420bb71042d267dcf4c4ed60',1,'tgui::String']]],
-  ['fromnumberrounded_34',['fromNumberRounded',['../classtgui_1_1String.html#a27a58cf2d16a266989f80b8f1f1438fb',1,'tgui::String']]]
+  ['fromnumberrounded_34',['fromNumberRounded',['../classtgui_1_1String.html#aa89b4a7bc4cf24118efa7f2fa4849813',1,'tgui::String']]]
 ];

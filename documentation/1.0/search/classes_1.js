@@ -32,10 +32,11 @@ var searchData=
   ['backendtexturesfml_29',['BackendTextureSFML',['../classtgui_1_1BackendTextureSFML.html',1,'tgui']]],
   ['basethemeloader_30',['BaseThemeLoader',['../classtgui_1_1BaseThemeLoader.html',1,'tgui']]],
   ['bitmapbutton_31',['BitmapButton',['../classtgui_1_1BitmapButton.html',1,'tgui']]],
-  ['boxlayout_32',['BoxLayout',['../classtgui_1_1BoxLayout.html',1,'tgui']]],
-  ['boxlayoutratios_33',['BoxLayoutRatios',['../classtgui_1_1BoxLayoutRatios.html',1,'tgui']]],
-  ['boxlayoutrenderer_34',['BoxLayoutRenderer',['../classtgui_1_1BoxLayoutRenderer.html',1,'tgui']]],
-  ['button_35',['Button',['../classtgui_1_1Button.html',1,'tgui']]],
-  ['buttonbase_36',['ButtonBase',['../classtgui_1_1ButtonBase.html',1,'tgui']]],
-  ['buttonrenderer_37',['ButtonRenderer',['../classtgui_1_1ButtonRenderer.html',1,'tgui']]]
+  ['blueprint_32',['Blueprint',['../structtgui_1_1Text_1_1Blueprint.html',1,'tgui::Text']]],
+  ['boxlayout_33',['BoxLayout',['../classtgui_1_1BoxLayout.html',1,'tgui']]],
+  ['boxlayoutratios_34',['BoxLayoutRatios',['../classtgui_1_1BoxLayoutRatios.html',1,'tgui']]],
+  ['boxlayoutrenderer_35',['BoxLayoutRenderer',['../classtgui_1_1BoxLayoutRenderer.html',1,'tgui']]],
+  ['button_36',['Button',['../classtgui_1_1Button.html',1,'tgui']]],
+  ['buttonbase_37',['ButtonBase',['../classtgui_1_1ButtonBase.html',1,'tgui']]],
+  ['buttonrenderer_38',['ButtonRenderer',['../classtgui_1_1ButtonRenderer.html',1,'tgui']]]
 ];

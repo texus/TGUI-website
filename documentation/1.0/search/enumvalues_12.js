@@ -23,6 +23,6 @@ var searchData=
   ['slidetoright_20',['SlideToRight',['../namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a32adbe5629238fc4f536d19aa387edde',1,'tgui']]],
   ['slidetotop_21',['SlideToTop',['../namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2ae646468517e881c8fba1b43c3439e9c4',1,'tgui']]],
   ['space_22',['Space',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9ad511f8439ecde36647437fbba67a4394',1,'tgui::Event']]],
-  ['strikethrough_23',['StrikeThrough',['../namespacetgui.html#a31ae87cf358903525fea156c4b4220fcaee5a332b24d1e49a4d211bb9fc77605c',1,'tgui']]],
+  ['strikethrough_23',['StrikeThrough',['../namespacetgui.html#aafa478ba31ef52a263be37506428943baee5a332b24d1e49a4d211bb9fc77605c',1,'tgui']]],
   ['subtract_24',['Subtract',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a1d9baf077ee87921f57a8fe42d510b65',1,'tgui::Event']]]
 ];
