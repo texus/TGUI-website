@@ -28,9 +28,9 @@ widget->setSize("30%", "10%");
 More complex arguments can be given to the setPosition and setSize function, as described in the [Layouts](../layouts/) tutorial.
 
 ### Visible and enabled
-The enabled property determines if a widget receives events. If a widget is disabled, it will still be drawn but it will be unresponsive to your mouse clicks.
+The enabled property determines if a widget receives events. If a widget is disabled, it will be unresponsive to user interaction such as mouse clicks.
 
-The visibility property determines if a widget is drawn. A hidden widget also no longer receives events, it is no longer there. The only way to have an invisible yet still functioning widget is to use ClickableWidget. Hiding and showing widgets is similar to adding and removing them, its just easier and faster. It can be very handy to put different screens into different Panel widgets and just hide all the panels except for one.
+The visibility property determines if a widget is drawn. A hidden widget also no longer receives events, it is no longer there. The only way to have an invisible yet still functioning widget is to use ClickableWidget. Hiding and showing widgets is similar to adding and removing them, its just easier and faster. It can be very handy to put different screens into different Group widgets and just hide all the groups except for one.
 
 Every widget is visible and enabled by default.
 
