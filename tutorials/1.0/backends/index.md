@@ -62,28 +62,6 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.18) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14)</span></td>
     </tr>
     <tr>
-      <td><strong>SDL_OPENGL3</strong></td>
-      <td>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
-        <div class="platform-icon"></div>
-        <div class="platform-icon"></div>
-      </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
-    </tr>
-    <tr>
-      <td><strong>SDL_GLES2</strong></td>
-      <td>
-        <div class="platform-icon"></div>
-        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
-        <div class="platform-icon"></div>
-        <div class="platform-icon"></div>
-        <div class="platform-icon"></div>
-      </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
-    </tr>
-    <tr>
       <td><strong>SDL_TTF_OPENGL3</strong></td>
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
@@ -104,6 +82,28 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"></div>
       </td>
       <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
+    </tr>
+    <tr>
+      <td><strong>SDL_OPENGL3</strong></td>
+      <td>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
+        <div class="platform-icon"></div>
+        <div class="platform-icon"></div>
+      </td>
+      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
+    </tr>
+    <tr>
+      <td><strong>SDL_GLES2</strong></td>
+      <td>
+        <div class="platform-icon"></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
+        <div class="platform-icon"></div>
+        <div class="platform-icon"></div>
+        <div class="platform-icon"></div>
+      </td>
+      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
     </tr>
     <tr>
       <td><strong>GLFW_OPENGL3</strong></td>
