@@ -13,14 +13,14 @@ This guide has only been tested on Linux.
 
 The example in `TGUI/examples/android/SDL_RENDERER/` contains some hardcoded values that may need to be changed. The files to check are `app/build.gradle` and `app/jni/CMakeLists.txt`.
 
-The `app/build.gradle` file contains the android SDK and NDK versions, the application id, the list of architectes to build and the arguments to pass to CMake. Because the example requires at least CMake 3.21 and Android Studio only ships with CMake 3.18 at the time of writing, in this file you also have to provide the exact version of CMake that you have installed yourself.
+The `app/build.gradle` file contains the android SDK and NDK versions, the application id, the list of architectes to build and the arguments to pass to CMake.
 
 In the `app/jni/CMakeLists.txt` file you need to provide the paths to the root directories of TGUI, SDL and SDL_ttf.
 
 
 ### Changing settings
 
-Inside app/build.gradle you can change compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values. If you change minSdkVersion then you must also change the APP\_PLATFORM argument in the same file.
+Inside app/build.gradle you can change namespace, compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values.
 
 To choose the architectures to build, change the abiFilters property in app/build.gradle. The final .apk will contain all those architectures and can be installed on devices that support any of them.
 

@@ -45,7 +45,7 @@ Currently the Android.mk file in the root of the TGUI folder expects to find the
 
 ### Changing settings
 
-Inside app/build.gradle you can change compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values. If you change minSdkVersion then you must also change the APP\_PLATFORM argument in the same file.
+Inside app/build.gradle you can change namespace, compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values. If you change minSdkVersion then you must also change the APP\_PLATFORM argument in the same file.
 
 To choose the architectures to build, change the abiFilters property in app/build.gradle. The final .apk will contain all those architectures and can be installed on devices that support any of them.
 
