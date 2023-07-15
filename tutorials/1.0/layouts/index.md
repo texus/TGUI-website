@@ -46,3 +46,38 @@ group->add(button1, "ButtonName");
 group->add(button2);
 button2->setPosition({"ButtonName.right + 50", "ButtonName.top"});
 ```
+
+### Available properties
+
+The following properties are available in a layout string when referring to the parent of another widget:
+
+<table class="with-borders">
+  <thead>
+    <tr>
+      <th>Properties</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>x, y, pos, position</td>
+      <td>Position of the widget</td>
+    </tr>
+    <tr>
+      <td>left, top, right, bottom</td>
+      <td>Position of the widget at one specific side</td>
+    </tr>
+    <tr>
+      <td>w, h, width, height, size</td>
+      <td>Size of the widget</td>
+    </tr>
+    <tr>
+      <td>iw, ih, innerwidth, innerheight, innersize</td>
+      <td>Size of the container widget that is available to child widgets inside it</td>
+    </tr>
+    <tr>
+      <td>parent</td>
+      <td>Parent of the widget</td>
+    </tr>
+  </tbody>
+</table>
