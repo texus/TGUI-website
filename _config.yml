@@ -7,3 +7,33 @@ plugins:
 
 sass:
   style: compressed
+
+defaults:
+- scope:
+    path:            examples
+  values:
+    sitemap:         false
+- scope:
+    path:            tutorials
+  values:
+    sitemap:         false
+- scope:
+    path:            documentation
+  values:
+    sitemap:         false
+- scope:
+    path:            dcmtn
+  values:
+    sitemap:         false
+- scope:
+    path:            examples/1.0
+  values:
+    sitemap:         true
+- scope:
+    path:            tutorials/1.0
+  values:
+    sitemap:         true
+- scope:
+    path:            documentation/1.0
+  values:
+    sitemap:         true
