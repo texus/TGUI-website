@@ -121,3 +121,289 @@ TextArea {
   Scrollbar = &CustomScrollbarSection;
 }
 ```
+
+In most cases you don't actually need to manually specify the scrollbar each time though. If a Scrollbar section exists, widgets with scrollbars will have their Scrollbar property automatically reference to it. Below is a list of all properties that act like this. If the first column in this table is `ChildWindow.CloseButton` and the second column `Button`, it means that if you don't specify a `CloseButton` property inside the `ChildWindow` section then it's value will default to what is specified by the `Button` section in the theme file.
+
+<table class="with-borders">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Referenced section</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ChatBox.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>ChildWindow.CloseButton</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>ColorPicker.Button</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>ColorPicker.Label</td>
+      <td>Label</td>
+    </tr>
+    <tr>
+      <td>ColorPicker.Slider</td>
+      <td>Slider</td>
+    </tr>
+    <tr>
+      <td>ComboBox.ListBox</td>
+      <td>ListBox</td>
+    </tr>
+    <tr>
+      <td>FileDialog.Button</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>FileDialog.EditBox</td>
+      <td>EditBox</td>
+    </tr>
+    <tr>
+      <td>FileDialog.ListView</td>
+      <td>ListView</td>
+    </tr>
+    <tr>
+      <td>FileDialog.FilenameLabel</td>
+      <td>Label</td>
+    </tr>
+    <tr>
+      <td>FileDialog.FileTypeComboBox</td>
+      <td>ComboBox</td>
+    </tr>
+    <tr>
+      <td>Label.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>ListBox.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>ListView.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>MessageBox.Button</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>ScrollablePanel.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>SpinControl.SpinButton</td>
+      <td>SpinButton</td>
+    </tr>
+    <tr>
+      <td>SpinControl.SpinText</td>
+      <td>EditBox</td>
+    </tr>
+    <tr>
+      <td>TextArea.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+    <tr>
+      <td>TreeView.Scrollbar</td>
+      <td>Scrollbar</td>
+    </tr>
+  </tbody>
+</table>
+
+### Section inheritance
+
+If a section needs the same properties as another one, you can let one inherit from the other to copy its values. In the example below will, BlueButton will copy all values of the Button section, except for the background color which is given a different value.
+```
+BlueButton : Button {
+    BackgroundColor = Blue;
+}
+```
+
+TGUI contains a few built-in inheritance rules for sections that aren't specified. For example, ListView will inherit all properties from ListBox if you don't explicitly specify a ListView section in your theme. This means your theme only needs a ListBox section and the ListView widget will automatically look similar. If you do specify a ListView section in your theme though (to e.g. specify `HeaderTextColor` which ListBox doesn't have), then you should perform the inheritance manually by creating the section with `ListView : ListBox { ... }`.
+
+Here is a list of all sections that are automatically created if they don't appear in the theme file:
+
+<table class="with-borders">
+  <thead>
+    <tr>
+      <th>Unspecified section</th>
+      <th>Inherits from</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BitmapButton</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>CheckBox</td>
+      <td>RadioButton</td>
+    </tr>
+    <tr>
+      <td>ColorPicker</td>
+      <td>ChildWindow</td>
+    </tr>
+    <tr>
+      <td>FileDialog</td>
+      <td>ChildWindow</td>
+    </tr>
+    <tr>
+      <td>ListView</td>
+      <td>ListBox</td>
+    </tr>
+    <tr>
+      <td>MessageBox</td>
+      <td>ChildWindow</td>
+    </tr>
+    <tr>
+      <td>RangeSlider</td>
+      <td>Slider</td>
+    </tr>
+    <tr>
+      <td>RichTextLabel</td>
+      <td>Label</td>
+    </tr>
+    <tr>
+      <td>ScrollablePanel</td>
+      <td>Panel</td>
+    </tr>
+    <tr>
+      <td>PanelListBox</td>
+      <td>ScrollablePanel</td>
+    </tr>
+    <tr>
+      <td>ToggleButton</td>
+      <td>Button</td>
+    </tr>
+    <tr>
+      <td>TreeView</td>
+      <td>ListBox</td>
+    </tr>
+  </tbody>
+</table>
+
+### Global properties
+
+It is possible to have global properties in the theme file, i.e. properties that aren't inside any section. TGUI contains a hardcoded inheritance list where properties that aren't specified can fall back to global properties. In practice this means that if you specify "`TextColor = Black;`" at the top of the theme file, all widgets will have a black text color (unless the TextColor property is redefined in the widget's section).
+
+The following properties can be specified in the global scope of the theme file:
+
+<table class="with-borders">
+  <tr><td>TextColor</td></tr>
+  <tr><td>TextColorHover</td></tr>
+  <tr><td>TextColorDisabled</td></tr>
+  <tr><td>BackgroundColor</td></tr>
+  <tr><td>BackgroundColorHover</td></tr>
+  <tr><td>BackgroundColorDisabled</td></tr>
+  <tr><td>SelectedTextColor</td></tr>
+  <tr><td>SelectedTextColorHover</td></tr>
+  <tr><td>SelectedBackgroundColor</td></tr>
+  <tr><td>SelectedBackgroundColorHover</td></tr>
+  <tr><td>BorderColor</td></tr>
+  <tr><td>Borders</td></tr>
+  <tr><td>ScrollbarWidth</td></tr>
+  <tr><td>ArrowBackgroundColor</td></tr>
+  <tr><td>ArrowBackgroundColorHover</td></tr>
+  <tr><td>ArrowBackgroundColorDisabled</td></tr>
+  <tr><td>ArrowColor</td></tr>
+  <tr><td>ArrowColorHover</td></tr>
+  <tr><td>ArrowColorDisabled</td></tr>
+</table>
+
+Some widgets have default values inherited from global properties that have a different name. The following table lists these special cases. If in this list the property name is `WidgetName.PropertyName`, it is referring to a property called `PropertyName` that is placed inside a section called `WidgetName`.
+
+<table class="with-borders">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Inherited global property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BorderColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>ArrowColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>ArrowBackgroundColor</td>
+      <td>BackgroundColor</td>
+    </tr>
+    <tr>
+      <td>ChildWindow.TitleColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>EditBox.SelectedTextBackgroundColor</td>
+      <td>SelectedBackgroundColor</td>
+    </tr>
+    <tr>
+      <td>Knob.ThumbColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>MenuBar.SeparatorColor</td>
+      <td>BorderColor</td>
+    </tr>
+    <tr>
+      <td>ProgressBar.FillColor</td>
+      <td>SelectedBackgroundColor</td>
+    </tr>
+    <tr>
+      <td>RadioButton.CheckColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>RangeSlider.SelectedTrackColor</td>
+      <td>SelectedBackgroundColor</td>
+    </tr>
+    <tr>
+      <td>RangeSlider.SelectedTrackColorHover</td>
+      <td>SelectedBackgroundColorHover</td>
+    </tr>
+    <tr>
+      <td>Scrollbar.TrackColor</td>
+      <td>BackgroundColor</td>
+    </tr>
+    <tr>
+      <td>Scrollbar.ThumbColor</td>
+      <td>ArrowColor</td>
+    </tr>
+    <tr>
+      <td>SeparatorLine.Color</td>
+      <td>BorderColor</td>
+    </tr>
+    <tr>
+      <td>Slider.TrackColor</td>
+      <td>BackgroundColor</td>
+    </tr>
+    <tr>
+      <td>Slider.ThumbColor</td>
+      <td>ArrowColor</td>
+    </tr>
+    <tr>
+      <td>TextArea.SelectedTextBackgroundColor</td>
+      <td>SelectedBackgroundColor</td>
+    </tr>
+    <tr>
+      <td>TextArea.CaretColor</td>
+      <td>TextColor</td>
+    </tr>
+    <tr>
+      <td>ToggleButton.TextColorDown</td>
+      <td>SelectedTextColor</td>
+    </tr>
+    <tr>
+      <td>ToggleButton.BackgroundColorDown</td>
+      <td>SelectedBackgroundColor</td>
+    </tr>
+  </tbody>
+</table>
