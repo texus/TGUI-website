@@ -26,9 +26,10 @@ var searchData=
   ['_7elayout_23',['~Layout',['../classtgui_1_1Layout.html#ac240ada176e67fa8af43676751767851',1,'tgui::Layout']]],
   ['_7esignal_24',['~Signal',['../classtgui_1_1Signal.html#a9cbf3bff26268a5df1c766ad4ab7f6cd',1,'tgui::Signal']]],
   ['_7esignalmanager_25',['~SignalManager',['../classtgui_1_1SignalManager.html#a9cabcacfb79df4c65f72eb26bbd0be50',1,'tgui::SignalManager']]],
-  ['_7esvgimage_26',['~SvgImage',['../classtgui_1_1SvgImage.html#a944bd2c385a7da7d18bcc978daa499e5',1,'tgui::SvgImage']]],
-  ['_7etexture_27',['~Texture',['../classtgui_1_1Texture.html#a9203f38ba93caabbdd525a48c668d686',1,'tgui::Texture']]],
-  ['_7etheme_28',['~Theme',['../classtgui_1_1Theme.html#a346f01f389253ed20145872f83042022',1,'tgui::Theme']]],
-  ['_7ewidget_29',['~Widget',['../classtgui_1_1Widget.html#a9d8d5b9c71edae5a309dfd91009e04fb',1,'tgui::Widget']]],
-  ['_7ewidgetrenderer_30',['~WidgetRenderer',['../classtgui_1_1WidgetRenderer.html#a06357878eedcff268f1774869dd442dd',1,'tgui::WidgetRenderer']]]
+  ['_7esprite_26',['~Sprite',['../classtgui_1_1Sprite.html#a02a8bdccb415613a5c1adc52980d2b06',1,'tgui::Sprite']]],
+  ['_7esvgimage_27',['~SvgImage',['../classtgui_1_1SvgImage.html#a944bd2c385a7da7d18bcc978daa499e5',1,'tgui::SvgImage']]],
+  ['_7etexture_28',['~Texture',['../classtgui_1_1Texture.html#a9203f38ba93caabbdd525a48c668d686',1,'tgui::Texture']]],
+  ['_7etheme_29',['~Theme',['../classtgui_1_1Theme.html#a346f01f389253ed20145872f83042022',1,'tgui::Theme']]],
+  ['_7ewidget_30',['~Widget',['../classtgui_1_1Widget.html#a9d8d5b9c71edae5a309dfd91009e04fb',1,'tgui::Widget']]],
+  ['_7ewidgetrenderer_31',['~WidgetRenderer',['../classtgui_1_1WidgetRenderer.html#a06357878eedcff268f1774869dd442dd',1,'tgui::WidgetRenderer']]]
 ];

@@ -17,5 +17,6 @@ var searchData=
   ['tooltip_14',['ToolTip',['../classtgui_1_1ToolTip.html',1,'tgui']]],
   ['transform_15',['Transform',['../classtgui_1_1Transform.html',1,'tgui']]],
   ['treeview_16',['TreeView',['../classtgui_1_1TreeView.html',1,'tgui']]],
-  ['treeviewrenderer_17',['TreeViewRenderer',['../classtgui_1_1TreeViewRenderer.html',1,'tgui']]]
+  ['treeviewrenderer_17',['TreeViewRenderer',['../classtgui_1_1TreeViewRenderer.html',1,'tgui']]],
+  ['twofingerscrolldetect_18',['TwoFingerScrollDetect',['../classtgui_1_1TwoFingerScrollDetect.html',1,'tgui']]]
 ];

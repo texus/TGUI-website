@@ -7,6 +7,16 @@ changelog:
   minors:
   - version: 0
     patches:
+    - version: rc
+      date: 18 July 2023
+      changes: |
+        Added PanelListBox widget ([PR #193](https://github.com/texus/TGUI/pull/193))
+        FileDialog can now create new folders ([PR #192](https://github.com/texus/TGUI/pull/192))
+        Improved scrolling with nested scrollbars
+        Added UseWideArrows property to SpinControl
+        Support two finger scrolling on touch screens
+        Added getWindow() function to Gui
+        handleEvent now always returns true for scroll events when mouse is on top of a widget
     - version: beta
       date: 10 December 2022
       changes: |

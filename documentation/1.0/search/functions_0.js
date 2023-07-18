@@ -5,7 +5,7 @@ var searchData=
   ['addbutton_2',['addButton',['../classtgui_1_1MessageBox.html#acb0c70b08ac2b7f07a7042c8273782e5',1,'tgui::MessageBox']]],
   ['addclippinglayer_3',['addClippingLayer',['../classtgui_1_1BackendRenderTarget.html#ac2b132a156a727626c9699a90b1fd2c9',1,'tgui::BackendRenderTarget']]],
   ['addcolumn_4',['addColumn',['../classtgui_1_1ListView.html#a2684d9d7daa2df90cfba2b0029d4d342',1,'tgui::ListView']]],
-  ['additem_5',['addItem',['../classtgui_1_1ComboBox.html#aa288b299c34a30db6f3b9dd9313fcf14',1,'tgui::ComboBox::addItem()'],['../classtgui_1_1ListBox.html#ab522533badf14c82499cc5e440b9d872',1,'tgui::ListBox::addItem()'],['../classtgui_1_1ListView.html#a706bfea264972185e8c42432f4886fd4',1,'tgui::ListView::addItem(const String &amp;text)'],['../classtgui_1_1ListView.html#aa85e9cb1a27a9904ea72de82a3ef111c',1,'tgui::ListView::addItem(const std::vector&lt; String &gt; &amp;item)'],['../classtgui_1_1TreeView.html#a51aab3bdbb70baa06bc569068e380765',1,'tgui::TreeView::addItem()']]],
+  ['additem_5',['addItem',['../classtgui_1_1ComboBox.html#aa288b299c34a30db6f3b9dd9313fcf14',1,'tgui::ComboBox::addItem()'],['../classtgui_1_1ListBox.html#ab522533badf14c82499cc5e440b9d872',1,'tgui::ListBox::addItem()'],['../classtgui_1_1ListView.html#a706bfea264972185e8c42432f4886fd4',1,'tgui::ListView::addItem(const String &amp;text)'],['../classtgui_1_1ListView.html#aa85e9cb1a27a9904ea72de82a3ef111c',1,'tgui::ListView::addItem(const std::vector&lt; String &gt; &amp;item)'],['../classtgui_1_1PanelListBox.html#a67aa05e9976ac24f9ec83efada6346ec',1,'tgui::PanelListBox::addItem()'],['../classtgui_1_1TreeView.html#a51aab3bdbb70baa06bc569068e380765',1,'tgui::TreeView::addItem()']]],
   ['addline_6',['addLine',['../classtgui_1_1ChatBox.html#a6740e3cb71bf21a9d32c5f781ec5169a',1,'tgui::ChatBox::addLine(const String &amp;text, Color color, TextStyles style)'],['../classtgui_1_1ChatBox.html#a8c813c222d341acd2ed096e617b0fc2f',1,'tgui::ChatBox::addLine(const String &amp;text)'],['../classtgui_1_1ChatBox.html#a590306119a990f0cd69765192b06c49a',1,'tgui::ChatBox::addLine(const String &amp;text, Color color)']]],
   ['addmenu_7',['addMenu',['../classtgui_1_1MenuBar.html#a7d3f84fab63e70593a8329b542c50861',1,'tgui::MenuBar']]],
   ['addmenuitem_8',['addMenuItem',['../classtgui_1_1MenuBar.html#ab9cc1127ed02a3874cfcb5846d61f034',1,'tgui::MenuBar::addMenuItem(const String &amp;text)'],['../classtgui_1_1MenuBar.html#a41ac5fb37d532099421e3f58d5fe1503',1,'tgui::MenuBar::addMenuItem(const String &amp;menu, const String &amp;text)'],['../classtgui_1_1MenuBar.html#a44673b3c39355bf95b4ab30fbf05287f',1,'tgui::MenuBar::addMenuItem(const std::vector&lt; String &gt; &amp;hierarchy, bool createParents=true)']]],
@@ -18,12 +18,12 @@ var searchData=
   ['addtab_15',['addTab',['../classtgui_1_1TabContainer.html#a66ecdd83f1bc256187d6b9a35fa6ed9c',1,'tgui::TabContainer']]],
   ['addtext_16',['addText',['../classtgui_1_1TextArea.html#a4d0d7ca2eaa5c240956651172a0fe667',1,'tgui::TextArea']]],
   ['addwidget_17',['addWidget',['../classtgui_1_1Grid.html#aa5045731e5093009b7556998844068ca',1,'tgui::Grid']]],
-  ['applyopacity_18',['applyOpacity',['../classtgui_1_1Color.html#a6a21fec746a91efadd99bc088ee1cef4',1,'tgui::Color']]],
-  ['asnativestring_19',['asNativeString',['../classtgui_1_1Filesystem_1_1Path.html#a1b7fad802480599dd8832acc89f1fcac',1,'tgui::Filesystem::Path']]],
-  ['asseconds_20',['asSeconds',['../classtgui_1_1Duration.html#ad8f31bf621be866dbaa8abcce652a8a2',1,'tgui::Duration']]],
-  ['asstring_21',['asString',['../classtgui_1_1Filesystem_1_1Path.html#a425bea01b4cb980c0c97f6914b798ca2',1,'tgui::Filesystem::Path']]],
+  ['applyopacity_18',['applyOpacity',['../classtgui_1_1Color.html#a06d33c7d2e55422bca691aea38c6d29f',1,'tgui::Color']]],
+  ['asnativestring_19',['asNativeString',['../classtgui_1_1Filesystem_1_1Path.html#a077fea2c59ebadf524260503551ed36a',1,'tgui::Filesystem::Path']]],
+  ['asseconds_20',['asSeconds',['../classtgui_1_1Duration.html#ad43bdcc63ced8454ac245792f2cbd608',1,'tgui::Duration']]],
+  ['asstring_21',['asString',['../classtgui_1_1Filesystem_1_1Path.html#ad35216e2086d14350e0dc531e03a91bf',1,'tgui::Filesystem::Path']]],
   ['attachgui_22',['attachGui',['../classtgui_1_1Backend.html#a93feab5147db95038eab453af28212f6',1,'tgui::Backend']]],
-  ['attempttofloat_23',['attemptToFloat',['../classtgui_1_1String.html#a08968374b19fbcd26d83a17d4eaf0b29',1,'tgui::String']]],
-  ['attempttoint_24',['attemptToInt',['../classtgui_1_1String.html#aeca56db23283ca903b215eb77e1f6825',1,'tgui::String']]],
-  ['attempttouint_25',['attemptToUInt',['../classtgui_1_1String.html#a7a68ce473ee826fa31bda9d274f31603',1,'tgui::String']]]
+  ['attempttofloat_23',['attemptToFloat',['../classtgui_1_1String.html#ad3ed4fe2e90c78a2642bfd20e2f8c88c',1,'tgui::String']]],
+  ['attempttoint_24',['attemptToInt',['../classtgui_1_1String.html#a4de191fed34be4a8d96211556b21e586',1,'tgui::String']]],
+  ['attempttouint_25',['attemptToUInt',['../classtgui_1_1String.html#a2aee79e73eb348f5525a1fa1e6335011',1,'tgui::String']]]
 ];
