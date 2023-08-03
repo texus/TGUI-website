@@ -3,6 +3,7 @@
 /form-builder/tgui-form-builder
 /_site
 /.jekyll-cache
+/.jekyll-metadata
 /examples/android/libs
 /examples/android/obj
 .DS_Store

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: iOS (SDL_RENDERER backend)
+title: iOS (SDL_TTF_GLES2 backend)
 breadcrumb: ios sdl-renderer
 ---
 
@@ -29,7 +29,7 @@ cmake -S . -B build-ios
   -DCMAKE_INSTALL_PREFIX=`pwd`/install-ios \
   -DTGUI_SHARED_LIBS=FALSE \
   -DTGUI_SKIP_SDL_CONFIG=TRUE \
-  -DTGUI_BACKEND=SDL_RENDERER \
+  -DTGUI_BACKEND=SDL_TTF_GLES2 \
   -DSDL2_LIBRARY=/Path/to/libSDL2.a \
   -DSDL2_INCLUDE_DIR=/Path/to/SDL/include/ \
   -DSDL2_TTF_LIBRARY=/Path/to/libSDL2_ttf.a \
@@ -45,7 +45,7 @@ Here is an explanation of each option:
 - ``-DCMAKE_INSTALL_PREFIX=`pwd`/install-ios``: Specifies that the library will be installed in a new "install-ios" folder in the current working directory.
 - `-DTGUI_SHARED_LIBS=FALSE`: Build a static library (file with `.a` extension)
 - `-DTGUI_SKIP_SDL_CONFIG=TRUE`: Prevents finding a macOS config file which would be used instead of the specified iOS library
-- `-DTGUI_BACKEND=SDL_RENDERER`: Specifies that TGUI should be build with the SDL_RENDERER backend
+- `-DTGUI_BACKEND=SDL_TTF_GLES2`: Specifies that TGUI should be build with the SDL\_TTF\_GLES2 backend
 - `-DSDL2_LIBRARY=libSDL2.a`: Specifies the iOS SDL library (path and filename)
 - `-DSDL2_INCLUDE_DIR=/Path/to/SDL/include/`: Specifies the location of the SDL include files (directory containing SDL.h and other SDL headers)
 - `-DSDL2_TTF_LIBRARY=libSDL2_ttf.a`: Specifies the iOS SDL_ttf library (path and filename)

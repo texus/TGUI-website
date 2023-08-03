@@ -28,6 +28,8 @@ breadcrumb: 1.0
 
 [iOS (SDL_RENDERER)](ios-sdl-renderer/)
 
+[iOS (SDL_TTF_GLES2)](ios-sdl-ttf-gles2/)
+
 
 ### Getting started
 
