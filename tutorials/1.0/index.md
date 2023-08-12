@@ -72,6 +72,8 @@ breadcrumb: 1.0
 
 [Switching between menu screens / forms](switching-screens/)
 
+[Overview of all widgets](widgets-overview/)
+
 
 ### Intermediate tutorials
 
