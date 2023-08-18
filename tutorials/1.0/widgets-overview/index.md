@@ -31,6 +31,8 @@ details.WidgetSummary[open] > summary {
 
 The `BitmapButton` widget provides a button that has a small icon next to the text (or only an icon and no text).
 
+![BitmapButton](/resources/WidgetsOverview/BitmapButton.png){:width="295" height="45"}
+
 Similar widgets:
 - If you don't want an icon and just want a button with a background texture then you should still use the <a href="#Button">Button</a> widget instead
 
@@ -62,6 +64,8 @@ When the Texture property is set in the renderer, the BackgroundColor and Rounde
 <summary><b>Button</b></summary>
 
 The `Button` widget provides the basic funcionality for a button.
+
+![Button](/resources/WidgetsOverview/Button.png){:width="400" height="35"}
 
 Similar widgets:
 - If you don't need Down or Hover states then you can use a <a href="#Picture">Picture</a> widget instead
@@ -96,6 +100,8 @@ When the Texture property is set in the renderer, the BackgroundColor and Rounde
 
 The `ChatBox` widget provides a multi-line label where each line can be given its own text style and color.
 
+![ChatBox](/resources/WidgetsOverview/ChatBox.png){:width="280" height="114"}
+
 Similar widgets:
 - If different text styles within a line are needed then check out the <a href="#RichTextLabel">RichTextLabel</a> widget instead
 
@@ -124,6 +130,8 @@ chatBox->addLine("World", tgui::Color::Blue, tgui::TextStyle::Italic); // blue +
 <summary><b>CheckBox</b></summary>
 
 The `CheckBox` widget provides a box that is either checked or unchecked with some text displayed on the right side of the box.
+
+![CheckBox](/resources/WidgetsOverview/CheckBox.png){:width="283" height="67"}
 
 Similar widgets:
 - If only one option should be selectable at the same time then you can use <a href="#RadioButton">RadioButton</a> instead
@@ -159,6 +167,8 @@ When the TextureUnchecked and TextureChecked properties are set in the renderer,
 <summary><b>ChildWindow</b></summary>
 
 The `ChildWindow` widget provides a way to have child windows, which are esentially panels with a title bar.
+
+![ChildWindow](/resources/WidgetsOverview/ChildWindow.png){:width="400" height="78"}
 
 Documentation: [ChildWindow](https://tgui.eu/documentation/1.0/classtgui_1_1ChildWindow.html), [ChildWindowRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ChildWindowRenderer.html)
 
@@ -224,10 +234,13 @@ widget->onClick([]{
 
 The `ColorPicker` widget provides a child window in which a color can be selected.
 
+![ColorPicker](/resources/WidgetsOverview/ColorPicker.png){:width="537" height="243"}
+
 Documentation: [ColorPicker](https://tgui.eu/documentation/1.0/classtgui_1_1ColorPicker.html), [ColorPickerRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ColorPickerRenderer.html)
 
 **Example usage**
 ```c++
+colorPicker->setTitle("Change Background Color");
 colorPicker->setColor(tgui::Color::Blue); // Set initial color when opening
 
 colorPicker->onColorChange([](const tgui::Color& color){
@@ -264,6 +277,8 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 <summary><b>ComboBox</b></summary>
 
 The `ComboBox` widget provides a way to select an item from a drop-down list.
+
+![ComboBox](/resources/WidgetsOverview/ComboBox.png){:width="270" height="118"}
 
 Documentation: [ComboBox](https://tgui.eu/documentation/1.0/classtgui_1_1ComboBox.html), [ComboBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ComboBoxRenderer.html)
 
@@ -541,6 +556,8 @@ When the TextureForeground property is set in the renderer, the ThumbColor rende
 
 The `Label` widget provides a way to display some non-interactive text. This can be either a simple line of text, or a box with word-wrap and scrollbars.
 
+![Label](/resources/WidgetsOverview/Label.png){:width="357" height="93"}
+
 Similar widgets:
 - If the text formatting (e.g. color) should be different in parts of the label then check out the <a href="#RichTextLabel">RichTextLabel</a> widget instead
 
@@ -584,6 +601,8 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 
 The `ListBox` widget provides a list of selectable items.
 
+![ListBox](/resources/WidgetsOverview/ListBox.png){:width="360" height="145"}
+
 Similar widgets:
 - If you need a header, multiple columns, lines between items or an icon before the text, then you should check out the <a href="#ListView">ListView</a> widget instead
 
@@ -619,6 +638,8 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 <summary><b>ListView</b></summary>
 
 The `ListView` widget provides a list of selectable items, potentially with multiple columns.
+
+![ListView](/resources/WidgetsOverview/ListView.png){:width="425" height="135"}
 
 Similar widgets:
 - If you only need one column and don't need a header, lines between items or an icon before the text, then you should check out the <a href="#ListBox">ListBox</a> widget instead
@@ -861,6 +882,8 @@ If the image should be rendered on top of another widget that should receive the
 
 The `ProgressBar` widget provides a loading bar to indicate progress.
 
+![ProgressBar](/resources/WidgetsOverview/ProgressBar.png){:width="235" height="91"}
+
 Documentation: [ProgressBar](https://tgui.eu/documentation/1.0/classtgui_1_1ProgressBar.html), [ProgressBarRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ProgressBarRenderer.html)
 
 **Example usage**
@@ -896,6 +919,8 @@ When the TextureFill property is set in the renderer, the FillColor renderer pro
 <summary><b>RadioButton</b></summary>
 
 The `RadioButton` widget provides a box of which at most one of them can be checked, with some text displayed on the right side of the box.
+
+![RadioButton](/resources/WidgetsOverview/RadioButton.png){:width="285" height="72"}
 
 Similar widgets:
 - If multiple options should be possible or if it should be possible to uncheck a checked box then you should use <a href="#CheckBox">CheckBox</a> instead
@@ -964,6 +989,8 @@ You still need to manully position the radio buttons inside the group, it does n
 <summary><b>RangeSlider</b></summary>
 
 The `RangeSlider` widget provides a horizontal or vertical slider with 2 knobs in order to select a range.
+
+![RangeSlider](/resources/WidgetsOverview/RangeSlider.png){:width="160" height="61"}
 
 Similar widgets:
 - If you only need a single knob then check out the <a href="#Slider">Slider</a> widget instead
@@ -1147,6 +1174,8 @@ line->getRenderer()->setColor(tgui::Color::Black);
 
 The `Slider` widget provides a horizontal or vertical slider to select a value from a range.
 
+![Slider](/resources/WidgetsOverview/Slider.png){:width="180" height="70"}
+
 Similar widgets:
 - If you need two knobs to select a range instead of a single value then check out the <a href="#RangeSlider">RangeSlider</a> widget instead
 - If you want to select the value from a dial then check out the <a href="#Knob">Knob</a> widget instead
@@ -1181,6 +1210,8 @@ When the TextureThumb property is set in the renderer, the ThumbColor renderer p
 <summary><b>SpinButton</b></summary>
 
 The `SpinButton` widget provides an up and down arrow to select a value.
+
+![SpinButton](/resources/WidgetsOverview/SpinButton.png){:width="140" height="52"}
 
 Similar widgets:
 - If you want there to be an edit box attached to the arrows then check out the <a href="#SpinControl">SpinControl</a> widget instead
