@@ -37,3 +37,5 @@ The examples below don't contain a main function because the exact code depends 
 [Pop-up / context menu](popup-menu/)
 
 [Tabs](tabs/)
+
+For an example on how to use a specific widget, you can check out the [Widgets overview](/tutorials/1.0/widgets-overview) tuturial.

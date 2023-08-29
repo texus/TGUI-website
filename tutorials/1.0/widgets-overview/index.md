@@ -314,6 +314,8 @@ When the TextureArrow property is set in the renderer, the ArrowBackgroundColor 
 
 The `EditBox` widget provides a single-line text field.
 
+![EditBox](/resources/WidgetsOverview/EditBox.png){:width="295" height="31"}
+
 Similar widgets:
 - If you need a multi-line text field then check out the <a href="#TextArea">TextArea</a> widget instead
 
@@ -512,6 +514,8 @@ You should never call `setPosition` on any child widget that is added to Horizon
 
 The `Knob` widget provides a circular dial that can be rotated to the wanted value.
 
+![Knob](/resources/WidgetsOverview/Knob.png){:width="180" height="90"}
+
 Similar widgets:
 - If you want to select the value on a straight line then use the <a href="#Slider">Slider</a> widget instead
 
@@ -689,6 +693,8 @@ When the TextureHeaderBackground property is set in the renderer, the HeaderBack
 
 The `MenuBar` widget provides a menu bar that can open menus below or above it.
 
+![MenuBar](/resources/WidgetsOverview/MenuBar.png){:width="158" height="86"}
+
 Documentation: [MenuBar](https://tgui.eu/documentation/1.0/classtgui_1_1MenuBar.html), [MenuBarRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1MenuBarRenderer.html)
 
 **Example usage**
@@ -736,6 +742,8 @@ When the TextureItemBackground property is set in the renderer, the BackgroundCo
 <summary><b>MessageBox</b></summary>
 
 The `MessageBox` widget provides a child window that displays a message with some buttons below it.
+
+![MessageBox](/resources/WidgetsOverview/MessageBox.png){:width="252" height="96"}
 
 Documentation: [MessageBox](https://tgui.eu/documentation/1.0/classtgui_1_1MessageBox.html), [MessageBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1MessageBoxRenderer.html)
 
@@ -1029,6 +1037,8 @@ When the TextureSelectedTrack property is set in the renderer, the SelectedTrack
 
 The `RichTextLabel` widget provides a way to display some non-interactive text with different text styles and colors.
 
+![RichTextLabel](/resources/WidgetsOverview/RichTextLabel.png){:width="400" height="180"}
+
 Similar widgets:
 - If the entire text will be the same style and color then you can use the <a href="#Label">Label</a> widget instead
 
@@ -1105,6 +1115,8 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 <summary><b>Scrollbar</b></summary>
 
 The `Scrollbar` widget provides just the scrollbar itself, without anything to scroll through.
+
+![Scrollbar](/resources/WidgetsOverview/Scrollbar.png){:width="170" height="78"}
 
 Similar widgets:
 - If want a panel in which the contents moved with the scrollbar then check out the <a href="#ScrollablePanel">ScrollablePanel</a> widget instead
@@ -1245,6 +1257,8 @@ When the TextureArrowUp and TextureArrowDown properties are set in the renderer,
 
 The `SpinControl` widget provides an edit box with an up and down arrow next to it.
 
+![SpinControl](/resources/WidgetsOverview/SpinControl.png){:width="160" height="31"}
+
 Similar widgets:
 - If you just want the arrows without the edit box then check out the <a href="#SpinButton">SpinButton</a> widget instead
 
@@ -1318,6 +1332,8 @@ The renderer for the tabs can be accessed with getTabsRenderer().
 
 The `Tabs` widget provides a row of tabs where one can be selected.
 
+![Tabs](/resources/WidgetsOverview/Tabs.png){:width="300" height="61"}
+
 Similar widgets:
 - If you want there to be a panel directly below or above the tabs which is changed when a tab is selected then check out the <a href="#TabContainer">TabContainer</a> widget instead
 
@@ -1360,6 +1376,8 @@ When the TextureTab property is set in the renderer, the BackgroundColor rendere
 
 The `TextArea` widget provides a multi-line text field.
 
+![TextArea](/resources/WidgetsOverview/TextArea.png){:width="280" height="94"}
+
 Similar widgets:
 - If you need a single-line text field then check out the <a href="#EditBox">EditBox</a> widget instead
 
@@ -1388,6 +1406,8 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 <summary><b>ToggleButton</b></summary>
 
 The `ToggleButton` widget provides a button for which the down state can be toggled (i.e. it remains in down state after clicking the button until it is clicked again).
+
+![ToggleButton](/resources/WidgetsOverview/ToggleButton.png){:width="174" height="61"}
 
 Similar widgets:
 - If you are looking for a normal button then check out the <a href="#Button">Button</a> widget instead
@@ -1425,6 +1445,8 @@ When the Texture property is set in the renderer, the BackgroundColor and Rounde
 <summary><b>TreeView</b></summary>
 
 The `TreeView` widget provides a hierarchical list of items, where nodes that have children can be expanded or collapsed.
+
+![TreeView](/resources/WidgetsOverview/TreeView.png){:width="340" height="132"}
 
 Documentation: [TreeView](https://tgui.eu/documentation/1.0/classtgui_1_1TreeView.html), [TreeViewRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1TreeViewRenderer.html)
 
