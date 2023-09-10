@@ -20,7 +20,7 @@ In the `app/jni/CMakeLists.txt` file you need to provide the paths to the root d
 
 ### Changing settings
 
-Inside app/build.gradle you can change namespace, compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values.
+Inside app/build.gradle you can change namespace, compileSdk, minSdk and targetSdk to the wanted values.
 
 To choose the architectures to build, change the abiFilters property in app/build.gradle. The final .apk will contain all those architectures and can be installed on devices that support any of them.
 
@@ -29,7 +29,7 @@ To choose the architectures to build, change the abiFilters property in app/buil
 
 From inside the `TGUI/examples/android/SDL_RENDERER/` folder, execute the following command to build everything. This will build any changes to SDL, SDL_ttf, TGUI and the example for all specified architectures and bundle everything into a single apk file.
 ```
-./gradlew buildDebug
+./gradlew assembleDebug
 ```
 
 If you have an emulator or device connected then you can install the apk with the following command:

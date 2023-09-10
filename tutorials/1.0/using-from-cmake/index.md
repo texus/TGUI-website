@@ -6,7 +6,7 @@ breadcrumb: using from cmake
 
 The two things that need to be added to your cmake script are finding TGUI and linking your project to it. To do this, simply call `find_package` with the required TGUI version and then call `target_link_libraries` to link with the `TGUI::TGUI` target. The `target_link_libraries` call will not only add the library to the linker, but also add the correct include directories to the project so that the TGUI header files can be found.
 ```c++
-find_package(TGUI 0.10 REQUIRED)
+find_package(TGUI 1 REQUIRED)
 target_link_libraries(DemoProject PRIVATE TGUI::TGUI)
 ```
 

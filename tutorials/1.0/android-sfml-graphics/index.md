@@ -27,11 +27,11 @@ cmake -S .. \
       -DCMAKE_BUILD_TYPE=Debug
 ```
 
-**CMAKE_ANDROID_NDK** has to be the path to the NDK (which will end in something like "ndk/25.2.9519653" if you installed the NDK using the sdkmanager).
+**CMAKE_ANDROID_NDK** has to be the path to the NDK (which will end in something like "ndk/25.2.9519653").
 
 **CMAKE_ANDROID_ARCH_ABI** specifies the architecture to use. To use TGUI on real hardware you will need `arm64-v8a` (or `armeabi-v7a` if you still want to support 32-bit devices). To run TGUI on a simulator you will likely need `x86_64` (64-bit) or `x86` (32-bit), depending on which simulator you installed. The architecture has to match the SFML libraries.
 
-**CMAKE_BUILD_TYPE** chooses whether you want to build a Release or Debug library. The example code currently requires Debug libraries (due to hardcoded values).
+**CMAKE_BUILD_TYPE** chooses whether you want to build a Release or Debug library.
 
 On Windows you might also have to pass your [generator](https://cmake.org/cmake/help/v3.0/manual/cmake-generators.7.html) to the cmake command with the -G parameter. On Linux and macOS, "Unix Makefiles" will be used by default.
 
@@ -51,53 +51,21 @@ If the ANDROID\_SDK\_ROOT environment variable isn't set then open the `TGUI/exa
 sdk.dir=/path/to/android-sdk
 ```
 
-Verify that the `ndkVersion` in `app/build.gradle` inside the android example folder matches the NDK version that you are using and also check that `abiFilters` matches the `CMAKE_ANDROID_ARCH_ABI` that was passed to cmake. In the same file you can change namespace, compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values.
+Verify that the `ndkVersion` in `app/build.gradle` inside the android example folder matches the NDK version that you are using and also check that `abiFilters` matches the `CMAKE_ANDROID_ARCH_ABI` that was passed to cmake. In the same file you can change namespace, compileSdk, minSdk and targetSdk to the wanted values.
 
 Build the project with gradle by running the following from the command line in the `TGUI/examples/android/SFML_GRAPHICS` directory:
 ```bash
-./gradlew buildDebug
+./gradlew assembleDebug
 ```
 
-If this results in an error that TGUI.hpp is not found then double check that the `abiFilters` setting in `app/build.gradle` matches with the libraries that were build and installed earlier.
+If this results in an error that SFML or TGUI is not found then double check that the `abiFilters` setting in `app/build.gradle` matches with the libraries that were build and installed earlier.
 
-If this results in an error stating `Could not open terminal for stdout: could not get termcap entry` then set the TERM variable to dumb (e.g. run `TERM=dumb ./gradlew buildDebug` on Linux).
+If this results in an error stating `Could not open terminal for stdout: could not get termcap entry` then set the TERM variable to dumb (e.g. run `TERM=dumb ./gradlew assembleDebug` on Linux).
 
 If all goes well then you can now install the apk to a device (or a running simulator) by running
 ```bash
 ./gradlew installDebug
 ```
-
-
-### Using TGUI
-
-In the Android.mk file you must add the tgui library (or tgui-d if you built it in Debug mode)
-```bash
-LOCAL_SHARED_LIBRARIES += tgui
-```
-
-You also have to import TGUI in that file. Importing SFML is not needed as TGUI will already do that for you.
-```bash
-$(call import-module, third_party/tgui)
-```
-
-In Application.mk you need to add the tgui-activity module (or tgui-activity-d if you built it in Debug mode).
-```bash
-APP_MODULES := sfml-activity tgui-activity your-program
-```
-
-Inside `build.gradle` you must pass some c++ flags to enable exceptions and RTTI, and make sure you are using c++14 or higher.
-```bash
-cppFlags "-fexceptions -frtti -std=c++14"
-```
-
-Finally you have to load the tgui-activity so that it can load the tgui library. You do that by having the following in your AndroidManifest.xml file (inside the activity element). The order of loading is important, you must load SFML before TGUI. The `your-program` name should match the LOCAL_MODULE value in Android.mk. Android will load the library specified by `android.app.lib_name`, `sfml-activity` will load the library specified by `sfml.app.lib_name` and finally `tgui-activity` will start your program that is specified with `tgui.app.lib_name`.
-```bash
-<meta-data android:name="android.app.lib_name" android:value="sfml-activity" />
-<meta-data android:name="sfml.app.lib_name" android:value="tgui-activity" />
-<meta-data android:name="tgui.app.lib_name" android:value="your-program" />
-```
-
-That's it. You should now know enough to use tgui in your project.
 
 
 ### Troubleshooting

@@ -6,9 +6,9 @@ breadcrumb: 1.0
 
 ### Installation tutorials
 
-[Selecting backend in CMake](backends/)
-
 [Building TGUI from source code with CMake](cmake/)
+
+[Selecting backend in CMake](backends/)
 
 [Windows (Visual Studio)](visual-studio/)
 

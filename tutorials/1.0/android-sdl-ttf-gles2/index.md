@@ -8,6 +8,7 @@ Follow the instructions below to build SDL, SDL_ttf, TGUI and the example code f
 
 This guide has only been tested on Linux.
 
+<p><span class="Red">It is recommended to use the more modern SDL_RENDERER backend on Android. The SDL_TTF_GLES2 backend still uses ndk-build, but this will also be changed to CMake in the future.</span></p>
 
 ### CMake
 
@@ -45,7 +46,7 @@ Currently the Android.mk file in the root of the TGUI folder expects to find the
 
 ### Changing settings
 
-Inside app/build.gradle you can change namespace, compileSdkVersion, minSdkVersion and targetSdkVersion to the wanted values. If you change minSdkVersion then you must also change the APP\_PLATFORM argument in the same file.
+Inside app/build.gradle you can change namespace, compileSdk, minSdk and targetSdk to the wanted values. If you change minSdk then you must also change the APP\_PLATFORM argument in the same file.
 
 To choose the architectures to build, change the abiFilters property in app/build.gradle. The final .apk will contain all those architectures and can be installed on devices that support any of them.
 
@@ -54,7 +55,7 @@ To choose the architectures to build, change the abiFilters property in app/buil
 
 From inside the android-sdl folder, execute the following command to build everything. This will build any changes to SDL, TGUI and the example for all architectures and bundle everything into a single apk file.
 ```
-./gradlew buildDebug
+./gradlew assembleDebug
 ```
 
 If you have an emulator or device connected then you can install the apk with the following command:
