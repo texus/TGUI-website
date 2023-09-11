@@ -7,6 +7,24 @@ changelog:
   minors:
   - version: 0
     patches:
+    - version: rc2
+      date: 11 September 2023
+      changes: |
+        Added MessageBox::changeButtons to set multiple buttons at once ([PR #215](https://github.com/texus/TGUI/pull/215))
+        Added methods to ScrollablePanel to check if scrollbar is currently shown ([PR #213](https://github.com/texus/TGUI/pull/213))
+        Pressing the tab key can now insert custom text in TextArea ([PR #211](https://github.com/texus/TGUI/pull/211))
+        Widgets in SubwidgetContainer didn't inherit the font of the container ([PR #208](https://github.com/texus/TGUI/pull/208))
+        Added onCaretPositionChange, getCaretLine() and getCaretColumn() to TextArea ([PR #207](https://github.com/texus/TGUI/pull/207))
+        Added onCaretPositionChange signal to EditBox ([PR #206](https://github.com/texus/TGUI/pull/206))
+        Added missing getSignal() functions to TabContainer and SpinControl ([PR #204](https://github.com/texus/TGUI/pull/204))
+        BoxLayout::setWidgetIndex didn't immediately update the positions ([PR #203](https://github.com/texus/TGUI/pull/203))
+        Fixed EditBox::getSelectedText() returning too many characters
+        MenuBar crashed when menu closed (regression in 1.0-rc)
+        Slider thumb had wrong position if texture needed to be rotated
+        Icon in BitmapButton had wrong ratio when rescaled
+        Prevent crash if provided layout is recursive
+        Renamed onSelectionChanged to onSelectionChange in TabContainer
+        TabContainer now inherits from Container instead of SubwidgetsContainer
     - version: rc
       date: 18 July 2023
       changes: |
