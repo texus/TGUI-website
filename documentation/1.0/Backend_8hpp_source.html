@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -241,12 +241,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#a4b754a5c1cf61a6ff1cca9a7edf0c31b">  218</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Backend.html#a4b754a5c1cf61a6ff1cca9a7edf0c31b">setMouseCursor</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui, <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) = 0;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#aa5f89d746ae15b5b7d2de1a22174a251">  227</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Backend.html#aa5f89d746ae15b5b7d2de1a22174a251">openVirtualKeyboard</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; inputRect);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#ifndef TGUI_REMOVE_DEPRECATED_CODE</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#aa5f89d746ae15b5b7d2de1a22174a251">  227</a></span>        TGUI_DEPRECATED(<span class="stringliteral">&quot;Use BackendGui::startTextInput instead&quot;</span>) virtual <span class="keywordtype">void</span> openVirtualKeyboard(const <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; inputRect);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#a8a4303cd227d8e6e3cd98898cebe457a">  235</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Backend.html#a8a4303cd227d8e6e3cd98898cebe457a">closeVirtualKeyboard</a>();</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#a8a4303cd227d8e6e3cd98898cebe457a">  235</a></span>        TGUI_DEPRECATED(&quot;Use <a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>::stopTextInput instead&quot;) virtual <span class="keywordtype">void</span> closeVirtualKeyboard();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classtgui_1_1Backend.html#aceb53dae174753347daf24328bac52ba">  245</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Backend.html#aceb53dae174753347daf24328bac52ba">isKeyboardModifierPressed</a>(<a class="code hl_enumeration" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey) = 0;</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
@@ -324,11 +324,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Backend_html_a4b754a5c1cf61a6ff1cca9a7edf0c31b"><div class="ttname"><a href="classtgui_1_1Backend.html#a4b754a5c1cf61a6ff1cca9a7edf0c31b">tgui::Backend::setMouseCursor</a></div><div class="ttdeci">virtual void setMouseCursor(BackendGui *gui, Cursor::Type type)=0</div><div class="ttdoc">Changes the mouse cursor when the mouse is on top of the window to which the gui is attached.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_a6621444d72cca74caaf1d119c7913148"><div class="ttname"><a href="classtgui_1_1Backend.html#a6621444d72cca74caaf1d119c7913148">tgui::Backend::resetMouseCursorStyle</a></div><div class="ttdeci">virtual void resetMouseCursorStyle(Cursor::Type type)=0</div><div class="ttdoc">Changes the look of a certain mouse cursor back to the system theme.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_a7fb2f36972d9e5eaba189e1657f02cf9"><div class="ttname"><a href="classtgui_1_1Backend.html#a7fb2f36972d9e5eaba189e1657f02cf9">tgui::Backend::createTexture</a></div><div class="ttdeci">TGUI_NODISCARD std::shared_ptr&lt; BackendTexture &gt; createTexture()</div><div class="ttdoc">Creates a new texture object.</div></div>
-<div class="ttc" id="aclasstgui_1_1Backend_html_a8a4303cd227d8e6e3cd98898cebe457a"><div class="ttname"><a href="classtgui_1_1Backend.html#a8a4303cd227d8e6e3cd98898cebe457a">tgui::Backend::closeVirtualKeyboard</a></div><div class="ttdeci">virtual void closeVirtualKeyboard()</div><div class="ttdoc">Closes the virtual keyboard on Android and iOS.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_a93feab5147db95038eab453af28212f6"><div class="ttname"><a href="classtgui_1_1Backend.html#a93feab5147db95038eab453af28212f6">tgui::Backend::attachGui</a></div><div class="ttdeci">virtual void attachGui(BackendGui *gui)</div><div class="ttdoc">Informs the backend that a new gui object has been created.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_a951c8040d2a7dcc7f212be8667a62eea"><div class="ttname"><a href="classtgui_1_1Backend.html#a951c8040d2a7dcc7f212be8667a62eea">tgui::Backend::getRenderer</a></div><div class="ttdeci">TGUI_NODISCARD std::shared_ptr&lt; BackendRenderer &gt; getRenderer() const</div><div class="ttdoc">Returns the renderer.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_a9ce378a9e57ef5544d05b2d7bca2bebe"><div class="ttname"><a href="classtgui_1_1Backend.html#a9ce378a9e57ef5544d05b2d7bca2bebe">tgui::Backend::~Backend</a></div><div class="ttdeci">virtual ~Backend()=default</div><div class="ttdoc">Virtual destructor.</div></div>
-<div class="ttc" id="aclasstgui_1_1Backend_html_aa5f89d746ae15b5b7d2de1a22174a251"><div class="ttname"><a href="classtgui_1_1Backend.html#aa5f89d746ae15b5b7d2de1a22174a251">tgui::Backend::openVirtualKeyboard</a></div><div class="ttdeci">virtual void openVirtualKeyboard(const FloatRect &amp;inputRect)</div><div class="ttdoc">Opens the virtual keyboard on Android and iOS.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_aa9aea21bb54b6542f8780df224ddbced"><div class="ttname"><a href="classtgui_1_1Backend.html#aa9aea21bb54b6542f8780df224ddbced">tgui::Backend::detatchGui</a></div><div class="ttdeci">virtual void detatchGui(BackendGui *gui)</div><div class="ttdoc">Informs the backend that a gui object is being destroyed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_ab0910bd525cd785fdd9755c2ec25dc80"><div class="ttname"><a href="classtgui_1_1Backend.html#ab0910bd525cd785fdd9755c2ec25dc80">tgui::Backend::hasRenderer</a></div><div class="ttdeci">TGUI_NODISCARD bool hasRenderer() const</div><div class="ttdoc">Checks whether a renderer has been attached to the backend.</div></div>
 <div class="ttc" id="aclasstgui_1_1Backend_html_ac923c3c7246acc013af297fe26207b30"><div class="ttname"><a href="classtgui_1_1Backend.html#ac923c3c7246acc013af297fe26207b30">tgui::Backend::setFontBackend</a></div><div class="ttdeci">virtual void setFontBackend(std::shared_ptr&lt; BackendFontFactory &gt; fontBackend)</div><div class="ttdoc">Sets the font factory that the backend should use.</div></div>
@@ -353,7 +351,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:44 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

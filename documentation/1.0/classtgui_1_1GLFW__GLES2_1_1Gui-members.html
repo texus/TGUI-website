@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a0bcc90ae7241dc27527c825f3f7a04a3">add</a>(const Widget::Ptr &amp;widgetPtr, const String &amp;widgetName=&quot;&quot;)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#aeb5fdb7c76332a10f06c31339d7e31c9">BackendGui</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BackendGui</b>(const BackendGui &amp;copy)=delete (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#a5d3fcfd757e76d79338c89f268d307ad">BackendGuiGLFW</a>()=default</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#aa8cc741a2d6af93159682c7807cba55e">BackendGuiGLFW</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#a9e3a58c1e188947c57e2b77925dc9d36">charCallback</a>(unsigned int codepoint)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>convertCharEvent</b>(unsigned int codepoint) (defined in <a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>convertCursorPosEvent</b>(double xpos, double ypos) (defined in <a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
@@ -215,17 +215,21 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#ac0a2b1a87ba18ed03f3926a5fdd8543c">setWidgetIndex</a>(const Widget::Ptr &amp;widget, std::size_t index)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html#aa0fb05c4403ff0cf35ec8feceb378ae9">setWindow</a>(GLFWwindow *window)</td><td class="entry"><a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html">tgui::GLFW_GLES2::Gui</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#ad719cd538950a5986a428d1de7767ef8">sizeCallback</a>(int width, int height)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a46d19b02c54040288f87641510f5f933">startTextInput</a>(FloatRect inputRect)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a0bead45d3dcdaa16d0cfc39a2cdb6770">stopTextInput</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#ab204e7b15d7b33e3088b35465175676b">unfocusAllWidgets</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateContainerSize</b>() override (defined in <a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a370fbb8700c655f27102653b93ec6f43">updateTime</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateTime</b>(Duration elapsedTime) (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#aea0e00ffd8568f1b70b67ae6b04aca37">windowFocusCallback</a>(int focused)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~BackendGui</b>() (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#ac68cad716a48323b9223e5952c6ac4a1">updateTextCursorPosition</a>(FloatRect inputRect, Vector2f caretPos) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a370fbb8700c655f27102653b93ec6f43">updateTime</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>updateTime</b>(Duration elapsedTime) (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#aea0e00ffd8568f1b70b67ae6b04aca37">windowFocusCallback</a>(int focused)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~BackendGui</b>() (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#af35d6c160259d959b5bbb24e7513a011">~BackendGuiGLFW</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiGLFW.html">tgui::BackendGuiGLFW</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:46 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

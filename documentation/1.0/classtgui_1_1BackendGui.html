@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -324,6 +324,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a cl
 <tr class="memitem:a544aa069b54b23af1eb39767bee57f77" id="r_a544aa069b54b23af1eb39767bee57f77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a544aa069b54b23af1eb39767bee57f77">mainLoop</a> (<a class="el" href="classtgui_1_1Color.html">Color</a> clearColor={240, 240, 240})=0</td></tr>
 <tr class="memdesc:a544aa069b54b23af1eb39767bee57f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the gui control over the main loop.  <br /></td></tr>
 <tr class="separator:a544aa069b54b23af1eb39767bee57f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d19b02c54040288f87641510f5f933" id="r_a46d19b02c54040288f87641510f5f933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a46d19b02c54040288f87641510f5f933">startTextInput</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect)</td></tr>
+<tr class="memdesc:a46d19b02c54040288f87641510f5f933"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being opened.  <br /></td></tr>
+<tr class="separator:a46d19b02c54040288f87641510f5f933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bead45d3dcdaa16d0cfc39a2cdb6770" id="r_a0bead45d3dcdaa16d0cfc39a2cdb6770"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a0bead45d3dcdaa16d0cfc39a2cdb6770">stopTextInput</a> ()</td></tr>
+<tr class="memdesc:a0bead45d3dcdaa16d0cfc39a2cdb6770"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed.  <br /></td></tr>
+<tr class="separator:a0bead45d3dcdaa16d0cfc39a2cdb6770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f84cf63c3e17055a550c7edf9776909" id="r_a4f84cf63c3e17055a550c7edf9776909"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a4f84cf63c3e17055a550c7edf9776909">updateTextCursorPosition</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> caretPos)</td></tr>
+<tr class="memdesc:a4f84cf63c3e17055a550c7edf9776909"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when the position of the caret changes in a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). If an IME is used then this function may move the IME candidate list to the text cursor position.  <br /></td></tr>
+<tr class="separator:a4f84cf63c3e17055a550c7edf9776909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1595,6 +1604,118 @@ template&lt;class WidgetType &gt; </div>
 
 </div>
 </div>
+<a id="a46d19b02c54040288f87641510f5f933" name="a46d19b02c54040288f87641510f5f933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d19b02c54040288f87641510f5f933">&#9670;&#160;</a></span>startTextInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGui::startTextInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td>
+          <td class="paramname"><em>inputRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being opened. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputRect</td><td>The rectangle where text is being inputted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiSDL.html#a13798cbb36143f1df4dc9be6f28a7aea">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ad8a4447db8c9587bab8fa1e8e99fa97b">tgui::BackendGuiSFML</a>.</p>
+
+</div>
+</div>
+<a id="a0bead45d3dcdaa16d0cfc39a2cdb6770" name="a0bead45d3dcdaa16d0cfc39a2cdb6770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bead45d3dcdaa16d0cfc39a2cdb6770">&#9670;&#160;</a></span>stopTextInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGui::stopTextInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiSDL.html#a91aaf84ffba1622fa1cbf48ff9c607f3">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ae09eb961d5836a8e45232304badb0f26">tgui::BackendGuiSFML</a>.</p>
+
+</div>
+</div>
+<a id="a4f84cf63c3e17055a550c7edf9776909" name="a4f84cf63c3e17055a550c7edf9776909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f84cf63c3e17055a550c7edf9776909">&#9670;&#160;</a></span>updateTextCursorPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGui::updateTextCursorPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td>
+          <td class="paramname"><em>inputRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td>
+          <td class="paramname"><em>caretPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when the position of the caret changes in a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). If an IME is used then this function may move the IME candidate list to the text cursor position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputRect</td><td>The rectangle where text is being inputted </td></tr>
+    <tr><td class="paramname">caretPos</td><td>Location of the text cursor, relative to the gui view </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiGLFW.html#ac68cad716a48323b9223e5952c6ac4a1">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#abd69beaa1f3402d8f594f58d97d3a4e6">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#a3358a4c9037624f0ba22c6a4de315352">tgui::BackendGuiSFML</a>.</p>
+
+</div>
+</div>
 <a id="a370fbb8700c655f27102653b93ec6f43" name="a370fbb8700c655f27102653b93ec6f43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a370fbb8700c655f27102653b93ec6f43">&#9670;&#160;</a></span>updateTime()</h2>
 
@@ -1623,7 +1744,7 @@ template&lt;class WidgetType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:45 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

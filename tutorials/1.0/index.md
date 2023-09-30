@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 1.0 Tutorials
-breadcrumb: 1.0
+title: 1.x Tutorials
+breadcrumb: 1.x
 ---
 
 ### Installation tutorials

@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -206,30 +206,30 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Enables code that relies on a specific backend</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_SFML 0</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_SDL 0</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_GLFW 0</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_SFML 1</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_SDL 1</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define TGUI_HAS_WINDOW_BACKEND_GLFW 1</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_SFML_GRAPHICS 0</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_SDL_RENDERER 0</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_OPENGL3 0</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_GLES2 0</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_SFML_GRAPHICS 1</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_SDL_RENDERER 1</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_OPENGL3 1</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#define TGUI_HAS_RENDERER_BACKEND_GLES2 1</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_SFML_GRAPHICS 0</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_SDL_TTF 0</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_FREETYPE 0</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_SFML_GRAPHICS 1</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_SDL_TTF 1</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define TGUI_HAS_FONT_BACKEND_FREETYPE 1</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SFML_GRAPHICS 0</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SFML_OPENGL3 0</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_RENDERER 0</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_OPENGL3 0</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_GLES2 0</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_TTF_OPENGL3 0</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_TTF_GLES2 0</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#define TGUI_HAS_BACKEND_GLFW_OPENGL3 0</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#define TGUI_HAS_BACKEND_GLFW_GLES2 0</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SFML_GRAPHICS 1</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SFML_OPENGL3 1</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_RENDERER 1</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_OPENGL3 1</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_GLES2 1</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_TTF_OPENGL3 1</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#define TGUI_HAS_BACKEND_SDL_TTF_GLES2 1</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#define TGUI_HAS_BACKEND_GLFW_OPENGL3 1</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#define TGUI_HAS_BACKEND_GLFW_GLES2 1</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#define TGUI_USE_SDL3 0</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#define TGUI_USE_SDL3 1</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// Some window backends (SFML &lt; 2.6 and SDL) don&#39;t support diagonal mouse cursors on Linux in which case TGUI loads them directly with X11.</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// Settig this option to FALSE in CMake will remove the X11 dependency but will cause those cursors to not show up when using them.</span></div>
@@ -380,7 +380,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:44 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

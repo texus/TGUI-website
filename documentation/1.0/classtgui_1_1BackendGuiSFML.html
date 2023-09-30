@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -140,9 +140,13 @@ Inheritance diagram for tgui::BackendGuiSFML:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ebd177d4bcd75fb0a525555d512febe" id="r_a9ebd177d4bcd75fb0a525555d512febe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#a9ebd177d4bcd75fb0a525555d512febe">BackendGuiSFML</a> ()=default</td></tr>
-<tr class="memdesc:a9ebd177d4bcd75fb0a525555d512febe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
-<tr class="separator:a9ebd177d4bcd75fb0a525555d512febe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f9c49f5042319a2368a1a2138a817f" id="r_ab4f9c49f5042319a2368a1a2138a817f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#ab4f9c49f5042319a2368a1a2138a817f">BackendGuiSFML</a> ()</td></tr>
+<tr class="memdesc:ab4f9c49f5042319a2368a1a2138a817f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:ab4f9c49f5042319a2368a1a2138a817f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb62b98dcc26605df5a168da908a853" id="r_a0eb62b98dcc26605df5a168da908a853"><td class="memItemLeft" align="right" valign="top"><a id="a0eb62b98dcc26605df5a168da908a853" name="a0eb62b98dcc26605df5a168da908a853"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendGuiSFML</b> ()</td></tr>
+<tr class="memdesc:a0eb62b98dcc26605df5a168da908a853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a0eb62b98dcc26605df5a168da908a853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9338d9f4c2577c6858baefa01f98b7" id="r_a2e9338d9f4c2577c6858baefa01f98b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#a2e9338d9f4c2577c6858baefa01f98b7">handleEvent</a> (sf::Event event)</td></tr>
 <tr class="memdesc:a2e9338d9f4c2577c6858baefa01f98b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the event to the widgets.  <br /></td></tr>
 <tr class="separator:a2e9338d9f4c2577c6858baefa01f98b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +159,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d290c8982075f840e9a8274b29a026c" id="r_a2d290c8982075f840e9a8274b29a026c"><td class="memItemLeft" align="right" valign="top">sf::Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#a2d290c8982075f840e9a8274b29a026c">getWindow</a> () const</td></tr>
 <tr class="memdesc:a2d290c8982075f840e9a8274b29a026c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window that was provided to the gui.  <br /></td></tr>
 <tr class="separator:a2d290c8982075f840e9a8274b29a026c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a4447db8c9587bab8fa1e8e99fa97b" id="r_ad8a4447db8c9587bab8fa1e8e99fa97b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#ad8a4447db8c9587bab8fa1e8e99fa97b">startTextInput</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect) override</td></tr>
+<tr class="memdesc:ad8a4447db8c9587bab8fa1e8e99fa97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It will result in the software keyboard being opened on Android and iOS.  <br /></td></tr>
+<tr class="separator:ad8a4447db8c9587bab8fa1e8e99fa97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09eb961d5836a8e45232304badb0f26" id="r_ae09eb961d5836a8e45232304badb0f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#ae09eb961d5836a8e45232304badb0f26">stopTextInput</a> () override</td></tr>
+<tr class="memdesc:ae09eb961d5836a8e45232304badb0f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It will result in the software keyboard being closed on Android and iOS.  <br /></td></tr>
+<tr class="separator:ae09eb961d5836a8e45232304badb0f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3358a4c9037624f0ba22c6a4de315352" id="r_a3358a4c9037624f0ba22c6a4de315352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#a3358a4c9037624f0ba22c6a4de315352">updateTextCursorPosition</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> caretPos) override</td></tr>
+<tr class="memdesc:a3358a4c9037624f0ba22c6a4de315352"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when the position of the caret changes in a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). If an IME is used then this function may move the IME candidate list to the text cursor position.  <br /></td></tr>
+<tr class="separator:a3358a4c9037624f0ba22c6a4de315352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9aeccb7ef5164f64cfb7a91307a0bb4" id="r_aa9aeccb7ef5164f64cfb7a91307a0bb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiSFML.html#aa9aeccb7ef5164f64cfb7a91307a0bb4">handleEvent</a> (<a class="el" href="structtgui_1_1Event.html">Event</a> event)</td></tr>
 <tr class="memdesc:aa9aeccb7ef5164f64cfb7a91307a0bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the event to the widgets.  <br /></td></tr>
 <tr class="separator:aa9aeccb7ef5164f64cfb7a91307a0bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,14 +421,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae432fc673ac8a41f259d05610e1ec3d3 inherit pub_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9ebd177d4bcd75fb0a525555d512febe" name="a9ebd177d4bcd75fb0a525555d512febe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ebd177d4bcd75fb0a525555d512febe">&#9670;&#160;</a></span>BackendGuiSFML()</h2>
+<a id="ab4f9c49f5042319a2368a1a2138a817f" name="ab4f9c49f5042319a2368a1a2138a817f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f9c49f5042319a2368a1a2138a817f">&#9670;&#160;</a></span>BackendGuiSFML()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tgui::BackendGuiSFML::BackendGuiSFML </td>
@@ -424,11 +434,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
@@ -638,6 +643,71 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8a4447db8c9587bab8fa1e8e99fa97b" name="ad8a4447db8c9587bab8fa1e8e99fa97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a4447db8c9587bab8fa1e8e99fa97b">&#9670;&#160;</a></span>startTextInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendGuiSFML::startTextInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td>
+          <td class="paramname"><em>inputRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It will result in the software keyboard being opened on Android and iOS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputRect</td><td>The rectangle where text is being inputted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1BackendGui.html#a46d19b02c54040288f87641510f5f933">tgui::BackendGui</a>.</p>
+
+</div>
+</div>
+<a id="ae09eb961d5836a8e45232304badb0f26" name="ae09eb961d5836a8e45232304badb0f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09eb961d5836a8e45232304badb0f26">&#9670;&#160;</a></span>stopTextInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendGuiSFML::stopTextInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It will result in the software keyboard being closed on Android and iOS. </p>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1BackendGui.html#a0bead45d3dcdaa16d0cfc39a2cdb6770">tgui::BackendGui</a>.</p>
+
+</div>
+</div>
 <a id="a82bb5eb696287277abe58194df900c31" name="a82bb5eb696287277abe58194df900c31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82bb5eb696287277abe58194df900c31">&#9670;&#160;</a></span>updateContainerSize()</h2>
 
@@ -665,6 +735,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3358a4c9037624f0ba22c6a4de315352" name="a3358a4c9037624f0ba22c6a4de315352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3358a4c9037624f0ba22c6a4de315352">&#9670;&#160;</a></span>updateTextCursorPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendGuiSFML::updateTextCursorPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Rect.html">FloatRect</a>&#160;</td>
+          <td class="paramname"><em>inputRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td>
+          <td class="paramname"><em>caretPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called by TGUI when the position of the caret changes in a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). If an IME is used then this function may move the IME candidate list to the text cursor position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputRect</td><td>The rectangle where text is being inputted </td></tr>
+    <tr><td class="paramname">caretPos</td><td>Location of the text cursor, relative to the gui view</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function currently only has effect on Windows. </p>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1BackendGui.html#a4f84cf63c3e17055a550c7edf9776909">tgui::BackendGui</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/TGUI/Backend/Window/SFML/<a class="el" href="BackendGuiSFML_8hpp_source.html">BackendGuiSFML.hpp</a></li>
 </ul>
@@ -672,7 +790,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:45 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

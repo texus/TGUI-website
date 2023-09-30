@@ -79,7 +79,12 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
         <div class="platform-icon"></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Android.svg" title="Android"/></div>
-        <div class="platform-icon"></div>
+        <div class="platform-icon">
+          <picture class="dark-compatible">
+            <source srcset="/resources/PlatformIcons/iOS-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/resources/PlatformIcons/iOS.svg" title="iOS"/>
+          </picture>
+        </div>
       </td>
       <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
     </tr>

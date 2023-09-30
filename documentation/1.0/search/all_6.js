@@ -82,7 +82,7 @@ var searchData=
   ['getcolumntext_79',['getColumnText',['../classtgui_1_1ListView.html#a6533088dc2c3204ffc9ac841b097a858',1,'tgui::ListView']]],
   ['getcolumnwidth_80',['getColumnWidth',['../classtgui_1_1ListView.html#a059ae4f3377bdd066fc3499f301a2190',1,'tgui::ListView']]],
   ['getconfirmbuttontext_81',['getConfirmButtonText',['../classtgui_1_1FileDialog.html#a3fcefc2cd2c56af19de1f2488c6a02ff',1,'tgui::FileDialog']]],
-  ['getconstructfunction_82',['getConstructFunction',['../classtgui_1_1WidgetFactory.html#aa1e2b08e1bd94b4222b1ba364abb53d1',1,'tgui::WidgetFactory']]],
+  ['getconstructfunction_82',['getConstructFunction',['../classtgui_1_1WidgetFactory.html#a063dc8adfcdc6cfd58cd3f3a4a132cb4',1,'tgui::WidgetFactory']]],
   ['getcontainer_83',['getcontainer',['../classtgui_1_1SubwidgetContainer.html#aeb3430644b8038e401f1570458f70a7a',1,'tgui::SubwidgetContainer::getContainer()'],['../classtgui_1_1SubwidgetContainer.html#ab247aa0ec250196c52e0f350b2198dad',1,'tgui::SubwidgetContainer::getContainer() const'],['../classtgui_1_1BackendGui.html#a4ae25bc76ec49b7cd17acb45a6e8aa37',1,'tgui::BackendGui::getContainer()']]],
   ['getcontentoffset_84',['getContentOffset',['../classtgui_1_1ScrollablePanel.html#aa6dc4ff9369de4a43a88c135d84ced37',1,'tgui::ScrollablePanel']]],
   ['getcontentsize_85',['getContentSize',['../classtgui_1_1ScrollablePanel.html#a466bae73671276728783c4659e800e28',1,'tgui::ScrollablePanel']]],

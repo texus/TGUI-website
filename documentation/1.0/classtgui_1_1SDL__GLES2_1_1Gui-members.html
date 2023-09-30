@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,8 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_overrideMouseCursors</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_requestedMouseCursor</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_tabKeyUsageEnabled</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_textInputRect</b> (defined in <a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_textInputStarted</b> (defined in <a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_tooltipPossible</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_toolTipRelativePos</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_tooltipTime</b> (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -209,16 +211,19 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#acf6942bb575e044a2f57b09ae24bc865">setTextSize</a>(unsigned int size)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#ac0a2b1a87ba18ed03f3926a5fdd8543c">setWidgetIndex</a>(const Widget::Ptr &amp;widget, std::size_t index)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html#ab26d3c339c7c4e4a044a48d3204ba19e">setWindow</a>(SDL_Window *window)</td><td class="entry"><a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html">tgui::SDL_GLES2::Gui</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html#a13798cbb36143f1df4dc9be6f28a7aea">startTextInput</a>(FloatRect inputRect) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html#a91aaf84ffba1622fa1cbf48ff9c607f3">stopTextInput</a>() override</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#ab204e7b15d7b33e3088b35465175676b">unfocusAllWidgets</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateContainerSize</b>() override (defined in <a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a370fbb8700c655f27102653b93ec6f43">updateTime</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateTime</b>(Duration elapsedTime) (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~BackendGui</b>() (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html#abd69beaa1f3402d8f594f58d97d3a4e6">updateTextCursorPosition</a>(FloatRect inputRect, Vector2f caretPos) override</td><td class="entry"><a class="el" href="classtgui_1_1BackendGuiSDL.html">tgui::BackendGuiSDL</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html#a370fbb8700c655f27102653b93ec6f43">updateTime</a>()</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>updateTime</b>(Duration elapsedTime) (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~BackendGui</b>() (defined in <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a>)</td><td class="entry"><a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:46 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

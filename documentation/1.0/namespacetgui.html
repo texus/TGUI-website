@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0-rc2</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -586,6 +586,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1WidgetRenderer.html">WidgetRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all renderer classes.  <a href="classtgui_1_1WidgetRenderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1WindowsIMM.html">WindowsIMM</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically loads and uses imm32.dll on Windows to control the IME.  <a href="classtgui_1_1WindowsIMM.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -793,6 +796,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a680bf73f57fdf6d70ff8be0efe858283"><td class="memTemplItemLeft" align="right" valign="top">TGUI_NODISCARD std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MakeUniqueForOverwrite</b> (const std::size_t size)</td></tr>
 <tr class="memdesc:a680bf73f57fdf6d70ff8be0efe858283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique_ptr containing an uninitialized array. <br /></td></tr>
 <tr class="separator:a680bf73f57fdf6d70ff8be0efe858283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf125796ffbb67e9eed835d973c3b737" id="r_aaf125796ffbb67e9eed835d973c3b737"><td class="memTemplParams" colspan="2"><a id="aaf125796ffbb67e9eed835d973c3b737" name="aaf125796ffbb67e9eed835d973c3b737"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaf125796ffbb67e9eed835d973c3b737"><td class="memTemplItemLeft" align="right" valign="top">TGUI_NODISCARD constexpr const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>clamp</b> (const T &amp;v, const T &amp;lo, const T &amp;hi)</td></tr>
+<tr class="memdesc:aaf125796ffbb67e9eed835d973c3b737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps a value between two boundries. This function exists because std::clamp was only added with c++17. <br /></td></tr>
+<tr class="separator:aaf125796ffbb67e9eed835d973c3b737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5812b50b84b4bb9d37aa45c6b4793f1c" id="r_a5812b50b84b4bb9d37aa45c6b4793f1c"><td class="memItemLeft" align="right" valign="top"><a id="a5812b50b84b4bb9d37aa45c6b4793f1c" name="a5812b50b84b4bb9d37aa45c6b4793f1c"></a>
 TGUI_API void&#160;</td><td class="memItemRight" valign="bottom"><b>setGlobalTextSize</b> (unsigned <a class="el" href="classint.html">int</a> textSize)</td></tr>
 <tr class="memdesc:a5812b50b84b4bb9d37aa45c6b4793f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default text size for all widgets created after calling the function. <br /></td></tr>
@@ -1084,6 +1092,12 @@ TGUI_API std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a4bad0db21803fce3a7730b73313fec37" id="r_a4bad0db21803fce3a7730b73313fec37"><td class="memItemLeft" align="right" valign="top"><a id="a4bad0db21803fce3a7730b73313fec37" name="a4bad0db21803fce3a7730b73313fec37"></a>
 TGUI_API std::wostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::wostream &amp;os, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;str)</td></tr>
 <tr class="separator:a4bad0db21803fce3a7730b73313fec37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f965f1d4978bcdffc7e43a654c4dc0" id="r_a27f965f1d4978bcdffc7e43a654c4dc0"><td class="memItemLeft" align="right" valign="top"><a id="a27f965f1d4978bcdffc7e43a654c4dc0" name="a27f965f1d4978bcdffc7e43a654c4dc0"></a>
+TGUI_API std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::istream &amp;os, <a class="el" href="classtgui_1_1String.html">String</a> &amp;str)</td></tr>
+<tr class="separator:a27f965f1d4978bcdffc7e43a654c4dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080d22c979b9f76950777238d4fc2455" id="r_a080d22c979b9f76950777238d4fc2455"><td class="memItemLeft" align="right" valign="top"><a id="a080d22c979b9f76950777238d4fc2455" name="a080d22c979b9f76950777238d4fc2455"></a>
+TGUI_API std::wistream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::wistream &amp;os, <a class="el" href="classtgui_1_1String.html">String</a> &amp;str)</td></tr>
+<tr class="separator:a080d22c979b9f76950777238d4fc2455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377cd3d74e70744b0acc26fd6da7c221" id="r_a377cd3d74e70744b0acc26fd6da7c221"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetgui.html#a377cd3d74e70744b0acc26fd6da7c221">viewEqualIgnoreCase</a> (CharStringView view1, CharStringView view2)</td></tr>
 <tr class="memdesc:a377cd3d74e70744b0acc26fd6da7c221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether two view are equal if letters would have been lowercase.  <br /></td></tr>
 <tr class="separator:a377cd3d74e70744b0acc26fd6da7c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2192,7 +2206,7 @@ constexpr unsigned <a class="el" href="classint.html">int</a>&#160;</td><td clas
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 11 2023 18:28:45 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>

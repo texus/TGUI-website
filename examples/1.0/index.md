@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 1.0 examples
-breadcrumb: 1.0
+title: 1.x examples
+breadcrumb: 1.x
 ---
 
 Examples with the minimum code of each backend:

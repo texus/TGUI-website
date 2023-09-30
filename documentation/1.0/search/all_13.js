@@ -43,5 +43,5 @@ var searchData=
   ['treeviewrenderer_40',['TreeViewRenderer',['../classtgui_1_1TreeViewRenderer.html',1,'tgui']]],
   ['trim_41',['trim',['../classtgui_1_1String.html#a20e5b5b1815b24cb164472ae089e1e35',1,'tgui::String']]],
   ['twofingerscrolldetect_42',['TwoFingerScrollDetect',['../classtgui_1_1TwoFingerScrollDetect.html',1,'tgui']]],
-  ['type_43',['type',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type'],['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event::type']]]
+  ['type_43',['type',['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event::type'],['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type']]]
 ];
