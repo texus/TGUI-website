@@ -2,6 +2,7 @@
 layout: page
 title: 0.9 Tutorials
 breadcrumb: 0.9
+redirect_from: /tutorials/0.9.html
 ---
 
 ### Installation tutorials

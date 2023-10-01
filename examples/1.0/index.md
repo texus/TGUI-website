@@ -2,6 +2,7 @@
 layout: page
 title: 1.x examples
 breadcrumb: 1.x
+redirect_from: /examples/1.0.html
 ---
 
 Examples with the minimum code of each backend:

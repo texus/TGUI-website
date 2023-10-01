@@ -2,6 +2,7 @@
 layout: page
 title: 0.9 examples
 breadcrumb: "0.9"
+redirect_from: /examples/0.9.html
 ---
 
 [SFML backend](sfml-backend/)
