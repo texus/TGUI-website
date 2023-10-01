@@ -3,6 +3,7 @@ layout: page
 title: 0.10 examples
 breadcrumb: 0.10
 redirect_from: /examples/0.10.html
+canonical: https://tgui.eu/examples/latest-stable/
 ---
 
 Examples with the minimum code of each backend:

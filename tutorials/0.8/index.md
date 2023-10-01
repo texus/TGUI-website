@@ -3,6 +3,7 @@ layout: page
 title: 0.8 Tutorials
 breadcrumb: 0.8
 redirect_from: /tutorials/0.8.html
+canonical: https://tgui.eu/tutorials/latest-stable/
 ---
 
 ### Installation tutorials

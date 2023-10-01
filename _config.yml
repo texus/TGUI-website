@@ -26,14 +26,14 @@ defaults:
   values:
     sitemap:         false
 - scope:
-    path:            examples/1.0
+    path:            examples/latest-stable
   values:
     sitemap:         true
 - scope:
-    path:            tutorials/1.0
+    path:            tutorials/latest-stable
   values:
     sitemap:         true
 - scope:
-    path:            documentation/1.0
+    path:            documentation/latest-stable
   values:
     sitemap:         true

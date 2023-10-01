@@ -3,6 +3,7 @@ layout: page
 title: 0.9 examples
 breadcrumb: "0.9"
 redirect_from: /examples/0.9.html
+canonical: https://tgui.eu/examples/latest-stable/
 ---
 
 [SFML backend](sfml-backend/)

@@ -3,6 +3,7 @@ layout: page
 title: 1.x Tutorials
 breadcrumb: 1.x
 redirect_from: /tutorials/1.0.html
+canonical: https://tgui.eu/tutorials/latest-stable/
 ---
 
 ### Installation tutorials
