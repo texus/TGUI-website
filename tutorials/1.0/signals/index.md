@@ -46,10 +46,12 @@ public:
     void signalHandler2(tgui::Gui& gui);
 
 private:
+    tgui::CheckBox::Ptr m_checkBox = tgui::CheckBox::create();
+
     void f()
     {
-        checkBox->onChange(&Class::signalHandler1, this);
-        checkBox->onChange(&Class::signalHandler2, this, std::ref(gui));
+        m_checkBox->onChange(&Class::signalHandler1, this);
+        m_checkBox->onChange(&Class::signalHandler2, this, std::ref(gui));
     }
 };
 
