@@ -18,7 +18,7 @@ Because you can refer to the parent widget, one way to keep a widget centetered 
 widget->setPosition("(parent.innersize - size) / 2");
 ```
 
-A better solution would be to change the origin though. Setting the position to ("50%, "50%") doesn't work by default because it will place the top-left corner of the widget in the center of the parent, but the origin can be changed from the top-left to the center of the widget to truly center the widget:
+An alternative solution would be to change the origin. Setting the position to ("50%, "50%") doesn't work by default because it will place the top-left corner of the widget in the center of the parent, but the origin can be changed from the top-left to the center of the widget to truly center the widget:
 ```c++
 widget->setPosition("50%", "50%");
 widget->setOrigin(0.5f, 0.5f);
@@ -30,11 +30,11 @@ widget->setPosition("100%", "75%");
 widget->setOrigin(1.f, 0.5f);
 ```
 
-If the last paragraph isn't clear enough then here is a calculation with numbers. Imagine the parent is a panel of size (800, 600) while the widget is a button of size (150, 40). The button would be placed on position (800 - 200, 0.75 * 600 - 0.5 * 40) = (650, 430). When the panel is resized to a width of 400 pixels then the button will automatically be moved to a left position of 250.
+If the last paragraph isn't clear enough then here is a calculation with some example numbers. Imagine the parent is a panel of size (800, 600) while the widget is a button of size (150, 40). The button would be placed on position (800 - 150, 0.75 * 600 - 0.5 * 40) = (650, 430). When the panel is resized to a width of 400 pixels then the button will automatically be moved to a left position of 400-150 = 250.
 
 
 ### Binding other widgets
-You can not only refer to the parent, but also to other widgets. In the example below, the button is positioned 50 pixels to the right of another button. 
+You can not only refer to the parent, but also to other widgets. In the example below, the button is positioned 50 pixels to the right of another button.
 ```c++
 button2->setSize(bindSize(button1));
 button2->setPosition({bindRight(button1) + 50.0f, bindTop(button1)});
@@ -45,6 +45,11 @@ You can achieve the same when using strings. The name of the widget used in the 
 group->add(button1, "ButtonName");
 group->add(button2);
 button2->setPosition({"ButtonName.right + 50", "ButtonName.top"});
+```
+
+Here is another example that positions a cancel button on the left side of the OK button, with 10 pixels padding inbetween.
+```c++
+cancelButton->setPosition({"OkButton.left - 10 - width", "OkButton.top"});
 ```
 
 ### Available properties
