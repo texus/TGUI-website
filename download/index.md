@@ -3,7 +3,7 @@ layout: page
 title: Download
 ---
 
-### TGUI 1.0-dev
+### TGUI 1.1-dev
 
 **In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 7, Clang 6, VS2017 15.7
 
