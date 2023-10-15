@@ -86,3 +86,45 @@ The following properties are available in a layout string when referring to the 
     </tr>
   </tbody>
 </table>
+
+
+### AutoLayout
+
+Since TGUI 1.1 there is an additional method to specify that a widget should fill one side of its parent.
+
+The following images shows the available AutoLayout values. The `Leftmost` and `Rightmost` values are only needed if you already have a `Top` or `Bottom` widget and want to be beside them, otherwise you can just use `Left` and `Right`.  
+<picture class="dark-compatible">
+  <source srcset="/resources/Tutorials/Layouts/AutoLayoutValues-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/resources/Tutorials/Layouts/AutoLayoutValues.png" width="450" height="300" alt="AutoLayout values"/>
+</picture>
+
+When specifying an AutoLayout other than `Fill`, you need so set only the width or height of the widget. The position and either the width or height are automatically calculated by the layout (e.g. a panel that is located at the Top will always have a width that fills the entire parent). Here is an example of a panel that has a fixed width and fills the right side of the screen:
+```c++
+sidePanel->setWidth(200);
+sidePanel->setAutoLayout(tgui::AutoLayout::Right);
+```
+
+For the `Fill` layout, both the position and size are automatically calculated by the layout and shouldn't be set manually. After all other widgets with an AutoLayout are placed, the widget with a `Fill` layout will occupy the remaining area.
+```c++
+mainPanel->setAutoLayout(tgui::AutoLayout::Fill);
+```
+
+Multiple widgets can be given the same AutoLayout value, you can e.g. have multiple top panels. Which widget is placed above or below the other is determined by the z-order of the widgets. The back widget will be positioned first, the front widget will appear the most towards the center. By default, the front widget is the one that was last added to the parent.
+
+Here is an example that demonstrates how multiple widgets with an AutoLayout behave together:
+```c++
+red->setWidth("15%");
+red->setAutoLayout(tgui::AutoLayout::Left);
+
+green->setWidth("30%");
+green->setAutoLayout(tgui::AutoLayout::Left);
+
+blue->setHeight("20%");
+blue->setAutoLayout(tgui::AutoLayout::Top);
+
+yellow->setAutoLayout(tgui::AutoLayout::Fill);
+```
+<picture class="dark-compatible">
+  <source srcset="/resources/Tutorials/Layouts/AutoLayoutExampleResult-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/resources/Tutorials/Layouts/AutoLayoutExampleResult.png" width="400" height="300" alt="AutoLayout example result"/>
+</picture>

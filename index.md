@@ -46,10 +46,10 @@ The gui is easy to use, with only a few lines you can e.g. have a fully function
   </div>
   <div class="HomePageSmallerColumn">
     <a class="light-mode-only" href="/resources/BackendList.png" onclick="return showLightBox(event, href);">
-        <img src="/resources/BackendList.png"/>
+        <img src="/resources/BackendList.png" width="430" height="235"/>
     </a>
     <a class="dark-mode-only" href="/resources/BackendList-dark.png" onclick="return showLightBox(event, href);">
-        <img src="/resources/BackendList-dark.png" class="dark-compatible"/>
+        <img src="/resources/BackendList-dark.png" width="430" height="235"/>
     </a>
   </div>
 </div>

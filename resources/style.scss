@@ -145,7 +145,7 @@ img {
   }
 }
 
-picture.dark-compatible img, img.dark-compatible {
+picture.dark-compatible img, img.dark-compatible, img.dark-mode-only, a.dark-mode-only img {
   @include dark-mode {
     filter: brightness(100%);
   }
