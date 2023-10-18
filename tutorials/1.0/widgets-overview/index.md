@@ -92,6 +92,25 @@ When the Texture property is set in the renderer, the BackgroundColor and Rounde
 </details>
 </div>
 
+<!-- Canvas -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="Canvas" markdown="1">
+<summary><b>Canvas</b></summary>
+
+The `Canvas` widget provides a way to render custom contents.
+
+There isn't actually a widget called `Canvas`, but every rendering backend has a backend-specific canvas widget to render on. For more information and examples on how to use each canvas, check the [Canvas tutorial](../canvas/).
+
+Documentation:
+- [CanvasSFML](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasSFML.html)
+- [CanvasSDL](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasSDL.html)
+- [CanvasOpenGL3](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasOpenGL3.html)
+- [CanvasGLES2](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasGLES2.html)
+
+</details>
+</div>
+
 <!-- ChatBox -->
 
 <div class="SmallerMargin">
