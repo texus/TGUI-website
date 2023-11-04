@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -352,55 +352,62 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGui.html#a4f84cf63c3e17055a550c7edf9776909">  629</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendGui.html#a4f84cf63c3e17055a550c7edf9776909">updateTextCursorPosition</a>(<a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a> inputRect, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> caretPos);</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>        <span class="comment">// Handles the backend-independent part of the two finger scrolling.</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        <span class="comment">// Returns whether the touch event should be absorbed by the gui.</span></div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        <span class="keywordtype">bool</span> handleTwoFingerScroll(<span class="keywordtype">bool</span> wasAlreadyScrolling);</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        <span class="comment">// Updates the view and changes the size of the root container when needed.</span></div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        <span class="comment">// Derived classes should update m_framebufferSize in this function and then call this function from the base class.</span></div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateContainerSize();</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">  645</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">setKeyboardNavigationEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGui.html#ae432fc673ac8a41f259d05610e1ec3d3">  651</a></span>        <a class="code hl_class" href="classtgui_1_1SignalTyped.html">SignalFloatRect</a> onViewChange = {<span class="stringliteral">&quot;ViewChanged&quot;</span>}; </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        std::chrono::steady_clock::time_point m_lastUpdateTime;</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        <span class="keywordtype">bool</span> m_windowFocused = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">  657</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">isKeyboardNavigationEnabled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        <a class="code hl_typedef" href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">RootContainer::Ptr</a> m_container = std::make_shared&lt;RootContainer&gt;();</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        <a class="code hl_typedef" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> m_visibleToolTip = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        <a class="code hl_class" href="classtgui_1_1Duration.html">Duration</a> m_tooltipTime;</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <span class="keywordtype">bool</span> m_tooltipPossible = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> m_toolTipRelativePos;</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2i</a> m_lastMousePos;</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <a class="code hl_class" href="classtgui_1_1TwoFingerScrollDetect.html">TwoFingerScrollDetect</a> m_twoFingerScroll;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <span class="comment">// Handles the backend-independent part of the two finger scrolling.</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <span class="comment">// Returns whether the touch event should be absorbed by the gui.</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <span class="keywordtype">bool</span> handleTwoFingerScroll(<span class="keywordtype">bool</span> wasAlreadyScrolling);</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2i</a> m_framebufferSize;</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <a class="code hl_struct" href="structtgui_1_1RelFloatRect.html">RelFloatRect</a> m_viewport{<a class="code hl_struct" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, RelativeValue{0}, RelativeValue{1}, RelativeValue{1}};</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        RelFloatRect m_view{RelativeValue{0}, RelativeValue{0}, RelativeValue{1}, RelativeValue{1}};</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        FloatRect m_lastView;</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        <span class="keywordtype">bool</span> m_drawUpdatesTime = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        <span class="keywordtype">bool</span> m_tabKeyUsageEnabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        Cursor::Type m_requestedMouseCursor = Cursor::Type::Arrow;</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        std::stack&lt;Cursor::Type&gt; m_overrideMouseCursors;</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        std::shared_ptr&lt;BackendRenderTarget&gt; m_backendRenderTarget = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    };</div>
-</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>}</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="comment">// Updates the view and changes the size of the root container when needed.</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        <span class="comment">// Derived classes should update m_framebufferSize in this function and then call this function from the base class.</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateContainerSize();</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGui.html#ae432fc673ac8a41f259d05610e1ec3d3">  679</a></span>        <a class="code hl_class" href="classtgui_1_1SignalTyped.html">SignalFloatRect</a> onViewChange = {<span class="stringliteral">&quot;ViewChanged&quot;</span>}; </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        std::chrono::steady_clock::time_point m_lastUpdateTime;</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        <span class="keywordtype">bool</span> m_windowFocused = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_GUI_HPP</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        <a class="code hl_typedef" href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">RootContainer::Ptr</a> m_container = std::make_shared&lt;RootContainer&gt;();</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        <a class="code hl_typedef" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> m_visibleToolTip = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <a class="code hl_class" href="classtgui_1_1Duration.html">Duration</a> m_tooltipTime;</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="keywordtype">bool</span> m_tooltipPossible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> m_toolTipRelativePos;</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2i</a> m_lastMousePos;</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        <a class="code hl_class" href="classtgui_1_1TwoFingerScrollDetect.html">TwoFingerScrollDetect</a> m_twoFingerScroll;</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2i</a> m_framebufferSize;</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>        <a class="code hl_struct" href="structtgui_1_1RelFloatRect.html">RelFloatRect</a> m_viewport{<a class="code hl_struct" href="structtgui_1_1RelativeValue.html">RelativeValue</a>{0}, RelativeValue{0}, RelativeValue{1}, RelativeValue{1}};</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        RelFloatRect m_view{RelativeValue{0}, RelativeValue{0}, RelativeValue{1}, RelativeValue{1}};</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        FloatRect m_lastView;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        <span class="keywordtype">bool</span> m_drawUpdatesTime = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        <span class="keywordtype">bool</span> m_tabKeyUsageEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        <span class="keywordtype">bool</span> m_keyboardNavigationEnabled = <span class="keyword">false</span>; <span class="comment">// TGUI_NEXT: Enable by default?</span></div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>        Cursor::Type m_requestedMouseCursor = Cursor::Type::Arrow;</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        std::stack&lt;Cursor::Type&gt; m_overrideMouseCursors;</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        std::shared_ptr&lt;BackendRenderTarget&gt; m_backendRenderTarget = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    };</div>
+</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>}</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span> </div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_GUI_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html"><div class="ttname"><a href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></div><div class="ttdoc">Base class for the Gui.</div><div class="ttdef"><b>Definition</b> BackendGui.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a00b642d721ad0cddd5aa8349015ac99a"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a00b642d721ad0cddd5aa8349015ac99a">tgui::BackendGui::getWidgets</a></div><div class="ttdeci">TGUI_NODISCARD const std::vector&lt; Widget::Ptr &gt; &amp; getWidgets() const</div><div class="ttdoc">Returns a list of all the widgets.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a0bcc90ae7241dc27527c825f3f7a04a3"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a0bcc90ae7241dc27527c825f3f7a04a3">tgui::BackendGui::add</a></div><div class="ttdeci">void add(const Widget::Ptr &amp;widgetPtr, const String &amp;widgetName=&quot;&quot;)</div><div class="ttdoc">Adds a widget to the container.</div></div>
@@ -423,6 +430,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a55d1aa8075a80649be7364fa46ec0479"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a55d1aa8075a80649be7364fa46ec0479">tgui::BackendGui::getWidgetIndex</a></div><div class="ttdeci">TGUI_NODISCARD int getWidgetIndex(const Widget::Ptr &amp;widget) const</div><div class="ttdoc">Returns the current index of a widget in this container.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a5901f9d9c02d1c92ae950c7434cc5f9d"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a5901f9d9c02d1c92ae950c7434cc5f9d">tgui::BackendGui::getTextSize</a></div><div class="ttdeci">TGUI_NODISCARD unsigned int getTextSize() const</div><div class="ttdoc">Returns the character size for future child widgets (and for existing widgets where the size wasn't c...</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a5dfe37be22f854d59f8e824b39e45d6c"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a5dfe37be22f854d59f8e824b39e45d6c">tgui::BackendGui::setAbsoluteViewport</a></div><div class="ttdeci">void setAbsoluteViewport(const FloatRect &amp;viewport)</div><div class="ttdoc">Sets the part of the screen to which the gui will render in pixels.</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendGui_html_a69a11378844aa5196241382d7b98d330"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">tgui::BackendGui::isKeyboardNavigationEnabled</a></div><div class="ttdeci">TGUI_NODISCARD bool isKeyboardNavigationEnabled() const</div><div class="ttdoc">Returns whether using the arrow keys can be used to navigate between widgets.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a752fd28aa30be947636fad3a8dafb351"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a752fd28aa30be947636fad3a8dafb351">tgui::BackendGui::loadWidgetsFromStream</a></div><div class="ttdeci">void loadWidgetsFromStream(std::stringstream &amp;stream, bool replaceExisting=true)</div><div class="ttdoc">Loads the child widgets from a string stream.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a7698c5e0a38a099ed24d4d1b4a5a1b0c"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a7698c5e0a38a099ed24d4d1b4a5a1b0c">tgui::BackendGui::saveWidgetsToStream</a></div><div class="ttdeci">void saveWidgetsToStream(std::stringstream &amp;stream) const</div><div class="ttdoc">Saves this the child widgets to a text file.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_a7a4f046318b84a0d85c57d9afe02168d"><div class="ttname"><a href="classtgui_1_1BackendGui.html#a7a4f046318b84a0d85c57d9afe02168d">tgui::BackendGui::moveWidgetBackward</a></div><div class="ttdeci">std::size_t moveWidgetBackward(const Widget::Ptr &amp;widget)</div><div class="ttdoc">Places a widget one step backward in the z-order.</div></div>
@@ -453,6 +461,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_ae3966edbc40782248d63aaf9b8a6e31f"><div class="ttname"><a href="classtgui_1_1BackendGui.html#ae3966edbc40782248d63aaf9b8a6e31f">tgui::BackendGui::remove</a></div><div class="ttdeci">bool remove(const Widget::Ptr &amp;widget)</div><div class="ttdoc">Removes a single widget that was added to the container.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_ae3af9ce595d239ff69938ab702d78660"><div class="ttname"><a href="classtgui_1_1BackendGui.html#ae3af9ce595d239ff69938ab702d78660">tgui::BackendGui::loadWidgetsFromStream</a></div><div class="ttdeci">void loadWidgetsFromStream(std::stringstream &amp;&amp;stream, bool replaceExisting=true)</div><div class="ttdoc">Loads the child widgets from a string stream.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_aeb5fdb7c76332a10f06c31339d7e31c9"><div class="ttname"><a href="classtgui_1_1BackendGui.html#aeb5fdb7c76332a10f06c31339d7e31c9">tgui::BackendGui::BackendGui</a></div><div class="ttdeci">BackendGui()</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendGui_html_aecf50b66a39d443fc0536a7d04e27c82"><div class="ttname"><a href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">tgui::BackendGui::setKeyboardNavigationEnabled</a></div><div class="ttdeci">void setKeyboardNavigationEnabled(bool enabled)</div><div class="ttdoc">Changes whether using the arrow keys can be used to navigate between widgets.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_aef9c54a3dbb4bede1853c5cb071b251a"><div class="ttname"><a href="classtgui_1_1BackendGui.html#aef9c54a3dbb4bede1853c5cb071b251a">tgui::BackendGui::setOverrideMouseCursor</a></div><div class="ttdeci">void setOverrideMouseCursor(Cursor::Type type)</div><div class="ttdoc">Overrides which cursor gets shown.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_af5311c5dcdf953b133b725a82369b5d8"><div class="ttname"><a href="classtgui_1_1BackendGui.html#af5311c5dcdf953b133b725a82369b5d8">tgui::BackendGui::requestMouseCursor</a></div><div class="ttdeci">void requestMouseCursor(Cursor::Type type)</div><div class="ttdoc">Function that is used by widgets to change the mouse cursor.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_afb18b2dab22b349d9799c28a0ee702b0"><div class="ttname"><a href="classtgui_1_1BackendGui.html#afb18b2dab22b349d9799c28a0ee702b0">tgui::BackendGui::getWidgetBelowMouseCursor</a></div><div class="ttdeci">TGUI_NODISCARD Widget::Ptr getWidgetBelowMouseCursor(Vector2i mousePos) const</div><div class="ttdoc">Returns the leaf child widget below the mouse.</div></div>
@@ -461,7 +470,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Duration_html"><div class="ttname"><a href="classtgui_1_1Duration.html">tgui::Duration</a></div><div class="ttdoc">Wrapper for durations.</div><div class="ttdef"><b>Definition</b> Duration.hpp:56</div></div>
 <div class="ttc" id="aclasstgui_1_1Font_html"><div class="ttname"><a href="classtgui_1_1Font.html">tgui::Font</a></div><div class="ttdoc">Wrapper around the backend-specific font. All copies of the font will share the same internal font re...</div><div class="ttdef"><b>Definition</b> Font.hpp:61</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html"><div class="ttname"><a href="classtgui_1_1Rect.html">tgui::Rect&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclasstgui_1_1RootContainer_html_a10ea4a0998fb8627e5c26de394cd4ded"><div class="ttname"><a href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">tgui::RootContainer::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; RootContainer &gt; Ptr</div><div class="ttdoc">Shared widget pointer.</div><div class="ttdef"><b>Definition</b> Container.hpp:692</div></div>
+<div class="ttc" id="aclasstgui_1_1RootContainer_html_a10ea4a0998fb8627e5c26de394cd4ded"><div class="ttname"><a href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">tgui::RootContainer::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; RootContainer &gt; Ptr</div><div class="ttdoc">Shared widget pointer.</div><div class="ttdef"><b>Definition</b> Container.hpp:648</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; FloatRect &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition</b> String.hpp:101</div></div>
 <div class="ttc" id="aclasstgui_1_1TwoFingerScrollDetect_html"><div class="ttname"><a href="classtgui_1_1TwoFingerScrollDetect.html">tgui::TwoFingerScrollDetect</a></div><div class="ttdef"><b>Definition</b> TwoFingerScrollDetect.hpp:45</div></div>
@@ -475,7 +484,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -489,7 +498,7 @@ Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

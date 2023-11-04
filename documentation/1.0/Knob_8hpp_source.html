@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -228,7 +228,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classtgui_1_1Knob.html#af2c06e5f3dfa8e54dfe664158aa25b44">  254</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Knob.html#af2c06e5f3dfa8e54dfe664158aa25b44">isMouseOnWidget</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordtype">bool</span> leftMousePressed(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classtgui_1_1Knob.html#a49ff92b2b3e541f74cec6240347f58a6">  259</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Knob.html#a49ff92b2b3e541f74cec6240347f58a6">leftMousePressed</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordtype">void</span> mouseMoved(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
@@ -308,6 +308,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Knob_html_a2f82fee457451dbb91dc28599aea2ac7"><div class="ttname"><a href="classtgui_1_1Knob.html#a2f82fee457451dbb91dc28599aea2ac7">tgui::Knob::getSharedRenderer</a></div><div class="ttdeci">TGUI_NODISCARD KnobRenderer * getSharedRenderer() override</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_a36ce9187778c7ab66cfef6ac00684801"><div class="ttname"><a href="classtgui_1_1Knob.html#a36ce9187778c7ab66cfef6ac00684801">tgui::Knob::getEndRotation</a></div><div class="ttdeci">TGUI_NODISCARD float getEndRotation() const</div><div class="ttdoc">Sets the end rotation, which is the place where the value should be maximal.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_a3af8833fe9705f5f984d16d0d86de986"><div class="ttname"><a href="classtgui_1_1Knob.html#a3af8833fe9705f5f984d16d0d86de986">tgui::Knob::rendererChanged</a></div><div class="ttdeci">void rendererChanged(const String &amp;property) override</div><div class="ttdoc">Function called when one of the properties of the renderer is changed.</div></div>
+<div class="ttc" id="aclasstgui_1_1Knob_html_a49ff92b2b3e541f74cec6240347f58a6"><div class="ttname"><a href="classtgui_1_1Knob.html#a49ff92b2b3e541f74cec6240347f58a6">tgui::Knob::leftMousePressed</a></div><div class="ttdeci">bool leftMousePressed(Vector2f pos) override</div><div class="ttdoc">Called by the parent when the left mouse button goes down on top of the widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_a57f07b93ee8956d33fd327333f3b9801"><div class="ttname"><a href="classtgui_1_1Knob.html#a57f07b93ee8956d33fd327333f3b9801">tgui::Knob::setEndRotation</a></div><div class="ttdeci">void setEndRotation(float endRotation)</div><div class="ttdoc">Sets the end rotation, which is the place where the value should be maximal.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_a583fac4976146bc826c52767934e9b0e"><div class="ttname"><a href="classtgui_1_1Knob.html#a583fac4976146bc826c52767934e9b0e">tgui::Knob::save</a></div><div class="ttdeci">TGUI_NODISCARD std::unique_ptr&lt; DataIO::Node &gt; save(SavingRenderersMap &amp;renderers) const override</div><div class="ttdoc">Saves the widget as a tree node in order to save it to a file.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_a63fe3236f0a28855860e7fae6375cbae"><div class="ttname"><a href="classtgui_1_1Knob.html#a63fe3236f0a28855860e7fae6375cbae">tgui::Knob::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
@@ -326,7 +327,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Knob_html_af2c06e5f3dfa8e54dfe664158aa25b44"><div class="ttname"><a href="classtgui_1_1Knob.html#af2c06e5f3dfa8e54dfe664158aa25b44">tgui::Knob::isMouseOnWidget</a></div><div class="ttdeci">TGUI_NODISCARD bool isMouseOnWidget(Vector2f pos) const override</div><div class="ttdoc">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget...</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_af9efec509132a0658f71a0a400a3efc1"><div class="ttname"><a href="classtgui_1_1Knob.html#af9efec509132a0658f71a0a400a3efc1">tgui::Knob::getMaximum</a></div><div class="ttdeci">TGUI_NODISCARD float getMaximum() const</div><div class="ttdoc">Returns the value when the knob would be rotated in the direction of EndRotation.</div></div>
 <div class="ttc" id="aclasstgui_1_1Knob_html_afdfad198a0f0a4235a0f5772801d809e"><div class="ttname"><a href="classtgui_1_1Knob.html#afdfad198a0f0a4235a0f5772801d809e">tgui::Knob::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Knob &gt; Ptr</div><div class="ttdoc">Shared widget pointer.</div><div class="ttdef"><b>Definition</b> Knob.hpp:44</div></div>
-<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:289</div></div>
+<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:305</div></div>
 <div class="ttc" id="aclasstgui_1_1Outline_html"><div class="ttname"><a href="classtgui_1_1Outline.html">tgui::Outline</a></div><div class="ttdef"><b>Definition</b> Outline.hpp:39</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1Signal_html"><div class="ttname"><a href="classtgui_1_1Signal.html">tgui::Signal</a></div><div class="ttdoc">Signal to which the user can subscribe to get callbacks from.</div><div class="ttdef"><b>Definition</b> Signal.hpp:62</div></div>
@@ -341,7 +342,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -355,7 +356,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

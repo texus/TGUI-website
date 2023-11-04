@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -351,6 +351,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a cl
 <tr class="memitem:acdf90f593e4414f9fe99f7a54b24af54 inherit pub_methods_classtgui_1_1BackendGui" id="r_acdf90f593e4414f9fe99f7a54b24af54"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#acdf90f593e4414f9fe99f7a54b24af54">mapCoordsToPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> coord) const</td></tr>
 <tr class="memdesc:acdf90f593e4414f9fe99f7a54b24af54 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position within the view to the corresponding pixel coordinate.  <br /></td></tr>
 <tr class="separator:acdf90f593e4414f9fe99f7a54b24af54 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui" id="r_aecf50b66a39d443fc0536a7d04e27c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">setKeyboardNavigationEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui" id="r_a69a11378844aa5196241382d7b98d330"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">isKeyboardNavigationEnabled</a> () const</td></tr>
+<tr class="memdesc:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -441,6 +447,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawUpdatesTime</b>
 <tr class="memitem:af25a8c6644a7c6ffb25438f865a47d98 inherit pro_attribs_classtgui_1_1BackendGui" id="r_af25a8c6644a7c6ffb25438f865a47d98"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabKeyUsageEnabled</b> = true</td></tr>
 <tr class="separator:af25a8c6644a7c6ffb25438f865a47d98 inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdf9d1a0783bc9abe0b95bc3bfbd29a inherit pro_attribs_classtgui_1_1BackendGui" id="r_a0cdf9d1a0783bc9abe0b95bc3bfbd29a"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyboardNavigationEnabled</b> = false</td></tr>
+<tr class="separator:a0cdf9d1a0783bc9abe0b95bc3bfbd29a inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7492c17d2045692e6c82798f3a84e6 inherit pro_attribs_classtgui_1_1BackendGui" id="r_afb7492c17d2045692e6c82798f3a84e6"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedMouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
 <tr class="separator:afb7492c17d2045692e6c82798f3a84e6 inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -629,7 +638,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -643,7 +652,7 @@ Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

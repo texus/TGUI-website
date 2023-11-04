@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -333,6 +333,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a cl
 <tr class="memitem:a4f84cf63c3e17055a550c7edf9776909" id="r_a4f84cf63c3e17055a550c7edf9776909"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a4f84cf63c3e17055a550c7edf9776909">updateTextCursorPosition</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> caretPos)</td></tr>
 <tr class="memdesc:a4f84cf63c3e17055a550c7edf9776909"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when the position of the caret changes in a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). If an IME is used then this function may move the IME candidate list to the text cursor position.  <br /></td></tr>
 <tr class="separator:a4f84cf63c3e17055a550c7edf9776909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf50b66a39d443fc0536a7d04e27c82" id="r_aecf50b66a39d443fc0536a7d04e27c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">setKeyboardNavigationEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:aecf50b66a39d443fc0536a7d04e27c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:aecf50b66a39d443fc0536a7d04e27c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a11378844aa5196241382d7b98d330" id="r_a69a11378844aa5196241382d7b98d330"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">isKeyboardNavigationEnabled</a> () const</td></tr>
+<tr class="memdesc:a69a11378844aa5196241382d7b98d330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:a69a11378844aa5196241382d7b98d330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -397,6 +403,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawUpdatesTime</b>
 <tr class="memitem:af25a8c6644a7c6ffb25438f865a47d98" id="r_af25a8c6644a7c6ffb25438f865a47d98"><td class="memItemLeft" align="right" valign="top"><a id="af25a8c6644a7c6ffb25438f865a47d98" name="af25a8c6644a7c6ffb25438f865a47d98"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabKeyUsageEnabled</b> = true</td></tr>
 <tr class="separator:af25a8c6644a7c6ffb25438f865a47d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdf9d1a0783bc9abe0b95bc3bfbd29a" id="r_a0cdf9d1a0783bc9abe0b95bc3bfbd29a"><td class="memItemLeft" align="right" valign="top"><a id="a0cdf9d1a0783bc9abe0b95bc3bfbd29a" name="a0cdf9d1a0783bc9abe0b95bc3bfbd29a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyboardNavigationEnabled</b> = false</td></tr>
+<tr class="separator:a0cdf9d1a0783bc9abe0b95bc3bfbd29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7492c17d2045692e6c82798f3a84e6" id="r_afb7492c17d2045692e6c82798f3a84e6"><td class="memItemLeft" align="right" valign="top"><a id="afb7492c17d2045692e6c82798f3a84e6" name="afb7492c17d2045692e6c82798f3a84e6"></a>
 <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedMouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
 <tr class="separator:afb7492c17d2045692e6c82798f3a84e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -877,6 +886,28 @@ template&lt;class WidgetType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has the event been consumed? When this function returns false, then the event was ignored by all widgets. </dd></dl>
+
+</div>
+</div>
+<a id="a69a11378844aa5196241382d7b98d330" name="a69a11378844aa5196241382d7b98d330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a11378844aa5196241382d7b98d330">&#9670;&#160;</a></span>isKeyboardNavigationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD bool tgui::BackendGui::isKeyboardNavigationEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether using the arrow keys can be used to navigate between widgets. </p>
+<dl class="section return"><dt>Returns</dt><dd>Should keyboard navigation be enabled?</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82" title="Changes whether using the arrow keys can be used to navigate between widgets.">setKeyboardNavigationEnabled</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
 
 </div>
 </div>
@@ -1428,6 +1459,35 @@ template&lt;class WidgetType &gt; </div>
 
 </div>
 </div>
+<a id="aecf50b66a39d443fc0536a7d04e27c82" name="aecf50b66a39d443fc0536a7d04e27c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf50b66a39d443fc0536a7d04e27c82">&#9670;&#160;</a></span>setKeyboardNavigationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::BackendGui::setKeyboardNavigationEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes whether using the arrow keys can be used to navigate between widgets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>Should keyboard navigation be enabled?</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Even when enabled, you may still need to tell widgets where they need to navigate to when an arrow key is pressed. Kayboard navigation is disabled by default.</p>
+<p>Note that this option affects the return value of handleEvent for key press events. Normally all key events are marked as handled, but by enabling this option handleEvent will only return true if the key was actually handled.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
 <a id="a886a623e4c3fe1066c91956b366632a8" name="a886a623e4c3fe1066c91956b366632a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a886a623e4c3fe1066c91956b366632a8">&#9670;&#160;</a></span>setOpacity()</h2>
 
@@ -1744,7 +1804,7 @@ template&lt;class WidgetType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -1758,7 +1818,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

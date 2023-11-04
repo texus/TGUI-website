@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -190,6 +190,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a182c10451857bf5b489aa7b6c38dbc2e" id="r_a182c10451857bf5b489aa7b6c38dbc2e"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1TextStyles.html">TextStyles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ProgressBarRenderer.html#a182c10451857bf5b489aa7b6c38dbc2e">getTextStyle</a> () const</td></tr>
 <tr class="memdesc:a182c10451857bf5b489aa7b6c38dbc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns text style.  <br /></td></tr>
 <tr class="separator:a182c10451857bf5b489aa7b6c38dbc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67b8073b325cfc8fe48b2824a1c635c" id="r_aa67b8073b325cfc8fe48b2824a1c635c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ProgressBarRenderer.html#aa67b8073b325cfc8fe48b2824a1c635c">setTextOutlineColor</a> (<a class="el" href="classtgui_1_1Color.html">Color</a> outlineColor)</td></tr>
+<tr class="memdesc:aa67b8073b325cfc8fe48b2824a1c635c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the outline color of the text (used when TextOutlineThickness &gt; 0)  <br /></td></tr>
+<tr class="separator:aa67b8073b325cfc8fe48b2824a1c635c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a94054f1770c8cec0971e4f0b83f985" id="r_a1a94054f1770c8cec0971e4f0b83f985"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ProgressBarRenderer.html#a1a94054f1770c8cec0971e4f0b83f985">getTextOutlineColor</a> () const</td></tr>
+<tr class="memdesc:a1a94054f1770c8cec0971e4f0b83f985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the outline color of the text (used when TextOutlineThickness &gt; 0)  <br /></td></tr>
+<tr class="separator:a1a94054f1770c8cec0971e4f0b83f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad881dc664d3509cf3a1f8a6a34036bb1" id="r_ad881dc664d3509cf3a1f8a6a34036bb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ProgressBarRenderer.html#ad881dc664d3509cf3a1f8a6a34036bb1">setTextOutlineThickness</a> (float outlineThickness)</td></tr>
+<tr class="memdesc:ad881dc664d3509cf3a1f8a6a34036bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the thickness of the text outline (0 by default, which means there is no outline).  <br /></td></tr>
+<tr class="separator:ad881dc664d3509cf3a1f8a6a34036bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3110f9eaaf81cefe3547abda69d0afff" id="r_a3110f9eaaf81cefe3547abda69d0afff"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ProgressBarRenderer.html#a3110f9eaaf81cefe3547abda69d0afff">getTextOutlineThickness</a> () const</td></tr>
+<tr class="memdesc:a3110f9eaaf81cefe3547abda69d0afff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the thickness of the text outline.  <br /></td></tr>
+<tr class="separator:a3110f9eaaf81cefe3547abda69d0afff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcb181eb42e4239a2c26cb9f9d1287c" id="r_acfcb181eb42e4239a2c26cb9f9d1287c"><td class="memItemLeft" align="right" valign="top"><a id="acfcb181eb42e4239a2c26cb9f9d1287c" name="acfcb181eb42e4239a2c26cb9f9d1287c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WidgetRenderer</b> ()=default</td></tr>
 <tr class="memdesc:acfcb181eb42e4239a2c26cb9f9d1287c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
@@ -416,6 +428,58 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 
 </div>
 </div>
+<a id="a1a94054f1770c8cec0971e4f0b83f985" name="a1a94054f1770c8cec0971e4f0b83f985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a94054f1770c8cec0971e4f0b83f985">&#9670;&#160;</a></span>getTextOutlineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Color.html">Color</a> tgui::ProgressBarRenderer::getTextOutlineColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the outline color of the text (used when TextOutlineThickness &gt; 0) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a></td><td>outline color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
+<a id="a3110f9eaaf81cefe3547abda69d0afff" name="a3110f9eaaf81cefe3547abda69d0afff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3110f9eaaf81cefe3547abda69d0afff">&#9670;&#160;</a></span>getTextOutlineThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD float tgui::ProgressBarRenderer::getTextOutlineThickness </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the thickness of the text outline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a></td><td>outline thickness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
 <a id="a182c10451857bf5b489aa7b6c38dbc2e" name="a182c10451857bf5b489aa7b6c38dbc2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a182c10451857bf5b489aa7b6c38dbc2e">&#9670;&#160;</a></span>getTextStyle()</h2>
 
@@ -636,6 +700,60 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 
 </div>
 </div>
+<a id="aa67b8073b325cfc8fe48b2824a1c635c" name="aa67b8073b325cfc8fe48b2824a1c635c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67b8073b325cfc8fe48b2824a1c635c">&#9670;&#160;</a></span>setTextOutlineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::ProgressBarRenderer::setTextOutlineColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>outlineColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the outline color of the text (used when TextOutlineThickness &gt; 0) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outlineColor</td><td>New text outline color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
+<a id="ad881dc664d3509cf3a1f8a6a34036bb1" name="ad881dc664d3509cf3a1f8a6a34036bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad881dc664d3509cf3a1f8a6a34036bb1">&#9670;&#160;</a></span>setTextOutlineThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::ProgressBarRenderer::setTextOutlineThickness </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>outlineThickness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the thickness of the text outline (0 by default, which means there is no outline). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outlineThickness</td><td>New text outline thickness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
 <a id="ac4a37e2db2e9003ab41c3efac5eebf4d" name="ac4a37e2db2e9003ab41c3efac5eebf4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4a37e2db2e9003ab41c3efac5eebf4d">&#9670;&#160;</a></span>setTextStyle()</h2>
 
@@ -757,7 +875,7 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -771,7 +889,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

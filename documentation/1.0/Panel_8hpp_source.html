@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -198,7 +198,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classtgui_1_1Panel.html#a387de4c4ab6bf7224bae37c909d33c80">  130</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Panel.html#a387de4c4ab6bf7224bae37c909d33c80">isMouseOnWidget</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordtype">bool</span> leftMousePressed(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classtgui_1_1Panel.html#a9c06556dbf8bcc86cea869e7af601b83">  135</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Panel.html#a9c06556dbf8bcc86cea869e7af601b83">leftMousePressed</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordtype">void</span> leftMouseReleased(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
@@ -266,7 +266,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Color_html"><div class="ttname"><a href="classtgui_1_1Color.html">tgui::Color</a></div><div class="ttdoc">Wrapper for colors.</div><div class="ttdef"><b>Definition</b> Color.hpp:72</div></div>
 <div class="ttc" id="aclasstgui_1_1Duration_html"><div class="ttname"><a href="classtgui_1_1Duration.html">tgui::Duration</a></div><div class="ttdoc">Wrapper for durations.</div><div class="ttdef"><b>Definition</b> Duration.hpp:56</div></div>
 <div class="ttc" id="aclasstgui_1_1Group_html"><div class="ttname"><a href="classtgui_1_1Group.html">tgui::Group</a></div><div class="ttdoc">Group widget.</div><div class="ttdef"><b>Definition</b> Group.hpp:44</div></div>
-<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:289</div></div>
+<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:305</div></div>
 <div class="ttc" id="aclasstgui_1_1Outline_html"><div class="ttname"><a href="classtgui_1_1Outline.html">tgui::Outline</a></div><div class="ttdef"><b>Definition</b> Outline.hpp:39</div></div>
 <div class="ttc" id="aclasstgui_1_1PanelRenderer_html"><div class="ttname"><a href="classtgui_1_1PanelRenderer.html">tgui::PanelRenderer</a></div><div class="ttdef"><b>Definition</b> PanelRenderer.hpp:37</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html"><div class="ttname"><a href="classtgui_1_1Panel.html">tgui::Panel</a></div><div class="ttdoc">Group of widgets that has a background color and optional borders.</div><div class="ttdef"><b>Definition</b> Panel.hpp:41</div></div>
@@ -282,6 +282,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Panel_html_a8831b657f480c73d1d56918fd4c17769"><div class="ttname"><a href="classtgui_1_1Panel.html#a8831b657f480c73d1d56918fd4c17769">tgui::Panel::rendererChanged</a></div><div class="ttdeci">void rendererChanged(const String &amp;property) override</div><div class="ttdoc">Function called when one of the properties of the renderer is changed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html_a897457d9d8d4c7e0ccf23b4bfc8e07af"><div class="ttname"><a href="classtgui_1_1Panel.html#a897457d9d8d4c7e0ccf23b4bfc8e07af">tgui::Panel::create</a></div><div class="ttdeci">static TGUI_NODISCARD Panel::Ptr create(const Layout2d &amp;size={&quot;100%&quot;, &quot;100%&quot;})</div><div class="ttdoc">Creates a new panel widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html_a9be2107043a729f2053fb0f33df6cbfb"><div class="ttname"><a href="classtgui_1_1Panel.html#a9be2107043a729f2053fb0f33df6cbfb">tgui::Panel::setSize</a></div><div class="ttdeci">void setSize(const Layout2d &amp;size) override</div><div class="ttdoc">Changes the size of the panel.</div></div>
+<div class="ttc" id="aclasstgui_1_1Panel_html_a9c06556dbf8bcc86cea869e7af601b83"><div class="ttname"><a href="classtgui_1_1Panel.html#a9c06556dbf8bcc86cea869e7af601b83">tgui::Panel::leftMousePressed</a></div><div class="ttdeci">bool leftMousePressed(Vector2f pos) override</div><div class="ttdoc">Called by the parent when the left mouse button goes down on top of the widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html_aaab84a9d56557b6f7d27f0087f88280a"><div class="ttname"><a href="classtgui_1_1Panel.html#aaab84a9d56557b6f7d27f0087f88280a">tgui::Panel::getRenderer</a></div><div class="ttdeci">TGUI_NODISCARD PanelRenderer * getRenderer() override</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html_ac8f2b09e2267c1eefda34dae9ef3f431"><div class="ttname"><a href="classtgui_1_1Panel.html#ac8f2b09e2267c1eefda34dae9ef3f431">tgui::Panel::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; Vector2f &gt;</a></div></div>
@@ -296,7 +297,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -310,7 +311,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

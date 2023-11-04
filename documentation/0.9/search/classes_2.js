@@ -8,7 +8,7 @@ var searchData=
   ['childwindow_5',['ChildWindow',['../classtgui_1_1ChildWindow.html',1,'tgui']]],
   ['childwindowrenderer_6',['ChildWindowRenderer',['../classtgui_1_1ChildWindowRenderer.html',1,'tgui']]],
   ['clickablewidget_7',['ClickableWidget',['../classtgui_1_1ClickableWidget.html',1,'tgui']]],
-  ['color_8',['Color',['../classtgui_1_1Color.html',1,'tgui::Color'],['../structtgui_1_1Vertex_1_1Color.html',1,'tgui::Vertex::Color']]],
+  ['color_8',['color',['../classtgui_1_1Color.html',1,'tgui::Color'],['../structtgui_1_1Vertex_1_1Color.html',1,'tgui::Vertex::Color']]],
   ['colorpicker_9',['ColorPicker',['../classtgui_1_1ColorPicker.html',1,'tgui']]],
   ['colorpickerrenderer_10',['ColorPickerRenderer',['../classtgui_1_1ColorPickerRenderer.html',1,'tgui']]],
   ['column_11',['Column',['../structtgui_1_1ListView_1_1Column.html',1,'tgui::ListView']]],

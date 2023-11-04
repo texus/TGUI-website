@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -270,13 +270,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classtgui_1_1Label.html#a6a0d1399062767ec7ab2b61f7e06f3ea">  322</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Label.html#a6a0d1399062767ec7ab2b61f7e06f3ea">isMouseOnWidget</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keywordtype">bool</span> leftMousePressed(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="classtgui_1_1Label.html#acc7c7f905674b3d4dbda9840b60409f8">  326</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Label.html#acc7c7f905674b3d4dbda9840b60409f8">leftMousePressed</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="keywordtype">void</span> leftMouseReleased(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordtype">void</span> mouseMoved(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordtype">bool</span> scrolled(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="classtgui_1_1Label.html#a39d4904264834cf2bd87d720990e7015">  335</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Label.html#a39d4904264834cf2bd87d720990e7015">scrolled</a>(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <span class="keywordtype">void</span> mouseNoLongerOnWidget() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
@@ -381,6 +381,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Label_html_a354dbc1a3077b6a372aeaa10622ef919"><div class="ttname"><a href="classtgui_1_1Label.html#a354dbc1a3077b6a372aeaa10622ef919">tgui::Label::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a379e559273c82cdcdd79f5cd48c51e1a"><div class="ttname"><a href="classtgui_1_1Label.html#a379e559273c82cdcdd79f5cd48c51e1a">tgui::Label::load</a></div><div class="ttdeci">void load(const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</div><div class="ttdoc">Loads the widget from a tree of nodes.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a38389737dbc9e34db5453a5df44a8a7b"><div class="ttname"><a href="classtgui_1_1Label.html#a38389737dbc9e34db5453a5df44a8a7b">tgui::Label::rearrangeText</a></div><div class="ttdeci">virtual void rearrangeText()</div><div class="ttdoc">Rearrange the text (recreates m_textPieces), making use of the given size of maximum text width.</div></div>
+<div class="ttc" id="aclasstgui_1_1Label_html_a39d4904264834cf2bd87d720990e7015"><div class="ttname"><a href="classtgui_1_1Label.html#a39d4904264834cf2bd87d720990e7015">tgui::Label::scrolled</a></div><div class="ttdeci">bool scrolled(float delta, Vector2f pos, bool touch) override</div><div class="ttdoc">Called by the parent on scroll event (either from mouse wheel of from two finger scrolling on a touch...</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a4be0f1b157b02857d90e07d052b1778b"><div class="ttname"><a href="classtgui_1_1Label.html#a4be0f1b157b02857d90e07d052b1778b">tgui::Label::getScrollbarPolicy</a></div><div class="ttdeci">TGUI_NODISCARD Scrollbar::Policy getScrollbarPolicy() const</div><div class="ttdoc">Returns when the vertical scrollbar should be displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a6a0d1399062767ec7ab2b61f7e06f3ea"><div class="ttname"><a href="classtgui_1_1Label.html#a6a0d1399062767ec7ab2b61f7e06f3ea">tgui::Label::isMouseOnWidget</a></div><div class="ttdeci">TGUI_NODISCARD bool isMouseOnWidget(Vector2f pos) const override</div><div class="ttdoc">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget...</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_a6af7e00a88a1e196931e2badf2ac5eb3"><div class="ttname"><a href="classtgui_1_1Label.html#a6af7e00a88a1e196931e2badf2ac5eb3">tgui::Label::setVerticalAlignment</a></div><div class="ttdeci">void setVerticalAlignment(VerticalAlignment alignment)</div><div class="ttdoc">Changes the vertical text alignment.</div></div>
@@ -394,6 +395,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Label_html_aa753ce5847b9183280c74134d7d9671f"><div class="ttname"><a href="classtgui_1_1Label.html#aa753ce5847b9183280c74134d7d9671f">tgui::Label::getRenderer</a></div><div class="ttdeci">TGUI_NODISCARD LabelRenderer * getRenderer() override</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_ab28908604e1380a541b228d1d5bb2265"><div class="ttname"><a href="classtgui_1_1Label.html#ab28908604e1380a541b228d1d5bb2265">tgui::Label::getHorizontalAlignment</a></div><div class="ttdeci">TGUI_NODISCARD HorizontalAlignment getHorizontalAlignment() const</div><div class="ttdoc">Gets the current horizontal text alignment.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_abaf53654528b310b3b8cdc85bf4e1d7d"><div class="ttname"><a href="classtgui_1_1Label.html#abaf53654528b310b3b8cdc85bf4e1d7d">tgui::Label::getText</a></div><div class="ttdeci">TGUI_NODISCARD const String &amp; getText() const</div><div class="ttdoc">Returns the text.</div></div>
+<div class="ttc" id="aclasstgui_1_1Label_html_acc7c7f905674b3d4dbda9840b60409f8"><div class="ttname"><a href="classtgui_1_1Label.html#acc7c7f905674b3d4dbda9840b60409f8">tgui::Label::leftMousePressed</a></div><div class="ttdeci">bool leftMousePressed(Vector2f pos) override</div><div class="ttdoc">Called by the parent when the left mouse button goes down on top of the widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_acd24d7e05f3aed0e6930df724c36d91c"><div class="ttname"><a href="classtgui_1_1Label.html#acd24d7e05f3aed0e6930df724c36d91c">tgui::Label::save</a></div><div class="ttdeci">TGUI_NODISCARD std::unique_ptr&lt; DataIO::Node &gt; save(SavingRenderersMap &amp;renderers) const override</div><div class="ttdoc">Saves the widget as a tree node in order to save it to a file.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_ace4dbc1663d8048ceeb2906fb2cb01d4"><div class="ttname"><a href="classtgui_1_1Label.html#ace4dbc1663d8048ceeb2906fb2cb01d4">tgui::Label::getAutoSize</a></div><div class="ttdeci">TGUI_NODISCARD bool getAutoSize() const</div><div class="ttdoc">Returns whether the label is auto-sized or not.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_ad18b70679d9ecff2d348de5a25c5de0a"><div class="ttname"><a href="classtgui_1_1Label.html#ad18b70679d9ecff2d348de5a25c5de0a">tgui::Label::setSize</a></div><div class="ttdeci">void setSize(const Layout2d &amp;size) override</div><div class="ttdoc">Changes the area of the text that will be drawn.</div></div>
@@ -405,7 +407,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1Label_html_af7c6669e8fa9a14d610ac4f183d81786"><div class="ttname"><a href="classtgui_1_1Label.html#af7c6669e8fa9a14d610ac4f183d81786">tgui::Label::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Label &gt; Ptr</div><div class="ttdoc">Shared widget pointer.</div><div class="ttdef"><b>Definition</b> Label.hpp:47</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_afa6f60c5f7d77e3608132f5506af1838"><div class="ttname"><a href="classtgui_1_1Label.html#afa6f60c5f7d77e3608132f5506af1838">tgui::Label::setHorizontalAlignment</a></div><div class="ttdeci">void setHorizontalAlignment(HorizontalAlignment alignment)</div><div class="ttdoc">Changes the horizontal text alignment.</div></div>
 <div class="ttc" id="aclasstgui_1_1Label_html_afcabdb6aa458f5883f6831ccc731cb3b"><div class="ttname"><a href="classtgui_1_1Label.html#afcabdb6aa458f5883f6831ccc731cb3b">tgui::Label::HorizontalAlignment</a></div><div class="ttdeci">HorizontalAlignment</div><div class="ttdoc">The horizontal text alignment.</div><div class="ttdef"><b>Definition</b> Label.hpp:57</div></div>
-<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:289</div></div>
+<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:305</div></div>
 <div class="ttc" id="aclasstgui_1_1Outline_html"><div class="ttname"><a href="classtgui_1_1Outline.html">tgui::Outline</a></div><div class="ttdef"><b>Definition</b> Outline.hpp:39</div></div>
 <div class="ttc" id="aclasstgui_1_1Scrollbar_html_a1618e7c70a2c67bafe9be77193b89d7d"><div class="ttname"><a href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7d">tgui::Scrollbar::Policy</a></div><div class="ttdeci">Policy</div><div class="ttdoc">Defines when the scrollbar shows up.</div><div class="ttdef"><b>Definition</b> Scrollbar.hpp:56</div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; const String &amp; &gt;</a></div></div>
@@ -421,7 +423,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -435,7 +437,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

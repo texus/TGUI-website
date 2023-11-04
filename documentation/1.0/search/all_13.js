@@ -6,7 +6,7 @@ var searchData=
   ['tabcontainer_3',['tabcontainer',['../classtgui_1_1TabContainer.html',1,'tgui::TabContainer'],['../classtgui_1_1TabContainer.html#a71b88df807bdf65b6f629e009a44d2e6',1,'tgui::TabContainer::TabContainer(const TabContainer &amp;copy)'],['../classtgui_1_1TabContainer.html#a329aa749bbe593c822a6ee0887677f9c',1,'tgui::TabContainer::TabContainer(TabContainer &amp;&amp;copy) noexcept']]],
   ['tabs_4',['Tabs',['../classtgui_1_1Tabs.html',1,'tgui']]],
   ['tabsrenderer_5',['TabsRenderer',['../classtgui_1_1TabsRenderer.html',1,'tgui']]],
-  ['text_6',['text',['../structtgui_1_1Event.html#aba3a0959c29c15fb125dbc5829e52d98',1,'tgui::Event::text'],['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a9dffbf69ffba8bc38bc4e01abf4b1675',1,'tgui::Cursor::Text'],['../classtgui_1_1Text.html#a629de6eceac118d25e9424b52188f4fc',1,'tgui::Text::Text()'],['../classtgui_1_1Text.html',1,'tgui::Text']]],
+  ['text_6',['text',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a9dffbf69ffba8bc38bc4e01abf4b1675',1,'tgui::Cursor::Text'],['../classtgui_1_1Text.html#a629de6eceac118d25e9424b52188f4fc',1,'tgui::Text::Text()'],['../structtgui_1_1Event.html#aba3a0959c29c15fb125dbc5829e52d98',1,'tgui::Event::text'],['../classtgui_1_1Text.html',1,'tgui::Text']]],
   ['textalignment_7',['TextAlignment',['../classtgui_1_1ListBox.html#a1dfa358be9cd6926470ddaabb1eb6c98',1,'tgui::ListBox']]],
   ['textarea_8',['TextArea',['../classtgui_1_1TextArea.html',1,'tgui']]],
   ['textarearenderer_9',['TextAreaRenderer',['../classtgui_1_1TextAreaRenderer.html',1,'tgui']]],
@@ -30,7 +30,7 @@ var searchData=
   ['toint_27',['toInt',['../classtgui_1_1String.html#a80ec7a436a719c8a83dc4c0c0be9df2b',1,'tgui::String']]],
   ['tolower_28',['toLower',['../classtgui_1_1String.html#a470fd7f319af28d02cd387578b1709a1',1,'tgui::String']]],
   ['tooltip_29',['ToolTip',['../classtgui_1_1ToolTip.html',1,'tgui']]],
-  ['top_30',['top',['../classtgui_1_1TabContainer.html#acd709f0ac40e3afd2b3efe8271750d0fac3dd0b5470d517766fa3f6cd567bc385',1,'tgui::TabContainer::Top'],['../classtgui_1_1Label.html#a2974ef71da25253342a8b3660b6d094caa4ffdcf0dc1f31b9acaf295d75b51d00',1,'tgui::Label::Top'],['../classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384',1,'tgui::Rect::top'],['../structtgui_1_1BackendFontFreetype_1_1Row.html#ae17b21cdcc6d6567381bf2a546b3fdca',1,'tgui::BackendFontFreetype::Row::top']]],
+  ['top_30',['top',['../namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1aa4ffdcf0dc1f31b9acaf295d75b51d00',1,'tgui::Top'],['../classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384',1,'tgui::Rect::top'],['../structtgui_1_1BackendFontFreetype_1_1Row.html#ae17b21cdcc6d6567381bf2a546b3fdca',1,'tgui::BackendFontFreetype::Row::top'],['../classtgui_1_1TabContainer.html#acd709f0ac40e3afd2b3efe8271750d0fac3dd0b5470d517766fa3f6cd567bc385',1,'tgui::TabContainer::Top'],['../classtgui_1_1Label.html#a2974ef71da25253342a8b3660b6d094caa4ffdcf0dc1f31b9acaf295d75b51d00',1,'tgui::Label::Top']]],
   ['toptobottom_31',['TopToBottom',['../classtgui_1_1ProgressBar.html#ab11de6f12673d6c8c357f0fbf16fb85eaf2b1a19a8d0f523d042f9ede79a80804',1,'tgui::ProgressBar']]],
   ['touint_32',['toUInt',['../classtgui_1_1String.html#af5cfbc17df92d1f7fe0afa5766885051',1,'tgui::String']]],
   ['toupper_33',['toUpper',['../classtgui_1_1String.html#a8a8a68f870da97b4a6c1c0d3df82fc3c',1,'tgui::String']]],
@@ -43,5 +43,5 @@ var searchData=
   ['treeviewrenderer_40',['TreeViewRenderer',['../classtgui_1_1TreeViewRenderer.html',1,'tgui']]],
   ['trim_41',['trim',['../classtgui_1_1String.html#a20e5b5b1815b24cb164472ae089e1e35',1,'tgui::String']]],
   ['twofingerscrolldetect_42',['TwoFingerScrollDetect',['../classtgui_1_1TwoFingerScrollDetect.html',1,'tgui']]],
-  ['type_43',['type',['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event::type'],['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type']]]
+  ['type_43',['type',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type'],['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event::type']]]
 ];

@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -279,13 +279,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="classtgui_1_1ScrollablePanel.html#af3e01eced1a2e39ed0eab45119f6af9a">  332</a></span>        TGUI_NODISCARD <a class="code hl_typedef" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> <a class="code hl_function" href="classtgui_1_1ScrollablePanel.html#af3e01eced1a2e39ed0eab45119f6af9a">getWidgetAtPosition</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <span class="keywordtype">bool</span> leftMousePressed(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="classtgui_1_1ScrollablePanel.html#a99aecec62b40b663dad4fa16bbfb1f74">  338</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1ScrollablePanel.html#a99aecec62b40b663dad4fa16bbfb1f74">leftMousePressed</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordtype">void</span> leftMouseReleased(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keywordtype">void</span> mouseMoved(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordtype">bool</span> scrolled(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="classtgui_1_1ScrollablePanel.html#a32a8b3c2c672ba01ca93f64bf4ab0347">  353</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1ScrollablePanel.html#a32a8b3c2c672ba01ca93f64bf4ab0347">scrolled</a>(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordtype">void</span> mouseNoLongerOnWidget() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
@@ -362,11 +362,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_SCROLLABLE_PANEL_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendRenderTarget_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition</b> BackendRenderTarget.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1CopiedSharedPtr_html"><div class="ttname"><a href="classtgui_1_1CopiedSharedPtr.html">tgui::CopiedSharedPtr</a></div><div class="ttdef"><b>Definition</b> CopiedSharedPtr.hpp:45</div></div>
-<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:289</div></div>
+<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:305</div></div>
 <div class="ttc" id="aclasstgui_1_1Panel_html"><div class="ttname"><a href="classtgui_1_1Panel.html">tgui::Panel</a></div><div class="ttdoc">Group of widgets that has a background color and optional borders.</div><div class="ttdef"><b>Definition</b> Panel.hpp:41</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanelRenderer_html"><div class="ttname"><a href="classtgui_1_1ScrollablePanelRenderer.html">tgui::ScrollablePanelRenderer</a></div><div class="ttdef"><b>Definition</b> ScrollablePanelRenderer.hpp:37</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html">tgui::ScrollablePanel</a></div><div class="ttdoc">Group of widgets that has a background color and optional borders.</div><div class="ttdef"><b>Definition</b> ScrollablePanel.hpp:46</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a2b72f985024ee56b2ace77ee93a8b103"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a2b72f985024ee56b2ace77ee93a8b103">tgui::ScrollablePanel::getVerticalScrollbarValue</a></div><div class="ttdeci">TGUI_NODISCARD unsigned int getVerticalScrollbarValue() const</div><div class="ttdoc">Returns the thumb position of the vertical scrollbar.</div></div>
+<div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a32a8b3c2c672ba01ca93f64bf4ab0347"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a32a8b3c2c672ba01ca93f64bf4ab0347">tgui::ScrollablePanel::scrolled</a></div><div class="ttdeci">bool scrolled(float delta, Vector2f pos, bool touch) override</div><div class="ttdoc">Called by the parent on scroll event (either from mouse wheel of from two finger scrolling on a touch...</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a3414b944c7e9748a1f56d0ecab57a4be"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a3414b944c7e9748a1f56d0ecab57a4be">tgui::ScrollablePanel::setContentSize</a></div><div class="ttdeci">void setContentSize(Vector2f size)</div><div class="ttdoc">Channges the size available for child widgets.</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a430c3efb2e1b04e4a636635ce31de8a2"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a430c3efb2e1b04e4a636635ce31de8a2">tgui::ScrollablePanel::getVerticalScrollAmount</a></div><div class="ttdeci">TGUI_NODISCARD unsigned int getVerticalScrollAmount() const</div><div class="ttdoc">Returns how much the value changes when scrolling or pressing one of the arrows of the vertical scrol...</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a466bae73671276728783c4659e800e28"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a466bae73671276728783c4659e800e28">tgui::ScrollablePanel::getContentSize</a></div><div class="ttdeci">TGUI_NODISCARD Vector2f getContentSize() const</div><div class="ttdoc">Returns the size available for child widgets.</div></div>
@@ -382,6 +383,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a686e58a51fbf73e22b70ed6dfbfaa2f0"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a686e58a51fbf73e22b70ed6dfbfaa2f0">tgui::ScrollablePanel::getSharedRenderer</a></div><div class="ttdeci">TGUI_NODISCARD ScrollablePanelRenderer * getSharedRenderer() override</div><div class="ttdoc">Returns the renderer, which gives access to functions that determine how the widget is displayed.</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a782d493e6f684a8a0260580c2c55d5d2"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a782d493e6f684a8a0260580c2c55d5d2">tgui::ScrollablePanel::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const ScrollablePanel &gt; ConstPtr</div><div class="ttdoc">Shared constant widget pointer.</div><div class="ttdef"><b>Definition</b> ScrollablePanel.hpp:50</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a922aedac4a3bf2b7052047c8fc07669c"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a922aedac4a3bf2b7052047c8fc07669c">tgui::ScrollablePanel::clone</a></div><div class="ttdeci">TGUI_NODISCARD Widget::Ptr clone() const override</div><div class="ttdoc">Makes a copy of the widget if you don't know its exact type.</div></div>
+<div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a99aecec62b40b663dad4fa16bbfb1f74"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a99aecec62b40b663dad4fa16bbfb1f74">tgui::ScrollablePanel::leftMousePressed</a></div><div class="ttdeci">bool leftMousePressed(Vector2f pos) override</div><div class="ttdoc">Called by the parent when the left mouse button goes down on top of the widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_a9f64c8050eb70d78e086b0c1cac1c4a6"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#a9f64c8050eb70d78e086b0c1cac1c4a6">tgui::ScrollablePanel::remove</a></div><div class="ttdeci">bool remove(const Widget::Ptr &amp;widget) override</div><div class="ttdoc">Removes a single widget that was added to the container.</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_aa10a3eee9ac5d65860b7f117be4e4da5"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#aa10a3eee9ac5d65860b7f117be4e4da5">tgui::ScrollablePanel::add</a></div><div class="ttdeci">void add(const Widget::Ptr &amp;widget, const String &amp;widgetName=&quot;&quot;) override</div><div class="ttdoc">Adds a widget at the end of the layout.</div></div>
 <div class="ttc" id="aclasstgui_1_1ScrollablePanel_html_aa3eb790d9aa3520ee067a1c8d3a787de"><div class="ttname"><a href="classtgui_1_1ScrollablePanel.html#aa3eb790d9aa3520ee067a1c8d3a787de">tgui::ScrollablePanel::save</a></div><div class="ttdeci">TGUI_NODISCARD std::unique_ptr&lt; DataIO::Node &gt; save(SavingRenderersMap &amp;renderers) const override</div><div class="ttdoc">Saves the widget as a tree node in order to save it to a file.</div></div>
@@ -414,7 +416,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -428,7 +430,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

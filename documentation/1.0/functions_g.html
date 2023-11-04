@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,7 @@ $(function() {
 <li>getArrowsOnNavigationButtonsVisible()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialogRenderer.html#a6d0e77395e8cd90e6ce3ed4edaeb5f83">tgui::FileDialogRenderer</a></li>
 <li>getAscent()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#a00aabff77b743757919916e930f6491c">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#a7100d6c882ff32be224c5f334175f7f6">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a6d2c2bf16174ee72605f3a71ca9a9fef">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a044cc59a3f386a38e7adf0761b79b5e4">tgui::BackendFontSFML</a></li>
 <li>getAutoHide()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a3a64bf5f4d96e594714db9a303cf1042">tgui::Scrollbar</a></li>
+<li>getAutoLayout()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#ad3614258b5d6b9f4d1ee7f7d611661cd">tgui::Widget</a></li>
 <li>getAutoScroll()&#160;:&#160;<a class="el" href="classtgui_1_1ListBox.html#a4b64218303393fd586d7bf53b4c92276">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#a79e09d3230002b1eaf8e4a0e258c7d0d">tgui::ListView</a></li>
 <li>getAutoSize()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#aa787e62646df4d1a2dffe32cf9f04fe4">tgui::Grid</a>, <a class="el" href="classtgui_1_1Label.html#ace4dbc1663d8048ceeb2906fb2cb01d4">tgui::Label</a>, <a class="el" href="classtgui_1_1Tabs.html#aad64dca912b7be377c5bd72defea2922">tgui::Tabs</a></li>
 <li>getBackButton()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialogRenderer.html#a779b504d4571cd59c025470d6294997a">tgui::FileDialogRenderer</a></li>
@@ -192,12 +193,15 @@ $(function() {
 <li>getCloseButton()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindowRenderer.html#ae2e2214e889fed9879a447e44e3a4401">tgui::ChildWindowRenderer</a></li>
 <li>getColor()&#160;:&#160;<a class="el" href="classtgui_1_1ColorPicker.html#a2c680238e0c7c33a0ccfbe26d389e9fe">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1ObjectConverter.html#ab862e4100a8fdaddb803ae9236d27b7f">tgui::ObjectConverter</a>, <a class="el" href="classtgui_1_1SeparatorLineRenderer.html#a56db176727055e75e1530c7f6da97245">tgui::SeparatorLineRenderer</a>, <a class="el" href="classtgui_1_1Text.html#aaae27db89e3f145dd30085c4ab949873">tgui::Text</a>, <a class="el" href="classtgui_1_1Texture.html#aad0d56bb3a808f344c994b7c05715fd2">tgui::Texture</a></li>
 <li>getColumnAlignment()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#acebf8d7d4819ef069b661c373dd4f99b">tgui::ListView</a></li>
+<li>getColumnAutoResize()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a9e63022aa78dcbd079706edaa4874106">tgui::ListView</a></li>
 <li>getColumnCount()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a57e7244cda9279ffb8ded4ddf0d15f6e">tgui::ListView</a></li>
+<li>getColumnDesignWidth()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#aa8003f5654c04d2464d8631056a84d1e">tgui::ListView</a></li>
+<li>getColumnExpanded()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#aa2abea2b0320b2267a6c93b81c5b2d1e">tgui::ListView</a></li>
 <li>getColumnText()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a6533088dc2c3204ffc9ac841b097a858">tgui::ListView</a></li>
 <li>getColumnWidth()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a059ae4f3377bdd066fc3499f301a2190">tgui::ListView</a></li>
 <li>getConfirmButtonText()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#a3fcefc2cd2c56af19de1f2488c6a02ff">tgui::FileDialog</a></li>
 <li>getConstructFunction()&#160;:&#160;<a class="el" href="classtgui_1_1WidgetFactory.html#a063dc8adfcdc6cfd58cd3f3a4a132cb4">tgui::WidgetFactory</a></li>
-<li>getContainer()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a4ae25bc76ec49b7cd17acb45a6e8aa37">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1SubwidgetContainer.html#ab247aa0ec250196c52e0f350b2198dad">tgui::SubwidgetContainer</a></li>
+<li>getContainer()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a4ae25bc76ec49b7cd17acb45a6e8aa37">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1SubwidgetContainer.html#aeb3430644b8038e401f1570458f70a7a">tgui::SubwidgetContainer</a></li>
 <li>getContentOffset()&#160;:&#160;<a class="el" href="classtgui_1_1ScrollablePanel.html#aa6dc4ff9369de4a43a88c135d84ced37">tgui::ScrollablePanel</a></li>
 <li>getContentSize()&#160;:&#160;<a class="el" href="classtgui_1_1ScrollablePanel.html#a466bae73671276728783c4659e800e28">tgui::ScrollablePanel</a></li>
 <li>getCreateFolderButtonText()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#acb36e3b69d51a01c7b7eac573d9ada21">tgui::FileDialog</a></li>
@@ -279,7 +283,7 @@ $(function() {
 <li>getInnerSize()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindow.html#ae54bcb101d3376c224566ff71113ee0e">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1Container.html#aa80fab4379362ab1d26a0c1b975b4ee5">tgui::Container</a>, <a class="el" href="classtgui_1_1Group.html#a4db7eeff888bd0842c51321e3a20e121">tgui::Group</a>, <a class="el" href="classtgui_1_1Panel.html#a145c891cef8efc618bbb9c5ebeeb7e2c">tgui::Panel</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a582b035eac29cf591c331b0b7eb6610f">tgui::ScrollablePanel</a></li>
 <li>getInputValidator()&#160;:&#160;<a class="el" href="classtgui_1_1EditBox.html#a591ae2efe901c3275c45f829b3303ca2">tgui::EditBox</a></li>
 <li>getInternalRenderer()&#160;:&#160;<a class="el" href="classtgui_1_1BackendRendererSDL.html#a0e2a1536b02bea219d60238125304c35">tgui::BackendRendererSDL</a></li>
-<li>getInternalTexture()&#160;:&#160;<a class="el" href="classtgui_1_1BackendTextureGLES2.html#af65a386360145dc6059548f879ae6198">tgui::BackendTextureGLES2</a>, <a class="el" href="classtgui_1_1BackendTextureOpenGL3.html#a567428eb85548d8a64117a634a3f1cfd">tgui::BackendTextureOpenGL3</a>, <a class="el" href="classtgui_1_1BackendTextureSDL.html#abb1f7df2da8d0268978f73d6d38a8b02">tgui::BackendTextureSDL</a>, <a class="el" href="classtgui_1_1BackendTextureSFML.html#a13b7e2d9bffb82d5c329280111d4fa36">tgui::BackendTextureSFML</a></li>
+<li>getInternalTexture()&#160;:&#160;<a class="el" href="classtgui_1_1BackendTextureGLES2.html#af65a386360145dc6059548f879ae6198">tgui::BackendTextureGLES2</a>, <a class="el" href="classtgui_1_1BackendTextureOpenGL3.html#a567428eb85548d8a64117a634a3f1cfd">tgui::BackendTextureOpenGL3</a>, <a class="el" href="classtgui_1_1BackendTextureSDL.html#abb1f7df2da8d0268978f73d6d38a8b02">tgui::BackendTextureSDL</a>, <a class="el" href="classtgui_1_1BackendTextureSFML.html#a76ce16cad0d5d2b5f935ca5f7e6332a5">tgui::BackendTextureSFML</a></li>
 <li>getInterval()&#160;:&#160;<a class="el" href="classtgui_1_1Timer.html#a3744b1063f404aa56fade43667398ce8">tgui::Timer</a></li>
 <li>getInverse()&#160;:&#160;<a class="el" href="classtgui_1_1Transform.html#a9b190dd6f470093eb3a4ad327c0a20a9">tgui::Transform</a></li>
 <li>getInvertedDirection()&#160;:&#160;<a class="el" href="classtgui_1_1Slider.html#a5b6458120861fa97de7bf493bbedeb12">tgui::Slider</a></li>
@@ -315,7 +319,7 @@ $(function() {
 <li>getLineSpacing()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#a62e55b61dd2b6c2beb03dd147f8ac376">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#a0a8c57e6510024498fbf7b1d2d66d81d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#af88342bcfacea769ac099c354e9f4bec">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a742f210a600c32877ae7086afdce3a78">tgui::BackendFontSFML</a>, <a class="el" href="classtgui_1_1Font.html#ad0683bcc5a469bd490d6be6f651a1ff1">tgui::Font</a></li>
 <li>getLinesStartFromTop()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBox.html#ae3aee1e76f70ee725556b2880e6048cf">tgui::ChatBox</a></li>
 <li>getLineTextStyle()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBox.html#a72b9a4563346ac4348380974c668a8eb">tgui::ChatBox</a></li>
-<li>getLineWidth()&#160;:&#160;<a class="el" href="classtgui_1_1Text.html#a246580205fe2609ecb0ace9cd19a6750">tgui::Text</a></li>
+<li>getLineWidth()&#160;:&#160;<a class="el" href="classtgui_1_1Text.html#ac515432ada261b78e5bde65a56d3319e">tgui::Text</a></li>
 <li>getListBox()&#160;:&#160;<a class="el" href="classtgui_1_1ComboBoxRenderer.html#aa85a7a194a66c1166772de0a20ecde65">tgui::ComboBoxRenderer</a></li>
 <li>getListView()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialogRenderer.html#a9726d4e4b790172385eeccdd0949d26b">tgui::FileDialogRenderer</a></li>
 <li>getListViewColumnCaptions()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#a2e7450dd132b6ae45d6bd2ac54545b29">tgui::FileDialog</a></li>
@@ -341,6 +345,10 @@ $(function() {
 <li>getMouseCursor()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a273a658d1fe3d5622631e2a9176aecd8">tgui::Widget</a></li>
 <li>getMultiSelect()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#a971f4f11b11d526523c0ef017c62c23f">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1ListView.html#a961be41c9e35bc5cd60b003f35cca626">tgui::ListView</a></li>
 <li>getName()&#160;:&#160;<a class="el" href="classtgui_1_1Signal.html#aded6a2ef6be74287eaf83d0a6ec29705">tgui::Signal</a></li>
+<li>getNavigationDown()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a1e6797225246e7fa35732e1a09653708">tgui::Widget</a></li>
+<li>getNavigationLeft()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a84311529eb6c3ac48cb44bd7b9edcd30">tgui::Widget</a></li>
+<li>getNavigationRight()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#aac73ee9547b9f3e2ef7b15ab5235a20f">tgui::Widget</a></li>
+<li>getNavigationUp()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a182e75742b0076b9834a5e508160f141">tgui::Widget</a></li>
 <li>getNewLinesBelowOthers()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBox.html#a6626d90eb496761ad98e490ec5477390">tgui::ChatBox</a></li>
 <li>getNodes()&#160;:&#160;<a class="el" href="classtgui_1_1TreeView.html#af8c94dbf6dbff01241bbb710f52c3739">tgui::TreeView</a></li>
 <li>getNormalForm()&#160;:&#160;<a class="el" href="classtgui_1_1Filesystem_1_1Path.html#ad76cc430666f611f223241389df81421">tgui::Filesystem::Path</a></li>
@@ -464,8 +472,8 @@ $(function() {
 <li>getTextColorFocused()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ad673b6836b1eac18e9351930030ee049">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1EditBoxRenderer.html#a652eb2312f4d45a4b8a0d995eae484fb">tgui::EditBoxRenderer</a></li>
 <li>getTextColorHover()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#a5fb5ed03870aa72189c13939a14631d0">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1ListBoxRenderer.html#a2def146ac10203b1d8d54882afbe3b10">tgui::ListBoxRenderer</a>, <a class="el" href="classtgui_1_1ListViewRenderer.html#a2645a528eaa9cec01756a115dba8fe43">tgui::ListViewRenderer</a>, <a class="el" href="classtgui_1_1RadioButtonRenderer.html#a079058df2a0323cd9e810dc9184f5732">tgui::RadioButtonRenderer</a>, <a class="el" href="classtgui_1_1TabsRenderer.html#a9138d509d3480a4b9e87ca95259e49b8">tgui::TabsRenderer</a>, <a class="el" href="classtgui_1_1TreeViewRenderer.html#acbb313c0e2887ae84b4ff4950ecb687f">tgui::TreeViewRenderer</a></li>
 <li>getTextDistanceRatio()&#160;:&#160;<a class="el" href="classtgui_1_1RadioButtonRenderer.html#afe90656e24fa5e438966fb1cd2243d82">tgui::RadioButtonRenderer</a></li>
-<li>getTextOutlineColor()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ac466c786fb761360a686757b02bccf07">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#a4b998c75f546ab85621fc211bfcf7e03">tgui::LabelRenderer</a></li>
-<li>getTextOutlineThickness()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ae081b7dc1d8e8085760e75e851a9dac3">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#a78f4f822584ae6f78ed1ef6e674124d4">tgui::LabelRenderer</a></li>
+<li>getTextOutlineColor()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ac466c786fb761360a686757b02bccf07">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#a4b998c75f546ab85621fc211bfcf7e03">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ProgressBarRenderer.html#a1a94054f1770c8cec0971e4f0b83f985">tgui::ProgressBarRenderer</a></li>
+<li>getTextOutlineThickness()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ae081b7dc1d8e8085760e75e851a9dac3">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#a78f4f822584ae6f78ed1ef6e674124d4">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ProgressBarRenderer.html#a3110f9eaaf81cefe3547abda69d0afff">tgui::ProgressBarRenderer</a></li>
 <li>getTextSize()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a5901f9d9c02d1c92ae950c7434cc5f9d">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1Widget.html#a45c83d3285214cfc8e1145bd7a733fb3">tgui::Widget</a>, <a class="el" href="classtgui_1_1WidgetRenderer.html#a90ab54e7679f251b5c5db734fc87c772">tgui::WidgetRenderer</a></li>
 <li>getTextStyle()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#a6e124b758caad9b8cec0e05da05dc9eb">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1ChatBox.html#a5e1ecdaed0b81823808d56aeec7f58a7">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1ComboBoxRenderer.html#a77348d9bc701531cc0c8d69589e48d20">tgui::ComboBoxRenderer</a>, <a class="el" href="classtgui_1_1EditBoxRenderer.html#a779cd6aa3a27cfb78d37cf42e681d1c7">tgui::EditBoxRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#a140f8f1aeca080cc21fc60a3574ba441">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ListBoxRenderer.html#a976938b61d0eceab42baf2dccdc07015">tgui::ListBoxRenderer</a>, <a class="el" href="classtgui_1_1ObjectConverter.html#ab5c0b9f67a7836c457e850fdf3ab9989">tgui::ObjectConverter</a>, <a class="el" href="classtgui_1_1ProgressBarRenderer.html#a182c10451857bf5b489aa7b6c38dbc2e">tgui::ProgressBarRenderer</a>, <a class="el" href="classtgui_1_1RadioButtonRenderer.html#a66ae212297daeec3ab42cf9205112dae">tgui::RadioButtonRenderer</a></li>
 <li>getTextStyleChecked()&#160;:&#160;<a class="el" href="classtgui_1_1RadioButtonRenderer.html#a58e547a6ca2f93960ae6b76805fdbab6">tgui::RadioButtonRenderer</a></li>
@@ -566,7 +574,7 @@ $(function() {
 <li>getWidgetLocations()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#affd74614a70244b1f52747f1d1714b90">tgui::Grid</a></li>
 <li>getWidgetName()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a42c2596be4aaffa71bb5d7926da092da">tgui::Widget</a></li>
 <li>getWidgetOffset()&#160;:&#160;<a class="el" href="classtgui_1_1CheckBox.html#ae46767c26c8ea84b29446bc256dd5e06">tgui::CheckBox</a>, <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#a7f19f6fed73242553890d1435b7b0d3f">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1MenuBarMenuPlaceholder.html#a7d8ab3547dea4b53b64781b5d5ff47ee">tgui::MenuBarMenuPlaceholder</a>, <a class="el" href="classtgui_1_1RadioButton.html#aee99bd17571f2c2873acf6ddc90e24e9">tgui::RadioButton</a>, <a class="el" href="classtgui_1_1RangeSlider.html#a4a873b3be3dd175eabc2dec3b4827b26">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1Slider.html#a08f9f169c7dc344a95df4abd4c1efc8d">tgui::Slider</a>, <a class="el" href="classtgui_1_1Widget.html#a8ea44f50f0908c779d5285dc016527ab">tgui::Widget</a></li>
-<li>getWidgetPadding()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#a10765911f1b563e13b1943812ddb6bf8">tgui::Grid</a></li>
+<li>getWidgetPadding()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#a7a7465a5ef195485883ffdec92e881f1">tgui::Grid</a></li>
 <li>getWidgets()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a00b642d721ad0cddd5aa8349015ac99a">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1Container.html#a623c201d70fe1f2afe10d5d0139034dc">tgui::Container</a></li>
 <li>getWidgetType()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#aaf5e47fbbd1df2b5e77771300c9be932">tgui::Widget</a></li>
 <li>getWidgetTypes()&#160;:&#160;<a class="el" href="classtgui_1_1WidgetFactory.html#a1a0a4a9ac4bec82764a9108c56a765ee">tgui::WidgetFactory</a></li>
@@ -574,13 +582,13 @@ $(function() {
 <li>getWindow()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGuiGLFW.html#a036bcc4c1449bb7f6009018751e30b57">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a57066866d25b6e054c70261a4ef4b95a">tgui::BackendGuiSDL</a>, <a class="el" href="classtgui_1_1BackendGuiSFML.html#a2d290c8982075f840e9a8274b29a026c">tgui::BackendGuiSFML</a></li>
 <li>Green&#160;:&#160;<a class="el" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">tgui::Color</a></li>
 <li>Grid()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#a10e992afea62e2964652df980970667c">tgui::Grid</a></li>
-<li>Gui()&#160;:&#160;<a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html#a8d234a3153d6320d46679623f305354c">tgui::GLFW_GLES2::Gui</a>, <a class="el" href="classtgui_1_1GLFW__OPENGL3_1_1Gui.html#a69adcf3bd46712742ba56a21b654e990">tgui::GLFW_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html#acea795ef26a93a7e63204977fae5caf0">tgui::SDL_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__OPENGL3_1_1Gui.html#a178f4d0adf6908082a0d415307020234">tgui::SDL_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__RENDERER_1_1Gui.html#ab188611e827b22aaa1649fd3c56d195c">tgui::SDL_RENDERER::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html#a220129511b3c0c0fd16118431fa5bbe7">tgui::SDL_TTF_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html#a1f356fc1f64defd0a5035a72b80fb0f2">tgui::SDL_TTF_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SFML__GRAPHICS_1_1Gui.html#abd4afd4085d4a46b89edd0b11e9ae5b8">tgui::SFML_GRAPHICS::Gui</a>, <a class="el" href="classtgui_1_1SFML__OPENGL3_1_1Gui.html#a8b125eb2b4db934f742fb59600e1e0b7">tgui::SFML_OPENGL3::Gui</a></li>
+<li>Gui()&#160;:&#160;<a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html#a8d234a3153d6320d46679623f305354c">tgui::GLFW_GLES2::Gui</a>, <a class="el" href="classtgui_1_1GLFW__OPENGL3_1_1Gui.html#a5f2f796eebd435dce410c5c22e7e36c7">tgui::GLFW_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html#a9a1c3fe219a00e3bc76f786071b43138">tgui::SDL_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__OPENGL3_1_1Gui.html#a178f4d0adf6908082a0d415307020234">tgui::SDL_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__RENDERER_1_1Gui.html#ab188611e827b22aaa1649fd3c56d195c">tgui::SDL_RENDERER::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html#a220129511b3c0c0fd16118431fa5bbe7">tgui::SDL_TTF_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html#a1f356fc1f64defd0a5035a72b80fb0f2">tgui::SDL_TTF_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SFML__GRAPHICS_1_1Gui.html#abd4afd4085d4a46b89edd0b11e9ae5b8">tgui::SFML_GRAPHICS::Gui</a>, <a class="el" href="classtgui_1_1SFML__OPENGL3_1_1Gui.html#a8b125eb2b4db934f742fb59600e1e0b7">tgui::SFML_OPENGL3::Gui</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -594,7 +602,7 @@ Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

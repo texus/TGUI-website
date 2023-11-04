@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -240,13 +240,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="classtgui_1_1Slider.html#a4abf9931f30bff01c5d35d5e1228ad5b">  276</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Slider.html#a4abf9931f30bff01c5d35d5e1228ad5b">isMouseOnWidget</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordtype">bool</span> leftMousePressed(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="classtgui_1_1Slider.html#a209585c2eeaa80d055193fcbd5b9af46">  281</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Slider.html#a209585c2eeaa80d055193fcbd5b9af46">leftMousePressed</a>(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="keywordtype">void</span> leftMouseReleased(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordtype">void</span> mouseMoved(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordtype">bool</span> scrolled(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classtgui_1_1Slider.html#a022c8ead2b0b3cae7756ba015fa98f9d">  296</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1Slider.html#a022c8ead2b0b3cae7756ba015fa98f9d">scrolled</a>(<span class="keywordtype">float</span> delta, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos, <span class="keywordtype">bool</span> touch) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <span class="keywordtype">void</span> leftMouseButtonNoLongerDown() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
@@ -326,15 +326,17 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_SLIDER_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendRenderTarget_html"><div class="ttname"><a href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></div><div class="ttdoc">Base class for render targets.</div><div class="ttdef"><b>Definition</b> BackendRenderTarget.hpp:48</div></div>
 <div class="ttc" id="aclasstgui_1_1Color_html"><div class="ttname"><a href="classtgui_1_1Color.html">tgui::Color</a></div><div class="ttdoc">Wrapper for colors.</div><div class="ttdef"><b>Definition</b> Color.hpp:72</div></div>
-<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:289</div></div>
+<div class="ttc" id="aclasstgui_1_1Layout2d_html"><div class="ttname"><a href="classtgui_1_1Layout2d.html">tgui::Layout2d</a></div><div class="ttdoc">Class to store the position or size of a widget.</div><div class="ttdef"><b>Definition</b> Layout.hpp:305</div></div>
 <div class="ttc" id="aclasstgui_1_1Outline_html"><div class="ttname"><a href="classtgui_1_1Outline.html">tgui::Outline</a></div><div class="ttdef"><b>Definition</b> Outline.hpp:39</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html"><div class="ttname"><a href="classtgui_1_1Rect.html">tgui::Rect&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1SignalTyped_html"><div class="ttname"><a href="classtgui_1_1SignalTyped.html">tgui::SignalTyped&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclasstgui_1_1Signal_html"><div class="ttname"><a href="classtgui_1_1Signal.html">tgui::Signal</a></div><div class="ttdoc">Signal to which the user can subscribe to get callbacks from.</div><div class="ttdef"><b>Definition</b> Signal.hpp:62</div></div>
 <div class="ttc" id="aclasstgui_1_1SliderRenderer_html"><div class="ttname"><a href="classtgui_1_1SliderRenderer.html">tgui::SliderRenderer</a></div><div class="ttdef"><b>Definition</b> SliderRenderer.hpp:37</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html"><div class="ttname"><a href="classtgui_1_1Slider.html">tgui::Slider</a></div><div class="ttdoc">Slider widget.</div><div class="ttdef"><b>Definition</b> Slider.hpp:41</div></div>
+<div class="ttc" id="aclasstgui_1_1Slider_html_a022c8ead2b0b3cae7756ba015fa98f9d"><div class="ttname"><a href="classtgui_1_1Slider.html#a022c8ead2b0b3cae7756ba015fa98f9d">tgui::Slider::scrolled</a></div><div class="ttdeci">bool scrolled(float delta, Vector2f pos, bool touch) override</div><div class="ttdoc">Called by the parent on scroll event (either from mouse wheel of from two finger scrolling on a touch...</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html_a08f9f169c7dc344a95df4abd4c1efc8d"><div class="ttname"><a href="classtgui_1_1Slider.html#a08f9f169c7dc344a95df4abd4c1efc8d">tgui::Slider::getWidgetOffset</a></div><div class="ttdeci">TGUI_NODISCARD Vector2f getWidgetOffset() const override</div><div class="ttdoc">Returns the distance between the position where the widget is drawn and where the widget is placed.</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html_a16a099528d35ae249e6a244b67dbbd70"><div class="ttname"><a href="classtgui_1_1Slider.html#a16a099528d35ae249e6a244b67dbbd70">tgui::Slider::draw</a></div><div class="ttdeci">void draw(BackendRenderTarget &amp;target, RenderStates states) const override</div><div class="ttdoc">Draw the widget to a render target.</div></div>
+<div class="ttc" id="aclasstgui_1_1Slider_html_a209585c2eeaa80d055193fcbd5b9af46"><div class="ttname"><a href="classtgui_1_1Slider.html#a209585c2eeaa80d055193fcbd5b9af46">tgui::Slider::leftMousePressed</a></div><div class="ttdeci">bool leftMousePressed(Vector2f pos) override</div><div class="ttdoc">Called by the parent when the left mouse button goes down on top of the widget.</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html_a424e00bc0a8a06f716b1a512f9fbc9fb"><div class="ttname"><a href="classtgui_1_1Slider.html#a424e00bc0a8a06f716b1a512f9fbc9fb">tgui::Slider::clone</a></div><div class="ttdeci">TGUI_NODISCARD Widget::Ptr clone() const override</div><div class="ttdoc">Makes a copy of the widget if you don't know its exact type.</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html_a4abf9931f30bff01c5d35d5e1228ad5b"><div class="ttname"><a href="classtgui_1_1Slider.html#a4abf9931f30bff01c5d35d5e1228ad5b">tgui::Slider::isMouseOnWidget</a></div><div class="ttdeci">TGUI_NODISCARD bool isMouseOnWidget(Vector2f pos) const override</div><div class="ttdoc">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget...</div></div>
 <div class="ttc" id="aclasstgui_1_1Slider_html_a56190c9a92ac2f186b5da263918fb2e6"><div class="ttname"><a href="classtgui_1_1Slider.html#a56190c9a92ac2f186b5da263918fb2e6">tgui::Slider::getStep</a></div><div class="ttdeci">TGUI_NODISCARD float getStep() const</div><div class="ttdoc">Returns the number of positions the thumb advances with each move.</div></div>
@@ -374,7 +376,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -388,7 +390,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

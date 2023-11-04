@@ -8,7 +8,7 @@ var searchData=
   ['unicode_5',['unicode',['../structtgui_1_1Event_1_1TextEvent.html#aea6e401fb70914f124a379495a8ce12c',1,'tgui::Event::TextEvent']]],
   ['unknown_6',['Unknown',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a88183b946cc5f0e8c96b2e66e1c74a7e',1,'tgui::Event']]],
   ['unsubscribe_7',['unsubscribe',['../classtgui_1_1WidgetRenderer.html#af6d8245d07831b0324e104111db099c1',1,'tgui::WidgetRenderer']]],
-  ['up_8',['Up',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a258f49887ef8d14ac268c92b02503aaa',1,'tgui::Event::Up()'],['../classtgui_1_1ComboBox.html#a4fe26aaccdc327630e5f1034bee16fc8a258f49887ef8d14ac268c92b02503aaa',1,'tgui::ComboBox::Up()'],['../classtgui_1_1Grid.html#a862e75cc54ce2fff46c9590db7f6b5e9a258f49887ef8d14ac268c92b02503aaa',1,'tgui::Grid::Up()']]],
+  ['up_8',['up',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a258f49887ef8d14ac268c92b02503aaa',1,'tgui::Event::Up'],['../classtgui_1_1ComboBox.html#a4fe26aaccdc327630e5f1034bee16fc8a258f49887ef8d14ac268c92b02503aaa',1,'tgui::ComboBox::Up'],['../classtgui_1_1Grid.html#a862e75cc54ce2fff46c9590db7f6b5e9a258f49887ef8d14ac268c92b02503aaa',1,'tgui::Grid::Up']]],
   ['update_9',['update',['../classtgui_1_1FileDialogIconLoader.html#ad6722f11438ba086728d860c21a5e343',1,'tgui::FileDialogIconLoader']]],
   ['updateclipping_10',['updateClipping',['../classtgui_1_1BackendRenderTargetBase.html#a9f1d33cc949fad43f6d5e7982c7a6c41',1,'tgui::BackendRenderTargetBase']]],
   ['updatetime_11',['updateTime',['../classtgui_1_1GuiBase.html#ab428a0ff0b4d565efad7a4ea742e7917',1,'tgui::GuiBase']]],

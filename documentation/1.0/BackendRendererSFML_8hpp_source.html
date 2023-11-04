@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -157,36 +157,34 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;TGUI/Backend/Renderer/SFML-Graphics/BackendRenderTargetSFML.hpp&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;TGUI/Backend/Renderer/SFML-Graphics/CanvasSFML.hpp&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if TGUI_BUILD_AS_CXX_MODULE</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">import</span> tgui;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    #include &lt;TGUI/Backend/Renderer/BackendRenderer.hpp&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if !TGUI_BUILD_AS_CXX_MODULE</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">    #include &lt;TGUI/Backend/Renderer/BackendRenderer.hpp&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html">   50</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1BackendRendererSFML.html">BackendRendererSFML</a> : <span class="keyword">public</span> <a class="code hl_class" href="classtgui_1_1BackendRenderer.html">BackendRenderer</a></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#ab5f520d1036fdb869c0f0e44b8487075">   57</a></span>        <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#ab5f520d1036fdb869c0f0e44b8487075">BackendRendererSFML</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">   63</a></span>        TGUI_NODISCARD std::shared_ptr&lt;BackendTexture&gt; <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">createTexture</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">   72</a></span>        TGUI_NODISCARD <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">getMaximumTextureSize</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    };</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html">   48</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1BackendRendererSFML.html">BackendRendererSFML</a> : <span class="keyword">public</span> <a class="code hl_class" href="classtgui_1_1BackendRenderer.html">BackendRenderer</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#ab5f520d1036fdb869c0f0e44b8487075">   55</a></span>        <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#ab5f520d1036fdb869c0f0e44b8487075">BackendRendererSFML</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">   61</a></span>        TGUI_NODISCARD std::shared_ptr&lt;BackendTexture&gt; <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">createTexture</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">   70</a></span>        TGUI_NODISCARD <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">getMaximumTextureSize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    };</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_RENDERER_SFML_HPP</span></div>
-<div class="ttc" id="aclasstgui_1_1BackendRendererSFML_html"><div class="ttname"><a href="classtgui_1_1BackendRendererSFML.html">tgui::BackendRendererSFML</a></div><div class="ttdoc">Backend renderer that uses sfml-graphics.</div><div class="ttdef"><b>Definition</b> BackendRendererSFML.hpp:51</div></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_RENDERER_SFML_HPP</span></div>
+<div class="ttc" id="aclasstgui_1_1BackendRendererSFML_html"><div class="ttname"><a href="classtgui_1_1BackendRendererSFML.html">tgui::BackendRendererSFML</a></div><div class="ttdoc">Backend renderer that uses sfml-graphics.</div><div class="ttdef"><b>Definition</b> BackendRendererSFML.hpp:49</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendRendererSFML_html_a267ce5c5cd4f1775586e3577e9a9afd4"><div class="ttname"><a href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">tgui::BackendRendererSFML::createTexture</a></div><div class="ttdeci">TGUI_NODISCARD std::shared_ptr&lt; BackendTexture &gt; createTexture() override</div><div class="ttdoc">Creates a new empty texture object.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendRendererSFML_html_ab5f520d1036fdb869c0f0e44b8487075"><div class="ttname"><a href="classtgui_1_1BackendRendererSFML.html#ab5f520d1036fdb869c0f0e44b8487075">tgui::BackendRendererSFML::BackendRendererSFML</a></div><div class="ttdeci">BackendRendererSFML()</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendRendererSFML_html_ae272fae4d55945b9fc8d377c1c33ce80"><div class="ttname"><a href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">tgui::BackendRendererSFML::getMaximumTextureSize</a></div><div class="ttdeci">TGUI_NODISCARD unsigned int getMaximumTextureSize() override</div><div class="ttdoc">Get the maximum allowed texture size.</div></div>
@@ -196,7 +194,7 @@ $(document).ready(function() { init_codefold(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -210,7 +208,7 @@ Generated on Sat Sep 30 2023 11:41:04 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

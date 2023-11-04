@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1342c695f3ad2348d39ca87f92e030ea" id="r_a1342c695f3ad2348d39ca87f92e030ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#a1342c695f3ad2348d39ca87f92e030ea">mouseButtonCallback</a> (<a class="el" href="classint.html">int</a> button, <a class="el" href="classint.html">int</a> action, <a class="el" href="classint.html">int</a> mods)</td></tr>
 <tr class="memdesc:a1342c695f3ad2348d39ca87f92e030ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the gui about a mouse button event when a callback from glfwSetMouseButtonCallback occurs.  <br /></td></tr>
 <tr class="separator:a1342c695f3ad2348d39ca87f92e030ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec4f7dd271c445839b6abd2d6a23a3a" id="r_a3ec4f7dd271c445839b6abd2d6a23a3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#a3ec4f7dd271c445839b6abd2d6a23a3a">cursorEnterCallback</a> (<a class="el" href="classint.html">int</a> entered)</td></tr>
+<tr class="memdesc:a3ec4f7dd271c445839b6abd2d6a23a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the gui that the mouse has left or entered the window when a callback from glfwSetCursorEnterCallback occurs.  <br /></td></tr>
+<tr class="separator:a3ec4f7dd271c445839b6abd2d6a23a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01f372db5b2e067acc4781389011583" id="r_ab01f372db5b2e067acc4781389011583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#ab01f372db5b2e067acc4781389011583">mainLoop</a> (<a class="el" href="classtgui_1_1Color.html">Color</a> clearColor={240, 240, 240}) override</td></tr>
 <tr class="memdesc:ab01f372db5b2e067acc4781389011583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the gui control over the main loop.  <br /></td></tr>
 <tr class="separator:ab01f372db5b2e067acc4781389011583"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +195,9 @@ TGUI_NODISCARD Optional&lt; <a class="el" href="structtgui_1_1Event.html">Event<
 <tr class="memitem:a92a6c73e86b55a58df7da6e29bbf4f8f" id="r_a92a6c73e86b55a58df7da6e29bbf4f8f"><td class="memItemLeft" align="right" valign="top"><a id="a92a6c73e86b55a58df7da6e29bbf4f8f" name="a92a6c73e86b55a58df7da6e29bbf4f8f"></a>
 TGUI_NODISCARD Optional&lt; <a class="el" href="structtgui_1_1Event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>convertMouseButtonEvent</b> (<a class="el" href="classint.html">int</a> button, <a class="el" href="classint.html">int</a> action, <a class="el" href="classint.html">int</a> mods)</td></tr>
 <tr class="separator:a92a6c73e86b55a58df7da6e29bbf4f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0e73ea7e897d66528fd36035c590b5" id="r_a9d0e73ea7e897d66528fd36035c590b5"><td class="memItemLeft" align="right" valign="top"><a id="a9d0e73ea7e897d66528fd36035c590b5" name="a9d0e73ea7e897d66528fd36035c590b5"></a>
+TGUI_NODISCARD Optional&lt; <a class="el" href="structtgui_1_1Event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>convertCursorEnterEvent</b> (<a class="el" href="classint.html">int</a> entered)</td></tr>
+<tr class="separator:a9d0e73ea7e897d66528fd36035c590b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036bcc4c1449bb7f6009018751e30b57" id="r_a036bcc4c1449bb7f6009018751e30b57"><td class="memItemLeft" align="right" valign="top">GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiGLFW.html#a036bcc4c1449bb7f6009018751e30b57">getWindow</a> () const</td></tr>
 <tr class="memdesc:a036bcc4c1449bb7f6009018751e30b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window that was provided to the gui.  <br /></td></tr>
 <tr class="separator:a036bcc4c1449bb7f6009018751e30b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,6 +377,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a cl
 <tr class="memitem:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui" id="r_a0bead45d3dcdaa16d0cfc39a2cdb6770"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a0bead45d3dcdaa16d0cfc39a2cdb6770">stopTextInput</a> ()</td></tr>
 <tr class="memdesc:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed.  <br /></td></tr>
 <tr class="separator:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui" id="r_aecf50b66a39d443fc0536a7d04e27c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">setKeyboardNavigationEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui" id="r_a69a11378844aa5196241382d7b98d330"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a69a11378844aa5196241382d7b98d330">isKeyboardNavigationEnabled</a> () const</td></tr>
+<tr class="memdesc:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
+<tr class="separator:a69a11378844aa5196241382d7b98d330 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -435,6 +447,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawUpdatesTime</b>
 <tr class="memitem:af25a8c6644a7c6ffb25438f865a47d98 inherit pro_attribs_classtgui_1_1BackendGui" id="r_af25a8c6644a7c6ffb25438f865a47d98"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabKeyUsageEnabled</b> = true</td></tr>
 <tr class="separator:af25a8c6644a7c6ffb25438f865a47d98 inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdf9d1a0783bc9abe0b95bc3bfbd29a inherit pro_attribs_classtgui_1_1BackendGui" id="r_a0cdf9d1a0783bc9abe0b95bc3bfbd29a"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_keyboardNavigationEnabled</b> = false</td></tr>
+<tr class="separator:a0cdf9d1a0783bc9abe0b95bc3bfbd29a inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7492c17d2045692e6c82798f3a84e6 inherit pro_attribs_classtgui_1_1BackendGui" id="r_afb7492c17d2045692e6c82798f3a84e6"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedMouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
 <tr class="separator:afb7492c17d2045692e6c82798f3a84e6 inherit pro_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -495,6 +510,33 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">codepoint</td><td>The Unicode code point of the character </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Has the event been consumed? When this function returns false, then the event was ignored by all widgets. </dd></dl>
+
+</div>
+</div>
+<a id="a3ec4f7dd271c445839b6abd2d6a23a3a" name="a3ec4f7dd271c445839b6abd2d6a23a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec4f7dd271c445839b6abd2d6a23a3a">&#9670;&#160;</a></span>cursorEnterCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::BackendGuiGLFW::cursorEnterCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>entered</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inform the gui that the mouse has left or entered the window when a callback from glfwSetCursorEnterCallback occurs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entered</td><td>Indicates whether the mouse has entered or left the content area of the window </td></tr>
   </table>
   </dd>
 </dl>
@@ -921,7 +963,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:27 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -935,7 +977,7 @@ Generated on Sat Sep 30 2023 11:41:05 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

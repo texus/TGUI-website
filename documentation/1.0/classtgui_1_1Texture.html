@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -221,6 +221,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d2aa9f6d6d7ed4ed64db75945cd503" id="r_af8d2aa9f6d6d7ed4ed64db75945cd503"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD sf::Shader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Texture.html#af8d2aa9f6d6d7ed4ed64db75945cd503">getShader</a> () const</td></tr>
 <tr class="memdesc:af8d2aa9f6d6d7ed4ed64db75945cd503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shader used to draw the texture.  <br /></td></tr>
 <tr class="separator:af8d2aa9f6d6d7ed4ed64db75945cd503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfa7457360299ed86727676de578f03" id="r_a1cfa7457360299ed86727676de578f03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Texture.html#a1cfa7457360299ed86727676de578f03">setMiddleRect</a> (const <a class="el" href="classtgui_1_1Rect.html">UIntRect</a> &amp;middleRect)</td></tr>
+<tr class="memdesc:a1cfa7457360299ed86727676de578f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the middle part of the image for 9-slice scaling (relative to the part defined by partRect)  <br /></td></tr>
+<tr class="separator:a1cfa7457360299ed86727676de578f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc3ff6721a7863c671d7aab817b74c0b" id="r_abc3ff6721a7863c671d7aab817b74c0b"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Rect.html">UIntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Texture.html#abc3ff6721a7863c671d7aab817b74c0b">getMiddleRect</a> () const</td></tr>
 <tr class="memdesc:abc3ff6721a7863c671d7aab817b74c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the middle rect of the texture which is used for 9-slice scaling.  <br /></td></tr>
 <tr class="separator:abc3ff6721a7863c671d7aab817b74c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1161,6 +1164,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1cfa7457360299ed86727676de578f03" name="a1cfa7457360299ed86727676de578f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfa7457360299ed86727676de578f03">&#9670;&#160;</a></span>setMiddleRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::Texture::setMiddleRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1Rect.html">UIntRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>middleRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the middle part of the image for 9-slice scaling (relative to the part defined by partRect) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">middleRect</td><td>Middle rect of the texture</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+</div>
+</div>
 <a id="a7c13cbdb5bf561090386cf2e80902528" name="a7c13cbdb5bf561090386cf2e80902528"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c13cbdb5bf561090386cf2e80902528">&#9670;&#160;</a></span>setShader()</h2>
 
@@ -1230,7 +1260,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -1244,7 +1274,7 @@ Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }

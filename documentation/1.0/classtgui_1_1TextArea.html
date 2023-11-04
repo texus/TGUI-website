@@ -66,7 +66,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -275,6 +275,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9abafea27624cd32fd36673cfb48e54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <br /></td></tr>
 <tr class="separator:a9abafea27624cd32fd36673cfb48e54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220914cc0c4384f5c8a7402fc0d20d1c" id="r_a220914cc0c4384f5c8a7402fc0d20d1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#a220914cc0c4384f5c8a7402fc0d20d1c">leftMousePressed</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) override</td></tr>
+<tr class="memdesc:a220914cc0c4384f5c8a7402fc0d20d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent when the left mouse button goes down on top of the widget.  <br /></td></tr>
 <tr class="separator:a220914cc0c4384f5c8a7402fc0d20d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399201e061dfd7d9788682ee57f72b3b" id="r_a399201e061dfd7d9788682ee57f72b3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#a399201e061dfd7d9788682ee57f72b3b">leftMouseReleased</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) override</td></tr>
 <tr class="separator:a399201e061dfd7d9788682ee57f72b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,9 +283,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e71858bd6efad9af46a62a26615afbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964240b795e36ce0d6b350dcce3240e4" id="r_a964240b795e36ce0d6b350dcce3240e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#a964240b795e36ce0d6b350dcce3240e4">keyPressed</a> (const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;event) override</td></tr>
 <tr class="separator:a964240b795e36ce0d6b350dcce3240e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95a4bb33bcfafa3435a8fa99bb8ccd6" id="r_aa95a4bb33bcfafa3435a8fa99bb8ccd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#aa95a4bb33bcfafa3435a8fa99bb8ccd6">canHandleKeyPress</a> (const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;event) override</td></tr>
+<tr class="memdesc:aa95a4bb33bcfafa3435a8fa99bb8ccd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent of the widget to check if keyPressed would process the event.  <br /></td></tr>
+<tr class="separator:aa95a4bb33bcfafa3435a8fa99bb8ccd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac6c5329b29c8c66a6745f1cafca5a69" id="r_aac6c5329b29c8c66a6745f1cafca5a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#aac6c5329b29c8c66a6745f1cafca5a69">textEntered</a> (char32_t key) override</td></tr>
 <tr class="separator:aac6c5329b29c8c66a6745f1cafca5a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43da363af40226f63971fdaee9d75bc" id="r_ac43da363af40226f63971fdaee9d75bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#ac43da363af40226f63971fdaee9d75bc">scrolled</a> (float delta, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos, bool touch) override</td></tr>
+<tr class="memdesc:ac43da363af40226f63971fdaee9d75bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent on scroll event (either from mouse wheel of from two finger scrolling on a touchscreen)  <br /></td></tr>
 <tr class="separator:ac43da363af40226f63971fdaee9d75bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a908e109efb55dac908179078af62b734" id="r_a908e109efb55dac908179078af62b734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TextArea.html#a908e109efb55dac908179078af62b734">mouseNoLongerOnWidget</a> () override</td></tr>
 <tr class="separator:a908e109efb55dac908179078af62b734"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,6 +358,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget" id="r_a8ea44f50f0908c779d5285dc016527ab"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a8ea44f50f0908c779d5285dc016527ab">getWidgetOffset</a> () const</td></tr>
 <tr class="memdesc:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the position where the widget is drawn and where the widget is placed.  <br /></td></tr>
 <tr class="separator:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7097e52ebcd27a6c71b8012a53da45e9 inherit pub_methods_classtgui_1_1Widget" id="r_a7097e52ebcd27a6c71b8012a53da45e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7097e52ebcd27a6c71b8012a53da45e9">setAutoLayout</a> (<a class="el" href="namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1">AutoLayout</a> layout)</td></tr>
+<tr class="separator:a7097e52ebcd27a6c71b8012a53da45e9 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3614258b5d6b9f4d1ee7f7d611661cd inherit pub_methods_classtgui_1_1Widget" id="r_ad3614258b5d6b9f4d1ee7f7d611661cd"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1">AutoLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ad3614258b5d6b9f4d1ee7f7d611661cd">getAutoLayout</a> () const</td></tr>
+<tr class="separator:ad3614258b5d6b9f4d1ee7f7d611661cd inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301e9d06ed2737eefabd549ee7dbc83c inherit pub_methods_classtgui_1_1Widget" id="r_a301e9d06ed2737eefabd549ee7dbc83c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a301e9d06ed2737eefabd549ee7dbc83c">setOrigin</a> (float x, float y)</td></tr>
 <tr class="memdesc:a301e9d06ed2737eefabd549ee7dbc83c inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the origin point on which the position, scale and rotation is based.  <br /></td></tr>
 <tr class="separator:a301e9d06ed2737eefabd549ee7dbc83c inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,6 +498,30 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memitem:a2f0279cf0d426237962be1d8a66f129d inherit pub_methods_classtgui_1_1Widget" id="r_a2f0279cf0d426237962be1d8a66f129d"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a2f0279cf0d426237962be1d8a66f129d">isFocusable</a> () const</td></tr>
 <tr class="memdesc:a2f0279cf0d426237962be1d8a66f129d inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a widget could be focused.  <br /></td></tr>
 <tr class="separator:a2f0279cf0d426237962be1d8a66f129d inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b268118c9db1e7d544489c598883011 inherit pub_methods_classtgui_1_1Widget" id="r_a4b268118c9db1e7d544489c598883011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a4b268118c9db1e7d544489c598883011">setNavigationUp</a> (const <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> &amp;widgetAbove)</td></tr>
+<tr class="memdesc:a4b268118c9db1e7d544489c598883011 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes which widget should become focused when navigating upwards from this widget.  <br /></td></tr>
+<tr class="separator:a4b268118c9db1e7d544489c598883011 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182e75742b0076b9834a5e508160f141 inherit pub_methods_classtgui_1_1Widget" id="r_a182e75742b0076b9834a5e508160f141"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a182e75742b0076b9834a5e508160f141">getNavigationUp</a> () const</td></tr>
+<tr class="memdesc:a182e75742b0076b9834a5e508160f141 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which widget would become focused when navigating upwards from this widget.  <br /></td></tr>
+<tr class="separator:a182e75742b0076b9834a5e508160f141 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fb69c88fa802659dd139ce4fc1a788 inherit pub_methods_classtgui_1_1Widget" id="r_ae9fb69c88fa802659dd139ce4fc1a788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ae9fb69c88fa802659dd139ce4fc1a788">setNavigationDown</a> (const <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> &amp;widgetBelow)</td></tr>
+<tr class="memdesc:ae9fb69c88fa802659dd139ce4fc1a788 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes which widget should become focused when navigating downwards from this widget.  <br /></td></tr>
+<tr class="separator:ae9fb69c88fa802659dd139ce4fc1a788 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6797225246e7fa35732e1a09653708 inherit pub_methods_classtgui_1_1Widget" id="r_a1e6797225246e7fa35732e1a09653708"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a1e6797225246e7fa35732e1a09653708">getNavigationDown</a> () const</td></tr>
+<tr class="memdesc:a1e6797225246e7fa35732e1a09653708 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which widget would become focused when navigating downwards from this widget.  <br /></td></tr>
+<tr class="separator:a1e6797225246e7fa35732e1a09653708 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d2e4434d1f932dd4cc12a3939fa02f inherit pub_methods_classtgui_1_1Widget" id="r_ad8d2e4434d1f932dd4cc12a3939fa02f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ad8d2e4434d1f932dd4cc12a3939fa02f">setNavigationLeft</a> (const <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> &amp;widgetLeft)</td></tr>
+<tr class="memdesc:ad8d2e4434d1f932dd4cc12a3939fa02f inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes which widget should become focused when navigating to the left from this widget.  <br /></td></tr>
+<tr class="separator:ad8d2e4434d1f932dd4cc12a3939fa02f inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84311529eb6c3ac48cb44bd7b9edcd30 inherit pub_methods_classtgui_1_1Widget" id="r_a84311529eb6c3ac48cb44bd7b9edcd30"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a84311529eb6c3ac48cb44bd7b9edcd30">getNavigationLeft</a> () const</td></tr>
+<tr class="memdesc:a84311529eb6c3ac48cb44bd7b9edcd30 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which widget would become focused when navigating to the left from this widget.  <br /></td></tr>
+<tr class="separator:a84311529eb6c3ac48cb44bd7b9edcd30 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f378c0cbb7c0e71e1606e17b612ae39 inherit pub_methods_classtgui_1_1Widget" id="r_a2f378c0cbb7c0e71e1606e17b612ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a2f378c0cbb7c0e71e1606e17b612ae39">setNavigationRight</a> (const <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> &amp;widgetRight)</td></tr>
+<tr class="memdesc:a2f378c0cbb7c0e71e1606e17b612ae39 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes which widget should become focused when navigating to the right from this widget.  <br /></td></tr>
+<tr class="separator:a2f378c0cbb7c0e71e1606e17b612ae39 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac73ee9547b9f3e2ef7b15ab5235a20f inherit pub_methods_classtgui_1_1Widget" id="r_aac73ee9547b9f3e2ef7b15ab5235a20f"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#aac73ee9547b9f3e2ef7b15ab5235a20f">getNavigationRight</a> () const</td></tr>
+<tr class="memdesc:aac73ee9547b9f3e2ef7b15ab5235a20f inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns which widget would become focused when navigating to the right from this widget.  <br /></td></tr>
+<tr class="separator:aac73ee9547b9f3e2ef7b15ab5235a20f inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf522b3826a4b5d426b3b916016a0f3 inherit pub_methods_classtgui_1_1Widget" id="r_aaaf522b3826a4b5d426b3b916016a0f3"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>finishAllAnimations</b> ()</td></tr>
 <tr class="memdesc:aaaf522b3826a4b5d426b3b916016a0f3 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes all animations of the widget finish immediately. <br /></td></tr>
@@ -508,6 +541,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>finishAllAnimations</
 <tr class="memitem:a94b6b11693ce4b8059ccf8fa1296ce9a inherit pub_methods_classtgui_1_1Widget" id="r_a94b6b11693ce4b8059ccf8fa1296ce9a"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="classtgui_1_1Container.html">Container</a> *parent)</td></tr>
 <tr class="separator:a94b6b11693ce4b8059ccf8fa1296ce9a inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a093b5b91594db4520cfd8aaac4af56 inherit pub_methods_classtgui_1_1Widget" id="r_a4a093b5b91594db4520cfd8aaac4af56"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoLayoutUpdateEnabled</b> (bool enabled)</td></tr>
+<tr class="separator:a4a093b5b91594db4520cfd8aaac4af56 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dac16aaf0aaa9e9552180648db0f36 inherit pub_methods_classtgui_1_1Widget" id="r_af2dac16aaf0aaa9e9552180648db0f36"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rightMousePressed</b> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos)</td></tr>
 <tr class="separator:af2dac16aaf0aaa9e9552180648db0f36 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -719,6 +755,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSelEnd</b> (con
 <tr class="memitem:a7b37e4367a219d7b9f385f1c85e7fe8d inherit pro_methods_classtgui_1_1Widget" id="r_a7b37e4367a219d7b9f385f1c85e7fe8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7b37e4367a219d7b9f385f1c85e7fe8d">mouseLeftWidget</a> ()</td></tr>
 <tr class="memdesc:a7b37e4367a219d7b9f385f1c85e7fe8d inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse leaves the widget.  <br /></td></tr>
 <tr class="separator:a7b37e4367a219d7b9f385f1c85e7fe8d inherit pro_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd42025bbe2b0ce1caf9f86cda27000 inherit pro_methods_classtgui_1_1Widget" id="r_a1fd42025bbe2b0ce1caf9f86cda27000"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundPositionLayouts</b> ()</td></tr>
+<tr class="memdesc:a1fd42025bbe2b0ce1caf9f86cda27000 inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls recalculateValue() on each layout in m_boundPositionLayouts. <br /></td></tr>
+<tr class="separator:a1fd42025bbe2b0ce1caf9f86cda27000 inherit pro_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6909cae6e1065e5e43cbc2f22e318ca inherit pro_methods_classtgui_1_1Widget" id="r_af6909cae6e1065e5e43cbc2f22e318ca"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundSizeLayouts</b> ()</td></tr>
+<tr class="memdesc:af6909cae6e1065e5e43cbc2f22e318ca inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls recalculateValue() on each layout in m_boundSizeLayouts. <br /></td></tr>
+<tr class="separator:af6909cae6e1065e5e43cbc2f22e318ca inherit pro_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -896,6 +940,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_focused</b> = false
 <tr class="memitem:aa8f163b01c92249401baeac35b798781 inherit pro_attribs_classtgui_1_1Widget" id="r_aa8f163b01c92249401baeac35b798781"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_focusable</b> = true</td></tr>
 <tr class="separator:aa8f163b01c92249401baeac35b798781 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c5440ce55c409502efa2bb3f934b6a inherit pro_attribs_classtgui_1_1Widget" id="r_ae2c5440ce55c409502efa2bb3f934b6a"><td class="memItemLeft" align="right" valign="top">
+std::weak_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_navWidgetUp</b></td></tr>
+<tr class="separator:ae2c5440ce55c409502efa2bb3f934b6a inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79595a589791b6c4e278ed038e5f9b33 inherit pro_attribs_classtgui_1_1Widget" id="r_a79595a589791b6c4e278ed038e5f9b33"><td class="memItemLeft" align="right" valign="top">
+std::weak_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_navWidgetDown</b></td></tr>
+<tr class="separator:a79595a589791b6c4e278ed038e5f9b33 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a3c538783ee1b3e773de9eb8c30a0c inherit pro_attribs_classtgui_1_1Widget" id="r_ab6a3c538783ee1b3e773de9eb8c30a0c"><td class="memItemLeft" align="right" valign="top">
+std::weak_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_navWidgetRight</b></td></tr>
+<tr class="separator:ab6a3c538783ee1b3e773de9eb8c30a0c inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9843172e3dad28e4f251485880449e13 inherit pro_attribs_classtgui_1_1Widget" id="r_a9843172e3dad28e4f251485880449e13"><td class="memItemLeft" align="right" valign="top">
+std::weak_ptr&lt; <a class="el" href="classtgui_1_1Widget.html">Widget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_navWidgetLeft</b></td></tr>
+<tr class="separator:a9843172e3dad28e4f251485880449e13 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eb5aa03d4491423e1c949e338d8e21f inherit pro_attribs_classtgui_1_1Widget" id="r_a9eb5aa03d4491423e1c949e338d8e21f"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1Duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_animationTimeElapsed</b></td></tr>
 <tr class="separator:a9eb5aa03d4491423e1c949e338d8e21f inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -917,6 +973,18 @@ std::vector&lt; std::unique_ptr&lt; priv::Animation &gt; &gt;&#160;</td><td clas
 <tr class="memitem:aea41a9f3667a05988a9e37997962ca7e inherit pro_attribs_classtgui_1_1Widget" id="r_aea41a9f3667a05988a9e37997962ca7e"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_inheritedOpacity</b> = 1</td></tr>
 <tr class="separator:aea41a9f3667a05988a9e37997962ca7e inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340681e065b0adcbcacae3fb11782a7e inherit pro_attribs_classtgui_1_1Widget" id="r_a340681e065b0adcbcacae3fb11782a7e"><td class="memItemLeft" align="right" valign="top">
+Any&#160;</td><td class="memItemRight" valign="bottom"><b>m_userData</b></td></tr>
+<tr class="separator:a340681e065b0adcbcacae3fb11782a7e inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc45615b5d24e92338cb4adac4b7fec inherit pro_attribs_classtgui_1_1Widget" id="r_a3dc45615b5d24e92338cb4adac4b7fec"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
+<tr class="separator:a3dc45615b5d24e92338cb4adac4b7fec inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac00cad794a3a0e995271cb2b86c7e7 inherit pro_attribs_classtgui_1_1Widget" id="r_a6ac00cad794a3a0e995271cb2b86c7e7"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1">AutoLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoLayout</b> = <a class="el" href="namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1ae1ba155a9f2e8c3be94020eef32a0301">AutoLayout::Manual</a></td></tr>
+<tr class="separator:a6ac00cad794a3a0e995271cb2b86c7e7 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91906f6647ad58fdc1e0d6bc0600d605 inherit pro_attribs_classtgui_1_1Widget" id="r_a91906f6647ad58fdc1e0d6bc0600d605"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoLayoutUpdateEnabled</b> = true</td></tr>
+<tr class="separator:a91906f6647ad58fdc1e0d6bc0600d605 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89185693ede7d556c9139aedb52bc684 inherit pro_attribs_classtgui_1_1Widget" id="r_a89185693ede7d556c9139aedb52bc684"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1Font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontCached</b> = <a class="el" href="classtgui_1_1Font.html#ab70d12a27c48ae4e6add4d8b0783304b">Font::getGlobalFont</a>()</td></tr>
 <tr class="separator:a89185693ede7d556c9139aedb52bc684 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -929,12 +997,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_transparentTextureC
 <tr class="memitem:af0f458e58398c3e9bbdb9bc94ae7bef3 inherit pro_attribs_classtgui_1_1Widget" id="r_af0f458e58398c3e9bbdb9bc94ae7bef3"><td class="memItemLeft" align="right" valign="top">
 unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_textSizeCached</b> = 0</td></tr>
 <tr class="separator:af0f458e58398c3e9bbdb9bc94ae7bef3 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340681e065b0adcbcacae3fb11782a7e inherit pro_attribs_classtgui_1_1Widget" id="r_a340681e065b0adcbcacae3fb11782a7e"><td class="memItemLeft" align="right" valign="top">
-Any&#160;</td><td class="memItemRight" valign="bottom"><b>m_userData</b></td></tr>
-<tr class="separator:a340681e065b0adcbcacae3fb11782a7e inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc45615b5d24e92338cb4adac4b7fec inherit pro_attribs_classtgui_1_1Widget" id="r_a3dc45615b5d24e92338cb4adac4b7fec"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseCursor</b> = <a class="el" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Type::Arrow</a></td></tr>
-<tr class="separator:a3dc45615b5d24e92338cb4adac4b7fec inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -973,6 +1035,44 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa95a4bb33bcfafa3435a8fa99bb8ccd6" name="aa95a4bb33bcfafa3435a8fa99bb8ccd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95a4bb33bcfafa3435a8fa99bb8ccd6">&#9670;&#160;</a></span>canHandleKeyPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TextArea::canHandleKeyPress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by the parent of the widget to check if keyPressed would process the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Key event that took place</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event would be handled by the widget, false if the key event doesn't affect the widget</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.1 </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#aa97d11a9c24460ba9484cc129e371705">tgui::Widget</a>.</p>
 
 </div>
 </div>
@@ -1721,7 +1821,16 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a>.</p>
+<p>Called by the parent when the left mouse button goes down on top of the widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Mouse position in view coordinates relative to the parent widget </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the clicked part of the widget is draggable, i.e. if the widget should continue to receive mouse move events until the mouse is released, even when the mouse leaves the widget. When false is returned, the mouse move events will only be sent to the widget as long as the mouse is on top of the widget. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#ac1a46589d56c675826ed43080a9e3d8b">tgui::Widget</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +2063,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a>.</p>
+<p>Called by the parent on scroll event (either from mouse wheel of from two finger scrolling on a touchscreen) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Scroll offset (positive is up, negative is down). High-precision mice may use non-integral offsets. </td></tr>
+    <tr><td class="paramname">pos</td><td>Mouse position, or the initial position of the touch events </td></tr>
+    <tr><td class="paramname">touch</td><td>Was this a touch event or a mouse wheel scroll?</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Was the scrolling was handled by the widget? </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a9786c185efd55b07c223240199f3e3f6">tgui::Widget</a>.</p>
 
 </div>
 </div>
@@ -2521,7 +2641,7 @@ Pressing the Tab key will not affect the <a class="el" href="classtgui_1_1TextAr
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 4 2023 16:20:28 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.9.8
 </small></address>
@@ -2535,7 +2655,7 @@ Generated on Sat Sep 30 2023 11:41:06 for TGUI by &#160;<a href="http://www.doxy
 <!-- END CUSTOM 3 -->
 <!-- Show the class list by default instead of requiring the user to manually exapand the namespace first -->
 <script type="text/javascript">
-if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/annotated.html'))
+if(window.location.href.endsWith('/namespaces.html') || window.location.href.endsWith('/namespaces') || window.location.href.endsWith('/annotated.html') || window.location.href.endsWith('/annotated'))
 {
     toggleLevel(2);
 }
