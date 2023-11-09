@@ -44,6 +44,7 @@ Precompiled libraries for Windows with SFML_GRAPHICS backend: (require matching 
 </table>
 
 Packages:  
+**vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial)  
 **PPA** (Ubuntu Linux): [libtgui-1.0-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
 **brew** (macOS): [tgui](https://formulae.brew.sh/formula/tgui) (unofficial, uses SFML_GRAPHICS backend)  
 
@@ -66,7 +67,6 @@ Precompiled libraries for Windows with SFML backend: (require matching libraries
 </table>
 
 Packages:  
-**vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial, supports SFML and SDL backends)  
 **PPA** (Ubuntu Linux): [libtgui-0.9-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, uses SFML backend)  
 
 ### TGUI 0.8.9
