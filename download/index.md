@@ -47,6 +47,7 @@ Packages:
 **vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial)  
 **PPA** (Ubuntu Linux): [libtgui-1.0-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
 **brew** (macOS): [tgui](https://formulae.brew.sh/formula/tgui) (unofficial, uses SFML_GRAPHICS backend)  
+**MSYS2** (Windows): [mingw-w64-tgui](https://packages.msys2.org/base/mingw-w64-tgui) (unofficial, uses SFML_GRAPHICS backend)  
 
 ### TGUI 0.9.5
 **Previous version**. Minimum supported compilers: GCC 5, Clang 4, VS2017
