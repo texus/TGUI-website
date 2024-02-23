@@ -9,15 +9,13 @@ The main goal of the C binding was to more easily allow creating bindings to oth
 
 ### Download
 
-{% include button.ext text="Download source code" link="https://github.com/texus/CTGUI/archive/master.zip" style="Orange" %}
-
-Instead of compiling the library yourself, you could also get the precompiled libraries from the [.Net binding](https://tgui.net) which includes them.
+{% include button.ext text="Download source code" link="https://github.com/texus/CTGUI/archive/1.x-WIP.zip" style="Orange" %}
 
 
-### Example code
+### Example code (with CSFML_GRAPHICS backend)
 ```c
 #include <CTGUI/CTGUI.h>
-#include <assert.h>
+#include <CTGUI/Backend/CSFML-Graphics.h>
 #include <stdio.h>
 
 void func()
@@ -28,24 +26,28 @@ void func()
 void main()
 {
     sfVideoMode videoMode = {400, 300, 32};
-    sfRenderWindow* window = sfRenderWindow_create(videoMode, "CTGUI example", sfDefaultStyle, NULL);
+    sfRenderWindow* window = sfRenderWindow_create(videoMode, "CTGUI example (CSFML-GRAPHICS)", sfDefaultStyle, NULL);
 
-    tguiGui* gui = tguiGui_createFromWindow(window);
+    // The tguiGui object should always be the first CTGUI object to create
+    tguiGui* gui = tguiGuiCSFMLGraphics_create(window);
 
     tguiWidget* button = tguiButton_create();
     tguiGui_add(gui, button, U"MyButton");
 
     tguiButton_setText(button, U"Hello");
 
-    sfVector2f position = {40, 30};
+    tguiVector2f position = {40, 30};
     tguiWidget_setPosition(button, position);
 
-    sfVector2f size = {200, 40};
+    tguiVector2f size = {200, 40};
     tguiWidget_setSize(button, size);
 
-    const char* error;
-    tguiWidget_connect(button, "pressed", func, &error);
-    assert(error == NULL);
+    tguiColor buttonColor = tguiColor_fromRGB(128, 220, 128);
+    tguiRenderer* buttonRenderer = tguiWidget_getRenderer(button);
+    tguiButtonRenderer_setBackgroundColor(buttonRenderer, &buttonColor);
+    tguiWidgetRenderer_free(buttonRenderer);
+
+    tguiWidget_signalConnect(button, "Pressed", func);
 
     while (sfRenderWindow_isOpen(window))
     {
@@ -55,7 +57,7 @@ void main()
             if (event.type == sfEvtClosed)
                 sfRenderWindow_close(window);
 
-            tguiGui_handleEvent(gui, event);
+            tguiGuiCSFMLGraphics_handleEvent(gui, &event);
         }
 
         sfRenderWindow_clear(window, sfBlack);
@@ -63,8 +65,9 @@ void main()
         sfRenderWindow_display(window);
     }
 
-    tguiWidget_destroy(button);
-    tguiGui_destroy(gui);
+    tguiWidget_free(button);
+    tguiGuiCSFMLGraphics_free(gui);
+
     sfRenderWindow_destroy(window);
 }
 ```
