@@ -200,7 +200,7 @@ childWindow->setResizable(true);
 childWindow->setKeepInParent(true); // Prevents any part of the window to go outside the screen
 
 childWindow->onClosing([](bool* abort){
-    abort = true; // Prevents the window from being closed, onClose won't be triggered
+    *abort = true; // Prevents the window from being closed, onClose won't be triggered
 });
 childWindow->onClose([]{
     std::cerr << "ChildWindow has been closed\n";
