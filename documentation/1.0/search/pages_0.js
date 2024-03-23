@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['documentation_0',['TGUI Documentation',['../index.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]],
+  ['documentation_1',['TGUI Documentation',['../index.html',1,'']]]
 ];

@@ -5,6 +5,22 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 2
+    patches:
+    - version: 0
+      date: 23 March 2024
+      changes: |
+        Added Theme::replace function
+        Added TreeView::changeItem function
+        Added TreeView::getNode function
+        Added ignoreMouseEvents function to canvas widgets
+        Added Panel::setEventBubbling to enable more intuitive event propagation
+        Replaced getWidgetAtPosition with getWidgetAtPos
+        getWidgetBelowMouseCursor was given a parameter for recursive search
+        Textures with different part rects were incorrectly considered equal
+        showWithEffect didn't show widget if a hide animation was still playing
+        Setting opacity of a SubWidgetContainer didn't work
+        SubWidgetContainer didn't support show/hide animations
   - version: 1
     patches:
     - version: 0
