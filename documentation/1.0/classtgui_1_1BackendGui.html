@@ -67,7 +67,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.3-dev</span>
    </div>
   </td>
  </tr>
@@ -140,17 +140,19 @@ Inheritance diagram for tgui::BackendGui:</div>
   <img src="classtgui_1_1BackendGui.png" usemap="#tgui::BackendGui_map" alt=""/>
   <map id="tgui::BackendGui_map" name="tgui::BackendGui_map">
 <area href="classtgui_1_1BackendGuiGLFW.html" alt="tgui::BackendGuiGLFW" shape="rect" coords="0,56,181,80"/>
-<area href="classtgui_1_1BackendGuiSDL.html" alt="tgui::BackendGuiSDL" shape="rect" coords="382,56,563,80"/>
-<area href="classtgui_1_1BackendGuiSFML.html" alt="tgui::BackendGuiSFML" shape="rect" coords="764,56,945,80"/>
+<area href="classtgui_1_1BackendGuiRaylib.html" alt="tgui::BackendGuiRaylib" shape="rect" coords="382,56,563,80"/>
+<area href="classtgui_1_1BackendGuiSDL.html" alt="tgui::BackendGuiSDL" shape="rect" coords="573,56,754,80"/>
+<area href="classtgui_1_1BackendGuiSFML.html" alt="tgui::BackendGuiSFML" shape="rect" coords="955,56,1136,80"/>
 <area href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)" alt="tgui::GLFW_GLES2::Gui" shape="rect" coords="191,112,372,136"/>
 <area href="classtgui_1_1GLFW__OPENGL3_1_1Gui.html" title="Gui class for GLFW + OpenGL3 backend (using FreeType for fonts)" alt="tgui::GLFW_OPENGL3::Gui" shape="rect" coords="191,168,372,192"/>
-<area href="classtgui_1_1SDL__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using FreeType for fonts)" alt="tgui::SDL_GLES2::Gui" shape="rect" coords="573,112,754,136"/>
-<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="573,168,754,192"/>
-<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="573,224,754,248"/>
-<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="573,280,754,304"/>
-<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="573,336,754,360"/>
-<area href="classtgui_1_1SFML__GRAPHICS_1_1Gui.html" title="Gui class for SFML (using sfml-graphics module for rendering and font)" alt="tgui::SFML_GRAPHICS::Gui" shape="rect" coords="955,112,1136,136"/>
-<area href="classtgui_1_1SFML__OPENGL3_1_1Gui.html" title="Gui class for sfml-window + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SFML_OPENGL3::Gui" shape="rect" coords="955,168,1136,192"/>
+<area href="classtgui_1_1RAYLIB_1_1Gui.html" title="Gui class for raylib." alt="tgui::RAYLIB::Gui" shape="rect" coords="382,112,563,136"/>
+<area href="classtgui_1_1SDL__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using FreeType for fonts)" alt="tgui::SDL_GLES2::Gui" shape="rect" coords="764,112,945,136"/>
+<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="764,168,945,192"/>
+<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="764,224,945,248"/>
+<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="764,280,945,304"/>
+<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="764,336,945,360"/>
+<area href="classtgui_1_1SFML__GRAPHICS_1_1Gui.html" title="Gui class for SFML (using sfml-graphics module for rendering and font)" alt="tgui::SFML_GRAPHICS::Gui" shape="rect" coords="1146,112,1327,136"/>
+<area href="classtgui_1_1SFML__OPENGL3_1_1Gui.html" title="Gui class for sfml-window + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SFML_OPENGL3::Gui" shape="rect" coords="1146,168,1327,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -1091,7 +1093,7 @@ template&lt;class WidgetType &gt; </div>
 </dl>
 <p>This function is only intended in cases where your program only needs to respond to gui events. For multimedia applications, games, or other programs where you want a high framerate or do a lot of processing in the main loop, you should use your own main loop. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendGuiGLFW.html#ab01f372db5b2e067acc4781389011583">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a213980d508a62f6ecfdb23e8dc5e1b2c">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ab7e3d3608d02a026f74d1419c7f7073a">tgui::BackendGuiSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendGuiGLFW.html#ab01f372db5b2e067acc4781389011583">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiRaylib.html#abcf49126eb65ba1dbfffd160cde17b0f">tgui::BackendGuiRaylib</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a213980d508a62f6ecfdb23e8dc5e1b2c">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ab7e3d3608d02a026f74d1419c7f7073a">tgui::BackendGuiSFML</a>.</p>
 
 </div>
 </div>
@@ -1773,7 +1775,7 @@ template&lt;class WidgetType &gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiGLFW.html#ac68cad716a48323b9223e5952c6ac4a1">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#abd69beaa1f3402d8f594f58d97d3a4e6">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#a3358a4c9037624f0ba22c6a4de315352">tgui::BackendGuiSFML</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiGLFW.html#ac68cad716a48323b9223e5952c6ac4a1">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiRaylib.html#adb55436afd2fdf832ab52ddce2221f9f">tgui::BackendGuiRaylib</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#abd69beaa1f3402d8f594f58d97d3a4e6">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#a3358a4c9037624f0ba22c6a4de315352">tgui::BackendGuiSFML</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +1807,7 @@ template&lt;class WidgetType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2024 17:01:46 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 14 2024 09:15:10 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.10.0
 </small></address>

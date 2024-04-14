@@ -118,3 +118,29 @@ After rendering, you must always tell OpenGL ES to stop rendering on the canvas:
 ```c++
 glBindFramebuffer(GL_FRAMEBUFFER, 0);
 ```
+
+### CanvasRaylib
+
+The CanvasRaylib widget is only available when using the RAYLIB backend.
+
+Creating the canvas is like creating any other widget. It's size can be provided to the create function for convenience:
+```c++
+auto canvas = tgui::CanvasRaylib::create({400, 300});
+gui.add(canvas);
+```
+
+Before rendering, you must tell raylib that further commands should render to the canvas instead of the window:
+```c++
+BeginTextureMode(canvas->getTextureTarget());
+```
+
+Afterwards you can draw just like you would normally draw on the window:
+```c++
+ClearBackground(RAYWHITE);
+DrawRectangle(0, 0, 200, 100, YELLOW);
+```
+
+After rendering, you must always tell raylib to stop rendering on the canvas:
+```c++
+EndTextureMode();
+```

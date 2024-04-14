@@ -67,7 +67,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.3-dev</span>
    </div>
   </td>
  </tr>
@@ -139,8 +139,9 @@ Inheritance diagram for tgui::BackendFont:</div>
   <img src="classtgui_1_1BackendFont.png" usemap="#tgui::BackendFont_map" alt=""/>
   <map id="tgui::BackendFont_map" name="tgui::BackendFont_map">
 <area href="classtgui_1_1BackendFontFreetype.html" title="Font implementations that uses FreeType directly to load glyphs." alt="tgui::BackendFontFreetype" shape="rect" coords="0,56,163,80"/>
-<area href="classtgui_1_1BackendFontSDLttf.html" title="Font implementations that uses SDL_ttf to load glyphs." alt="tgui::BackendFontSDLttf" shape="rect" coords="173,56,336,80"/>
-<area href="classtgui_1_1BackendFontSFML.html" title="Font implementation that makes use of SFML." alt="tgui::BackendFontSFML" shape="rect" coords="346,56,509,80"/>
+<area href="classtgui_1_1BackendFontRaylib.html" title="Font implementations that uses Raylib to load glyphs." alt="tgui::BackendFontRaylib" shape="rect" coords="173,56,336,80"/>
+<area href="classtgui_1_1BackendFontSDLttf.html" title="Font implementations that uses SDL_ttf to load glyphs." alt="tgui::BackendFontSDLttf" shape="rect" coords="346,56,509,80"/>
+<area href="classtgui_1_1BackendFontSFML.html" title="Font implementation that makes use of SFML." alt="tgui::BackendFontSFML" shape="rect" coords="519,56,682,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -227,9 +228,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setFontScale<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6b5cea62f230d57ba33f595735734e73" id="r_a6b5cea62f230d57ba33f595735734e73"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b5cea62f230d57ba33f595735734e73">constructGlyphKey</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness)</td></tr>
-<tr class="memdesc:a6b5cea62f230d57ba33f595735734e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a key for each unique character to render.  <br /></td></tr>
-<tr class="separator:a6b5cea62f230d57ba33f595735734e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286e626b5b61689f90149ec9db43903f" id="r_a286e626b5b61689f90149ec9db43903f"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a286e626b5b61689f90149ec9db43903f">constructGlyphKey</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness) const</td></tr>
+<tr class="memdesc:a286e626b5b61689f90149ec9db43903f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a key for each unique character to render.  <br /></td></tr>
+<tr class="separator:a286e626b5b61689f90149ec9db43903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -243,8 +244,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for font implementations that depend on the backend. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6b5cea62f230d57ba33f595735734e73" name="a6b5cea62f230d57ba33f595735734e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b5cea62f230d57ba33f595735734e73">&#9670;&#160;</a></span>constructGlyphKey()</h2>
+<a id="a286e626b5b61689f90149ec9db43903f" name="a286e626b5b61689f90149ec9db43903f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286e626b5b61689f90149ec9db43903f">&#9670;&#160;</a></span>constructGlyphKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +271,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outlineThickness</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outlineThickness</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -327,7 +328,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Ascent of the font </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a7100d6c882ff32be224c5f334175f7f6">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a6d2c2bf16174ee72605f3a71ca9a9fef">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a044cc59a3f386a38e7adf0761b79b5e4">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a7100d6c882ff32be224c5f334175f7f6">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ad329e82c251c79abb0066c163182683a">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a6d2c2bf16174ee72605f3a71ca9a9fef">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a044cc59a3f386a38e7adf0761b79b5e4">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -363,7 +364,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Descent of the font </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aac19ef94394c917882456408d7cd61bf">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a2ff33e79f6203a2c2cde570a70f1ae2a">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a05c3182e8c0d36b578e3a80672bd9679">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aac19ef94394c917882456408d7cd61bf">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a880102b39deb21e1add49cf93d94c703">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a2ff33e79f6203a2c2cde570a70f1ae2a">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a05c3182e8c0d36b578e3a80672bd9679">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -399,7 +400,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of font ascent and descent </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#af950ca823651690b5638996dd38c84ef">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad358cd2fbb8c8ec68d818e5e6f3a0232">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a9ccc170ed7ede49a2bff97d066c36bd5">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#af950ca823651690b5638996dd38c84ef">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#aa5d4c8daa25e77e2f253c2e36556826a">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad358cd2fbb8c8ec68d818e5e6f3a0232">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a9ccc170ed7ede49a2bff97d066c36bd5">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -473,7 +474,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The glyph corresponding to codePoint and characterSize </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a690dfb475b4978fbccf848a878b2ecd8">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a44c644a852e0ddaa547b93fad58b6987">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a25fce8b0ba246f2096e1ac6aa31e3114">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a690dfb475b4978fbccf848a878b2ecd8">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#abd5811ee35de5da9d249cf55d8448dd1">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a44c644a852e0ddaa547b93fad58b6987">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a25fce8b0ba246f2096e1ac6aa31e3114">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -527,7 +528,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Kerning value for first and second, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a1fde0885d92484a5405da8b6a809a6a5">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#abffb2d185ca0af60e51aa8920e6aef15">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a4f37ce60057cbc00ce651c843ffece60">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a1fde0885d92484a5405da8b6a809a6a5">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a9b503b44c2bbe028467047fee0774f5f">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#abffb2d185ca0af60e51aa8920e6aef15">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a4f37ce60057cbc00ce651c843ffece60">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -564,7 +565,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Line spacing, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a0a8c57e6510024498fbf7b1d2d66d81d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#af88342bcfacea769ac099c354e9f4bec">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a742f210a600c32877ae7086afdce3a78">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a0a8c57e6510024498fbf7b1d2d66d81d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a559e3c4e31f1ab388d8e08c5970843a2">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#af88342bcfacea769ac099c354e9f4bec">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a742f210a600c32877ae7086afdce3a78">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -605,7 +606,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Texture.html" title="Texture wrapper that internally reuses resources when multiple Texture objects are loaded from the sa...">Texture</a> to render text glyphs with </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a199f3294184d8dfa84f67a3b32173080">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#aa7f1ef0738ab459f95628f0a572edb13">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a965d01037b94505bab6289f1a92100fb">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a199f3294184d8dfa84f67a3b32173080">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ac543b01985dc823c73f697bd223f57c9">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#aa7f1ef0738ab459f95628f0a572edb13">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a965d01037b94505bab6289f1a92100fb">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -641,7 +642,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of the texture that holds the glyphs </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#abd27cf9ccb04b1990e3adcfd1f5c42e2">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a239c666a8328f8274700dae7e5ccb5ee">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a64d7b75fccdc5c1a0646051c6651c8a9">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#abd27cf9ccb04b1990e3adcfd1f5c42e2">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ad3f48a4e395c7c28e7a1f1eb4b362863">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a239c666a8328f8274700dae7e5ccb5ee">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a64d7b75fccdc5c1a0646051c6651c8a9">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -678,7 +679,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Underline position, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aeb5e1ea15a4a8bc66d9863f398f40328">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a56cfab37971497ee5c9f39180a596aae">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a697b5040d3f77c9b5885f9eeca65c7ae">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aeb5e1ea15a4a8bc66d9863f398f40328">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ac308533d591a8b8a8d639a15169e90a2">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a56cfab37971497ee5c9f39180a596aae">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a697b5040d3f77c9b5885f9eeca65c7ae">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -715,7 +716,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Underline thickness, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aa69eba2ad83f1399dcd1dbbca767dfc4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a12539da0e28c61e1a45dda97ed03bdfb">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a90d7afba8240bd383fbdf7f2c24abf54">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aa69eba2ad83f1399dcd1dbbca767dfc4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#abbced0119f1fb8cec7c47a895e7f6995">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a12539da0e28c61e1a45dda97ed03bdfb">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a90d7afba8240bd383fbdf7f2c24abf54">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -751,7 +752,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Does the font contain this character? </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a12ca107e4824cfbae2833eca3e3f1f9d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a206ac50ae994579aaeb7e21f0bf26268">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a878b0a39d251f6b709031396069ae0c4">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a12ca107e4824cfbae2833eca3e3f1f9d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a87f1e7567c0fc7c59885e0ff101e734b">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a206ac50ae994579aaeb7e21f0bf26268">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a878b0a39d251f6b709031396069ae0c4">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -879,7 +880,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the font was loaded successfully, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#adc4704fd5f2cedd121bf3ee2589a9a80">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a23f4361646f55d8a2c16de01145c684d">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a80cdef2d2a6836baf8639455d64c240a">tgui::BackendFontSFML</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#adc4704fd5f2cedd121bf3ee2589a9a80">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#afcfe9c3bb22e7e750143ae5d823f963e">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a23f4361646f55d8a2c16de01145c684d">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a80cdef2d2a6836baf8639455d64c240a">tgui::BackendFontSFML</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -915,7 +916,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a8c7f11213c362a485d7b4f05e0d27257">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a8eeb44133fc6e1bcf2ae743cd7658518">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a880d524c7032380c7224445a88a97ffd">tgui::BackendFontSFML</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a8c7f11213c362a485d7b4f05e0d27257">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#aa5e52193b51ac11cfa624f31dba7502f">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a8eeb44133fc6e1bcf2ae743cd7658518">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a880d524c7032380c7224445a88a97ffd">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
@@ -926,7 +927,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2024 17:01:46 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 14 2024 09:15:10 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.10.0
 </small></address>

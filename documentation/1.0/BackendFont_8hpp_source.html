@@ -67,7 +67,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.3-dev</span>
    </div>
   </td>
  </tr>
@@ -245,7 +245,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendFont.html#a6b5cea62f230d57ba33f595735734e73">  305</a></span>        TGUI_NODISCARD std::uint64_t <a class="code hl_function" href="classtgui_1_1BackendFont.html#a6b5cea62f230d57ba33f595735734e73">constructGlyphKey</a>(<span class="keywordtype">char32_t</span> codePoint, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> characterSize, <span class="keywordtype">bool</span> bold, <span class="keywordtype">float</span> outlineThickness);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendFont.html#a286e626b5b61689f90149ec9db43903f">  305</a></span>        TGUI_NODISCARD std::uint64_t <a class="code hl_function" href="classtgui_1_1BackendFont.html#a286e626b5b61689f90149ec9db43903f">constructGlyphKey</a>(<span class="keywordtype">char32_t</span> codePoint, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> characterSize, <span class="keywordtype">bool</span> bold, <span class="keywordtype">float</span> outlineThickness) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
@@ -262,6 +262,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a0dd114fcc814022d50a22f06ba7f9a48"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a0dd114fcc814022d50a22f06ba7f9a48">tgui::BackendFont::~BackendFont</a></div><div class="ttdeci">virtual ~BackendFont()</div><div class="ttdoc">Virtual destructor.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a21325c4f9c59d7199a2a940aabcf5fa4"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a21325c4f9c59d7199a2a940aabcf5fa4">tgui::BackendFont::hasGlyph</a></div><div class="ttdeci">virtual TGUI_NODISCARD bool hasGlyph(char32_t codePoint) const =0</div><div class="ttdoc">Returns whether a font contains a certain glyph.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a2157aa5ff1d0158dafa73f64bd23ef99"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a2157aa5ff1d0158dafa73f64bd23ef99">tgui::BackendFont::getUnderlineThickness</a></div><div class="ttdeci">virtual TGUI_NODISCARD float getUnderlineThickness(unsigned int characterSize)=0</div><div class="ttdoc">Get the thickness of the underline.</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendFont_html_a286e626b5b61689f90149ec9db43903f"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a286e626b5b61689f90149ec9db43903f">tgui::BackendFont::constructGlyphKey</a></div><div class="ttdeci">TGUI_NODISCARD std::uint64_t constructGlyphKey(char32_t codePoint, unsigned int characterSize, bool bold, float outlineThickness) const</div><div class="ttdoc">Creates a key for each unique character to render.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a2cc10dc2aa57e2fa7064653676d025e4"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a2cc10dc2aa57e2fa7064653676d025e4">tgui::BackendFont::getKerning</a></div><div class="ttdeci">virtual TGUI_NODISCARD float getKerning(char32_t first, char32_t second, unsigned int characterSize, bool bold)=0</div><div class="ttdoc">Returns the kerning offset of two glyphs.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a2d04941b7e29786746ddfec4a6ed78d7"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a2d04941b7e29786746ddfec4a6ed78d7">tgui::BackendFont::loadFromMemory</a></div><div class="ttdeci">bool loadFromMemory(const void *data, std::size_t sizeInBytes)</div><div class="ttdoc">Loads a font from memory.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a2ed48a8ad14ceb608ffbc020dd607a8f"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a2ed48a8ad14ceb608ffbc020dd607a8f">tgui::BackendFont::operator=</a></div><div class="ttdeci">BackendFont &amp; operator=(BackendFont &amp;&amp;other) noexcept</div><div class="ttdoc">Move assignment operator.</div></div>
@@ -271,7 +272,6 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a46ca0ac04c690700e40fcde9b96ba242"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a46ca0ac04c690700e40fcde9b96ba242">tgui::BackendFont::getTexture</a></div><div class="ttdeci">virtual TGUI_NODISCARD std::shared_ptr&lt; BackendTexture &gt; getTexture(unsigned int characterSize, unsigned int &amp;textureVersion)=0</div><div class="ttdoc">Returns the texture that is used to store glyphs of the given character size.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a557b1702dd46317d7df3dc3036c8fd20"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a557b1702dd46317d7df3dc3036c8fd20">tgui::BackendFont::operator=</a></div><div class="ttdeci">BackendFont &amp; operator=(const BackendFont &amp;other)</div><div class="ttdoc">Copy assignment operator.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a62e55b61dd2b6c2beb03dd147f8ac376"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a62e55b61dd2b6c2beb03dd147f8ac376">tgui::BackendFont::getLineSpacing</a></div><div class="ttdeci">virtual TGUI_NODISCARD float getLineSpacing(unsigned int characterSize)=0</div><div class="ttdoc">Returns the line spacing.</div></div>
-<div class="ttc" id="aclasstgui_1_1BackendFont_html_a6b5cea62f230d57ba33f595735734e73"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a6b5cea62f230d57ba33f595735734e73">tgui::BackendFont::constructGlyphKey</a></div><div class="ttdeci">TGUI_NODISCARD std::uint64_t constructGlyphKey(char32_t codePoint, unsigned int characterSize, bool bold, float outlineThickness)</div><div class="ttdoc">Creates a key for each unique character to render.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a7001bf8b8f93d97c04604868c47cf680"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a7001bf8b8f93d97c04604868c47cf680">tgui::BackendFont::getFontHeight</a></div><div class="ttdeci">virtual TGUI_NODISCARD float getFontHeight(unsigned int characterSize)=0</div><div class="ttdoc">Returns the height required to render a line of text.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a736a425e949a881acb960755f3853480"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a736a425e949a881acb960755f3853480">tgui::BackendFont::setSmooth</a></div><div class="ttdeci">virtual void setSmooth(bool smooth)</div><div class="ttdoc">Enable or disable the smooth filter.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendFont_html_a78fc57650782002a92fbc9fbeff56023"><div class="ttname"><a href="classtgui_1_1BackendFont.html#a78fc57650782002a92fbc9fbeff56023">tgui::BackendFont::getDescent</a></div><div class="ttdeci">virtual TGUI_NODISCARD float getDescent(unsigned int characterSize)=0</div><div class="ttdoc">Returns the maximum height of a glyph below the baseline.</div></div>
@@ -290,7 +290,7 @@ $(function() { codefold.init(0); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2024 17:01:45 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 14 2024 09:15:10 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.10.0
 </small></address>

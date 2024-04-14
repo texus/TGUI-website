@@ -6,7 +6,7 @@ redirect_from: "/v0.7-dev/index.html"
 
 TGUI is a cross-platform modern c++ GUI library.
 
-Although TGUI was created for SFML, it now also has built-in backends for SDL and GLFW.
+Although TGUI was created for SFML, it now also has built-in backends for SDL, GLFW and raylib.
 
 <h3>Easy and customizable</h3>
 The gui is easy to use, with only a few lines you can e.g. have a fully functional TextBox on your screen. The widgets can be created by just using colors or by using images, making the look very customizable.
@@ -46,10 +46,10 @@ The gui is easy to use, with only a few lines you can e.g. have a fully function
   </div>
   <div class="HomePageSmallerColumn">
     <a class="light-mode-only" href="/resources/BackendList.png" onclick="return showLightBox(event, href);">
-        <img src="/resources/BackendList.png" width="430" height="235"/>
+        <img src="/resources/BackendList.png" width="430" height="259"/>
     </a>
     <a class="dark-mode-only" href="/resources/BackendList-dark.png" onclick="return showLightBox(event, href);">
-        <img src="/resources/BackendList-dark.png" width="430" height="235"/>
+        <img src="/resources/BackendList-dark.png" width="430" height="259"/>
     </a>
   </div>
 </div>

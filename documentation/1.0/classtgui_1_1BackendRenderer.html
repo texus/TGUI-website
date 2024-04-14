@@ -67,7 +67,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.3-dev</span>
    </div>
   </td>
  </tr>
@@ -138,8 +138,9 @@ Inheritance diagram for tgui::BackendRenderer:</div>
   <map id="tgui::BackendRenderer_map" name="tgui::BackendRenderer_map">
 <area href="classtgui_1_1BackendRendererGLES2.html" title="Backend renderer that uses OpenGL ES 2 or 3 (depending on the loaded OpenGL ES context that you have ..." alt="tgui::BackendRendererGLES2" shape="rect" coords="0,56,194,80"/>
 <area href="classtgui_1_1BackendRendererOpenGL3.html" title="Backend renderer that uses OpenGL 3 or 4 (depending on the loaded OpenGL context that you have to pro..." alt="tgui::BackendRendererOpenGL3" shape="rect" coords="204,56,398,80"/>
-<area href="classtgui_1_1BackendRendererSDL.html" title="Backend renderer that uses SDL_Renderer." alt="tgui::BackendRendererSDL" shape="rect" coords="408,56,602,80"/>
-<area href="classtgui_1_1BackendRendererSFML.html" title="Backend renderer that uses sfml-graphics." alt="tgui::BackendRendererSFML" shape="rect" coords="612,56,806,80"/>
+<area href="classtgui_1_1BackendRendererRaylib.html" title="Backend renderer that uses raylib." alt="tgui::BackendRendererRaylib" shape="rect" coords="408,56,602,80"/>
+<area href="classtgui_1_1BackendRendererSDL.html" title="Backend renderer that uses SDL_Renderer." alt="tgui::BackendRendererSDL" shape="rect" coords="612,56,806,80"/>
+<area href="classtgui_1_1BackendRendererSFML.html" title="Backend renderer that uses sfml-graphics." alt="tgui::BackendRendererSFML" shape="rect" coords="816,56,1010,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -216,7 +217,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderer</
 <p>Creates a new empty texture object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Shared pointer to a new texture object </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#ab38d557fdb37bfe9c9c5d669faf710c4">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3f4bb351e9a0dfcaa38317901ee9aad2">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a01f45be125b6168ea43a0d730ad07c83">tgui::BackendRendererSDL</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">tgui::BackendRendererSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#ab38d557fdb37bfe9c9c5d669faf710c4">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3f4bb351e9a0dfcaa38317901ee9aad2">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a252d73224ed6bbb4f65d485c1f7a876e">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a01f45be125b6168ea43a0d730ad07c83">tgui::BackendRendererSDL</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#a267ce5c5cd4f1775586e3577e9a9afd4">tgui::BackendRendererSFML</a>.</p>
 
 </div>
 </div>
@@ -247,7 +248,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderer</
 <dl class="section return"><dt>Returns</dt><dd>Maximum width and height that you should try to use in a single texture</dd></dl>
 <p>This maximum size is defined by the graphics driver. Most likely this will return 8192 or 16384. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#afa3bbc970f97b1cc217ea63f5cdb06bf">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a8e4b01fae563a322c23b15862d642a7f">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a081da786095639185eba9def7af0d8cb">tgui::BackendRendererSDL</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">tgui::BackendRendererSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#afa3bbc970f97b1cc217ea63f5cdb06bf">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a8e4b01fae563a322c23b15862d642a7f">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a5ab2276d3b165f09bbe673373b35dcdb">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a081da786095639185eba9def7af0d8cb">tgui::BackendRendererSDL</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">tgui::BackendRendererSFML</a>.</p>
 
 </div>
 </div>
@@ -258,7 +259,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderer</
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2024 17:01:46 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 14 2024 09:15:10 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.10.0
 </small></address>

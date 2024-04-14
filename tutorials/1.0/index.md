@@ -55,6 +55,7 @@ canonical: https://tgui.eu/tutorials/latest-stable/
 
 [GLFW_GLES2 backend](backend-glfw-gles2/) &nbsp; (Uses GLFW and FreeType, using OpenGL ES to draw)
 
+[RAYLIB backend](backend-raylib/) &nbsp; (Uses raylib for everything)
 
 ### Introduction tutorials
 

@@ -59,7 +59,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
           </picture>
         </div>
       </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.18) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14)</span></td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;2.0.18) +</span> SDL_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14)</span></td>
     </tr>
     <tr>
       <td><strong>SDL_TTF_OPENGL3</strong></td>
@@ -70,7 +70,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
     </tr>
     <tr>
       <td><strong>SDL_TTF_GLES2</strong></td>
@@ -86,7 +86,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
           </picture>
         </div>
       </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL2_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> SDL_ttf <span class="BackendDependencyVersion">(>=&nbsp;2.0.14) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
     </tr>
     <tr>
       <td><strong>SDL_OPENGL3</strong></td>
@@ -97,7 +97,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
     </tr>
     <tr>
       <td><strong>SDL_GLES2</strong></td>
@@ -108,7 +108,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"></div>
         <div class="platform-icon"></div>
       </td>
-      <td>SDL2 <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;2.0.6) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
     </tr>
     <tr>
       <td><strong>GLFW_OPENGL3</strong></td>
@@ -132,6 +132,17 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       </td>
       <td>GLFW <span class="BackendDependencyVersion">(>=&nbsp;3.2) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL ES <span class="BackendDependencyVersion">(>=&nbsp;2.0)</span></td>
     </tr>
+    <tr>
+      <td><strong>RAYLIB</strong></td>
+      <td>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
+        <div class="platform-icon"></div>
+        <div class="platform-icon"></div>
+      </td>
+      <td>raylib <span class="BackendDependencyVersion">(>=&nbsp;4.2)</span></td>
+    </tr>
   </tbody>
 </table>
 
@@ -154,25 +165,28 @@ Below you find some information about which properties you need to set when CMak
 
 #### SFML
 
-To find SFML, the SFML\_DIR variable needs to be set to the directory that contains the SFMLConfig.cmake file (just the path without the filename). If you built SFML yourself without installing it then this will be your SFML build directory, otherwise the file can be found in the `lib/cmake/SFML` subfolder of your installed or downloaded SFML directory.
+Both SFML 2 and SFML 3 are supported. To find SFML, the SFML\_DIR variable needs to be set to the directory that contains the SFMLConfig.cmake file (just the path without the filename). If you built SFML yourself without installing it then this will be your SFML build directory, otherwise the file can be found in the `lib/cmake/SFML` subfolder of your installed or downloaded SFML directory.
 
 Note that the the file you need is called exactly "SFMLConfig.cmake", the "SFMLConfig.cmake.in" file is not the correct one.
 
 Usually you will use static SFML libraries when linking TGUI statically, but if for some reason you want to link to SFML dynamically while TGUI\_SHARED\_LIBS=FALSE then you can set SFML\_STATIC\_LIBRARIES to FALSE.
 
-Both SFML 2 and 3 are supported. As SFML 3 is still in development, there might however be moments where TGUI temporarily fails to build with SFML 3 after an API breaking change was just made in SFML.
-
 #### SDL
 
-TGUI will first attempt to find an SDL2Config.cmake file. If CMake can't find it and you have such file (usually in a lib/cmake/SDL2 subfolder) then you can set the SDL2\_DIR property to the path containing this file.
+Both SDL 2 and SDL 3 are supported. You can set the `TGUI_USE_SDL3` boolean property to choose whether TGUI should link to SDL2 or SDL3. If SDL3 is automatically found then it will be selected by default, otherwise the default is SDL2.
 
-If you downloaded the Development Libraries from the [SDL download page](https://libsdl.org/download-2.0.php) then you won't have the SDL2Config.cmake file. In this case you can set the SDL2\_PATH property to the root of the downloaded SDL directory.
+TGUI will first attempt to find an SDL2Config.cmake (or SDL3Config.cmake) file. If CMake can't find it and you have such file (usually in a lib/cmake/SDL2 subfolder) then you can set the SDL2\_DIR (or SDL3\_DIR) property to the path containing this file.
+
+If you downloaded the SDL2 Development Libraries from the [SDL download page](https://libsdl.org/download-2.0.php) then you won't have the SDL2Config.cmake file. In this case you can set the SDL2\_PATH property to the root of the downloaded SDL directory.
 
 Note that you should not confuse SDL2\_DIR and SDL2\_PATH. The first one is a directory that contains SDL2Config.cmake, the latter is a directory that contains `include` and `lib` subdirectories (or just an `SDL2.framework` file on macOS). Only one of the two has to be provided.
 
+
 #### SDL_ttf
 
-If SDL\_ttf isn't automatically found then set the SDL2\_TTF\_PATH variable to the root folder of the Development Libraries that you downloaded from the [SDL\_ttf download page](https://www.libsdl.org/projects/SDL_ttf/).
+Both SDL\_ttf 2 and SDL\_ttf 3 are supported. You can set the `TGUI_USE_SDL3` boolean property to choose whether TGUI should link to SDL2\_ttf or SDL3\_ttf. If SDL3\_ttf is automatically found then it will be selected by default, otherwise the default is SDL2\_ttf.
+
+If SDL\_ttf isn't automatically found then set the SDL2\_TTF\_PATH variable to the root folder of the SDL2\_ttf Development Libraries that you downloaded from the [SDL\_ttf download page](https://www.libsdl.org/projects/SDL_ttf/).
 
 The value of SDL2\_TTF\_PATH should be a directory that either contains `include` and `lib` subdirectories, or a directory containing `SDL2_ttf.framework` (for macOS).
 
@@ -191,4 +205,8 @@ CMake provides 3 properties that have to be set in order to find FreeType:
 
 If you downloaded the Windows libraries from [github.com/ubawurinna/freetype-windows-binaries](https://github.com/ubawurinna/freetype-windows-binaries) then you can set FREETYPE\_WINDOWS\_BINARIES\_PATH to the root directory to automatically select the correct include and library files. Otherwise you can ignore this property and set the 3 properties listed above.
 
-Warning: due to a bug in FreeType, version 2.11.0 can NOT be used on Windows. Both newer and older versions will work.
+#### raylib
+
+Both raylib 4 and raylib 5 are supported.
+
+To find raylib, set `raylib_ROOT` to the directory of the installed raylib files (the folder should contain `include` and `lib` subfolders and `lib/cmake/raylib/raylib-config.cmake` must exists).

@@ -2,7 +2,7 @@ var searchData=
 [
   ['m_5fenabled_0',['m_enabled',['../classtgui_1_1Widget.html#a86e684c6a1af98b8360feac986f372ee',1,'tgui::Widget']]],
   ['m_5fglobalproperties_1',['m_globalProperties',['../classtgui_1_1Theme.html#a5079ea79e69d095f9d3c36e6955e00a5',1,'tgui::Theme']]],
-  ['m_5fnextrow_2',['m_nextRow',['../classtgui_1_1BackendFontFreetype.html#a534b5453b1ba3eb99dedfd48e3139950',1,'tgui::BackendFontFreetype']]],
+  ['m_5fnextrow_2',['m_nextRow',['../classtgui_1_1BackendFontFreetype.html#a534b5453b1ba3eb99dedfd48e3139950',1,'tgui::BackendFontFreetype::m_nextRow'],['../classtgui_1_1BackendFontRaylib.html#a164dd6d4f310fba647dc9fda7f130bfb',1,'tgui::BackendFontRaylib::m_nextRow']]],
   ['m_5fposition_3',['m_position',['../classtgui_1_1Widget.html#a10b851197af4cbeb40a3a2b6372beb2c',1,'tgui::Widget']]],
   ['m_5frenderers_4',['m_renderers',['../classtgui_1_1Theme.html#a345d8a49665316af5793d92a62a9ae8a',1,'tgui::Theme']]],
   ['m_5fsize_5',['m_size',['../classtgui_1_1Widget.html#a0b0322cad4ececac6481830d373bd26d',1,'tgui::Widget']]],

@@ -26,6 +26,8 @@ Examples with the minimum code of each backend:
 
 [GLFW_GLES2 backend](backend-glfw-gles2/)
 
+[RAYLIB backend](backend-raylib/)
+
 The examples below don't contain a main function because the exact code depends on the backend you are using. The examples start in a "runExample" function, which is called as shown in the backend examples above.
 
 [Scalable login screen](scalable-login-screen/)

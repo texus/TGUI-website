@@ -33,7 +33,7 @@ var searchData=
   ['tolower_30',['toLower',['../classtgui_1_1String.html#a470fd7f319af28d02cd387578b1709a1',1,'tgui::String']]],
   ['tooltip_31',['ToolTip',['../classtgui_1_1ToolTip.html',1,'tgui']]],
   ['top_32',['Top',['../classtgui_1_1TabContainer.html#acd709f0ac40e3afd2b3efe8271750d0fac3dd0b5470d517766fa3f6cd567bc385',1,'tgui::TabContainer::Top'],['../classtgui_1_1Label.html#a2974ef71da25253342a8b3660b6d094caa4ffdcf0dc1f31b9acaf295d75b51d00',1,'tgui::Label::Top']]],
-  ['top_33',['top',['../classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384',1,'tgui::Rect::top'],['../structtgui_1_1BackendFontFreetype_1_1Row.html#ae17b21cdcc6d6567381bf2a546b3fdca',1,'tgui::BackendFontFreetype::Row::top']]],
+  ['top_33',['top',['../classtgui_1_1Rect.html#abe3d260b6711a2037912fad26b44b384',1,'tgui::Rect::top'],['../structtgui_1_1BackendFontFreetype_1_1Row.html#ae17b21cdcc6d6567381bf2a546b3fdca',1,'tgui::BackendFontFreetype::Row::top'],['../structtgui_1_1BackendFontRaylib_1_1Row.html#ace24a62c77ea9d9138e1cf6f24b20c5d',1,'tgui::BackendFontRaylib::Row::top']]],
   ['top_34',['Top',['../namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1aa4ffdcf0dc1f31b9acaf295d75b51d00',1,'tgui']]],
   ['toptobottom_35',['TopToBottom',['../classtgui_1_1ProgressBar.html#ab11de6f12673d6c8c357f0fbf16fb85eaf2b1a19a8d0f523d042f9ede79a80804',1,'tgui::ProgressBar']]],
   ['touint_36',['toUInt',['../classtgui_1_1String.html#af5cfbc17df92d1f7fe0afa5766885051',1,'tgui::String']]],
@@ -47,6 +47,6 @@ var searchData=
   ['treeviewrenderer_44',['TreeViewRenderer',['../classtgui_1_1TreeViewRenderer.html',1,'tgui']]],
   ['trim_45',['trim',['../classtgui_1_1String.html#a20e5b5b1815b24cb164472ae089e1e35',1,'tgui::String']]],
   ['twofingerscrolldetect_46',['TwoFingerScrollDetect',['../classtgui_1_1TwoFingerScrollDetect.html',1,'tgui']]],
-  ['type_47',['type',['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event']]],
-  ['type_48',['Type',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type']]]
+  ['type_47',['Type',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5',1,'tgui::Cursor::Type'],['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0a',1,'tgui::Event::Type']]],
+  ['type_48',['type',['../structtgui_1_1Event.html#a0671717b6d59bad5a8ad746bab918ad3',1,'tgui::Event']]]
 ];
