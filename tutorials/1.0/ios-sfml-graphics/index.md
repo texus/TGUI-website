@@ -31,7 +31,7 @@ cmake -S . -B build-ios
   -DCMAKE_OSX_ARCHITECTURES=arm64 \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=13.0 \
   -DCMAKE_INSTALL_PREFIX=`pwd`/install-ios \
-  -DTGUI_BACKEND=SFML_GRAPHICS
+  -DTGUI_BACKEND=SFML_GRAPHICS \
   -DFreeType_LIB=/Path/To/SFML/extlibs/libs-ios/libfreetype.a
 ```
 
