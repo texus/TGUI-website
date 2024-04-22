@@ -17,8 +17,6 @@ sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install
 
 The TGUI source code can be downloaded from the [download page](/download).
 
-TGUI currently only supports building a static library for iOS, there is no option to build a dynamic library or framework.
-
 ### CMake
 
 For information about cross-compiling options for iOS with CMake that aren't specific to TGUI, see [CMake's toolchains manual](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-ios-tvos-or-watchos).
@@ -31,6 +29,7 @@ cmake -S . -B build-ios
   -DCMAKE_OSX_ARCHITECTURES=arm64 \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=13.0 \
   -DCMAKE_INSTALL_PREFIX=`pwd`/install-ios \
+  -DBUILD_SHARED_LIBS=FALSE \
   -DTGUI_BACKEND=SFML_GRAPHICS \
   -DFreeType_LIB=/Path/To/SFML/extlibs/libs-ios/libfreetype.a
 ```
@@ -42,6 +41,7 @@ Here is an explanation of each option:
 - `-DCMAKE_OSX_ARCHITECTURES=arm64`: Specifies a list of cpu architectures for which to build the library, seperated by semicolons if multiple.
 - `-DCMAKE_OSX_DEPLOYMENT_TARGET=13.0`: Specifies the minimum iOS version to build for.
 - ``-DCMAKE_INSTALL_PREFIX=`pwd`/install-ios``: Specifies that the library will be installed in a new "install-ios" folder in the current working directory.
+- `-DBUILD_SHARED_LIBS=FALSE`: Build a static library (file with `.a` extension)
 - `-DTGUI_BACKEND=SFML_GRAPHICS`: Specifies that TGUI should be build with the SFML_GRAPHICS backend
 - `-DFreeType_LIB=/Path/To/SFML/extlibs/libs-ios/libfreetype.a`: SFML might find libraries for macOS instead of iOS when searching for its dependencies. This is most likely going to happen for FreeType. So tell SFML which library it should use.
 
