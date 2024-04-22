@@ -21,7 +21,7 @@ For information about cross-compiling options for iOS with CMake that aren't spe
 
 Execute something similar to the following in a terminal from within the TGUI folder:
 ```
-cmake -S . -B build-ios
+cmake -S . -B build-ios \
   -GXcode \
   -DCMAKE_SYSTEM_NAME=iOS \
   -DCMAKE_OSX_ARCHITECTURES=arm64 \
