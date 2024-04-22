@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Download
+redirect_from: /bindings/index.html
 ---
 
 ### TGUI 1.x-dev
