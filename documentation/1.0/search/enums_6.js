@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mousebutton_0',['MouseButton',['../structtgui_1_1Event.html#a369666e9b529309b223263eb0297ac9b',1,'tgui::Event']]]
+  ['operation_0',['Operation',['../classtgui_1_1Layout.html#a35bfb195a1f1e6fd4ed82b0568feb81b',1,'tgui::Layout']]]
 ];

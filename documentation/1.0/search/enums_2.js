@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expanddirection_0',['ExpandDirection',['../classtgui_1_1ComboBox.html#a4fe26aaccdc327630e5f1034bee16fc8',1,'tgui::ComboBox']]]
+  ['filldirection_0',['FillDirection',['../classtgui_1_1ProgressBar.html#ab11de6f12673d6c8c357f0fbf16fb85e',1,'tgui::ProgressBar']]]
 ];

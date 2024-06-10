@@ -16,7 +16,7 @@ var searchData=
   ['hidewitheffect_13',['hideWithEffect',['../classtgui_1_1Widget.html#afacd2fa30e6e2b15ac2234ec581e3262',1,'tgui::Widget']]],
   ['home_14',['Home',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a8cf04a9734132302f96da8e113e80ce5',1,'tgui::Event']]],
   ['horizontal_15',['Horizontal',['../classtgui_1_1Sprite.html#a3ebf7132d60f5c6f4ca0c3ebd60ea9f8ac1b5fa03ecdb95d4a45dd1c40b02527f',1,'tgui::Sprite']]],
-  ['horizontalalignment_16',['HorizontalAlignment',['../classtgui_1_1Label.html#afcabdb6aa458f5883f6831ccc731cb3b',1,'tgui::Label']]],
+  ['horizontalalignment_16',['HorizontalAlignment',['../classtgui_1_1Label.html#a0078a0496e930f41e73b970ab8c08d05',1,'tgui::Label::HorizontalAlignment'],['../namespacetgui.html#a530165567f6d7efbdbc10906b81d4758',1,'tgui::HorizontalAlignment']]],
   ['horizontallayout_17',['HorizontalLayout',['../classtgui_1_1HorizontalLayout.html',1,'tgui']]],
   ['horizontalwrap_18',['HorizontalWrap',['../classtgui_1_1HorizontalWrap.html',1,'tgui']]]
 ];

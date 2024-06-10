@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operation_0',['Operation',['../classtgui_1_1Layout.html#a35bfb195a1f1e6fd4ed82b0568feb81b',1,'tgui::Layout']]]
+  ['policy_0',['Policy',['../classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7d',1,'tgui::Scrollbar']]]
 ];

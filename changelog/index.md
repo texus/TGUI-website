@@ -5,6 +5,22 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 3
+    patches:
+    - version: 0
+      date: 10 June 2024
+      changes: |
+        New backend: raylib
+        New widget: EditBoxSlider ([PR #238](https://github.com/texus/TGUI/pull/238))
+        All widgets can now be configured to ignore mouse events
+        Added HorizontalLayout and VerticalLayout to replace widget-specific enums
+        Added method to associate user data to combo box items
+        Added onWindowFocus and onWindowUnfocus signals
+        Renamed isKeptInParent to getKeepInParent in ChildWindow
+        Renamed limitTextWidth to setTextWidthLimited in EditBox
+        String::fromNumber now supports int8_t (but no longer accepts pointers)
+        BackendTextureSFML::getInternalTexture() now returns a pointer
+        BackendFontSFML::getInternalFont() now return a pointer
   - version: 2
     patches:
     - version: 0
