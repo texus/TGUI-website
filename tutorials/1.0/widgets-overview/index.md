@@ -361,6 +361,89 @@ When the Texture property is set in the renderer, the BackgroundColor renderer p
 </details>
 </div>
 
+<!-- EditBoxSlider -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="EditBoxSlider" markdown="1">
+<summary><b>EditBoxSlider</b></summary>
+
+The `EditBoxSlider` widget provides a numeric text field with a slider below it.
+
+![EditBoxSlider](/resources/WidgetsOverview/EditBoxSlider.png){:width="200" height="39"}
+
+Similar widgets:
+- If instead of a slider below the edit box you want arrows next to it then check out the <a href="#SpinControl">SpinControl</a> widget instead
+
+Documentation: [EditBoxSlider](https://tgui.eu/documentation/1.0/classtgui_1_1EditBoxSlider.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (EditBoxSliderRenderer does not exist)
+
+**Example usage**
+```c++
+editBoxSlider->setMinimum(10);
+editBoxSlider->setMaximum(20);
+editBoxSlider->setStep(0.1);
+editBoxSlider->setValue(15);
+editBoxSlider->setDecimalPlaces(1); // Display "15.0" instead of "15"
+editBoxSlider->setTextAlignment(tgui::HorizontalAlignment::Center);
+
+editBoxSlider->onValueChange([](float value){
+    std::cerr << "EditBoxSlider value was changed to " << value << "\n";
+});
+```
+
+**Notes**
+
+The renderer for the edit box and slider can be accessed with `getEditBoxRenderer()` and `getSliderRenderer()`.
+
+</details>
+</div>
+
+<!-- FileDialog -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="FileDialog" markdown="1">
+<summary><b>FileDialog</b></summary>
+
+The `FileDialog` widget allows you to select a file from the file system.
+
+![FileDialog (White theme)](/resources/WidgetsOverview/FileDialog_White.png){:width="602" height="423"} ![FileDialog (Black theme)](/resources/WidgetsOverview/FileDialog_Black.png){:width="602" height="423"}
+
+Documentation: [FileDialog](https://tgui.eu/documentation/1.0/classtgui_1_1FileDialog.html), [FileDialogRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1FileDialogRenderer.html)
+
+**Example usage**
+```c++
+// Open dialog where you can select multiple files
+auto openFileDialog = tgui::FileDialog::create("Open file", "Open");
+openFileDialog->setMultiSelect(true);
+openFileDialog->setPath(tgui::Filesystem::getHomeDirectory());
+openFileDialog->setFileTypeFilters({ {"Images", {"*.png", "*.jpg"}}, {"All files", {}} }, 1);
+
+// Save dialog
+auto saveFileDialog = tgui::FileDialog::create("Save file", "Save");
+saveFileDialog->setFileMustExist(false);
+saveFileDialog->setFilename("config.txt");
+
+openFileDialog->onFileSelect([](const std::vector<tgui::Filesystem::Path>& paths){
+    for (auto path : paths)
+        std::cerr << path.asString() << "\n";
+});
+
+saveFileDialog->onFileSelect([](const tgui::String& filePath){
+    std::cerr << "Selected file " << filePath << "\n";
+});
+saveFileDialog->onCancel([]{
+    std::cerr << "No file selected.\n";
+});
+```
+
+**Notes**
+
+You can still interact with widgets outside the file dialog. If you do not want this, then you should e.g. place a semi-transparent black panel behind the file dialog that fills the entire screen, and then remove it again when the window is closed.
+
+The file dialog is a child window that remains in the main window. TGUI only renders to the window attached to the gui, if you instead want a new dialog window then it might be a better choice to use [tiny file dialogs](https://sourceforge.net/projects/tinyfiledialogs/) or [Portable File Dialogs](https://github.com/samhocevar/portable-file-dialogs).
+
+</details>
+</div>
+
 <!-- Grid -->
 
 <div class="SmallerMargin">
@@ -785,6 +868,8 @@ messageBox->onButtonPress([msgBox=messageBox.get()](const tgui::String& button){
 **Notes**
 
 You can still interact with widgets outside the message box. If you do not want this, then you should e.g. place a semi-transparent black panel behind the message box that fills the entire screen, and then remove it again when the window is closed.
+
+The message box is a child window that remains in the main window. TGUI only renders to the window attached to the gui, if you instead want a new dialog window then it might be a better choice to use [tiny file dialogs](https://sourceforge.net/projects/tinyfiledialogs/) or [Portable File Dialogs](https://github.com/samhocevar/portable-file-dialogs).
 
 When the TextureTitleBar property is set in the renderer, the TitleBarColor renderer property will be ignored.
 
@@ -1280,6 +1365,7 @@ The `SpinControl` widget provides an edit box with an up and down arrow next to 
 
 Similar widgets:
 - If you just want the arrows without the edit box then check out the <a href="#SpinButton">SpinButton</a> widget instead
+- If you want a slider below the edit box instead of arrows next to it then check out the <a href="#EditBoxSlider">EditBoxSlider</a> widget instead
 
 Documentation: [SpinControl](https://tgui.eu/documentation/1.0/classtgui_1_1SpinControl.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (SpinControlRenderer does not exist)
 
@@ -1298,7 +1384,7 @@ spinControl->onValueChange([](float value){
 
 **Notes**
 
-The renderer for the edit box and spin button can be accessed with getSpinTextRenderer() and getSpinButtonRenderer().
+The renderer for the edit box and spin button can be accessed with `getSpinTextRenderer()` and `getSpinButtonRenderer()`.
 
 </details>
 </div>
