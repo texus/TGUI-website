@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -279,12 +279,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00ec4db8978dbd84686db2757c261ee0" id="r_a00ec4db8978dbd84686db2757c261ee0"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00ec4db8978dbd84686db2757c261ee0">getVerticalScrollbarValue</a> () const</td></tr>
 <tr class="memdesc:a00ec4db8978dbd84686db2757c261ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the thumb position of the vertical scrollbar.  <br /></td></tr>
 <tr class="separator:a00ec4db8978dbd84686db2757c261ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246d55572577914e7f2d6f620e5ffc35" id="r_a246d55572577914e7f2d6f620e5ffc35"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a246d55572577914e7f2d6f620e5ffc35">getVerticalScrollbarMaxValue</a> () const</td></tr>
+<tr class="memdesc:a246d55572577914e7f2d6f620e5ffc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum thumb position of the vertical scrollbar.  <br /></td></tr>
+<tr class="separator:a246d55572577914e7f2d6f620e5ffc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318713b3c22b64868a17c193b9332456" id="r_a318713b3c22b64868a17c193b9332456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a318713b3c22b64868a17c193b9332456">setHorizontalScrollbarValue</a> (unsigned <a class="el" href="classint.html">int</a> value)</td></tr>
 <tr class="memdesc:a318713b3c22b64868a17c193b9332456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the thumb position of the horizontal scrollbar.  <br /></td></tr>
 <tr class="separator:a318713b3c22b64868a17c193b9332456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfaa64cbc34cc5e7e218fff25f590f69" id="r_adfaa64cbc34cc5e7e218fff25f590f69"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfaa64cbc34cc5e7e218fff25f590f69">getHorizontalScrollbarValue</a> () const</td></tr>
 <tr class="memdesc:adfaa64cbc34cc5e7e218fff25f590f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the thumb position of the horizontal scrollbar.  <br /></td></tr>
 <tr class="separator:adfaa64cbc34cc5e7e218fff25f590f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae008538b090b29e1576234e2c12c4e12" id="r_ae008538b090b29e1576234e2c12c4e12"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae008538b090b29e1576234e2c12c4e12">getHorizontalScrollbarMaxValue</a> () const</td></tr>
+<tr class="memdesc:ae008538b090b29e1576234e2c12c4e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum thumb position of the horizontal scrollbar.  <br /></td></tr>
+<tr class="separator:ae008538b090b29e1576234e2c12c4e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abafea27624cd32fd36673cfb48e54a" id="r_a9abafea27624cd32fd36673cfb48e54a"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9abafea27624cd32fd36673cfb48e54a">isMouseOnWidget</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override</td></tr>
 <tr class="memdesc:a9abafea27624cd32fd36673cfb48e54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <br /></td></tr>
 <tr class="separator:a9abafea27624cd32fd36673cfb48e54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1338,6 +1344,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="ae008538b090b29e1576234e2c12c4e12" name="ae008538b090b29e1576234e2c12c4e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae008538b090b29e1576234e2c12c4e12">&#9670;&#160;</a></span>getHorizontalScrollbarMaxValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a> tgui::TextArea::getHorizontalScrollbarMaxValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum thumb position of the horizontal scrollbar. </p>
+<dl class="section return"><dt>Returns</dt><dd>Maximum value of the horizontal scrollbar</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
+
+</div>
+</div>
 <a id="af502b9df564455ad86f354d385f84fd7" name="af502b9df564455ad86f354d385f84fd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af502b9df564455ad86f354d385f84fd7">&#9670;&#160;</a></span>getHorizontalScrollbarPolicy()</h2>
 
@@ -1653,6 +1680,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Returns the text of the text area. </p>
 <dl class="section return"><dt>Returns</dt><dd>The text that is currently inside the text area </dd></dl>
+
+</div>
+</div>
+<a id="a246d55572577914e7f2d6f620e5ffc35" name="a246d55572577914e7f2d6f620e5ffc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246d55572577914e7f2d6f620e5ffc35">&#9670;&#160;</a></span>getVerticalScrollbarMaxValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD unsigned <a class="el" href="classint.html">int</a> tgui::TextArea::getVerticalScrollbarMaxValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum thumb position of the vertical scrollbar. </p>
+<dl class="section return"><dt>Returns</dt><dd>Maximum value of the vertical scrollbar</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
 
 </div>
 </div>
@@ -2554,7 +2602,7 @@ Pressing the Tab key will not affect the <a class="el" href="classtgui_1_1TextAr
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:20 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

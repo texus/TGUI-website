@@ -36,7 +36,7 @@ The `BitmapButton` widget provides a button that has a small icon next to the te
 Similar widgets:
 - If you don't want an icon and just want a button with a background texture then you should still use the <a href="#Button">Button</a> widget instead
 
-Documentation: [BitmapButton](https://tgui.eu/documentation/1.0/classtgui_1_1BitmapButton.html), [ButtonRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ButtonRenderer.html) (BitmapButtonRenderer does not exist)
+Documentation: [BitmapButton](/documentation/1.0/classtgui_1_1BitmapButton.html), [ButtonRenderer](/documentation/1.0/classtgui_1_1ButtonRenderer.html) (BitmapButtonRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -72,7 +72,7 @@ Similar widgets:
 - If you want the button to remain in Down state until clicking it again, then check out the <a href="#ToggleButton">ToggleButton</a> widget
 - If you want a small icon next to the button text then check out the <a href="#BitmapButton">BitmapButton</a> widget
 
-Documentation: [Button](https://tgui.eu/documentation/1.0/classtgui_1_1Button.html), [ButtonRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ButtonRenderer.html)
+Documentation: [Button](/documentation/1.0/classtgui_1_1Button.html), [ButtonRenderer](/documentation/1.0/classtgui_1_1ButtonRenderer.html)
 
 **Example usage**
 ```c++
@@ -103,10 +103,10 @@ The `Canvas` widget provides a way to render custom contents.
 There isn't actually a widget called `Canvas`, but every rendering backend has a backend-specific canvas widget to render on. For more information and examples on how to use each canvas, check the [Canvas tutorial](../canvas/).
 
 Documentation:
-- [CanvasSFML](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasSFML.html)
-- [CanvasSDL](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasSDL.html)
-- [CanvasOpenGL3](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasOpenGL3.html)
-- [CanvasGLES2](https://tgui.eu/documentation/1.0/classtgui_1_1CanvasGLES2.html)
+- [CanvasSFML](/documentation/1.0/classtgui_1_1CanvasSFML.html)
+- [CanvasSDL](/documentation/1.0/classtgui_1_1CanvasSDL.html)
+- [CanvasOpenGL3](/documentation/1.0/classtgui_1_1CanvasOpenGL3.html)
+- [CanvasGLES2](/documentation/1.0/classtgui_1_1CanvasGLES2.html)
 
 </details>
 </div>
@@ -124,7 +124,7 @@ The `ChatBox` widget provides a multi-line label where each line can be given it
 Similar widgets:
 - If different text styles within a line are needed then check out the <a href="#RichTextLabel">RichTextLabel</a> widget instead
 
-Documentation: [ChatBox](https://tgui.eu/documentation/1.0/classtgui_1_1ChatBox.html), [ChatBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ChatBoxRenderer.html)
+Documentation: [ChatBox](/documentation/1.0/classtgui_1_1ChatBox.html), [ChatBoxRenderer](/documentation/1.0/classtgui_1_1ChatBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -156,7 +156,7 @@ Similar widgets:
 - If only one option should be selectable at the same time then you can use <a href="#RadioButton">RadioButton</a> instead
 - If you don't need text next to the check box then you can also check out the <a href="#ToggleButton">ToggleButton</a> widget
 
-Documentation: [CheckBox](https://tgui.eu/documentation/1.0/classtgui_1_1CheckBox.html), [CheckBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1CheckBoxRenderer.html)
+Documentation: [CheckBox](/documentation/1.0/classtgui_1_1CheckBox.html), [CheckBoxRenderer](/documentation/1.0/classtgui_1_1CheckBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -189,7 +189,7 @@ The `ChildWindow` widget provides a way to have child windows, which are esentia
 
 ![ChildWindow](/resources/WidgetsOverview/ChildWindow.png){:width="400" height="78"}
 
-Documentation: [ChildWindow](https://tgui.eu/documentation/1.0/classtgui_1_1ChildWindow.html), [ChildWindowRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ChildWindowRenderer.html)
+Documentation: [ChildWindow](/documentation/1.0/classtgui_1_1ChildWindow.html), [ChildWindowRenderer](/documentation/1.0/classtgui_1_1ChildWindowRenderer.html)
 
 **Example usage**
 ```c++
@@ -227,7 +227,7 @@ When the TextureBackground property is set in the renderer, the BackgroundColor 
 
 The `ClickableWidget` widget provides an invisible clickable rectangle. It is also used as the base class for several other widgets that inherit the simple mouse click events (e.g. Picture, Button, ...).
 
-Documentation: [ClickableWidget](https://tgui.eu/documentation/1.0/classtgui_1_1ClickableWidget.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (ClickableWidgetRenderer does not exist)
+Documentation: [ClickableWidget](/documentation/1.0/classtgui_1_1ClickableWidget.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (ClickableWidgetRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -255,7 +255,7 @@ The `ColorPicker` widget provides a child window in which a color can be selecte
 
 ![ColorPicker](/resources/WidgetsOverview/ColorPicker.png){:width="537" height="243"}
 
-Documentation: [ColorPicker](https://tgui.eu/documentation/1.0/classtgui_1_1ColorPicker.html), [ColorPickerRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ColorPickerRenderer.html)
+Documentation: [ColorPicker](/documentation/1.0/classtgui_1_1ColorPicker.html), [ColorPickerRenderer](/documentation/1.0/classtgui_1_1ColorPickerRenderer.html)
 
 **Example usage**
 ```c++
@@ -299,7 +299,7 @@ The `ComboBox` widget provides a way to select an item from a drop-down list.
 
 ![ComboBox](/resources/WidgetsOverview/ComboBox.png){:width="270" height="118"}
 
-Documentation: [ComboBox](https://tgui.eu/documentation/1.0/classtgui_1_1ComboBox.html), [ComboBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ComboBoxRenderer.html)
+Documentation: [ComboBox](/documentation/1.0/classtgui_1_1ComboBox.html), [ComboBoxRenderer](/documentation/1.0/classtgui_1_1ComboBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -338,7 +338,7 @@ The `EditBox` widget provides a single-line text field.
 Similar widgets:
 - If you need a multi-line text field then check out the <a href="#TextArea">TextArea</a> widget instead
 
-Documentation: [EditBox](https://tgui.eu/documentation/1.0/classtgui_1_1EditBox.html), [EditBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1EditBoxRenderer.html)
+Documentation: [EditBox](/documentation/1.0/classtgui_1_1EditBox.html), [EditBoxRenderer](/documentation/1.0/classtgui_1_1EditBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -374,7 +374,7 @@ The `EditBoxSlider` widget provides a numeric text field with a slider below it.
 Similar widgets:
 - If instead of a slider below the edit box you want arrows next to it then check out the <a href="#SpinControl">SpinControl</a> widget instead
 
-Documentation: [EditBoxSlider](https://tgui.eu/documentation/1.0/classtgui_1_1EditBoxSlider.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (EditBoxSliderRenderer does not exist)
+Documentation: [EditBoxSlider](/documentation/1.0/classtgui_1_1EditBoxSlider.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (EditBoxSliderRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -407,7 +407,7 @@ The `FileDialog` widget allows you to select a file from the file system.
 
 ![FileDialog (White theme)](/resources/WidgetsOverview/FileDialog_White.png){:width="602" height="423"} ![FileDialog (Black theme)](/resources/WidgetsOverview/FileDialog_Black.png){:width="602" height="423"}
 
-Documentation: [FileDialog](https://tgui.eu/documentation/1.0/classtgui_1_1FileDialog.html), [FileDialogRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1FileDialogRenderer.html)
+Documentation: [FileDialog](/documentation/1.0/classtgui_1_1FileDialog.html), [FileDialogRenderer](/documentation/1.0/classtgui_1_1FileDialogRenderer.html)
 
 **Example usage**
 ```c++
@@ -456,7 +456,7 @@ Similar widgets:
 - If widgets are always added to the same row until it is full then check out the <a href="#HorizontalWrap">HorizontalWrap</a> widget
 - If the size of the child widgets should also be determined by the grid size then maybe <a href="#HorizontalLayout">HorizontalLayout</a> and <a href="#VerticalLayout">VerticalLayout</a> would be better options
 
-Documentation: [Grid](https://tgui.eu/documentation/1.0/classtgui_1_1Grid.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (GridRenderer does not exist)
+Documentation: [Grid](/documentation/1.0/classtgui_1_1Grid.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (GridRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -507,7 +507,7 @@ The `Group` widget provides an invisible rectangle that holds a collection of wi
 Similar widgets:
 - If you need a background or borders then use the <a href="#Panel">Panel</a> widget instead
 
-Documentation: [Group](https://tgui.eu/documentation/1.0/classtgui_1_1Group.html), [GroupRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1GroupRenderer.html)
+Documentation: [Group](/documentation/1.0/classtgui_1_1Group.html), [GroupRenderer](/documentation/1.0/classtgui_1_1GroupRenderer.html)
 
 **Example usage**
 ```c++
@@ -542,7 +542,7 @@ Similar widgets:
 - If you need to place widgets beneath each other then check out the <a href="#VerticalLayout">VerticalLayout</a> widget instead
 - If you only want to automatically position widgets but give them a manual size, then check out the <a href="#Grid">Grid</a> widget instead
 
-Documentation: [HorizontalLayout](https://tgui.eu/documentation/1.0/classtgui_1_1HorizontalLayout.html), [BoxLayoutRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (HorizontalLayoutRenderer does not exist)
+Documentation: [HorizontalLayout](/documentation/1.0/classtgui_1_1HorizontalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (HorizontalLayoutRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -581,7 +581,7 @@ The `HorizontalWrap` widget provides a way to automatically position widgets bes
 Similar widgets:
 - If you want the widgets placed in a grid but want to control the row and column of each widget then check out the <a href="#Grid">Grid</a> widget instead
 
-Documentation: [HorizontalWrap](https://tgui.eu/documentation/1.0/classtgui_1_1HorizontalWrap.html), [BoxLayoutRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (HorizontalWrapRenderer does not exist)
+Documentation: [HorizontalWrap](/documentation/1.0/classtgui_1_1HorizontalWrap.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (HorizontalWrapRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -621,7 +621,7 @@ The `Knob` widget provides a circular dial that can be rotated to the wanted val
 Similar widgets:
 - If you want to select the value on a straight line then use the <a href="#Slider">Slider</a> widget instead
 
-Documentation: [Knob](https://tgui.eu/documentation/1.0/classtgui_1_1Knob.html), [KnobRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1KnobRenderer.html)
+Documentation: [Knob](/documentation/1.0/classtgui_1_1Knob.html), [KnobRenderer](/documentation/1.0/classtgui_1_1KnobRenderer.html)
 
 **Example usage**
 ```c++
@@ -667,7 +667,7 @@ The `Label` widget provides a way to display some non-interactive text. This can
 Similar widgets:
 - If the text formatting (e.g. color) should be different in parts of the label then check out the <a href="#RichTextLabel">RichTextLabel</a> widget instead
 
-Documentation: [Label](https://tgui.eu/documentation/1.0/classtgui_1_1Label.html), [LabelRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1LabelRenderer.html)
+Documentation: [Label](/documentation/1.0/classtgui_1_1Label.html), [LabelRenderer](/documentation/1.0/classtgui_1_1LabelRenderer.html)
 
 **Example usage**
 ```c++
@@ -712,7 +712,7 @@ The `ListBox` widget provides a list of selectable items.
 Similar widgets:
 - If you need a header, multiple columns, lines between items or an icon before the text, then you should check out the <a href="#ListView">ListView</a> widget instead
 
-Documentation: [ListBox](https://tgui.eu/documentation/1.0/classtgui_1_1ListBox.html), [ListBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ListBoxRenderer.html)
+Documentation: [ListBox](/documentation/1.0/classtgui_1_1ListBox.html), [ListBoxRenderer](/documentation/1.0/classtgui_1_1ListBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -750,7 +750,7 @@ The `ListView` widget provides a list of selectable items, potentially with mult
 Similar widgets:
 - If you only need one column and don't need a header, lines between items or an icon before the text, then you should check out the <a href="#ListBox">ListBox</a> widget instead
 
-Documentation: [ListView](https://tgui.eu/documentation/1.0/classtgui_1_1ListView.html), [ListViewRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ListViewRenderer.html)
+Documentation: [ListView](/documentation/1.0/classtgui_1_1ListView.html), [ListViewRenderer](/documentation/1.0/classtgui_1_1ListViewRenderer.html)
 
 **Example usage**
 ```c++
@@ -797,7 +797,7 @@ The `MenuBar` widget provides a menu bar that can open menus below or above it.
 
 ![MenuBar](/resources/WidgetsOverview/MenuBar.png){:width="158" height="86"}
 
-Documentation: [MenuBar](https://tgui.eu/documentation/1.0/classtgui_1_1MenuBar.html), [MenuBarRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1MenuBarRenderer.html)
+Documentation: [MenuBar](/documentation/1.0/classtgui_1_1MenuBar.html), [MenuBarRenderer](/documentation/1.0/classtgui_1_1MenuBarRenderer.html)
 
 **Example usage**
 ```c++
@@ -847,7 +847,7 @@ The `MessageBox` widget provides a child window that displays a message with som
 
 ![MessageBox](/resources/WidgetsOverview/MessageBox.png){:width="252" height="96"}
 
-Documentation: [MessageBox](https://tgui.eu/documentation/1.0/classtgui_1_1MessageBox.html), [MessageBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1MessageBoxRenderer.html)
+Documentation: [MessageBox](/documentation/1.0/classtgui_1_1MessageBox.html), [MessageBoxRenderer](/documentation/1.0/classtgui_1_1MessageBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -889,7 +889,7 @@ The `Panel` widget provides a collection of widgets with a background behind the
 Similar widgets:
 - If the panel needs to be invisible then check out the <a href="#Group">Group</a> widget instead
 
-Documentation: [Panel](https://tgui.eu/documentation/1.0/classtgui_1_1Panel.html), [PanelRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1PanelRenderer.html)
+Documentation: [Panel](/documentation/1.0/classtgui_1_1Panel.html), [PanelRenderer](/documentation/1.0/classtgui_1_1PanelRenderer.html)
 
 **Example usage**
 ```c++
@@ -918,7 +918,7 @@ The `PanelListBox` widget provides a list of selectable items, where each item i
 Similar widgets:
 - If each item should only contain a simple label then check out the <a href="#ListBox">ListBox</a> widget instead
 
-Documentation: [PanelListBox](https://tgui.eu/documentation/1.0/classtgui_1_1PanelListBox.html), [PanelListBoxRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1PanelListBoxRenderer.html)
+Documentation: [PanelListBox](/documentation/1.0/classtgui_1_1PanelListBox.html), [PanelListBoxRenderer](/documentation/1.0/classtgui_1_1PanelListBoxRenderer.html)
 
 **Example usage**
 ```c++
@@ -964,7 +964,7 @@ You should never call `setPosition` or `setSize` on the template panel or any of
 
 The `Picture` widget provides a way to show a static image.
 
-Documentation: [Picture](https://tgui.eu/documentation/1.0/classtgui_1_1Picture.html), [PictureRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1PictureRenderer.html)
+Documentation: [Picture](/documentation/1.0/classtgui_1_1Picture.html), [PictureRenderer](/documentation/1.0/classtgui_1_1PictureRenderer.html)
 
 **Example usage**
 ```c++
@@ -996,7 +996,7 @@ The `ProgressBar` widget provides a loading bar to indicate progress.
 
 ![ProgressBar](/resources/WidgetsOverview/ProgressBar.png){:width="235" height="91"}
 
-Documentation: [ProgressBar](https://tgui.eu/documentation/1.0/classtgui_1_1ProgressBar.html), [ProgressBarRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ProgressBarRenderer.html)
+Documentation: [ProgressBar](/documentation/1.0/classtgui_1_1ProgressBar.html), [ProgressBarRenderer](/documentation/1.0/classtgui_1_1ProgressBarRenderer.html)
 
 **Example usage**
 ```c++
@@ -1037,7 +1037,7 @@ The `RadioButton` widget provides a box of which at most one of them can be chec
 Similar widgets:
 - If multiple options should be possible or if it should be possible to uncheck a checked box then you should use <a href="#CheckBox">CheckBox</a> instead
 
-Documentation: [RadioButton](https://tgui.eu/documentation/1.0/classtgui_1_1RadioButton.html), [RadioButtonRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1RadioButtonRenderer.html)
+Documentation: [RadioButton](/documentation/1.0/classtgui_1_1RadioButton.html), [RadioButtonRenderer](/documentation/1.0/classtgui_1_1RadioButtonRenderer.html)
 
 **Example usage**
 ```c++
@@ -1074,7 +1074,7 @@ Similar widgets:
 - If the group needs to have a position and size then use the <a href="#Group">Group</a> widget instead
 - If the group needs to have a background color then use the <a href="#Panel">Panel</a> widget instead
 
-Documentation: [RadioButtonGroup](https://tgui.eu/documentation/1.0/classtgui_1_1RadioButtonGroup.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (RadioButtonGroupRenderer does not exist)
+Documentation: [RadioButtonGroup](/documentation/1.0/classtgui_1_1RadioButtonGroup.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (RadioButtonGroupRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -1107,7 +1107,7 @@ The `RangeSlider` widget provides a horizontal or vertical slider with 2 knobs i
 Similar widgets:
 - If you only need a single knob then check out the <a href="#Slider">Slider</a> widget instead
 
-Documentation: [RangeSlider](https://tgui.eu/documentation/1.0/classtgui_1_1RangeSlider.html), [RangeSliderRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1RangeSliderRenderer.html)
+Documentation: [RangeSlider](/documentation/1.0/classtgui_1_1RangeSlider.html), [RangeSliderRenderer](/documentation/1.0/classtgui_1_1RangeSliderRenderer.html)
 
 **Example usage**
 ```c++
@@ -1146,7 +1146,7 @@ The `RichTextLabel` widget provides a way to display some non-interactive text w
 Similar widgets:
 - If the entire text will be the same style and color then you can use the <a href="#Label">Label</a> widget instead
 
-Documentation: [RichTextLabel](https://tgui.eu/documentation/1.0/classtgui_1_1RichTextLabel.html), [LabelRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1LabelRenderer.html) (RichTextLabelRenderer does not exist)
+Documentation: [RichTextLabel](/documentation/1.0/classtgui_1_1RichTextLabel.html), [LabelRenderer](/documentation/1.0/classtgui_1_1LabelRenderer.html) (RichTextLabelRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -1182,7 +1182,7 @@ Similar widgets:
 - If you don't need the scrollbars then you can use a regular <a href="#Panel">Panel</a> widget instead
 - If you don't want the panel but instead want full control over the scrolling then you can use the <a href="#Scrollbar">Scrollbar</a> widget instead
 
-Documentation: [ScrollablePanel](https://tgui.eu/documentation/1.0/classtgui_1_1ScrollablePanel.html), [ScrollablePanelRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ScrollablePanelRenderer.html)
+Documentation: [ScrollablePanel](/documentation/1.0/classtgui_1_1ScrollablePanel.html), [ScrollablePanelRenderer](/documentation/1.0/classtgui_1_1ScrollablePanelRenderer.html)
 
 **Example usage**
 ```c++
@@ -1225,7 +1225,7 @@ The `Scrollbar` widget provides just the scrollbar itself, without anything to s
 Similar widgets:
 - If want a panel in which the contents moved with the scrollbar then check out the <a href="#ScrollablePanel">ScrollablePanel</a> widget instead
 
-Documentation: [Scrollbar](https://tgui.eu/documentation/1.0/classtgui_1_1Scrollbar.html), [ScrollbarRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ScrollbarRenderer.html)
+Documentation: [Scrollbar](/documentation/1.0/classtgui_1_1Scrollbar.html), [ScrollbarRenderer](/documentation/1.0/classtgui_1_1ScrollbarRenderer.html)
 
 **Example usage**
 ```c++
@@ -1270,7 +1270,7 @@ When the TextureThumb property is set in the renderer, the ThumbColor renderer p
 
 The `SeparatorLine` widget provides a horizontal or vertical line of a certain color that can be used to visually separate widgets. It is esentially just a colored rectangle, it is NOT a real draggable separator to grow or shrink a container (TGUI currently does not support such thing).
 
-Documentation: [SeparatorLine](https://tgui.eu/documentation/1.0/classtgui_1_1SeparatorLine.html), [SeparatorLineRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1SeparatorLineRenderer.html)
+Documentation: [SeparatorLine](/documentation/1.0/classtgui_1_1SeparatorLine.html), [SeparatorLineRenderer](/documentation/1.0/classtgui_1_1SeparatorLineRenderer.html)
 
 **Example usage**
 ```c++
@@ -1296,7 +1296,7 @@ Similar widgets:
 - If you need two knobs to select a range instead of a single value then check out the <a href="#RangeSlider">RangeSlider</a> widget instead
 - If you want to select the value from a dial then check out the <a href="#Knob">Knob</a> widget instead
 
-Documentation: [Slider](https://tgui.eu/documentation/1.0/classtgui_1_1Slider.html), [SliderRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1SliderRenderer.html)
+Documentation: [Slider](/documentation/1.0/classtgui_1_1Slider.html), [SliderRenderer](/documentation/1.0/classtgui_1_1SliderRenderer.html)
 
 **Example usage**
 ```c++
@@ -1332,7 +1332,7 @@ The `SpinButton` widget provides an up and down arrow to select a value.
 Similar widgets:
 - If you want there to be an edit box attached to the arrows then check out the <a href="#SpinControl">SpinControl</a> widget instead
 
-Documentation: [SpinButton](https://tgui.eu/documentation/1.0/classtgui_1_1SpinButton.html), [SpinButtonRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1SpinButtonRenderer.html)
+Documentation: [SpinButton](/documentation/1.0/classtgui_1_1SpinButton.html), [SpinButtonRenderer](/documentation/1.0/classtgui_1_1SpinButtonRenderer.html)
 
 **Example usage**
 ```c++
@@ -1367,7 +1367,7 @@ Similar widgets:
 - If you just want the arrows without the edit box then check out the <a href="#SpinButton">SpinButton</a> widget instead
 - If you want a slider below the edit box instead of arrows next to it then check out the <a href="#EditBoxSlider">EditBoxSlider</a> widget instead
 
-Documentation: [SpinControl](https://tgui.eu/documentation/1.0/classtgui_1_1SpinControl.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (SpinControlRenderer does not exist)
+Documentation: [SpinControl](/documentation/1.0/classtgui_1_1SpinControl.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (SpinControlRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -1389,6 +1389,35 @@ The renderer for the edit box and spin button can be accessed with `getSpinTextR
 </details>
 </div>
 
+<!-- SplitContainer -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="SplitContainer" markdown="1">
+<summary><b>SplitContainer</b></summary>
+
+The `SplitContainer` widget is a container that should be given exactly 2 child widgets, which will fill the entire container with a separator line inbetween. The splitter line can be dragged to alter the amount of space each widget takes (more space for one widget means less space for the other, since together they always fill the entire container).
+
+![SplitContainer](/resources/WidgetsOverview/SplitContainer.png){:width="95" height="40"}
+
+Documentation: [SplitContainer](/documentation/1.0/classtgui_1_1SplitContainer.html), [SplitContainerRenderer](/documentation/1.0/classtgui_1_1SplitContainerRenderer.html)
+
+**Example usage**
+```c++
+splitContainer->setOrientation(tgui::Orientation::Vertical);
+splitContainer->setMinValidSplitterOffset(50); // Top widget can't be smaller than 50px
+splitContainer->setMaxValidSplitterOffset("70%"); // Bottom widget can't be smaller than 30% of the container
+splitContainer->setSplitterOffset("50%"); // Splitter is initially located at the center of the container
+splitContainer->add(topWidget);
+splitContainer->add(bottomWidget);
+```
+
+**Notes**
+
+The API doesn't prevent you from adding more, but the SplitContainer should only contain 2 widgets. If you want 3 widgets with 2 splitters then you should nest the split containers (i.e. the second split container should be one of the two children in the first split container).
+
+</details>
+</div>
+
 <!-- TabContainer -->
 
 <div class="SmallerMargin">
@@ -1400,7 +1429,7 @@ The `TabContainer` widget provides a row of tabs and a panel below or above it t
 Similar widgets:
 - If you don't want to have a panel attached to the tabs then check out the <a href="#Tabs">Tabs</a> widget instead
 
-Documentation: [TabContainer](https://tgui.eu/documentation/1.0/classtgui_1_1TabContainer.html), [WidgetRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1WidgetRenderer.html) (TabContainerRenderer does not exist)
+Documentation: [TabContainer](/documentation/1.0/classtgui_1_1TabContainer.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (TabContainerRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -1442,7 +1471,7 @@ The `Tabs` widget provides a row of tabs where one can be selected.
 Similar widgets:
 - If you want there to be a panel directly below or above the tabs which is changed when a tab is selected then check out the <a href="#TabContainer">TabContainer</a> widget instead
 
-Documentation: [Tabs](https://tgui.eu/documentation/1.0/classtgui_1_1Tabs.html), [TabsRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1TabsRenderer.html)
+Documentation: [Tabs](/documentation/1.0/classtgui_1_1Tabs.html), [TabsRenderer](/documentation/1.0/classtgui_1_1TabsRenderer.html)
 
 **Example usage**
 ```c++
@@ -1486,7 +1515,7 @@ The `TextArea` widget provides a multi-line text field.
 Similar widgets:
 - If you need a single-line text field then check out the <a href="#EditBox">EditBox</a> widget instead
 
-Documentation: [TextArea](https://tgui.eu/documentation/1.0/classtgui_1_1TextArea.html), [TextAreaRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1TextAreaRenderer.html)
+Documentation: [TextArea](/documentation/1.0/classtgui_1_1TextArea.html), [TextAreaRenderer](/documentation/1.0/classtgui_1_1TextAreaRenderer.html)
 
 **Example usage**
 ```c++
@@ -1517,7 +1546,7 @@ The `ToggleButton` widget provides a button for which the down state can be togg
 Similar widgets:
 - If you are looking for a normal button then check out the <a href="#Button">Button</a> widget instead
 
-Documentation: [ToggleButton](https://tgui.eu/documentation/1.0/classtgui_1_1ToggleButton.html), [ButtonRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1ButtonRenderer.html) (ToggleButtonRenderer does not exist)
+Documentation: [ToggleButton](/documentation/1.0/classtgui_1_1ToggleButton.html), [ButtonRenderer](/documentation/1.0/classtgui_1_1ButtonRenderer.html) (ToggleButtonRenderer does not exist)
 
 **Example usage**
 ```c++
@@ -1553,7 +1582,7 @@ The `TreeView` widget provides a hierarchical list of items, where nodes that ha
 
 ![TreeView](/resources/WidgetsOverview/TreeView.png){:width="340" height="132"}
 
-Documentation: [TreeView](https://tgui.eu/documentation/1.0/classtgui_1_1TreeView.html), [TreeViewRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1TreeViewRenderer.html)
+Documentation: [TreeView](/documentation/1.0/classtgui_1_1TreeView.html), [TreeViewRenderer](/documentation/1.0/classtgui_1_1TreeViewRenderer.html)
 
 **Example usage**
 ```c++
@@ -1599,7 +1628,7 @@ Similar widgets:
 - If you need to place widgets beside each other then check out the <a href="#HorizontalLayout">HorizontalLayout</a> widget instead
 - If you only want to automatically position widgets but give them a manual size, then check out the <a href="#Grid">Grid</a> widget instead
 
-Documentation: [VerticalLayout](https://tgui.eu/documentation/1.0/classtgui_1_1VerticalLayout.html), [BoxLayoutRenderer](https://tgui.eu/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (VerticalLayoutRenderer does not exist)
+Documentation: [VerticalLayout](/documentation/1.0/classtgui_1_1VerticalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (VerticalLayoutRenderer does not exist)
 
 **Example usage**
 ```c++

@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -158,107 +158,95 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef TGUI_BACKEND_SFML_HPP</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define TGUI_BACKEND_SFML_HPP</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;TGUI/Config.hpp&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#if !TGUI_BUILD_AS_CXX_MODULE</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    #include &lt;TGUI/Backend/Window/Backend.hpp&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;TGUI/Backend/Window/SFML/BackendGuiSFML.hpp&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;SFML/Window.hpp&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #include &lt;map&gt;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>TGUI_IGNORE_DEPRECATED_WARNINGS_START <span class="comment">// Required for VS2017 due to inheriting a function that we deprecated</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html">   49</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1BackendSFML.html">BackendSFML</a> : <span class="keyword">public</span> <a class="code hl_class" href="classtgui_1_1Backend.html">Backend</a></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">   61</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">setGuiWindow</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui, sf::Window* window);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">   68</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">detatchGui</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">   79</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">setMouseCursorStyle</a>(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, <span class="keyword">const</span> std::uint8_t* pixels, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2u</a> size, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2u</a> hotspot) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">   87</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">resetMouseCursorStyle</a>(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">   96</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">setMouseCursor</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui, <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#ifndef TGUI_REMOVE_DEPRECATED_CODE</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">  105</a></span>        TGUI_DEPRECATED(<span class="stringliteral">&quot;Use BackendGui::startTextInput instead&quot;</span>) void openVirtualKeyboard(const <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; inputRect) override;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">  113</a></span>        TGUI_DEPRECATED(&quot;Use <a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>::stopTextInput instead&quot;) <span class="keywordtype">void</span> closeVirtualKeyboard() override;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a08442ecb229e4e3b49ddd4a735f7ca55">  123</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a08442ecb229e4e3b49ddd4a735f7ca55">isKeyboardModifierPressed</a>(<a class="code hl_enumeration" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef TGUI_BACKEND_SFML_HPP</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define TGUI_BACKEND_SFML_HPP</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;TGUI/Config.hpp&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#if !TGUI_BUILD_AS_CXX_MODULE</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    #include &lt;TGUI/Backend/Window/Backend.hpp&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;TGUI/Backend/Window/SFML/BackendGuiSFML.hpp&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;SFML/Window.hpp&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #include &lt;map&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>TGUI_IGNORE_DEPRECATED_WARNINGS_START <span class="comment">// Required for VS2017 due to inheriting a function that we deprecated</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html">   48</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1BackendSFML.html">BackendSFML</a> : <span class="keyword">public</span> <a class="code hl_class" href="classtgui_1_1Backend.html">Backend</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">   60</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a456563bfd1fa33caf8fe24aaa5581f17">setGuiWindow</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui, sf::Window* window);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">   66</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">detatchGui</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">   76</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a3f07a5c119bdefa3c5563bc6e7f41e42">setMouseCursorStyle</a>(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, <span class="keyword">const</span> std::uint8_t* pixels, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2u</a> size, <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2u</a> hotspot) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">   83</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539">resetMouseCursorStyle</a>(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">   91</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">setMouseCursor</a>(<a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>* gui, <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#ifndef TGUI_REMOVE_DEPRECATED_CODE</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aa3c0020bd43be66ef911d1b6a6880f71">  100</a></span>        TGUI_DEPRECATED(<span class="stringliteral">&quot;Use BackendGui::startTextInput instead&quot;</span>) void openVirtualKeyboard(const <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; inputRect) override;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#aea706fa57c6c46edca0a9276be199a76">  107</a></span>        TGUI_DEPRECATED(&quot;Use <a class="code hl_class" href="classtgui_1_1BackendGui.html">BackendGui</a>::stopTextInput instead&quot;) <span class="keywordtype">void</span> closeVirtualKeyboard() override;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a08442ecb229e4e3b49ddd4a735f7ca55">  117</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a08442ecb229e4e3b49ddd4a735f7ca55">isKeyboardModifierPressed</a>(<a class="code hl_enumeration" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">  124</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">setClipboard</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1String.html">String</a>&amp; contents) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">  131</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">setClipboard</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1String.html">String</a>&amp; contents) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a1ab92fc556f14639774d2057e17d0ca3">  131</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1String.html">String</a> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a1ab92fc556f14639774d2057e17d0ca3">getClipboard</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#a1ab92fc556f14639774d2057e17d0ca3">  139</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1String.html">String</a> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#a1ab92fc556f14639774d2057e17d0ca3">getClipboard</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">#ifdef TGUI_SYSTEM_ANDROID</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        TGUI_NODISCARD std::unique_ptr&lt;std::uint8_t[]&gt; readFileFromAndroidAssets(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1String.html">String</a>&amp; filename, std::size_t&amp; fileSize) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#ae66d90a32a82e910dcba983af9e9c994">  164</a></span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#ae66d90a32a82e910dcba983af9e9c994">cleanupLeakedCursors</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#ifdef TGUI_SYSTEM_ANDROID</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        TGUI_NODISCARD std::unique_ptr&lt;std::uint8_t[]&gt; readFileFromAndroidAssets(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1String.html">String</a>&amp; filename, std::size_t&amp; fileSize) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendSFML.html#ae66d90a32a82e910dcba983af9e9c994">  156</a></span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendSFML.html#ae66d90a32a82e910dcba983af9e9c994">cleanupLeakedCursors</a>();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="comment">// Helper function to create a system cursor</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        TGUI_NODISCARD std::unique_ptr&lt;sf::Cursor&gt; createSystemCursor(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="comment">// Helper function to create a system cursor</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        TGUI_NODISCARD std::unique_ptr&lt;sf::Cursor&gt; createSystemCursor(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// Helper function to update the mouse cursors on all attached guis</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordtype">void</span> updateMouseCursor(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, std::unique_ptr&lt;sf::Cursor&gt; cursor);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="comment">// Helper function to update the mouse cursor on a window</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordtype">void</span> updateMouseCursor(sf::Window* window, <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type);</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="comment">// Helper function to update the mouse cursors on all attached guis</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordtype">void</span> updateMouseCursor(<a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type, std::unique_ptr&lt;sf::Cursor&gt; cursor);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="comment">// Helper function to update the mouse cursor on a window</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordtype">void</span> updateMouseCursor(sf::Window* window, <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> type);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keyword">struct </span>GuiResources</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            sf::Window* window = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> mouseCursor = Cursor::Type::Arrow;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        };</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        std::unordered_map&lt;BackendGui*, GuiResources&gt; m_guiResources;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        std::unordered_map&lt;Cursor::Type, std::unique_ptr&lt;sf::Cursor&gt;&gt; m_mouseCursors;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keyword">struct </span>GuiResources</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            sf::Window* window = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_enumeration" href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">Cursor::Type</a> mouseCursor = Cursor::Type::Arrow;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        };</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        std::unordered_map&lt;BackendGui*, GuiResources&gt; m_guiResources;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        std::unordered_map&lt;Cursor::Type, std::unique_ptr&lt;sf::Cursor&gt;&gt; m_mouseCursors;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keyword">static</span> std::vector&lt;std::unique_ptr&lt;sf::Cursor&gt;&gt; m_leakedCursors;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    };</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keyword">static</span> std::vector&lt;std::unique_ptr&lt;sf::Cursor&gt;&gt; m_leakedCursors;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    };</div>
 </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>TGUI_IGNORE_DEPRECATED_WARNINGS_END</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_SFML_HPP</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>TGUI_IGNORE_DEPRECATED_WARNINGS_END</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_SFML_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html"><div class="ttname"><a href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></div><div class="ttdoc">Base class for the Gui.</div><div class="ttdef"><b>Definition</b> BackendGui.hpp:47</div></div>
-<div class="ttc" id="aclasstgui_1_1BackendSFML_html"><div class="ttname"><a href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></div><div class="ttdef"><b>Definition</b> BackendSFML.hpp:50</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendSFML_html"><div class="ttname"><a href="classtgui_1_1BackendSFML.html">tgui::BackendSFML</a></div><div class="ttdef"><b>Definition</b> BackendSFML.hpp:49</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_a01cdda5bf06227cd3c9a819d67358d00"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">tgui::BackendSFML::setClipboard</a></div><div class="ttdeci">void setClipboard(const String &amp;contents) override</div><div class="ttdoc">Changes the contents of the clipboard.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_a08442ecb229e4e3b49ddd4a735f7ca55"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#a08442ecb229e4e3b49ddd4a735f7ca55">tgui::BackendSFML::isKeyboardModifierPressed</a></div><div class="ttdeci">TGUI_NODISCARD bool isKeyboardModifierPressed(Event::KeyModifier modifierKey) override</div><div class="ttdoc">Checks the state for one of the modifier keys.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_a1ab92fc556f14639774d2057e17d0ca3"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#a1ab92fc556f14639774d2057e17d0ca3">tgui::BackendSFML::getClipboard</a></div><div class="ttdeci">TGUI_NODISCARD String getClipboard() const override</div><div class="ttdoc">Returns the contents of the clipboard.</div></div>
@@ -268,18 +256,18 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_aa09961c1ebd8fdeeb490aec027479bc7"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#aa09961c1ebd8fdeeb490aec027479bc7">tgui::BackendSFML::detatchGui</a></div><div class="ttdeci">void detatchGui(BackendGui *gui) override</div><div class="ttdoc">Informs the backend that a gui object is being destroyed.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_ae66d90a32a82e910dcba983af9e9c994"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#ae66d90a32a82e910dcba983af9e9c994">tgui::BackendSFML::cleanupLeakedCursors</a></div><div class="ttdeci">static void cleanupLeakedCursors()</div><div class="ttdoc">Destroys any leaked cursors.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendSFML_html_af0c791276b27781a6637faa005f2f984"><div class="ttname"><a href="classtgui_1_1BackendSFML.html#af0c791276b27781a6637faa005f2f984">tgui::BackendSFML::setMouseCursor</a></div><div class="ttdeci">void setMouseCursor(BackendGui *gui, Cursor::Type type) override</div><div class="ttdoc">Changes the mouse cursor when the mouse is on top of the window to which the gui is attached.</div></div>
-<div class="ttc" id="aclasstgui_1_1Backend_html"><div class="ttname"><a href="classtgui_1_1Backend.html">tgui::Backend</a></div><div class="ttdoc">Base class for the backend.</div><div class="ttdef"><b>Definition</b> Backend.hpp:91</div></div>
-<div class="ttc" id="aclasstgui_1_1Cursor_html_a4e9a3c57acd4bf2b261aa2fe77f4d2f5"><div class="ttname"><a href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">tgui::Cursor::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">List of available cursors.</div><div class="ttdef"><b>Definition</b> Cursor.hpp:51</div></div>
+<div class="ttc" id="aclasstgui_1_1Backend_html"><div class="ttname"><a href="classtgui_1_1Backend.html">tgui::Backend</a></div><div class="ttdoc">Base class for the backend.</div><div class="ttdef"><b>Definition</b> Backend.hpp:87</div></div>
+<div class="ttc" id="aclasstgui_1_1Cursor_html_a4e9a3c57acd4bf2b261aa2fe77f4d2f5"><div class="ttname"><a href="classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5">tgui::Cursor::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">List of available cursors.</div><div class="ttdef"><b>Definition</b> Cursor.hpp:50</div></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html"><div class="ttname"><a href="classtgui_1_1Rect.html">tgui::Rect&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition</b> String.hpp:101</div></div>
+<div class="ttc" id="aclasstgui_1_1String_html"><div class="ttname"><a href="classtgui_1_1String.html">tgui::String</a></div><div class="ttdoc">Wrapper class to store strings.</div><div class="ttdef"><b>Definition</b> String.hpp:96</div></div>
 <div class="ttc" id="aclasstgui_1_1Vector2_html"><div class="ttname"><a href="classtgui_1_1Vector2.html">tgui::Vector2&lt; unsigned int &gt;</a></div></div>
-<div class="ttc" id="anamespacetgui_html"><div class="ttname"><a href="namespacetgui.html">tgui</a></div><div class="ttdoc">Namespace that contains all TGUI functions and classes.</div><div class="ttdef"><b>Definition</b> AbsoluteOrRelativeValue.hpp:39</div></div>
-<div class="ttc" id="astructtgui_1_1Event_html_a37932d1570a768aafff139c38e9734c5"><div class="ttname"><a href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">tgui::Event::KeyModifier</a></div><div class="ttdeci">KeyModifier</div><div class="ttdoc">Modifiers keys.</div><div class="ttdef"><b>Definition</b> Event.hpp:158</div></div>
+<div class="ttc" id="anamespacetgui_html"><div class="ttname"><a href="namespacetgui.html">tgui</a></div><div class="ttdoc">Namespace that contains all TGUI functions and classes.</div><div class="ttdef"><b>Definition</b> AbsoluteOrRelativeValue.hpp:38</div></div>
+<div class="ttc" id="astructtgui_1_1Event_html_a37932d1570a768aafff139c38e9734c5"><div class="ttname"><a href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">tgui::Event::KeyModifier</a></div><div class="ttdeci">KeyModifier</div><div class="ttdoc">Modifiers keys.</div><div class="ttdef"><b>Definition</b> Event.hpp:157</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:18 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

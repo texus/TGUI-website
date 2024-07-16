@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -448,13 +448,11 @@ Additional Inherited Members</h2></td></tr>
 <a class="el" href="namespacetgui.html#aaf94c2086a9e5257a0a65e81f6397f87">SignalFloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onViewChange</b> = {&quot;ViewChanged&quot;}</td></tr>
 <tr class="memdesc:ae432fc673ac8a41f259d05610e1ec3d3 inherit pub_attribs_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view was changed. Optional parameter: new view rectangle. <br /></td></tr>
 <tr class="separator:ae432fc673ac8a41f259d05610e1ec3d3 inherit pub_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60eb59e75e583b160615febe612486b0 inherit pub_attribs_classtgui_1_1BackendGui" id="r_a60eb59e75e583b160615febe612486b0"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onWindowFocus</b> = {&quot;WindowFocused&quot;}</td></tr>
-<tr class="memdesc:a60eb59e75e583b160615febe612486b0 inherit pub_attribs_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window sent a GainedFocus event. <br /></td></tr>
+<tr class="memitem:a60eb59e75e583b160615febe612486b0 inherit pub_attribs_classtgui_1_1BackendGui" id="r_a60eb59e75e583b160615febe612486b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a60eb59e75e583b160615febe612486b0">onWindowFocus</a> = {&quot;WindowFocused&quot;}</td></tr>
+<tr class="memdesc:a60eb59e75e583b160615febe612486b0 inherit pub_attribs_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window sent a GainedFocus event.  <br /></td></tr>
 <tr class="separator:a60eb59e75e583b160615febe612486b0 inherit pub_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1e9f51254d42ae02556ec9582ab2bd inherit pub_attribs_classtgui_1_1BackendGui" id="r_a8f1e9f51254d42ae02556ec9582ab2bd"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onWindowUnfocus</b> = {&quot;WindowUnfocused&quot;}</td></tr>
-<tr class="memdesc:a8f1e9f51254d42ae02556ec9582ab2bd inherit pub_attribs_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window sent a LostFocus event. <br /></td></tr>
+<tr class="memitem:a8f1e9f51254d42ae02556ec9582ab2bd inherit pub_attribs_classtgui_1_1BackendGui" id="r_a8f1e9f51254d42ae02556ec9582ab2bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a8f1e9f51254d42ae02556ec9582ab2bd">onWindowUnfocus</a> = {&quot;WindowUnfocused&quot;}</td></tr>
+<tr class="memdesc:a8f1e9f51254d42ae02556ec9582ab2bd inherit pub_attribs_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window sent a LostFocus event.  <br /></td></tr>
 <tr class="separator:a8f1e9f51254d42ae02556ec9582ab2bd inherit pub_attribs_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -580,9 +578,13 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has the event been consumed? When this function returns false, then the event was ignored by all widgets.</dd></dl>
-<p>You should call this function in your event loop. </p><div class="fragment"><div class="line">sf::Event event;</div>
+<p>You should call this function in your event loop.</p>
+<p>SFML 2: </p><div class="fragment"><div class="line">sf::Event event;</div>
 <div class="line"><span class="keywordflow">while</span> (window.pollEvent(event) {</div>
 <div class="line">    gui.handleEvent(event);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>SFML 3: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (<span class="keyword">const</span> std::optional event = window.pollEvent()) {</div>
+<div class="line">    gui.handleEvent(*event);</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
 </div>
@@ -618,12 +620,26 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <p>This function is only intended in cases where your program only needs to respond to gui events. For multimedia applications, games, or other programs where you want a high framerate or do a lot of processing in the main loop, you should use your own main loop.</p>
-<p>You can consider this function to execute something similar (but not identical) to the following code: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (window.isOpen())</div>
+<p>You can consider this function to execute something similar (but not identical) to the code below.</p>
+<p>SFML 2: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (window.isOpen())</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">while</span> (window.waitEvent(event))</div>
 <div class="line">    {</div>
 <div class="line">        gui.handleEvent(event);</div>
 <div class="line">        <span class="keywordflow">if</span> (event.type == sf::Event::Closed)</div>
+<div class="line">            window.close();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    window.clear({240, 240, 240});</div>
+<div class="line">    gui.draw();</div>
+<div class="line">    window.display();</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>SFML 3: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (window.isOpen())</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">while</span> (<span class="keyword">const</span> std::optional event = window.waitEvent())</div>
+<div class="line">    {</div>
+<div class="line">        gui.handleEvent(*event);</div>
+<div class="line">        <span class="keywordflow">if</span> (event-&gt;is&lt;sf::Event::Closed&gt;())</div>
 <div class="line">            window.close();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -808,7 +824,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

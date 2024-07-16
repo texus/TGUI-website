@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -231,6 +231,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae024b1021415f0ce619366766212a389" id="r_ae024b1021415f0ce619366766212a389"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae024b1021415f0ce619366766212a389">getVerticalScroll</a> () const</td></tr>
 <tr class="memdesc:ae024b1021415f0ce619366766212a389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the slider lies horizontally or vertically.  <br /></td></tr>
 <tr class="separator:ae024b1021415f0ce619366766212a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae48feeb2ae62c713fa9d3b625e05863" id="r_aae48feeb2ae62c713fa9d3b625e05863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae48feeb2ae62c713fa9d3b625e05863">setOrientation</a> (<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> orientation)</td></tr>
+<tr class="memdesc:aae48feeb2ae62c713fa9d3b625e05863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the slider lies horizontally or vertically.  <br /></td></tr>
+<tr class="separator:aae48feeb2ae62c713fa9d3b625e05863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107167e04504ab23568f0f0c76bb7ae8" id="r_a107167e04504ab23568f0f0c76bb7ae8"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a107167e04504ab23568f0f0c76bb7ae8">getOrientation</a> () const</td></tr>
+<tr class="memdesc:a107167e04504ab23568f0f0c76bb7ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the slider lies horizontally or vertically.  <br /></td></tr>
+<tr class="separator:a107167e04504ab23568f0f0c76bb7ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea2df35a86080247e6d942b44f66331" id="r_aeea2df35a86080247e6d942b44f66331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeea2df35a86080247e6d942b44f66331">setInvertedDirection</a> (bool invertedDirection)</td></tr>
 <tr class="memdesc:aeea2df35a86080247e6d942b44f66331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the side of the slider that is the minimum and maximum should be inverted.  <br /></td></tr>
 <tr class="separator:aeea2df35a86080247e6d942b44f66331"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -693,15 +699,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b> = 1</td><
 <tr class="memitem:a5d9c262a2310492566c80c00c51c2dd2" id="r_a5d9c262a2310492566c80c00c51c2dd2"><td class="memItemLeft" align="right" valign="top"><a id="a5d9c262a2310492566c80c00c51c2dd2" name="a5d9c262a2310492566c80c00c51c2dd2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_invertedDirection</b> = false</td></tr>
 <tr class="separator:a5d9c262a2310492566c80c00c51c2dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4676d0631301731fed0abfbed0215ce" id="r_ae4676d0631301731fed0abfbed0215ce"><td class="memItemLeft" align="right" valign="top"><a id="ae4676d0631301731fed0abfbed0215ce" name="ae4676d0631301731fed0abfbed0215ce"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalScroll</b> = false</td></tr>
-<tr class="separator:ae4676d0631301731fed0abfbed0215ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b3a00616c3ebf1620c345f563ae868" id="r_a24b3a00616c3ebf1620c345f563ae868"><td class="memItemLeft" align="right" valign="top"><a id="a24b3a00616c3ebf1620c345f563ae868" name="a24b3a00616c3ebf1620c345f563ae868"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalImage</b> = false</td></tr>
-<tr class="separator:a24b3a00616c3ebf1620c345f563ae868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49431eb41658c24ace48dad546b22eef" id="r_a49431eb41658c24ace48dad546b22eef"><td class="memItemLeft" align="right" valign="top"><a id="a49431eb41658c24ace48dad546b22eef" name="a49431eb41658c24ace48dad546b22eef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_changeValueOnScroll</b> = true</td></tr>
 <tr class="separator:a49431eb41658c24ace48dad546b22eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad067e5a64aecf6bb840482fe892bcedd" id="r_ad067e5a64aecf6bb840482fe892bcedd"><td class="memItemLeft" align="right" valign="top"><a id="ad067e5a64aecf6bb840482fe892bcedd" name="ad067e5a64aecf6bb840482fe892bcedd"></a>
+<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_orientation</b> = <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96ac1b5fa03ecdb95d4a45dd1c40b02527f">Orientation::Horizontal</a></td></tr>
+<tr class="separator:ad067e5a64aecf6bb840482fe892bcedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc979d760a1e99f86a1262f78c11286" id="r_a8fc979d760a1e99f86a1262f78c11286"><td class="memItemLeft" align="right" valign="top"><a id="a8fc979d760a1e99f86a1262f78c11286" name="a8fc979d760a1e99f86a1262f78c11286"></a>
+<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageOrientation</b> = <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96ac1b5fa03ecdb95d4a45dd1c40b02527f">Orientation::Horizontal</a></td></tr>
+<tr class="separator:a8fc979d760a1e99f86a1262f78c11286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74c8aa48a13c8202753861c387e4e63" id="r_ab74c8aa48a13c8202753861c387e4e63"><td class="memItemLeft" align="right" valign="top"><a id="ab74c8aa48a13c8202753861c387e4e63" name="ab74c8aa48a13c8202753861c387e4e63"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteTrack</b></td></tr>
 <tr class="separator:ab74c8aa48a13c8202753861c387e4e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1136,6 +1142,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <p>Returns the minimum value. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current minimum value</dd></dl>
 <p>The default minimum value is 0. </p>
+
+</div>
+</div>
+<a id="a107167e04504ab23568f0f0c76bb7ae8" name="a107167e04504ab23568f0f0c76bb7ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107167e04504ab23568f0f0c76bb7ae8">&#9670;&#160;</a></span>getOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> tgui::Slider::getOrientation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the slider lies horizontally or vertically. </p>
+<dl class="section return"><dt>Returns</dt><dd>Orientation of the slider </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
 
 </div>
 </div>
@@ -1756,6 +1783,33 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="aae48feeb2ae62c713fa9d3b625e05863" name="aae48feeb2ae62c713fa9d3b625e05863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae48feeb2ae62c713fa9d3b625e05863">&#9670;&#160;</a></span>setOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::Slider::setOrientation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a></td>          <td class="paramname"><span class="paramname"><em>orientation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes whether the slider lies horizontally or vertically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orientation</td><td>Orientation of the slider</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function will swap the width and height of the slider if it didn't lie in the wanted direction.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
+
+</div>
+</div>
 <a id="ab34d767373e91988ebc658f4bf7231ca" name="ab34d767373e91988ebc658f4bf7231ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab34d767373e91988ebc658f4bf7231ca">&#9670;&#160;</a></span>setSize() <span class="overload">[1/2]</span></h2>
 
@@ -1786,7 +1840,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   </table>
   </dd>
 </dl>
-<p>Note that the VerticalScroll propery is changed by this function based on the given width and height. </p>
+<p>Note that the Orientation propery is changed by this function based on the given width and height. </p>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#aa593c0cf9c1dca1393e60849719417cf">tgui::Widget</a>.</p>
 
@@ -1916,7 +1970,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

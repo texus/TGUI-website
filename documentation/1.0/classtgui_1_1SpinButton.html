@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -235,6 +235,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1aa1de93724561bd44ad595065fdc3a" id="r_aa1aa1de93724561bd44ad595065fdc3a"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1aa1de93724561bd44ad595065fdc3a">getVerticalScroll</a> () const</td></tr>
 <tr class="memdesc:aa1aa1de93724561bd44ad595065fdc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the spin button lies horizontally or vertically.  <br /></td></tr>
 <tr class="separator:aa1aa1de93724561bd44ad595065fdc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147fe0602cd5b7e5808fb9d01bfdf4e9" id="r_a147fe0602cd5b7e5808fb9d01bfdf4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147fe0602cd5b7e5808fb9d01bfdf4e9">setOrientation</a> (<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> orientation)</td></tr>
+<tr class="memdesc:a147fe0602cd5b7e5808fb9d01bfdf4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the spin button lies horizontally or vertically.  <br /></td></tr>
+<tr class="separator:a147fe0602cd5b7e5808fb9d01bfdf4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b324cc6c5bddb0f3a32aaca3f47f00" id="r_ad7b324cc6c5bddb0f3a32aaca3f47f00"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b324cc6c5bddb0f3a32aaca3f47f00">getOrientation</a> () const</td></tr>
+<tr class="memdesc:ad7b324cc6c5bddb0f3a32aaca3f47f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the spin button lies horizontally or vertically.  <br /></td></tr>
+<tr class="separator:ad7b324cc6c5bddb0f3a32aaca3f47f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f665d4417bb03b0921fc7469c13139" id="r_a25f665d4417bb03b0921fc7469c13139"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f665d4417bb03b0921fc7469c13139">leftMousePressed</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) override</td></tr>
 <tr class="memdesc:a25f665d4417bb03b0921fc7469c13139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent when the left mouse button goes down on top of the widget.  <br /></td></tr>
 <tr class="separator:a25f665d4417bb03b0921fc7469c13139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,9 +709,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundSizeL
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a66afa3b33a5a0eeb974026f24962d58d" id="r_a66afa3b33a5a0eeb974026f24962d58d"><td class="memItemLeft" align="right" valign="top"><a id="a66afa3b33a5a0eeb974026f24962d58d" name="a66afa3b33a5a0eeb974026f24962d58d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalScroll</b> = true</td></tr>
-<tr class="separator:a66afa3b33a5a0eeb974026f24962d58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4621a1ccfe6ed5d005f5fb4b41331ff5" id="r_a4621a1ccfe6ed5d005f5fb4b41331ff5"><td class="memItemLeft" align="right" valign="top"><a id="a4621a1ccfe6ed5d005f5fb4b41331ff5" name="a4621a1ccfe6ed5d005f5fb4b41331ff5"></a>
+<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_orientation</b> = <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012">Orientation::Vertical</a></td></tr>
+<tr class="separator:a4621a1ccfe6ed5d005f5fb4b41331ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa0fc7e83eb22a281d3c50abe884ef5" id="r_a4aa0fc7e83eb22a281d3c50abe884ef5"><td class="memItemLeft" align="right" valign="top"><a id="a4aa0fc7e83eb22a281d3c50abe884ef5" name="a4aa0fc7e83eb22a281d3c50abe884ef5"></a>
 std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_PressedAt</b></td></tr>
 <tr class="separator:a4aa0fc7e83eb22a281d3c50abe884ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1086,6 +1092,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <p>Returns the minimum value. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current minimum value</dd></dl>
 <p>The default minimum value 0. </p>
+
+</div>
+</div>
+<a id="ad7b324cc6c5bddb0f3a32aaca3f47f00" name="ad7b324cc6c5bddb0f3a32aaca3f47f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b324cc6c5bddb0f3a32aaca3f47f00">&#9670;&#160;</a></span>getOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> tgui::SpinButton::getOrientation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the spin button lies horizontally or vertically. </p>
+<dl class="section return"><dt>Returns</dt><dd>Orientation of the spin button </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
 
 </div>
 </div>
@@ -1520,6 +1547,33 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="a147fe0602cd5b7e5808fb9d01bfdf4e9" name="a147fe0602cd5b7e5808fb9d01bfdf4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147fe0602cd5b7e5808fb9d01bfdf4e9">&#9670;&#160;</a></span>setOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::SpinButton::setOrientation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a></td>          <td class="paramname"><span class="paramname"><em>orientation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes whether the spin button lies horizontally or vertically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orientation</td><td>Orientation of the spin button</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function will swap the width and height of the spin button if it didn't lie in the wanted direction.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
+
+</div>
+</div>
 <a id="a6418a9a12e23b227f4afe3343dea8b65" name="a6418a9a12e23b227f4afe3343dea8b65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6418a9a12e23b227f4afe3343dea8b65">&#9670;&#160;</a></span>setSize() <span class="overload">[1/2]</span></h2>
 
@@ -1550,7 +1604,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   </table>
   </dd>
 </dl>
-<p>Note that the VerticalScroll property is changed by this function based on the given width and height. </p>
+<p>Note that the Orientation property is changed by this function based on the given width and height. </p>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#aa593c0cf9c1dca1393e60849719417cf">tgui::Widget</a>.</p>
 
@@ -1680,7 +1734,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

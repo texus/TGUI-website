@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -552,6 +552,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SpinControl.html">SpinControl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin control widget.  <a href="classtgui_1_1SpinControl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SplitContainer.html">SplitContainer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtgui_1_1Container.html" title="Container widget.">Container</a> that should contains exactly 2 child widgets which will be resized to fill the container together, with a splitter between them that can be dragged to change the amount of space each widget takes up.  <a href="classtgui_1_1SplitContainer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1SplitContainerRenderer.html">SplitContainerRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Sprite.html">Sprite</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1String.html">String</a></td></tr>
@@ -743,6 +748,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa728b924b1e93f5e2edd555dffffadba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of animation.  <a href="#aa728b924b1e93f5e2edd555dffffadba">More...</a><br /></td></tr>
 <tr class="separator:aa728b924b1e93f5e2edd555dffffadba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7c068f68617b08f16f85eabb6ddb96" id="r_a9a7c068f68617b08f16f85eabb6ddb96"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> { <a class="el" href="#a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012">Vertical</a>
+, <a class="el" href="#a9a7c068f68617b08f16f85eabb6ddb96ac1b5fa03ecdb95d4a45dd1c40b02527f">Horizontal</a>
+ }</td></tr>
+<tr class="memdesc:a9a7c068f68617b08f16f85eabb6ddb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation of the object.  <a href="#a9a7c068f68617b08f16f85eabb6ddb96">More...</a><br /></td></tr>
+<tr class="separator:a9a7c068f68617b08f16f85eabb6ddb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a530165567f6d7efbdbc10906b81d4758" id="r_a530165567f6d7efbdbc10906b81d4758"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a530165567f6d7efbdbc10906b81d4758">HorizontalAlignment</a> { <a class="el" href="#a530165567f6d7efbdbc10906b81d4758a945d5e233cf7d6240f6b783b36a374ff">Left</a>
 , <a class="el" href="#a530165567f6d7efbdbc10906b81d4758a4f1f6016fc9f3f2353c0cc7c67b292bd">Center</a>
 , <a class="el" href="#a530165567f6d7efbdbc10906b81d4758a92b09c7c48c520c3c55e497875da437c">Right</a>
@@ -1379,6 +1389,37 @@ constexpr unsigned <a class="el" href="classint.html">int</a>&#160;</td><td clas
 <tr><td class="fieldname"><a id="a530165567f6d7efbdbc10906b81d4758a4f1f6016fc9f3f2353c0cc7c67b292bd" name="a530165567f6d7efbdbc10906b81d4758a4f1f6016fc9f3f2353c0cc7c67b292bd"></a>Center&#160;</td><td class="fielddoc"><p>Center the object horizontally. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a530165567f6d7efbdbc10906b81d4758a92b09c7c48c520c3c55e497875da437c" name="a530165567f6d7efbdbc10906b81d4758a92b09c7c48c520c3c55e497875da437c"></a>Right&#160;</td><td class="fielddoc"><p>Align to the right side. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9a7c068f68617b08f16f85eabb6ddb96" name="a9a7c068f68617b08f16f85eabb6ddb96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7c068f68617b08f16f85eabb6ddb96">&#9670;&#160;</a></span>Orientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a9a7c068f68617b08f16f85eabb6ddb96">tgui::Orientation</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Orientation of the object. </p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012" name="a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012"></a>Vertical&#160;</td><td class="fielddoc"><p>Vertical orientation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9a7c068f68617b08f16f85eabb6ddb96ac1b5fa03ecdb95d4a45dd1c40b02527f" name="a9a7c068f68617b08f16f85eabb6ddb96ac1b5fa03ecdb95d4a45dd1c40b02527f"></a>Horizontal&#160;</td><td class="fielddoc"><p>Horizontal orientation. </p>
 </td></tr>
 </table>
 
@@ -2278,7 +2319,7 @@ constexpr unsigned <a class="el" href="classint.html">int</a>&#160;</td><td clas
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

@@ -5,6 +5,18 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 4
+    patches:
+    - version: 0
+      date: 15 July 2024
+      changes: |
+        New widget: SplitContainer
+        Added MaxValue getter to Scrollbar
+        Added ScrollbarMaxValue getters to widgets with a scrollbar
+        Added getPixelsPerPoint() to BackendRenderTarget
+        Inner size of ScrollablePanel now depends on shown scrollbars
+        Replaced VerticalScroll with Orientation in Slider, Scrollbar and SpinButton
+        Multiple fixes to EditBoxSlider widget
   - version: 3
     patches:
     - version: 0

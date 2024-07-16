@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -231,6 +231,12 @@ TGUI_NODISCARD const <a class="el" href="classtgui_1_1SliderRenderer.html">Slide
 <tr class="memitem:a2272c210db42b8bb4b5c3f54e5a29453" id="r_a2272c210db42b8bb4b5c3f54e5a29453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2272c210db42b8bb4b5c3f54e5a29453">setSize</a> (const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;size) override</td></tr>
 <tr class="memdesc:a2272c210db42b8bb4b5c3f54e5a29453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the edit box slider.  <br /></td></tr>
 <tr class="separator:a2272c210db42b8bb4b5c3f54e5a29453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac549a0615ac848930983911244533d3b" id="r_ac549a0615ac848930983911244533d3b"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac549a0615ac848930983911244533d3b">getFullSize</a> () const override</td></tr>
+<tr class="memdesc:ac549a0615ac848930983911244533d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full size of the combined edit box and slider.  <br /></td></tr>
+<tr class="separator:ac549a0615ac848930983911244533d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a3a13b9d6a21aff8c96b0b4438fcbb" id="r_a39a3a13b9d6a21aff8c96b0b4438fcbb"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39a3a13b9d6a21aff8c96b0b4438fcbb">getWidgetOffset</a> () const override</td></tr>
+<tr class="memdesc:a39a3a13b9d6a21aff8c96b0b4438fcbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the position where the widget is drawn and where the widget is placed.  <br /></td></tr>
+<tr class="separator:a39a3a13b9d6a21aff8c96b0b4438fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a765141aec8bf27015db7052a7fba0f03" id="r_a765141aec8bf27015db7052a7fba0f03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a765141aec8bf27015db7052a7fba0f03">setMinimum</a> (float minimum)</td></tr>
 <tr class="memdesc:a765141aec8bf27015db7052a7fba0f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a minimum value.  <br /></td></tr>
 <tr class="separator:a765141aec8bf27015db7052a7fba0f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,15 +388,9 @@ virtual TGUI_NODISCARD const <a class="el" href="classtgui_1_1WidgetRenderer.htm
 <tr class="memitem:a991ae875b6dfc36326b8500ddcd53fe5 inherit pub_methods_classtgui_1_1Widget" id="r_a991ae875b6dfc36326b8500ddcd53fe5"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a991ae875b6dfc36326b8500ddcd53fe5">getSize</a> () const</td></tr>
 <tr class="memdesc:a991ae875b6dfc36326b8500ddcd53fe5 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the widget.  <br /></td></tr>
 <tr class="separator:a991ae875b6dfc36326b8500ddcd53fe5 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f2d90405b4c6ce500bc6108f5343ac inherit pub_methods_classtgui_1_1Widget" id="r_a00f2d90405b4c6ce500bc6108f5343ac"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a00f2d90405b4c6ce500bc6108f5343ac">getFullSize</a> () const</td></tr>
-<tr class="memdesc:a00f2d90405b4c6ce500bc6108f5343ac inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entire size that the widget is using.  <br /></td></tr>
-<tr class="separator:a00f2d90405b4c6ce500bc6108f5343ac inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af262ab011e9dc76a7a10260cd2958458 inherit pub_methods_classtgui_1_1Widget" id="r_af262ab011e9dc76a7a10260cd2958458"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#af262ab011e9dc76a7a10260cd2958458">getAbsolutePosition</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> offset={}) const</td></tr>
 <tr class="memdesc:af262ab011e9dc76a7a10260cd2958458 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the absolute position of the widget instead of the relative position to its parent.  <br /></td></tr>
 <tr class="separator:af262ab011e9dc76a7a10260cd2958458 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget" id="r_a8ea44f50f0908c779d5285dc016527ab"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a8ea44f50f0908c779d5285dc016527ab">getWidgetOffset</a> () const</td></tr>
-<tr class="memdesc:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the position where the widget is drawn and where the widget is placed.  <br /></td></tr>
-<tr class="separator:a8ea44f50f0908c779d5285dc016527ab inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7097e52ebcd27a6c71b8012a53da45e9 inherit pub_methods_classtgui_1_1Widget" id="r_a7097e52ebcd27a6c71b8012a53da45e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7097e52ebcd27a6c71b8012a53da45e9">setAutoLayout</a> (<a class="el" href="namespacetgui.html#aa0ca90f9e69c4447cbc16fa7d0615db1">AutoLayout</a> layout)</td></tr>
 <tr class="memdesc:a7097e52ebcd27a6c71b8012a53da45e9 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets how the position is determined compared to the other widgets in the parent.  <br /></td></tr>
 <tr class="separator:a7097e52ebcd27a6c71b8012a53da45e9 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1053,6 +1053,37 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="ac549a0615ac848930983911244533d3b" name="ac549a0615ac848930983911244533d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac549a0615ac848930983911244533d3b">&#9670;&#160;</a></span>getFullSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::EditBoxSlider::getFullSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the full size of the combined edit box and slider. </p>
+<p>This size also takes the thumb of the slider into account as opposed to getSize which only includes the track size.</p>
+<dl class="section return"><dt>Returns</dt><dd>Full size of the combined edit box and slider </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a00f2d90405b4c6ce500bc6108f5343ac">tgui::Widget</a>.</p>
+
+</div>
+</div>
 <a id="a82be4df33988615d4752975c8e909f06" name="a82be4df33988615d4752975c8e909f06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82be4df33988615d4752975c8e909f06">&#9670;&#160;</a></span>getMaximum()</h2>
 
@@ -1240,6 +1271,37 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <p>Returns the current value. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current value</dd></dl>
 <p>The default value is 0. </p>
+
+</div>
+</div>
+<a id="a39a3a13b9d6a21aff8c96b0b4438fcbb" name="a39a3a13b9d6a21aff8c96b0b4438fcbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a3a13b9d6a21aff8c96b0b4438fcbb">&#9670;&#160;</a></span>getWidgetOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::EditBoxSlider::getWidgetOffset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the distance between the position where the widget is drawn and where the widget is placed. </p>
+<p>This is a negative offset indicating the difference between the track and thumb position of the slider when the value equals the minimum.</p>
+<dl class="section return"><dt>Returns</dt><dd>Offset of the widget </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a8ea44f50f0908c779d5285dc016527ab">tgui::Widget</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1605,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:04 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

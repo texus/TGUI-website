@@ -38,8 +38,10 @@ var searchData=
   ['spinbutton_35',['SpinButton',['../classtgui_1_1SpinButton.html',1,'tgui']]],
   ['spinbuttonrenderer_36',['SpinButtonRenderer',['../classtgui_1_1SpinButtonRenderer.html',1,'tgui']]],
   ['spincontrol_37',['SpinControl',['../classtgui_1_1SpinControl.html',1,'tgui']]],
-  ['sprite_38',['Sprite',['../classtgui_1_1Sprite.html',1,'tgui']]],
-  ['string_39',['String',['../classtgui_1_1String.html',1,'tgui']]],
-  ['subwidgetcontainer_40',['SubwidgetContainer',['../classtgui_1_1SubwidgetContainer.html',1,'tgui']]],
-  ['svgimage_41',['SvgImage',['../classtgui_1_1SvgImage.html',1,'tgui']]]
+  ['splitcontainer_38',['SplitContainer',['../classtgui_1_1SplitContainer.html',1,'tgui']]],
+  ['splitcontainerrenderer_39',['SplitContainerRenderer',['../classtgui_1_1SplitContainerRenderer.html',1,'tgui']]],
+  ['sprite_40',['Sprite',['../classtgui_1_1Sprite.html',1,'tgui']]],
+  ['string_41',['String',['../classtgui_1_1String.html',1,'tgui']]],
+  ['subwidgetcontainer_42',['SubwidgetContainer',['../classtgui_1_1SubwidgetContainer.html',1,'tgui']]],
+  ['svgimage_43',['SvgImage',['../classtgui_1_1SvgImage.html',1,'tgui']]]
 ];

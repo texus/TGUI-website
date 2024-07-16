@@ -19,7 +19,7 @@ The TGUI source code can be downloaded from the [download page](/download).
 
 ### CMake
 
-For information about cross-compiling options for iOS with CMake that aren't specific to TGUI, see [CMake's toolchains manual](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-ios-tvos-or-watchos).
+For information about cross-compiling options for iOS with CMake that aren't specific to TGUI, see [CMake's toolchains manual](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-ios-tvos-visionos-or-watchos).
 
 Execute something similar to the following in a terminal from within the TGUI folder:
 ```

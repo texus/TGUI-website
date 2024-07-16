@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -226,6 +226,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderTarg
 <tr class="memitem:a787177e64dafef50c55dc1a3020f84a8" id="r_a787177e64dafef50c55dc1a3020f84a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a787177e64dafef50c55dc1a3020f84a8">drawVertexArray</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> *vertices, std::size_t vertexCount, const unsigned <a class="el" href="classint.html">int</a> *indices, std::size_t indexCount, const std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; &amp;texture)=0</td></tr>
 <tr class="memdesc:a787177e64dafef50c55dc1a3020f84a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a vertex array. This is called by the other draw functions when they are not overriden.  <br /></td></tr>
 <tr class="separator:a787177e64dafef50c55dc1a3020f84a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7171899fd1f829d8d864fc527ae86799" id="r_a7171899fd1f829d8d864fc527ae86799"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7171899fd1f829d8d864fc527ae86799">getPixelsPerPoint</a> () const</td></tr>
+<tr class="memdesc:a7171899fd1f829d8d864fc527ae86799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping between the screen pixels and the points in the current view.  <br /></td></tr>
+<tr class="separator:a7171899fd1f829d8d864fc527ae86799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -801,6 +804,28 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 
 </div>
 </div>
+<a id="a7171899fd1f829d8d864fc527ae86799" name="a7171899fd1f829d8d864fc527ae86799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7171899fd1f829d8d864fc527ae86799">&#9670;&#160;</a></span>getPixelsPerPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::BackendRenderTarget::getPixelsPerPoint </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current mapping between the screen pixels and the points in the current view. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pixels per point</dd></dl>
+<p>Example when rounding rendering to the nearest pixel: </p><div class="fragment"><div class="line">states.transform.roundPosition(target.getPixelsPerPoint());</div>
+</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>TGUI 1.4 </dd></dl>
+
+</div>
+</div>
 <a id="a0d9c1fb80d0810fb1e37196adf028f9c" name="a0d9c1fb80d0810fb1e37196adf028f9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d9c1fb80d0810fb1e37196adf028f9c">&#9670;&#160;</a></span>removeClippingLayer()</h2>
 
@@ -958,7 +983,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

@@ -69,7 +69,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.3.0</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
   </td>
  </tr>
@@ -158,84 +158,71 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef TGUI_TRANSFORM_HPP</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define TGUI_TRANSFORM_HPP</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;TGUI/Config.hpp&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;TGUI/Rect.hpp&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    #include &lt;array&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Based on sf::Transform from SFML</span></div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html">   46</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a88f37e58e1c0c909de73438bf7364de0">   55</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#a88f37e58e1c0c909de73438bf7364de0">Transform</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">   71</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">Transform</a>(<span class="keywordtype">float</span> a00, <span class="keywordtype">float</span> a01, <span class="keywordtype">float</span> a02,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                  <span class="keywordtype">float</span> a10, <span class="keywordtype">float</span> a11, <span class="keywordtype">float</span> a12,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                  <span class="keywordtype">float</span> a20, <span class="keywordtype">float</span> a21, <span class="keywordtype">float</span> a22);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#ac84b99ca5db0157d4567b78287edffb5">   81</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#ac84b99ca5db0157d4567b78287edffb5">Transform</a>(<span class="keyword">const</span> std::array&lt;float, 16&gt;&amp; matrix);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a8aa1fa99dbb332e304a7b84195de66a2">   96</a></span>        TGUI_NODISCARD <span class="keyword">const</span> std::array&lt;float, 16&gt;&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a8aa1fa99dbb332e304a7b84195de66a2">getMatrix</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a9b190dd6f470093eb3a4ad327c0a20a9">  106</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a9b190dd6f470093eb3a4ad327c0a20a9">getInverse</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a9b2d16a50255756194f419e4db84eaf7">  116</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a9b2d16a50255756194f419e4db84eaf7">transformPoint</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; point) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a811484a2fdee5a902f37195e2f90ce90">  128</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a811484a2fdee5a902f37195e2f90ce90">transformRect</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; rectangle) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">  141</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">combine</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; other);</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef TGUI_TRANSFORM_HPP</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define TGUI_TRANSFORM_HPP</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;TGUI/Config.hpp&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;TGUI/Rect.hpp&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if !TGUI_EXPERIMENTAL_USE_STD_MODULE</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">    #include &lt;array&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>TGUI_MODULE_EXPORT <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetgui.html">tgui</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Based on sf::Transform from SFML</span></div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html">   45</a></span>    <span class="keyword">class </span>TGUI_API <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a88f37e58e1c0c909de73438bf7364de0">   54</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#a88f37e58e1c0c909de73438bf7364de0">Transform</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">   69</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">Transform</a>(<span class="keywordtype">float</span> a00, <span class="keywordtype">float</span> a01, <span class="keywordtype">float</span> a02,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                  <span class="keywordtype">float</span> a10, <span class="keywordtype">float</span> a11, <span class="keywordtype">float</span> a12,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                  <span class="keywordtype">float</span> a20, <span class="keywordtype">float</span> a21, <span class="keywordtype">float</span> a22);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#ac84b99ca5db0157d4567b78287edffb5">   78</a></span>        <a class="code hl_function" href="classtgui_1_1Transform.html#ac84b99ca5db0157d4567b78287edffb5">Transform</a>(<span class="keyword">const</span> std::array&lt;float, 16&gt;&amp; matrix);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a8aa1fa99dbb332e304a7b84195de66a2">   92</a></span>        TGUI_NODISCARD <span class="keyword">const</span> std::array&lt;float, 16&gt;&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a8aa1fa99dbb332e304a7b84195de66a2">getMatrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a9b190dd6f470093eb3a4ad327c0a20a9">  101</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a9b190dd6f470093eb3a4ad327c0a20a9">getInverse</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a9b2d16a50255756194f419e4db84eaf7">  110</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a9b2d16a50255756194f419e4db84eaf7">transformPoint</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; point) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a811484a2fdee5a902f37195e2f90ce90">  121</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a> <a class="code hl_function" href="classtgui_1_1Transform.html#a811484a2fdee5a902f37195e2f90ce90">transformRect</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Rect.html">FloatRect</a>&amp; rectangle) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">  133</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">combine</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; other);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">  142</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">translate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; offset);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">  151</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">translate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; offset);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851">  165</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851">rotate</a>(<span class="keywordtype">float</span> angle, <span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; center = {0, 0});</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a93dd1d197e328428d88a575cae9c8cd1">  179</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a93dd1d197e328428d88a575cae9c8cd1">scale</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; factors, <span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; center = {0, 0});</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851">  155</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851">rotate</a>(<span class="keywordtype">float</span> angle, <span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; center = {0, 0});</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a93dd1d197e328428d88a575cae9c8cd1">  168</a></span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; <a class="code hl_function" href="classtgui_1_1Transform.html#a93dd1d197e328428d88a575cae9c8cd1">scale</a>(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; factors, <span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; center = {0, 0});</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a37e51217fa03461a0592b4e4691680c8">  177</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a> operator *(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; right) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; operator *=(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; right);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> operator *(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; right) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a37e51217fa03461a0592b4e4691680c8">  189</a></span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a> operator *(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; right) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; operator *=(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Transform.html">Transform</a>&amp; right);</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        TGUI_NODISCARD <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> operator *(<span class="keyword">const</span> <a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a>&amp; right) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca">  200</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca">roundPosition</a>(<span class="keywordtype">float</span> pixelScaleX, <span class="keywordtype">float</span> pixelScaleY);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        std::array&lt;float, 16&gt; m_matrix; </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    };</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca">  187</a></span>        TGUI_DEPRECATED(<span class="stringliteral">&quot;Use roundPosition(Vector2f) instead&quot;</span>) void roundPosition(<span class="keywordtype">float</span> pixelScaleX, <span class="keywordtype">float</span> pixelScaleY);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classtgui_1_1Transform.html#a5b9499506d06f4e1f1bd10d28f0c0be8">  194</a></span>        <span class="keywordtype">void</span> roundPosition(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pixelScale);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    private:</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        std::array&lt;<span class="keywordtype">float</span>, 16&gt; m_matrix; </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    };</div>
 </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_TRANSFORM_HPP</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_TRANSFORM_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1Rect_html"><div class="ttname"><a href="classtgui_1_1Rect.html">tgui::Rect&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclasstgui_1_1Transform_html"><div class="ttname"><a href="classtgui_1_1Transform.html">tgui::Transform</a></div><div class="ttdoc">Defines a transform matrix.</div><div class="ttdef"><b>Definition</b> Transform.hpp:47</div></div>
+<div class="ttc" id="aclasstgui_1_1Transform_html"><div class="ttname"><a href="classtgui_1_1Transform.html">tgui::Transform</a></div><div class="ttdoc">Defines a transform matrix.</div><div class="ttdef"><b>Definition</b> Transform.hpp:46</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a19fbeda8f3ea04a19222b9ab834a456b"><div class="ttname"><a href="classtgui_1_1Transform.html#a19fbeda8f3ea04a19222b9ab834a456b">tgui::Transform::Transform</a></div><div class="ttdeci">Transform(float a00, float a01, float a02, float a10, float a11, float a12, float a20, float a21, float a22)</div><div class="ttdoc">Construct a transform from a 3x3 matrix.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a1aff851a22afd5279719daac0ab92e02"><div class="ttname"><a href="classtgui_1_1Transform.html#a1aff851a22afd5279719daac0ab92e02">tgui::Transform::translate</a></div><div class="ttdeci">Transform &amp; translate(const Vector2f &amp;offset)</div><div class="ttdoc">Combine the current transform with a translation.</div></div>
-<div class="ttc" id="aclasstgui_1_1Transform_html_a1c2004262e3e7456c76eb278896429ca"><div class="ttname"><a href="classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca">tgui::Transform::roundPosition</a></div><div class="ttdeci">void roundPosition(float pixelScaleX, float pixelScaleY)</div><div class="ttdoc">Rounds the position stored in the transform to the nearest pixel.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a6e46064b67a8f63909ee367c0ca13f56"><div class="ttname"><a href="classtgui_1_1Transform.html#a6e46064b67a8f63909ee367c0ca13f56">tgui::Transform::combine</a></div><div class="ttdeci">Transform &amp; combine(const Transform &amp;other)</div><div class="ttdoc">Combine the current transform with another one.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a811484a2fdee5a902f37195e2f90ce90"><div class="ttname"><a href="classtgui_1_1Transform.html#a811484a2fdee5a902f37195e2f90ce90">tgui::Transform::transformRect</a></div><div class="ttdeci">TGUI_NODISCARD FloatRect transformRect(const FloatRect &amp;rectangle) const</div><div class="ttdoc">Transform a rectangle.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_a88f37e58e1c0c909de73438bf7364de0"><div class="ttname"><a href="classtgui_1_1Transform.html#a88f37e58e1c0c909de73438bf7364de0">tgui::Transform::Transform</a></div><div class="ttdeci">Transform()</div><div class="ttdoc">Default constructor.</div></div>
@@ -246,12 +233,12 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclasstgui_1_1Transform_html_abc6b9c13455773fcab4231a015cd1851"><div class="ttname"><a href="classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851">tgui::Transform::rotate</a></div><div class="ttdeci">Transform &amp; rotate(float angle, const Vector2f &amp;center={0, 0})</div><div class="ttdoc">Combine the current transform with a rotation.</div></div>
 <div class="ttc" id="aclasstgui_1_1Transform_html_ac84b99ca5db0157d4567b78287edffb5"><div class="ttname"><a href="classtgui_1_1Transform.html#ac84b99ca5db0157d4567b78287edffb5">tgui::Transform::Transform</a></div><div class="ttdeci">Transform(const std::array&lt; float, 16 &gt; &amp;matrix)</div><div class="ttdoc">Constructs a transform from a 4x4 matrix.</div></div>
 <div class="ttc" id="aclasstgui_1_1Vector2_html"><div class="ttname"><a href="classtgui_1_1Vector2.html">tgui::Vector2&lt; float &gt;</a></div></div>
-<div class="ttc" id="anamespacetgui_html"><div class="ttname"><a href="namespacetgui.html">tgui</a></div><div class="ttdoc">Namespace that contains all TGUI functions and classes.</div><div class="ttdef"><b>Definition</b> AbsoluteOrRelativeValue.hpp:39</div></div>
+<div class="ttc" id="anamespacetgui_html"><div class="ttname"><a href="namespacetgui.html">tgui</a></div><div class="ttdoc">Namespace that contains all TGUI functions and classes.</div><div class="ttdef"><b>Definition</b> AbsoluteOrRelativeValue.hpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 10 2024 18:12:19 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 15 2024 16:59:03 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

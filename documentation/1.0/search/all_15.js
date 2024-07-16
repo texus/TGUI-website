@@ -11,7 +11,7 @@ var searchData=
   ['vector2_3c_20tgui_3a_3aabsoluteorrelativevalue_20_3e_8',['Vector2&lt; tgui::AbsoluteOrRelativeValue &gt;',['../classtgui_1_1Vector2.html',1,'tgui']]],
   ['vector2_3c_20unsigned_20int_20_3e_9',['Vector2&lt; unsigned int &gt;',['../classtgui_1_1Vector2.html',1,'tgui']]],
   ['vertex_10',['Vertex',['../structtgui_1_1Vertex.html',1,'tgui']]],
-  ['vertical_11',['Vertical',['../classtgui_1_1Sprite.html#a3ebf7132d60f5c6f4ca0c3ebd60ea9f8a06ce2a25e5d12c166a36f654dbea6012',1,'tgui::Sprite']]],
+  ['vertical_11',['Vertical',['../classtgui_1_1Sprite.html#a3ebf7132d60f5c6f4ca0c3ebd60ea9f8a06ce2a25e5d12c166a36f654dbea6012',1,'tgui::Sprite::Vertical'],['../namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012',1,'tgui::Vertical']]],
   ['verticalalignment_12',['VerticalAlignment',['../classtgui_1_1Label.html#acaca94d9a15694db459448bd73fe3416',1,'tgui::Label::VerticalAlignment'],['../namespacetgui.html#ae5a81850d17cd6485d776b9972d41d7c',1,'tgui::VerticalAlignment']]],
   ['verticallayout_13',['VerticalLayout',['../classtgui_1_1VerticalLayout.html',1,'tgui']]],
   ['viewendswith_14',['viewEndsWith',['../namespacetgui.html#af7ca236abfc0b5531ca81cd4c0ee35d6',1,'tgui::viewEndsWith(CharStringView viewToLookInto, CharStringView viewToLookFor)'],['../namespacetgui.html#a5a4925e0f8e005dcdca5b5b35389f428',1,'tgui::viewEndsWith(CharStringView viewToLookInto, char charToLookFor)'],['../namespacetgui.html#a2223cba49d58e844aa6122db920456b3',1,'tgui::viewEndsWith(StringView viewToLookInto, StringView viewToLookFor)'],['../namespacetgui.html#a3dc8ac456eda49b2d6bfdae77a15195f',1,'tgui::viewEndsWith(StringView viewToLookInto, char32_t charToLookFor)']]],
