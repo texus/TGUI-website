@@ -6,6 +6,8 @@ breadcrumb: building with cmake
 
 You need to use [CMake](https://www.cmake.org/download/) in order to build TGUI. This tutorial provides an overview of available settings in CMake, instructions on using CMake and information about the build step after running CMake (which depends on which generator is selected in CMake).
 
+If your own project also uses CMake and you want to build TGUI as part of your project with CMake's `FetchContent` module, then you can skip this page (except the "TGUI properties" section) and go straight to [using TGUI from a CMake project](../using-from-cmake/).
+
 ### TGUI properties
 
 This is a list of TGUI related properties that you might want to specify in CMake. Other properties exist, but the ones listed here are the ones that you are most likely to need.
