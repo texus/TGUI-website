@@ -7,6 +7,11 @@ changelog:
   minors:
   - version: 4
     patches:
+    - version: 1
+      date: 20 July 2024
+      changes: |
+        Fixed infinite loop in Theme::replace (introduced in TGUI 1.4.0)
+        PanelListBox now has proper background color and borders in White theme
     - version: 0
       date: 15 July 2024
       changes: |
