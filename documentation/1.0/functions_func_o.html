@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -152,7 +155,7 @@ $(function(){ initResizable(false); });
 <li>operator-=()&#160;:&#160;<a class="el" href="classtgui_1_1Outline.html#a5e0df9dafa18e7ee65b597d6e0a209f1">tgui::Outline</a></li>
 <li>operator/()&#160;:&#160;<a class="el" href="classtgui_1_1Filesystem_1_1Path.html#aefbfe9851ed5785a43eaa736808b45bc">tgui::Filesystem::Path</a></li>
 <li>operator/=()&#160;:&#160;<a class="el" href="classtgui_1_1Filesystem_1_1Path.html#aaafbf272cef56d42e67cbc9dcf2d1522">tgui::Filesystem::Path</a></li>
-<li>operator=()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#a557b1702dd46317d7df3dc3036c8fd20">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BitmapButton.html#aa1aaf553a09d518d9f38174e131d0baa">tgui::BitmapButton</a>, <a class="el" href="classtgui_1_1ButtonBase.html#ab112d2310a5395822f349d56dfd3e752">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1CanvasGLES2.html#a47cab4498aa0f2f40c2ef56c6d2ebca3">tgui::CanvasGLES2</a>, <a class="el" href="classtgui_1_1CanvasOpenGL3.html#a8c0b5cdcda4a106aac6ed1037bf74ee1">tgui::CanvasOpenGL3</a>, <a class="el" href="classtgui_1_1CanvasRaylib.html#a3c2118c3e8f499fe6e39eb93845fe6b8">tgui::CanvasRaylib</a>, <a class="el" href="classtgui_1_1CanvasSDL.html#a1b2a2e126ceb7c52b4c47afc4f4acc8a">tgui::CanvasSDL</a>, <a class="el" href="classtgui_1_1CanvasSFML.html#ad696072f2b0b0414d4fb4d80653df01b">tgui::CanvasSFML</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a6a2bc6fc3f50ea6e52b3b89059f82eb5">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1ColorPicker.html#ae962d54518943237f0ae640209ce4e2c">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1Container.html#a534341fcd510880788580bfd9df56a69">tgui::Container</a>, <a class="el" href="classtgui_1_1EditBoxSlider.html#a26d08c847593542aa7b289c9c7f2b0e4">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1FileDialog.html#ab17586e5f4eeac7e9699b2cc5950c60a">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1Grid.html#a7bdfc03377c1a985e17d9e40170286a4">tgui::Grid</a>, <a class="el" href="classtgui_1_1Layout.html#af9f0d8a3ea02a32ab0dbe6a0ba36ecb8">tgui::Layout</a>, <a class="el" href="classtgui_1_1MessageBox.html#a98cec85d60e63cd0c86f35a7d5550ecd">tgui::MessageBox</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a70de75252bbd2848037671e408072c7d">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1Signal.html#a81c3e7e90f73dc5fcd266c4b90644646">tgui::Signal</a>, <a class="el" href="classtgui_1_1SpinControl.html#a33a8dea2a9e9f1ce037d4a19a7ab5e02">tgui::SpinControl</a>, <a class="el" href="classtgui_1_1Sprite.html#a6307960160c653712d9ee5f9b33d53f5">tgui::Sprite</a>, <a class="el" href="classtgui_1_1TabContainer.html#adb777d2a6c36bbfa769ff7e1b7e763a3">tgui::TabContainer</a>, <a class="el" href="classtgui_1_1Texture.html#a341327305dddaaa785c34fac3974bd23">tgui::Texture</a>, <a class="el" href="classtgui_1_1Theme.html#ae728f1795cc6d503004c80993cc1df86">tgui::Theme</a>, <a class="el" href="classtgui_1_1Widget.html#a193d8bc957f901246d382e91914bb4cc">tgui::Widget</a>, <a class="el" href="classtgui_1_1WidgetRenderer.html#a8efabaddd05ed3e6297e70c49420cb02">tgui::WidgetRenderer</a></li>
+<li>operator=()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#a557b1702dd46317d7df3dc3036c8fd20">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BitmapButton.html#aa1aaf553a09d518d9f38174e131d0baa">tgui::BitmapButton</a>, <a class="el" href="classtgui_1_1ButtonBase.html#ab112d2310a5395822f349d56dfd3e752">tgui::ButtonBase</a>, <a class="el" href="classtgui_1_1CanvasGLES2.html#a47cab4498aa0f2f40c2ef56c6d2ebca3">tgui::CanvasGLES2</a>, <a class="el" href="classtgui_1_1CanvasOpenGL3.html#a8c0b5cdcda4a106aac6ed1037bf74ee1">tgui::CanvasOpenGL3</a>, <a class="el" href="classtgui_1_1CanvasRaylib.html#a3c2118c3e8f499fe6e39eb93845fe6b8">tgui::CanvasRaylib</a>, <a class="el" href="classtgui_1_1CanvasSDL.html#a1b2a2e126ceb7c52b4c47afc4f4acc8a">tgui::CanvasSDL</a>, <a class="el" href="classtgui_1_1CanvasSFML.html#ad696072f2b0b0414d4fb4d80653df01b">tgui::CanvasSFML</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a6a2bc6fc3f50ea6e52b3b89059f82eb5">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1ColorPicker.html#ae962d54518943237f0ae640209ce4e2c">tgui::ColorPicker</a>, <a class="el" href="classtgui_1_1Container.html#a534341fcd510880788580bfd9df56a69">tgui::Container</a>, <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa4e78b178e2115c4fe38e2c0de7ac1ca">tgui::DualScrollbarChildInterface</a>, <a class="el" href="classtgui_1_1EditBoxSlider.html#a26d08c847593542aa7b289c9c7f2b0e4">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1FileDialog.html#ab17586e5f4eeac7e9699b2cc5950c60a">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1Grid.html#a7bdfc03377c1a985e17d9e40170286a4">tgui::Grid</a>, <a class="el" href="classtgui_1_1Layout.html#af9f0d8a3ea02a32ab0dbe6a0ba36ecb8">tgui::Layout</a>, <a class="el" href="classtgui_1_1MessageBox.html#a98cec85d60e63cd0c86f35a7d5550ecd">tgui::MessageBox</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a70de75252bbd2848037671e408072c7d">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1ScrollbarChildInterface.html#ae7d975d72853875ab36702f611061f67">tgui::ScrollbarChildInterface</a>, <a class="el" href="classtgui_1_1Signal.html#a81c3e7e90f73dc5fcd266c4b90644646">tgui::Signal</a>, <a class="el" href="classtgui_1_1SpinControl.html#a33a8dea2a9e9f1ce037d4a19a7ab5e02">tgui::SpinControl</a>, <a class="el" href="classtgui_1_1Sprite.html#a6307960160c653712d9ee5f9b33d53f5">tgui::Sprite</a>, <a class="el" href="classtgui_1_1TabContainer.html#adb777d2a6c36bbfa769ff7e1b7e763a3">tgui::TabContainer</a>, <a class="el" href="classtgui_1_1Texture.html#a341327305dddaaa785c34fac3974bd23">tgui::Texture</a>, <a class="el" href="classtgui_1_1Theme.html#ae728f1795cc6d503004c80993cc1df86">tgui::Theme</a>, <a class="el" href="classtgui_1_1Widget.html#a193d8bc957f901246d382e91914bb4cc">tgui::Widget</a>, <a class="el" href="classtgui_1_1WidgetRenderer.html#a8efabaddd05ed3e6297e70c49420cb02">tgui::WidgetRenderer</a></li>
 <li>operator==()&#160;:&#160;<a class="el" href="classtgui_1_1Color.html#abde25e0c0e0a896bf6cf5e6c9b022ccd">tgui::Color</a>, <a class="el" href="classtgui_1_1Filesystem_1_1Path.html#a3b89d6ed98aa6c1fe92735c946458ef8">tgui::Filesystem::Path</a>, <a class="el" href="classtgui_1_1Font.html#a4b023b574b453ecb2484de2335bdf1ed">tgui::Font</a>, <a class="el" href="classtgui_1_1ObjectConverter.html#a8fa5b7e97cd12ba94f49b2c81ae323c6">tgui::ObjectConverter</a>, <a class="el" href="classtgui_1_1Outline.html#a144b552b01df5703edc3a92e8d425479">tgui::Outline</a>, <a class="el" href="classtgui_1_1Texture.html#ab6d3b6648083ff3b610589c8f6cbd52f">tgui::Texture</a></li>
 <li>Outline()&#160;:&#160;<a class="el" href="classtgui_1_1Outline.html#ade6d9a947824151f6d25b4edacdacb87">tgui::Outline</a></li>
 </ul>
@@ -160,7 +163,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

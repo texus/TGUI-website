@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -309,6 +312,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7713bc05343b7373940e5792812459e inherit pub_methods_classtgui_1_1ButtonBase" id="r_af7713bc05343b7373940e5792812459e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ButtonBase.html#af7713bc05343b7373940e5792812459e">setTextPosition</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; <a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html">AbsoluteOrRelativeValue</a> &gt; position, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> origin)</td></tr>
 <tr class="memdesc:af7713bc05343b7373940e5792812459e inherit pub_methods_classtgui_1_1ButtonBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position of the caption text.  <br /></td></tr>
 <tr class="separator:af7713bc05343b7373940e5792812459e inherit pub_methods_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ba63676a1875008964581e87e6efd6 inherit pub_methods_classtgui_1_1ButtonBase" id="r_a27ba63676a1875008964581e87e6efd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ButtonBase.html#a27ba63676a1875008964581e87e6efd6">setIgnoreKeyEvents</a> (bool ignore)</td></tr>
+<tr class="memdesc:a27ba63676a1875008964581e87e6efd6 inherit pub_methods_classtgui_1_1ButtonBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the button should ignore space and return key pressed and only react to mouse clicks.  <br /></td></tr>
+<tr class="separator:a27ba63676a1875008964581e87e6efd6 inherit pub_methods_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7e4c09a523f19595668abb890e8c4d inherit pub_methods_classtgui_1_1ButtonBase" id="r_ade7e4c09a523f19595668abb890e8c4d"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ButtonBase.html#ade7e4c09a523f19595668abb890e8c4d">getIgnoreKeyEvents</a> () const</td></tr>
+<tr class="memdesc:ade7e4c09a523f19595668abb890e8c4d inherit pub_methods_classtgui_1_1ButtonBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the button ignores space and return key presses and only react to mouse clicks.  <br /></td></tr>
+<tr class="separator:ade7e4c09a523f19595668abb890e8c4d inherit pub_methods_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32196caa9c03e22e1d1faf1ffdad1ed0 inherit pub_methods_classtgui_1_1ButtonBase" id="r_a32196caa9c03e22e1d1faf1ffdad1ed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1ButtonBase.html#a32196caa9c03e22e1d1faf1ffdad1ed0">setFocused</a> (bool focused) override</td></tr>
 <tr class="memdesc:a32196caa9c03e22e1d1faf1ffdad1ed0 inherit pub_methods_classtgui_1_1ButtonBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focus or unfocus the widget.  <br /></td></tr>
 <tr class="separator:a32196caa9c03e22e1d1faf1ffdad1ed0 inherit pub_methods_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -856,6 +865,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoSize</b> = true
 <tr class="memitem:a5644b3b187786ac22d5b9c099726425e inherit pro_attribs_classtgui_1_1ButtonBase" id="r_a5644b3b187786ac22d5b9c099726425e"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updatingTextSize</b> = false</td></tr>
 <tr class="separator:a5644b3b187786ac22d5b9c099726425e inherit pro_attribs_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496e06688d9cd9c503081690b36edf25 inherit pro_attribs_classtgui_1_1ButtonBase" id="r_a496e06688d9cd9c503081690b36edf25"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_ignoreKeyEvents</b> = false</td></tr>
+<tr class="separator:a496e06688d9cd9c503081690b36edf25 inherit pro_attribs_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20dde3027d9eb789110ab2cebf72e1e8 inherit pro_attribs_classtgui_1_1ButtonBase" id="r_a20dde3027d9eb789110ab2cebf72e1e8"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; <a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html">AbsoluteOrRelativeValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_textPosition</b></td></tr>
 <tr class="separator:a20dde3027d9eb789110ab2cebf72e1e8 inherit pro_attribs_classtgui_1_1ButtonBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1443,7 +1455,7 @@ unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItem
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:55 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:25 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

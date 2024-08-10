@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -248,6 +251,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAll</b> ()</td>
 <tr class="memitem:a039a89d9f9a990cfc9a5ff21f02eb0e9" id="r_a039a89d9f9a990cfc9a5ff21f02eb0e9"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a039a89d9f9a990cfc9a5ff21f02eb0e9">getSelectedIndex</a> () const</td></tr>
 <tr class="memdesc:a039a89d9f9a990cfc9a5ff21f02eb0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the currently selected tab.  <br /></td></tr>
 <tr class="separator:a039a89d9f9a990cfc9a5ff21f02eb0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac930e58f24eed3b2af3cc65cdce20ac0" id="r_ac930e58f24eed3b2af3cc65cdce20ac0"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac930e58f24eed3b2af3cc65cdce20ac0">getHoveredIndex</a> () const</td></tr>
+<tr class="memdesc:ac930e58f24eed3b2af3cc65cdce20ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the tab below the mouse cursor.  <br /></td></tr>
+<tr class="separator:ac930e58f24eed3b2af3cc65cdce20ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7d39430dfd961258c79c2a046fa17f" id="r_adb7d39430dfd961258c79c2a046fa17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7d39430dfd961258c79c2a046fa17f">setTabVisible</a> (std::size_t index, bool visible)</td></tr>
 <tr class="memdesc:adb7d39430dfd961258c79c2a046fa17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether a tab is visible.  <br /></td></tr>
 <tr class="separator:adb7d39430dfd961258c79c2a046fa17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1147,6 +1153,26 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Returns whether the tabs are auto-sized or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>Is the width of the tabs dependent on their content? </dd></dl>
+
+</div>
+</div>
+<a id="ac930e58f24eed3b2af3cc65cdce20ac0" name="ac930e58f24eed3b2af3cc65cdce20ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac930e58f24eed3b2af3cc65cdce20ac0">&#9670;&#160;</a></span>getHoveredIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD <a class="el" href="classint.html">int</a> tgui::Tabs::getHoveredIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the index of the tab below the mouse cursor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index of the tab below the mouse, or -1 when the mouse isn't on top of any tab </dd></dl>
 
 </div>
 </div>
@@ -2141,7 +2167,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

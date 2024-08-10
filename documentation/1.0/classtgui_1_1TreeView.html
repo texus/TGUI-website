@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -157,6 +160,7 @@ Inheritance diagram for tgui::TreeView:</div>
   <img src="classtgui_1_1TreeView.png" usemap="#tgui::TreeView_map" alt=""/>
   <map id="tgui::TreeView_map" name="tgui::TreeView_map">
 <area href="classtgui_1_1Widget.html" title="The parent class for every widget." alt="tgui::Widget" shape="rect" coords="0,56,238,80"/>
+<area href="classtgui_1_1DualScrollbarChildInterface.html" title="Base class for widgets with both a vertical and horizontal scrollbar." alt="tgui::DualScrollbarChildInterface" shape="rect" coords="248,56,486,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -252,6 +256,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllItems</b> ()
 <tr class="memitem:a6bb5ca8bec343c84ba011c9cb832e5ee" id="r_a6bb5ca8bec343c84ba011c9cb832e5ee"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bb5ca8bec343c84ba011c9cb832e5ee">getSelectedItem</a> () const</td></tr>
 <tr class="memdesc:a6bb5ca8bec343c84ba011c9cb832e5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the selected item.  <br /></td></tr>
 <tr class="separator:a6bb5ca8bec343c84ba011c9cb832e5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf5d89ef3a32f2e8686c5dc5a10fee1" id="r_accf5d89ef3a32f2e8686c5dc5a10fee1"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf5d89ef3a32f2e8686c5dc5a10fee1">getHoveredItem</a> () const</td></tr>
+<tr class="memdesc:accf5d89ef3a32f2e8686c5dc5a10fee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the item currently below the mouse cursor.  <br /></td></tr>
+<tr class="separator:accf5d89ef3a32f2e8686c5dc5a10fee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf789a3cd3ed62dd197c0cfd2e5b23a" id="r_abaf789a3cd3ed62dd197c0cfd2e5b23a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaf789a3cd3ed62dd197c0cfd2e5b23a">setItemIndexInParent</a> (const std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;hierarchy, std::size_t index)</td></tr>
+<tr class="memdesc:abaf789a3cd3ed62dd197c0cfd2e5b23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the index of an item, based on the items that share the same parent.  <br /></td></tr>
+<tr class="separator:abaf789a3cd3ed62dd197c0cfd2e5b23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea918e175ac0a2f749d8200bcc2427a" id="r_a2ea918e175ac0a2f749d8200bcc2427a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ea918e175ac0a2f749d8200bcc2427a">getItemIndexInParent</a> (const std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;hierarchy)</td></tr>
+<tr class="memdesc:a2ea918e175ac0a2f749d8200bcc2427a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of an item, based on the items that share the same parent.  <br /></td></tr>
+<tr class="separator:a2ea918e175ac0a2f749d8200bcc2427a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb0524d0ed67374f613d6a931da6e4b" id="r_a1bb0524d0ed67374f613d6a931da6e4b"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="structtgui_1_1TreeView_1_1ConstNode.html">ConstNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bb0524d0ed67374f613d6a931da6e4b">getNode</a> (const std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;hierarchy) const</td></tr>
 <tr class="memdesc:a1bb0524d0ed67374f613d6a931da6e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the node in the tree view at a given hierarchy.  <br /></td></tr>
 <tr class="separator:a1bb0524d0ed67374f613d6a931da6e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +625,43 @@ template&lt;typename WidgetType &gt; </td></tr>
 <tr class="memitem:abe55fe12f26ae77c978778ca2a50be0b inherit pub_methods_classtgui_1_1Widget" id="r_abe55fe12f26ae77c978778ca2a50be0b"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rendererChangedCallback</b> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property)</td></tr>
 <tr class="separator:abe55fe12f26ae77c978778ca2a50be0b inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classtgui_1_1DualScrollbarChildInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtgui_1_1DualScrollbarChildInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">tgui::DualScrollbarChildInterface</a></td></tr>
+<tr class="memitem:a501d440664f400471052e0b0e7cd5662 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a501d440664f400471052e0b0e7cd5662"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>DualScrollbarChildInterface</b> ()</td></tr>
+<tr class="memdesc:a501d440664f400471052e0b0e7cd5662 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a501d440664f400471052e0b0e7cd5662 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36273a78c1aa20d76d6c9477c9bcf35c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a36273a78c1aa20d76d6c9477c9bcf35c"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>DualScrollbarChildInterface</b> (const <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;)</td></tr>
+<tr class="memdesc:a36273a78c1aa20d76d6c9477c9bcf35c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
+<tr class="separator:a36273a78c1aa20d76d6c9477c9bcf35c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f374aefcac0c2414d32be24b0de9fa inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_af9f374aefcac0c2414d32be24b0de9fa"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>DualScrollbarChildInterface</b> (<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;&amp;) noexcept</td></tr>
+<tr class="memdesc:af9f374aefcac0c2414d32be24b0de9fa inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor. <br /></td></tr>
+<tr class="separator:af9f374aefcac0c2414d32be24b0de9fa inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d033834e73257ba9f65e67b90bf7b5 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a16d033834e73257ba9f65e67b90bf7b5"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~DualScrollbarChildInterface</b> ()=default</td></tr>
+<tr class="memdesc:a16d033834e73257ba9f65e67b90bf7b5 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a16d033834e73257ba9f65e67b90bf7b5 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e78b178e2115c4fe38e2c0de7ac1ca inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_aa4e78b178e2115c4fe38e2c0de7ac1ca"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;)</td></tr>
+<tr class="memdesc:aa4e78b178e2115c4fe38e2c0de7ac1ca inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of copy assignment operator. <br /></td></tr>
+<tr class="separator:aa4e78b178e2115c4fe38e2c0de7ac1ca inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa716939d6ef68ceee1bc4e4fc43adb9f inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_aa716939d6ef68ceee1bc4e4fc43adb9f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">DualScrollbarChildInterface</a> &amp;&amp;) noexcept</td></tr>
+<tr class="memdesc:aa716939d6ef68ceee1bc4e4fc43adb9f inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment. <br /></td></tr>
+<tr class="separator:aa716939d6ef68ceee1bc4e4fc43adb9f inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42ef26aff5bf68178eb60f57289f5c0 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_aa42ef26aff5bf68178eb60f57289f5c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0">getVerticalScrollbar</a> ()</td></tr>
+<tr class="memdesc:aa42ef26aff5bf68178eb60f57289f5c0 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that provides access to the widget's vertical scrollbar.  <br /></td></tr>
+<tr class="separator:aa42ef26aff5bf68178eb60f57289f5c0 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b479aa915626acdb5e2aeadf453dbe inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_ab8b479aa915626acdb5e2aeadf453dbe"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#ab8b479aa915626acdb5e2aeadf453dbe">getVerticalScrollbar</a> () const</td></tr>
+<tr class="memdesc:ab8b479aa915626acdb5e2aeadf453dbe inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that provides access to the widget's vertical scrollbar.  <br /></td></tr>
+<tr class="separator:ab8b479aa915626acdb5e2aeadf453dbe inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f6f4781156a7d77ece1ae94360fe8c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_aa5f6f4781156a7d77ece1ae94360fe8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c">getHorizontalScrollbar</a> ()</td></tr>
+<tr class="memdesc:aa5f6f4781156a7d77ece1ae94360fe8c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that provides access to the widget's horizontal scrollbar.  <br /></td></tr>
+<tr class="separator:aa5f6f4781156a7d77ece1ae94360fe8c inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da897d70a1d53ca24b0f8c73e270132 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a6da897d70a1d53ca24b0f8c73e270132"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#a6da897d70a1d53ca24b0f8c73e270132">getHorizontalScrollbar</a> () const</td></tr>
+<tr class="memdesc:a6da897d70a1d53ca24b0f8c73e270132 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that provides access to the widget's horizontal scrollbar.  <br /></td></tr>
+<tr class="separator:a6da897d70a1d53ca24b0f8c73e270132 inherit pub_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -702,6 +752,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::
 <tr class="memitem:a533a41efb5180526c96602fa1f25ec7a" id="r_a533a41efb5180526c96602fa1f25ec7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a533a41efb5180526c96602fa1f25ec7a">updateTextSize</a> () override</td></tr>
 <tr class="memdesc:a533a41efb5180526c96602fa1f25ec7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the text size is changed (either by setTextSize or via the renderer)  <br /></td></tr>
 <tr class="separator:a533a41efb5180526c96602fa1f25ec7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5027d21825d048588aacd74b68bd60" id="r_a5c5027d21825d048588aacd74b68bd60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5027d21825d048588aacd74b68bd60">scrollbarPolicyChanged</a> (<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> orientation) override</td></tr>
+<tr class="memdesc:a5c5027d21825d048588aacd74b68bd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the policy of one of the scrollbars has been changed calling either <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0" title="Returns an object that provides access to the widget&#39;s vertical scrollbar.">getVerticalScrollbar()</a>-&gt;setPolicy(...) or <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c" title="Returns an object that provides access to the widget&#39;s horizontal scrollbar.">getHorizontalScrollbar()</a>-&gt;setPolicy(...)  <br /></td></tr>
+<tr class="separator:a5c5027d21825d048588aacd74b68bd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5702d5d0979923278daddc011253ffc0" id="r_a5702d5d0979923278daddc011253ffc0"><td class="memItemLeft" align="right" valign="top"><a id="a5702d5d0979923278daddc011253ffc0" name="a5702d5d0979923278daddc011253ffc0"></a>
 TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInnerSize</b> () const</td></tr>
 <tr class="separator:a5702d5d0979923278daddc011253ffc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -761,6 +814,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundPosit
 void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundSizeLayouts</b> ()</td></tr>
 <tr class="memdesc:af6909cae6e1065e5e43cbc2f22e318ca inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls recalculateValue() on each layout in m_boundSizeLayouts. <br /></td></tr>
 <tr class="separator:af6909cae6e1065e5e43cbc2f22e318ca inherit pro_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classtgui_1_1DualScrollbarChildInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtgui_1_1DualScrollbarChildInterface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">tgui::DualScrollbarChildInterface</a></td></tr>
+<tr class="memitem:a97831f7f9c51648f4490fa2916e43f3f inherit pro_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a97831f7f9c51648f4490fa2916e43f3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#a97831f7f9c51648f4490fa2916e43f3f">scrollbarValueChanged</a> (<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> orientation)</td></tr>
+<tr class="memdesc:a97831f7f9c51648f4490fa2916e43f3f inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the value of one of the scrollbars has been changed by calling either <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0" title="Returns an object that provides access to the widget&#39;s vertical scrollbar.">getVerticalScrollbar()</a>-&gt;setValue(...) or <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c" title="Returns an object that provides access to the widget&#39;s horizontal scrollbar.">getHorizontalScrollbar()</a>-&gt;setValue(...)  <br /></td></tr>
+<tr class="separator:a97831f7f9c51648f4490fa2916e43f3f inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bacaa103f325d09da618df4fc4ca7a5 inherit pro_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a2bacaa103f325d09da618df4fc4ca7a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#a2bacaa103f325d09da618df4fc4ca7a5">scrollbarScrollAmountChanged</a> (<a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a> orientation)</td></tr>
+<tr class="memdesc:a2bacaa103f325d09da618df4fc4ca7a5 inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scroll amount of one of the scrollbars has been changed calling either <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0" title="Returns an object that provides access to the widget&#39;s vertical scrollbar.">getVerticalScrollbar()</a>-&gt;setScrollAmount(...) or <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c" title="Returns an object that provides access to the widget&#39;s horizontal scrollbar.">getHorizontalScrollbar()</a>-&gt;setScrollAmount(...)  <br /></td></tr>
+<tr class="separator:a2bacaa103f325d09da618df4fc4ca7a5 inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2952ba0dcb230f54e87e79f813991ba inherit pro_methods_classtgui_1_1DualScrollbarChildInterface" id="r_ae2952ba0dcb230f54e87e79f813991ba"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveScrollbarPolicies</b> (std::unique_ptr&lt; DataIO::Node &gt; &amp;node) const</td></tr>
+<tr class="memdesc:ae2952ba0dcb230f54e87e79f813991ba inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called inside the save function in order to save the configured scrollbar policies. <br /></td></tr>
+<tr class="separator:ae2952ba0dcb230f54e87e79f813991ba inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480acbbf96f304270e6a3db2de0a2a0a inherit pro_methods_classtgui_1_1DualScrollbarChildInterface" id="r_a480acbbf96f304270e6a3db2de0a2a0a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadScrollbarPolicies</b> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node)</td></tr>
+<tr class="memdesc:a480acbbf96f304270e6a3db2de0a2a0a inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called inside the load function in order to load the wanted scrollbar policies. <br /></td></tr>
+<tr class="separator:a480acbbf96f304270e6a3db2de0a2a0a inherit pro_methods_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -785,12 +853,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxRight</b> = 0</
 <tr class="memitem:ac19114a753be89f1047786897e07bbd7" id="r_ac19114a753be89f1047786897e07bbd7"><td class="memItemLeft" align="right" valign="top"><a id="ac19114a753be89f1047786897e07bbd7" name="ac19114a753be89f1047786897e07bbd7"></a>
 <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconBounds</b></td></tr>
 <tr class="separator:ac19114a753be89f1047786897e07bbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e47964bab88bd8959624dce6a229ef5" id="r_a3e47964bab88bd8959624dce6a229ef5"><td class="memItemLeft" align="right" valign="top"><a id="a3e47964bab88bd8959624dce6a229ef5" name="a3e47964bab88bd8959624dce6a229ef5"></a>
-<a class="el" href="classtgui_1_1CopiedSharedPtr.html">CopiedSharedPtr</a>&lt; <a class="el" href="classtgui_1_1ScrollbarChildWidget.html">ScrollbarChildWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalScrollbar</b></td></tr>
-<tr class="separator:a3e47964bab88bd8959624dce6a229ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf7d6f14d9849cca9c4427c44b84f93" id="r_aeaf7d6f14d9849cca9c4427c44b84f93"><td class="memItemLeft" align="right" valign="top"><a id="aeaf7d6f14d9849cca9c4427c44b84f93" name="aeaf7d6f14d9849cca9c4427c44b84f93"></a>
-<a class="el" href="classtgui_1_1CopiedSharedPtr.html">CopiedSharedPtr</a>&lt; <a class="el" href="classtgui_1_1ScrollbarChildWidget.html">ScrollbarChildWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_horizontalScrollbar</b></td></tr>
-<tr class="separator:aeaf7d6f14d9849cca9c4427c44b84f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ac0d07fb63e3762f60a7edb320774f" id="r_a90ac0d07fb63e3762f60a7edb320774f"><td class="memItemLeft" align="right" valign="top"><a id="a90ac0d07fb63e3762f60a7edb320774f" name="a90ac0d07fb63e3762f60a7edb320774f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_possibleDoubleClick</b> = false</td></tr>
 <tr class="separator:a90ac0d07fb63e3762f60a7edb320774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -974,6 +1036,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_transparentTextureC
 <tr class="memitem:af0f458e58398c3e9bbdb9bc94ae7bef3 inherit pro_attribs_classtgui_1_1Widget" id="r_af0f458e58398c3e9bbdb9bc94ae7bef3"><td class="memItemLeft" align="right" valign="top">
 unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_textSizeCached</b> = 0</td></tr>
 <tr class="separator:af0f458e58398c3e9bbdb9bc94ae7bef3 inherit pro_attribs_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classtgui_1_1DualScrollbarChildInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtgui_1_1DualScrollbarChildInterface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html">tgui::DualScrollbarChildInterface</a></td></tr>
+<tr class="memitem:a6238d13dfa12050121d9ec7ec64c073c inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface" id="r_a6238d13dfa12050121d9ec7ec64c073c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1CopiedSharedPtr.html">CopiedSharedPtr</a>&lt; <a class="el" href="classtgui_1_1ScrollbarChildWidget.html">ScrollbarChildWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalScrollbar</b></td></tr>
+<tr class="separator:a6238d13dfa12050121d9ec7ec64c073c inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45c5f6166f2b73ac30d08c81031ed29 inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface" id="r_ae45c5f6166f2b73ac30d08c81031ed29"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1CopiedSharedPtr.html">CopiedSharedPtr</a>&lt; <a class="el" href="classtgui_1_1ScrollbarChildWidget.html">ScrollbarChildWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_horizontalScrollbar</b></td></tr>
+<tr class="separator:ae45c5f6166f2b73ac30d08c81031ed29 inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10622a03ea323a11dea48c27cdd20418 inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface" id="r_a10622a03ea323a11dea48c27cdd20418"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticalScrollbarAccessor</b></td></tr>
+<tr class="separator:a10622a03ea323a11dea48c27cdd20418 inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d254d6fcb99f3e8f20ebf2b2bb1f1ee inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface" id="r_a0d254d6fcb99f3e8f20ebf2b2bb1f1ee"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1ScrollbarAccessor.html">ScrollbarAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_horizontalScrollbarAccessor</b></td></tr>
+<tr class="separator:a0d254d6fcb99f3e8f20ebf2b2bb1f1ee inherit pro_attribs_classtgui_1_1DualScrollbarChildInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1319,6 +1394,26 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="accf5d89ef3a32f2e8686c5dc5a10fee1" name="accf5d89ef3a32f2e8686c5dc5a10fee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf5d89ef3a32f2e8686c5dc5a10fee1">&#9670;&#160;</a></span>getHoveredItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; tgui::TreeView::getHoveredItem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the item currently below the mouse cursor. </p>
+<dl class="section return"><dt>Returns</dt><dd>Hierarchy of items, identifying the node below the mouse, or an empty list when the mouse isn't on any item </dd></dl>
+
+</div>
+</div>
 <a id="add77c7381126cc9dbe255f56b76123e6" name="add77c7381126cc9dbe255f56b76123e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add77c7381126cc9dbe255f56b76123e6">&#9670;&#160;</a></span>getItemHeight()</h2>
 
@@ -1336,6 +1431,38 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Returns the height of the items in the tree view. </p>
 <dl class="section return"><dt>Returns</dt><dd>The item height </dd></dl>
+
+</div>
+</div>
+<a id="a2ea918e175ac0a2f749d8200bcc2427a" name="a2ea918e175ac0a2f749d8200bcc2427a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea918e175ac0a2f749d8200bcc2427a">&#9670;&#160;</a></span>getItemIndexInParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classint.html">int</a> tgui::TreeView::getItemIndexInParent </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>hierarchy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the index of an item, based on the items that share the same parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hierarchy</td><td>Hierarchy of items, with the last element being the leaf item</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the item identified by the hierarchy, when only looking at items where only the last element of the hierarchy is different. Returns -1 if the hierarchy parameter didn't match an item in the tree view.</dd></dl>
+<p>In the following example, both A, A1 and B1 would have index 0, while B and A2 would have index 1. </p><div class="fragment"><div class="line">A</div>
+<div class="line">  A1</div>
+<div class="line">  A2</div>
+<div class="line">B</div>
+<div class="line">  B1</div>
+</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>TGUI 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1901,6 +2028,41 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="a5c5027d21825d048588aacd74b68bd60" name="a5c5027d21825d048588aacd74b68bd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5027d21825d048588aacd74b68bd60">&#9670;&#160;</a></span>scrollbarPolicyChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TreeView::scrollbarPolicyChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a></td>          <td class="paramname"><span class="paramname"><em>orientation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the policy of one of the scrollbars has been changed calling either <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0" title="Returns an object that provides access to the widget&#39;s vertical scrollbar.">getVerticalScrollbar()</a>-&gt;setPolicy(...) or <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c" title="Returns an object that provides access to the widget&#39;s horizontal scrollbar.">getHorizontalScrollbar()</a>-&gt;setPolicy(...) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orientation</td><td>Vertical or Horizontal depending on which scrollbar triggered the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#a1a923cc6c959281e04eec090c634e95f">tgui::DualScrollbarChildInterface</a>.</p>
+
+</div>
+</div>
 <a id="a6f55f521d17214e5be85b678a285bcbe" name="a6f55f521d17214e5be85b678a285bcbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f55f521d17214e5be85b678a285bcbe">&#9670;&#160;</a></span>scrolled()</h2>
 
@@ -2021,6 +2183,39 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abaf789a3cd3ed62dd197c0cfd2e5b23a" name="abaf789a3cd3ed62dd197c0cfd2e5b23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf789a3cd3ed62dd197c0cfd2e5b23a">&#9670;&#160;</a></span>setItemIndexInParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TreeView::setItemIndexInParent </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>hierarchy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the index of an item, based on the items that share the same parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hierarchy</td><td>Hierarchy of items, with the last element being the leaf item </td></tr>
+    <tr><td class="paramname">index</td><td>The index that the item should have, when only looking at items where only the last element of the hierarchy is different. Passing a number that is too high will just move the item to the back, as if you passed to maximum valid number. Passing 0 moves the item to the front.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the hierarchy matched an item in the tree view, false otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2ea918e175ac0a2f749d8200bcc2427a" title="Returns the index of an item, based on the items that share the same parent.">getItemIndexInParent</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.5 </dd></dl>
 
 </div>
 </div>
@@ -2186,7 +2381,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

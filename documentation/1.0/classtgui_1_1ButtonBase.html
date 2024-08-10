@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -237,6 +240,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7713bc05343b7373940e5792812459e" id="r_af7713bc05343b7373940e5792812459e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7713bc05343b7373940e5792812459e">setTextPosition</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; <a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html">AbsoluteOrRelativeValue</a> &gt; position, <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> origin)</td></tr>
 <tr class="memdesc:af7713bc05343b7373940e5792812459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position of the caption text.  <br /></td></tr>
 <tr class="separator:af7713bc05343b7373940e5792812459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ba63676a1875008964581e87e6efd6" id="r_a27ba63676a1875008964581e87e6efd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ba63676a1875008964581e87e6efd6">setIgnoreKeyEvents</a> (bool ignore)</td></tr>
+<tr class="memdesc:a27ba63676a1875008964581e87e6efd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the button should ignore space and return key pressed and only react to mouse clicks.  <br /></td></tr>
+<tr class="separator:a27ba63676a1875008964581e87e6efd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7e4c09a523f19595668abb890e8c4d" id="r_ade7e4c09a523f19595668abb890e8c4d"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade7e4c09a523f19595668abb890e8c4d">getIgnoreKeyEvents</a> () const</td></tr>
+<tr class="memdesc:ade7e4c09a523f19595668abb890e8c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the button ignores space and return key presses and only react to mouse clicks.  <br /></td></tr>
+<tr class="separator:ade7e4c09a523f19595668abb890e8c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32196caa9c03e22e1d1faf1ffdad1ed0" id="r_a32196caa9c03e22e1d1faf1ffdad1ed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32196caa9c03e22e1d1faf1ffdad1ed0">setFocused</a> (bool focused) override</td></tr>
 <tr class="memdesc:a32196caa9c03e22e1d1faf1ffdad1ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focus or unfocus the widget.  <br /></td></tr>
 <tr class="separator:a32196caa9c03e22e1d1faf1ffdad1ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -653,6 +662,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoSize</b> = true
 <tr class="memitem:a5644b3b187786ac22d5b9c099726425e" id="r_a5644b3b187786ac22d5b9c099726425e"><td class="memItemLeft" align="right" valign="top"><a id="a5644b3b187786ac22d5b9c099726425e" name="a5644b3b187786ac22d5b9c099726425e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updatingTextSize</b> = false</td></tr>
 <tr class="separator:a5644b3b187786ac22d5b9c099726425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496e06688d9cd9c503081690b36edf25" id="r_a496e06688d9cd9c503081690b36edf25"><td class="memItemLeft" align="right" valign="top"><a id="a496e06688d9cd9c503081690b36edf25" name="a496e06688d9cd9c503081690b36edf25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_ignoreKeyEvents</b> = false</td></tr>
+<tr class="separator:a496e06688d9cd9c503081690b36edf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20dde3027d9eb789110ab2cebf72e1e8" id="r_a20dde3027d9eb789110ab2cebf72e1e8"><td class="memItemLeft" align="right" valign="top"><a id="a20dde3027d9eb789110ab2cebf72e1e8" name="a20dde3027d9eb789110ab2cebf72e1e8"></a>
 <a class="el" href="classtgui_1_1Vector2.html">Vector2</a>&lt; <a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html">AbsoluteOrRelativeValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_textPosition</b></td></tr>
 <tr class="separator:a20dde3027d9eb789110ab2cebf72e1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -935,6 +947,28 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </dl>
 
 <p>Implements <a class="el" href="classtgui_1_1Widget.html#a365775b84c12fe31dc7d87f4534c8e35">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="ade7e4c09a523f19595668abb890e8c4d" name="ade7e4c09a523f19595668abb890e8c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7e4c09a523f19595668abb890e8c4d">&#9670;&#160;</a></span>getIgnoreKeyEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGUI_NODISCARD bool tgui::ButtonBase::getIgnoreKeyEvents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the button ignores space and return key presses and only react to mouse clicks. </p>
+<dl class="section return"><dt>Returns</dt><dd>Are space and return key press events ignored by this button?</dd></dl>
+<p>By default, key events are NOT ignored. This means that when the button is focused, pressing the space or return key has the same effect as clicking the button.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1398,6 +1432,33 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="a27ba63676a1875008964581e87e6efd6" name="a27ba63676a1875008964581e87e6efd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ba63676a1875008964581e87e6efd6">&#9670;&#160;</a></span>setIgnoreKeyEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::ButtonBase::setIgnoreKeyEvents </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ignore</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the button should ignore space and return key pressed and only react to mouse clicks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore</td><td>Should space and return key press events be ignored by this button?</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>By default, key events are NOT ignored. This means that when the button is focused, pressing the space or return key has the same effect as clicking the button.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a4bd06f8f94899d35032e9fe33e49c612" name="a4bd06f8f94899d35032e9fe33e49c612"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bd06f8f94899d35032e9fe33e49c612">&#9670;&#160;</a></span>setSize() <span class="overload">[1/2]</span></h2>
 
@@ -1574,7 +1635,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:55 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:25 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

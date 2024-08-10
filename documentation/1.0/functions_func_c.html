@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -131,7 +134,7 @@ $(function(){ initResizable(false); });
 <div class="textblock">Here is a list of all documented functions with links to the class documentation for each member:</div>
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>canGainFocus()&#160;:&#160;<a class="el" href="classtgui_1_1CanvasBase.html#ace38090ed1c079588ce1bd3d515aa6f8">tgui::CanvasBase</a>, <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#a9de33960ef72648c01c29e9a1bfdedd1">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1Label.html#a8b20936c2ba43ad7e064a74527b053d0">tgui::Label</a>, <a class="el" href="classtgui_1_1Picture.html#a6c179a2438b97b5e7500ba442fda7752">tgui::Picture</a>, <a class="el" href="classtgui_1_1Widget.html#a452923007a8d6bb0234664e34e86a8d7">tgui::Widget</a></li>
+<li>canGainFocus()&#160;:&#160;<a class="el" href="classtgui_1_1CanvasBase.html#ace38090ed1c079588ce1bd3d515aa6f8">tgui::CanvasBase</a>, <a class="el" href="classtgui_1_1CustomWidgetForBindings.html#a9de33960ef72648c01c29e9a1bfdedd1">tgui::CustomWidgetForBindings</a>, <a class="el" href="classtgui_1_1Label.html#a8b20936c2ba43ad7e064a74527b053d0">tgui::Label</a>, <a class="el" href="classtgui_1_1Picture.html#a6c179a2438b97b5e7500ba442fda7752">tgui::Picture</a>, <a class="el" href="classtgui_1_1Scrollbar.html#ac7ee5d93a3e4a0627f1404fe18b983f7">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Widget.html#a452923007a8d6bb0234664e34e86a8d7">tgui::Widget</a></li>
 <li>canHandleKeyPress()&#160;:&#160;<a class="el" href="classtgui_1_1Button.html#ab6070c5bf4ed15575918b09e007b2a7b">tgui::Button</a>, <a class="el" href="classtgui_1_1CheckBox.html#ab9af0197697579d1ca68bcbe4cad55ed">tgui::CheckBox</a>, <a class="el" href="classtgui_1_1ChildWindow.html#a9c0d5ebf49eef393c00dba4b60147d7d">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1Container.html#a43ce6365856361a26dad9974d973b0aa">tgui::Container</a>, <a class="el" href="classtgui_1_1EditBox.html#adfcc902d17f6604fa7160f5640158c99">tgui::EditBox</a>, <a class="el" href="classtgui_1_1FileDialog.html#aaf8c5e8b01ab1fa4da7a0ff8badc7847">tgui::FileDialog</a>, <a class="el" href="classtgui_1_1ListBox.html#a69ba85f320f23e15d3caee8a6499c79a">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#a4f1260072491a77302a82bb8584b6e49">tgui::ListView</a>, <a class="el" href="classtgui_1_1RadioButton.html#a7b69360cf88eebda713f0e83a9992c8a">tgui::RadioButton</a>, <a class="el" href="classtgui_1_1TextArea.html#aa95a4bb33bcfafa3435a8fa99bb8ccd6">tgui::TextArea</a>, <a class="el" href="classtgui_1_1ToggleButton.html#a107df8bae8367fde02f85035412eeca8">tgui::ToggleButton</a>, <a class="el" href="classtgui_1_1TreeView.html#aa5f1354c28df025fe82148e29f5c8e10">tgui::TreeView</a>, <a class="el" href="classtgui_1_1Widget.html#aa97d11a9c24460ba9484cc129e371705">tgui::Widget</a></li>
 <li>canLoad()&#160;:&#160;<a class="el" href="classtgui_1_1BaseThemeLoader.html#a52f06ac82bd73868ba981bf68f4beea7">tgui::BaseThemeLoader</a>, <a class="el" href="classtgui_1_1DefaultThemeLoader.html#adfae921097ca67fbd6c89b01599c0aa2">tgui::DefaultThemeLoader</a></li>
 <li>CanvasGLES2()&#160;:&#160;<a class="el" href="classtgui_1_1CanvasGLES2.html#a5c3bd811851edd9599bf54ebc6dcfc32">tgui::CanvasGLES2</a></li>
@@ -188,7 +191,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

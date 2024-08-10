@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -141,6 +144,8 @@ $(function(){ initResizable(false); });
 <li>loadFromFile()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#ad04abf8d54b65080f90a3f7f1a418f33">tgui::BackendFont</a>, <a class="el" href="structtgui_1_1ImageLoader.html#a124822bb91b3e28338082827d16c93bc">tgui::ImageLoader</a></li>
 <li>loadFromMemory()&#160;:&#160;<a class="el" href="classtgui_1_1BackendFont.html#a2f59a2c7bf26ed9aa5b977c4c2b2cce4">tgui::BackendFont</a>, <a class="el" href="classtgui_1_1BackendFontFreetype.html#adc4704fd5f2cedd121bf3ee2589a9a80">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#afcfe9c3bb22e7e750143ae5d823f963e">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a23f4361646f55d8a2c16de01145c684d">tgui::BackendFontSDLttf</a>, <a class="el" href="classtgui_1_1BackendFontSFML.html#a80cdef2d2a6836baf8639455d64c240a">tgui::BackendFontSFML</a>, <a class="el" href="structtgui_1_1ImageLoader.html#aeb3af0b3c85c70ebb3ba0fc64e6e9c6b">tgui::ImageLoader</a>, <a class="el" href="classtgui_1_1Texture.html#abd2c0f1e8856a428fb46c88309583eb3">tgui::Texture</a></li>
 <li>loadFromPixelData()&#160;:&#160;<a class="el" href="classtgui_1_1Texture.html#ab346f46e361aa2e6f4bd85c90c844638">tgui::Texture</a></li>
+<li>loadScrollbarPolicies()&#160;:&#160;<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#a480acbbf96f304270e6a3db2de0a2a0a">tgui::DualScrollbarChildInterface</a></li>
+<li>loadScrollbarPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1ScrollbarChildInterface.html#a2b298e63baae1551d42b1e4dc115d15d">tgui::ScrollbarChildInterface</a></li>
 <li>loadTextureOnly()&#160;:&#160;<a class="el" href="classtgui_1_1BackendTexture.html#a85e5938d3e6d9c6d1547bf5c493e0e50">tgui::BackendTexture</a>, <a class="el" href="classtgui_1_1BackendTextureGLES2.html#a8218dc6470a681c3f0255e7fea6ee2dc">tgui::BackendTextureGLES2</a>, <a class="el" href="classtgui_1_1BackendTextureOpenGL3.html#af0d2b042651e4f1ddf3e9bcc50db6441">tgui::BackendTextureOpenGL3</a>, <a class="el" href="classtgui_1_1BackendTextureRaylib.html#aaa2682614619b9eac2b2c8826f97409b">tgui::BackendTextureRaylib</a>, <a class="el" href="classtgui_1_1BackendTextureSDL.html#a41a11c5934d45ffceae59d263c721b13">tgui::BackendTextureSDL</a>, <a class="el" href="classtgui_1_1BackendTextureSFML.html#af09c8b72309f10598a8b6d31674fc548">tgui::BackendTextureSFML</a></li>
 <li>loadWidgetsFromFile()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a2454d81cbd6a2863a01179fa0b09cd23">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1Container.html#a915ed01d64abbafab29aa7c22acd6f80">tgui::Container</a></li>
 <li>loadWidgetsFromNodeTree()&#160;:&#160;<a class="el" href="classtgui_1_1Container.html#a6cb6d5c60bcc7fe4a065b6d1972cf608">tgui::Container</a></li>
@@ -150,7 +155,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

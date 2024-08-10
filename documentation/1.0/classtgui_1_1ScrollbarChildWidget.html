@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -160,9 +163,6 @@ Public Member Functions</h2></td></tr>
 TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMouseDownOnThumb</b> () const</td></tr>
 <tr class="memdesc:a1cb0347a005e22d1211fdb87803a3803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the left mouse button has been pressed on top of the thumb of the scrollbar. <br /></td></tr>
 <tr class="separator:a1cb0347a005e22d1211fdb87803a3803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77bf8f2e89a12d3a417ba10456fb3e5" id="r_ad77bf8f2e89a12d3a417ba10456fb3e5"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77bf8f2e89a12d3a417ba10456fb3e5">isShown</a> () const</td></tr>
-<tr class="memdesc:ad77bf8f2e89a12d3a417ba10456fb3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the scrollbar is currently visible.  <br /></td></tr>
-<tr class="separator:ad77bf8f2e89a12d3a417ba10456fb3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448da461652c729afa1bce4948c80ba2" id="r_a448da461652c729afa1bce4948c80ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448da461652c729afa1bce4948c80ba2">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
 <tr class="memdesc:a448da461652c729afa1bce4948c80ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <br /></td></tr>
 <tr class="separator:a448da461652c729afa1bce4948c80ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +214,15 @@ TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMous
 <tr class="memitem:a3a64bf5f4d96e594714db9a303cf1042 inherit pub_methods_classtgui_1_1Scrollbar" id="r_a3a64bf5f4d96e594714db9a303cf1042"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a3a64bf5f4d96e594714db9a303cf1042">getAutoHide</a> () const</td></tr>
 <tr class="memdesc:a3a64bf5f4d96e594714db9a303cf1042 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the scrollbar is hiding automatically or not.  <br /></td></tr>
 <tr class="separator:a3a64bf5f4d96e594714db9a303cf1042 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0057f6ddb772354e40a2ba934c88cb0f inherit pub_methods_classtgui_1_1Scrollbar" id="r_a0057f6ddb772354e40a2ba934c88cb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a0057f6ddb772354e40a2ba934c88cb0f">setPolicy</a> (<a class="el" href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7d">Policy</a> policy)</td></tr>
+<tr class="memdesc:a0057f6ddb772354e40a2ba934c88cb0f inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes when the scrollbar should be displayed.  <br /></td></tr>
+<tr class="separator:a0057f6ddb772354e40a2ba934c88cb0f inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94794829daff78f783c25094a971e9b3 inherit pub_methods_classtgui_1_1Scrollbar" id="r_a94794829daff78f783c25094a971e9b3"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7d">Scrollbar::Policy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a94794829daff78f783c25094a971e9b3">getPolicy</a> () const</td></tr>
+<tr class="memdesc:a94794829daff78f783c25094a971e9b3 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when the scrollbar should be displayed.  <br /></td></tr>
+<tr class="separator:a94794829daff78f783c25094a971e9b3 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e92a8c286e701aa251c4af758c4e3cc inherit pub_methods_classtgui_1_1Scrollbar" id="r_a1e92a8c286e701aa251c4af758c4e3cc"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a1e92a8c286e701aa251c4af758c4e3cc">isShown</a> () const</td></tr>
+<tr class="memdesc:a1e92a8c286e701aa251c4af758c4e3cc inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the scrollbar is currently visible.  <br /></td></tr>
+<tr class="separator:a1e92a8c286e701aa251c4af758c4e3cc inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7332bd8442396707f18f7fcd72641d8 inherit pub_methods_classtgui_1_1Scrollbar" id="r_ab7332bd8442396707f18f7fcd72641d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#ab7332bd8442396707f18f7fcd72641d8">setVerticalScroll</a> (bool vertical)</td></tr>
 <tr class="memdesc:ab7332bd8442396707f18f7fcd72641d8 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the scrollbar lies horizontally or vertically.  <br /></td></tr>
 <tr class="separator:ab7332bd8442396707f18f7fcd72641d8 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +238,9 @@ TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMous
 <tr class="memitem:a7a12947ab7022812c829bcf4fbb6a884 inherit pub_methods_classtgui_1_1Scrollbar" id="r_a7a12947ab7022812c829bcf4fbb6a884"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a7a12947ab7022812c829bcf4fbb6a884">getDefaultWidth</a> () const</td></tr>
 <tr class="memdesc:a7a12947ab7022812c829bcf4fbb6a884 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default width of the scrollbar.  <br /></td></tr>
 <tr class="separator:a7a12947ab7022812c829bcf4fbb6a884 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ee5d93a3e4a0627f1404fe18b983f7 inherit pub_methods_classtgui_1_1Scrollbar" id="r_ac7ee5d93a3e4a0627f1404fe18b983f7"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#ac7ee5d93a3e4a0627f1404fe18b983f7">canGainFocus</a> () const override</td></tr>
+<tr class="memdesc:ac7ee5d93a3e4a0627f1404fe18b983f7 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the widget can gain focus.  <br /></td></tr>
+<tr class="separator:ac7ee5d93a3e4a0627f1404fe18b983f7 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978fa5a89b404dd46fceefb2cdb09d57 inherit pub_methods_classtgui_1_1Scrollbar" id="r_a978fa5a89b404dd46fceefb2cdb09d57"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Scrollbar.html#a978fa5a89b404dd46fceefb2cdb09d57">isMouseOnWidget</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override</td></tr>
 <tr class="memdesc:a978fa5a89b404dd46fceefb2cdb09d57 inherit pub_methods_classtgui_1_1Scrollbar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <br /></td></tr>
 <tr class="separator:a978fa5a89b404dd46fceefb2cdb09d57 inherit pub_methods_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -483,9 +495,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 void&#160;</td><td class="memItemRight" valign="bottom"><b>finishAllAnimations</b> ()</td></tr>
 <tr class="memdesc:aaaf522b3826a4b5d426b3b916016a0f3 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes all animations of the widget finish immediately. <br /></td></tr>
 <tr class="separator:aaaf522b3826a4b5d426b3b916016a0f3 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452923007a8d6bb0234664e34e86a8d7 inherit pub_methods_classtgui_1_1Widget" id="r_a452923007a8d6bb0234664e34e86a8d7"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a452923007a8d6bb0234664e34e86a8d7">canGainFocus</a> () const</td></tr>
-<tr class="memdesc:a452923007a8d6bb0234664e34e86a8d7 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the widget can currently gain focus.  <br /></td></tr>
-<tr class="separator:a452923007a8d6bb0234664e34e86a8d7 inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e957a3923ce15740c41e6427ec31f9a inherit pub_methods_classtgui_1_1Widget" id="r_a6e957a3923ce15740c41e6427ec31f9a"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a6e957a3923ce15740c41e6427ec31f9a">isContainer</a> () const</td></tr>
 <tr class="memdesc:a6e957a3923ce15740c41e6427ec31f9a inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the widget is a container widget or not.  <br /></td></tr>
 <tr class="separator:a6e957a3923ce15740c41e6427ec31f9a inherit pub_methods_classtgui_1_1Widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -713,12 +722,15 @@ unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItem
 <tr class="memitem:ae79606e55d35536759cd28f0e846eae1 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_ae79606e55d35536759cd28f0e846eae1"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageOrientation</b> = <a class="el" href="namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96a06ce2a25e5d12c166a36f654dbea6012">Orientation::Vertical</a></td></tr>
 <tr class="separator:ae79606e55d35536759cd28f0e846eae1 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b74d3f8ec951abd07c876a24ce4fad8 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_a8b74d3f8ec951abd07c876a24ce4fad8"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_orientationLocked</b> = false</td></tr>
+<tr class="separator:a8b74d3f8ec951abd07c876a24ce4fad8 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69290fbd934e729892dae4808c897cf3 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_a69290fbd934e729892dae4808c897cf3"><td class="memItemLeft" align="right" valign="top">
 unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scrollAmount</b> = 1</td></tr>
 <tr class="separator:a69290fbd934e729892dae4808c897cf3 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7aaf0a9b9afdf4857759a488b322e78 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_ac7aaf0a9b9afdf4857759a488b322e78"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoHide</b> = true</td></tr>
-<tr class="separator:ac7aaf0a9b9afdf4857759a488b322e78 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684e3e911db140a9bb1cf4862ab9cba5 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_a684e3e911db140a9bb1cf4862ab9cba5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7d">Scrollbar::Policy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_policy</b> = <a class="el" href="classtgui_1_1Scrollbar.html#a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d">Scrollbar::Policy::Automatic</a></td></tr>
+<tr class="separator:a684e3e911db140a9bb1cf4862ab9cba5 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca556310b305d130508dacc1334c1a14 inherit pro_attribs_classtgui_1_1Scrollbar" id="r_aca556310b305d130508dacc1334c1a14"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDownOnArrow</b> = false</td></tr>
 <tr class="separator:aca556310b305d130508dacc1334c1a14 inherit pro_attribs_classtgui_1_1Scrollbar"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -964,27 +976,6 @@ unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItem
 
 </div>
 </div>
-<a id="ad77bf8f2e89a12d3a417ba10456fb3e5" name="ad77bf8f2e89a12d3a417ba10456fb3e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad77bf8f2e89a12d3a417ba10456fb3e5">&#9670;&#160;</a></span>isShown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TGUI_NODISCARD bool tgui::ScrollbarChildWidget::isShown </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns whether the scrollbar is currently visible. </p>
-<dl class="section return"><dt>Returns</dt><dd>Is the scrollbar visible?</dd></dl>
-<p>The scrollbar is visible when auto hide is disabled or when the maximum is higher than the viewport size </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/TGUI/Widgets/<a class="el" href="Scrollbar_8hpp_source.html">Scrollbar.hpp</a></li>
 </ul>
@@ -992,7 +983,7 @@ unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItem
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>

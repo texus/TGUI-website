@@ -30,10 +30,13 @@
   #contents {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2.5em;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     max-width: 1060px;
+  }
+  #doc-content {
+    height: auto !important;
   }
   address.footer {
     padding-bottom: 1.4em;
@@ -69,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.x-dev</span>
    </div>
   </td>
  </tr>
@@ -283,12 +286,17 @@ $(function(){ initResizable(false); });
 <li>getHomeDirectory()&#160;:&#160;<a class="el" href="classtgui_1_1Filesystem.html#ab7776d727b4b6226e3800148452e58ec">tgui::Filesystem</a></li>
 <li>getHorizontalAlignment()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#a4132435b94e53e6f88aaea2d2f4272ae">tgui::Label</a></li>
 <li>getHorizontalScrollAmount()&#160;:&#160;<a class="el" href="classtgui_1_1ScrollablePanel.html#ab63a764adbfcb1ed8b7981c3de6e351e">tgui::ScrollablePanel</a></li>
+<li>getHorizontalScrollbar()&#160;:&#160;<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa5f6f4781156a7d77ece1ae94360fe8c">tgui::DualScrollbarChildInterface</a></li>
 <li>getHorizontalScrollbarMaxValue()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a14eef57f1929fadad068903f6064b713">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a6ee246ea42c3132ec955908237a2134e">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#ae008538b090b29e1576234e2c12c4e12">tgui::TextArea</a>, <a class="el" href="classtgui_1_1TreeView.html#a8cee1b768b2638b832d8fbaf08ee4923">tgui::TreeView</a></li>
 <li>getHorizontalScrollbarPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a6fe465e0f1716d7e622025b7a58a45a8">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a6030ba9439df21c6de471205746ac65a">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#af502b9df564455ad86f354d385f84fd7">tgui::TextArea</a></li>
 <li>getHorizontalScrollbarValue()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#ad194d7c65af6f823a0348af4ac9943bd">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#ae899bfef14e43d84ebb63bb5bcd08a4a">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#adfaa64cbc34cc5e7e218fff25f590f69">tgui::TextArea</a>, <a class="el" href="classtgui_1_1TreeView.html#a8c6cba1bdc19738bbc56e6455133f9f5">tgui::TreeView</a></li>
+<li>getHoveredIndex()&#160;:&#160;<a class="el" href="classtgui_1_1Tabs.html#ac930e58f24eed3b2af3cc65cdce20ac0">tgui::Tabs</a></li>
+<li>getHoveredItem()&#160;:&#160;<a class="el" href="classtgui_1_1TreeView.html#accf5d89ef3a32f2e8686c5dc5a10fee1">tgui::TreeView</a></li>
+<li>getHoveredItemIndex()&#160;:&#160;<a class="el" href="classtgui_1_1ListBox.html#aea8f63eef1039f9648054e599be83923">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#aeb6f65f5f5fc778a133233c1fbea9cf7">tgui::ListView</a>, <a class="el" href="classtgui_1_1PanelListBox.html#af1109f82699974cc936d54c1e042d767">tgui::PanelListBox</a></li>
 <li>getIconLoader()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#ada41e179265d18b214d7d121faa5f949">tgui::FileDialog</a></li>
 <li>getId()&#160;:&#160;<a class="el" href="classtgui_1_1Font.html#aa38a6b632944ee6c4afef67a9fe43ba8">tgui::Font</a>, <a class="el" href="classtgui_1_1Texture.html#a710017d4bcdf42b14a6582b0fcc6505f">tgui::Texture</a></li>
 <li>getIdByIndex()&#160;:&#160;<a class="el" href="classtgui_1_1ListBox.html#a86e08a60244c488ef5f4cca1a6c5fe2a">tgui::ListBox</a>, <a class="el" href="classtgui_1_1PanelListBox.html#a5d24a48d7b543d5e0324b71601d48187">tgui::PanelListBox</a></li>
+<li>getIgnoreKeyEvents()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonBase.html#ade7e4c09a523f19595668abb890e8c4d">tgui::ButtonBase</a></li>
 <li>getIgnoreMouseEvents()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a144c4efe6e88c2304d8e5ce4ffee913a">tgui::Widget</a></li>
 <li>getImage()&#160;:&#160;<a class="el" href="classtgui_1_1BitmapButton.html#a78d306cfa4fb3cc042ec8f0b4c5145e8">tgui::BitmapButton</a></li>
 <li>getImageRotation()&#160;:&#160;<a class="el" href="classtgui_1_1KnobRenderer.html#aeda4db26c8ebc59248b66fdc2f660287">tgui::KnobRenderer</a></li>
@@ -317,6 +325,7 @@ $(function(){ initResizable(false); });
 <li>getItemHeight()&#160;:&#160;<a class="el" href="classtgui_1_1ListBox.html#a906b8a2e240f5d5815e239cec302d2d6">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#a4d74e7304839623689bc32fd4d3e3074">tgui::ListView</a>, <a class="el" href="classtgui_1_1TreeView.html#add77c7381126cc9dbe255f56b76123e6">tgui::TreeView</a></li>
 <li>getItemIcon()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a1193016dc39673a4f4b2c54357ce6ec1">tgui::ListView</a></li>
 <li>getItemIds()&#160;:&#160;<a class="el" href="classtgui_1_1ComboBox.html#aeade3c5799e6b0a0da23c55df24f0094">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1ListBox.html#a334748a8647542895365d5b9574b19d1">tgui::ListBox</a>, <a class="el" href="classtgui_1_1PanelListBox.html#ab8965567f4814e46058653f004990c8d">tgui::PanelListBox</a></li>
+<li>getItemIndexInParent()&#160;:&#160;<a class="el" href="classtgui_1_1TreeView.html#a2ea918e175ac0a2f749d8200bcc2427a">tgui::TreeView</a></li>
 <li>getItemRow()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#ad192ffbaced0b7049cec9f64596b5dbd">tgui::ListView</a></li>
 <li>getItemRows()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a7c3320c412bd28aa258b919e0ad261dd">tgui::ListView</a></li>
 <li>getItems()&#160;:&#160;<a class="el" href="classtgui_1_1ComboBox.html#a42196883331b636d9ef0584e87b81fc1">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1ListBox.html#a2db055e81feb55b15eb1914b280bdb11">tgui::ListBox</a>, <a class="el" href="classtgui_1_1ListView.html#ac609a8552cdb95f83471c98189de9877">tgui::ListView</a>, <a class="el" href="classtgui_1_1PanelListBox.html#a14d1a33c123b076316ca9419dfb5eec5">tgui::PanelListBox</a></li>
@@ -347,7 +356,7 @@ $(function(){ initResizable(false); });
 <li>getLocalDataDirectory()&#160;:&#160;<a class="el" href="classtgui_1_1Filesystem.html#a4e9c3fa021bc69f799cd5d3d88d78cd0">tgui::Filesystem</a></li>
 <li>getMatrix()&#160;:&#160;<a class="el" href="classtgui_1_1Transform.html#a8aa1fa99dbb332e304a7b84195de66a2">tgui::Transform</a></li>
 <li>getMaximizeButton()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindowRenderer.html#af09c85828a9b9adeff96ca387098fc44">tgui::ChildWindowRenderer</a></li>
-<li>getMaximum()&#160;:&#160;<a class="el" href="classtgui_1_1EditBoxSlider.html#a82be4df33988615d4752975c8e909f06">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1Knob.html#af9efec509132a0658f71a0a400a3efc1">tgui::Knob</a>, <a class="el" href="classtgui_1_1ProgressBar.html#af5bf9cebf484fedf1acb9437f735bbf6">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1RangeSlider.html#afbf2cd2fb2fcb0e8cd9c1800c132611b">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1Scrollbar.html#a007668494be63bdac8811e24082eff07">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Slider.html#a57bc4ca8242fd242a17f62fd8b8cb759">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a32fc6c2a85820c670f59fa146405ce72">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#af2f32b4532b9bfca023c557f8416cbeb">tgui::SpinControl</a></li>
+<li>getMaximum()&#160;:&#160;<a class="el" href="classtgui_1_1EditBoxSlider.html#a82be4df33988615d4752975c8e909f06">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1Knob.html#af9efec509132a0658f71a0a400a3efc1">tgui::Knob</a>, <a class="el" href="classtgui_1_1ProgressBar.html#af5bf9cebf484fedf1acb9437f735bbf6">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1RangeSlider.html#afbf2cd2fb2fcb0e8cd9c1800c132611b">tgui::RangeSlider</a>, <a class="el" href="classtgui_1_1Scrollbar.html#a007668494be63bdac8811e24082eff07">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#a5e7e50b55b80ca46063f8cdceb40fc6a">tgui::ScrollbarAccessor</a>, <a class="el" href="classtgui_1_1Slider.html#a57bc4ca8242fd242a17f62fd8b8cb759">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a32fc6c2a85820c670f59fa146405ce72">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#af2f32b4532b9bfca023c557f8416cbeb">tgui::SpinControl</a></li>
 <li>getMaximumCharacters()&#160;:&#160;<a class="el" href="classtgui_1_1EditBox.html#aa41bb333d8b11fc672ef764e9c0a878f">tgui::EditBox</a>, <a class="el" href="classtgui_1_1TextArea.html#aa93b4b240d8bb7c7879326f4c37d6cc2">tgui::TextArea</a></li>
 <li>getMaximumItems()&#160;:&#160;<a class="el" href="classtgui_1_1ComboBox.html#a06db30819b8da53f2b971e8c4cc76cd7">tgui::ComboBox</a>, <a class="el" href="classtgui_1_1ListBox.html#aab85e8cce993459b66a5882a4c3a18bb">tgui::ListBox</a>, <a class="el" href="classtgui_1_1PanelListBox.html#a9be3b8e232bcd9a965e5d9b49a9cab3b">tgui::PanelListBox</a></li>
 <li>getMaximumSize()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindow.html#a6276bad6b36d37ebd4fdff1ea1fb3137">tgui::ChildWindow</a></li>
@@ -355,7 +364,7 @@ $(function(){ initResizable(false); });
 <li>getMaximumTextureSize()&#160;:&#160;<a class="el" href="classtgui_1_1BackendRenderer.html#a540217c42d72ebb35345ac2bf4b72b3a">tgui::BackendRenderer</a>, <a class="el" href="classtgui_1_1BackendRendererGLES2.html#afa3bbc970f97b1cc217ea63f5cdb06bf">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a8e4b01fae563a322c23b15862d642a7f">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a5ab2276d3b165f09bbe673373b35dcdb">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a081da786095639185eba9def7af0d8cb">tgui::BackendRendererSDL</a>, <a class="el" href="classtgui_1_1BackendRendererSFML.html#ae272fae4d55945b9fc8d377c1c33ce80">tgui::BackendRendererSFML</a></li>
 <li>getMaximumTextWidth()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#ad5b6f0a6d43f3bbe5b6b4d2e8f16d510">tgui::Label</a></li>
 <li>getMaxValidSplitterOffset()&#160;:&#160;<a class="el" href="classtgui_1_1SplitContainer.html#a35a174498d25435c6a2902916324ea45">tgui::SplitContainer</a></li>
-<li>getMaxValue()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a6fc792fe927ecd64d9d1ca8ed290a62f">tgui::Scrollbar</a></li>
+<li>getMaxValue()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a6fc792fe927ecd64d9d1ca8ed290a62f">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#a24dc91f2fa1a4e3aa9245919ef9ebe75">tgui::ScrollbarAccessor</a></li>
 <li>getMenuEnabled()&#160;:&#160;<a class="el" href="classtgui_1_1MenuBar.html#a06b9e09960d7bda5a7df0d56d746130b">tgui::MenuBar</a></li>
 <li>getMenuItemEnabled()&#160;:&#160;<a class="el" href="classtgui_1_1MenuBar.html#a59461ce8ccdf32f7c5f2ed50550343f4">tgui::MenuBar</a></li>
 <li>getMenus()&#160;:&#160;<a class="el" href="classtgui_1_1MenuBar.html#a3e8eaf08a9df95e6a8e7b7ed3a86e71d">tgui::MenuBar</a></li>
@@ -401,6 +410,7 @@ $(function(){ initResizable(false); });
 <li>getPath()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#a3b47f2f74ed8ce3d106bdcf54b6a344d">tgui::FileDialog</a></li>
 <li>getPixels()&#160;:&#160;<a class="el" href="classtgui_1_1BackendTexture.html#a968530697972e5c8607a14f5ffac6adb">tgui::BackendTexture</a></li>
 <li>getPixelsPerPoint()&#160;:&#160;<a class="el" href="classtgui_1_1BackendRenderTarget.html#a7171899fd1f829d8d864fc527ae86799">tgui::BackendRenderTarget</a></li>
+<li>getPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a94794829daff78f783c25094a971e9b3">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#ad20edf9f64be55b53501e74713e02600">tgui::ScrollbarAccessor</a></li>
 <li>getPosition()&#160;:&#160;<a class="el" href="classtgui_1_1Rect.html#a6f97c00ca189c9f0d9473332beb891aa">tgui::Rect&lt; T &gt;</a>, <a class="el" href="structtgui_1_1RelFloatRect.html#a3ca976a7a88a291156fd13c85d096632">tgui::RelFloatRect</a>, <a class="el" href="classtgui_1_1Sprite.html#ab7d2bba8672f76b81b96f2eb902211c1">tgui::Sprite</a>, <a class="el" href="classtgui_1_1Text.html#a5e5d382cf6f4252fa4297dd3f485b2c3">tgui::Text</a>, <a class="el" href="classtgui_1_1Widget.html#a2b255b85dd1f2d0d170776be4964e394">tgui::Widget</a></li>
 <li>getPrimary()&#160;:&#160;<a class="el" href="classtgui_1_1Theme.html#a72c19f08b834fcfc26441aac2ba9177e">tgui::Theme</a></li>
 <li>getProperty()&#160;:&#160;<a class="el" href="classtgui_1_1WidgetRenderer.html#ac82ed2a798b68b50083ebdefdc480d15">tgui::WidgetRenderer</a></li>
@@ -422,8 +432,8 @@ $(function(){ initResizable(false); });
 <li>getScale()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#ae83084d511cceea2ad5a16e7a913e172">tgui::Widget</a></li>
 <li>getScaleOrigin()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a3f1ee46dfc70c321677cfb656adce3e3">tgui::Widget</a></li>
 <li>getScalingType()&#160;:&#160;<a class="el" href="classtgui_1_1Sprite.html#a0d8cb7bfacabd4cffb8b64b311f7bc06">tgui::Sprite</a></li>
-<li>getScrollAmount()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#ab1d946771e680a2ebc3171de1a99a6ca">tgui::Scrollbar</a></li>
-<li>getScrollbar()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBoxRenderer.html#a6a076bd8d0db5e4b05a2d3d830cd5347">tgui::ChatBoxRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#ab94c7ada7af1cc7a66adbcd1dad17831">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ListBoxRenderer.html#a67f2deb593539b85194df7fe0aa60198">tgui::ListBoxRenderer</a>, <a class="el" href="classtgui_1_1ListViewRenderer.html#a01149a6e89cd031be0bbc188ebb0fdbb">tgui::ListViewRenderer</a>, <a class="el" href="classtgui_1_1ScrollablePanelRenderer.html#a6a876d2126d6596e2ef05c3fd4207ffc">tgui::ScrollablePanelRenderer</a>, <a class="el" href="classtgui_1_1TextAreaRenderer.html#a32f85bdbb80429e2634ab3f908d2e371">tgui::TextAreaRenderer</a>, <a class="el" href="classtgui_1_1TreeViewRenderer.html#a79a55fb8db2e1ee41374421b9d9c1a14">tgui::TreeViewRenderer</a></li>
+<li>getScrollAmount()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#ab1d946771e680a2ebc3171de1a99a6ca">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#a8ee0ba5a5ded2940f17d63a88c5bc2fa">tgui::ScrollbarAccessor</a></li>
+<li>getScrollbar()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBoxRenderer.html#a6a076bd8d0db5e4b05a2d3d830cd5347">tgui::ChatBoxRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#ab94c7ada7af1cc7a66adbcd1dad17831">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ListBoxRenderer.html#a67f2deb593539b85194df7fe0aa60198">tgui::ListBoxRenderer</a>, <a class="el" href="classtgui_1_1ListViewRenderer.html#a01149a6e89cd031be0bbc188ebb0fdbb">tgui::ListViewRenderer</a>, <a class="el" href="classtgui_1_1ScrollablePanelRenderer.html#a6a876d2126d6596e2ef05c3fd4207ffc">tgui::ScrollablePanelRenderer</a>, <a class="el" href="classtgui_1_1ScrollbarChildInterface.html#ab21163f19cdfa5c90b5b867e2f841afc">tgui::ScrollbarChildInterface</a>, <a class="el" href="classtgui_1_1TextAreaRenderer.html#a32f85bdbb80429e2634ab3f908d2e371">tgui::TextAreaRenderer</a>, <a class="el" href="classtgui_1_1TreeViewRenderer.html#a79a55fb8db2e1ee41374421b9d9c1a14">tgui::TreeViewRenderer</a></li>
 <li>getScrollbarMaxValue()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBox.html#ad63c31c47f56b50be244f4e368f98aa4">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1Label.html#adeaac1ca20053b1bd843140204b77824">tgui::Label</a>, <a class="el" href="classtgui_1_1ListBox.html#a0f80be5bc8faec88d3a1188708d2f8c2">tgui::ListBox</a></li>
 <li>getScrollbarPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#a4be0f1b157b02857d90e07d052b1778b">tgui::Label</a></li>
 <li>getScrollbarValue()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBox.html#a2227e5d4fe7b65366b5c8a8d7a3f6f27">tgui::ChatBox</a>, <a class="el" href="classtgui_1_1Label.html#aa184849e2e3921139bc758b2909ef4c1">tgui::Label</a>, <a class="el" href="classtgui_1_1ListBox.html#ae1bc4d22560536fe89386dc3a5eeae3c">tgui::ListBox</a></li>
@@ -591,17 +601,18 @@ $(function(){ initResizable(false); });
 <li>getUpButton()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialogRenderer.html#a60c3ed6a4591ab6390b97b60731b6794">tgui::FileDialogRenderer</a></li>
 <li>getUserData()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a64676527931607e846a5af831db931b0">tgui::Widget</a></li>
 <li>getUseWideArrows()&#160;:&#160;<a class="el" href="classtgui_1_1SpinControl.html#af5a147c4971aef3a985b3b481b13da75">tgui::SpinControl</a></li>
-<li>getValue()&#160;:&#160;<a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html#a3b514df3d2d3c8fba151e73b049e4699">tgui::AbsoluteOrRelativeValue</a>, <a class="el" href="classtgui_1_1EditBoxSlider.html#af3779f4a0a70fcbaeea50e2eaeb63ce8">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1Knob.html#ab17fd45e150b418c6ff7a57a2c8f6bfa">tgui::Knob</a>, <a class="el" href="classtgui_1_1Layout2d.html#a9008dc9c96638913ab498af2248c2e13">tgui::Layout2d</a>, <a class="el" href="classtgui_1_1Layout.html#a3f211218637c641dade7157c65f25f3d">tgui::Layout</a>, <a class="el" href="classtgui_1_1ProgressBar.html#a2ee783f2e012f6d29beb2b14fa59527d">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1Scrollbar.html#aae767c39c1754708d13e6d372c3acab1">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Slider.html#acae81ce7b8fc4efb93fa2516e8dd3d24">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a99e30a554706b8943c0eaaaad6a82948">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#a371edb92a2dd3cc4e044da97d2a5c711">tgui::SpinControl</a></li>
+<li>getValue()&#160;:&#160;<a class="el" href="classtgui_1_1AbsoluteOrRelativeValue.html#a3b514df3d2d3c8fba151e73b049e4699">tgui::AbsoluteOrRelativeValue</a>, <a class="el" href="classtgui_1_1EditBoxSlider.html#af3779f4a0a70fcbaeea50e2eaeb63ce8">tgui::EditBoxSlider</a>, <a class="el" href="classtgui_1_1Knob.html#ab17fd45e150b418c6ff7a57a2c8f6bfa">tgui::Knob</a>, <a class="el" href="classtgui_1_1Layout2d.html#a9008dc9c96638913ab498af2248c2e13">tgui::Layout2d</a>, <a class="el" href="classtgui_1_1Layout.html#a3f211218637c641dade7157c65f25f3d">tgui::Layout</a>, <a class="el" href="classtgui_1_1ProgressBar.html#a2ee783f2e012f6d29beb2b14fa59527d">tgui::ProgressBar</a>, <a class="el" href="classtgui_1_1Scrollbar.html#aae767c39c1754708d13e6d372c3acab1">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#abf44991284f7fbfa86f70f61a204181a">tgui::ScrollbarAccessor</a>, <a class="el" href="classtgui_1_1Slider.html#acae81ce7b8fc4efb93fa2516e8dd3d24">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#a99e30a554706b8943c0eaaaad6a82948">tgui::SpinButton</a>, <a class="el" href="classtgui_1_1SpinControl.html#a371edb92a2dd3cc4e044da97d2a5c711">tgui::SpinControl</a></li>
 <li>getVertexData()&#160;:&#160;<a class="el" href="classtgui_1_1BackendText.html#a926a89112049929d858b89b4065813aa">tgui::BackendText</a></li>
 <li>getVerticalAlignment()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#a50fab30a4c2cd7ca00ff291139bd1945">tgui::Label</a></li>
 <li>getVerticalScroll()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#ae10488ba07af457f0d45a5a424a7985f">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1Slider.html#ae024b1021415f0ce619366766212a389">tgui::Slider</a>, <a class="el" href="classtgui_1_1SpinButton.html#aa1aa1de93724561bd44ad595065fdc3a">tgui::SpinButton</a></li>
 <li>getVerticalScrollAmount()&#160;:&#160;<a class="el" href="classtgui_1_1ScrollablePanel.html#a430c3efb2e1b04e4a636635ce31de8a2">tgui::ScrollablePanel</a></li>
+<li>getVerticalScrollbar()&#160;:&#160;<a class="el" href="classtgui_1_1DualScrollbarChildInterface.html#aa42ef26aff5bf68178eb60f57289f5c0">tgui::DualScrollbarChildInterface</a></li>
 <li>getVerticalScrollbarMaxValue()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a7c367202955972b70f3f795d168cae1b">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#aa628ce1b724794975cf101dbec9532ec">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#a246d55572577914e7f2d6f620e5ffc35">tgui::TextArea</a>, <a class="el" href="classtgui_1_1TreeView.html#ac893584a245fb6599faf0f5ea9eb6116">tgui::TreeView</a></li>
 <li>getVerticalScrollbarPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#aaa7f709e0ab85ffa83e5e50ac03a60ab">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#ab4c2ec317a530eca685ae89a3fa394d3">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#af85a73abe7e3635d94e4e76c1eb271b5">tgui::TextArea</a></li>
 <li>getVerticalScrollbarValue()&#160;:&#160;<a class="el" href="classtgui_1_1ListView.html#a9abcb7c6aadb6ec8709f0699f9a41d42">tgui::ListView</a>, <a class="el" href="classtgui_1_1ScrollablePanel.html#a2b72f985024ee56b2ace77ee93a8b103">tgui::ScrollablePanel</a>, <a class="el" href="classtgui_1_1TextArea.html#a00ec4db8978dbd84686db2757c261ee0">tgui::TextArea</a>, <a class="el" href="classtgui_1_1TreeView.html#a8246cdd46614fae2e2d3ab699e90e7f1">tgui::TreeView</a></li>
 <li>getView()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a7e78b5b9956313ca258952cfa25b897e">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1CanvasSFML.html#aca4d8838dd9b2fc22ae3ccd6dab8515b">tgui::CanvasSFML</a></li>
 <li>getViewport()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a36a5ffb6388cba738d38f5282e10e8e8">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1CanvasSFML.html#aa53a946bf54dcd8ad0e44638936b86b9">tgui::CanvasSFML</a></li>
-<li>getViewportSize()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a28d1b0c669f55a634c470ae03f615147">tgui::Scrollbar</a></li>
+<li>getViewportSize()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#a28d1b0c669f55a634c470ae03f615147">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#a4a9da3e23c223732d35f037408ec0766">tgui::ScrollbarAccessor</a></li>
 <li>getVisibleRect()&#160;:&#160;<a class="el" href="classtgui_1_1Sprite.html#a06728914d3022f256a98ce53b9c035d6">tgui::Sprite</a></li>
 <li>getWidget()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#adb7b6a0187cca0261908f33fc5965e48">tgui::Grid</a>, <a class="el" href="classtgui_1_1Signal.html#afe5bbdd2869fd9dca526ce65aa04be24">tgui::Signal</a></li>
 <li>getWidgetAlignment()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#af24045ef91c0dc414f4d3511401e062b">tgui::Grid</a></li>
@@ -616,7 +627,7 @@ $(function(){ initResizable(false); });
 <li>getWidgets()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a00b642d721ad0cddd5aa8349015ac99a">tgui::BackendGui</a>, <a class="el" href="classtgui_1_1Container.html#a623c201d70fe1f2afe10d5d0139034dc">tgui::Container</a></li>
 <li>getWidgetType()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#aaf5e47fbbd1df2b5e77771300c9be932">tgui::Widget</a></li>
 <li>getWidgetTypes()&#160;:&#160;<a class="el" href="classtgui_1_1WidgetFactory.html#a1a0a4a9ac4bec82764a9108c56a765ee">tgui::WidgetFactory</a></li>
-<li>getWidth()&#160;:&#160;<a class="el" href="structtgui_1_1RelFloatRect.html#a9313dd34ee364ffcff2584eaeeff1457">tgui::RelFloatRect</a></li>
+<li>getWidth()&#160;:&#160;<a class="el" href="structtgui_1_1RelFloatRect.html#a9313dd34ee364ffcff2584eaeeff1457">tgui::RelFloatRect</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#ae13e8951583044cdabef48baac19ddc8">tgui::ScrollbarAccessor</a></li>
 <li>getWindow()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGuiGLFW.html#a036bcc4c1449bb7f6009018751e30b57">tgui::BackendGuiGLFW</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a57066866d25b6e054c70261a4ef4b95a">tgui::BackendGuiSDL</a>, <a class="el" href="classtgui_1_1BackendGuiSFML.html#a2d290c8982075f840e9a8274b29a026c">tgui::BackendGuiSFML</a></li>
 <li>Green&#160;:&#160;<a class="el" href="classtgui_1_1Color.html#a759b8d0d430ff5009c3617696fa4bc83">tgui::Color</a></li>
 <li>Grid()&#160;:&#160;<a class="el" href="classtgui_1_1Grid.html#a10e992afea62e2964652df980970667c">tgui::Grid</a></li>
@@ -626,7 +637,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 20 2024 11:28:56 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2024 19:37:26 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.11.0
 </small></address>
