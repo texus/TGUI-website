@@ -88,6 +88,8 @@ class MyCustomWidget : public tgui::SubwidgetContainer
     {
         subWidget1 = tgui::EditBox::create();
         subWidget2 = tgui::Button::create();
+        m_container->add(subWidget1);
+        m_container->add(subWidget2);
 
         // Give the subwidgets their size
         updateSize();
@@ -115,9 +117,9 @@ private:
     // intentionally not doing that to show how to override setSize.
     void updateSize()
     {
-        subWidget1->setSize({getSize().x * 0.8, getSize().y});
-        subWidget2->setSize({getSize().x * 0.2, getSize().y});
-        subWidget2->setPosition({getSize().x * 0.8, getSize().y});
+        subWidget1->setSize({getSize().x * 0.8f, getSize().y});
+        subWidget2->setSize({getSize().x * 0.2f, getSize().y});
+        subWidget2->setPosition({getSize().x * 0.8f, getSize().y});
     }
 
 public:
