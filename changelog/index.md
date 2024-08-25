@@ -5,6 +5,22 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 5
+    patches:
+    - version: 0
+      date: 25 August 2024
+      changes: |
+        Added uniform scrollbar access to all widgets with a scrollbar
+        Added getter for hovered item to ListBox, ListView, PanelListBox, Tabs and TreeView
+        Added option to buttons to only repond to clicks and ignore space/return key presses
+        Added setItemIndexInParent and getItemIndexInParent functions to TreeView
+        Added changeItemHierarchy to TreeView
+        Scrollbar::setOrientation will no longer flip width and height
+        Scrollbar::setSize no longer affects orientation once setOrientation is called
+        Grid didn't update its size in remove and setAutoSize functions while auto-sizing
+        Opacity of ScrollablePanel wasn't applied to its scrollbars
+        Setting opacity of SeparatorLine had no effect
+        SFML backend no longer uses sf::Keyboard::isKeyPressed to check modifier keys
   - version: 4
     patches:
     - version: 1
