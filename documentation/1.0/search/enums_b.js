@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verticalalignment_0',['VerticalAlignment',['../classtgui_1_1Label.html#a2974ef71da25253342a8b3660b6d094c',1,'tgui::Label']]]
+  ['verticalalignment_0',['VerticalAlignment',['../namespacetgui.html#ae5a81850d17cd6485d776b9972d41d7c',1,'tgui']]]
 ];

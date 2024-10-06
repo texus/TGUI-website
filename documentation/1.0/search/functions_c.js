@@ -1,9 +1,9 @@
 var searchData=
 [
   ['mainloop_0',['mainLoop',['../classtgui_1_1DefaultBackendWindow.html#ab94e05922c5503f6a3e35fc201602b34',1,'tgui::DefaultBackendWindow::mainLoop()'],['../classtgui_1_1BackendGui.html#a544aa069b54b23af1eb39767bee57f77',1,'tgui::BackendGui::mainLoop()'],['../classtgui_1_1BackendGuiGLFW.html#ab01f372db5b2e067acc4781389011583',1,'tgui::BackendGuiGLFW::mainLoop()'],['../classtgui_1_1BackendGuiSDL.html#a213980d508a62f6ecfdb23e8dc5e1b2c',1,'tgui::BackendGuiSDL::mainLoop()'],['../classtgui_1_1BackendGuiSFML.html#ab7e3d3608d02a026f74d1419c7f7073a',1,'tgui::BackendGuiSFML::mainLoop()'],['../classtgui_1_1BackendGuiRaylib.html#abcf49126eb65ba1dbfffd160cde17b0f',1,'tgui::BackendGuiRaylib::mainLoop()']]],
-  ['makeuniqueforoverwrite_1',['MakeUniqueForOverwrite',['../namespacetgui.html#a680bf73f57fdf6d70ff8be0efe858283',1,'tgui']]],
-  ['mapcoordstopixel_2',['mapCoordsToPixel',['../classtgui_1_1BackendGui.html#acdf90f593e4414f9fe99f7a54b24af54',1,'tgui::BackendGui']]],
-  ['mappixeltocoords_3',['mapPixelToCoords',['../classtgui_1_1BackendGui.html#acc7bcb6c082a1b5f0eab17ed3d860a51',1,'tgui::BackendGui']]],
+  ['makeuniqueforoverwrite_1',['MakeUniqueForOverwrite',['../namespacetgui.html#ac797f466c7dfeaed830e1fb637f16ce7',1,'tgui']]],
+  ['mapcoordstopixel_2',['mapCoordsToPixel',['../classtgui_1_1BackendGui.html#aa47fbf5f2463a486feefff9a26357ede',1,'tgui::BackendGui']]],
+  ['mappixeltocoords_3',['mapPixelToCoords',['../classtgui_1_1BackendGui.html#ac837a5fe950c98855f8de376bb8c3a7f',1,'tgui::BackendGui']]],
   ['menubarmenuplaceholder_4',['MenuBarMenuPlaceholder',['../classtgui_1_1MenuBarMenuPlaceholder.html#a7b44e55efe8ef2cb8923d49be85e7ea4',1,'tgui::MenuBarMenuPlaceholder']]],
   ['messagebox_5',['MessageBox',['../classtgui_1_1MessageBox.html#a6f82900d1634d07349a512b8f14e5ba3',1,'tgui::MessageBox::MessageBox(const MessageBox &amp;copy)'],['../classtgui_1_1MessageBox.html#aa1b6093734b2ef8ba4b4fb6d55215e3f',1,'tgui::MessageBox::MessageBox(MessageBox &amp;&amp;copy) noexcept']]],
   ['mousebuttoncallback_6',['mouseButtonCallback',['../classtgui_1_1BackendGuiGLFW.html#a1342c695f3ad2348d39ca87f92e030ea',1,'tgui::BackendGuiGLFW']]],

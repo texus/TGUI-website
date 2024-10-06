@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -196,57 +196,57 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendFont</b> (
 <tr class="memitem:a2d04941b7e29786746ddfec4a6ed78d7" id="r_a2d04941b7e29786746ddfec4a6ed78d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d04941b7e29786746ddfec4a6ed78d7">loadFromMemory</a> (const void *data, std::size_t sizeInBytes)</td></tr>
 <tr class="memdesc:a2d04941b7e29786746ddfec4a6ed78d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a font from memory.  <br /></td></tr>
 <tr class="separator:a2d04941b7e29786746ddfec4a6ed78d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21325c4f9c59d7199a2a940aabcf5fa4" id="r_a21325c4f9c59d7199a2a940aabcf5fa4"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21325c4f9c59d7199a2a940aabcf5fa4">hasGlyph</a> (char32_t codePoint) const =0</td></tr>
-<tr class="memdesc:a21325c4f9c59d7199a2a940aabcf5fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a font contains a certain glyph.  <br /></td></tr>
-<tr class="separator:a21325c4f9c59d7199a2a940aabcf5fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7ae2c91b72d60d53ef650664593c2d" id="r_abe7ae2c91b72d60d53ef650664593c2d"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="structtgui_1_1FontGlyph.html">FontGlyph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe7ae2c91b72d60d53ef650664593c2d">getGlyph</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness=0)=0</td></tr>
-<tr class="memdesc:abe7ae2c91b72d60d53ef650664593c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a glyph of the font.  <br /></td></tr>
-<tr class="separator:abe7ae2c91b72d60d53ef650664593c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cc10dc2aa57e2fa7064653676d025e4" id="r_a2cc10dc2aa57e2fa7064653676d025e4"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc10dc2aa57e2fa7064653676d025e4">getKerning</a> (char32_t first, char32_t second, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold)=0</td></tr>
-<tr class="memdesc:a2cc10dc2aa57e2fa7064653676d025e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the kerning offset of two glyphs.  <br /></td></tr>
-<tr class="separator:a2cc10dc2aa57e2fa7064653676d025e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e55b61dd2b6c2beb03dd147f8ac376" id="r_a62e55b61dd2b6c2beb03dd147f8ac376"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62e55b61dd2b6c2beb03dd147f8ac376">getLineSpacing</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a62e55b61dd2b6c2beb03dd147f8ac376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the line spacing.  <br /></td></tr>
-<tr class="separator:a62e55b61dd2b6c2beb03dd147f8ac376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7001bf8b8f93d97c04604868c47cf680" id="r_a7001bf8b8f93d97c04604868c47cf680"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7001bf8b8f93d97c04604868c47cf680">getFontHeight</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a7001bf8b8f93d97c04604868c47cf680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height required to render a line of text.  <br /></td></tr>
-<tr class="separator:a7001bf8b8f93d97c04604868c47cf680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00aabff77b743757919916e930f6491c" id="r_a00aabff77b743757919916e930f6491c"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00aabff77b743757919916e930f6491c">getAscent</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a00aabff77b743757919916e930f6491c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum height of a glyph above the baseline.  <br /></td></tr>
-<tr class="separator:a00aabff77b743757919916e930f6491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78fc57650782002a92fbc9fbeff56023" id="r_a78fc57650782002a92fbc9fbeff56023"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78fc57650782002a92fbc9fbeff56023">getDescent</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a78fc57650782002a92fbc9fbeff56023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum height of a glyph below the baseline.  <br /></td></tr>
-<tr class="separator:a78fc57650782002a92fbc9fbeff56023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfdd54673d4457d519a7539e1a0be975" id="r_abfdd54673d4457d519a7539e1a0be975"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfdd54673d4457d519a7539e1a0be975">getUnderlinePosition</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:abfdd54673d4457d519a7539e1a0be975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the underline.  <br /></td></tr>
-<tr class="separator:abfdd54673d4457d519a7539e1a0be975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2157aa5ff1d0158dafa73f64bd23ef99" id="r_a2157aa5ff1d0158dafa73f64bd23ef99"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2157aa5ff1d0158dafa73f64bd23ef99">getUnderlineThickness</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a2157aa5ff1d0158dafa73f64bd23ef99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thickness of the underline.  <br /></td></tr>
-<tr class="separator:a2157aa5ff1d0158dafa73f64bd23ef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ca0ac04c690700e40fcde9b96ba242" id="r_a46ca0ac04c690700e40fcde9b96ba242"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ca0ac04c690700e40fcde9b96ba242">getTexture</a> (unsigned <a class="el" href="classint.html">int</a> characterSize, unsigned <a class="el" href="classint.html">int</a> &amp;textureVersion)=0</td></tr>
-<tr class="memdesc:a46ca0ac04c690700e40fcde9b96ba242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture that is used to store glyphs of the given character size.  <br /></td></tr>
-<tr class="separator:a46ca0ac04c690700e40fcde9b96ba242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d6f4322eeabb14375a54c2c7f8493a" id="r_a38d6f4322eeabb14375a54c2c7f8493a"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d6f4322eeabb14375a54c2c7f8493a">getTextureSize</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
-<tr class="memdesc:a38d6f4322eeabb14375a54c2c7f8493a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the texture that is used to store glyphs of the given character size.  <br /></td></tr>
-<tr class="separator:a38d6f4322eeabb14375a54c2c7f8493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46a7f03d237d03a661613cb7a07bbcc" id="r_ac46a7f03d237d03a661613cb7a07bbcc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac46a7f03d237d03a661613cb7a07bbcc">hasGlyph</a> (char32_t codePoint) const =0</td></tr>
+<tr class="memdesc:ac46a7f03d237d03a661613cb7a07bbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a font contains a certain glyph.  <br /></td></tr>
+<tr class="separator:ac46a7f03d237d03a661613cb7a07bbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbbc39b52e3baf435fa6cc523d581472" id="r_afbbc39b52e3baf435fa6cc523d581472"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structtgui_1_1FontGlyph.html">FontGlyph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbbc39b52e3baf435fa6cc523d581472">getGlyph</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness=0)=0</td></tr>
+<tr class="memdesc:afbbc39b52e3baf435fa6cc523d581472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a glyph of the font.  <br /></td></tr>
+<tr class="separator:afbbc39b52e3baf435fa6cc523d581472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87080f27fd565b674d876cdbebe8d1bf" id="r_a87080f27fd565b674d876cdbebe8d1bf"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87080f27fd565b674d876cdbebe8d1bf">getKerning</a> (char32_t first, char32_t second, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold)=0</td></tr>
+<tr class="memdesc:a87080f27fd565b674d876cdbebe8d1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the kerning offset of two glyphs.  <br /></td></tr>
+<tr class="separator:a87080f27fd565b674d876cdbebe8d1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4728cfa1d2d9afca0689419fc940fd0e" id="r_a4728cfa1d2d9afca0689419fc940fd0e"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4728cfa1d2d9afca0689419fc940fd0e">getLineSpacing</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:a4728cfa1d2d9afca0689419fc940fd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the line spacing.  <br /></td></tr>
+<tr class="separator:a4728cfa1d2d9afca0689419fc940fd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc48b7b4f901a38b7e92440df41227d" id="r_a7fc48b7b4f901a38b7e92440df41227d"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fc48b7b4f901a38b7e92440df41227d">getFontHeight</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:a7fc48b7b4f901a38b7e92440df41227d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height required to render a line of text.  <br /></td></tr>
+<tr class="separator:a7fc48b7b4f901a38b7e92440df41227d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e8b90f35cbd6f772ed853869ba4c2c" id="r_aa9e8b90f35cbd6f772ed853869ba4c2c"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e8b90f35cbd6f772ed853869ba4c2c">getAscent</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:aa9e8b90f35cbd6f772ed853869ba4c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum height of a glyph above the baseline.  <br /></td></tr>
+<tr class="separator:aa9e8b90f35cbd6f772ed853869ba4c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e9cff9d80fd16ee476b249b4db339f" id="r_a96e9cff9d80fd16ee476b249b4db339f"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96e9cff9d80fd16ee476b249b4db339f">getDescent</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:a96e9cff9d80fd16ee476b249b4db339f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum height of a glyph below the baseline.  <br /></td></tr>
+<tr class="separator:a96e9cff9d80fd16ee476b249b4db339f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426df2b14c307fa2e2874499a7fe5ac5" id="r_a426df2b14c307fa2e2874499a7fe5ac5"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a426df2b14c307fa2e2874499a7fe5ac5">getUnderlinePosition</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:a426df2b14c307fa2e2874499a7fe5ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the underline.  <br /></td></tr>
+<tr class="separator:a426df2b14c307fa2e2874499a7fe5ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8f7a481f8efc27451350a5656a920f" id="r_a3f8f7a481f8efc27451350a5656a920f"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f8f7a481f8efc27451350a5656a920f">getUnderlineThickness</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:a3f8f7a481f8efc27451350a5656a920f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thickness of the underline.  <br /></td></tr>
+<tr class="separator:a3f8f7a481f8efc27451350a5656a920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e4f6ecb21ebb49841f4ccdf0c2a28c" id="r_ac7e4f6ecb21ebb49841f4ccdf0c2a28c"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e4f6ecb21ebb49841f4ccdf0c2a28c">getTexture</a> (unsigned <a class="el" href="classint.html">int</a> characterSize, unsigned <a class="el" href="classint.html">int</a> &amp;textureVersion)=0</td></tr>
+<tr class="memdesc:ac7e4f6ecb21ebb49841f4ccdf0c2a28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture that is used to store glyphs of the given character size.  <br /></td></tr>
+<tr class="separator:ac7e4f6ecb21ebb49841f4ccdf0c2a28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8adaca64d4d844492028bbf452fc402" id="r_ae8adaca64d4d844492028bbf452fc402"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8adaca64d4d844492028bbf452fc402">getTextureSize</a> (unsigned <a class="el" href="classint.html">int</a> characterSize)=0</td></tr>
+<tr class="memdesc:ae8adaca64d4d844492028bbf452fc402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the texture that is used to store glyphs of the given character size.  <br /></td></tr>
+<tr class="separator:ae8adaca64d4d844492028bbf452fc402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a736a425e949a881acb960755f3853480" id="r_a736a425e949a881acb960755f3853480"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a736a425e949a881acb960755f3853480">setSmooth</a> (bool smooth)</td></tr>
 <tr class="memdesc:a736a425e949a881acb960755f3853480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the smooth filter.  <br /></td></tr>
 <tr class="separator:a736a425e949a881acb960755f3853480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897716bc52ae15cbac69566e5f8f0d9c" id="r_a897716bc52ae15cbac69566e5f8f0d9c"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897716bc52ae15cbac69566e5f8f0d9c">isSmooth</a> () const</td></tr>
-<tr class="memdesc:a897716bc52ae15cbac69566e5f8f0d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether the smooth filter is enabled or not.  <br /></td></tr>
-<tr class="separator:a897716bc52ae15cbac69566e5f8f0d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d201e82047e3106e15246327cbbebaa" id="r_a4d201e82047e3106e15246327cbbebaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d201e82047e3106e15246327cbbebaa">isSmooth</a> () const</td></tr>
+<tr class="memdesc:a4d201e82047e3106e15246327cbbebaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether the smooth filter is enabled or not.  <br /></td></tr>
+<tr class="separator:a4d201e82047e3106e15246327cbbebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33d3f8fbbf307d041e626adddac63c0" id="r_af33d3f8fbbf307d041e626adddac63c0"><td class="memItemLeft" align="right" valign="top"><a id="af33d3f8fbbf307d041e626adddac63c0" name="af33d3f8fbbf307d041e626adddac63c0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setFontScale</b> (float scale)</td></tr>
 <tr class="separator:af33d3f8fbbf307d041e626adddac63c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5d55f0b33999332e614f895b01705a9" id="r_af5d55f0b33999332e614f895b01705a9"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5d55f0b33999332e614f895b01705a9">getFontScale</a> () const</td></tr>
-<tr class="memdesc:af5d55f0b33999332e614f895b01705a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale at which glyphs are rendered.  <br /></td></tr>
-<tr class="separator:af5d55f0b33999332e614f895b01705a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67adb5817f633e0ff9fd170b2a1d0794" id="r_a67adb5817f633e0ff9fd170b2a1d0794"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67adb5817f633e0ff9fd170b2a1d0794">getFontScale</a> () const</td></tr>
+<tr class="memdesc:a67adb5817f633e0ff9fd170b2a1d0794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale at which glyphs are rendered.  <br /></td></tr>
+<tr class="separator:a67adb5817f633e0ff9fd170b2a1d0794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a286e626b5b61689f90149ec9db43903f" id="r_a286e626b5b61689f90149ec9db43903f"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a286e626b5b61689f90149ec9db43903f">constructGlyphKey</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness) const</td></tr>
-<tr class="memdesc:a286e626b5b61689f90149ec9db43903f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a key for each unique character to render.  <br /></td></tr>
-<tr class="separator:a286e626b5b61689f90149ec9db43903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a88b728ccd94c69514a1e3916a24dc" id="r_a45a88b728ccd94c69514a1e3916a24dc"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45a88b728ccd94c69514a1e3916a24dc">constructGlyphKey</a> (char32_t codePoint, unsigned <a class="el" href="classint.html">int</a> characterSize, bool bold, float outlineThickness) const</td></tr>
+<tr class="memdesc:a45a88b728ccd94c69514a1e3916a24dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a key for each unique character to render.  <br /></td></tr>
+<tr class="separator:a45a88b728ccd94c69514a1e3916a24dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -260,8 +260,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for font implementations that depend on the backend. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a286e626b5b61689f90149ec9db43903f" name="a286e626b5b61689f90149ec9db43903f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286e626b5b61689f90149ec9db43903f">&#9670;&#160;</a></span>constructGlyphKey()</h2>
+<a id="a45a88b728ccd94c69514a1e3916a24dc" name="a45a88b728ccd94c69514a1e3916a24dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a88b728ccd94c69514a1e3916a24dc">&#9670;&#160;</a></span>constructGlyphKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +270,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD std::uint64_t tgui::BackendFont::constructGlyphKey </td>
+          <td class="memname">std::uint64_t tgui::BackendFont::constructGlyphKey </td>
           <td>(</td>
           <td class="paramtype">char32_t</td>          <td class="paramname"><span class="paramname"><em>codePoint</em></span>, </td>
         </tr>
@@ -292,7 +292,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -312,8 +312,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 
 </div>
 </div>
-<a id="a00aabff77b743757919916e930f6491c" name="a00aabff77b743757919916e930f6491c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00aabff77b743757919916e930f6491c">&#9670;&#160;</a></span>getAscent()</h2>
+<a id="aa9e8b90f35cbd6f772ed853869ba4c2c" name="aa9e8b90f35cbd6f772ed853869ba4c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e8b90f35cbd6f772ed853869ba4c2c">&#9670;&#160;</a></span>getAscent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +322,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getAscent </td>
+          <td class="memname">virtual float tgui::BackendFont::getAscent </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -330,7 +330,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -344,12 +344,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Ascent of the font </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a7100d6c882ff32be224c5f334175f7f6">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ad329e82c251c79abb0066c163182683a">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a6d2c2bf16174ee72605f3a71ca9a9fef">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a044cc59a3f386a38e7adf0761b79b5e4">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a23b3237646e513ca19b93f231a7fa04c">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#aefca0cd6d452bc170c5edd1ae5ffb3c6">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a3f61be9b2f5da2482b23747a41213e33">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#ae52a11f9a45c25c048781ae871c12f59">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a78fc57650782002a92fbc9fbeff56023" name="a78fc57650782002a92fbc9fbeff56023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fc57650782002a92fbc9fbeff56023">&#9670;&#160;</a></span>getDescent()</h2>
+<a id="a96e9cff9d80fd16ee476b249b4db339f" name="a96e9cff9d80fd16ee476b249b4db339f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e9cff9d80fd16ee476b249b4db339f">&#9670;&#160;</a></span>getDescent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +358,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getDescent </td>
+          <td class="memname">virtual float tgui::BackendFont::getDescent </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -366,7 +366,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -380,12 +380,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Descent of the font </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aac19ef94394c917882456408d7cd61bf">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a880102b39deb21e1add49cf93d94c703">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a2ff33e79f6203a2c2cde570a70f1ae2a">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a05c3182e8c0d36b578e3a80672bd9679">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#ac7190f3d5e97be00ac367e777f7925db">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#aa2beda2b6ffba804382b1444862c18c6">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a5547630956e02133dc9590df304f024a">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#acc688dd38fccebbbf0bb37886841b4e2">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a7001bf8b8f93d97c04604868c47cf680" name="a7001bf8b8f93d97c04604868c47cf680"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7001bf8b8f93d97c04604868c47cf680">&#9670;&#160;</a></span>getFontHeight()</h2>
+<a id="a7fc48b7b4f901a38b7e92440df41227d" name="a7fc48b7b4f901a38b7e92440df41227d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc48b7b4f901a38b7e92440df41227d">&#9670;&#160;</a></span>getFontHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +394,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getFontHeight </td>
+          <td class="memname">virtual float tgui::BackendFont::getFontHeight </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -402,7 +402,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -416,32 +416,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of font ascent and descent </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#af950ca823651690b5638996dd38c84ef">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#aa5d4c8daa25e77e2f253c2e36556826a">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad358cd2fbb8c8ec68d818e5e6f3a0232">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a9ccc170ed7ede49a2bff97d066c36bd5">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a9ece7e35228a95c84807770182aea223">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a17fbd5b7b78a8bbe92c79c71df498cdd">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a0126a3880cc9472917bf2d8920297398">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a056976dd0cb992610a9e1c2b32be8fd0">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="af5d55f0b33999332e614f895b01705a9" name="af5d55f0b33999332e614f895b01705a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5d55f0b33999332e614f895b01705a9">&#9670;&#160;</a></span>getFontScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TGUI_NODISCARD float tgui::BackendFont::getFontScale </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the scale at which glyphs are rendered. </p>
-<p><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> may be rendered blurry if the font scale doesn't match the ratio between the window size and gui view. Default scaling is 1. If the scale is set to 1.5 then a font with text size 20 would be internally rendered at 30px. </p>
-
-</div>
-</div>
-<a id="abe7ae2c91b72d60d53ef650664593c2d" name="abe7ae2c91b72d60d53ef650664593c2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe7ae2c91b72d60d53ef650664593c2d">&#9670;&#160;</a></span>getGlyph()</h2>
+<a id="a67adb5817f633e0ff9fd170b2a1d0794" name="a67adb5817f633e0ff9fd170b2a1d0794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67adb5817f633e0ff9fd170b2a1d0794">&#9670;&#160;</a></span>getFontScale()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,7 +430,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD <a class="el" href="structtgui_1_1FontGlyph.html">FontGlyph</a> tgui::BackendFont::getGlyph </td>
+          <td class="memname">float tgui::BackendFont::getFontScale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the scale at which glyphs are rendered. </p>
+<p><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> may be rendered blurry if the font scale doesn't match the ratio between the window size and gui view. Default scaling is 1. If the scale is set to 1.5 then a font with text size 20 would be internally rendered at 30px. </p>
+
+</div>
+</div>
+<a id="afbbc39b52e3baf435fa6cc523d581472" name="afbbc39b52e3baf435fa6cc523d581472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbbc39b52e3baf435fa6cc523d581472">&#9670;&#160;</a></span>getGlyph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structtgui_1_1FontGlyph.html">FontGlyph</a> tgui::BackendFont::getGlyph </td>
           <td>(</td>
           <td class="paramtype">char32_t</td>          <td class="paramname"><span class="paramname"><em>codePoint</em></span>, </td>
         </tr>
@@ -472,7 +480,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -490,12 +498,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The glyph corresponding to codePoint and characterSize </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a690dfb475b4978fbccf848a878b2ecd8">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#abd5811ee35de5da9d249cf55d8448dd1">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a44c644a852e0ddaa547b93fad58b6987">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a25fce8b0ba246f2096e1ac6aa31e3114">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a6cae73e0853134a12f9d491718724716">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a57762a423346ae270cf9d4ae044bf3ca">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad35cbb0ff733d7ca4fe67ff21210b5ef">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a271d55b1178246cfa493596aac6bfc3a">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a2cc10dc2aa57e2fa7064653676d025e4" name="a2cc10dc2aa57e2fa7064653676d025e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cc10dc2aa57e2fa7064653676d025e4">&#9670;&#160;</a></span>getKerning()</h2>
+<a id="a87080f27fd565b674d876cdbebe8d1bf" name="a87080f27fd565b674d876cdbebe8d1bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87080f27fd565b674d876cdbebe8d1bf">&#9670;&#160;</a></span>getKerning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +512,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getKerning </td>
+          <td class="memname">virtual float tgui::BackendFont::getKerning </td>
           <td>(</td>
           <td class="paramtype">char32_t</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
         </tr>
@@ -526,7 +534,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -544,12 +552,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Kerning value for first and second, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a1fde0885d92484a5405da8b6a809a6a5">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a9b503b44c2bbe028467047fee0774f5f">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#abffb2d185ca0af60e51aa8920e6aef15">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a4f37ce60057cbc00ce651c843ffece60">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a2dc15044a3f8047c56599c22acc883a4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a9ed341bb94ac398c9f4fcca385e8aec5">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad7690e20fe4a57a72e192f17975817c8">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a9d66c7f11c97a1a0e66c0f44a0a1b94f">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a62e55b61dd2b6c2beb03dd147f8ac376" name="a62e55b61dd2b6c2beb03dd147f8ac376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62e55b61dd2b6c2beb03dd147f8ac376">&#9670;&#160;</a></span>getLineSpacing()</h2>
+<a id="a4728cfa1d2d9afca0689419fc940fd0e" name="a4728cfa1d2d9afca0689419fc940fd0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4728cfa1d2d9afca0689419fc940fd0e">&#9670;&#160;</a></span>getLineSpacing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,7 +566,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getLineSpacing </td>
+          <td class="memname">virtual float tgui::BackendFont::getLineSpacing </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -566,7 +574,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -581,12 +589,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Line spacing, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a0a8c57e6510024498fbf7b1d2d66d81d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a559e3c4e31f1ab388d8e08c5970843a2">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#af88342bcfacea769ac099c354e9f4bec">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a742f210a600c32877ae7086afdce3a78">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aef2772d7124eb9557f4a71b3bb268827">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a9ec9bd4fe766b47d0bc7ccdeb2b426ac">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a10ad9820d2c22cb80acda04f543c63da">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a93173654bcd932d6fcc61f263d4280e5">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a46ca0ac04c690700e40fcde9b96ba242" name="a46ca0ac04c690700e40fcde9b96ba242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46ca0ac04c690700e40fcde9b96ba242">&#9670;&#160;</a></span>getTexture()</h2>
+<a id="ac7e4f6ecb21ebb49841f4ccdf0c2a28c" name="ac7e4f6ecb21ebb49841f4ccdf0c2a28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e4f6ecb21ebb49841f4ccdf0c2a28c">&#9670;&#160;</a></span>getTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +603,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; tgui::BackendFont::getTexture </td>
+          <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; tgui::BackendFont::getTexture </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span>, </td>
         </tr>
@@ -607,7 +615,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -622,12 +630,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Texture.html" title="Texture wrapper that internally reuses resources when multiple Texture objects are loaded from the sa...">Texture</a> to render text glyphs with </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a199f3294184d8dfa84f67a3b32173080">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ac543b01985dc823c73f697bd223f57c9">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#aa7f1ef0738ab459f95628f0a572edb13">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a965d01037b94505bab6289f1a92100fb">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a4797ae9821f7b3a234bc85d3bbe0f10d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a3e2019d9b6ded0103c9787cf735a2d4d">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ac9e2fe17cde53cf9bf0d0e0270cabdaf">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#aa1c8016418de0c1e62996488bd971d64">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a38d6f4322eeabb14375a54c2c7f8493a" name="a38d6f4322eeabb14375a54c2c7f8493a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d6f4322eeabb14375a54c2c7f8493a">&#9670;&#160;</a></span>getTextureSize()</h2>
+<a id="ae8adaca64d4d844492028bbf452fc402" name="ae8adaca64d4d844492028bbf452fc402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8adaca64d4d844492028bbf452fc402">&#9670;&#160;</a></span>getTextureSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -636,7 +644,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> tgui::BackendFont::getTextureSize </td>
+          <td class="memname">virtual <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> tgui::BackendFont::getTextureSize </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -644,7 +652,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -658,12 +666,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of the texture that holds the glyphs </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#abd27cf9ccb04b1990e3adcfd1f5c42e2">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ad3f48a4e395c7c28e7a1f1eb4b362863">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a239c666a8328f8274700dae7e5ccb5ee">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a64d7b75fccdc5c1a0646051c6651c8a9">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a7f2337b3772cd909b948d9b8fbca7103">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a579cd8067f37848377764396be028d79">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a1cf030893b8d4d4408c986c88aaeca55">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#aad3511738dd931ea4a0a32d9a046a3c5">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="abfdd54673d4457d519a7539e1a0be975" name="abfdd54673d4457d519a7539e1a0be975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfdd54673d4457d519a7539e1a0be975">&#9670;&#160;</a></span>getUnderlinePosition()</h2>
+<a id="a426df2b14c307fa2e2874499a7fe5ac5" name="a426df2b14c307fa2e2874499a7fe5ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426df2b14c307fa2e2874499a7fe5ac5">&#9670;&#160;</a></span>getUnderlinePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,7 +680,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getUnderlinePosition </td>
+          <td class="memname">virtual float tgui::BackendFont::getUnderlinePosition </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -680,7 +688,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -695,12 +703,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Underline position, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aeb5e1ea15a4a8bc66d9863f398f40328">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#ac308533d591a8b8a8d639a15169e90a2">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a56cfab37971497ee5c9f39180a596aae">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a697b5040d3f77c9b5885f9eeca65c7ae">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a159f888b82cfe3bcd39429a3bce3741b">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a2b72ca7c7076e946b0702c0ed90e6d83">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a0b617a89cbdd00404922947c947081f6">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a1a6e4367c9a5ba6826921e9618edbf86">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a2157aa5ff1d0158dafa73f64bd23ef99" name="a2157aa5ff1d0158dafa73f64bd23ef99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2157aa5ff1d0158dafa73f64bd23ef99">&#9670;&#160;</a></span>getUnderlineThickness()</h2>
+<a id="a3f8f7a481f8efc27451350a5656a920f" name="a3f8f7a481f8efc27451350a5656a920f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8f7a481f8efc27451350a5656a920f">&#9670;&#160;</a></span>getUnderlineThickness()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -709,7 +717,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD float tgui::BackendFont::getUnderlineThickness </td>
+          <td class="memname">virtual float tgui::BackendFont::getUnderlineThickness </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="classint.html">int</a></td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span></td><td>)</td>
           <td></td>
@@ -717,7 +725,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -732,12 +740,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Underline thickness, in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#aa69eba2ad83f1399dcd1dbbca767dfc4">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#abbced0119f1fb8cec7c47a895e7f6995">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a12539da0e28c61e1a45dda97ed03bdfb">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a90d7afba8240bd383fbdf7f2c24abf54">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a0acbf3342199cca315e47afd4c29bf90">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a7d96c7cbcdd04ae8acc259fc32474613">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a3a75aa862b0d46e3c67fdeb5e1f7017c">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a79d7142631b4543374412dcd511f4e3d">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a21325c4f9c59d7199a2a940aabcf5fa4" name="a21325c4f9c59d7199a2a940aabcf5fa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21325c4f9c59d7199a2a940aabcf5fa4">&#9670;&#160;</a></span>hasGlyph()</h2>
+<a id="ac46a7f03d237d03a661613cb7a07bbcc" name="ac46a7f03d237d03a661613cb7a07bbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46a7f03d237d03a661613cb7a07bbcc">&#9670;&#160;</a></span>hasGlyph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,7 +754,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD bool tgui::BackendFont::hasGlyph </td>
+          <td class="memname">virtual bool tgui::BackendFont::hasGlyph </td>
           <td>(</td>
           <td class="paramtype">char32_t</td>          <td class="paramname"><span class="paramname"><em>codePoint</em></span></td><td>)</td>
           <td> const</td>
@@ -754,7 +762,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -768,23 +776,31 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Does the font contain this character? </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#a12ca107e4824cfbae2833eca3e3f1f9d">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a87f1e7567c0fc7c59885e0ff101e734b">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#a206ac50ae994579aaeb7e21f0bf26268">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a878b0a39d251f6b709031396069ae0c4">tgui::BackendFontSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFreetype.html#add72088ab592e893d3774bc521873839">tgui::BackendFontFreetype</a>, <a class="el" href="classtgui_1_1BackendFontRaylib.html#a97691f2891b25f7b4ad13ecc6d3f0086">tgui::BackendFontRaylib</a>, <a class="el" href="classtgui_1_1BackendFontSDLttf.html#ad5a3c687581045426b29a1eb042276b7">tgui::BackendFontSDLttf</a>, and <a class="el" href="classtgui_1_1BackendFontSFML.html#a265ef5265180dfab0b7c67b8644760d1">tgui::BackendFontSFML</a>.</p>
 
 </div>
 </div>
-<a id="a897716bc52ae15cbac69566e5f8f0d9c" name="a897716bc52ae15cbac69566e5f8f0d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a897716bc52ae15cbac69566e5f8f0d9c">&#9670;&#160;</a></span>isSmooth()</h2>
+<a id="a4d201e82047e3106e15246327cbbebaa" name="a4d201e82047e3106e15246327cbbebaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d201e82047e3106e15246327cbbebaa">&#9670;&#160;</a></span>isSmooth()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD bool tgui::BackendFont::isSmooth </td>
+          <td class="memname">bool tgui::BackendFont::isSmooth </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Tell whether the smooth filter is enabled or not. </p>
@@ -937,13 +953,13 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontScale</b> = 1<
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Font/<a class="el" href="BackendFont_8hpp_source.html">BackendFont.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Backend/Font/<a class="el" href="BackendFont_8hpp_source.html">BackendFont.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

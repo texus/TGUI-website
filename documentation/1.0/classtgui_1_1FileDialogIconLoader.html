@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -150,41 +150,41 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FileDialogIconLoader</b> ()=default</td></tr>
 <tr class="memdesc:ab0ef0223fb18451bed8570cdc4acea5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor. <br /></td></tr>
 <tr class="separator:ab0ef0223fb18451bed8570cdc4acea5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6c09ef593084ee5870a5da5a8476a0" id="r_acd6c09ef593084ee5870a5da5a8476a0"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd6c09ef593084ee5870a5da5a8476a0">update</a> ()</td></tr>
-<tr class="memdesc:acd6c09ef593084ee5870a5da5a8476a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to check if the background thread has finished.  <br /></td></tr>
-<tr class="separator:acd6c09ef593084ee5870a5da5a8476a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280d990a068ae3f4232b3fb0a7c6b254" id="r_a280d990a068ae3f4232b3fb0a7c6b254"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a280d990a068ae3f4232b3fb0a7c6b254">supportsSystemIcons</a> () const</td></tr>
-<tr class="memdesc:a280d990a068ae3f4232b3fb0a7c6b254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this icon loader does something or whether its functions are no-ops.  <br /></td></tr>
-<tr class="separator:a280d990a068ae3f4232b3fb0a7c6b254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b00c9ffeb5ceac7b8649cb03e0ab85f" id="r_a2b00c9ffeb5ceac7b8649cb03e0ab85f"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b00c9ffeb5ceac7b8649cb03e0ab85f">hasGenericIcons</a> () const</td></tr>
-<tr class="memdesc:a2b00c9ffeb5ceac7b8649cb03e0ab85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether generic icons (one folder and one file icon) are available.  <br /></td></tr>
-<tr class="separator:a2b00c9ffeb5ceac7b8649cb03e0ab85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fb98ec826d68d845aad606f45c0336" id="r_a61fb98ec826d68d845aad606f45c0336"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61fb98ec826d68d845aad606f45c0336">getGenericFileIcon</a> (const <a class="el" href="structtgui_1_1Filesystem_1_1FileInfo.html">Filesystem::FileInfo</a> &amp;file)</td></tr>
-<tr class="memdesc:a61fb98ec826d68d845aad606f45c0336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic file/folder icon, which is used until the file-specific icons are finished loading.  <br /></td></tr>
-<tr class="separator:a61fb98ec826d68d845aad606f45c0336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6722f11438ba086728d860c21a5e343" id="r_ad6722f11438ba086728d860c21a5e343"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6722f11438ba086728d860c21a5e343">update</a> ()</td></tr>
+<tr class="memdesc:ad6722f11438ba086728d860c21a5e343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to check if the background thread has finished.  <br /></td></tr>
+<tr class="separator:ad6722f11438ba086728d860c21a5e343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029fb8fdd879a83964567bbca4ab32b4" id="r_a029fb8fdd879a83964567bbca4ab32b4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a029fb8fdd879a83964567bbca4ab32b4">supportsSystemIcons</a> () const</td></tr>
+<tr class="memdesc:a029fb8fdd879a83964567bbca4ab32b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this icon loader does something or whether its functions are no-ops.  <br /></td></tr>
+<tr class="separator:a029fb8fdd879a83964567bbca4ab32b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390418f6cac1bb6ed4fb7226c1d694a4" id="r_a390418f6cac1bb6ed4fb7226c1d694a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390418f6cac1bb6ed4fb7226c1d694a4">hasGenericIcons</a> () const</td></tr>
+<tr class="memdesc:a390418f6cac1bb6ed4fb7226c1d694a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether generic icons (one folder and one file icon) are available.  <br /></td></tr>
+<tr class="separator:a390418f6cac1bb6ed4fb7226c1d694a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacd7165e6947ad392d5bcc4afd0be45" id="r_aeacd7165e6947ad392d5bcc4afd0be45"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtgui_1_1Texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeacd7165e6947ad392d5bcc4afd0be45">getGenericFileIcon</a> (const <a class="el" href="structtgui_1_1Filesystem_1_1FileInfo.html">Filesystem::FileInfo</a> &amp;file)</td></tr>
+<tr class="memdesc:aeacd7165e6947ad392d5bcc4afd0be45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic file/folder icon, which is used until the file-specific icons are finished loading.  <br /></td></tr>
+<tr class="separator:aeacd7165e6947ad392d5bcc4afd0be45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4041f391549ae29ff53aa8d94b241abd" id="r_a4041f391549ae29ff53aa8d94b241abd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4041f391549ae29ff53aa8d94b241abd">requestFileIcons</a> (const std::vector&lt; <a class="el" href="structtgui_1_1Filesystem_1_1FileInfo.html">Filesystem::FileInfo</a> &gt; &amp;files)</td></tr>
 <tr class="memdesc:a4041f391549ae29ff53aa8d94b241abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a thread to load the icons for all given files.  <br /></td></tr>
 <tr class="separator:a4041f391549ae29ff53aa8d94b241abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32abffa00be669e657ca723350eea7be" id="r_a32abffa00be669e657ca723350eea7be"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32abffa00be669e657ca723350eea7be">retrieveFileIcons</a> ()</td></tr>
-<tr class="memdesc:a32abffa00be669e657ca723350eea7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the file icons that where loaded in the thread that was started in <a class="el" href="#a4041f391549ae29ff53aa8d94b241abd" title="Starts a thread to load the icons for all given files.">requestFileIcons()</a>  <br /></td></tr>
-<tr class="separator:a32abffa00be669e657ca723350eea7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aac7903d2800efca2fb78f175391e8d" id="r_a2aac7903d2800efca2fb78f175391e8d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2aac7903d2800efca2fb78f175391e8d">retrieveFileIcons</a> ()</td></tr>
+<tr class="memdesc:a2aac7903d2800efca2fb78f175391e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the file icons that where loaded in the thread that was started in <a class="el" href="#a4041f391549ae29ff53aa8d94b241abd" title="Starts a thread to load the icons for all given files.">requestFileIcons()</a>  <br /></td></tr>
+<tr class="separator:a2aac7903d2800efca2fb78f175391e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab892b0e2e0c9e5c0d0c6b688d87f035f" id="r_ab892b0e2e0c9e5c0d0c6b688d87f035f"><td class="memItemLeft" align="right" valign="top">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1FileDialogIconLoader.html">FileDialogIconLoader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab892b0e2e0c9e5c0d0c6b688d87f035f">createInstance</a> ()</td></tr>
-<tr class="memdesc:ab892b0e2e0c9e5c0d0c6b688d87f035f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shared instance to the loader (and creates it if it didn't exist yet).  <br /></td></tr>
-<tr class="separator:ab892b0e2e0c9e5c0d0c6b688d87f035f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc0c181f95e2f00b5654d5eb95f76cd" id="r_a5cc0c181f95e2f00b5654d5eb95f76cd"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1FileDialogIconLoader.html">FileDialogIconLoader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cc0c181f95e2f00b5654d5eb95f76cd">createInstance</a> ()</td></tr>
+<tr class="memdesc:a5cc0c181f95e2f00b5654d5eb95f76cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shared instance to the loader (and creates it if it didn't exist yet).  <br /></td></tr>
+<tr class="separator:a5cc0c181f95e2f00b5654d5eb95f76cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac9d718cad748e920a261127b4c8575e1" id="r_ac9d718cad748e920a261127b4c8575e1"><td class="memItemLeft" align="right" valign="top"><a id="ac9d718cad748e920a261127b4c8575e1" name="ac9d718cad748e920a261127b4c8575e1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FileDialogIconLoader</b> ()=default</td></tr>
-<tr class="memdesc:ac9d718cad748e920a261127b4c8575e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor, the <a class="el" href="#ab892b0e2e0c9e5c0d0c6b688d87f035f" title="Returns the shared instance to the loader (and creates it if it didn&#39;t exist yet).">createInstance()</a> function should be used to construct the icon loader. <br /></td></tr>
+<tr class="memdesc:ac9d718cad748e920a261127b4c8575e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor, the <a class="el" href="#a5cc0c181f95e2f00b5654d5eb95f76cd" title="Returns the shared instance to the loader (and creates it if it didn&#39;t exist yet).">createInstance()</a> function should be used to construct the icon loader. <br /></td></tr>
 <tr class="separator:ac9d718cad748e920a261127b4c8575e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab892b0e2e0c9e5c0d0c6b688d87f035f" name="ab892b0e2e0c9e5c0d0c6b688d87f035f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab892b0e2e0c9e5c0d0c6b688d87f035f">&#9670;&#160;</a></span>createInstance()</h2>
+<a id="a5cc0c181f95e2f00b5654d5eb95f76cd" name="a5cc0c181f95e2f00b5654d5eb95f76cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc0c181f95e2f00b5654d5eb95f76cd">&#9670;&#160;</a></span>createInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +193,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1FileDialogIconLoader.html">FileDialogIconLoader</a> &gt; tgui::FileDialogIconLoader::createInstance </td>
+          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1FileDialogIconLoader.html">FileDialogIconLoader</a> &gt; tgui::FileDialogIconLoader::createInstance </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -201,7 +201,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,8 +212,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61fb98ec826d68d845aad606f45c0336" name="a61fb98ec826d68d845aad606f45c0336"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61fb98ec826d68d845aad606f45c0336">&#9670;&#160;</a></span>getGenericFileIcon()</h2>
+<a id="aeacd7165e6947ad392d5bcc4afd0be45" name="aeacd7165e6947ad392d5bcc4afd0be45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacd7165e6947ad392d5bcc4afd0be45">&#9670;&#160;</a></span>getGenericFileIcon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +222,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD <a class="el" href="classtgui_1_1Texture.html">Texture</a> tgui::FileDialogIconLoader::getGenericFileIcon </td>
+          <td class="memname">virtual <a class="el" href="classtgui_1_1Texture.html">Texture</a> tgui::FileDialogIconLoader::getGenericFileIcon </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structtgui_1_1Filesystem_1_1FileInfo.html">Filesystem::FileInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em></span></td><td>)</td>
           <td></td>
@@ -230,7 +230,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -246,8 +246,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b00c9ffeb5ceac7b8649cb03e0ab85f" name="a2b00c9ffeb5ceac7b8649cb03e0ab85f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b00c9ffeb5ceac7b8649cb03e0ab85f">&#9670;&#160;</a></span>hasGenericIcons()</h2>
+<a id="a390418f6cac1bb6ed4fb7226c1d694a4" name="a390418f6cac1bb6ed4fb7226c1d694a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390418f6cac1bb6ed4fb7226c1d694a4">&#9670;&#160;</a></span>hasGenericIcons()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD bool tgui::FileDialogIconLoader::hasGenericIcons </td>
+          <td class="memname">virtual bool tgui::FileDialogIconLoader::hasGenericIcons </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -264,7 +264,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -305,12 +305,12 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>If the thread was still running then it will be cancelled. Once the thread finished, the <a class="el" href="#acd6c09ef593084ee5870a5da5a8476a0" title="Called every frame to check if the background thread has finished.">update()</a> function will return true and <a class="el" href="#a32abffa00be669e657ca723350eea7be" title="Access the file icons that where loaded in the thread that was started in requestFileIcons()">retrieveFileIcons()</a> should be called. </p>
+<p>If the thread was still running then it will be cancelled. Once the thread finished, the <a class="el" href="#ad6722f11438ba086728d860c21a5e343" title="Called every frame to check if the background thread has finished.">update()</a> function will return true and <a class="el" href="#a2aac7903d2800efca2fb78f175391e8d" title="Access the file icons that where loaded in the thread that was started in requestFileIcons()">retrieveFileIcons()</a> should be called. </p>
 
 </div>
 </div>
-<a id="a32abffa00be669e657ca723350eea7be" name="a32abffa00be669e657ca723350eea7be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32abffa00be669e657ca723350eea7be">&#9670;&#160;</a></span>retrieveFileIcons()</h2>
+<a id="a2aac7903d2800efca2fb78f175391e8d" name="a2aac7903d2800efca2fb78f175391e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aac7903d2800efca2fb78f175391e8d">&#9670;&#160;</a></span>retrieveFileIcons()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +319,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; tgui::FileDialogIconLoader::retrieveFileIcons </td>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; tgui::FileDialogIconLoader::retrieveFileIcons </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -327,7 +327,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -337,8 +337,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a280d990a068ae3f4232b3fb0a7c6b254" name="a280d990a068ae3f4232b3fb0a7c6b254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280d990a068ae3f4232b3fb0a7c6b254">&#9670;&#160;</a></span>supportsSystemIcons()</h2>
+<a id="a029fb8fdd879a83964567bbca4ab32b4" name="a029fb8fdd879a83964567bbca4ab32b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029fb8fdd879a83964567bbca4ab32b4">&#9670;&#160;</a></span>supportsSystemIcons()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +347,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD bool tgui::FileDialogIconLoader::supportsSystemIcons </td>
+          <td class="memname">virtual bool tgui::FileDialogIconLoader::supportsSystemIcons </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -355,7 +355,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -365,8 +365,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acd6c09ef593084ee5870a5da5a8476a0" name="acd6c09ef593084ee5870a5da5a8476a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6c09ef593084ee5870a5da5a8476a0">&#9670;&#160;</a></span>update()</h2>
+<a id="ad6722f11438ba086728d860c21a5e343" name="ad6722f11438ba086728d860c21a5e343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6722f11438ba086728d860c21a5e343">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +375,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD bool tgui::FileDialogIconLoader::update </td>
+          <td class="memname">virtual bool tgui::FileDialogIconLoader::update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -383,7 +383,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -394,13 +394,13 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/<a class="el" href="FileDialogIconLoader_8hpp_source.html">FileDialogIconLoader.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/<a class="el" href="FileDialogIconLoader_8hpp_source.html">FileDialogIconLoader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expanddirection_0',['ExpandDirection',['../classtgui_1_1ComboBox.html#a4fe26aaccdc327630e5f1034bee16fc8',1,'tgui::ComboBox']]]
+  ['closebehavior_0',['CloseBehavior',['../classtgui_1_1ChildWindow.html#a554a1c395a48ff9782e6dd5d5ea60311',1,'tgui::ChildWindow']]]
 ];

@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -169,12 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1a371aed1b2ab33d2f680753a75f4f3" id="r_ac1a371aed1b2ab33d2f680753a75f4f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1a371aed1b2ab33d2f680753a75f4f3">setSmooth</a> (bool smooth) override</td></tr>
 <tr class="memdesc:ac1a371aed1b2ab33d2f680753a75f4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the smooth filter is enabled or not.  <br /></td></tr>
 <tr class="separator:ac1a371aed1b2ab33d2f680753a75f4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea161da36eaeb8163e7972b2760dcc8" id="r_a7ea161da36eaeb8163e7972b2760dcc8"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD sf::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ea161da36eaeb8163e7972b2760dcc8">getInternalTexture</a> ()</td></tr>
-<tr class="memdesc:a7ea161da36eaeb8163e7972b2760dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the internal SFML texture.  <br /></td></tr>
-<tr class="separator:a7ea161da36eaeb8163e7972b2760dcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa47163b938810dbc3796f940e9b2dc9b" id="r_aa47163b938810dbc3796f940e9b2dc9b"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD const sf::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47163b938810dbc3796f940e9b2dc9b">getInternalTexture</a> () const</td></tr>
-<tr class="memdesc:aa47163b938810dbc3796f940e9b2dc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the internal SFML texture.  <br /></td></tr>
-<tr class="separator:aa47163b938810dbc3796f940e9b2dc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99619689cf9871b40bb71d1fcf18080" id="r_aa99619689cf9871b40bb71d1fcf18080"><td class="memItemLeft" align="right" valign="top">sf::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99619689cf9871b40bb71d1fcf18080">getInternalTexture</a> ()</td></tr>
+<tr class="memdesc:aa99619689cf9871b40bb71d1fcf18080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the internal SFML texture.  <br /></td></tr>
+<tr class="separator:aa99619689cf9871b40bb71d1fcf18080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7374cfdc421206d389fac764716e144" id="r_ac7374cfdc421206d389fac764716e144"><td class="memItemLeft" align="right" valign="top">const sf::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7374cfdc421206d389fac764716e144">getInternalTexture</a> () const</td></tr>
+<tr class="memdesc:ac7374cfdc421206d389fac764716e144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the internal SFML texture.  <br /></td></tr>
+<tr class="separator:ac7374cfdc421206d389fac764716e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2c0c9b1cfaf01ac2bdca36e5749690" id="r_a8e2c0c9b1cfaf01ac2bdca36e5749690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2c0c9b1cfaf01ac2bdca36e5749690">replaceInternalTexture</a> (const sf::Texture &amp;texture)</td></tr>
 <tr class="memdesc:a8e2c0c9b1cfaf01ac2bdca36e5749690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the internal texture by a different one.  <br /></td></tr>
 <tr class="separator:a8e2c0c9b1cfaf01ac2bdca36e5749690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,18 +202,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendTexture</b
 <tr class="memitem:a89b98effd822d6ab061c35e4ef714f5a inherit pub_methods_classtgui_1_1BackendTexture" id="r_a89b98effd822d6ab061c35e4ef714f5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a89b98effd822d6ab061c35e4ef714f5a">load</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> size, std::unique_ptr&lt; std::uint8_t[]&gt; pixels, bool smooth)</td></tr>
 <tr class="memdesc:a89b98effd822d6ab061c35e4ef714f5a inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the texture from an array of 32-bits RGBA pixels.  <br /></td></tr>
 <tr class="separator:a89b98effd822d6ab061c35e4ef714f5a inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7dbe2907b569688566ebeb6641eff38 inherit pub_methods_classtgui_1_1BackendTexture" id="r_ac7dbe2907b569688566ebeb6641eff38"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#ac7dbe2907b569688566ebeb6641eff38">getSize</a> () const</td></tr>
-<tr class="memdesc:ac7dbe2907b569688566ebeb6641eff38 inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the entire image.  <br /></td></tr>
-<tr class="separator:ac7dbe2907b569688566ebeb6641eff38 inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49268085cacaa9001755e3e34e521d4b inherit pub_methods_classtgui_1_1BackendTexture" id="r_a49268085cacaa9001755e3e34e521d4b"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a49268085cacaa9001755e3e34e521d4b">isSmooth</a> () const</td></tr>
-<tr class="memdesc:a49268085cacaa9001755e3e34e521d4b inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the smooth filter is enabled or not.  <br /></td></tr>
-<tr class="separator:a49268085cacaa9001755e3e34e521d4b inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca465e59384d5bc602db431531c149c inherit pub_methods_classtgui_1_1BackendTexture" id="r_a6ca465e59384d5bc602db431531c149c"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a6ca465e59384d5bc602db431531c149c">isTransparentPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> pixel) const</td></tr>
-<tr class="memdesc:a6ca465e59384d5bc602db431531c149c inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a certain pixel is transparent.  <br /></td></tr>
-<tr class="separator:a6ca465e59384d5bc602db431531c149c inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a968530697972e5c8607a14f5ffac6adb inherit pub_methods_classtgui_1_1BackendTexture" id="r_a968530697972e5c8607a14f5ffac6adb"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD const std::uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a968530697972e5c8607a14f5ffac6adb">getPixels</a> () const</td></tr>
-<tr class="memdesc:a968530697972e5c8607a14f5ffac6adb inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the pixels (read-only)  <br /></td></tr>
-<tr class="separator:a968530697972e5c8607a14f5ffac6adb inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9441e19f09760122f07f34e811236477 inherit pub_methods_classtgui_1_1BackendTexture" id="r_a9441e19f09760122f07f34e811236477"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a9441e19f09760122f07f34e811236477">getSize</a> () const</td></tr>
+<tr class="memdesc:a9441e19f09760122f07f34e811236477 inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the entire image.  <br /></td></tr>
+<tr class="separator:a9441e19f09760122f07f34e811236477 inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60a9fd72b56890ae563ddb76dff87e0 inherit pub_methods_classtgui_1_1BackendTexture" id="r_aa60a9fd72b56890ae563ddb76dff87e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#aa60a9fd72b56890ae563ddb76dff87e0">isSmooth</a> () const</td></tr>
+<tr class="memdesc:aa60a9fd72b56890ae563ddb76dff87e0 inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the smooth filter is enabled or not.  <br /></td></tr>
+<tr class="separator:aa60a9fd72b56890ae563ddb76dff87e0 inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6097053c3c2642a805126cd303dace9f inherit pub_methods_classtgui_1_1BackendTexture" id="r_a6097053c3c2642a805126cd303dace9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a6097053c3c2642a805126cd303dace9f">isTransparentPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> pixel) const</td></tr>
+<tr class="memdesc:a6097053c3c2642a805126cd303dace9f inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a certain pixel is transparent.  <br /></td></tr>
+<tr class="separator:a6097053c3c2642a805126cd303dace9f inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c96a4419b99cc59c96b1cf6fb4d94cf inherit pub_methods_classtgui_1_1BackendTexture" id="r_a9c96a4419b99cc59c96b1cf6fb4d94cf"><td class="memItemLeft" align="right" valign="top">const std::uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendTexture.html#a9c96a4419b99cc59c96b1cf6fb4d94cf">getPixels</a> () const</td></tr>
+<tr class="memdesc:a9c96a4419b99cc59c96b1cf6fb4d94cf inherit pub_methods_classtgui_1_1BackendTexture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the pixels (read-only)  <br /></td></tr>
+<tr class="separator:a9c96a4419b99cc59c96b1cf6fb4d94cf inherit pub_methods_classtgui_1_1BackendTexture"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -234,19 +234,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSmooth</b> = true
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classtgui_1_1Texture.html" title="Texture wrapper that internally reuses resources when multiple Texture objects are loaded from the sa...">Texture</a> implementation that makes use of SFML. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7ea161da36eaeb8163e7972b2760dcc8" name="a7ea161da36eaeb8163e7972b2760dcc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea161da36eaeb8163e7972b2760dcc8">&#9670;&#160;</a></span>getInternalTexture() <span class="overload">[1/2]</span></h2>
+<a id="aa99619689cf9871b40bb71d1fcf18080" name="aa99619689cf9871b40bb71d1fcf18080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99619689cf9871b40bb71d1fcf18080">&#9670;&#160;</a></span>getInternalTexture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD sf::Texture * tgui::BackendTextureSFML::getInternalTexture </td>
+          <td class="memname">sf::Texture * tgui::BackendTextureSFML::getInternalTexture </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a reference to the internal SFML texture. </p>
@@ -255,19 +263,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSmooth</b> = true
 
 </div>
 </div>
-<a id="aa47163b938810dbc3796f940e9b2dc9b" name="aa47163b938810dbc3796f940e9b2dc9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa47163b938810dbc3796f940e9b2dc9b">&#9670;&#160;</a></span>getInternalTexture() <span class="overload">[2/2]</span></h2>
+<a id="ac7374cfdc421206d389fac764716e144" name="ac7374cfdc421206d389fac764716e144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7374cfdc421206d389fac764716e144">&#9670;&#160;</a></span>getInternalTexture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD const sf::Texture * tgui::BackendTextureSFML::getInternalTexture </td>
+          <td class="memname">const sf::Texture * tgui::BackendTextureSFML::getInternalTexture </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a const reference to the internal SFML texture. </p>
@@ -384,13 +400,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSmooth</b> = true
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Renderer/SFML-Graphics/<a class="el" href="BackendTextureSFML_8hpp_source.html">BackendTextureSFML.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Backend/Renderer/SFML-Graphics/<a class="el" href="BackendTextureSFML_8hpp_source.html">BackendTextureSFML.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

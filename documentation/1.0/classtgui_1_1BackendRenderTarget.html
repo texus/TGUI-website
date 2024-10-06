@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -217,6 +217,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderTarg
 <tr class="memitem:a24699227842eb0c4e99a473d9707999b" id="r_a24699227842eb0c4e99a473d9707999b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24699227842eb0c4e99a473d9707999b">drawText</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
 <tr class="memdesc:a24699227842eb0c4e99a473d9707999b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws some text.  <br /></td></tr>
 <tr class="separator:a24699227842eb0c4e99a473d9707999b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c935ec219266df3593592d44358a76" id="r_a62c935ec219266df3593592d44358a76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c935ec219266df3593592d44358a76">drawTextOutline</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
+<tr class="memdesc:a62c935ec219266df3593592d44358a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws only the outline of some text.  <br /></td></tr>
+<tr class="separator:a62c935ec219266df3593592d44358a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3296ef5700813cfba2aa48d1eefb5b03" id="r_a3296ef5700813cfba2aa48d1eefb5b03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3296ef5700813cfba2aa48d1eefb5b03">drawTextWithoutOutline</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
+<tr class="memdesc:a3296ef5700813cfba2aa48d1eefb5b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws some text, but without rendering its outline.  <br /></td></tr>
+<tr class="separator:a3296ef5700813cfba2aa48d1eefb5b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0546f5017b1ba2d3ea34d8832da5c1" id="r_a4e0546f5017b1ba2d3ea34d8832da5c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e0546f5017b1ba2d3ea34d8832da5c1">drawTriangle</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point1, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point2, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point3)</td></tr>
 <tr class="memdesc:a4e0546f5017b1ba2d3ea34d8832da5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a single triangles (using the color that is specified in the vertices)  <br /></td></tr>
 <tr class="separator:a4e0546f5017b1ba2d3ea34d8832da5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,9 +235,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderTarg
 <tr class="memitem:a787177e64dafef50c55dc1a3020f84a8" id="r_a787177e64dafef50c55dc1a3020f84a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a787177e64dafef50c55dc1a3020f84a8">drawVertexArray</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> *vertices, std::size_t vertexCount, const unsigned <a class="el" href="classint.html">int</a> *indices, std::size_t indexCount, const std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; &amp;texture)=0</td></tr>
 <tr class="memdesc:a787177e64dafef50c55dc1a3020f84a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a vertex array. This is called by the other draw functions when they are not overriden.  <br /></td></tr>
 <tr class="separator:a787177e64dafef50c55dc1a3020f84a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7171899fd1f829d8d864fc527ae86799" id="r_a7171899fd1f829d8d864fc527ae86799"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7171899fd1f829d8d864fc527ae86799">getPixelsPerPoint</a> () const</td></tr>
-<tr class="memdesc:a7171899fd1f829d8d864fc527ae86799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping between the screen pixels and the points in the current view.  <br /></td></tr>
-<tr class="separator:a7171899fd1f829d8d864fc527ae86799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952ed6cbef53787021ddebd56a52b481" id="r_a952ed6cbef53787021ddebd56a52b481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a952ed6cbef53787021ddebd56a52b481">getPixelsPerPoint</a> () const</td></tr>
+<tr class="memdesc:a952ed6cbef53787021ddebd56a52b481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping between the screen pixels and the points in the current view.  <br /></td></tr>
+<tr class="separator:a952ed6cbef53787021ddebd56a52b481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -647,10 +653,91 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">states</td><td>Render states to use for drawing </td></tr>
-    <tr><td class="paramname">text</td><td><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> to draw </td></tr>
+    <tr><td class="paramname">text</td><td><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> to draw</td></tr>
   </table>
   </dd>
 </dl>
+<p>This function does the same as calling both drawTextOutline and drawTextWithoutOutline. </p>
+
+</div>
+</div>
+<a id="a62c935ec219266df3593592d44358a76" name="a62c935ec219266df3593592d44358a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c935ec219266df3593592d44358a76">&#9670;&#160;</a></span>drawTextOutline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendRenderTarget::drawTextOutline </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>states</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws only the outline of some text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">states</td><td>Render states to use for drawing </td></tr>
+    <tr><td class="paramname">text</td><td><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> to draw</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function should always be called prior to drawTextWithoutOutline. It exists to allow rendering the outline of multiple texts before rendering all these texts, which is done by calling drawTextOutline for each text before calling drawTextWithoutOutline on all the same text objects.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.6 </dd></dl>
+
+</div>
+</div>
+<a id="a3296ef5700813cfba2aa48d1eefb5b03" name="a3296ef5700813cfba2aa48d1eefb5b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3296ef5700813cfba2aa48d1eefb5b03">&#9670;&#160;</a></span>drawTextWithoutOutline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendRenderTarget::drawTextWithoutOutline </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>states</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws some text, but without rendering its outline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">states</td><td>Render states to use for drawing </td></tr>
+    <tr><td class="paramname">text</td><td><a class="el" href="classtgui_1_1Text.html" title="Backend-independent wrapper around the backend-specific text class.">Text</a> to draw</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function should always be called after drawTextOutline. It exists to allow rendering the outline of multiple texts before rendering all these texts, which is done by calling drawTextOutline for each text before calling drawTextWithoutOutline on all the same text objects.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.6 </dd></dl>
 
 </div>
 </div>
@@ -807,19 +894,27 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 
 </div>
 </div>
-<a id="a7171899fd1f829d8d864fc527ae86799" name="a7171899fd1f829d8d864fc527ae86799"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7171899fd1f829d8d864fc527ae86799">&#9670;&#160;</a></span>getPixelsPerPoint()</h2>
+<a id="a952ed6cbef53787021ddebd56a52b481" name="a952ed6cbef53787021ddebd56a52b481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952ed6cbef53787021ddebd56a52b481">&#9670;&#160;</a></span>getPixelsPerPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::BackendRenderTarget::getPixelsPerPoint </td>
+          <td class="memname"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::BackendRenderTarget::getPixelsPerPoint </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the current mapping between the screen pixels and the points in the current view. </p>
@@ -980,13 +1075,13 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Renderer/<a class="el" href="BackendRenderTarget_8hpp_source.html">BackendRenderTarget.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Backend/Renderer/<a class="el" href="BackendRenderTarget_8hpp_source.html">BackendRenderTarget.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

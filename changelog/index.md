@@ -5,6 +5,22 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 6
+    patches:
+    - version: 0
+      date: 6 October 2024
+      changes: |
+        Added CloseBehavior property to ChildWindow
+        Added addMultipleItems to ListBox and ComboBox
+        Added getItemByIndex, getIndexById and getIdByIndex to ComboBox
+        Added setSpinButtonWidth function to SpinControl
+        Numpad keys may now move the cursor in text fields when Num Lock is off
+        setOrientation in Slider or SpinButton will no longer flip width and height
+        setSize in Slider or SpinButton no longer affects orientation once setOrientation is called
+        Fixed crash on exit when tool tip was visible
+        Fixed wrong arrow sizes for horizontal spin button
+        Fixed view not being usable in CanvasSFML
+        TreeView didn't visually update when calling setItemIndexInParent or changeItemHierarchy
   - version: 5
     patches:
     - version: 0

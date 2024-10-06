@@ -5,9 +5,9 @@ var searchData=
   ['emitreturnorunfocus_2',['emitReturnOrUnfocus',['../classtgui_1_1EditBox.html#a12268c03acce850eba581c10d20fb643',1,'tgui::EditBox']]],
   ['enablemonospacedfontoptimization_3',['enableMonospacedFontOptimization',['../classtgui_1_1TextArea.html#a14d0b1c371a5ac40d9ee6233880351bb',1,'tgui::TextArea']]],
   ['endmainloop_4',['endMainLoop',['../classtgui_1_1BackendGuiRaylib.html#abafe5096408446266508e59891514a15',1,'tgui::BackendGuiRaylib']]],
-  ['endswith_5',['endsWith',['../classtgui_1_1String.html#a6476abf4268fab836af934bd3b7aba11',1,'tgui::String']]],
-  ['endswithignorecase_6',['endsWithIgnoreCase',['../classtgui_1_1String.html#a02b0c0c15f0d7204d372c74475d5fe8c',1,'tgui::String']]],
-  ['equalignorecase_7',['equalIgnoreCase',['../classtgui_1_1String.html#add0059ac15b6812f2277abfe5df4100f',1,'tgui::String']]],
+  ['endswith_5',['endsWith',['../classtgui_1_1String.html#a7827156277c63e7078daf2c615b2995a',1,'tgui::String']]],
+  ['endswithignorecase_6',['endsWithIgnoreCase',['../classtgui_1_1String.html#a07d00d2daa547e614643a3aad44d9520',1,'tgui::String']]],
+  ['equalignorecase_7',['equalIgnoreCase',['../classtgui_1_1String.html#a2b004dfae46a1061ac20d379635da899',1,'tgui::String']]],
   ['expand_8',['expand',['../classtgui_1_1TreeView.html#aa7bef300c1e874988548dd970a4aaaa3',1,'tgui::TreeView']]],
   ['expandall_9',['expandAll',['../classtgui_1_1TreeView.html#aa298d908fad3be06003cbe3ac3355fe5',1,'tgui::TreeView']]]
 ];

@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -163,9 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88ebd9a4179ecc9545bc1a3e4e01a82c" id="r_a88ebd9a4179ecc9545bc1a3e4e01a82c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88ebd9a4179ecc9545bc1a3e4e01a82c">BackendRenderTargetSFML</a> (sf::RenderTarget &amp;target)</td></tr>
 <tr class="memdesc:a88ebd9a4179ecc9545bc1a3e4e01a82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the render target.  <br /></td></tr>
 <tr class="separator:a88ebd9a4179ecc9545bc1a3e4e01a82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81d0d618d012013ce510fb843d8a2a8c" id="r_a81d0d618d012013ce510fb843d8a2a8c"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD sf::RenderTarget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d0d618d012013ce510fb843d8a2a8c">getTarget</a> () const</td></tr>
-<tr class="memdesc:a81d0d618d012013ce510fb843d8a2a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SFML render target on which the gui is being drawn.  <br /></td></tr>
-<tr class="separator:a81d0d618d012013ce510fb843d8a2a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c5a1e979bf6975a14a54cddd20d35c" id="r_ad7c5a1e979bf6975a14a54cddd20d35c"><td class="memItemLeft" align="right" valign="top">sf::RenderTarget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c5a1e979bf6975a14a54cddd20d35c">getTarget</a> () const</td></tr>
+<tr class="memdesc:ad7c5a1e979bf6975a14a54cddd20d35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SFML render target on which the gui is being drawn.  <br /></td></tr>
+<tr class="separator:ad7c5a1e979bf6975a14a54cddd20d35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb33d510ed94218460ec017eedc1b838" id="r_abb33d510ed94218460ec017eedc1b838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb33d510ed94218460ec017eedc1b838">setClearColor</a> (const <a class="el" href="classtgui_1_1Color.html">Color</a> &amp;color) override</td></tr>
 <tr class="memdesc:abb33d510ed94218460ec017eedc1b838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the color that will be used by clearScreen.  <br /></td></tr>
 <tr class="separator:abb33d510ed94218460ec017eedc1b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +223,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderTarg
 <tr class="memitem:a24699227842eb0c4e99a473d9707999b inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a24699227842eb0c4e99a473d9707999b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a24699227842eb0c4e99a473d9707999b">drawText</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
 <tr class="memdesc:a24699227842eb0c4e99a473d9707999b inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws some text.  <br /></td></tr>
 <tr class="separator:a24699227842eb0c4e99a473d9707999b inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c935ec219266df3593592d44358a76 inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a62c935ec219266df3593592d44358a76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a62c935ec219266df3593592d44358a76">drawTextOutline</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
+<tr class="memdesc:a62c935ec219266df3593592d44358a76 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws only the outline of some text.  <br /></td></tr>
+<tr class="separator:a62c935ec219266df3593592d44358a76 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3296ef5700813cfba2aa48d1eefb5b03 inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a3296ef5700813cfba2aa48d1eefb5b03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a3296ef5700813cfba2aa48d1eefb5b03">drawTextWithoutOutline</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Text.html">Text</a> &amp;text)</td></tr>
+<tr class="memdesc:a3296ef5700813cfba2aa48d1eefb5b03 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws some text, but without rendering its outline.  <br /></td></tr>
+<tr class="separator:a3296ef5700813cfba2aa48d1eefb5b03 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0546f5017b1ba2d3ea34d8832da5c1 inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a4e0546f5017b1ba2d3ea34d8832da5c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a4e0546f5017b1ba2d3ea34d8832da5c1">drawTriangle</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point1, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point2, const <a class="el" href="structtgui_1_1Vertex.html">Vertex</a> &amp;point3)</td></tr>
 <tr class="memdesc:a4e0546f5017b1ba2d3ea34d8832da5c1 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a single triangles (using the color that is specified in the vertices)  <br /></td></tr>
 <tr class="separator:a4e0546f5017b1ba2d3ea34d8832da5c1 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,18 +238,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendRenderTarg
 <tr class="memitem:ab0d226e046bd91c28ec9a8a32258356d inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_ab0d226e046bd91c28ec9a8a32258356d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#ab0d226e046bd91c28ec9a8a32258356d">drawRoundedRectangle</a> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> &amp;size, const <a class="el" href="classtgui_1_1Color.html">Color</a> &amp;backgroundColor, float radius, const <a class="el" href="classtgui_1_1Outline.html">Borders</a> &amp;borders={0}, const <a class="el" href="classtgui_1_1Color.html">Color</a> &amp;borderColor=<a class="el" href="classtgui_1_1Color.html#a6e24621cb5489ced76a0daeb5df7faea">Color::Black</a>)</td></tr>
 <tr class="memdesc:ab0d226e046bd91c28ec9a8a32258356d inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rounded rectangle.  <br /></td></tr>
 <tr class="separator:ab0d226e046bd91c28ec9a8a32258356d inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7171899fd1f829d8d864fc527ae86799 inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a7171899fd1f829d8d864fc527ae86799"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a7171899fd1f829d8d864fc527ae86799">getPixelsPerPoint</a> () const</td></tr>
-<tr class="memdesc:a7171899fd1f829d8d864fc527ae86799 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping between the screen pixels and the points in the current view.  <br /></td></tr>
-<tr class="separator:a7171899fd1f829d8d864fc527ae86799 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952ed6cbef53787021ddebd56a52b481 inherit pub_methods_classtgui_1_1BackendRenderTarget" id="r_a952ed6cbef53787021ddebd56a52b481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendRenderTarget.html#a952ed6cbef53787021ddebd56a52b481">getPixelsPerPoint</a> () const</td></tr>
+<tr class="memdesc:a952ed6cbef53787021ddebd56a52b481 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping between the screen pixels and the points in the current view.  <br /></td></tr>
+<tr class="separator:a952ed6cbef53787021ddebd56a52b481 inherit pub_methods_classtgui_1_1BackendRenderTarget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae346fa12c8f5df864800f299c4c63e6a" id="r_ae346fa12c8f5df864800f299c4c63e6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae346fa12c8f5df864800f299c4c63e6a">updateClipping</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> clipRect, <a class="el" href="classtgui_1_1Rect.html">FloatRect</a> clipViewport) override</td></tr>
 <tr class="memdesc:ae346fa12c8f5df864800f299c4c63e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from addClippingLayer and removeClippingLayer to apply the clipping.  <br /></td></tr>
 <tr class="separator:ae346fa12c8f5df864800f299c4c63e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af80e26313606ee4e453b95f7f738b21c" id="r_af80e26313606ee4e453b95f7f738b21c"><td class="memItemLeft" align="right" valign="top"><a id="af80e26313606ee4e453b95f7f738b21c" name="af80e26313606ee4e453b95f7f738b21c"></a>
-TGUI_NODISCARD sf::RenderStates&#160;</td><td class="memItemRight" valign="bottom"><b>convertRenderStates</b> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; &amp;texture)</td></tr>
-<tr class="separator:af80e26313606ee4e453b95f7f738b21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e850eb77569d689f1e7aac41a579b9c" id="r_a4e850eb77569d689f1e7aac41a579b9c"><td class="memItemLeft" align="right" valign="top"><a id="a4e850eb77569d689f1e7aac41a579b9c" name="a4e850eb77569d689f1e7aac41a579b9c"></a>
+sf::RenderStates&#160;</td><td class="memItemRight" valign="bottom"><b>convertRenderStates</b> (const <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> &amp;states, const std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendTexture.html">BackendTexture</a> &gt; &amp;texture)</td></tr>
+<tr class="separator:a4e850eb77569d689f1e7aac41a579b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classtgui_1_1BackendRenderTarget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtgui_1_1BackendRenderTarget')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtgui_1_1BackendRenderTarget.html">tgui::BackendRenderTarget</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -468,19 +474,27 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 
 </div>
 </div>
-<a id="a81d0d618d012013ce510fb843d8a2a8c" name="a81d0d618d012013ce510fb843d8a2a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81d0d618d012013ce510fb843d8a2a8c">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="ad7c5a1e979bf6975a14a54cddd20d35c" name="ad7c5a1e979bf6975a14a54cddd20d35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c5a1e979bf6975a14a54cddd20d35c">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD sf::RenderTarget * tgui::BackendRenderTargetSFML::getTarget </td>
+          <td class="memname">sf::RenderTarget * tgui::BackendRenderTargetSFML::getTarget </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the SFML render target on which the gui is being drawn. </p>
@@ -565,13 +579,13 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Renderer/SFML-Graphics/<a class="el" href="BackendRenderTargetSFML_8hpp_source.html">BackendRenderTargetSFML.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Backend/Renderer/SFML-Graphics/<a class="el" href="BackendRenderTargetSFML_8hpp_source.html">BackendRenderTargetSFML.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

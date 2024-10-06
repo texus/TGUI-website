@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -166,15 +166,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BaseThemeLoader</
 <tr class="memitem:a41fb4a5aeecea2e83c236cc754f01306" id="r_a41fb4a5aeecea2e83c236cc754f01306"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41fb4a5aeecea2e83c236cc754f01306">preload</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary)</td></tr>
 <tr class="memdesc:a41fb4a5aeecea2e83c236cc754f01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally already do some work when only the primary parameter is known yet.  <br /></td></tr>
 <tr class="separator:a41fb4a5aeecea2e83c236cc754f01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade817fe624ac131cb0c6faf4a84077c8" id="r_ade817fe624ac131cb0c6faf4a84077c8"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade817fe624ac131cb0c6faf4a84077c8">getGlobalProperties</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary)</td></tr>
-<tr class="memdesc:ade817fe624ac131cb0c6faf4a84077c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the global property-value pairs from the theme.  <br /></td></tr>
-<tr class="separator:ade817fe624ac131cb0c6faf4a84077c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f08b9e830406aba421af739460e8d7f" id="r_a0f08b9e830406aba421af739460e8d7f"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD const std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f08b9e830406aba421af739460e8d7f">load</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;secondary)=0</td></tr>
-<tr class="memdesc:a0f08b9e830406aba421af739460e8d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the property-value pairs from the theme.  <br /></td></tr>
-<tr class="separator:a0f08b9e830406aba421af739460e8d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f06ac82bd73868ba981bf68f4beea7" id="r_a52f06ac82bd73868ba981bf68f4beea7"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52f06ac82bd73868ba981bf68f4beea7">canLoad</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;secondary)=0</td></tr>
-<tr class="memdesc:a52f06ac82bd73868ba981bf68f4beea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the requested property-value pairs are available.  <br /></td></tr>
-<tr class="separator:a52f06ac82bd73868ba981bf68f4beea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685c2ab3dce3c94664f8d979ccefa0b0" id="r_a685c2ab3dce3c94664f8d979ccefa0b0"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685c2ab3dce3c94664f8d979ccefa0b0">getGlobalProperties</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary)</td></tr>
+<tr class="memdesc:a685c2ab3dce3c94664f8d979ccefa0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the global property-value pairs from the theme.  <br /></td></tr>
+<tr class="separator:a685c2ab3dce3c94664f8d979ccefa0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5366359f08b669ab05724658387574" id="r_a7e5366359f08b669ab05724658387574"><td class="memItemLeft" align="right" valign="top">virtual const std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e5366359f08b669ab05724658387574">load</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;secondary)=0</td></tr>
+<tr class="memdesc:a7e5366359f08b669ab05724658387574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the property-value pairs from the theme.  <br /></td></tr>
+<tr class="separator:a7e5366359f08b669ab05724658387574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc428091edbf67e48ec7f78365c63e2" id="r_a2dc428091edbf67e48ec7f78365c63e2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dc428091edbf67e48ec7f78365c63e2">canLoad</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;primary, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;secondary)=0</td></tr>
+<tr class="memdesc:a2dc428091edbf67e48ec7f78365c63e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the requested property-value pairs are available.  <br /></td></tr>
+<tr class="separator:a2dc428091edbf67e48ec7f78365c63e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -188,8 +188,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for theme loader implementations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a52f06ac82bd73868ba981bf68f4beea7" name="a52f06ac82bd73868ba981bf68f4beea7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52f06ac82bd73868ba981bf68f4beea7">&#9670;&#160;</a></span>canLoad()</h2>
+<a id="a2dc428091edbf67e48ec7f78365c63e2" name="a2dc428091edbf67e48ec7f78365c63e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc428091edbf67e48ec7f78365c63e2">&#9670;&#160;</a></span>canLoad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD bool tgui::BaseThemeLoader::canLoad </td>
+          <td class="memname">virtual bool tgui::BaseThemeLoader::canLoad </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>primary</em></span>, </td>
         </tr>
@@ -210,7 +210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -226,12 +226,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
 <p>For the default loader, the primary parameter is the filename while the secondary parameter is the section name.</p>
 <dl class="section return"><dt>Returns</dt><dd>Whether a map op property-value pairs is available </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#adfae921097ca67fbd6c89b01599c0aa2">tgui::DefaultThemeLoader</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#a3f1a5dd4173d1b86477e3d6717fb0dd9">tgui::DefaultThemeLoader</a>.</p>
 
 </div>
 </div>
-<a id="ade817fe624ac131cb0c6faf4a84077c8" name="ade817fe624ac131cb0c6faf4a84077c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade817fe624ac131cb0c6faf4a84077c8">&#9670;&#160;</a></span>getGlobalProperties()</h2>
+<a id="a685c2ab3dce3c94664f8d979ccefa0b0" name="a685c2ab3dce3c94664f8d979ccefa0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685c2ab3dce3c94664f8d979ccefa0b0">&#9670;&#160;</a></span>getGlobalProperties()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; tgui::BaseThemeLoader::getGlobalProperties </td>
+          <td class="memname">virtual std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; tgui::BaseThemeLoader::getGlobalProperties </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>primary</em></span></td><td>)</td>
           <td></td>
@@ -248,7 +248,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -263,12 +263,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
 <p>For the default loader, the primary parameter is the filename.</p>
 <dl class="section return"><dt>Returns</dt><dd>Map of property-value pairs </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#a8e620e80711d132470584ae203e04765">tgui::DefaultThemeLoader</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#a880fcc3a44816efc903cd882026cfe98">tgui::DefaultThemeLoader</a>.</p>
 
 </div>
 </div>
-<a id="a0f08b9e830406aba421af739460e8d7f" name="a0f08b9e830406aba421af739460e8d7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f08b9e830406aba421af739460e8d7f">&#9670;&#160;</a></span>load()</h2>
+<a id="a7e5366359f08b669ab05724658387574" name="a7e5366359f08b669ab05724658387574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5366359f08b669ab05724658387574">&#9670;&#160;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +277,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD const std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp; tgui::BaseThemeLoader::load </td>
+          <td class="memname">virtual const std::map&lt; <a class="el" href="classtgui_1_1String.html">String</a>, <a class="el" href="classtgui_1_1String.html">String</a> &gt; &amp; tgui::BaseThemeLoader::load </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>primary</em></span>, </td>
         </tr>
@@ -289,7 +289,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -305,7 +305,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
 <p>For the default loader, the primary parameter is the filename while the secondary parameter is the section name.</p>
 <dl class="section return"><dt>Returns</dt><dd>Map of property-value pairs </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#a55adefee6539f9239fa785bf6b6f28fa">tgui::DefaultThemeLoader</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1DefaultThemeLoader.html#ac26e75126696593c4eb4e36bc7e03694">tgui::DefaultThemeLoader</a>.</p>
 
 </div>
 </div>
@@ -345,13 +345,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveReferences</b>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Loading/<a class="el" href="ThemeLoader_8hpp_source.html">ThemeLoader.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Loading/<a class="el" href="ThemeLoader_8hpp_source.html">ThemeLoader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

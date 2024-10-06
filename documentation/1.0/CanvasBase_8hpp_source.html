@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
-<title>TGUI: include/TGUI/Widgets/CanvasBase.hpp Source File</title>
+<title>TGUI: /home/texus/Documents/TGUI/include/TGUI/Widgets/CanvasBase.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_380f920385a16f176be7632160138052.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_0bb95f096d007de7ff009a2d5974766c.html">Widgets</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_18bf9e273cce5d3c538ea78b723b442e.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_c7ab15d0c89bc7e01833e92fe56ab87f.html">include</a></li><li class="navelem"><a class="el" href="dir_f6a61fbd09f099948da5dfb19a3e4c74.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_c5227178328a615a250b0b4faaa145bc.html">Widgets</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -181,15 +181,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a154ce2502e1ae1c0b446ec4c7de2ba52">   59</a></span>        TGUI_DEPRECATED(<span class="stringliteral">&quot;Use setIgnoreMouseEvents instead&quot;</span>) void ignoreMouseEvents(<span class="keywordtype">bool</span> ignore = true);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a3226e2eb30b8e9101a7f9a21919be449">   66</a></span>        TGUI_DEPRECATED(&quot;Use getIgnoreMouseEvents instead&quot;) TGUI_NODISCARD <span class="keywordtype">bool</span> isIgnoringMouseEvents() const;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a7b95ac15aa861d9fac0f62653555fd40">   66</a></span>        TGUI_DEPRECATED(&quot;Use getIgnoreMouseEvents instead&quot;) TGUI_NODISCARD <span class="keywordtype">bool</span> isIgnoringMouseEvents() const;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#ace38090ed1c079588ce1bd3d515aa6f8">   74</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> canGainFocus() const override;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a9119b3fecf09043f8de5045fd10eab64">   74</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> canGainFocus() const override;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#afe6d5a6fa2a8bd4a6e036569419e14ff">   80</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> isMouseOnWidget(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a0ad16de133a85967f779bb72e83b7e7c">   80</a></span>        TGUI_NODISCARD <span class="keywordtype">bool</span> isMouseOnWidget(<a class="code hl_class" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const override;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    protected:</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#aa277b342ef58483279d62013cec3c144">   88</a></span>        TGUI_NODISCARD std::unique_ptr&lt;DataIO::Node&gt; save(SavingRenderersMap&amp; renderers) const override;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#a26fba0e58f38cb97f341763b5bc8127e">   88</a></span>        TGUI_NODISCARD std::unique_ptr&lt;DataIO::Node&gt; save(SavingRenderersMap&amp; renderers) const override;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classtgui_1_1CanvasBase.html#aa7f6c8e83738d9ce90064aa74c0b519b">   93</a></span>        <span class="keywordtype">void</span> load(const std::unique_ptr&lt;DataIO::Node&gt;&amp; node, const LoadingRenderersMap&amp; renderers) override;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
@@ -212,7 +212,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

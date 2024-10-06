@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -172,15 +172,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43d310ac631055331f879626db6c3638" id="r_a43d310ac631055331f879626db6c3638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43d310ac631055331f879626db6c3638">setInterval</a> (<a class="el" href="classtgui_1_1Duration.html">Duration</a> interval)</td></tr>
 <tr class="memdesc:a43d310ac631055331f879626db6c3638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the interval at which a timer callback is send.  <br /></td></tr>
 <tr class="separator:a43d310ac631055331f879626db6c3638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3744b1063f404aa56fade43667398ce8" id="r_a3744b1063f404aa56fade43667398ce8"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD <a class="el" href="classtgui_1_1Duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3744b1063f404aa56fade43667398ce8">getInterval</a> () const</td></tr>
-<tr class="memdesc:a3744b1063f404aa56fade43667398ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the interval at which a timer callback is send.  <br /></td></tr>
-<tr class="separator:a3744b1063f404aa56fade43667398ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105f389392d114106a8259e712164123" id="r_a105f389392d114106a8259e712164123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a105f389392d114106a8259e712164123">getInterval</a> () const</td></tr>
+<tr class="memdesc:a105f389392d114106a8259e712164123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the interval at which a timer callback is send.  <br /></td></tr>
+<tr class="separator:a105f389392d114106a8259e712164123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60557ba29c2bb1bb56f0ca64e4a8016f" id="r_a60557ba29c2bb1bb56f0ca64e4a8016f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60557ba29c2bb1bb56f0ca64e4a8016f">setEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:a60557ba29c2bb1bb56f0ca64e4a8016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or stops a timer.  <br /></td></tr>
 <tr class="separator:a60557ba29c2bb1bb56f0ca64e4a8016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a3e53a533c16865c0e5e1d335e13972" id="r_a4a3e53a533c16865c0e5e1d335e13972"><td class="memItemLeft" align="right" valign="top">TGUI_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a3e53a533c16865c0e5e1d335e13972">isEnabled</a> () const</td></tr>
-<tr class="memdesc:a4a3e53a533c16865c0e5e1d335e13972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the timer is running.  <br /></td></tr>
-<tr class="separator:a4a3e53a533c16865c0e5e1d335e13972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd7220150f722ead103d0e9d0235e1" id="r_a06fd7220150f722ead103d0e9d0235e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06fd7220150f722ead103d0e9d0235e1">isEnabled</a> () const</td></tr>
+<tr class="memdesc:a06fd7220150f722ead103d0e9d0235e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the timer is running.  <br /></td></tr>
+<tr class="separator:a06fd7220150f722ead103d0e9d0235e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0bcc63d06471ce08fb350cc62d0cc5d" id="r_aa0bcc63d06471ce08fb350cc62d0cc5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0bcc63d06471ce08fb350cc62d0cc5d">setCallback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
 <tr class="memdesc:aa0bcc63d06471ce08fb350cc62d0cc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the callback function that should be called by the timer at each interval.  <br /></td></tr>
 <tr class="separator:aa0bcc63d06471ce08fb350cc62d0cc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,21 +194,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>restart</b> ()</td></
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8353bfd52278a089b819134247d71447" id="r_a8353bfd52278a089b819134247d71447"><td class="memItemLeft" align="right" valign="top">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8353bfd52278a089b819134247d71447">create</a> (const std::function&lt; void()&gt; &amp;callback, <a class="el" href="classtgui_1_1Duration.html">Duration</a> interval, bool enable=true)</td></tr>
-<tr class="memdesc:a8353bfd52278a089b819134247d71447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new timer.  <br /></td></tr>
-<tr class="separator:a8353bfd52278a089b819134247d71447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9077031e34e3e2d3147bf5947ebcd4" id="r_adb9077031e34e3e2d3147bf5947ebcd4"><td class="memItemLeft" align="right" valign="top">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9077031e34e3e2d3147bf5947ebcd4">create</a> (const std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;)&gt; &amp;callback, <a class="el" href="classtgui_1_1Duration.html">Duration</a> interval, bool enable=true)</td></tr>
-<tr class="memdesc:adb9077031e34e3e2d3147bf5947ebcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new timer.  <br /></td></tr>
-<tr class="separator:adb9077031e34e3e2d3147bf5947ebcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1468b97cafc90140fb3a57336f9f5b3e" id="r_a1468b97cafc90140fb3a57336f9f5b3e"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1468b97cafc90140fb3a57336f9f5b3e">create</a> (const std::function&lt; void()&gt; &amp;callback, <a class="el" href="classtgui_1_1Duration.html">Duration</a> interval, bool enable=true)</td></tr>
+<tr class="memdesc:a1468b97cafc90140fb3a57336f9f5b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new timer.  <br /></td></tr>
+<tr class="separator:a1468b97cafc90140fb3a57336f9f5b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0b074dc5c54628b6f0fa6af35a4de7" id="r_ada0b074dc5c54628b6f0fa6af35a4de7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada0b074dc5c54628b6f0fa6af35a4de7">create</a> (const std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;)&gt; &amp;callback, <a class="el" href="classtgui_1_1Duration.html">Duration</a> interval, bool enable=true)</td></tr>
+<tr class="memdesc:ada0b074dc5c54628b6f0fa6af35a4de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new timer.  <br /></td></tr>
+<tr class="separator:ada0b074dc5c54628b6f0fa6af35a4de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833dbef800c846e5046573846dd5b17a" id="r_a833dbef800c846e5046573846dd5b17a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a833dbef800c846e5046573846dd5b17a">scheduleCallback</a> (const std::function&lt; void()&gt; &amp;callback, <a class="el" href="classtgui_1_1Duration.html">Duration</a> interval=<a class="el" href="classtgui_1_1Duration.html">Duration</a>())</td></tr>
 <tr class="memdesc:a833dbef800c846e5046573846dd5b17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a timer.  <br /></td></tr>
 <tr class="separator:a833dbef800c846e5046573846dd5b17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3fcbb43439031badfac05c891c3c33" id="r_a7c3fcbb43439031badfac05c891c3c33"><td class="memItemLeft" align="right" valign="top"><a id="a7c3fcbb43439031badfac05c891c3c33" name="a7c3fcbb43439031badfac05c891c3c33"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a class="el" href="classtgui_1_1Duration.html">Duration</a> elapsedTime)</td></tr>
 <tr class="separator:a7c3fcbb43439031badfac05c891c3c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d27a2a9353e644b38b4044a58da446" id="r_a42d27a2a9353e644b38b4044a58da446"><td class="memItemLeft" align="right" valign="top"><a id="a42d27a2a9353e644b38b4044a58da446" name="a42d27a2a9353e644b38b4044a58da446"></a>
-static TGUI_NODISCARD Optional&lt; <a class="el" href="classtgui_1_1Duration.html">Duration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getNextScheduledTime</b> ()</td></tr>
-<tr class="separator:a42d27a2a9353e644b38b4044a58da446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc7958505e7d6e8008aaf9da207dbf9" id="r_a7dc7958505e7d6e8008aaf9da207dbf9"><td class="memItemLeft" align="right" valign="top"><a id="a7dc7958505e7d6e8008aaf9da207dbf9" name="a7dc7958505e7d6e8008aaf9da207dbf9"></a>
+static Optional&lt; <a class="el" href="classtgui_1_1Duration.html">Duration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getNextScheduledTime</b> ()</td></tr>
+<tr class="separator:a7dc7958505e7d6e8008aaf9da207dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7a9ce91fe486d8d058cf38880e2a95" id="r_aac7a9ce91fe486d8d058cf38880e2a95"><td class="memItemLeft" align="right" valign="top"><a id="aac7a9ce91fe486d8d058cf38880e2a95" name="aac7a9ce91fe486d8d058cf38880e2a95"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b> ()</td></tr>
 <tr class="separator:aac7a9ce91fe486d8d058cf38880e2a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,8 +218,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
 <p>The static create method will create a timer object that you can start and stop. The static scheduleCallback method is for when the timer only needs to be triggered a single time.</p>
 <p>This timer is not intended to be used when high accuracy is required. If the callback is e.g. a millisecond too late then this extra time is NOT subtracted from the next scheduled time. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8353bfd52278a089b819134247d71447" name="a8353bfd52278a089b819134247d71447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8353bfd52278a089b819134247d71447">&#9670;&#160;</a></span>create() <span class="overload">[1/2]</span></h2>
+<a id="a1468b97cafc90140fb3a57336f9f5b3e" name="a1468b97cafc90140fb3a57336f9f5b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1468b97cafc90140fb3a57336f9f5b3e">&#9670;&#160;</a></span>create() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +228,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt; tgui::Timer::create </td>
+          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt; tgui::Timer::create </td>
           <td>(</td>
           <td class="paramtype">const std::function&lt; void()&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
         </tr>
@@ -245,7 +245,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -263,8 +263,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
 
 </div>
 </div>
-<a id="adb9077031e34e3e2d3147bf5947ebcd4" name="adb9077031e34e3e2d3147bf5947ebcd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9077031e34e3e2d3147bf5947ebcd4">&#9670;&#160;</a></span>create() <span class="overload">[2/2]</span></h2>
+<a id="ada0b074dc5c54628b6f0fa6af35a4de7" name="ada0b074dc5c54628b6f0fa6af35a4de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0b074dc5c54628b6f0fa6af35a4de7">&#9670;&#160;</a></span>create() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +273,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt; tgui::Timer::create </td>
+          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt; tgui::Timer::create </td>
           <td>(</td>
           <td class="paramtype">const std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classtgui_1_1Timer.html">Timer</a> &gt;)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
         </tr>
@@ -290,7 +290,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -308,19 +308,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
 
 </div>
 </div>
-<a id="a3744b1063f404aa56fade43667398ce8" name="a3744b1063f404aa56fade43667398ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3744b1063f404aa56fade43667398ce8">&#9670;&#160;</a></span>getInterval()</h2>
+<a id="a105f389392d114106a8259e712164123" name="a105f389392d114106a8259e712164123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105f389392d114106a8259e712164123">&#9670;&#160;</a></span>getInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD <a class="el" href="classtgui_1_1Duration.html">Duration</a> tgui::Timer::getInterval </td>
+          <td class="memname"><a class="el" href="classtgui_1_1Duration.html">Duration</a> tgui::Timer::getInterval </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the interval at which a timer callback is send. </p>
@@ -328,19 +336,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
 
 </div>
 </div>
-<a id="a4a3e53a533c16865c0e5e1d335e13972" name="a4a3e53a533c16865c0e5e1d335e13972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a3e53a533c16865c0e5e1d335e13972">&#9670;&#160;</a></span>isEnabled()</h2>
+<a id="a06fd7220150f722ead103d0e9d0235e1" name="a06fd7220150f722ead103d0e9d0235e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fd7220150f722ead103d0e9d0235e1">&#9670;&#160;</a></span>isEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGUI_NODISCARD bool tgui::Timer::isEnabled </td>
+          <td class="memname">bool tgui::Timer::isEnabled </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns whether the timer is running. </p>
@@ -483,13 +499,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTimers</b
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/<a class="el" href="Timer_8hpp_source.html">Timer.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/<a class="el" href="Timer_8hpp_source.html">Timer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:52 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:02 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

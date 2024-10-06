@@ -9,7 +9,7 @@ var searchData=
   ['addline_6',['addLine',['../classtgui_1_1ChatBox.html#a8c813c222d341acd2ed096e617b0fc2f',1,'tgui::ChatBox::addLine(const String &amp;text)'],['../classtgui_1_1ChatBox.html#a590306119a990f0cd69765192b06c49a',1,'tgui::ChatBox::addLine(const String &amp;text, Color color)'],['../classtgui_1_1ChatBox.html#a6740e3cb71bf21a9d32c5f781ec5169a',1,'tgui::ChatBox::addLine(const String &amp;text, Color color, TextStyles style)']]],
   ['addmenu_7',['addMenu',['../classtgui_1_1MenuBar.html#a7d3f84fab63e70593a8329b542c50861',1,'tgui::MenuBar']]],
   ['addmenuitem_8',['addMenuItem',['../classtgui_1_1MenuBar.html#ab9cc1127ed02a3874cfcb5846d61f034',1,'tgui::MenuBar::addMenuItem(const String &amp;text)'],['../classtgui_1_1MenuBar.html#a41ac5fb37d532099421e3f58d5fe1503',1,'tgui::MenuBar::addMenuItem(const String &amp;menu, const String &amp;text)'],['../classtgui_1_1MenuBar.html#a44673b3c39355bf95b4ab30fbf05287f',1,'tgui::MenuBar::addMenuItem(const std::vector&lt; String &gt; &amp;hierarchy, bool createParents=true)']]],
-  ['addmultipleitems_9',['addMultipleItems',['../classtgui_1_1ListView.html#aa0574fe957ff827adbc93954a7ec257f',1,'tgui::ListView']]],
+  ['addmultipleitems_9',['addMultipleItems',['../classtgui_1_1ComboBox.html#acab2acc015c597e0d8014f4d4d6d0b83',1,'tgui::ComboBox::addMultipleItems()'],['../classtgui_1_1ListBox.html#a19d13a1b8d8a690e7f4cbefbb4b1f680',1,'tgui::ListBox::addMultipleItems()'],['../classtgui_1_1ListView.html#aa0574fe957ff827adbc93954a7ec257f',1,'tgui::ListView::addMultipleItems()']]],
   ['addrenderer_10',['addRenderer',['../classtgui_1_1Theme.html#a7667e5112171e1fb513330b51c3be5b7',1,'tgui::Theme']]],
   ['addrendererdefaultsubwidget_11',['addRendererDefaultSubwidget',['../classtgui_1_1Theme.html#ac57b40d144acafbc6e84c7e5bd6f59ee',1,'tgui::Theme']]],
   ['addrendererinheritanceparent_12',['addRendererInheritanceParent',['../classtgui_1_1Theme.html#ab90cc07cd095adb14c53624dcabeaa46',1,'tgui::Theme']]],
@@ -18,12 +18,12 @@ var searchData=
   ['addtab_15',['addTab',['../classtgui_1_1TabContainer.html#a66ecdd83f1bc256187d6b9a35fa6ed9c',1,'tgui::TabContainer']]],
   ['addtext_16',['addText',['../classtgui_1_1TextArea.html#a4d0d7ca2eaa5c240956651172a0fe667',1,'tgui::TextArea']]],
   ['addwidget_17',['addWidget',['../classtgui_1_1Grid.html#aa5045731e5093009b7556998844068ca',1,'tgui::Grid']]],
-  ['applyopacity_18',['applyOpacity',['../classtgui_1_1Color.html#a06d33c7d2e55422bca691aea38c6d29f',1,'tgui::Color']]],
-  ['asnativestring_19',['asNativeString',['../classtgui_1_1Filesystem_1_1Path.html#a077fea2c59ebadf524260503551ed36a',1,'tgui::Filesystem::Path']]],
-  ['asseconds_20',['asSeconds',['../classtgui_1_1Duration.html#ad43bdcc63ced8454ac245792f2cbd608',1,'tgui::Duration']]],
-  ['asstring_21',['asString',['../classtgui_1_1Filesystem_1_1Path.html#ad35216e2086d14350e0dc531e03a91bf',1,'tgui::Filesystem::Path']]],
+  ['applyopacity_18',['applyOpacity',['../classtgui_1_1Color.html#a6a21fec746a91efadd99bc088ee1cef4',1,'tgui::Color']]],
+  ['asnativestring_19',['asNativeString',['../classtgui_1_1Filesystem_1_1Path.html#a1b7fad802480599dd8832acc89f1fcac',1,'tgui::Filesystem::Path']]],
+  ['asseconds_20',['asSeconds',['../classtgui_1_1Duration.html#ad8f31bf621be866dbaa8abcce652a8a2',1,'tgui::Duration']]],
+  ['asstring_21',['asString',['../classtgui_1_1Filesystem_1_1Path.html#a425bea01b4cb980c0c97f6914b798ca2',1,'tgui::Filesystem::Path']]],
   ['attachgui_22',['attachGui',['../classtgui_1_1Backend.html#a93feab5147db95038eab453af28212f6',1,'tgui::Backend']]],
-  ['attempttofloat_23',['attemptToFloat',['../classtgui_1_1String.html#ad3ed4fe2e90c78a2642bfd20e2f8c88c',1,'tgui::String']]],
-  ['attempttoint_24',['attemptToInt',['../classtgui_1_1String.html#a4de191fed34be4a8d96211556b21e586',1,'tgui::String']]],
-  ['attempttouint_25',['attemptToUInt',['../classtgui_1_1String.html#a2aee79e73eb348f5525a1fa1e6335011',1,'tgui::String']]]
+  ['attempttofloat_23',['attemptToFloat',['../classtgui_1_1String.html#a08968374b19fbcd26d83a17d4eaf0b29',1,'tgui::String']]],
+  ['attempttoint_24',['attemptToInt',['../classtgui_1_1String.html#aeca56db23283ca903b215eb77e1f6825',1,'tgui::String']]],
+  ['attempttouint_25',['attemptToUInt',['../classtgui_1_1String.html#a7a68ce473ee826fa31bda9d274f31603',1,'tgui::String']]]
 ];

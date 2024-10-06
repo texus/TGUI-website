@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
-<title>TGUI: include/TGUI/Backend/Renderer/BackendRenderer.hpp Source File</title>
+<title>TGUI: /home/texus/Documents/TGUI/include/TGUI/Backend/Renderer/BackendRenderer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_380f920385a16f176be7632160138052.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_0cd806559027a541fd370d596d496b97.html">Backend</a></li><li class="navelem"><a class="el" href="dir_af52f18cf2915c09088d6a998b6811d9.html">Renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_18bf9e273cce5d3c538ea78b723b442e.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_c7ab15d0c89bc7e01833e92fe56ab87f.html">include</a></li><li class="navelem"><a class="el" href="dir_f6a61fbd09f099948da5dfb19a3e4c74.html">TGUI</a></li><li class="navelem"><a class="el" href="dir_9d5322d5a66a939d66ceb0547d2faea7.html">Backend</a></li><li class="navelem"><a class="el" href="dir_0ed93739c15bb1284dff67e4d23f1b38.html">Renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -183,15 +183,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#a3f1b9a055b1331ff200db52ff7cad915">   50</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#a3f1b9a055b1331ff200db52ff7cad915">~BackendRenderer</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#adeb49afeda9471e1e1d6cfe449be131b">   56</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> std::shared_ptr&lt;BackendText&gt; <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#adeb49afeda9471e1e1d6cfe449be131b">createText</a>()</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#aa4739d60489218f113c2458efc46da09">   56</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> std::shared_ptr&lt;BackendText&gt; <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#aa4739d60489218f113c2458efc46da09">createText</a>()</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> std::make_shared&lt;BackendText&gt;();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#a5784389b9ca2950063cf11c6a2f3b7c7">   65</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> std::shared_ptr&lt;BackendTexture&gt; <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#a5784389b9ca2950063cf11c6a2f3b7c7">createTexture</a>() = 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#a86632dfeb619b2b61a9df812bd33d741">   65</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> std::shared_ptr&lt;BackendTexture&gt; <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#a86632dfeb619b2b61a9df812bd33d741">createTexture</a>() = 0;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#a540217c42d72ebb35345ac2bf4b72b3a">   74</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#a540217c42d72ebb35345ac2bf4b72b3a">getMaximumTextureSize</a>() = 0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendRenderer.html#ac3c8d448ecedbb73fa286cba8981597d">   74</a></span>        TGUI_NODISCARD <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classtgui_1_1BackendRenderer.html#ac3c8d448ecedbb73fa286cba8981597d">getMaximumTextureSize</a>() = 0;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    };</div>
 </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
@@ -200,15 +200,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_RENDERER_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendRenderer_html"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html">tgui::BackendRenderer</a></div><div class="ttdoc">Base class for the backend renderer, which is responsible for creating text and texture objects.</div><div class="ttdef"><b>Definition</b> BackendRenderer.hpp:44</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendRenderer_html_a3f1b9a055b1331ff200db52ff7cad915"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#a3f1b9a055b1331ff200db52ff7cad915">tgui::BackendRenderer::~BackendRenderer</a></div><div class="ttdeci">virtual ~BackendRenderer()=default</div><div class="ttdoc">Virtual destructor.</div></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_a540217c42d72ebb35345ac2bf4b72b3a"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#a540217c42d72ebb35345ac2bf4b72b3a">tgui::BackendRenderer::getMaximumTextureSize</a></div><div class="ttdeci">virtual TGUI_NODISCARD unsigned int getMaximumTextureSize()=0</div><div class="ttdoc">Get the maximum allowed texture size.</div></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_a5784389b9ca2950063cf11c6a2f3b7c7"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#a5784389b9ca2950063cf11c6a2f3b7c7">tgui::BackendRenderer::createTexture</a></div><div class="ttdeci">virtual TGUI_NODISCARD std::shared_ptr&lt; BackendTexture &gt; createTexture()=0</div><div class="ttdoc">Creates a new empty texture object.</div></div>
-<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_adeb49afeda9471e1e1d6cfe449be131b"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#adeb49afeda9471e1e1d6cfe449be131b">tgui::BackendRenderer::createText</a></div><div class="ttdeci">virtual TGUI_NODISCARD std::shared_ptr&lt; BackendText &gt; createText()</div><div class="ttdoc">Creates a new empty text object.</div><div class="ttdef"><b>Definition</b> BackendRenderer.hpp:56</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_a86632dfeb619b2b61a9df812bd33d741"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#a86632dfeb619b2b61a9df812bd33d741">tgui::BackendRenderer::createTexture</a></div><div class="ttdeci">virtual std::shared_ptr&lt; BackendTexture &gt; createTexture()=0</div><div class="ttdoc">Creates a new empty texture object.</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_aa4739d60489218f113c2458efc46da09"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#aa4739d60489218f113c2458efc46da09">tgui::BackendRenderer::createText</a></div><div class="ttdeci">virtual std::shared_ptr&lt; BackendText &gt; createText()</div><div class="ttdoc">Creates a new empty text object.</div><div class="ttdef"><b>Definition</b> BackendRenderer.hpp:56</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendRenderer_html_ac3c8d448ecedbb73fa286cba8981597d"><div class="ttname"><a href="classtgui_1_1BackendRenderer.html#ac3c8d448ecedbb73fa286cba8981597d">tgui::BackendRenderer::getMaximumTextureSize</a></div><div class="ttdeci">virtual unsigned int getMaximumTextureSize()=0</div><div class="ttdoc">Get the maximum allowed texture size.</div></div>
 <div class="ttc" id="anamespacetgui_html"><div class="ttname"><a href="namespacetgui.html">tgui</a></div><div class="ttdoc">Namespace that contains all TGUI functions and classes.</div><div class="ttdef"><b>Definition</b> AbsoluteOrRelativeValue.hpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:50 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

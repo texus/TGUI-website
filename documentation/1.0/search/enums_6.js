@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operation_0',['Operation',['../classtgui_1_1Layout.html#a35bfb195a1f1e6fd4ed82b0568feb81b',1,'tgui::Layout']]],
-  ['orientation_1',['Orientation',['../namespacetgui.html#a9a7c068f68617b08f16f85eabb6ddb96',1,'tgui']]]
+  ['mousebutton_0',['MouseButton',['../structtgui_1_1Event.html#a369666e9b529309b223263eb0297ac9b',1,'tgui::Event']]]
 ];

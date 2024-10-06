@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.5</span>
+   &#160;<span id="projectnumber">1.6</span>
    </div>
   </td>
  </tr>
@@ -162,15 +162,15 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendFontFactory</b> ()=default</td></tr>
 <tr class="memdesc:ad1ee4b428917faa599cedf04b7729991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
 <tr class="separator:ad1ee4b428917faa599cedf04b7729991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4f813a9a1d72f66173c4ba844b3fdd" id="r_a1a4f813a9a1d72f66173c4ba844b3fdd"><td class="memItemLeft" align="right" valign="top">virtual TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFont.html">BackendFont</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a4f813a9a1d72f66173c4ba844b3fdd">createFont</a> ()=0</td></tr>
-<tr class="memdesc:a1a4f813a9a1d72f66173c4ba844b3fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty font object.  <br /></td></tr>
-<tr class="separator:a1a4f813a9a1d72f66173c4ba844b3fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62013035ea0c20401b06175f5dc9462" id="r_ac62013035ea0c20401b06175f5dc9462"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFont.html">BackendFont</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac62013035ea0c20401b06175f5dc9462">createFont</a> ()=0</td></tr>
+<tr class="memdesc:ac62013035ea0c20401b06175f5dc9462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty font object.  <br /></td></tr>
+<tr class="separator:ac62013035ea0c20401b06175f5dc9462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for the font factory that is responsible for creating a font object specific to the font backend. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1a4f813a9a1d72f66173c4ba844b3fdd" name="a1a4f813a9a1d72f66173c4ba844b3fdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4f813a9a1d72f66173c4ba844b3fdd">&#9670;&#160;</a></span>createFont()</h2>
+<a id="ac62013035ea0c20401b06175f5dc9462" name="ac62013035ea0c20401b06175f5dc9462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac62013035ea0c20401b06175f5dc9462">&#9670;&#160;</a></span>createFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +179,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendFontFactor
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TGUI_NODISCARD std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFont.html">BackendFont</a> &gt; tgui::BackendFontFactory::createFont </td>
+          <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendFont.html">BackendFont</a> &gt; tgui::BackendFontFactory::createFont </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -187,7 +187,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendFontFactor
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -195,18 +195,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BackendFontFactor
 <p>Creates a new empty font object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Shared pointer to a new font object </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFactoryImpl.html#a99444977e9b4cf91f7790bd9be342fc7">tgui::BackendFontFactoryImpl&lt; FontType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendFontFactoryImpl.html#afbfe22ff13bffeec88ab58d6787670d8">tgui::BackendFontFactoryImpl&lt; FontType &gt;</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Backend/Font/<a class="el" href="BackendFontFactory_8hpp_source.html">BackendFontFactory.hpp</a></li>
+<li>/home/texus/Documents/TGUI/include/TGUI/Backend/Font/<a class="el" href="BackendFontFactory_8hpp_source.html">BackendFontFactory.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 07:54:51 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2024 17:43:01 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>
