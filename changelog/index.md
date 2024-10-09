@@ -7,6 +7,11 @@ changelog:
   minors:
   - version: 6
     patches:
+    - version: 1
+      date: 8 October 2024
+      changes: |
+        Brightness slider in ColorPicker had a wrong size (regression in TGUI 1.6)
+        ColorPickerRenderer was missing property to style edit boxes
     - version: 0
       date: 6 October 2024
       changes: |

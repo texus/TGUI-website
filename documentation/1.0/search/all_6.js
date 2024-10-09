@@ -109,7 +109,7 @@ var searchData=
   ['getdistancetomouse_106',['getDistanceToMouse',['../classtgui_1_1ToolTip.html#ac93fb50a87aecbe037a0ebdc98c39f4b',1,'tgui::ToolTip']]],
   ['getdistancetoside_107',['getDistanceToSide',['../classtgui_1_1ChildWindowRenderer.html#aeb74165baf570d11deac6a2889b8e89e',1,'tgui::ChildWindowRenderer::getDistanceToSide()'],['../classtgui_1_1MenuBarRenderer.html#a5a4e3b935911b862078d3476c342bc2f',1,'tgui::MenuBarRenderer::getDistanceToSide()'],['../classtgui_1_1TabsRenderer.html#a3156c8ca2e180dc600500c34e3041417',1,'tgui::TabsRenderer::getDistanceToSide()']]],
   ['getdoubleclicktime_108',['getDoubleClickTime',['../namespacetgui.html#a7feae61826049ddab19d77577649c5fe',1,'tgui']]],
-  ['geteditbox_109',['getEditBox',['../classtgui_1_1FileDialogRenderer.html#a2fa3dc8c3b85303ab52c9dc50899622c',1,'tgui::FileDialogRenderer']]],
+  ['geteditbox_109',['getEditBox',['../classtgui_1_1ColorPickerRenderer.html#ab79d20d8b94e3504ab0f4ef07fafb065',1,'tgui::ColorPickerRenderer::getEditBox()'],['../classtgui_1_1FileDialogRenderer.html#a2fa3dc8c3b85303ab52c9dc50899622c',1,'tgui::FileDialogRenderer::getEditBox()']]],
   ['geteditboxrenderer_110',['getEditBoxRenderer',['../classtgui_1_1EditBoxSlider.html#a8056ee0323a61b010d6ae31ad6be7cca',1,'tgui::EditBoxSlider']]],
   ['geteditboxsharedrenderer_111',['getEditBoxSharedRenderer',['../classtgui_1_1EditBoxSlider.html#a7c0c6788b8afe1822913f0cd153ff7e5',1,'tgui::EditBoxSlider']]],
   ['geteditcursorblinkrate_112',['getEditCursorBlinkRate',['../namespacetgui.html#aafb03eb350aef43e52367661512be076',1,'tgui']]],
