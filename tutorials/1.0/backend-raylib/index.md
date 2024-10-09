@@ -69,19 +69,11 @@ while (!WindowShouldClose())
 {
     gui.handleEvents(); // Handles all non-keyboard events
 
-    int pressedChar = GetCharPressed();
-    while (pressedChar)
-    {
+    while (int pressedChar = GetCharPressed())
         gui.handleCharPressed(pressedChar);
-        pressedChar = GetCharPressed();
-    }
 
-    int pressedKey = GetKeyPressed();
-    while (pressedKey)
-    {
+    while (int pressedKey = GetKeyPressed())
         gui.handleKeyPressed(pressedKey);
-        pressedKey = GetKeyPressed();
-    }
 
     BeginDrawing();
     ClearBackground({240, 240, 240, 255});
