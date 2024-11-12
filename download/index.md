@@ -10,8 +10,8 @@ redirect_from: /bindings/index.html
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/1.x.zip" style="Orange" %}<br><br>
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-32bit-for-SFML-2.6.1.zip" style="Orange" %}
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-64bit-for-SFML-2.6.1.zip" style="Orange" %} (use with <a href="https://www.sfml-dev.org/download/sfml/2.6.1/">SFML 2.6.1</a> binaries)<br>
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-32bit-for-SFML-2.6.2.zip" style="Orange" %}
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-64bit-for-SFML-2.6.2.zip" style="Orange" %} (use with <a href="https://www.sfml-dev.org/download/sfml/2.6.2/">SFML 2.6.2</a> binaries)<br>
 </p>
 
 Packages:  
@@ -23,24 +23,24 @@ Packages:
 
 {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.6.1.zip" style="Green" %}
 
-Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 2.6.1](https://www.sfml-dev.org/download/sfml/2.6.1/))
+Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-32bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-64bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-32bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-64bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-32bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-64bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-32bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-64bit-for-SFML-2.6.1.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 
@@ -60,20 +60,20 @@ Language bindings:
 
 {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.9.5.zip" style="White" %}
 
-Precompiled libraries for Windows with SFML backend: (requires matching libraries from [SFML 2.6.1](https://www.sfml-dev.org/download/sfml/2.6.1/))
+Precompiled libraries for Windows with SFML backend: (requires matching libraries from [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-32bit-for-SFML-2.6.1.zip" style="White DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-32bit-for-SFML-2.6.2.zip" style="White DownloadBtnInTable" %}</p></td>
   <td><p>(Use with "Visual C++ 15 (2017) - 32-bit" SFML libs)</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-64bit-for-SFML-2.6.1.zip" style="White DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual Studio (2017-2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-VisualStudio-64bit-for-SFML-2.6.2.zip" style="White DownloadBtnInTable" %}</p></td>
   <td><p>(Use with "Visual C++ 15 (2017) - 64-bit" SFML libs)</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-13.1.0-32bit-for-SFML-2.6.1.zip" style="White DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-13.1.0-64bit-for-SFML-2.6.1.zip" style="White DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-13.1.0-32bit-for-SFML-2.6.2.zip" style="White DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v0.9.5/TGUI-0.9.5-mingw-13.1.0-64bit-for-SFML-2.6.2.zip" style="White DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 
