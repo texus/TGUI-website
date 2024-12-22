@@ -84,8 +84,6 @@ canonical: https://tgui.eu/tutorials/latest-stable/
 
 [Tool Tips](tool-tips/)
 
-[HorizontalLayout and VerticalLayout](box-layouts/)
-
 [Changing mouse cursor](mouse-cursor/)
 
 [Canvas](canvas/)

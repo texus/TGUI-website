@@ -453,8 +453,9 @@ The file dialog is a child window that remains in the main window. TGUI only ren
 The `Grid` widget provides a way to automatically position widgets beneath and beside each other. The grid can either auto-size to fit the widgets inside it, or it can be given a size in which case additional gaps can appear between widgets so that the widgets spread out to fill the given area.
 
 Similar widgets:
+- If you only need a single row or column then check out <a href="#GrowHorizontalLayout">GrowHorizontalLayout</a> or <a href="#GrowVerticalLayout">GrowVerticalLayout</a> instead
 - If widgets are always added to the same row until it is full then check out the <a href="#HorizontalWrap">HorizontalWrap</a> widget
-- If the size of the child widgets should also be determined by the grid size then maybe <a href="#HorizontalLayout">HorizontalLayout</a> and <a href="#VerticalLayout">VerticalLayout</a> would be better options
+- If the size of the child widgets should also be determined by the grid size then have a look at <a href="#HorizontalLayout">HorizontalLayout</a> and <a href="#VerticalLayout">VerticalLayout</a>
 
 Documentation: [Grid](/documentation/1.0/classtgui_1_1Grid.html), [WidgetRenderer](/documentation/1.0/classtgui_1_1WidgetRenderer.html) (GridRenderer does not exist)
 
@@ -530,6 +531,102 @@ If no position or size is given for the group, it will fill its entire parent ar
 </details>
 </div>
 
+<!-- GrowHorizontalLayout -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="GrowHorizontalLayout" markdown="1">
+<summary><b>GrowHorizontalLayout</b></summary>
+
+The `GrowHorizontalLayout` widget provides a way to automatically position widgets next to each other, while the height of each child widget will be set to the height of the GrowHorizontalLayout. The width of the GrowHorizontalLayout changes dynamically to fit all widgets inside it.
+
+Similar widgets:
+- If you need to place widgets beneath each other then check out the <a href="#GrowVerticalLayout">GrowVerticalLayout</a> widget instead
+- If you want widgets to fill an area of a fixed width instead of having the layout grow then check out the <a href="#HorizontalLayout">HorizontalLayout</a> widget instead
+- If you want widgets to have different heights, then check out the <a href="#Grid">Grid</a> widget instead
+
+Documentation: [GrowHorizontalLayout](/documentation/1.0/classtgui_1_1GrowHorizontalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (GrowHorizontalLayoutRenderer does not exist)
+
+**Example usage**
+```c++
+// Set the height of the layout and all widgets inside it. Setting a width would do nothing.
+horiLayout->setHeight(150);
+
+// Widgets only need to be given a width, their height will match the height of the layout
+auto button = tgui::Button::create("Hello");
+button->setWidth(100);
+horiLayout->add(button);
+
+// Widgets don't need to be the same type
+auto panel = tgui::Panel::create();
+panel->setWidth(200);
+horiLayout->add(panel);
+
+// The width of the widget is allowed to be dynamic
+auto button2 = tgui::Button::create("World");
+button2->setWidth("height * 0.8");
+horiLayout->add(button2);
+
+// Add a gap between all widgets
+horiLayout->getRenderer()->setSpaceBetweenWidgets(10);
+```
+
+**Notes**
+
+You should never call `setPosition` on any child widget that is added to GrowHorizontalLayout.
+
+You must manually set a width for all widgets added to the layout.
+
+</details>
+</div>
+
+<!-- GrowVerticalLayout -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="GrowVerticalLayout" markdown="1">
+<summary><b>GrowVerticalLayout</b></summary>
+
+The `GrowVerticalLayout` widget provides a way to automatically position widgets below each other, while the width of each child widget will be set to the width of the GrowVerticalLayout. The height of the GrowVerticalLayout changes dynamically to fit all widgets inside it.
+
+Similar widgets:
+- If you need to place widgets beside each other then check out the <a href="#GrowHorizontalLayout">GrowHorizontalLayout</a> widget instead
+- If you want widgets to fill an area of a fixed height instead of having the layout grow then check out the <a href="#VerticalLayout">VerticalLayout</a> widget instead
+- If you want widgets to have different widths, then check out the <a href="#Grid">Grid</a> widget instead
+
+Documentation: [GrowVerticalLayout](/documentation/1.0/classtgui_1_1GrowVerticalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (GrowVerticalLayoutRenderer does not exist)
+
+**Example usage**
+```c++
+// Make the layout and all widgets inside 200px wide. Setting a height would do nothing.
+vertLayout->setWidth(200);
+
+// Widgets only need to be given a height, their width will match the width of the layout
+auto button = tgui::Button::create("Hello");
+button->setHeight(50);
+vertLayout->add(button);
+
+// Widgets don't need to be the same type
+auto editBox = tgui::EditBox::create();
+editBox->setHeight(20);
+vertLayout->add(editBox);
+
+// The heigth of the widget is allowed to be dynamic
+auto button2 = tgui::Button::create("World");
+button2->setHeight("width * 0.4");
+vertLayout->add(button2);
+
+// Add a gap between all widgets
+vertLayout->getRenderer()->setSpaceBetweenWidgets(10);
+```
+
+**Notes**
+
+You should never call `setPosition` on any child widget that is added to GrowVerticalLayout.
+
+You must manually set a height for all widgets added to the layout.
+
+</details>
+</div>
+
 <!-- HorizontalLayout -->
 
 <div class="SmallerMargin">
@@ -540,6 +637,7 @@ The `HorizontalLayout` widget provides a way to automatically position and resiz
 
 Similar widgets:
 - If you need to place widgets beneath each other then check out the <a href="#VerticalLayout">VerticalLayout</a> widget instead
+- If you want to control the width of widgets and have the layout grow to fit them, then check the <a href="#GrowHorizontalLayout">GrowHorizontalLayout</a> widget instead
 - If you only want to automatically position widgets but give them a manual size, then check out the <a href="#Grid">Grid</a> widget instead
 
 Documentation: [HorizontalLayout](/documentation/1.0/classtgui_1_1HorizontalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (HorizontalLayoutRenderer does not exist)
@@ -563,7 +661,7 @@ horiLayout->add(button3);    // ratio = 1
 
 **Notes**
 
-The size of the HorizontalLayout (both width and height) must be provided, and child widgets will be resized to fit this size. It is not possible to have the layout grow as more widgets are added. You could however manually update the size every time you add a widget, but then the widget is of limited use.
+The size of the HorizontalLayout (both width and height) must be provided, and child widgets will be resized to fit this size.
 
 You should never call `setPosition` or `setSize` on any child widget that is added to HorizontalLayout.
 
@@ -1626,6 +1724,7 @@ The `VerticalLayout` widget provides a way to automatically position and resize 
 
 Similar widgets:
 - If you need to place widgets beside each other then check out the <a href="#HorizontalLayout">HorizontalLayout</a> widget instead
+- If you want to control the height of widgets and have the layout grow to fit them, then check out the <a href="#GrowVerticalLayout">GrowVerticalLayout</a> widget instead
 - If you only want to automatically position widgets but give them a manual size, then check out the <a href="#Grid">Grid</a> widget instead
 
 Documentation: [VerticalLayout](/documentation/1.0/classtgui_1_1VerticalLayout.html), [BoxLayoutRenderer](/documentation/1.0/classtgui_1_1BoxLayoutRenderer.html) (VerticalLayoutRenderer does not exist)
@@ -1649,7 +1748,7 @@ vertLayout->add(button3);    // ratio = 1
 
 **Notes**
 
-The size of the VerticalLayout (both width and height) must be provided, and child widgets will be resized to fit this size. It is not possible to have the layout grow as more widgets are added. You could however manually update the size every time you add a widget, but then the widget is of limited use.
+The size of the VerticalLayout (both width and height) must be provided, and child widgets will be resized to fit this size.
 
 You should never call `setPosition` or `setSize` on any child widget that is added to VerticalLayout.
 

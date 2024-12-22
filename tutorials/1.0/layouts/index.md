@@ -128,3 +128,35 @@ yellow->setAutoLayout(tgui::AutoLayout::Fill);
   <source srcset="/resources/Tutorials/Layouts/AutoLayoutExampleResult-dark.png" media="(prefers-color-scheme: dark)">
   <img src="/resources/Tutorials/Layouts/AutoLayoutExampleResult.png" width="400" height="300" alt="AutoLayout example result"/>
 </picture>
+
+
+### Grow layouts
+
+Since TGUI 1.7 there are some additional classes to position widgets widgets in a row below or beside each other.
+
+The `GrowVerticalLayout` needs to be given a fixed width and all widgets inside it will be given the same width. The height of the vertical layout grows with every widget that gets added to it. The `GrowHorizontalLayout` works the same way but has a fixed height and a variable width.
+
+
+Example for how to use GrowVerticalLayout:
+```c++
+// Make the layout and all widgets inside 200px wide. Setting a height would do nothing.
+vertLayout->setWidth(200);
+
+// Widgets only need to be given a height, their width will match the width of the layout
+auto button = tgui::Button::create("Hello");
+button->setHeight(50);
+vertLayout->add(button);
+
+// Widgets don't need to be the same type
+auto editBox = tgui::EditBox::create();
+editBox->setHeight(20);
+vertLayout->add(editBox);
+
+// The heigth of the widget is allowed to be dynamic
+auto button2 = tgui::Button::create("World");
+button2->setHeight("width * 0.4");
+vertLayout->add(button2);
+
+// Add a gap between all widgets
+vertLayout->getRenderer()->setSpaceBetweenWidgets(10);
+```
