@@ -10,8 +10,8 @@ redirect_from: /bindings/index.html
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/1.x.zip" style="Orange" %}<br><br>
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-32bit-for-SFML-2.6.2.zip" style="Orange" %}
-  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-64bit-for-SFML-2.6.2.zip" style="Orange" %} (use with <a href="https://www.sfml-dev.org/download/sfml/2.6.2/">SFML 2.6.2</a> binaries)<br>
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 32bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-32bit-for-SFML-3.0.0.zip" style="Orange" %}
+  {% include button.ext text="Visual Studio - SFML_GRAPHICS - 64bit" link="https://github.com/texus/TGUI/releases/download/nightly_build/TGUI-1.x-nightly-VisualStudio-64bit-for-SFML-3.0.0.zip" style="Orange" %} (use with <a href="https://www.sfml-dev.org/download/sfml/3.0.0/">SFML 3.0.0</a> binaries)<br>
 </p>
 
 Packages:  
