@@ -72,7 +72,7 @@ function getXPos(item) {
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TGUI
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.7</span>
    </div>
   </td>
  </tr>
@@ -218,9 +218,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Backend</b> ()=de
 <tr class="memitem:a8a4303cd227d8e6e3cd98898cebe457a" id="r_a8a4303cd227d8e6e3cd98898cebe457a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4303cd227d8e6e3cd98898cebe457a">closeVirtualKeyboard</a> ()</td></tr>
 <tr class="memdesc:a8a4303cd227d8e6e3cd98898cebe457a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the virtual keyboard on Android and iOS.  <br /></td></tr>
 <tr class="separator:a8a4303cd227d8e6e3cd98898cebe457a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90668797eec9908088c6341c31d4d112" id="r_a90668797eec9908088c6341c31d4d112"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90668797eec9908088c6341c31d4d112">isKeyboardModifierPressed</a> (<a class="el" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey)=0</td></tr>
-<tr class="memdesc:a90668797eec9908088c6341c31d4d112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the state for one of the modifier keys.  <br /></td></tr>
-<tr class="separator:a90668797eec9908088c6341c31d4d112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9aab3ae37683469cfbf1bbfe935c018" id="r_af9aab3ae37683469cfbf1bbfe935c018"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9aab3ae37683469cfbf1bbfe935c018">isKeyboardModifierPressed</a> (<a class="el" href="structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5">Event::KeyModifier</a> modifierKey)</td></tr>
+<tr class="memdesc:af9aab3ae37683469cfbf1bbfe935c018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the state for one of the modifier keys.  <br /></td></tr>
+<tr class="separator:af9aab3ae37683469cfbf1bbfe935c018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c75f53ec64da205272fa15358dfcbf" id="r_a03c75f53ec64da205272fa15358dfcbf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03c75f53ec64da205272fa15358dfcbf">setClipboard</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;contents)</td></tr>
 <tr class="memdesc:a03c75f53ec64da205272fa15358dfcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the contents of the clipboard.  <br /></td></tr>
 <tr class="separator:a03c75f53ec64da205272fa15358dfcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -669,8 +669,8 @@ std::set&lt; <a class="el" href="classtgui_1_1Sprite.html">Sprite</a> * &gt;&#16
 
 </div>
 </div>
-<a id="a90668797eec9908088c6341c31d4d112" name="a90668797eec9908088c6341c31d4d112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90668797eec9908088c6341c31d4d112">&#9670;&#160;</a></span>isKeyboardModifierPressed()</h2>
+<a id="af9aab3ae37683469cfbf1bbfe935c018" name="af9aab3ae37683469cfbf1bbfe935c018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9aab3ae37683469cfbf1bbfe935c018">&#9670;&#160;</a></span>isKeyboardModifierPressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,7 +687,7 @@ std::set&lt; <a class="el" href="classtgui_1_1Sprite.html">Sprite</a> * &gt;&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -701,7 +701,7 @@ std::set&lt; <a class="el" href="classtgui_1_1Sprite.html">Sprite</a> * &gt;&#16
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether queries modifier key is being pressed </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendGLFW.html#a122433080de413eaf573dba50e1eabcb">tgui::BackendGLFW</a>, <a class="el" href="classtgui_1_1BackendRaylib.html#ad8fdd46625effeb22edbdfd13b9e133c">tgui::BackendRaylib</a>, <a class="el" href="classtgui_1_1BackendSDL.html#a38c28ae9ac9c0946592059c3656aec7b">tgui::BackendSDL</a>, and <a class="el" href="classtgui_1_1BackendSFML.html#a2abce84aff06e720998560e70e48ca39">tgui::BackendSFML</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGLFW.html#a122433080de413eaf573dba50e1eabcb">tgui::BackendGLFW</a>, <a class="el" href="classtgui_1_1BackendRaylib.html#ad8fdd46625effeb22edbdfd13b9e133c">tgui::BackendRaylib</a>, <a class="el" href="classtgui_1_1BackendSDL.html#a38c28ae9ac9c0946592059c3656aec7b">tgui::BackendSDL</a>, and <a class="el" href="classtgui_1_1BackendSFML.html#a2abce84aff06e720998560e70e48ca39">tgui::BackendSFML</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1069,7 @@ std::set&lt; <a class="el" href="classtgui_1_1Sprite.html">Sprite</a> * &gt;&#16
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 18:49:12 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 22 2024 11:18:17 for TGUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.svg" alt="doxygen"/>
 </a> 1.12.0
 </small></address>

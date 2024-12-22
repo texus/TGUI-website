@@ -5,6 +5,13 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 7
+    patches:
+    - version: 0
+      date: 22 December 2024
+      changes: |
+        New widgets: GrowHorizontalLayout and GrowVerticalLayout
+        Fixed some issues with font scale in SFML font backend
   - version: 6
     patches:
     - version: 1

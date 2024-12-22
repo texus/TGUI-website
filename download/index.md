@@ -17,30 +17,26 @@ redirect_from: /bindings/index.html
 Packages:  
 **AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
 
-### TGUI 1.6.1
+### TGUI 1.7.0
 
 **Latest stable version**. Minimum supported compilers: GCC 7, Clang 6, VS2017 15.7
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.6.1.zip" style="Green" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.7.0.zip" style="Green" %}
 
-Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/))
+Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 3.0.0](https://www.sfml-dev.org/download/sfml/3.0.0/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc17-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-vc17-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-vc17-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc16-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-vc16-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-vc16-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 15 (2017) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-vc15-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-</tr>
-<tr>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - i686&#8209;posix&#8209;dwarf (32bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-32bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="MinGW-w64 13.1.0 - x86_64&#8209;posix&#8209;seh (64bit)" link="https://github.com/texus/TGUI/releases/download/v1.6.1/TGUI-1.6.1-mingw-13.1.0-64bit-for-SFML-2.6.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-mingw-14.2.0-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.7.0/TGUI-1.7.0-mingw-14.2.0-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 
@@ -52,6 +48,7 @@ Packages:
 
 Language bindings:  
 **C**: [CTGUI](https://github.com/texus/CTGUI)  
+**C#**: [TGUI.Net](https://github.com/texus/TGUI.Net)  
 **Ruby**: [white_gold](https://github.com/lpogic/white_gold)  
 **Ada**: [ATGUI](https://github.com/mgrojo/ATGUI)  
 
@@ -83,10 +80,7 @@ Packages:
 ### TGUI 0.8.9
 **Old version**. Minimum supported compilers: GCC 4.9, Clang 3.6, VS2015
 
-<p>
 {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v0.8.9.zip" style="White" %}
-{% include button.ext text=".Net binding" link="https://tgui.net" style="White" %}
-</p>
 
 ### Older versions
 
