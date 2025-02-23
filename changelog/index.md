@@ -5,6 +5,18 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 8
+    patches:
+    - version: 0
+      date: 23 February 2025
+      changes: |
+        New widget: ContextMenu
+        Added handleWindowEvents function to SFML backend (only for SFML 3)
+        Added onRightClick signal to ListBox
+        Added onTabRightClick signal to Tabs
+        Added setSmooth and isSmooth to CanvasSFML
+        Changed the way the view is handled in CanvasSFML
+        Pressing escape now closes the menu from ContextMenu or MenuBar
   - version: 7
     patches:
     - version: 0

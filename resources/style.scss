@@ -7,6 +7,8 @@
 
 /* GENERAL */
 
+$maxWidth: 1250px;
+
 html, body {
    margin: 0;
    padding: 0;
@@ -17,7 +19,7 @@ html, body {
 body {
   color: black;
   background-color: #e0e0e0;
-  max-width: 1060px;
+  max-width: $maxWidth;
   margin-left: auto;
   margin-right: auto;
 
@@ -66,6 +68,10 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
+
+  max-width: -moz-calc($maxWidth - 60px);
+  max-width: -webkit-calc($maxWidth - 60px);
+  max-width: calc($maxWidth - 60px);
 }
 
 #footer {
@@ -376,16 +382,13 @@ a#navbar-title:hover h1 {
   }
 }
 
-@media only screen and (min-width: 1060px) and (min-height: 500px) {
+@media only screen and (min-width: $maxWidth) and (min-height: 500px) {
   #navbar {
-    left: -moz-calc((100% - 1060px) / 2);
-    width: -moz-calc(1060px);
+    left: -moz-calc((100% - $maxWidth) / 2);
+    left: -webkit-calc((100% - $maxWidth) / 2);
+    left: calc((100% - $maxWidth) / 2);
 
-    left: -webkit-calc((100% - 1060px) / 2);
-    width: -webkit-calc(1060px);
-
-    left: calc((100% - 1060px) / 2);
-    width: calc(1060px);
+    width: $maxWidth;
   }
 }
 

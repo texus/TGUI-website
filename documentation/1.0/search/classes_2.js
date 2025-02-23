@@ -22,10 +22,12 @@ var searchData=
   ['connectedsignaltuple_19',['ConnectedSignalTuple',['../structtgui_1_1SignalManager_1_1ConnectedSignalTuple.html',1,'tgui::SignalManager']]],
   ['constnode_20',['ConstNode',['../structtgui_1_1TreeView_1_1ConstNode.html',1,'tgui::TreeView']]],
   ['container_21',['Container',['../classtgui_1_1Container.html',1,'tgui']]],
-  ['copiedsharedptr_22',['CopiedSharedPtr',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3abutton_20_3e_23',['CopiedSharedPtr&lt; tgui::Button &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3agroup_20_3e_24',['CopiedSharedPtr&lt; tgui::Group &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3ascrollbarchildwidget_20_3e_25',['CopiedSharedPtr&lt; tgui::ScrollbarChildWidget &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['cursor_26',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
-  ['customwidgetforbindings_27',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
+  ['contextmenu_22',['ContextMenu',['../classtgui_1_1ContextMenu.html',1,'tgui']]],
+  ['contextmenurenderer_23',['ContextMenuRenderer',['../classtgui_1_1ContextMenuRenderer.html',1,'tgui']]],
+  ['copiedsharedptr_24',['CopiedSharedPtr',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3abutton_20_3e_25',['CopiedSharedPtr&lt; tgui::Button &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3agroup_20_3e_26',['CopiedSharedPtr&lt; tgui::Group &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3ascrollbarchildwidget_20_3e_27',['CopiedSharedPtr&lt; tgui::ScrollbarChildWidget &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['cursor_28',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
+  ['customwidgetforbindings_29',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
 ];
