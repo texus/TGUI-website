@@ -325,6 +325,50 @@ When the TextureArrow property is set in the renderer, the ArrowBackgroundColor 
 </details>
 </div>
 
+
+<!-- ContextMenu -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="ContextMenu" markdown="1">
+<summary><b>ContextMenu</b></summary>
+
+The `ContextMenu` widget provides a way to select an item from a drop-down list.
+
+![ContextMenu](/resources/WidgetsOverview/ContextMenu.png){:width="420" height="130"}
+
+Documentation: [ContextMenu](/documentation/1.0/classtgui_1_1ContextMenu.html), [ContextMenuRenderer](/documentation/1.0/classtgui_1_1ContextMenuRenderer.html)
+
+**Example usage**
+```c++
+contextMenu->setMinimumMenuWidth(100);
+contextMenu->addMenuItem("Copy");
+contextMenu->addMenuItem("Paste");
+contextMenu->addMenuItem({"Edit", "Undo"});
+contextMenu->addMenuItem({"Edit", "Redo"});
+contextMenu->setMenuItemEnabled({"Edit", "Redo"}, false);
+
+contextMenu->onMenuItemClick([](const std::vector<tgui::String>& hierarchy) {
+    // hierarchy == {"Copy"} when pressing Copy item
+    // hierarchy == {"Edit", "Undo"} when pressing Undo item
+});
+
+// The menu is only there when you open it.
+// Once the user clicks on an item, the menu automatically closes.
+contextMenu->openMenuAtMouseCursor();
+```
+
+**Notes**
+
+When the menu is closed (which is the default), the widget is invisible even after adding it to the gui and isVisible() returns true. You must use the openMenu or openMenuAtMouseCursor to make the menu show up.
+
+The connectMenuItem will internally do the same as adding an onMenuItemClick callback that compares whether the clicked menu item matches with the connected item.
+
+When the TextureItemBackground property is set in the renderer, the BackgroundColor and SelectedBackgroundColor renderer property will be ignored for the menus.
+
+</details>
+</div>
+
+
 <!-- EditBox -->
 
 <div class="SmallerMargin">
@@ -955,7 +999,7 @@ messageBox->addButton("No");
 messageBox->setButtonAlignment(tgui::MessageBox::Alignment::Right);
 
 messageBox->onButtonPress([msgBox=messageBox.get()](const tgui::String& button){
-    assert(button == "Yes" || button == "No);
+    assert(button == "Yes" || button == "No");
     std::cerr << "The " << button << " button was pressed\n";
 
     // Remove the message box from its parent to stop showing it
