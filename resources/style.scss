@@ -19,7 +19,7 @@ html, body {
 body {
   color: black;
   background-color: #e0e0e0;
-  max-width: $maxWidth;
+  max-width: #{$maxWidth};
   margin-left: auto;
   margin-right: auto;
 
@@ -69,9 +69,9 @@ a:visited {
   margin-right: auto;
   max-width: 1000px;
 
-  max-width: -moz-calc($maxWidth - 60px);
-  max-width: -webkit-calc($maxWidth - 60px);
-  max-width: calc($maxWidth - 60px);
+  max-width: -moz-calc(#{$maxWidth} - 60px);
+  max-width: -webkit-calc(#{$maxWidth} - 60px);
+  max-width: calc(#{$maxWidth} - 60px);
 }
 
 #footer {
@@ -382,13 +382,13 @@ a#navbar-title:hover h1 {
   }
 }
 
-@media only screen and (min-width: $maxWidth) and (min-height: 500px) {
+@media only screen and (min-width: #{$maxWidth}) and (min-height: 500px) {
   #navbar {
-    left: -moz-calc((100% - $maxWidth) / 2);
-    left: -webkit-calc((100% - $maxWidth) / 2);
-    left: calc((100% - $maxWidth) / 2);
+    left: -moz-calc((100% - #{$maxWidth}) / 2);
+    left: -webkit-calc((100% - #{$maxWidth}) / 2);
+    left: calc((100% - #{$maxWidth}) / 2);
 
-    width: $maxWidth;
+    width: #{$maxWidth};
   }
 }
 
