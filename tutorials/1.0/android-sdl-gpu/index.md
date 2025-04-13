@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Android (SDL_RENDERER backend)
-breadcrumb: android sdl-renderer
+title: Android (SDL_GPU backend)
+breadcrumb: android sdl-gpu
 ---
 
-Follow the instructions below to build SDL, SDL_ttf, TGUI and the example code for Android.
+Follow the instructions below to build SDL3, SDL3_ttf, TGUI and the example code for Android.
 
 This guide has only been tested on Linux.
 
 
 ### Changing settings
 
-The example in `TGUI/examples/android/SDL_RENDERER/` contains some hardcoded values that may need to be changed. The files to check are `app/build.gradle.kts` and `app/jni/CMakeLists.txt`.
+The example in `TGUI/examples/android/SDL_GPU/` contains some hardcoded values that may need to be changed. The files to check are `app/build.gradle.kts` and `app/jni/CMakeLists.txt`.
 
 The `app/build.gradle.kts` file contains the android SDK and NDK versions, the application id, the list of architectes to build and the arguments to pass to CMake.
 
@@ -27,7 +27,7 @@ To choose the architectures to build, change the abiFilters property in app/buil
 
 ### Building the example
 
-From inside the `TGUI/examples/android/SDL_RENDERER/` folder, execute the following command to build everything. This will build any changes to SDL, SDL_ttf, TGUI and the example for all specified architectures and bundle everything into a single apk file.
+From inside the `TGUI/examples/android/SDL_GPU/` folder, execute the following command to build everything. This will build any changes to SDL, SDL_ttf, TGUI and the example for all specified architectures and bundle everything into a single apk file.
 ```
 ./gradlew assembleDebug
 ```

@@ -22,6 +22,8 @@ canonical: https://tgui.eu/tutorials/latest-stable/
 
 [Android (SFML_GRAPHICS)](android-sfml-graphics/)
 
+[Android (SDL_GPU)](android-sdl-gpu/)
+
 [Android (SDL_RENDERER)](android-sdl-renderer/)
 
 [Android (SDL_TTF_GLES2)](android-sdl-ttf-gles2/)
@@ -40,6 +42,8 @@ canonical: https://tgui.eu/tutorials/latest-stable/
 [SFML_GRAPHICS backend](backend-sfml-graphics/) &nbsp; (Uses sfml-graphics for everything)
 
 [SFML_OPENGL3 backend](backend-sfml-opengl3/) &nbsp; (Uses sfml-window and FreeType, using OpenGL to draw)
+
+[SDL_GPU backend](backend-sdl-gpu/) &nbsp; (Uses SDL and SDL\_ttf, using SDL_GPUDevice to draw)
 
 [SDL_RENDERER backend](backend-sdl-renderer/) &nbsp; (Uses SDL and SDL\_ttf, using SDL\_Renderer to draw)
 

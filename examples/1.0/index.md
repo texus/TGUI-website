@@ -12,6 +12,8 @@ Examples with the minimum code of each backend:
 
 [SFML_OPENGL3 backend](backend-sfml-opengl3/)
 
+[SDL_GPU backend](backend-sdl-gpu/)
+
 [SDL_RENDERER backend](backend-sdl-renderer/)
 
 [SDL_TTF_OPENGL3 backend](backend-sdl-ttf-opengl3/)

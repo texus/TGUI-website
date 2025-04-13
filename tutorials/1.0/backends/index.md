@@ -46,6 +46,22 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
       <td>sfml-window <span class="BackendDependencyVersion">(>=&nbsp;2.5) +</span> FreeType <span class="BackendDependencyVersion">(>=&nbsp;2.6) +</span> OpenGL <span class="BackendDependencyVersion">(>=&nbsp;3.3)</span></td>
     </tr>
     <tr>
+      <td><strong>SDL_GPU</strong></td>
+      <td>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Android.svg" title="Android"/></div>
+        <div class="platform-icon">
+          <picture class="dark-compatible">
+            <source srcset="/resources/PlatformIcons/iOS-white.svg" media="(prefers-color-scheme: dark)">
+            <img src="/resources/PlatformIcons/iOS.svg" title="iOS"/>
+          </picture>
+        </div>
+      </td>
+      <td>SDL <span class="BackendDependencyVersion">(>=&nbsp;3.2) +</span> SDL_ttf <span class="BackendDependencyVersion">(>=&nbsp;3.2)</span></td>
+    </tr>
+    <tr>
       <td><strong>SDL_RENDERER</strong></td>
       <td>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
