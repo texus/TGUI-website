@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -190,15 +190,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2869687ce8d61b172650d557a1dfa239" id="r_a2869687ce8d61b172650d557a1dfa239"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2869687ce8d61b172650d557a1dfa239">getMaximum</a> () const</td></tr>
 <tr class="memdesc:a2869687ce8d61b172650d557a1dfa239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum value.  <br /></td></tr>
 <tr class="separator:a2869687ce8d61b172650d557a1dfa239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55fc80731bebd3ff2c47806167b71b1a" id="r_a55fc80731bebd3ff2c47806167b71b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55fc80731bebd3ff2c47806167b71b1a">setValue</a> (float value)</td></tr>
-<tr class="memdesc:a55fc80731bebd3ff2c47806167b71b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current value.  <br /></td></tr>
-<tr class="separator:a55fc80731bebd3ff2c47806167b71b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fd59390983903bdf94b98c6a2db031" id="r_a47fd59390983903bdf94b98c6a2db031"><td class="memTemplParams" colspan="2">template&lt;typename T, typename = typename std::enable_if_t&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;&gt; </td></tr>
+<tr class="memitem:a47fd59390983903bdf94b98c6a2db031"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a47fd59390983903bdf94b98c6a2db031">setValue</a> (T value)</td></tr>
+<tr class="memdesc:a47fd59390983903bdf94b98c6a2db031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current value.  <br /></td></tr>
+<tr class="separator:a47fd59390983903bdf94b98c6a2db031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0387d9e8917a3ae4f9121e18c34958" id="r_a4e0387d9e8917a3ae4f9121e18c34958"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e0387d9e8917a3ae4f9121e18c34958">getValue</a> () const</td></tr>
 <tr class="memdesc:a4e0387d9e8917a3ae4f9121e18c34958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value.  <br /></td></tr>
 <tr class="separator:a4e0387d9e8917a3ae4f9121e18c34958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b1efa0c1a6e07bc8bc6d9fa430aebf" id="r_a06b1efa0c1a6e07bc8bc6d9fa430aebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06b1efa0c1a6e07bc8bc6d9fa430aebf">setStep</a> (float step)</td></tr>
-<tr class="memdesc:a06b1efa0c1a6e07bc8bc6d9fa430aebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes how much the value changes on each arrow press.  <br /></td></tr>
-<tr class="separator:a06b1efa0c1a6e07bc8bc6d9fa430aebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96105b5e56ae88c99df1d1b08522684c" id="r_a96105b5e56ae88c99df1d1b08522684c"><td class="memTemplParams" colspan="2">template&lt;typename T, typename = typename std::enable_if_t&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;&gt; </td></tr>
+<tr class="memitem:a96105b5e56ae88c99df1d1b08522684c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a96105b5e56ae88c99df1d1b08522684c">setStep</a> (T step)</td></tr>
+<tr class="memdesc:a96105b5e56ae88c99df1d1b08522684c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes how much the value changes on each arrow press.  <br /></td></tr>
+<tr class="separator:a96105b5e56ae88c99df1d1b08522684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35183462c537b51c09e31a14bf1044c4" id="r_a35183462c537b51c09e31a14bf1044c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35183462c537b51c09e31a14bf1044c4">getStep</a> () const</td></tr>
 <tr class="memdesc:a35183462c537b51c09e31a14bf1044c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of positions the thumb advances with each move.  <br /></td></tr>
 <tr class="separator:a35183462c537b51c09e31a14bf1044c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,18 +693,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_orientationLocked</
 <tr class="memitem:a4aa0fc7e83eb22a281d3c50abe884ef5" id="r_a4aa0fc7e83eb22a281d3c50abe884ef5"><td class="memItemLeft" align="right" valign="top"><a id="a4aa0fc7e83eb22a281d3c50abe884ef5" name="a4aa0fc7e83eb22a281d3c50abe884ef5"></a>
 std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_PressedAt</b></td></tr>
 <tr class="separator:a4aa0fc7e83eb22a281d3c50abe884ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df1a30191220135c2ee40892ddcddd8" id="r_a2df1a30191220135c2ee40892ddcddd8"><td class="memItemLeft" align="right" valign="top"><a id="a2df1a30191220135c2ee40892ddcddd8" name="a2df1a30191220135c2ee40892ddcddd8"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimum</b> = 0</td></tr>
-<tr class="separator:a2df1a30191220135c2ee40892ddcddd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4999b9a7b60d5953d59826cf6690929" id="r_ae4999b9a7b60d5953d59826cf6690929"><td class="memItemLeft" align="right" valign="top"><a id="ae4999b9a7b60d5953d59826cf6690929" name="ae4999b9a7b60d5953d59826cf6690929"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximum</b> = 10</td></tr>
-<tr class="separator:ae4999b9a7b60d5953d59826cf6690929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb1a94dd640213bbca35e4ed25f1434" id="r_a1cb1a94dd640213bbca35e4ed25f1434"><td class="memItemLeft" align="right" valign="top"><a id="a1cb1a94dd640213bbca35e4ed25f1434" name="a1cb1a94dd640213bbca35e4ed25f1434"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b> = 0</td></tr>
-<tr class="separator:a1cb1a94dd640213bbca35e4ed25f1434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8b5eb9d50233c64b7215fb76f81c7e" id="r_a2d8b5eb9d50233c64b7215fb76f81c7e"><td class="memItemLeft" align="right" valign="top"><a id="a2d8b5eb9d50233c64b7215fb76f81c7e" name="a2d8b5eb9d50233c64b7215fb76f81c7e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b> = 1</td></tr>
-<tr class="separator:a2d8b5eb9d50233c64b7215fb76f81c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b59dfe77c3aa56600d94fff43628cab" id="r_a2b59dfe77c3aa56600d94fff43628cab"><td class="memItemLeft" align="right" valign="top"><a id="a2b59dfe77c3aa56600d94fff43628cab" name="a2b59dfe77c3aa56600d94fff43628cab"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimum</b> = 0</td></tr>
+<tr class="separator:a2b59dfe77c3aa56600d94fff43628cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4ac17db261aa5b640859c2fbdbfe29" id="r_a2f4ac17db261aa5b640859c2fbdbfe29"><td class="memItemLeft" align="right" valign="top"><a id="a2f4ac17db261aa5b640859c2fbdbfe29" name="a2f4ac17db261aa5b640859c2fbdbfe29"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximum</b> = 10</td></tr>
+<tr class="separator:a2f4ac17db261aa5b640859c2fbdbfe29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef66fa4a8ad8ec50fb722a963be3387" id="r_a0ef66fa4a8ad8ec50fb722a963be3387"><td class="memItemLeft" align="right" valign="top"><a id="a0ef66fa4a8ad8ec50fb722a963be3387" name="a0ef66fa4a8ad8ec50fb722a963be3387"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b> = 0</td></tr>
+<tr class="separator:a0ef66fa4a8ad8ec50fb722a963be3387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e6de0b22fe6b4645e066665707f735" id="r_a73e6de0b22fe6b4645e066665707f735"><td class="memItemLeft" align="right" valign="top"><a id="a73e6de0b22fe6b4645e066665707f735" name="a73e6de0b22fe6b4645e066665707f735"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b> = 1</td></tr>
+<tr class="separator:a73e6de0b22fe6b4645e066665707f735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d2698d33c2f2bb68fd7a16cadc1cf8" id="r_a84d2698d33c2f2bb68fd7a16cadc1cf8"><td class="memItemLeft" align="right" valign="top"><a id="a84d2698d33c2f2bb68fd7a16cadc1cf8" name="a84d2698d33c2f2bb68fd7a16cadc1cf8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseHoverOnTopArrow</b> = false</td></tr>
 <tr class="separator:a84d2698d33c2f2bb68fd7a16cadc1cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1271,7 +1273,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Returns the number of positions the thumb advances with each move. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current step size </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a06b1efa0c1a6e07bc8bc6d9fa430aebf" title="Changes how much the value changes on each arrow press.">setStep</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a96105b5e56ae88c99df1d1b08522684c" title="Changes how much the value changes on each arrow press.">setStep</a> </dd></dl>
 
 </div>
 </div>
@@ -1672,19 +1674,29 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
-<a id="a06b1efa0c1a6e07bc8bc6d9fa430aebf" name="a06b1efa0c1a6e07bc8bc6d9fa430aebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06b1efa0c1a6e07bc8bc6d9fa430aebf">&#9670;&#160;</a></span>setStep()</h2>
+<a id="a96105b5e56ae88c99df1d1b08522684c" name="a96105b5e56ae88c99df1d1b08522684c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96105b5e56ae88c99df1d1b08522684c">&#9670;&#160;</a></span>setStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename = typename std::enable_if_t&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void tgui::SpinButton::setStep </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>step</em></span></td><td>)</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>step</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Changes how much the value changes on each arrow press. </p>
@@ -1698,19 +1710,29 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
-<a id="a55fc80731bebd3ff2c47806167b71b1a" name="a55fc80731bebd3ff2c47806167b71b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55fc80731bebd3ff2c47806167b71b1a">&#9670;&#160;</a></span>setValue()</h2>
+<a id="a47fd59390983903bdf94b98c6a2db031" name="a47fd59390983903bdf94b98c6a2db031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fd59390983903bdf94b98c6a2db031">&#9670;&#160;</a></span>setValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename = typename std::enable_if_t&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void tgui::SpinButton::setValue </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Changes the current value. </p>
@@ -1757,7 +1779,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:03 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

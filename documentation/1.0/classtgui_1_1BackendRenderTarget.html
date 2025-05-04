@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,8 @@ Inheritance diagram for tgui::BackendRenderTarget:</div>
 <area href="classtgui_1_1BackendRenderTargetOpenGL3.html" title="Render target implementation that makes use of modern OpenGL." alt="tgui::BackendRenderTargetOpenGL3" shape="rect" coords="228,56,446,80"/>
 <area href="classtgui_1_1BackendRenderTargetRaylib.html" title="Render target implementation that makes use of raylib." alt="tgui::BackendRenderTargetRaylib" shape="rect" coords="456,56,674,80"/>
 <area href="classtgui_1_1BackendRenderTargetSDL.html" title="Render target implementation that makes use of SDL_Renderer." alt="tgui::BackendRenderTargetSDL" shape="rect" coords="684,56,902,80"/>
-<area href="classtgui_1_1BackendRenderTargetSFML.html" title="Render target that uses SFML to draw the gui." alt="tgui::BackendRenderTargetSFML" shape="rect" coords="912,56,1130,80"/>
+<area href="classtgui_1_1BackendRenderTargetSDLGPU.html" title="Render target implementation that uses SDL3&#39;s GPU API." alt="tgui::BackendRenderTargetSDLGPU" shape="rect" coords="912,56,1130,80"/>
+<area href="classtgui_1_1BackendRenderTargetSFML.html" title="Render target that uses SFML to draw the gui." alt="tgui::BackendRenderTargetSFML" shape="rect" coords="1140,56,1358,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -301,7 +302,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 
 <p>Clears the screen, called at the beginning of each frame when gui.mainLoop() is called. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ad35d5f41a7f5438f0f60b547f059c907">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#af079ea4c5a973a88ef76abb4e216b270">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#ae5471d57debf1de48714dd088b735b6c">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#a026a20705a481f810f255681d97d6a49">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ae9dc6abd4702d430c6607dd454cdc846">tgui::BackendRenderTargetSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ad35d5f41a7f5438f0f60b547f059c907">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#af079ea4c5a973a88ef76abb4e216b270">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#ae5471d57debf1de48714dd088b735b6c">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#a026a20705a481f810f255681d97d6a49">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#abc1c6d183e0b42b67663c5b031076c08">tgui::BackendRenderTargetSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ae9dc6abd4702d430c6607dd454cdc846">tgui::BackendRenderTargetSFML</a>.</p>
 
 </div>
 </div>
@@ -486,7 +487,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ac23212ab30162b93ec049f14185d0f4e">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a663daabdea0570b021820cb43ce559dc">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a18c2d02349dbc7a2acd2af2ba4b90a2a">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#a9a092e5cf9c77ab2e45b36ba6d2bc00c">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#a5a45df597a35c29b05a5776d30e32fc1">tgui::BackendRenderTargetSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ac23212ab30162b93ec049f14185d0f4e">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a663daabdea0570b021820cb43ce559dc">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a18c2d02349dbc7a2acd2af2ba4b90a2a">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#a9a092e5cf9c77ab2e45b36ba6d2bc00c">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#af9226f2863abc0425bf2738da2e9cc89">tgui::BackendRenderTargetSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#a5a45df597a35c29b05a5776d30e32fc1">tgui::BackendRenderTargetSFML</a>.</p>
 
 </div>
 </div>
@@ -822,7 +823,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#a9514504910456c364da8a613f57e9cd8">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#afb4f331061dca8a3ae73152a45a9fc62">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a1c0e256159e8f8420554598b0d008898">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#ac599d73f20357ccfba8834ee6fedc64d">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ac628515c6f42447e762c9a54e612ce2a">tgui::BackendRenderTargetSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#a9514504910456c364da8a613f57e9cd8">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#afb4f331061dca8a3ae73152a45a9fc62">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a1c0e256159e8f8420554598b0d008898">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#ac599d73f20357ccfba8834ee6fedc64d">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#a4491e6108ad402eb44ca215bd620fcc5">tgui::BackendRenderTargetSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ac628515c6f42447e762c9a54e612ce2a">tgui::BackendRenderTargetSFML</a>.</p>
 
 </div>
 </div>
@@ -953,7 +954,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#afdce6cbacd087833673196300205b6cd">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#aef0900779d4960758e519d77d451985b">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#acd4412198ccc9711f15b96d7fa78eaba">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#aa90b92daa0b44fdf57d5c7f4548400d9">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#abb33d510ed94218460ec017eedc1b838">tgui::BackendRenderTargetSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#afdce6cbacd087833673196300205b6cd">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#aef0900779d4960758e519d77d451985b">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#acd4412198ccc9711f15b96d7fa78eaba">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#aa90b92daa0b44fdf57d5c7f4548400d9">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#a171deef1dfeafac266dda0309561f4c3">tgui::BackendRenderTargetSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#abb33d510ed94218460ec017eedc1b838">tgui::BackendRenderTargetSFML</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1000,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ae9a1a0b515e7841b95ccda91e1da3747">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a0e2c79cd5028bbad75da5e66db8a1ed3">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a8c753efe377543f507e4ed983acbbd57">tgui::BackendRenderTargetRaylib</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#aec6974cbb3921b48f5be006f8f8a431f">tgui::BackendRenderTargetSDL</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#ae9a1a0b515e7841b95ccda91e1da3747">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a0e2c79cd5028bbad75da5e66db8a1ed3">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a8c753efe377543f507e4ed983acbbd57">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#aec6974cbb3921b48f5be006f8f8a431f">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#a4709f3c24cf430de414c3052f871513e">tgui::BackendRenderTargetSDLGPU</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1041,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 </dl>
 <p>Both rectangles may be empty when nothing that will be drawn is going to be visible. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#af2055057ede548104ec333c3a4157d8b">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a53c8fcfa45a9447956333c4cfb0dbcad">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a49a01596c9adabe970dac635a0fb178c">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#acaaf92a8889eac273db78971ab3f50cf">tgui::BackendRenderTargetSDL</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ae346fa12c8f5df864800f299c4c63e6a">tgui::BackendRenderTargetSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#af2055057ede548104ec333c3a4157d8b">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#a53c8fcfa45a9447956333c4cfb0dbcad">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#a49a01596c9adabe970dac635a0fb178c">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#acaaf92a8889eac273db78971ab3f50cf">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#a5a6feeb2e840299f69e53c76d55ebfe2">tgui::BackendRenderTargetSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#ae346fa12c8f5df864800f299c4c63e6a">tgui::BackendRenderTargetSFML</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1052,7 @@ std::vector&lt; std::pair&lt; <a class="el" href="classtgui_1_1Rect.html">FloatR
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:02 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

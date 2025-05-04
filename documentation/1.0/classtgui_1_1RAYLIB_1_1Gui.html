@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -166,6 +166,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aefa9b4079f09288e7727a6ea291ae853 inherit pub_methods_classtgui_1_1BackendGuiRaylib" id="r_aefa9b4079f09288e7727a6ea291ae853"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structtgui_1_1Event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiRaylib.html#aefa9b4079f09288e7727a6ea291ae853">generateEventQueue</a> (bool processKeyEvents)</td></tr>
 <tr class="memdesc:aefa9b4079f09288e7727a6ea291ae853 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes events that occured during the last frame and turns them into TGUI events for handleEvent.  <br /></td></tr>
 <tr class="separator:aefa9b4079f09288e7727a6ea291ae853 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392a290fe2b0107dade377e232461613 inherit pub_methods_classtgui_1_1BackendGuiRaylib" id="r_a392a290fe2b0107dade377e232461613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiRaylib.html#a392a290fe2b0107dade377e232461613">startTextInput</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect) override</td></tr>
+<tr class="memdesc:a392a290fe2b0107dade377e232461613 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being opened.  <br /></td></tr>
+<tr class="separator:a392a290fe2b0107dade377e232461613 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217667b2cf9f75d1e1817412912f5057 inherit pub_methods_classtgui_1_1BackendGuiRaylib" id="r_a217667b2cf9f75d1e1817412912f5057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiRaylib.html#a217667b2cf9f75d1e1817412912f5057">stopTextInput</a> () override</td></tr>
+<tr class="memdesc:a217667b2cf9f75d1e1817412912f5057 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed.  <br /></td></tr>
+<tr class="separator:a217667b2cf9f75d1e1817412912f5057 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78036d925035ab080f8fcacb87630b09 inherit pub_methods_classtgui_1_1BackendGuiRaylib" id="r_a78036d925035ab080f8fcacb87630b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGuiRaylib.html#a78036d925035ab080f8fcacb87630b09">setSoftKeyboardFunctions</a> (std::function&lt; void()&gt; showKeyboardFunc, std::function&lt; void()&gt; hideKeyboardFunc, std::function&lt; int()&gt; getKeyUnicodeFunc, std::function&lt; void()&gt; clearLastKeyFunc)</td></tr>
+<tr class="memdesc:a78036d925035ab080f8fcacb87630b09 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets functions that are called to control the soft/virtual keyboard.  <br /></td></tr>
+<tr class="separator:a78036d925035ab080f8fcacb87630b09 inherit pub_methods_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtgui_1_1BackendGui"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtgui_1_1BackendGui')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td></tr>
 <tr class="memitem:aeb5fdb7c76332a10f06c31339d7e31c9 inherit pub_methods_classtgui_1_1BackendGui" id="r_aeb5fdb7c76332a10f06c31339d7e31c9"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>BackendGui</b> ()</td></tr>
@@ -206,9 +215,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabKeyUsageEnabled
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTabKeyUsageEnabled</b> () const</td></tr>
 <tr class="memdesc:ac5adcae107a0b8413437da826f4acc7c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab key usage is enabled (if so, pressing tab will focus another widget) <br /></td></tr>
 <tr class="separator:ac5adcae107a0b8413437da826f4acc7c inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
-<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui. <br /></td></tr>
+<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a85a7ab208f745e1d33d1d216ba59382c">draw</a> ()</td></tr>
+<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui.  <br /></td></tr>
 <tr class="separator:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb8b39bb30ad4e6c16c06fb07c6863d inherit pub_methods_classtgui_1_1BackendGui" id="r_a5cb8b39bb30ad4e6c16c06fb07c6863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">RootContainer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a5cb8b39bb30ad4e6c16c06fb07c6863d">getContainer</a> () const</td></tr>
 <tr class="memdesc:a5cb8b39bb30ad4e6c16c06fb07c6863d inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal container of the <a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a>.  <br /></td></tr>
@@ -342,12 +350,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a cl
 <tr class="memitem:aa47fbf5f2463a486feefff9a26357ede inherit pub_methods_classtgui_1_1BackendGui" id="r_aa47fbf5f2463a486feefff9a26357ede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#aa47fbf5f2463a486feefff9a26357ede">mapCoordsToPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> coord) const</td></tr>
 <tr class="memdesc:aa47fbf5f2463a486feefff9a26357ede inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position within the view to the corresponding pixel coordinate.  <br /></td></tr>
 <tr class="separator:aa47fbf5f2463a486feefff9a26357ede inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d19b02c54040288f87641510f5f933 inherit pub_methods_classtgui_1_1BackendGui" id="r_a46d19b02c54040288f87641510f5f933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a46d19b02c54040288f87641510f5f933">startTextInput</a> (<a class="el" href="classtgui_1_1Rect.html">FloatRect</a> inputRect)</td></tr>
-<tr class="memdesc:a46d19b02c54040288f87641510f5f933 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when focusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being opened.  <br /></td></tr>
-<tr class="separator:a46d19b02c54040288f87641510f5f933 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui" id="r_a0bead45d3dcdaa16d0cfc39a2cdb6770"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a0bead45d3dcdaa16d0cfc39a2cdb6770">stopTextInput</a> ()</td></tr>
-<tr class="memdesc:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed.  <br /></td></tr>
-<tr class="separator:a0bead45d3dcdaa16d0cfc39a2cdb6770 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui" id="r_aecf50b66a39d443fc0536a7d04e27c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#aecf50b66a39d443fc0536a7d04e27c82">setKeyboardNavigationEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether using the arrow keys can be used to navigate between widgets.  <br /></td></tr>
 <tr class="separator:aecf50b66a39d443fc0536a7d04e27c82 inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,6 +387,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseOnWindow</b> =
 <tr class="memitem:acadddac42d879982a0cc5a936e28677c inherit pro_attribs_classtgui_1_1BackendGuiRaylib" id="r_acadddac42d879982a0cc5a936e28677c"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_endMainLoop</b> = false</td></tr>
 <tr class="separator:acadddac42d879982a0cc5a936e28677c inherit pro_attribs_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec27bd50bd6b25873d29867499a29e7d inherit pro_attribs_classtgui_1_1BackendGuiRaylib" id="r_aec27bd50bd6b25873d29867499a29e7d"><td class="memItemLeft" align="right" valign="top">
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_showSoftKeyboardFunction</b></td></tr>
+<tr class="separator:aec27bd50bd6b25873d29867499a29e7d inherit pro_attribs_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70236f7f98ea1f23a720da4ff4ff5f14 inherit pro_attribs_classtgui_1_1BackendGuiRaylib" id="r_a70236f7f98ea1f23a720da4ff4ff5f14"><td class="memItemLeft" align="right" valign="top">
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_hideSoftKeyboardFunction</b></td></tr>
+<tr class="separator:a70236f7f98ea1f23a720da4ff4ff5f14 inherit pro_attribs_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c954a9a5e965f75d68c8bcffe3f5c8e inherit pro_attribs_classtgui_1_1BackendGuiRaylib" id="r_a9c954a9a5e965f75d68c8bcffe3f5c8e"><td class="memItemLeft" align="right" valign="top">
+std::function&lt; int()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getLastSoftKeyUnicodeFunction</b></td></tr>
+<tr class="separator:a9c954a9a5e965f75d68c8bcffe3f5c8e inherit pro_attribs_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabfc7bbfdd9303aee5df18e8105956e inherit pro_attribs_classtgui_1_1BackendGuiRaylib" id="r_aaabfc7bbfdd9303aee5df18e8105956e"><td class="memItemLeft" align="right" valign="top">
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_clearLastSoftKeyFunction</b></td></tr>
+<tr class="separator:aaabfc7bbfdd9303aee5df18e8105956e inherit pro_attribs_classtgui_1_1BackendGuiRaylib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classtgui_1_1BackendGui"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtgui_1_1BackendGui')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td></tr>
 <tr class="memitem:a42c49e587d6707a9e750cad12218aeba inherit pro_attribs_classtgui_1_1BackendGui" id="r_a42c49e587d6707a9e750cad12218aeba"><td class="memItemLeft" align="right" valign="top">
 std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastUpdateTime</b></td></tr>
@@ -454,7 +468,7 @@ std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendRenderTarget.html">B
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:03 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

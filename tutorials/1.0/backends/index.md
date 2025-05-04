@@ -154,7 +154,7 @@ The following backends exist and can be given as value to TGUI\_BACKEND:
         <div class="platform-icon"><img src="/resources/PlatformIcons/Windows.svg" title="Windows"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/Linux.svg" title="Linux"/></div>
         <div class="platform-icon"><img src="/resources/PlatformIcons/macOS.svg" title="macOS" class="dark-compatible"/></div>
-        <div class="platform-icon"></div>
+        <div class="platform-icon"><img src="/resources/PlatformIcons/Android.svg" title="Android"/></div>
         <div class="platform-icon"></div>
       </td>
       <td>raylib <span class="BackendDependencyVersion">(>=&nbsp;4.2)</span></td>

@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -181,30 +181,32 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGuiSDL.html#aabb3f9eea82a7449c8a37ab755df8216">  173</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendGuiSDL.html#aabb3f9eea82a7449c8a37ab755df8216">presentScreen</a>() = 0;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">#if ((SDL_MAJOR_VERSION == 2) &amp;&amp; (SDL_MINOR_VERSION &lt; 26))</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateFramebufferSize() = 0;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        SDL_Window* m_window = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordtype">float</span> m_dpiScale = 1;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordtype">bool</span> m_textInputStarted = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        SDL_Rect m_textInputRect = {};</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordtype">bool</span> m_touchFirstFingerDown = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        SDL_FingerID m_touchFirstFingerId = 0;      <span class="comment">// Only valid if m_touchFirstFingerDown is true</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        SDL_TouchID  m_touchFirstFingerTouchId = 0; <span class="comment">// Only valid if m_touchFirstFingerDown is true</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    };</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGuiSDL.html#aa2cdf6fc25f61930b9df9a8ca843705d">  173</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendGuiSDL.html#aa2cdf6fc25f61930b9df9a8ca843705d">renderFrame</a>(<a class="code hl_class" href="classtgui_1_1Color.html">Color</a> clearColor);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classtgui_1_1BackendGuiSDL.html#aabb3f9eea82a7449c8a37ab755df8216">  178</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtgui_1_1BackendGuiSDL.html#aabb3f9eea82a7449c8a37ab755df8216">presentScreen</a>() = 0;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#if ((SDL_MAJOR_VERSION == 2) &amp;&amp; (SDL_MINOR_VERSION &lt; 26))</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateFramebufferSize() = 0;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        SDL_Window* m_window = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordtype">float</span> m_dpiScale = 1;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordtype">bool</span> m_textInputStarted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        SDL_Rect m_textInputRect = {};</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">bool</span> m_touchFirstFingerDown = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        SDL_FingerID m_touchFirstFingerId = 0;      <span class="comment">// Only valid if m_touchFirstFingerDown is true</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        SDL_TouchID  m_touchFirstFingerTouchId = 0; <span class="comment">// Only valid if m_touchFirstFingerDown is true</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    };</div>
 </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_GUI_SDL_HPP</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>}</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#endif </span><span class="comment">// TGUI_BACKEND_GUI_SDL_HPP</span></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a13798cbb36143f1df4dc9be6f28a7aea"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a13798cbb36143f1df4dc9be6f28a7aea">tgui::BackendGuiSDL::startTextInput</a></div><div class="ttdeci">void startTextInput(FloatRect inputRect) override</div><div class="ttdoc">This function is called by TGUI when focusing a text field (EditBox or TextArea). It may result in th...</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a213980d508a62f6ecfdb23e8dc5e1b2c"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a213980d508a62f6ecfdb23e8dc5e1b2c">tgui::BackendGuiSDL::mainLoop</a></div><div class="ttdeci">void mainLoop(Color clearColor={240, 240, 240}) override</div><div class="ttdoc">Give the gui control over the main loop.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a42ce5d69bc640121d810c9b93eba5ecd"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a42ce5d69bc640121d810c9b93eba5ecd">tgui::BackendGuiSDL::BackendGuiSDL</a></div><div class="ttdeci">BackendGuiSDL()=default</div><div class="ttdoc">Default constructor.</div></div>
@@ -214,6 +216,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a81833153580803e08f18efb6c154d903"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a81833153580803e08f18efb6c154d903">tgui::BackendGuiSDL::isKeyboardModifierPressed</a></div><div class="ttdeci">bool isKeyboardModifierPressed(Event::KeyModifier modifierKey) const override</div><div class="ttdoc">Checks the state for one of the modifier keys.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a91aaf84ffba1622fa1cbf48ff9c607f3"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a91aaf84ffba1622fa1cbf48ff9c607f3">tgui::BackendGuiSDL::stopTextInput</a></div><div class="ttdeci">void stopTextInput() override</div><div class="ttdoc">This function is called by TGUI when unfocusing a text field (EditBox or TextArea)....</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_a9b24c1126b3d4fc2cc4012070ecb498a"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#a9b24c1126b3d4fc2cc4012070ecb498a">tgui::BackendGuiSDL::handleEvent</a></div><div class="ttdeci">bool handleEvent(const SDL_Event &amp;event)</div><div class="ttdoc">Passes the event to the widgets.</div></div>
+<div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_aa2cdf6fc25f61930b9df9a8ca843705d"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#aa2cdf6fc25f61930b9df9a8ca843705d">tgui::BackendGuiSDL::renderFrame</a></div><div class="ttdeci">virtual void renderFrame(Color clearColor)</div><div class="ttdoc">Clears the screen, draws the gui and then presents the frame.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_aabb3f9eea82a7449c8a37ab755df8216"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#aabb3f9eea82a7449c8a37ab755df8216">tgui::BackendGuiSDL::presentScreen</a></div><div class="ttdeci">virtual void presentScreen()=0</div><div class="ttdoc">Shows the drawn content with SDL_GL_SwapWindow or SDL_RenderPresent, depending on the renderer.</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGuiSDL_html_abd69beaa1f3402d8f594f58d97d3a4e6"><div class="ttname"><a href="classtgui_1_1BackendGuiSDL.html#abd69beaa1f3402d8f594f58d97d3a4e6">tgui::BackendGuiSDL::updateTextCursorPosition</a></div><div class="ttdeci">void updateTextCursorPosition(FloatRect inputRect, Vector2f caretPos) override</div><div class="ttdoc">This function is called by TGUI when the position of the caret changes in a text field (EditBox or Te...</div></div>
 <div class="ttc" id="aclasstgui_1_1BackendGui_html_aa9aeccb7ef5164f64cfb7a91307a0bb4"><div class="ttname"><a href="classtgui_1_1BackendGui.html#aa9aeccb7ef5164f64cfb7a91307a0bb4">tgui::BackendGui::handleEvent</a></div><div class="ttdeci">bool handleEvent(Event event)</div><div class="ttdoc">Passes the event to the widgets.</div></div>
@@ -226,7 +229,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:02 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

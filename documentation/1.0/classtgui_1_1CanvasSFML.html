@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -210,6 +210,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22f149e4f2608b4f2055176f18d992cc" id="r_a22f149e4f2608b4f2055176f18d992cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22f149e4f2608b4f2055176f18d992cc">getViewport</a> () const</td></tr>
 <tr class="memdesc:a22f149e4f2608b4f2055176f18d992cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the viewport of the currently applied view, applied to this canvas.  <br /></td></tr>
 <tr class="separator:a22f149e4f2608b4f2055176f18d992cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6226ab3c3691306c5a541e88296debb" id="r_ae6226ab3c3691306c5a541e88296debb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6226ab3c3691306c5a541e88296debb">mapPixelToCoords</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> point) const</td></tr>
+<tr class="memdesc:ae6226ab3c3691306c5a541e88296debb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a point on the canvas to a position within the canvas view.  <br /></td></tr>
+<tr class="separator:ae6226ab3c3691306c5a541e88296debb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3b71488500863cb3ddb38e9079dfd5" id="r_a4a3b71488500863cb3ddb38e9079dfd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a3b71488500863cb3ddb38e9079dfd5">mapCoordsToPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> coord) const</td></tr>
+<tr class="memdesc:a4a3b71488500863cb3ddb38e9079dfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position within the canvas view to the corresponding point on the canvas.  <br /></td></tr>
+<tr class="separator:a4a3b71488500863cb3ddb38e9079dfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aab30e342d377ae9e799c30479a0a86" id="r_a7aab30e342d377ae9e799c30479a0a86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aab30e342d377ae9e799c30479a0a86">setSmooth</a> (bool smooth)</td></tr>
 <tr class="memdesc:a7aab30e342d377ae9e799c30479a0a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable texture smoothing.  <br /></td></tr>
 <tr class="separator:a7aab30e342d377ae9e799c30479a0a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1318,6 +1324,76 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="a4a3b71488500863cb3ddb38e9079dfd5" name="a4a3b71488500863cb3ddb38e9079dfd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3b71488500863cb3ddb38e9079dfd5">&#9670;&#160;</a></span>mapCoordsToPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::CanvasSFML::mapCoordsToPixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a></td>          <td class="paramname"><span class="paramname"><em>coord</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a position within the canvas view to the corresponding point on the canvas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coord</td><td>position within the canvas view </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted point, relative to the canvas position </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.9 </dd></dl>
+
+</div>
+</div>
+<a id="ae6226ab3c3691306c5a541e88296debb" name="ae6226ab3c3691306c5a541e88296debb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6226ab3c3691306c5a541e88296debb">&#9670;&#160;</a></span>mapPixelToCoords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> tgui::CanvasSFML::mapPixelToCoords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a></td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a point on the canvas to a position within the canvas view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>coordinate of point on top of the canvas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted point, in "world" coordinates </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.9 </dd></dl>
+
+</div>
+</div>
 <a id="a590f75276824c25bdf368cf2e7887d02" name="a590f75276824c25bdf368cf2e7887d02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a590f75276824c25bdf368cf2e7887d02">&#9670;&#160;</a></span>resetView()</h2>
 
@@ -1476,7 +1552,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:02 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

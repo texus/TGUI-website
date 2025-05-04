@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -133,10 +133,11 @@ Inheritance diagram for tgui::BackendGui:</div>
 <area href="classtgui_1_1GLFW__OPENGL3_1_1Gui.html" title="Gui class for GLFW + OpenGL3 backend (using FreeType for fonts)" alt="tgui::GLFW_OPENGL3::Gui" shape="rect" coords="191,168,372,192"/>
 <area href="classtgui_1_1RAYLIB_1_1Gui.html" title="Gui class for raylib." alt="tgui::RAYLIB::Gui" shape="rect" coords="382,112,563,136"/>
 <area href="classtgui_1_1SDL__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using FreeType for fonts)" alt="tgui::SDL_GLES2::Gui" shape="rect" coords="764,112,945,136"/>
-<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="764,168,945,192"/>
-<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="764,224,945,248"/>
-<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="764,280,945,304"/>
-<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="764,336,945,360"/>
+<area href="classtgui_1_1SDL__GPU_1_1Gui.html" title="Gui class for SDL + SDL_ttf, using SDL&#39;s GPU API (https://wiki.libsdl.org/SDL3/CategoryGPU) for rende..." alt="tgui::SDL_GPU::Gui" shape="rect" coords="764,168,945,192"/>
+<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="764,224,945,248"/>
+<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="764,280,945,304"/>
+<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="764,336,945,360"/>
+<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="764,392,945,416"/>
 <area href="classtgui_1_1SFML__GRAPHICS_1_1Gui.html" title="Gui class for SFML (using sfml-graphics module for rendering and font)" alt="tgui::SFML_GRAPHICS::Gui" shape="rect" coords="1146,112,1327,136"/>
 <area href="classtgui_1_1SFML__OPENGL3_1_1Gui.html" title="Gui class for sfml-window + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SFML_OPENGL3::Gui" shape="rect" coords="1146,168,1327,192"/>
   </map>
@@ -183,9 +184,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabKeyUsageEnabled
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTabKeyUsageEnabled</b> () const</td></tr>
 <tr class="memdesc:ac5adcae107a0b8413437da826f4acc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab key usage is enabled (if so, pressing tab will focus another widget) <br /></td></tr>
 <tr class="separator:ac5adcae107a0b8413437da826f4acc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top"><a id="a85a7ab208f745e1d33d1d216ba59382c" name="a85a7ab208f745e1d33d1d216ba59382c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
-<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui. <br /></td></tr>
+<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85a7ab208f745e1d33d1d216ba59382c">draw</a> ()</td></tr>
+<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui.  <br /></td></tr>
 <tr class="separator:a85a7ab208f745e1d33d1d216ba59382c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb8b39bb30ad4e6c16c06fb07c6863d" id="r_a5cb8b39bb30ad4e6c16c06fb07c6863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">RootContainer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb8b39bb30ad4e6c16c06fb07c6863d">getContainer</a> () const</td></tr>
 <tr class="memdesc:a5cb8b39bb30ad4e6c16c06fb07c6863d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal container of the <a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a>.  <br /></td></tr>
@@ -457,6 +457,35 @@ std::shared_ptr&lt; <a class="el" href="classtgui_1_1BackendRenderTarget.html">B
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Widgets should be named as if they are C++ variables, i.e. names must not include any whitespace, or most symbols (e.g.: +, -, *, /, ., &amp;), and should not start with a number. If you do not follow these rules, layout expressions may give unexpected results. Alphanumeric characters and underscores are safe to use, and widgets are permitted to have no name. </dd></dl>
+
+</div>
+</div>
+<a id="a85a7ab208f745e1d33d1d216ba59382c" name="a85a7ab208f745e1d33d1d216ba59382c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a7ab208f745e1d33d1d216ba59382c">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGui::draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws all the widgets that were added to the gui. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1SDL__GPU_1_1Gui.html#a956b07e3df438aabf396151972eec9be">tgui::SDL_GPU::Gui</a>.</p>
 
 </div>
 </div>
@@ -1925,7 +1954,7 @@ template&lt;class WidgetType&gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiSDL.html#a13798cbb36143f1df4dc9be6f28a7aea">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ad8a4447db8c9587bab8fa1e8e99fa97b">tgui::BackendGuiSFML</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiRaylib.html#a392a290fe2b0107dade377e232461613">tgui::BackendGuiRaylib</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a13798cbb36143f1df4dc9be6f28a7aea">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ad8a4447db8c9587bab8fa1e8e99fa97b">tgui::BackendGuiSFML</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +1983,7 @@ template&lt;class WidgetType&gt; </div>
 
 <p>This function is called by TGUI when unfocusing a text field (<a class="el" href="classtgui_1_1EditBox.html" title="Edit box widget.">EditBox</a> or <a class="el" href="classtgui_1_1TextArea.html" title="Text area widget.">TextArea</a>). It may result in the software keyboard being closed. </p>
 
-<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiSDL.html#a91aaf84ffba1622fa1cbf48ff9c607f3">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ae09eb961d5836a8e45232304badb0f26">tgui::BackendGuiSFML</a>.</p>
+<p>Reimplemented in <a class="el" href="classtgui_1_1BackendGuiRaylib.html#a217667b2cf9f75d1e1817412912f5057">tgui::BackendGuiRaylib</a>, <a class="el" href="classtgui_1_1BackendGuiSDL.html#a91aaf84ffba1622fa1cbf48ff9c607f3">tgui::BackendGuiSDL</a>, and <a class="el" href="classtgui_1_1BackendGuiSFML.html#ae09eb961d5836a8e45232304badb0f26">tgui::BackendGuiSFML</a>.</p>
 
 </div>
 </div>
@@ -2061,7 +2090,7 @@ template&lt;class WidgetType&gt; </div>
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:02 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

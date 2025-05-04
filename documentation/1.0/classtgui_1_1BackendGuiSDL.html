@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -119,12 +119,13 @@ Inheritance diagram for tgui::BackendGuiSDL:</div>
  <div class="center">
   <img src="classtgui_1_1BackendGuiSDL.png" usemap="#tgui::BackendGuiSDL_map" alt=""/>
   <map id="tgui::BackendGuiSDL_map" name="tgui::BackendGuiSDL_map">
-<area href="classtgui_1_1BackendGui.html" title="Base class for the Gui." alt="tgui::BackendGui" shape="rect" coords="382,0,563,24"/>
+<area href="classtgui_1_1BackendGui.html" title="Base class for the Gui." alt="tgui::BackendGui" shape="rect" coords="477,0,658,24"/>
 <area href="classtgui_1_1SDL__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using FreeType for fonts)" alt="tgui::SDL_GLES2::Gui" shape="rect" coords="0,112,181,136"/>
-<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="191,112,372,136"/>
-<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="382,112,563,136"/>
-<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="573,112,754,136"/>
-<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="764,112,945,136"/>
+<area href="classtgui_1_1SDL__GPU_1_1Gui.html" title="Gui class for SDL + SDL_ttf, using SDL&#39;s GPU API (https://wiki.libsdl.org/SDL3/CategoryGPU) for rende..." alt="tgui::SDL_GPU::Gui" shape="rect" coords="191,112,372,136"/>
+<area href="classtgui_1_1SDL__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using FreeType for fonts)" alt="tgui::SDL_OPENGL3::Gui" shape="rect" coords="382,112,563,136"/>
+<area href="classtgui_1_1SDL__RENDERER_1_1Gui.html" title="Gui class for SDL + SDL_ttf (using SDL_Renderer struct for rendering)" alt="tgui::SDL_RENDERER::Gui" shape="rect" coords="573,112,754,136"/>
+<area href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html" title="Gui class for SDL + GLES2 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_GLES2::Gui" shape="rect" coords="764,112,945,136"/>
+<area href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html" title="Gui class for SDL + OpenGL3 backend (using SDL_ttf for fonts)" alt="tgui::SDL_TTF_OPENGL3::Gui" shape="rect" coords="955,112,1136,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -200,9 +201,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabKeyUsageEnabled
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTabKeyUsageEnabled</b> () const</td></tr>
 <tr class="memdesc:ac5adcae107a0b8413437da826f4acc7c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab key usage is enabled (if so, pressing tab will focus another widget) <br /></td></tr>
 <tr class="separator:ac5adcae107a0b8413437da826f4acc7c inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
-<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui. <br /></td></tr>
+<tr class="memitem:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui" id="r_a85a7ab208f745e1d33d1d216ba59382c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a85a7ab208f745e1d33d1d216ba59382c">draw</a> ()</td></tr>
+<tr class="memdesc:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the widgets that were added to the gui.  <br /></td></tr>
 <tr class="separator:a85a7ab208f745e1d33d1d216ba59382c inherit pub_methods_classtgui_1_1BackendGui"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb8b39bb30ad4e6c16c06fb07c6863d inherit pub_methods_classtgui_1_1BackendGui" id="r_a5cb8b39bb30ad4e6c16c06fb07c6863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1RootContainer.html#a10ea4a0998fb8627e5c26de394cd4ded">RootContainer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1BackendGui.html#a5cb8b39bb30ad4e6c16c06fb07c6863d">getContainer</a> () const</td></tr>
 <tr class="memdesc:a5cb8b39bb30ad4e6c16c06fb07c6863d inherit pub_methods_classtgui_1_1BackendGui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal container of the <a class="el" href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)">Gui</a>.  <br /></td></tr>
@@ -350,6 +350,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a721433556b181547f0b5fee514a60b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c10d3beefcf0e749cfdd8ab39d0ca67" id="r_a5c10d3beefcf0e749cfdd8ab39d0ca67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c10d3beefcf0e749cfdd8ab39d0ca67">updateContainerSize</a> () override</td></tr>
 <tr class="separator:a5c10d3beefcf0e749cfdd8ab39d0ca67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cdf6fc25f61930b9df9a8ca843705d" id="r_aa2cdf6fc25f61930b9df9a8ca843705d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2cdf6fc25f61930b9df9a8ca843705d">renderFrame</a> (<a class="el" href="classtgui_1_1Color.html">Color</a> clearColor)</td></tr>
+<tr class="memdesc:aa2cdf6fc25f61930b9df9a8ca843705d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the screen, draws the gui and then presents the frame.  <br /></td></tr>
+<tr class="separator:aa2cdf6fc25f61930b9df9a8ca843705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb3f9eea82a7449c8a37ab755df8216" id="r_aabb3f9eea82a7449c8a37ab755df8216"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb3f9eea82a7449c8a37ab755df8216">presentScreen</a> ()=0</td></tr>
 <tr class="memdesc:aabb3f9eea82a7449c8a37ab755df8216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the drawn content with SDL_GL_SwapWindow or SDL_RenderPresent, depending on the renderer.  <br /></td></tr>
 <tr class="separator:aabb3f9eea82a7449c8a37ab755df8216"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -714,7 +717,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Shows the drawn content with SDL_GL_SwapWindow or SDL_RenderPresent, depending on the renderer. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html#a2c6566f539713a0ba30c202ba345d33d">tgui::SDL_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__OPENGL3_1_1Gui.html#a9332bc3678c859ea660f774a2d731122">tgui::SDL_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__RENDERER_1_1Gui.html#a768c167c571cfb3b4f80606e2355478c">tgui::SDL_RENDERER::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html#ae07429d3119c45987dfef23895f3ebe4">tgui::SDL_TTF_GLES2::Gui</a>, and <a class="el" href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html#affb687785d81ade1685ce07af87d52c3">tgui::SDL_TTF_OPENGL3::Gui</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1SDL__GLES2_1_1Gui.html#a2c6566f539713a0ba30c202ba345d33d">tgui::SDL_GLES2::Gui</a>, <a class="el" href="classtgui_1_1SDL__GPU_1_1Gui.html#a247a8867290ea50e1798de48f0075362">tgui::SDL_GPU::Gui</a>, <a class="el" href="classtgui_1_1SDL__OPENGL3_1_1Gui.html#a9332bc3678c859ea660f774a2d731122">tgui::SDL_OPENGL3::Gui</a>, <a class="el" href="classtgui_1_1SDL__RENDERER_1_1Gui.html#a768c167c571cfb3b4f80606e2355478c">tgui::SDL_RENDERER::Gui</a>, <a class="el" href="classtgui_1_1SDL__TTF__GLES2_1_1Gui.html#ae07429d3119c45987dfef23895f3ebe4">tgui::SDL_TTF_GLES2::Gui</a>, and <a class="el" href="classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html#affb687785d81ade1685ce07af87d52c3">tgui::SDL_TTF_OPENGL3::Gui</a>.</p>
+
+</div>
+</div>
+<a id="aa2cdf6fc25f61930b9df9a8ca843705d" name="aa2cdf6fc25f61930b9df9a8ca843705d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cdf6fc25f61930b9df9a8ca843705d">&#9670;&#160;</a></span>renderFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGuiSDL::renderFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Color.html">Color</a></td>          <td class="paramname"><span class="paramname"><em>clearColor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the screen, draws the gui and then presents the frame. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1SDL__GPU_1_1Gui.html#a3b93adc6a2cd2c4dc61f28f096c5e4c3">tgui::SDL_GPU::Gui</a>.</p>
 
 </div>
 </div>
@@ -889,7 +921,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:02 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

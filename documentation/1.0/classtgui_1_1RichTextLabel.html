@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.8</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
    </div>
   </td>
  </tr>
@@ -185,6 +185,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a871c6bab902a1436312c0b37aee67510" id="r_a871c6bab902a1436312c0b37aee67510"><td class="memItemLeft" align="right" valign="top"><a id="a871c6bab902a1436312c0b37aee67510" name="a871c6bab902a1436312c0b37aee67510"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RichTextLabel</b> (const char *typeName=<a class="el" href="#a17981da92014231a573a247966eca255">StaticWidgetType</a>, bool initRenderer=true)</td></tr>
 <tr class="separator:a871c6bab902a1436312c0b37aee67510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f43bf2862f180d75f1bee6cc4a5dbf" id="r_a25f43bf2862f180d75f1bee6cc4a5dbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f43bf2862f180d75f1bee6cc4a5dbf">findLinkAtPos</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2f</a> pos) const</td></tr>
+<tr class="memdesc:a25f43bf2862f180d75f1bee6cc4a5dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the link at a given position if there is one.  <br /></td></tr>
+<tr class="separator:a25f43bf2862f180d75f1bee6cc4a5dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649916e6956e3107b5a0bd0f7064a3b3" id="r_a649916e6956e3107b5a0bd0f7064a3b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649916e6956e3107b5a0bd0f7064a3b3">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
 <tr class="memdesc:a649916e6956e3107b5a0bd0f7064a3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <br /></td></tr>
 <tr class="separator:a649916e6956e3107b5a0bd0f7064a3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -654,9 +657,9 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9cf90e13978d212b7df4d68fc10faab4" id="r_a9cf90e13978d212b7df4d68fc10faab4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cf90e13978d212b7df4d68fc10faab4">constructRichLineBlueprints</a> (std::vector&lt; std::vector&lt; <a class="el" href="structtgui_1_1Text_1_1Blueprint.html">Text::Blueprint</a> &gt; &gt; &amp;textPiecesLines, std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; &amp;images)</td></tr>
-<tr class="memdesc:a9cf90e13978d212b7df4d68fc10faab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used by <a class="el" href="#ae52805bd934d624db68063fc31aee9be" title="Rearrange the text (recreates m_textPieces), making use of the given size of maximum text width.">rearrangeText()</a> to create the lines before word-wrapping is applied.  <br /></td></tr>
-<tr class="separator:a9cf90e13978d212b7df4d68fc10faab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e7a47fd5d7df7e5b2cf1b6512c0c4" id="r_a631e7a47fd5d7df7e5b2cf1b6512c0c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631e7a47fd5d7df7e5b2cf1b6512c0c4">constructRichLineBlueprints</a> (std::vector&lt; std::vector&lt; <a class="el" href="structtgui_1_1Text_1_1Blueprint.html">Text::Blueprint</a> &gt; &gt; &amp;textPiecesLines, std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; &amp;images) const</td></tr>
+<tr class="memdesc:a631e7a47fd5d7df7e5b2cf1b6512c0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used by <a class="el" href="#ae52805bd934d624db68063fc31aee9be" title="Rearrange the text (recreates m_textPieces), making use of the given size of maximum text width.">rearrangeText()</a> to create the lines before word-wrapping is applied.  <br /></td></tr>
+<tr class="separator:a631e7a47fd5d7df7e5b2cf1b6512c0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92489fa1d4b0a23020b81d4fb640b838" id="r_a92489fa1d4b0a23020b81d4fb640b838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92489fa1d4b0a23020b81d4fb640b838">rendererChanged</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property) override</td></tr>
 <tr class="memdesc:a92489fa1d4b0a23020b81d4fb640b838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when one of the properties of the renderer is changed.  <br /></td></tr>
 <tr class="separator:a92489fa1d4b0a23020b81d4fb640b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -730,6 +733,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:af40af75761c19ce4c066cbd5e5f5a744" id="r_af40af75761c19ce4c066cbd5e5f5a744"><td class="memItemLeft" align="right" valign="top"><a id="af40af75761c19ce4c066cbd5e5f5a744" name="af40af75761c19ce4c066cbd5e5f5a744"></a>
 std::vector&lt; <a class="el" href="classtgui_1_1Sprite.html">Sprite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_images</b></td></tr>
 <tr class="separator:af40af75761c19ce4c066cbd5e5f5a744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb9ac3b956acfdabff282166993581a" id="r_a5cb9ac3b956acfdabff282166993581a"><td class="memItemLeft" align="right" valign="top"><a id="a5cb9ac3b956acfdabff282166993581a" name="a5cb9ac3b956acfdabff282166993581a"></a>
+std::map&lt; std::pair&lt; std::size_t, std::size_t &gt;, <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_links</b></td></tr>
+<tr class="separator:a5cb9ac3b956acfdabff282166993581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd0f55c9fa6c0fc2791a1d9527f6430" id="r_a8fd0f55c9fa6c0fc2791a1d9527f6430"><td class="memItemLeft" align="right" valign="top"><a id="a8fd0f55c9fa6c0fc2791a1d9527f6430" name="a8fd0f55c9fa6c0fc2791a1d9527f6430"></a>
+std::map&lt; std::size_t, <a class="el" href="classtgui_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageLinks</b></td></tr>
+<tr class="separator:a8fd0f55c9fa6c0fc2791a1d9527f6430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classtgui_1_1Label"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtgui_1_1Label')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtgui_1_1Label.html">tgui::Label</a></td></tr>
 <tr class="memitem:a903136946299de73b280c1d3c04a6db2 inherit pro_attribs_classtgui_1_1Label" id="r_a903136946299de73b280c1d3c04a6db2"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_string</b></td></tr>
@@ -999,7 +1008,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <div class="line">               <span class="stringliteral">&quot;&lt;color=#00ff40&gt;O&lt;/color&gt;&lt;color=#00ffff&gt;R&lt;/color&gt;&lt;color=#0040ff&gt;F&lt;/color&gt;&lt;color=#7f00ff&gt;U&lt;/color&gt;&quot;</span></div>
 <div class="line">               <span class="stringliteral">&quot;&lt;color=#ff00bf&gt;L&lt;/color&gt;&lt;/b&gt; text. You can even include icons such as &lt;img=Folder.png&gt; and images:\n&quot;</span></div>
 <div class="line">               <span class="stringliteral">&quot;&lt;img=\&quot;image.png\&quot;&gt;\n\nLines that are too long will wrap around and a vertical scrollbar can be included &quot;</span></div>
-<div class="line">               <span class="stringliteral">&quot;when there are too many lines!&quot;</span>);</div>
+<div class="line">               <span class="stringliteral">&quot;when there are &lt;url=abc&gt;too many lines&lt;/url&gt;!&quot;</span>);</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0d7a93bf7609433dc84a09087701b3f8" name="a0d7a93bf7609433dc84a09087701b3f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d7a93bf7609433dc84a09087701b3f8">&#9670;&#160;</a></span>clone()</h2>
@@ -1032,8 +1041,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
-<a id="a9cf90e13978d212b7df4d68fc10faab4" name="a9cf90e13978d212b7df4d68fc10faab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cf90e13978d212b7df4d68fc10faab4">&#9670;&#160;</a></span>constructRichLineBlueprints()</h2>
+<a id="a631e7a47fd5d7df7e5b2cf1b6512c0c4" name="a631e7a47fd5d7df7e5b2cf1b6512c0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631e7a47fd5d7df7e5b2cf1b6512c0c4">&#9670;&#160;</a></span>constructRichLineBlueprints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1058,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>images</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classtgui_1_1Texture.html">Texture</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>images</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -1179,6 +1188,41 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="a25f43bf2862f180d75f1bee6cc4a5dbf" name="a25f43bf2862f180d75f1bee6cc4a5dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f43bf2862f180d75f1bee6cc4a5dbf">&#9670;&#160;</a></span>findLinkAtPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1String.html">String</a> tgui::RichTextLabel::findLinkAtPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the link at a given position if there is one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Position inside the label (i.e. relative to the position of the label)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Url value if the text at the given position is inside a &lt;url&gt; tag, an empty string otherwise</dd></dl>
+<p>Suppose the text in the label is set to "&lt;url&gt;red&lt;/url&gt; or &lt;url=blue&gt;green&lt;/url&gt;". If the position is on top of the word "red" then this function returns "red". If the position is on top of the word "green" then this function returns "blue". If the position is not on top of "red" and not on top of "green" then this function returns an empty string. </p>
+
+</div>
+</div>
 <a id="ae52805bd934d624db68063fc31aee9be" name="ae52805bd934d624db68063fc31aee9be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae52805bd934d624db68063fc31aee9be">&#9670;&#160;</a></span>rearrangeText()</h2>
 
@@ -1250,7 +1294,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 20:03:03 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->
