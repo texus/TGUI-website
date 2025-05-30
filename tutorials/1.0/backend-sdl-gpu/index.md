@@ -120,3 +120,132 @@ while (!quit)
 In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
 To draw all widgets in the gui, you need to call both `gui.prepareDraw` and `gui.draw` once per frame. All widgets are drawn at once, if you wish to render SDL contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).
+
+
+### Multiple windows
+
+TGUI supports multiple SDL windows, as long as you only create a single SDL_GPUDevice object. Each window would have it's own Gui object. Below you can find an example code of how to handle two windows.
+
+```c++
+#include <TGUI/TGUI.hpp>
+#include <TGUI/Backend/SDL-GPU.hpp>
+#include <SDL3/SDL_main.h>
+
+void run_application(SDL_GPUDevice* device, SDL_Window* window1, SDL_Window* window2)
+{
+    tgui::Gui gui1(window1, device);
+    tgui::Gui gui2(window2, device);
+
+    // Add widgets to the guis here
+
+    const Uint32 windowId1 = SDL_GetWindowID(window1);
+    const Uint32 windowId2 = SDL_GetWindowID(window2);
+
+    bool quit = false;
+    while (!quit)
+    {
+        SDL_Event event;
+        while (SDL_PollEvent(&event) != 0)
+        {
+            // Make sure the application stops when all windows are closed
+            if (event.type == SDL_EVENT_QUIT)
+                quit = true;
+
+            // Close the window when its close button is pressed
+            else if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED)
+            {
+                if (window1 && (event.window.windowID == windowId1))
+                {
+                    SDL_DestroyWindow(window1);
+                    window1 = nullptr;
+                }
+                else if (window2 && (event.window.windowID == windowId2))
+                {
+                    SDL_DestroyWindow(window2);
+                    window2 = nullptr;
+                }
+            }
+
+            // Pass the event to the correct gui
+            if (window1 && (event.window.windowID == windowId1))
+            {
+                gui1.handleEvent(event);
+            }
+            else if (window2 && (event.window.windowID == windowId2))
+            {
+                gui2.handleEvent(event);
+            }
+        }
+
+        SDL_GPUCommandBuffer* cmdBuffer = SDL_AcquireGPUCommandBuffer(device);
+
+        // Render to window1
+        SDL_GPUTexture* swapchainTexture1 = nullptr;
+        SDL_WaitAndAcquireGPUSwapchainTexture(cmdBuffer, window1, &swapchainTexture1, NULL, NULL);
+        if (swapchainTexture1)
+        {
+            SDL_GPUCopyPass* copyPass = SDL_BeginGPUCopyPass(cmdBuffer);
+            gui1.prepareDraw(cmdBuffer, copyPass);
+            SDL_EndGPUCopyPass(copyPass);
+
+            SDL_GPUColorTargetInfo colorTargetInfo = {};
+            colorTargetInfo.texture = swapchainTexture1;
+            colorTargetInfo.clear_color = {200.f / 255.f, 200.f / 255.f, 200.f / 255.f, 1.f};
+            colorTargetInfo.load_op = SDL_GPU_LOADOP_CLEAR;
+            colorTargetInfo.store_op = SDL_GPU_STOREOP_STORE;
+            SDL_GPURenderPass* renderPass = SDL_BeginGPURenderPass(cmdBuffer, &colorTargetInfo, 1, NULL);
+            gui1.draw(renderPass);
+            SDL_EndGPURenderPass(renderPass);
+        }
+
+        // We could use a single command buffer for both windows, but it's probably better to already submit
+        // the commands for window1 here before we wait to acquire the framebuffer of window2.
+        SDL_SubmitGPUCommandBuffer(cmdBuffer);
+        cmdBuffer = SDL_AcquireGPUCommandBuffer(device);
+
+        // Render to window2
+        SDL_GPUTexture* swapchainTexture2 = nullptr;
+        SDL_WaitAndAcquireGPUSwapchainTexture(cmdBuffer, window2, &swapchainTexture2, NULL, NULL);
+        if (swapchainTexture2)
+        {
+            SDL_GPUCopyPass* copyPass = SDL_BeginGPUCopyPass(cmdBuffer);
+            gui2.prepareDraw(cmdBuffer, copyPass);
+            SDL_EndGPUCopyPass(copyPass);
+
+            SDL_GPUColorTargetInfo colorTargetInfo = {};
+            colorTargetInfo.texture = swapchainTexture2;
+            colorTargetInfo.clear_color = {200.f / 255.f, 200.f / 255.f, 200.f / 255.f, 1.f};
+            colorTargetInfo.load_op = SDL_GPU_LOADOP_CLEAR;
+            colorTargetInfo.store_op = SDL_GPU_STOREOP_STORE;
+            SDL_GPURenderPass* renderPass = SDL_BeginGPURenderPass(cmdBuffer, &colorTargetInfo, 1, NULL);
+            gui2.draw(renderPass);
+            SDL_EndGPURenderPass(renderPass);
+        }
+
+        SDL_SubmitGPUCommandBuffer(cmdBuffer);
+    }
+}
+
+int main(int, char **)
+{
+    SDL_Init(SDL_INIT_VIDEO);
+    TTF_Init();
+
+    SDL_GPUDevice* device = SDL_CreateGPUDevice(SDL_GPU_SHADERFORMAT_SPIRV | SDL_GPU_SHADERFORMAT_DXIL | SDL_GPU_SHADERFORMAT_MSL, false, nullptr);
+    SDL_Window* window1 = SDL_CreateWindow("TGUI example (SDL-GPU)", 800, 600, SDL_WINDOW_RESIZABLE);
+    SDL_Window* window2 = SDL_CreateWindow("TGUI example (SDL-GPU)", 800, 600, SDL_WINDOW_RESIZABLE);
+    SDL_ClaimWindowForGPUDevice(device, window1);
+    SDL_ClaimWindowForGPUDevice(device, window2);
+
+    run_application(device, window1, window2);
+
+    SDL_ReleaseWindowFromGPUDevice(device, window1);
+    SDL_ReleaseWindowFromGPUDevice(device, window2);
+    SDL_DestroyWindow(window1);
+    SDL_DestroyWindow(window2);
+    SDL_DestroyGPUDevice(device);
+    TTF_Quit();
+    SDL_Quit();
+    return 0;
+}
+```
