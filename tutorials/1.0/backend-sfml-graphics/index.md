@@ -78,7 +78,18 @@ while (window.isOpen())
 }
 ```
 
-In your event loop, `gui.handleEvent(event)` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
+If you are using SFML 3 then the pollEvent loop would look like this instead:
+```c++
+    while (const std::optional event = window.pollEvent())
+    {
+        gui.handleEvent(*event);
+
+        if (event->is<sf::Event::Closed>())
+            window.close();
+    }
+```
+
+In your event loop, `gui.handleEvent` is used to inform the gui about the event. The gui will make sure that the event ends up at the widget that needs it. If all widgets ignored the event then `handleEvent` will return `false`. This could be used to e.g. check if a mouse event was handled by the gui or should still be handled by your own code.
 
 To draw all widgets in the gui, you need to call `gui.draw()` once per frame, between the calls to `clear()` and `display()`. All widgets are drawn at once, if you wish to render SFML contents inbetween TGUI widgets then you need to use a [Canvas widget](../canvas/) or create a [custom widget](../custom-widgets).
 
