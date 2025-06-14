@@ -17,32 +17,32 @@ redirect_from: /bindings/index.html
 Packages:  
 **AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
 
-### TGUI 1.9
+### TGUI 1.10
 
 **Latest stable version**. Minimum supported compilers: GCC 7, Clang 6, VS2019
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.9.0.zip" style="Green" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.10.0.zip" style="Green" %}
 
 Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 3.0.0](https://www.sfml-dev.org/download/sfml/3.0.0/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-vc17-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-vc17-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-vc17-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-vc17-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-vc16-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-vc16-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-vc16-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 16 (2019) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-vc16-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-mingw-14.2.0-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.9.0/TGUI-1.9.0-mingw-14.2.0-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-mingw-14.2.0-32bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.10.0/TGUI-1.10.0-mingw-14.2.0-64bit-for-SFML-3.0.0.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 
 Packages:  
 **vcpkg** (Windows, Linux, macOS): [tgui](https://github.com/microsoft/vcpkg/tree/master/ports/tgui) (unofficial, contains SFML_GRAPHICS and SDL_RENDERER backend)  
-**PPA** (Ubuntu Linux): [libtgui-1.0-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends)  
+**PPA** (Ubuntu Linux): [libtgui-1.0-dev](https://launchpad.net/~texus/+archive/ubuntu/tgui) (official, contains all backends except raylib)  
 **brew** (macOS): [tgui](https://formulae.brew.sh/formula/tgui) (unofficial, uses SFML_GRAPHICS backend)  
 **MSYS2** (Windows): [mingw-w64-tgui](https://packages.msys2.org/base/mingw-w64-tgui) (unofficial, uses SFML_GRAPHICS backend)  
 

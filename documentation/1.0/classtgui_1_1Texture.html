@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.10</span>
    </div>
   </td>
  </tr>
@@ -214,6 +214,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a037ad61428e9334859e39c33456200c7" id="r_a037ad61428e9334859e39c33456200c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Rect.html">UIntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a037ad61428e9334859e39c33456200c7">getMiddleRect</a> () const</td></tr>
 <tr class="memdesc:a037ad61428e9334859e39c33456200c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the middle rect of the texture which is used for 9-slice scaling.  <br /></td></tr>
 <tr class="separator:a037ad61428e9334859e39c33456200c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032e2a41060f094fd3a588d33c36416e" id="r_a032e2a41060f094fd3a588d33c36416e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a032e2a41060f094fd3a588d33c36416e">setScaledNineSlice</a> (bool scaled)</td></tr>
+<tr class="memdesc:a032e2a41060f094fd3a588d33c36416e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the corners of the image can still scale with the image size when 9-slice scaling is used.  <br /></td></tr>
+<tr class="separator:a032e2a41060f094fd3a588d33c36416e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4898a471276a270d9b457cc99d20831" id="r_ab4898a471276a270d9b457cc99d20831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4898a471276a270d9b457cc99d20831">getScaledNineSlice</a> () const</td></tr>
+<tr class="memdesc:ab4898a471276a270d9b457cc99d20831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the corners of the image can still scale with the image size when 9-slice scaling is used.  <br /></td></tr>
+<tr class="separator:ab4898a471276a270d9b457cc99d20831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22582dcad7858fe59c1bffb5eb1ded09" id="r_a22582dcad7858fe59c1bffb5eb1ded09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22582dcad7858fe59c1bffb5eb1ded09">isTransparentPixel</a> (<a class="el" href="classtgui_1_1Vector2.html">Vector2u</a> pos) const</td></tr>
 <tr class="memdesc:a22582dcad7858fe59c1bffb5eb1ded09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a certain pixel is transparent.  <br /></td></tr>
 <tr class="separator:a22582dcad7858fe59c1bffb5eb1ded09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -626,6 +632,36 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns which part of the image was loaded. </p>
 <dl class="section return"><dt>Returns</dt><dd>Part of the image that was loaded </dd></dl>
+
+</div>
+</div>
+<a id="ab4898a471276a270d9b457cc99d20831" name="ab4898a471276a270d9b457cc99d20831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4898a471276a270d9b457cc99d20831">&#9670;&#160;</a></span>getScaledNineSlice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::Texture::getScaledNineSlice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether the corners of the image can still scale with the image size when 9-slice scaling is used. </p>
+<dl class="section return"><dt>Returns</dt><dd>Should the corners be scaled?</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a032e2a41060f094fd3a588d33c36416e" title="Sets whether the corners of the image can still scale with the image size when 9-slice scaling is use...">setScaledNineSlice</a> </dd></dl>
 
 </div>
 </div>
@@ -1173,6 +1209,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a032e2a41060f094fd3a588d33c36416e" name="a032e2a41060f094fd3a588d33c36416e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032e2a41060f094fd3a588d33c36416e">&#9670;&#160;</a></span>setScaledNineSlice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::Texture::setScaledNineSlice </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>scaled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the corners of the image can still scale with the image size when 9-slice scaling is used. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaled</td><td>Should the corners be scaled?</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This property only has an effect if 9-slice scaling is used, which is only when a Middle rect is set.</dd></dl>
+<p>If this property is set to false (default), then 9-slice scaling happens in the traditional way: the corners always keep their size while the rest of the image is stretched. When this property is set to true, the smallest value of width or height will determine the scale of the entire image (including the corners) and then the image is scaled with 9-slice scaling in one direction (depending on whether width or height is the largest). </p>
+
+</div>
+</div>
 <a id="a7c13cbdb5bf561090386cf2e80902528" name="a7c13cbdb5bf561090386cf2e80902528"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c13cbdb5bf561090386cf2e80902528">&#9670;&#160;</a></span>setShader()</h2>
 
@@ -1240,7 +1304,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sat Jun 14 2025 22:13:20 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

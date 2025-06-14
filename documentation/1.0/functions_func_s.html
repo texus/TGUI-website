@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.10</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,7 @@ $(function(){ initResizable(false); });
 <li>selectText()&#160;:&#160;<a class="el" href="classtgui_1_1EditBox.html#a2ae94629e81e23f03cf1486b1318677e">tgui::EditBox</a></li>
 <li>setAbsoluteView()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a42a800344aaf899db7cebaa4ed2f21c9">tgui::BackendGui</a></li>
 <li>setAbsoluteViewport()&#160;:&#160;<a class="el" href="classtgui_1_1BackendGui.html#a5dfe37be22f854d59f8e824b39e45d6c">tgui::BackendGui</a></li>
+<li>setActiveRenderer()&#160;:&#160;<a class="el" href="classtgui_1_1BackendRendererSDL.html#a6cf123e74a3291caef82d7fb5864a088">tgui::BackendRendererSDL</a></li>
 <li>setAlignment()&#160;:&#160;<a class="el" href="classtgui_1_1EditBox.html#a5c75160c3878bc40ce2e0442bb819d7c">tgui::EditBox</a></li>
 <li>setAllowCreateFolder()&#160;:&#160;<a class="el" href="classtgui_1_1FileDialog.html#a41e42b17f99c45e3d18e58d70ac454db">tgui::FileDialog</a></li>
 <li>setArrowBackgroundColor()&#160;:&#160;<a class="el" href="classtgui_1_1ComboBoxRenderer.html#acddd127f5294d979495408b39eb14663">tgui::ComboBoxRenderer</a>, <a class="el" href="classtgui_1_1ScrollbarRenderer.html#a53e4be712527c0fe77fda5d370d855e4">tgui::ScrollbarRenderer</a></li>
@@ -185,6 +186,7 @@ $(function(){ initResizable(false); });
 <li>setCheckColorHover()&#160;:&#160;<a class="el" href="classtgui_1_1RadioButtonRenderer.html#aff9d807f73cf5aada646ca07fd118d56">tgui::RadioButtonRenderer</a></li>
 <li>setChecked()&#160;:&#160;<a class="el" href="classtgui_1_1CheckBox.html#a3a37386561f0603f2b817b66a0e803ae">tgui::CheckBox</a>, <a class="el" href="classtgui_1_1RadioButton.html#a0596021260380cd00d8def5c7c1087dc">tgui::RadioButton</a></li>
 <li>setClearColor()&#160;:&#160;<a class="el" href="classtgui_1_1BackendRenderTarget.html#a2e9cdcc784853e11a90b64eed6407815">tgui::BackendRenderTarget</a>, <a class="el" href="classtgui_1_1BackendRenderTargetGLES2.html#afdce6cbacd087833673196300205b6cd">tgui::BackendRenderTargetGLES2</a>, <a class="el" href="classtgui_1_1BackendRenderTargetOpenGL3.html#aef0900779d4960758e519d77d451985b">tgui::BackendRenderTargetOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRenderTargetRaylib.html#acd4412198ccc9711f15b96d7fa78eaba">tgui::BackendRenderTargetRaylib</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDL.html#aa90b92daa0b44fdf57d5c7f4548400d9">tgui::BackendRenderTargetSDL</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSDLGPU.html#a171deef1dfeafac266dda0309561f4c3">tgui::BackendRenderTargetSDLGPU</a>, <a class="el" href="classtgui_1_1BackendRenderTargetSFML.html#abb33d510ed94218460ec017eedc1b838">tgui::BackendRenderTargetSFML</a></li>
+<li>setClientPadding()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindowRenderer.html#aed553d2ec748a9c8466ff1c37df32399">tgui::ChildWindowRenderer</a></li>
 <li>setClientSize()&#160;:&#160;<a class="el" href="classtgui_1_1ChildWindow.html#adb50861222d9c76c845c0bf0296abad3">tgui::ChildWindow</a>, <a class="el" href="classtgui_1_1MessageBox.html#ae776e32a30d8e592127f13b543f10819">tgui::MessageBox</a></li>
 <li>setClipboard()&#160;:&#160;<a class="el" href="classtgui_1_1Backend.html#a03c75f53ec64da205272fa15358dfcbf">tgui::Backend</a>, <a class="el" href="classtgui_1_1BackendGLFW.html#a66d06b634a9c15b644ae4c6f0ff29169">tgui::BackendGLFW</a>, <a class="el" href="classtgui_1_1BackendRaylib.html#ab3019b5ba9a3abe80babd8eff70efe39">tgui::BackendRaylib</a>, <a class="el" href="classtgui_1_1BackendSDL.html#a4fce48eb46cb3cf0590c1d5be82a5fe5">tgui::BackendSDL</a>, <a class="el" href="classtgui_1_1BackendSFML.html#a01cdda5bf06227cd3c9a819d67358d00">tgui::BackendSFML</a></li>
 <li>setClockwiseTurning()&#160;:&#160;<a class="el" href="classtgui_1_1Knob.html#a8000ba47a94dd75bf9cd040dfabff2b9">tgui::Knob</a></li>
@@ -289,6 +291,7 @@ $(function(){ initResizable(false); });
 <li>setMaximumTabWidth()&#160;:&#160;<a class="el" href="classtgui_1_1Tabs.html#a7b95afff16cc96483d65bb9ea4a2f9fe">tgui::Tabs</a></li>
 <li>setMaximumTextWidth()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#a1d9b68fcf3bdb28c2a255c50dc124725">tgui::Label</a></li>
 <li>setMaxValidSplitterOffset()&#160;:&#160;<a class="el" href="classtgui_1_1SplitContainer.html#ab8cb949d0ec69a50cede443d85fab9aa">tgui::SplitContainer</a></li>
+<li>setMaxWidth()&#160;:&#160;<a class="el" href="classtgui_1_1RadioButton.html#aaaf7d461429828e62cf7dc5faad788a7">tgui::RadioButton</a></li>
 <li>setMenuEnabled()&#160;:&#160;<a class="el" href="classtgui_1_1MenuBar.html#a17b4e59ebee9130e3142fef72dc508b9">tgui::MenuBar</a></li>
 <li>setMenuItemEnabled()&#160;:&#160;<a class="el" href="classtgui_1_1ContextMenu.html#aa6b0f659964b54e62f850082a3a66578">tgui::ContextMenu</a>, <a class="el" href="classtgui_1_1MenuBar.html#a08b5ae384b62aa8db60311aa8b60bf41">tgui::MenuBar</a></li>
 <li>setMiddleRect()&#160;:&#160;<a class="el" href="classtgui_1_1Texture.html#a1cfa7457360299ed86727676de578f03">tgui::Texture</a></li>
@@ -334,6 +337,7 @@ $(function(){ initResizable(false); });
 <li>setRotation()&#160;:&#160;<a class="el" href="classtgui_1_1Sprite.html#a28d7466ae6784cb581eb9640e8c895bf">tgui::Sprite</a>, <a class="el" href="classtgui_1_1Widget.html#ad226f3ae5f25ee668fcccd9e2999fab6">tgui::Widget</a></li>
 <li>setRoundedBorderRadius()&#160;:&#160;<a class="el" href="classtgui_1_1ButtonRenderer.html#ac98d6bed62520ef2ec47b7c0735b5d39">tgui::ButtonRenderer</a>, <a class="el" href="classtgui_1_1PanelRenderer.html#ab1695bb269f5bbcbeec933d4f346a9a4">tgui::PanelRenderer</a></li>
 <li>setScale()&#160;:&#160;<a class="el" href="classtgui_1_1Widget.html#a295d011b86367ce1ec7fabe984e27576">tgui::Widget</a></li>
+<li>setScaledNineSlice()&#160;:&#160;<a class="el" href="classtgui_1_1Texture.html#a032e2a41060f094fd3a588d33c36416e">tgui::Texture</a></li>
 <li>setScrollAmount()&#160;:&#160;<a class="el" href="classtgui_1_1Scrollbar.html#ac522dd8f1738d1a4ca27035b868a86f2">tgui::Scrollbar</a>, <a class="el" href="classtgui_1_1ScrollbarAccessor.html#a1302f49363a6b67cb2797b44646c03b9">tgui::ScrollbarAccessor</a></li>
 <li>setScrollbar()&#160;:&#160;<a class="el" href="classtgui_1_1ChatBoxRenderer.html#a7d2b5ce8241d4db192705031210b11b0">tgui::ChatBoxRenderer</a>, <a class="el" href="classtgui_1_1LabelRenderer.html#aa5ae2a65495a75b979ff76cae34417b4">tgui::LabelRenderer</a>, <a class="el" href="classtgui_1_1ListBoxRenderer.html#adb76df8d3e02a0e9fdf818beba7613a9">tgui::ListBoxRenderer</a>, <a class="el" href="classtgui_1_1ListViewRenderer.html#a0b8fbf4209cbfb5945734cc16c44e466">tgui::ListViewRenderer</a>, <a class="el" href="classtgui_1_1ScrollablePanelRenderer.html#a5d46c8fb071093123b3d763460bb8fe6">tgui::ScrollablePanelRenderer</a>, <a class="el" href="classtgui_1_1TextAreaRenderer.html#a3533f0f08d924a8a9ec95c06c66716f9">tgui::TextAreaRenderer</a>, <a class="el" href="classtgui_1_1TreeViewRenderer.html#ac87fe52ff1e47ba2e322efbffb6794e6">tgui::TreeViewRenderer</a></li>
 <li>setScrollbarPolicy()&#160;:&#160;<a class="el" href="classtgui_1_1Label.html#a1e4e66da421520b511dca81b5b516cfe">tgui::Label</a></li>
@@ -534,7 +538,7 @@ $(function(){ initResizable(false); });
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sat Jun 14 2025 22:13:20 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

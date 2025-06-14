@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.10</span>
    </div>
   </td>
  </tr>
@@ -626,10 +626,14 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a731f6620ab1a39f00ab1a5763279c6d9" id="r_a731f6620ab1a39f00ab1a5763279c6d9"><td class="memItemLeft" align="right" valign="top"><a id="a731f6620ab1a39f00ab1a5763279c6d9" name="a731f6620ab1a39f00ab1a5763279c6d9"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Part</b> { <b>Track</b>
+<tr class="memitem:a731f6620ab1a39f00ab1a5763279c6d9" id="r_a731f6620ab1a39f00ab1a5763279c6d9"><td class="memItemLeft" align="right" valign="top"><a id="a731f6620ab1a39f00ab1a5763279c6d9" name="a731f6620ab1a39f00ab1a5763279c6d9"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Part</b> { <br />
+&#160;&#160;<b>None</b>
+, <b>Track</b>
 , <b>Thumb</b>
 , <b>ArrowUp</b>
-, <b>ArrowDown</b>
+, <br />
+&#160;&#160;<b>ArrowDown</b>
+<br />
  }</td></tr>
 <tr class="separator:a731f6620ab1a39f00ab1a5763279c6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_types_classtgui_1_1Widget')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
@@ -682,7 +686,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundSizeL
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a320dc1d6f2df44f5d089f168f07cbf9e" id="r_a320dc1d6f2df44f5d089f168f07cbf9e"><td class="memItemLeft" align="right" valign="top"><a id="a320dc1d6f2df44f5d089f168f07cbf9e" name="a320dc1d6f2df44f5d089f168f07cbf9e"></a>
-Part&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseHoverOverPart</b> = Part::Thumb</td></tr>
+Part&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseHoverOverPart</b> = Part::None</td></tr>
 <tr class="separator:a320dc1d6f2df44f5d089f168f07cbf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184c1eaeefbd8f857c843a96941eb668" id="r_a184c1eaeefbd8f857c843a96941eb668"><td class="memItemLeft" align="right" valign="top"><a id="a184c1eaeefbd8f857c843a96941eb668" name="a184c1eaeefbd8f857c843a96941eb668"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDownOnThumb</b> = false</td></tr>
@@ -714,9 +718,15 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_scrollAmoun
 <tr class="memitem:a684e3e911db140a9bb1cf4862ab9cba5" id="r_a684e3e911db140a9bb1cf4862ab9cba5"><td class="memItemLeft" align="right" valign="top"><a id="a684e3e911db140a9bb1cf4862ab9cba5" name="a684e3e911db140a9bb1cf4862ab9cba5"></a>
 <a class="el" href="#a1618e7c70a2c67bafe9be77193b89d7d">Scrollbar::Policy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_policy</b> = <a class="el" href="#a1618e7c70a2c67bafe9be77193b89d7da086247a9b57fde6eefee2a0c4752242d">Scrollbar::Policy::Automatic</a></td></tr>
 <tr class="separator:a684e3e911db140a9bb1cf4862ab9cba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca556310b305d130508dacc1334c1a14" id="r_aca556310b305d130508dacc1334c1a14"><td class="memItemLeft" align="right" valign="top"><a id="aca556310b305d130508dacc1334c1a14" name="aca556310b305d130508dacc1334c1a14"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDownOnArrow</b> = false</td></tr>
-<tr class="separator:aca556310b305d130508dacc1334c1a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f360dcbc41aedbe13cb43c56f540a2" id="r_a12f360dcbc41aedbe13cb43c56f540a2"><td class="memItemLeft" align="right" valign="top"><a id="a12f360dcbc41aedbe13cb43c56f540a2" name="a12f360dcbc41aedbe13cb43c56f540a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDownOnIncreaseArrow</b> = false</td></tr>
+<tr class="separator:a12f360dcbc41aedbe13cb43c56f540a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa404805274aedec8629856a5a621702" id="r_aaa404805274aedec8629856a5a621702"><td class="memItemLeft" align="right" valign="top"><a id="aaa404805274aedec8629856a5a621702" name="aaa404805274aedec8629856a5a621702"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_mouseDownOnDecreaseArrow</b> = false</td></tr>
+<tr class="separator:aaa404805274aedec8629856a5a621702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8106d92c6ae8e42e1f60ec04dcf5a91b" id="r_a8106d92c6ae8e42e1f60ec04dcf5a91b"><td class="memItemLeft" align="right" valign="top"><a id="a8106d92c6ae8e42e1f60ec04dcf5a91b" name="a8106d92c6ae8e42e1f60ec04dcf5a91b"></a>
+std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastMousePressTime</b></td></tr>
+<tr class="separator:a8106d92c6ae8e42e1f60ec04dcf5a91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3393c2c5b54e998b3a7142c9307ca5d" id="r_aa3393c2c5b54e998b3a7142c9307ca5d"><td class="memItemLeft" align="right" valign="top"><a id="aa3393c2c5b54e998b3a7142c9307ca5d" name="aa3393c2c5b54e998b3a7142c9307ca5d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_sizeSet</b> = false</td></tr>
 <tr class="separator:aa3393c2c5b54e998b3a7142c9307ca5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2157,7 +2167,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_textSizeCac
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2025 18:56:18 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sat Jun 14 2025 22:13:19 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

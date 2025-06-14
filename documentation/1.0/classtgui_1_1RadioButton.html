@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.10</span>
    </div>
   </td>
  </tr>
@@ -185,6 +185,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ec5599060f2c4fd29066524f87225b6" id="r_a6ec5599060f2c4fd29066524f87225b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec5599060f2c4fd29066524f87225b6">getWidgetOffset</a> () const override</td></tr>
 <tr class="memdesc:a6ec5599060f2c4fd29066524f87225b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the position where the widget is drawn and where the widget is placed.  <br /></td></tr>
 <tr class="separator:a6ec5599060f2c4fd29066524f87225b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf7d461429828e62cf7dc5faad788a7" id="r_aaaf7d461429828e62cf7dc5faad788a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf7d461429828e62cf7dc5faad788a7">setMaxWidth</a> (float maxWidth)</td></tr>
+<tr class="memdesc:aaaf7d461429828e62cf7dc5faad788a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum width that is used to determine when to split the text over multiple lines.  <br /></td></tr>
+<tr class="separator:aaaf7d461429828e62cf7dc5faad788a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbf23b513e32a9caecd9af66ffa7657" id="r_afdbf23b513e32a9caecd9af66ffa7657"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdbf23b513e32a9caecd9af66ffa7657">getMaxWidth</a> () const</td></tr>
+<tr class="memdesc:afdbf23b513e32a9caecd9af66ffa7657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum width that is used to determine when to split the text over multiple lines.  <br /></td></tr>
+<tr class="separator:afdbf23b513e32a9caecd9af66ffa7657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2459037551cb8bac61539b8d231250c3" id="r_a2459037551cb8bac61539b8d231250c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2459037551cb8bac61539b8d231250c3">setEnabled</a> (bool enabled) override</td></tr>
 <tr class="memdesc:a2459037551cb8bac61539b8d231250c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the widget.  <br /></td></tr>
 <tr class="separator:a2459037551cb8bac61539b8d231250c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,9 +702,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_checked</b> = false
 <tr class="memitem:a90756ee156b703f1d2e80c854f09a941" id="r_a90756ee156b703f1d2e80c854f09a941"><td class="memItemLeft" align="right" valign="top"><a id="a90756ee156b703f1d2e80c854f09a941" name="a90756ee156b703f1d2e80c854f09a941"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_allowTextClick</b> = true</td></tr>
 <tr class="separator:a90756ee156b703f1d2e80c854f09a941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4e9d05898f25aa49e63b59835d9634" id="r_a7b4e9d05898f25aa49e63b59835d9634"><td class="memItemLeft" align="right" valign="top"><a id="a7b4e9d05898f25aa49e63b59835d9634" name="a7b4e9d05898f25aa49e63b59835d9634"></a>
+<a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_caption</b></td></tr>
+<tr class="separator:a7b4e9d05898f25aa49e63b59835d9634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee5f2ec6c6ec257801dc1057691b471" id="r_aeee5f2ec6c6ec257801dc1057691b471"><td class="memItemLeft" align="right" valign="top"><a id="aeee5f2ec6c6ec257801dc1057691b471" name="aeee5f2ec6c6ec257801dc1057691b471"></a>
 <a class="el" href="classtgui_1_1Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_text</b></td></tr>
 <tr class="separator:aeee5f2ec6c6ec257801dc1057691b471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5ac5b287e5f984733b7703359dd9e5" id="r_ada5ac5b287e5f984733b7703359dd9e5"><td class="memItemLeft" align="right" valign="top"><a id="ada5ac5b287e5f984733b7703359dd9e5" name="ada5ac5b287e5f984733b7703359dd9e5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxWidth</b> = 0</td></tr>
+<tr class="separator:ada5ac5b287e5f984733b7703359dd9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ad9f70072d3dd676410ab2045fb994" id="r_a23ad9f70072d3dd676410ab2045fb994"><td class="memItemLeft" align="right" valign="top"><a id="a23ad9f70072d3dd676410ab2045fb994" name="a23ad9f70072d3dd676410ab2045fb994"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteUnchecked</b></td></tr>
 <tr class="separator:a23ad9f70072d3dd676410ab2045fb994"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1127,6 +1139,36 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <p>The returned size includes the text next to the radio button. </p>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#ac800fddd07b78060f28773258ad330c8">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="afdbf23b513e32a9caecd9af66ffa7657" name="afdbf23b513e32a9caecd9af66ffa7657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbf23b513e32a9caecd9af66ffa7657">&#9670;&#160;</a></span>getMaxWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float tgui::RadioButton::getMaxWidth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum width that is used to determine when to split the text over multiple lines. </p>
+<dl class="section return"><dt>Returns</dt><dd>Width used for word wrapping</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aaaf7d461429828e62cf7dc5faad788a7" title="Sets the maximum width that is used to determine when to split the text over multiple lines.">setMaxWidth</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10 </dd></dl>
 
 </div>
 </div>
@@ -1658,6 +1700,34 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
+<a id="aaaf7d461429828e62cf7dc5faad788a7" name="aaaf7d461429828e62cf7dc5faad788a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf7d461429828e62cf7dc5faad788a7">&#9670;&#160;</a></span>setMaxWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::RadioButton::setMaxWidth </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>maxWidth</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the maximum width that is used to determine when to split the text over multiple lines. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxWidth</td><td>Width used for word wrapping</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This width includes the size of the check box itself and the spacing between the box and the text. The max width thus starts calculating from the left position of the widget.</dd></dl>
+<p>When set to 0 (default), there is no limit for the text width.</p>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10 </dd></dl>
+
+</div>
+</div>
 <a id="a4fdf934acd40700c35a20873f5f96331" name="a4fdf934acd40700c35a20873f5f96331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fdf934acd40700c35a20873f5f96331">&#9670;&#160;</a></span>setSize() <span class="overload">[1/2]</span></h2>
 
@@ -1818,7 +1888,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sat Jun 14 2025 22:13:19 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

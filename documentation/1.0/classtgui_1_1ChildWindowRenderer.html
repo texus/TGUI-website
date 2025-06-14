@@ -42,7 +42,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.9.0</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.10</span>
    </div>
   </td>
  </tr>
@@ -132,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43d6fd1c2c8bcd8b381ffd8d93b04ee4" id="r_a43d6fd1c2c8bcd8b381ffd8d93b04ee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Outline.html">Borders</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43d6fd1c2c8bcd8b381ffd8d93b04ee4">getBorders</a> () const</td></tr>
 <tr class="memdesc:a43d6fd1c2c8bcd8b381ffd8d93b04ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the borders.  <br /></td></tr>
 <tr class="separator:a43d6fd1c2c8bcd8b381ffd8d93b04ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed553d2ec748a9c8466ff1c37df32399" id="r_aed553d2ec748a9c8466ff1c37df32399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed553d2ec748a9c8466ff1c37df32399">setClientPadding</a> (const <a class="el" href="classtgui_1_1Outline.html">Padding</a> &amp;padding)</td></tr>
+<tr class="memdesc:aed553d2ec748a9c8466ff1c37df32399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the padding around the client area.  <br /></td></tr>
+<tr class="separator:aed553d2ec748a9c8466ff1c37df32399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f31e1fc6c0a5c51499ebf3a9e217fcc" id="r_a3f31e1fc6c0a5c51499ebf3a9e217fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Outline.html">Padding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f31e1fc6c0a5c51499ebf3a9e217fcc">getClientPadding</a> () const</td></tr>
+<tr class="memdesc:a3f31e1fc6c0a5c51499ebf3a9e217fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the padding around the client area.  <br /></td></tr>
+<tr class="separator:a3f31e1fc6c0a5c51499ebf3a9e217fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866283bc7912ecdb71aa9f1db0b6e2a0" id="r_a866283bc7912ecdb71aa9f1db0b6e2a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866283bc7912ecdb71aa9f1db0b6e2a0">setTitleBarHeight</a> (float height)</td></tr>
 <tr class="memdesc:a866283bc7912ecdb71aa9f1db0b6e2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the height of the title bar.  <br /></td></tr>
 <tr class="separator:a866283bc7912ecdb71aa9f1db0b6e2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,6 +477,35 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 
 <p>Returns the size of the borders. </p>
 <dl class="section return"><dt>Returns</dt><dd>border size </dd></dl>
+
+</div>
+</div>
+<a id="a3f31e1fc6c0a5c51499ebf3a9e217fcc" name="a3f31e1fc6c0a5c51499ebf3a9e217fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f31e1fc6c0a5c51499ebf3a9e217fcc">&#9670;&#160;</a></span>getClientPadding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1Outline.html">Padding</a> tgui::ChildWindowRenderer::getClientPadding </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size of the padding around the client area. </p>
+<dl class="section return"><dt>Returns</dt><dd>padding size</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10 </dd></dl>
 
 </div>
 </div>
@@ -936,6 +971,32 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 
 </div>
 </div>
+<a id="aed553d2ec748a9c8466ff1c37df32399" name="aed553d2ec748a9c8466ff1c37df32399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed553d2ec748a9c8466ff1c37df32399">&#9670;&#160;</a></span>setClientPadding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::ChildWindowRenderer::setClientPadding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1Outline.html">Padding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>padding</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the size of the padding around the client area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">padding</td><td>Size of the padding</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.10 </dd></dl>
+
+</div>
+</div>
 <a id="a83e091229f044fbd756ba4e8680cb2fe" name="a83e091229f044fbd756ba4e8680cb2fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83e091229f044fbd756ba4e8680cb2fe">&#9670;&#160;</a></span>setCloseButton()</h2>
 
@@ -1280,7 +1341,7 @@ std::shared_ptr&lt; <a class="el" href="structtgui_1_1RendererData.html">Rendere
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2025 18:56:17 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sat Jun 14 2025 22:13:19 for TGUI by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 <!-- BEGIN CUSTOM 3 -->

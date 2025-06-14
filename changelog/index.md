@@ -5,6 +5,18 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 10
+    patches:
+    - version: 0
+      date: 14 June 2025
+      changes: |
+        Added MaxWidth property to RadioButton and CheckBox
+        Added ClientPadding property to ChildWindow renderer
+        Added option to scale image (stretching while maintaining ratio) before applying 9-slice scaling
+        Show effects didn't take origin into account
+        Changed scaling when object is smaller than corners of 9-slice
+        Scrollbar now keeps scrolling when the mouse button stays pressed on top of an arrow
+        Values change faster when holding down a spin button arrow
   - version: 9
     patches:
     - version: 0
