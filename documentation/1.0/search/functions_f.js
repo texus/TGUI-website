@@ -39,13 +39,14 @@ var searchData=
   ['reportfingerup_36',['reportFingerUp',['../classtgui_1_1TwoFingerScrollDetect.html#a1c24963555efc8a0235be30cec4790d2',1,'tgui::TwoFingerScrollDetect']]],
   ['requestfileicons_37',['requestFileIcons',['../classtgui_1_1FileDialogIconLoader.html#a4041f391549ae29ff53aa8d94b241abd',1,'tgui::FileDialogIconLoader']]],
   ['requestmousecursor_38',['requestMouseCursor',['../classtgui_1_1BackendGui.html#af5311c5dcdf953b133b725a82369b5d8',1,'tgui::BackendGui']]],
-  ['resetmousecursorstyle_39',['resetMouseCursorStyle',['../classtgui_1_1Backend.html#a6621444d72cca74caaf1d119c7913148',1,'tgui::Backend::resetMouseCursorStyle()'],['../classtgui_1_1BackendGLFW.html#ad0a686f8f1a73a6e78af72552c502bef',1,'tgui::BackendGLFW::resetMouseCursorStyle()'],['../classtgui_1_1BackendSDL.html#a0aae7836c071f1242bc14c8a5f43cec3',1,'tgui::BackendSDL::resetMouseCursorStyle()'],['../classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539',1,'tgui::BackendSFML::resetMouseCursorStyle()'],['../classtgui_1_1BackendRaylib.html#a84ef5298ec4c5ccdd47eaacee4348fb1',1,'tgui::BackendRaylib::resetMouseCursorStyle()']]],
-  ['resetstyle_40',['resetStyle',['../classtgui_1_1Cursor.html#a7d703cc76de1abe0fdc628dbc138a43e',1,'tgui::Cursor']]],
-  ['resetview_41',['resetView',['../classtgui_1_1CanvasSFML.html#a590f75276824c25bdf368cf2e7887d02',1,'tgui::CanvasSFML']]],
-  ['resizewithanimation_42',['resizeWithAnimation',['../classtgui_1_1Widget.html#a20a34a29f863ec137af2b4a4356fbbaa',1,'tgui::Widget']]],
-  ['restart_43',['restart',['../classtgui_1_1Timer.html#a1a759d08f4c608cf5659cddc0ddc02d3',1,'tgui::Timer']]],
-  ['restoreoverridemousecursor_44',['restoreOverrideMouseCursor',['../classtgui_1_1BackendGui.html#a8acf3fb094ab9ba740a03ff01db88955',1,'tgui::BackendGui']]],
-  ['retrievefileicons_45',['retrieveFileIcons',['../classtgui_1_1FileDialogIconLoader.html#a2aac7903d2800efca2fb78f175391e8d',1,'tgui::FileDialogIconLoader']]],
-  ['rotate_46',['rotate',['../classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851',1,'tgui::Transform']]],
-  ['roundposition_47',['roundPosition',['../classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca',1,'tgui::Transform::roundPosition(float pixelScaleX, float pixelScaleY)'],['../classtgui_1_1Transform.html#a5b9499506d06f4e1f1bd10d28f0c0be8',1,'tgui::Transform::roundPosition(Vector2f pixelScale)']]]
+  ['reset_39',['reset',['../classtgui_1_1CopiedPtr.html#a97c3fc00a9be0ad06cf9471aade8d11e',1,'tgui::CopiedPtr::reset()'],['../classaurora_1_1CopiedPtr.html#a97c3fc00a9be0ad06cf9471aade8d11e',1,'aurora::CopiedPtr::reset()']]],
+  ['resetmousecursorstyle_40',['resetMouseCursorStyle',['../classtgui_1_1Backend.html#a6621444d72cca74caaf1d119c7913148',1,'tgui::Backend::resetMouseCursorStyle()'],['../classtgui_1_1BackendGLFW.html#ad0a686f8f1a73a6e78af72552c502bef',1,'tgui::BackendGLFW::resetMouseCursorStyle()'],['../classtgui_1_1BackendSDL.html#a0aae7836c071f1242bc14c8a5f43cec3',1,'tgui::BackendSDL::resetMouseCursorStyle()'],['../classtgui_1_1BackendSFML.html#a7df66bfcc6a649d8d49c776db9718539',1,'tgui::BackendSFML::resetMouseCursorStyle()'],['../classtgui_1_1BackendRaylib.html#a84ef5298ec4c5ccdd47eaacee4348fb1',1,'tgui::BackendRaylib::resetMouseCursorStyle()']]],
+  ['resetstyle_41',['resetStyle',['../classtgui_1_1Cursor.html#a7d703cc76de1abe0fdc628dbc138a43e',1,'tgui::Cursor']]],
+  ['resetview_42',['resetView',['../classtgui_1_1CanvasSFML.html#a590f75276824c25bdf368cf2e7887d02',1,'tgui::CanvasSFML']]],
+  ['resizewithanimation_43',['resizeWithAnimation',['../classtgui_1_1Widget.html#a20a34a29f863ec137af2b4a4356fbbaa',1,'tgui::Widget']]],
+  ['restart_44',['restart',['../classtgui_1_1Timer.html#a1a759d08f4c608cf5659cddc0ddc02d3',1,'tgui::Timer']]],
+  ['restoreoverridemousecursor_45',['restoreOverrideMouseCursor',['../classtgui_1_1BackendGui.html#a8acf3fb094ab9ba740a03ff01db88955',1,'tgui::BackendGui']]],
+  ['retrievefileicons_46',['retrieveFileIcons',['../classtgui_1_1FileDialogIconLoader.html#a2aac7903d2800efca2fb78f175391e8d',1,'tgui::FileDialogIconLoader']]],
+  ['rotate_47',['rotate',['../classtgui_1_1Transform.html#abc6b9c13455773fcab4231a015cd1851',1,'tgui::Transform']]],
+  ['roundposition_48',['roundPosition',['../classtgui_1_1Transform.html#a1c2004262e3e7456c76eb278896429ca',1,'tgui::Transform::roundPosition(float pixelScaleX, float pixelScaleY)'],['../classtgui_1_1Transform.html#a5b9499506d06f4e1f1bd10d28f0c0be8',1,'tgui::Transform::roundPosition(Vector2f pixelScale)']]]
 ];

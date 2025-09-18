@@ -3,7 +3,7 @@ var searchData=
   ['_7ebackend_0',['~Backend',['../classtgui_1_1Backend.html#a9ce378a9e57ef5544d05b2d7bca2bebe',1,'tgui::Backend']]],
   ['_7ebackendfont_1',['~BackendFont',['../classtgui_1_1BackendFont.html#a0dd114fcc814022d50a22f06ba7f9a48',1,'tgui::BackendFont']]],
   ['_7ebackendfontfactory_2',['~BackendFontFactory',['../classtgui_1_1BackendFontFactory.html#ad1ee4b428917faa599cedf04b7729991',1,'tgui::BackendFontFactory']]],
-  ['_7ebackendfontfreetype_3',['~BackendFontFreetype',['../classtgui_1_1BackendFontFreetype.html#a40370d5e1bc8dd89a9e28cc73fc742e5',1,'tgui::BackendFontFreetype']]],
+  ['_7ebackendfontfreetype_3',['~BackendFontFreeType',['../classtgui_1_1BackendFontFreeType.html#aa8c57b1b8fe59a2ecc9b7c4384e8c5f9',1,'tgui::BackendFontFreeType']]],
   ['_7ebackendfontsdlttf_4',['~BackendFontSDLttf',['../classtgui_1_1BackendFontSDLttf.html#a27787c69c60ea916cf7a96f8b75ab1e0',1,'tgui::BackendFontSDLttf']]],
   ['_7ebackendglfw_5',['~BackendGLFW',['../classtgui_1_1BackendGLFW.html#aa9594359d08e84c3fc519f5ff552a23e',1,'tgui::BackendGLFW']]],
   ['_7ebackendguiglfw_6',['~BackendGuiGLFW',['../classtgui_1_1BackendGuiGLFW.html#af35d6c160259d959b5bbb24e7513a011',1,'tgui::BackendGuiGLFW']]],

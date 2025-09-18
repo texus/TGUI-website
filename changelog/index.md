@@ -5,6 +5,16 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 11
+    patches:
+    - version: 0
+      date: 18 September 2025
+      changes: |
+        Added RoundedBorderRadius property to EditBox, TextArea, ComboBox and Tabs renderers
+        Added getLeftPlusRight and getTopPlusBottom functions to Outline class
+        Added `TGUI_BUILD_CXX20_MODULE` option to CMake to build TGUI as a c++20 module
+        EditBox and TextArea now support Ctrl+Backspace and Ctrl+Delete to delete words
+        ScrollablePanel didn't transform the right click position for its child widgets
   - version: 10
     patches:
     - version: 0

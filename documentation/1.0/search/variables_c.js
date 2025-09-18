@@ -1,5 +1,5 @@
 var searchData=
 [
   ['red_0',['Red',['../classtgui_1_1Color.html#ae4d33a5b1bfc6bec0a67c256974fede6',1,'tgui::Color']]],
-  ['rsbdelta_1',['rsbDelta',['../structtgui_1_1BackendFontFreetype_1_1Glyph.html#a64100356ebedfadf89b0522285915ee9',1,'tgui::BackendFontFreetype::Glyph']]]
+  ['rsbdelta_1',['rsbDelta',['../structtgui_1_1BackendFontFreeType_1_1Glyph.html#ae2ec43a3a82e231258ca71cebab8d8a0',1,'tgui::BackendFontFreeType::Glyph']]]
 ];

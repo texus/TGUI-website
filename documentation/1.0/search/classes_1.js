@@ -4,7 +4,7 @@ var searchData=
   ['backendfont_1',['BackendFont',['../classtgui_1_1BackendFont.html',1,'tgui']]],
   ['backendfontfactory_2',['BackendFontFactory',['../classtgui_1_1BackendFontFactory.html',1,'tgui']]],
   ['backendfontfactoryimpl_3',['BackendFontFactoryImpl',['../classtgui_1_1BackendFontFactoryImpl.html',1,'tgui']]],
-  ['backendfontfreetype_4',['BackendFontFreetype',['../classtgui_1_1BackendFontFreetype.html',1,'tgui']]],
+  ['backendfontfreetype_4',['BackendFontFreeType',['../classtgui_1_1BackendFontFreeType.html',1,'tgui']]],
   ['backendfontraylib_5',['BackendFontRaylib',['../classtgui_1_1BackendFontRaylib.html',1,'tgui']]],
   ['backendfontsdlttf_6',['BackendFontSDLttf',['../classtgui_1_1BackendFontSDLttf.html',1,'tgui']]],
   ['backendfontsfml_7',['BackendFontSFML',['../classtgui_1_1BackendFontSFML.html',1,'tgui']]],

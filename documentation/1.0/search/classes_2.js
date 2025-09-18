@@ -25,10 +25,13 @@ var searchData=
   ['container_22',['Container',['../classtgui_1_1Container.html',1,'tgui']]],
   ['contextmenu_23',['ContextMenu',['../classtgui_1_1ContextMenu.html',1,'tgui']]],
   ['contextmenurenderer_24',['ContextMenuRenderer',['../classtgui_1_1ContextMenuRenderer.html',1,'tgui']]],
-  ['copiedsharedptr_25',['CopiedSharedPtr',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3abutton_20_3e_26',['CopiedSharedPtr&lt; tgui::Button &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3agroup_20_3e_27',['CopiedSharedPtr&lt; tgui::Group &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['copiedsharedptr_3c_20tgui_3a_3ascrollbarchildwidget_20_3e_28',['CopiedSharedPtr&lt; tgui::ScrollbarChildWidget &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
-  ['cursor_29',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
-  ['customwidgetforbindings_30',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
+  ['copiedptr_25',['CopiedPtr',['../classaurora_1_1CopiedPtr.html',1,'aurora::CopiedPtr&lt; T &gt;'],['../classtgui_1_1CopiedPtr.html',1,'tgui::CopiedPtr&lt; T &gt;']]],
+  ['copiedptr_3c_20tgui_3a_3awidgetrenderer_20_3e_26',['CopiedPtr&lt; tgui::WidgetRenderer &gt;',['../classtgui_1_1CopiedPtr.html',1,'tgui']]],
+  ['copiedptremplacetag_27',['CopiedPtrEmplaceTag',['../structtgui_1_1CopiedPtrEmplaceTag.html',1,'tgui']]],
+  ['copiedsharedptr_28',['CopiedSharedPtr',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3abutton_20_3e_29',['CopiedSharedPtr&lt; tgui::Button &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3agroup_20_3e_30',['CopiedSharedPtr&lt; tgui::Group &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['copiedsharedptr_3c_20tgui_3a_3ascrollbarchildwidget_20_3e_31',['CopiedSharedPtr&lt; tgui::ScrollbarChildWidget &gt;',['../classtgui_1_1CopiedSharedPtr.html',1,'tgui']]],
+  ['cursor_32',['Cursor',['../classtgui_1_1Cursor.html',1,'tgui']]],
+  ['customwidgetforbindings_33',['CustomWidgetForBindings',['../classtgui_1_1CustomWidgetForBindings.html',1,'tgui']]]
 ];

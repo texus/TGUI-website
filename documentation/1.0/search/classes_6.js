@@ -1,7 +1,7 @@
 var searchData=
 [
   ['getmenuselement_0',['GetMenusElement',['../structtgui_1_1MenuWidgetBase_1_1GetMenusElement.html',1,'tgui::MenuWidgetBase']]],
-  ['glyph_1',['Glyph',['../structtgui_1_1BackendFontFreetype_1_1Glyph.html',1,'tgui::BackendFontFreetype']]],
+  ['glyph_1',['Glyph',['../structtgui_1_1BackendFontFreeType_1_1Glyph.html',1,'tgui::BackendFontFreeType']]],
   ['grid_2',['Grid',['../classtgui_1_1Grid.html',1,'tgui']]],
   ['group_3',['Group',['../classtgui_1_1Group.html',1,'tgui']]],
   ['grouprenderer_4',['GroupRenderer',['../classtgui_1_1GroupRenderer.html',1,'tgui']]],

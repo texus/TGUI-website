@@ -15,5 +15,5 @@ var searchData=
   ['renderstates_12',['RenderStates',['../structtgui_1_1RenderStates.html',1,'tgui']]],
   ['richtextlabel_13',['RichTextLabel',['../classtgui_1_1RichTextLabel.html',1,'tgui']]],
   ['rootcontainer_14',['RootContainer',['../classtgui_1_1RootContainer.html',1,'tgui']]],
-  ['row_15',['Row',['../structtgui_1_1BackendFontFreetype_1_1Row.html',1,'tgui::BackendFontFreetype::Row'],['../structtgui_1_1BackendFontRaylib_1_1Row.html',1,'tgui::BackendFontRaylib::Row']]]
+  ['row_15',['Row',['../structtgui_1_1BackendFontFreeType_1_1Row.html',1,'tgui::BackendFontFreeType::Row'],['../structtgui_1_1BackendFontRaylib_1_1Row.html',1,'tgui::BackendFontRaylib::Row']]]
 ];
