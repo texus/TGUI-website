@@ -1612,6 +1612,7 @@ The `Tabs` widget provides a row of tabs where one can be selected.
 
 Similar widgets:
 - If you want there to be a panel directly below or above the tabs which is changed when a tab is selected then check out the <a href="#TabContainer">TabContainer</a> widget instead
+- For tabs that are placed below each other, check out the <a href="#VerticalTabs">VerticalTabs</a> widget instead
 
 Documentation: [Tabs](/documentation/1.0/classtgui_1_1Tabs.html), [TabsRenderer](/documentation/1.0/classtgui_1_1TabsRenderer.html)
 
@@ -1795,6 +1796,44 @@ vertLayout->add(button3);    // ratio = 1
 The size of the VerticalLayout (both width and height) must be provided, and child widgets will be resized to fit this size.
 
 You should never call `setPosition` or `setSize` on any child widget that is added to VerticalLayout.
+
+</details>
+</div>
+
+<!-- VerticalTabs -->
+
+<div class="SmallerMargin">
+<details class="WidgetSummary" id="VerticalTabs" markdown="1">
+<summary><b>VerticalTabs</b></summary>
+
+The `VerticalTabs` widget provides a column of tabs where one can be selected.
+
+![VerticalTabs](/resources/WidgetsOverview/VerticalTabs.png){:width="300" height="80"}
+
+Similar widgets:
+- For horizontal tabs check out the <a href="#Tabs">Tabs</a> widget instead
+
+Documentation: [VerticalTabs](/documentation/1.0/classtgui_1_1VerticalTabs.html), [TabsRenderer](/documentation/1.0/classtgui_1_1TabsRenderer.html) (VerticalTabsRenderer does not exist)
+
+**Example usage**
+```c++
+tabs->add("Tab 1");
+tabs->add("Tab 2");
+tabs->select(0); // Selects "Tab 1"
+
+tabs->setTabWidth(120);
+tabs->setTabHeight(30);
+
+tabs->onTabSelect([](const tgui::String& tab){
+    std::cerr << "The tab " << tab << " is now selected\n";
+});
+```
+
+**Notes**
+
+The height of the widget cannot be set directly, it is based on the amount of tabs and the TabHeight property. It is therefore adviced to use setTabWidth instead of calling the setSize function.
+
+When the TextureTab property is set in the renderer, the BackgroundColor renderer property will be ignored.
 
 </details>
 </div>

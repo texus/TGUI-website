@@ -284,6 +284,10 @@ Here is a list of all sections that are automatically created if they don't appe
       <td>TreeView</td>
       <td>ListBox</td>
     </tr>
+    <tr>
+      <td>VerticalTabs</td>
+      <td>Tabs</td>
+    </tr>
   </tbody>
 </table>
 

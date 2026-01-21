@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TGUI: tgui::Tabs Class Reference</title>
+<title>TGUI: tgui::TabsBase Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,53 +87,51 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a href="namespacetgui.html">tgui</a></li><li class="navelem"><a href="classtgui_1_1Tabs.html">Tabs</a></li>  </ul>
+<li class="navelem"><a href="namespacetgui.html">tgui</a></li><li class="navelem"><a href="classtgui_1_1TabsBase.html">TabsBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classtgui_1_1Tabs-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">tgui::Tabs Class Reference</div></div>
+<a href="classtgui_1_1TabsBase-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">tgui::TabsBase Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><a class="el" href="classtgui_1_1Tabs.html" title="Tabs widget.">Tabs</a> widget.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Tabs_8hpp_source.html">TGUI/Widgets/Tabs.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="TabsBase_8hpp_source.html">TGUI/Widgets/TabsBase.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for tgui::Tabs:</div>
+Inheritance diagram for tgui::TabsBase:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classtgui_1_1Tabs.png" usemap="#tgui_3A_3ATabs_map" alt=""/>
-  <map id="tgui_3A_3ATabs_map" name="tgui_3A_3ATabs_map">
-<area href="classtgui_1_1TabsBase.html" title="Tabs widget." alt="tgui::TabsBase" shape="rect" coords="0,112,238,136"/>
-<area href="classtgui_1_1Widget.html" title="The parent class for every widget." alt="tgui::Widget" shape="rect" coords="0,56,238,80"/>
+  <img src="classtgui_1_1TabsBase.png" usemap="#tgui_3A_3ATabsBase_map" alt=""/>
+  <map id="tgui_3A_3ATabsBase_map" name="tgui_3A_3ATabsBase_map">
+<area href="classtgui_1_1Widget.html" title="The parent class for every widget." alt="tgui::Widget" shape="rect" coords="124,56,362,80"/>
+<area href="classtgui_1_1Tabs.html" title="Tabs widget." alt="tgui::Tabs" shape="rect" coords="0,168,238,192"/>
+<area href="classtgui_1_1VerticalTabs.html" title="VerticalTabs widget." alt="tgui::VerticalTabs" shape="rect" coords="248,168,486,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Tab" id="r_Tab"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtgui_1_1TabsBase_1_1Tab.html">Tab</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8f6d994cc5ea23613954fc83e0ea1f3e" id="r_a8f6d994cc5ea23613954fc83e0ea1f3e"><td class="memItemLeft" align="right" valign="top"><a id="a8f6d994cc5ea23613954fc83e0ea1f3e" name="a8f6d994cc5ea23613954fc83e0ea1f3e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b> = std::shared_ptr&lt;Tabs&gt;</td></tr>
-<tr class="memdesc:a8f6d994cc5ea23613954fc83e0ea1f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared widget pointer. <br /></td></tr>
-<tr class="memitem:a6713c94ca02ffaf439fa364860f51db1" id="r_a6713c94ca02ffaf439fa364860f51db1"><td class="memItemLeft" align="right" valign="top"><a id="a6713c94ca02ffaf439fa364860f51db1" name="a6713c94ca02ffaf439fa364860f51db1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstPtr</b> = std::shared_ptr&lt;const Tabs&gt;</td></tr>
-<tr class="memdesc:a6713c94ca02ffaf439fa364860f51db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared constant widget pointer. <br /></td></tr>
-<tr class="inherit_header pub_types_classtgui_1_1TabsBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classtgui_1_1TabsBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a></td></tr>
-<tr class="memitem:ac730b15c79fdc1e36760f5913cc01bb8 inherit pub_types_classtgui_1_1TabsBase" id="r_ac730b15c79fdc1e36760f5913cc01bb8"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ac730b15c79fdc1e36760f5913cc01bb8" id="r_ac730b15c79fdc1e36760f5913cc01bb8"><td class="memItemLeft" align="right" valign="top"><a id="ac730b15c79fdc1e36760f5913cc01bb8" name="ac730b15c79fdc1e36760f5913cc01bb8"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b> = std::shared_ptr&lt;TabsBase&gt;</td></tr>
-<tr class="memdesc:ac730b15c79fdc1e36760f5913cc01bb8 inherit pub_types_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared widget pointer. <br /></td></tr>
-<tr class="memitem:aa01f951905436003bbedb5f547c6ea70 inherit pub_types_classtgui_1_1TabsBase" id="r_aa01f951905436003bbedb5f547c6ea70"><td class="memItemLeft" align="right" valign="top">
+<tr class="memdesc:ac730b15c79fdc1e36760f5913cc01bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared widget pointer. <br /></td></tr>
+<tr class="memitem:aa01f951905436003bbedb5f547c6ea70" id="r_aa01f951905436003bbedb5f547c6ea70"><td class="memItemLeft" align="right" valign="top"><a id="aa01f951905436003bbedb5f547c6ea70" name="aa01f951905436003bbedb5f547c6ea70"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstPtr</b> = std::shared_ptr&lt;const TabsBase&gt;</td></tr>
-<tr class="memdesc:aa01f951905436003bbedb5f547c6ea70 inherit pub_types_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared constant widget pointer. <br /></td></tr>
+<tr class="memdesc:aa01f951905436003bbedb5f547c6ea70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared constant widget pointer. <br /></td></tr>
 <tr class="inherit_header pub_types_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:a97659aaf84026b33d255172efa7d8b23 inherit pub_types_classtgui_1_1Widget" id="r_a97659aaf84026b33d255172efa7d8b23"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b> = std::shared_ptr&lt;<a class="el" href="classtgui_1_1Widget.html#a8f4ca51beee3a57d6b49a39f42aa6183">Widget</a>&gt;</td></tr>
@@ -144,83 +142,57 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstPtr</b> = std::
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acda60bcd84c295f3652e1ef7ea089dc1" id="r_acda60bcd84c295f3652e1ef7ea089dc1"><td class="memItemLeft" align="right" valign="top"><a id="acda60bcd84c295f3652e1ef7ea089dc1" name="acda60bcd84c295f3652e1ef7ea089dc1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Tabs</b> (const char *typeName=<a class="el" href="#a16a3f9585445118258b0de3beded4028">StaticWidgetType</a>, bool initRenderer=true)</td></tr>
-<tr class="memitem:a9c423f93f83d868f65a4c45dd695447e" id="r_a9c423f93f83d868f65a4c45dd695447e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c423f93f83d868f65a4c45dd695447e">setSize</a> (const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;size) override</td></tr>
-<tr class="memdesc:a9c423f93f83d868f65a4c45dd695447e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the area used by the tabs.  <br /></td></tr>
-<tr class="memitem:a0c358ca09e962ce4c09165a6d1994eb0" id="r_a0c358ca09e962ce4c09165a6d1994eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c358ca09e962ce4c09165a6d1994eb0">setAutoSize</a> (bool autoSize)</td></tr>
-<tr class="memdesc:a0c358ca09e962ce4c09165a6d1994eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether the tabs are auto-sized or not.  <br /></td></tr>
-<tr class="memitem:ab3a17a92a3540fb4da7a27a9a1d2fde8" id="r_ab3a17a92a3540fb4da7a27a9a1d2fde8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3a17a92a3540fb4da7a27a9a1d2fde8">getAutoSize</a> () const</td></tr>
-<tr class="memdesc:ab3a17a92a3540fb4da7a27a9a1d2fde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tabs are auto-sized or not.  <br /></td></tr>
-<tr class="memitem:a956d150e9d06b492165304634f3cdb12" id="r_a956d150e9d06b492165304634f3cdb12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a956d150e9d06b492165304634f3cdb12">setTabHeight</a> (float height)</td></tr>
-<tr class="memdesc:a956d150e9d06b492165304634f3cdb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the height of the tabs.  <br /></td></tr>
-<tr class="memitem:a7b95afff16cc96483d65bb9ea4a2f9fe" id="r_a7b95afff16cc96483d65bb9ea4a2f9fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b95afff16cc96483d65bb9ea4a2f9fe">setMaximumTabWidth</a> (float maximumWidth)</td></tr>
-<tr class="memdesc:a7b95afff16cc96483d65bb9ea4a2f9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the maximum tab width of the tabs.  <br /></td></tr>
-<tr class="memitem:afe5aee3d5a20afd79e31c4c56cc8cf3c" id="r_afe5aee3d5a20afd79e31c4c56cc8cf3c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5aee3d5a20afd79e31c4c56cc8cf3c">getMaximumTabWidth</a> () const</td></tr>
-<tr class="memdesc:afe5aee3d5a20afd79e31c4c56cc8cf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum tab width of the tabs.  <br /></td></tr>
-<tr class="memitem:a97f8ca3b3edf13bd34bc8a8bce999b61" id="r_a97f8ca3b3edf13bd34bc8a8bce999b61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97f8ca3b3edf13bd34bc8a8bce999b61">setMinimumTabWidth</a> (float minimumWidth)</td></tr>
-<tr class="memdesc:a97f8ca3b3edf13bd34bc8a8bce999b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the minimum tab width of the tabs.  <br /></td></tr>
-<tr class="memitem:a7b3ee0e0ea64b4b4c59644e82dc5b27a" id="r_a7b3ee0e0ea64b4b4c59644e82dc5b27a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b3ee0e0ea64b4b4c59644e82dc5b27a">getMinimumTabWidth</a> () const</td></tr>
-<tr class="memdesc:a7b3ee0e0ea64b4b4c59644e82dc5b27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tab width of the tabs.  <br /></td></tr>
-<tr class="memitem:aa8ec3c235aa171e2e52c9583678c9b9c" id="r_aa8ec3c235aa171e2e52c9583678c9b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ec3c235aa171e2e52c9583678c9b9c">leftMousePressed</a> (Vector2f pos) override</td></tr>
-<tr class="memdesc:aa8ec3c235aa171e2e52c9583678c9b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent when the left mouse button goes down on top of the widget.  <br /></td></tr>
-<tr class="memitem:a6c4a3f4d953719642dc492dea21e8d94" id="r_a6c4a3f4d953719642dc492dea21e8d94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c4a3f4d953719642dc492dea21e8d94">mouseMoved</a> (Vector2f pos) override</td></tr>
-<tr class="memitem:a1ee72fd3845780674d609696ca4521b0" id="r_a1ee72fd3845780674d609696ca4521b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee72fd3845780674d609696ca4521b0">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const override</td></tr>
-<tr class="memdesc:a1ee72fd3845780674d609696ca4521b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <br /></td></tr>
-<tr class="memitem:a087a60617c86fcf6521da7bc9f4723bd" id="r_a087a60617c86fcf6521da7bc9f4723bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a087a60617c86fcf6521da7bc9f4723bd">setSize</a> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> width, <a class="el" href="classtgui_1_1Layout.html">Layout</a> height)</td></tr>
-<tr class="memdesc:a087a60617c86fcf6521da7bc9f4723bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the widget.  <br /></td></tr>
-<tr class="inherit_header pub_methods_classtgui_1_1TabsBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtgui_1_1TabsBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a></td></tr>
-<tr class="memitem:a43aa892c3204399fdaf54ea75ebd3cc3 inherit pub_methods_classtgui_1_1TabsBase" id="r_a43aa892c3204399fdaf54ea75ebd3cc3"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a43aa892c3204399fdaf54ea75ebd3cc3" id="r_a43aa892c3204399fdaf54ea75ebd3cc3"><td class="memItemLeft" align="right" valign="top"><a id="a43aa892c3204399fdaf54ea75ebd3cc3" name="a43aa892c3204399fdaf54ea75ebd3cc3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TabsBase</b> (const char *typeName, bool initRenderer)</td></tr>
-<tr class="memitem:ad81eba69e0b8510f17e5c2c89d1a68dc inherit pub_methods_classtgui_1_1TabsBase" id="r_ad81eba69e0b8510f17e5c2c89d1a68dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ad81eba69e0b8510f17e5c2c89d1a68dc">getSharedRenderer</a> () override</td></tr>
-<tr class="memdesc:ad81eba69e0b8510f17e5c2c89d1a68dc inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <br /></td></tr>
-<tr class="memitem:aea5c86ce9c43757f8e33e3e354856ccb inherit pub_methods_classtgui_1_1TabsBase" id="r_aea5c86ce9c43757f8e33e3e354856ccb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#aea5c86ce9c43757f8e33e3e354856ccb">getSharedRenderer</a> () const override</td></tr>
-<tr class="memitem:a91e484f9d42a3c8cea958287c75c44d5 inherit pub_methods_classtgui_1_1TabsBase" id="r_a91e484f9d42a3c8cea958287c75c44d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a91e484f9d42a3c8cea958287c75c44d5">getRenderer</a> () override</td></tr>
-<tr class="memdesc:a91e484f9d42a3c8cea958287c75c44d5 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <br /></td></tr>
-<tr class="memitem:a7ae750da4046f9a2286646f570dd4152 inherit pub_methods_classtgui_1_1TabsBase" id="r_a7ae750da4046f9a2286646f570dd4152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a7ae750da4046f9a2286646f570dd4152">setEnabled</a> (bool enabled) override</td></tr>
-<tr class="memdesc:a7ae750da4046f9a2286646f570dd4152 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the widget.  <br /></td></tr>
-<tr class="memitem:adf3d62e1f391568cec2b9847ff8793c2 inherit pub_methods_classtgui_1_1TabsBase" id="r_adf3d62e1f391568cec2b9847ff8793c2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#adf3d62e1f391568cec2b9847ff8793c2">add</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text, bool <a class="el" href="classtgui_1_1TabsBase.html#acc50911c0f18570fc34f6958329017a8">select</a>=true)</td></tr>
-<tr class="memdesc:adf3d62e1f391568cec2b9847ff8793c2 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new tab.  <br /></td></tr>
-<tr class="memitem:a84b8a97dd9853bf57c8b238ad802528e inherit pub_methods_classtgui_1_1TabsBase" id="r_a84b8a97dd9853bf57c8b238ad802528e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a84b8a97dd9853bf57c8b238ad802528e">insert</a> (std::size_t index, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text, bool <a class="el" href="classtgui_1_1TabsBase.html#acc50911c0f18570fc34f6958329017a8">select</a>=true)</td></tr>
-<tr class="memdesc:a84b8a97dd9853bf57c8b238ad802528e inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new tab somewhere between the other tabs.  <br /></td></tr>
-<tr class="memitem:ade20b77da0f3d1058bf1e1fcd54a672e inherit pub_methods_classtgui_1_1TabsBase" id="r_ade20b77da0f3d1058bf1e1fcd54a672e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ade20b77da0f3d1058bf1e1fcd54a672e">getText</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:ade20b77da0f3d1058bf1e1fcd54a672e inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text of one of the tabs.  <br /></td></tr>
-<tr class="memitem:ab1837969f886f7820447cab9f7ffbaf7 inherit pub_methods_classtgui_1_1TabsBase" id="r_ab1837969f886f7820447cab9f7ffbaf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ab1837969f886f7820447cab9f7ffbaf7">changeText</a> (std::size_t index, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
-<tr class="memdesc:ab1837969f886f7820447cab9f7ffbaf7 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the text of one of the tabs.  <br /></td></tr>
-<tr class="memitem:acc50911c0f18570fc34f6958329017a8 inherit pub_methods_classtgui_1_1TabsBase" id="r_acc50911c0f18570fc34f6958329017a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#acc50911c0f18570fc34f6958329017a8">select</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
-<tr class="memdesc:acc50911c0f18570fc34f6958329017a8 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab with a given text.  <br /></td></tr>
-<tr class="memitem:acb3a141f8d1c2f49c2679e14ab396bf1 inherit pub_methods_classtgui_1_1TabsBase" id="r_acb3a141f8d1c2f49c2679e14ab396bf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#acb3a141f8d1c2f49c2679e14ab396bf1">select</a> (std::size_t index)</td></tr>
-<tr class="memdesc:acb3a141f8d1c2f49c2679e14ab396bf1 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab with a given index.  <br /></td></tr>
-<tr class="memitem:a52ab15a371ec238cbfb6280128ab4d5f inherit pub_methods_classtgui_1_1TabsBase" id="r_a52ab15a371ec238cbfb6280128ab4d5f"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ad81eba69e0b8510f17e5c2c89d1a68dc" id="r_ad81eba69e0b8510f17e5c2c89d1a68dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad81eba69e0b8510f17e5c2c89d1a68dc">getSharedRenderer</a> () override</td></tr>
+<tr class="memdesc:ad81eba69e0b8510f17e5c2c89d1a68dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <br /></td></tr>
+<tr class="memitem:aea5c86ce9c43757f8e33e3e354856ccb" id="r_aea5c86ce9c43757f8e33e3e354856ccb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5c86ce9c43757f8e33e3e354856ccb">getSharedRenderer</a> () const override</td></tr>
+<tr class="memitem:a91e484f9d42a3c8cea958287c75c44d5" id="r_a91e484f9d42a3c8cea958287c75c44d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91e484f9d42a3c8cea958287c75c44d5">getRenderer</a> () override</td></tr>
+<tr class="memdesc:a91e484f9d42a3c8cea958287c75c44d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer, which gives access to functions that determine how the widget is displayed.  <br /></td></tr>
+<tr class="memitem:a7ae750da4046f9a2286646f570dd4152" id="r_a7ae750da4046f9a2286646f570dd4152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae750da4046f9a2286646f570dd4152">setEnabled</a> (bool enabled) override</td></tr>
+<tr class="memdesc:a7ae750da4046f9a2286646f570dd4152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the widget.  <br /></td></tr>
+<tr class="memitem:adf3d62e1f391568cec2b9847ff8793c2" id="r_adf3d62e1f391568cec2b9847ff8793c2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3d62e1f391568cec2b9847ff8793c2">add</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text, bool <a class="el" href="#acc50911c0f18570fc34f6958329017a8">select</a>=true)</td></tr>
+<tr class="memdesc:adf3d62e1f391568cec2b9847ff8793c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new tab.  <br /></td></tr>
+<tr class="memitem:a84b8a97dd9853bf57c8b238ad802528e" id="r_a84b8a97dd9853bf57c8b238ad802528e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84b8a97dd9853bf57c8b238ad802528e">insert</a> (std::size_t index, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text, bool <a class="el" href="#acc50911c0f18570fc34f6958329017a8">select</a>=true)</td></tr>
+<tr class="memdesc:a84b8a97dd9853bf57c8b238ad802528e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new tab somewhere between the other tabs.  <br /></td></tr>
+<tr class="memitem:ade20b77da0f3d1058bf1e1fcd54a672e" id="r_ade20b77da0f3d1058bf1e1fcd54a672e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade20b77da0f3d1058bf1e1fcd54a672e">getText</a> (std::size_t index) const</td></tr>
+<tr class="memdesc:ade20b77da0f3d1058bf1e1fcd54a672e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text of one of the tabs.  <br /></td></tr>
+<tr class="memitem:ab1837969f886f7820447cab9f7ffbaf7" id="r_ab1837969f886f7820447cab9f7ffbaf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1837969f886f7820447cab9f7ffbaf7">changeText</a> (std::size_t index, const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
+<tr class="memdesc:ab1837969f886f7820447cab9f7ffbaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the text of one of the tabs.  <br /></td></tr>
+<tr class="memitem:acc50911c0f18570fc34f6958329017a8" id="r_acc50911c0f18570fc34f6958329017a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc50911c0f18570fc34f6958329017a8">select</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
+<tr class="memdesc:acc50911c0f18570fc34f6958329017a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab with a given text.  <br /></td></tr>
+<tr class="memitem:acb3a141f8d1c2f49c2679e14ab396bf1" id="r_acb3a141f8d1c2f49c2679e14ab396bf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb3a141f8d1c2f49c2679e14ab396bf1">select</a> (std::size_t index)</td></tr>
+<tr class="memdesc:acb3a141f8d1c2f49c2679e14ab396bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab with a given index.  <br /></td></tr>
+<tr class="memitem:a52ab15a371ec238cbfb6280128ab4d5f" id="r_a52ab15a371ec238cbfb6280128ab4d5f"><td class="memItemLeft" align="right" valign="top"><a id="a52ab15a371ec238cbfb6280128ab4d5f" name="a52ab15a371ec238cbfb6280128ab4d5f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deselect</b> ()</td></tr>
-<tr class="memdesc:a52ab15a371ec238cbfb6280128ab4d5f inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deselects the selected tab. <br /></td></tr>
-<tr class="memitem:ab25da022a91ad5612f38ee04cbfa1c72 inherit pub_methods_classtgui_1_1TabsBase" id="r_ab25da022a91ad5612f38ee04cbfa1c72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ab25da022a91ad5612f38ee04cbfa1c72">remove</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
-<tr class="memdesc:ab25da022a91ad5612f38ee04cbfa1c72 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a tab with a given text.  <br /></td></tr>
-<tr class="memitem:aad4f38ba4fa2f4c5e226476b9861306e inherit pub_methods_classtgui_1_1TabsBase" id="r_aad4f38ba4fa2f4c5e226476b9861306e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#aad4f38ba4fa2f4c5e226476b9861306e">remove</a> (std::size_t index)</td></tr>
-<tr class="memdesc:aad4f38ba4fa2f4c5e226476b9861306e inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a tab with a given index.  <br /></td></tr>
-<tr class="memitem:ac43956b951d08b363d09b198f6c9b0e4 inherit pub_methods_classtgui_1_1TabsBase" id="r_ac43956b951d08b363d09b198f6c9b0e4"><td class="memItemLeft" align="right" valign="top">
+<tr class="memdesc:a52ab15a371ec238cbfb6280128ab4d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deselects the selected tab. <br /></td></tr>
+<tr class="memitem:ab25da022a91ad5612f38ee04cbfa1c72" id="r_ab25da022a91ad5612f38ee04cbfa1c72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab25da022a91ad5612f38ee04cbfa1c72">remove</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;text)</td></tr>
+<tr class="memdesc:ab25da022a91ad5612f38ee04cbfa1c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a tab with a given text.  <br /></td></tr>
+<tr class="memitem:aad4f38ba4fa2f4c5e226476b9861306e" id="r_aad4f38ba4fa2f4c5e226476b9861306e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4f38ba4fa2f4c5e226476b9861306e">remove</a> (std::size_t index)</td></tr>
+<tr class="memdesc:aad4f38ba4fa2f4c5e226476b9861306e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a tab with a given index.  <br /></td></tr>
+<tr class="memitem:ac43956b951d08b363d09b198f6c9b0e4" id="r_ac43956b951d08b363d09b198f6c9b0e4"><td class="memItemLeft" align="right" valign="top"><a id="ac43956b951d08b363d09b198f6c9b0e4" name="ac43956b951d08b363d09b198f6c9b0e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAll</b> ()</td></tr>
-<tr class="memdesc:ac43956b951d08b363d09b198f6c9b0e4 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all tabs. <br /></td></tr>
-<tr class="memitem:aa017c6fcf7f1532fb7fa1c511841d979 inherit pub_methods_classtgui_1_1TabsBase" id="r_aa017c6fcf7f1532fb7fa1c511841d979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#aa017c6fcf7f1532fb7fa1c511841d979">getSelected</a> () const</td></tr>
-<tr class="memdesc:aa017c6fcf7f1532fb7fa1c511841d979 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text that is drawn on the currently selected tab.  <br /></td></tr>
-<tr class="memitem:aa031f4834aec7e253cc3958f2b34abfb inherit pub_methods_classtgui_1_1TabsBase" id="r_aa031f4834aec7e253cc3958f2b34abfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#aa031f4834aec7e253cc3958f2b34abfb">getSelectedIndex</a> () const</td></tr>
-<tr class="memdesc:aa031f4834aec7e253cc3958f2b34abfb inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the currently selected tab.  <br /></td></tr>
-<tr class="memitem:a6cb8101aa0011b823369541666ffee4a inherit pub_methods_classtgui_1_1TabsBase" id="r_a6cb8101aa0011b823369541666ffee4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a6cb8101aa0011b823369541666ffee4a">getHoveredIndex</a> () const</td></tr>
-<tr class="memdesc:a6cb8101aa0011b823369541666ffee4a inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the tab below the mouse cursor.  <br /></td></tr>
-<tr class="memitem:a2ce139f67e13682dd7310b1a831f09ad inherit pub_methods_classtgui_1_1TabsBase" id="r_a2ce139f67e13682dd7310b1a831f09ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a2ce139f67e13682dd7310b1a831f09ad">setTabVisible</a> (std::size_t index, bool visible)</td></tr>
-<tr class="memdesc:a2ce139f67e13682dd7310b1a831f09ad inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether a tab is visible.  <br /></td></tr>
-<tr class="memitem:a58686c70a6b4a4e7007f8c9050d713fb inherit pub_methods_classtgui_1_1TabsBase" id="r_a58686c70a6b4a4e7007f8c9050d713fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a58686c70a6b4a4e7007f8c9050d713fb">getTabVisible</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:a58686c70a6b4a4e7007f8c9050d713fb inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab is shown or hidden.  <br /></td></tr>
-<tr class="memitem:acb907805df43bc8620f9ff8b03b26551 inherit pub_methods_classtgui_1_1TabsBase" id="r_acb907805df43bc8620f9ff8b03b26551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#acb907805df43bc8620f9ff8b03b26551">setTabEnabled</a> (std::size_t index, bool enabled)</td></tr>
-<tr class="memdesc:acb907805df43bc8620f9ff8b03b26551 inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether a tab is enabled.  <br /></td></tr>
-<tr class="memitem:a07d2073df29966f53befe73452b167fe inherit pub_methods_classtgui_1_1TabsBase" id="r_a07d2073df29966f53befe73452b167fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a07d2073df29966f53befe73452b167fe">getTabEnabled</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:a07d2073df29966f53befe73452b167fe inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab is enabled or disabled.  <br /></td></tr>
-<tr class="memitem:a00e7821aba55804e86df0fcdef37fdde inherit pub_methods_classtgui_1_1TabsBase" id="r_a00e7821aba55804e86df0fcdef37fdde"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a00e7821aba55804e86df0fcdef37fdde">getTabsCount</a> () const</td></tr>
-<tr class="memdesc:a00e7821aba55804e86df0fcdef37fdde inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of tabs.  <br /></td></tr>
-<tr class="memitem:ab2fa3fbcab13fc47f5d654794554848e inherit pub_methods_classtgui_1_1TabsBase" id="r_ab2fa3fbcab13fc47f5d654794554848e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ab2fa3fbcab13fc47f5d654794554848e">isMouseOnWidget</a> (Vector2f pos) const override</td></tr>
-<tr class="memdesc:ab2fa3fbcab13fc47f5d654794554848e inherit pub_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <br /></td></tr>
-<tr class="memitem:af577f9f2fa0f6d34afedd5b278b80525 inherit pub_methods_classtgui_1_1TabsBase" id="r_af577f9f2fa0f6d34afedd5b278b80525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#af577f9f2fa0f6d34afedd5b278b80525">rightMousePressed</a> (Vector2f pos) override</td></tr>
-<tr class="memitem:a716bd42127dadbc43f5eaf767d175296 inherit pub_methods_classtgui_1_1TabsBase" id="r_a716bd42127dadbc43f5eaf767d175296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a716bd42127dadbc43f5eaf767d175296">mouseNoLongerOnWidget</a> () override</td></tr>
+<tr class="memdesc:ac43956b951d08b363d09b198f6c9b0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all tabs. <br /></td></tr>
+<tr class="memitem:aa017c6fcf7f1532fb7fa1c511841d979" id="r_aa017c6fcf7f1532fb7fa1c511841d979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa017c6fcf7f1532fb7fa1c511841d979">getSelected</a> () const</td></tr>
+<tr class="memdesc:aa017c6fcf7f1532fb7fa1c511841d979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text that is drawn on the currently selected tab.  <br /></td></tr>
+<tr class="memitem:aa031f4834aec7e253cc3958f2b34abfb" id="r_aa031f4834aec7e253cc3958f2b34abfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa031f4834aec7e253cc3958f2b34abfb">getSelectedIndex</a> () const</td></tr>
+<tr class="memdesc:aa031f4834aec7e253cc3958f2b34abfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the currently selected tab.  <br /></td></tr>
+<tr class="memitem:a6cb8101aa0011b823369541666ffee4a" id="r_a6cb8101aa0011b823369541666ffee4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb8101aa0011b823369541666ffee4a">getHoveredIndex</a> () const</td></tr>
+<tr class="memdesc:a6cb8101aa0011b823369541666ffee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of the tab below the mouse cursor.  <br /></td></tr>
+<tr class="memitem:a2ce139f67e13682dd7310b1a831f09ad" id="r_a2ce139f67e13682dd7310b1a831f09ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ce139f67e13682dd7310b1a831f09ad">setTabVisible</a> (std::size_t index, bool visible)</td></tr>
+<tr class="memdesc:a2ce139f67e13682dd7310b1a831f09ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether a tab is visible.  <br /></td></tr>
+<tr class="memitem:a58686c70a6b4a4e7007f8c9050d713fb" id="r_a58686c70a6b4a4e7007f8c9050d713fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58686c70a6b4a4e7007f8c9050d713fb">getTabVisible</a> (std::size_t index) const</td></tr>
+<tr class="memdesc:a58686c70a6b4a4e7007f8c9050d713fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab is shown or hidden.  <br /></td></tr>
+<tr class="memitem:acb907805df43bc8620f9ff8b03b26551" id="r_acb907805df43bc8620f9ff8b03b26551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb907805df43bc8620f9ff8b03b26551">setTabEnabled</a> (std::size_t index, bool enabled)</td></tr>
+<tr class="memdesc:acb907805df43bc8620f9ff8b03b26551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whether a tab is enabled.  <br /></td></tr>
+<tr class="memitem:a07d2073df29966f53befe73452b167fe" id="r_a07d2073df29966f53befe73452b167fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d2073df29966f53befe73452b167fe">getTabEnabled</a> (std::size_t index) const</td></tr>
+<tr class="memdesc:a07d2073df29966f53befe73452b167fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the tab is enabled or disabled.  <br /></td></tr>
+<tr class="memitem:a00e7821aba55804e86df0fcdef37fdde" id="r_a00e7821aba55804e86df0fcdef37fdde"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e7821aba55804e86df0fcdef37fdde">getTabsCount</a> () const</td></tr>
+<tr class="memdesc:a00e7821aba55804e86df0fcdef37fdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of tabs.  <br /></td></tr>
+<tr class="memitem:ab2fa3fbcab13fc47f5d654794554848e" id="r_ab2fa3fbcab13fc47f5d654794554848e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fa3fbcab13fc47f5d654794554848e">isMouseOnWidget</a> (Vector2f pos) const override</td></tr>
+<tr class="memdesc:ab2fa3fbcab13fc47f5d654794554848e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget.  <br /></td></tr>
+<tr class="memitem:af577f9f2fa0f6d34afedd5b278b80525" id="r_af577f9f2fa0f6d34afedd5b278b80525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af577f9f2fa0f6d34afedd5b278b80525">rightMousePressed</a> (Vector2f pos) override</td></tr>
+<tr class="memitem:a716bd42127dadbc43f5eaf767d175296" id="r_a716bd42127dadbc43f5eaf767d175296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a716bd42127dadbc43f5eaf767d175296">mouseNoLongerOnWidget</a> () override</td></tr>
 <tr class="inherit_header pub_methods_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:a939669a57efe24732880c22e10ba2e8d inherit pub_methods_classtgui_1_1Widget" id="r_a939669a57efe24732880c22e10ba2e8d"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Widget</b> (const char *typeName, bool initRenderer)</td></tr>
@@ -247,6 +219,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Widget</b> ()</td
 <tr class="memdesc:a57b85bc10c1447e62d65739a39fca865 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the widget.  <br /></td></tr>
 <tr class="memitem:af845e04a68c8706ec7590e8eb3f489fb inherit pub_methods_classtgui_1_1Widget" id="r_af845e04a68c8706ec7590e8eb3f489fb"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#af845e04a68c8706ec7590e8eb3f489fb">getPosition</a> () const</td></tr>
 <tr class="memdesc:af845e04a68c8706ec7590e8eb3f489fb inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the widget.  <br /></td></tr>
+<tr class="memitem:aa593c0cf9c1dca1393e60849719417cf inherit pub_methods_classtgui_1_1Widget" id="r_aa593c0cf9c1dca1393e60849719417cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#aa593c0cf9c1dca1393e60849719417cf">setSize</a> (const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;size)</td></tr>
+<tr class="memdesc:aa593c0cf9c1dca1393e60849719417cf inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the widget.  <br /></td></tr>
 <tr class="memitem:a087a60617c86fcf6521da7bc9f4723bd inherit pub_methods_classtgui_1_1Widget" id="r_a087a60617c86fcf6521da7bc9f4723bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a087a60617c86fcf6521da7bc9f4723bd">setSize</a> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> width, <a class="el" href="classtgui_1_1Layout.html">Layout</a> height)</td></tr>
 <tr class="memdesc:a087a60617c86fcf6521da7bc9f4723bd inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the widget.  <br /></td></tr>
 <tr class="memitem:a7a4fa49b02bbb9ec34868cff192aa5af inherit pub_methods_classtgui_1_1Widget" id="r_a7a4fa49b02bbb9ec34868cff192aa5af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a7a4fa49b02bbb9ec34868cff192aa5af">setWidth</a> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> width)</td></tr>
@@ -391,12 +365,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (<a class="el" href="classtgui_1_1Duration.html">Duration</a> elapsedTime)</td></tr>
 <tr class="memitem:a4a093b5b91594db4520cfd8aaac4af56 inherit pub_methods_classtgui_1_1Widget" id="r_a4a093b5b91594db4520cfd8aaac4af56"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoLayoutUpdateEnabled</b> (bool enabled)</td></tr>
+<tr class="memitem:ac1a46589d56c675826ed43080a9e3d8b inherit pub_methods_classtgui_1_1Widget" id="r_ac1a46589d56c675826ed43080a9e3d8b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#ac1a46589d56c675826ed43080a9e3d8b">leftMousePressed</a> (Vector2f pos)</td></tr>
+<tr class="memdesc:ac1a46589d56c675826ed43080a9e3d8b inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the parent when the left mouse button goes down on top of the widget.  <br /></td></tr>
 <tr class="memitem:a306eef0d777366fc1980eee3fdaf81f3 inherit pub_methods_classtgui_1_1Widget" id="r_a306eef0d777366fc1980eee3fdaf81f3"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>leftMouseReleased</b> (Vector2f pos)</td></tr>
 <tr class="memitem:a0056113a6e31ec1c18bab44494fe6477 inherit pub_methods_classtgui_1_1Widget" id="r_a0056113a6e31ec1c18bab44494fe6477"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rightMouseReleased</b> (Vector2f pos)</td></tr>
 <tr class="memitem:adbc4fb949e19db7b4f17379ded6cc2e4 inherit pub_methods_classtgui_1_1Widget" id="r_adbc4fb949e19db7b4f17379ded6cc2e4"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleased</b> (<a class="el" href="structtgui_1_1Event.html#a369666e9b529309b223263eb0297ac9b">Event::MouseButton</a> button, Vector2f pos)</td></tr>
+<tr class="memitem:a5043e1b5329495fafdab55ebce266dec inherit pub_methods_classtgui_1_1Widget" id="r_a5043e1b5329495fafdab55ebce266dec"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoved</b> (Vector2f pos)</td></tr>
 <tr class="memitem:addcb1b709d95c413916650bb0e2b3cb1 inherit pub_methods_classtgui_1_1Widget" id="r_addcb1b709d95c413916650bb0e2b3cb1"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;event)</td></tr>
 <tr class="memitem:aa97d11a9c24460ba9484cc129e371705 inherit pub_methods_classtgui_1_1Widget" id="r_aa97d11a9c24460ba9484cc129e371705"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#aa97d11a9c24460ba9484cc129e371705">canHandleKeyPress</a> (const <a class="el" href="structtgui_1_1Event_1_1KeyEvent.html">Event::KeyEvent</a> &amp;event)</td></tr>
@@ -423,6 +401,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindPositionLayout<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bindSizeLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
 <tr class="memitem:a1b01afa102a7d9a44750b5ed5cee5e6f inherit pub_methods_classtgui_1_1Widget" id="r_a1b01afa102a7d9a44750b5ed5cee5e6f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindSizeLayout</b> (<a class="el" href="classtgui_1_1Layout.html">Layout</a> *layout)</td></tr>
+<tr class="memitem:a365775b84c12fe31dc7d87f4534c8e35 inherit pub_methods_classtgui_1_1Widget" id="r_a365775b84c12fe31dc7d87f4534c8e35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a365775b84c12fe31dc7d87f4534c8e35">draw</a> (<a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;target, <a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a> states) const =0</td></tr>
+<tr class="memdesc:a365775b84c12fe31dc7d87f4534c8e35 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the widget to a render target.  <br /></td></tr>
 <tr class="memitem:aeae20706ed1ba3bcc716b8563bd8e5f2 inherit pub_methods_classtgui_1_1Widget" id="r_aeae20706ed1ba3bcc716b8563bd8e5f2"><td class="memTemplParams" colspan="2">
 template&lt;typename WidgetType&gt; </td></tr>
 <tr class="memitem:aeae20706ed1ba3bcc716b8563bd8e5f2 inherit pub_methods_classtgui_1_1Widget template"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const WidgetType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> () const</td></tr>
@@ -431,44 +411,60 @@ template&lt;typename WidgetType&gt; </td></tr>
 template&lt;typename WidgetType&gt; </td></tr>
 <tr class="memitem:a129f4002d9927488ee66662ef3705ac5 inherit pub_methods_classtgui_1_1Widget template"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; WidgetType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> ()</td></tr>
 <tr class="memdesc:a129f4002d9927488ee66662ef3705ac5 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downcast widget. <br /></td></tr>
+<tr class="memitem:a135aa28677e4ac3604c6285b469d6a89 inherit pub_methods_classtgui_1_1Widget" id="r_a135aa28677e4ac3604c6285b469d6a89"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a135aa28677e4ac3604c6285b469d6a89">clone</a> () const =0</td></tr>
+<tr class="memdesc:a135aa28677e4ac3604c6285b469d6a89 inherit pub_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the widget if you don't know its exact type.  <br /></td></tr>
 <tr class="memitem:abe55fe12f26ae77c978778ca2a50be0b inherit pub_methods_classtgui_1_1Widget" id="r_abe55fe12f26ae77c978778ca2a50be0b"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rendererChangedCallback</b> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property)</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1812f439574eca22ce3e2bd97fa6ea01" id="r_a1812f439574eca22ce3e2bd97fa6ea01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#a8f6d994cc5ea23613954fc83e0ea1f3e">Tabs::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1812f439574eca22ce3e2bd97fa6ea01">create</a> ()</td></tr>
-<tr class="memdesc:a1812f439574eca22ce3e2bd97fa6ea01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new tabs widget.  <br /></td></tr>
-<tr class="memitem:a7a00fd2a70d1a078b674d0714f9076ee" id="r_a7a00fd2a70d1a078b674d0714f9076ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#a8f6d994cc5ea23613954fc83e0ea1f3e">Tabs::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a00fd2a70d1a078b674d0714f9076ee">copy</a> (const <a class="el" href="#a6713c94ca02ffaf439fa364860f51db1">Tabs::ConstPtr</a> &amp;tab)</td></tr>
-<tr class="memdesc:a7a00fd2a70d1a078b674d0714f9076ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of another tab.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a16a3f9585445118258b0de3beded4028" id="r_a16a3f9585445118258b0de3beded4028"><td class="memItemLeft" align="right" valign="top"><a id="a16a3f9585445118258b0de3beded4028" name="a16a3f9585445118258b0de3beded4028"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>StaticWidgetType</b> [] = &quot;Tabs&quot;</td></tr>
-<tr class="memdesc:a16a3f9585445118258b0de3beded4028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type name of the widget. <br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aef09c5fdd4a76386edf145eb1e0ad477" id="r_aef09c5fdd4a76386edf145eb1e0ad477"><td class="memItemLeft" align="right" valign="top"><a id="aef09c5fdd4a76386edf145eb1e0ad477" name="aef09c5fdd4a76386edf145eb1e0ad477"></a>
+<a class="el" href="namespacetgui.html#acc734715f52d0e2f5b1cadf79eda3991">SignalString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onTabSelect</b> = {&quot;TabSelected&quot;}</td></tr>
+<tr class="memdesc:aef09c5fdd4a76386edf145eb1e0ad477"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tab that was selected. Optional parameter: selected item. <br /></td></tr>
+<tr class="memitem:a749779c5a6f08e4659d2380f56117d58" id="r_a749779c5a6f08e4659d2380f56117d58"><td class="memItemLeft" align="right" valign="top"><a id="a749779c5a6f08e4659d2380f56117d58" name="a749779c5a6f08e4659d2380f56117d58"></a>
+<a class="el" href="namespacetgui.html#acc734715f52d0e2f5b1cadf79eda3991">SignalString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onTabRightClick</b> = {&quot;TabRightClicked&quot;}</td></tr>
+<tr class="memdesc:a749779c5a6f08e4659d2380f56117d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right mouse pressed on a tab. Optional parameter: selected item. <br /></td></tr>
+<tr class="inherit_header pub_attribs_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
+<tr class="memitem:a3835e82146cd20f070cb1363bc183976 inherit pub_attribs_classtgui_1_1Widget" id="r_a3835e82146cd20f070cb1363bc183976"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespacetgui.html#a627ed1a74e826fe2f617fe95553b555a">SignalVector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onPositionChange</b> = {&quot;PositionChanged&quot;}</td></tr>
+<tr class="memdesc:a3835e82146cd20f070cb1363bc183976 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position of the widget changed. Optional parameter: new position. <br /></td></tr>
+<tr class="memitem:afeab12e6d18dd931af50892aed72bc18 inherit pub_attribs_classtgui_1_1Widget" id="r_afeab12e6d18dd931af50892aed72bc18"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespacetgui.html#a627ed1a74e826fe2f617fe95553b555a">SignalVector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onSizeChange</b> = {&quot;SizeChanged&quot;}</td></tr>
+<tr class="memdesc:afeab12e6d18dd931af50892aed72bc18 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the widget changed. Optional parameter: new size. <br /></td></tr>
+<tr class="memitem:a3e8abf6cc15ae2c78dd644f653c20778 inherit pub_attribs_classtgui_1_1Widget" id="r_a3e8abf6cc15ae2c78dd644f653c20778"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onFocus</b> = {&quot;Focused&quot;}</td></tr>
+<tr class="memdesc:a3e8abf6cc15ae2c78dd644f653c20778 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The widget was focused. <br /></td></tr>
+<tr class="memitem:a22d40dc010d14acdcb0d791adfddb3d6 inherit pub_attribs_classtgui_1_1Widget" id="r_a22d40dc010d14acdcb0d791adfddb3d6"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onUnfocus</b> = {&quot;Unfocused&quot;}</td></tr>
+<tr class="memdesc:a22d40dc010d14acdcb0d791adfddb3d6 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The widget was unfocused. <br /></td></tr>
+<tr class="memitem:a3592e865e88965ab647783948de93469 inherit pub_attribs_classtgui_1_1Widget" id="r_a3592e865e88965ab647783948de93469"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseEnter</b> = {&quot;MouseEntered&quot;}</td></tr>
+<tr class="memdesc:a3592e865e88965ab647783948de93469 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse entered the widget. <br /></td></tr>
+<tr class="memitem:ace62ad49b3e1fb9056f0a6431f1dcc12 inherit pub_attribs_classtgui_1_1Widget" id="r_ace62ad49b3e1fb9056f0a6431f1dcc12"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseLeave</b> = {&quot;MouseLeft&quot;}</td></tr>
+<tr class="memdesc:ace62ad49b3e1fb9056f0a6431f1dcc12 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse left the widget. <br /></td></tr>
+<tr class="memitem:ae9ec282abc6b00b79b3abb9d22845c3f inherit pub_attribs_classtgui_1_1Widget" id="r_ae9ec282abc6b00b79b3abb9d22845c3f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classtgui_1_1SignalShowEffect.html">SignalShowEffect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onShowEffectFinish</b> = {&quot;ShowEffectFinished&quot;}</td></tr>
+<tr class="memdesc:ae9ec282abc6b00b79b3abb9d22845c3f inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">A show or hide effect finished. Optional parameters: effect type, new widget visibility or both. <br /></td></tr>
+<tr class="memitem:a386c173d59d3bfdf2b82dc7fe946fa20 inherit pub_attribs_classtgui_1_1Widget" id="r_a386c173d59d3bfdf2b82dc7fe946fa20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1SignalAnimationType.html">SignalAnimationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a386c173d59d3bfdf2b82dc7fe946fa20">onAnimationFinish</a> = {&quot;AnimationFinished&quot;}</td></tr>
+<tr class="memdesc:a386c173d59d3bfdf2b82dc7fe946fa20 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">An animation has finished.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2989bbdcbec41b57d2b986c25682407b" id="r_a2989bbdcbec41b57d2b986c25682407b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2989bbdcbec41b57d2b986c25682407b">recalculateTabsSize</a> () override</td></tr>
-<tr class="memitem:ac9c218ac80ffc0e458f9a2484d3049b9" id="r_ac9c218ac80ffc0e458f9a2484d3049b9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9c218ac80ffc0e458f9a2484d3049b9">save</a> (SavingRenderersMap &amp;renderers) const override</td></tr>
-<tr class="memdesc:ac9c218ac80ffc0e458f9a2484d3049b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the widget as a tree node in order to save it to a file.  <br /></td></tr>
-<tr class="memitem:a4f5a689fd111dabc20790caa251d8b66" id="r_a4f5a689fd111dabc20790caa251d8b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f5a689fd111dabc20790caa251d8b66">load</a> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</td></tr>
-<tr class="memdesc:a4f5a689fd111dabc20790caa251d8b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes.  <br /></td></tr>
-<tr class="memitem:aa8c8c4cf332ed47a2cfba19ce77614de" id="r_aa8c8c4cf332ed47a2cfba19ce77614de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8c8c4cf332ed47a2cfba19ce77614de">clone</a> () const override</td></tr>
-<tr class="memdesc:aa8c8c4cf332ed47a2cfba19ce77614de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the widget if you don't know its exact type.  <br /></td></tr>
-<tr class="inherit_header pro_methods_classtgui_1_1TabsBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtgui_1_1TabsBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a></td></tr>
-<tr class="memitem:a2c50b0d5b651b488fe22b420c3345323 inherit pro_methods_classtgui_1_1TabsBase" id="r_a2c50b0d5b651b488fe22b420c3345323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Signal.html">Signal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a2c50b0d5b651b488fe22b420c3345323">getSignal</a> (<a class="el" href="classtgui_1_1String.html">String</a> signalName) override</td></tr>
-<tr class="memdesc:a2c50b0d5b651b488fe22b420c3345323 inherit pro_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a signal based on its name.  <br /></td></tr>
-<tr class="memitem:a6979875b8c5a401304f86039994f6e3d inherit pro_methods_classtgui_1_1TabsBase" id="r_a6979875b8c5a401304f86039994f6e3d"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a2c50b0d5b651b488fe22b420c3345323" id="r_a2c50b0d5b651b488fe22b420c3345323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1Signal.html">Signal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c50b0d5b651b488fe22b420c3345323">getSignal</a> (<a class="el" href="classtgui_1_1String.html">String</a> signalName) override</td></tr>
+<tr class="memdesc:a2c50b0d5b651b488fe22b420c3345323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a signal based on its name.  <br /></td></tr>
+<tr class="memitem:a41e7de2dfa31b4dbb25da61e51c4373b" id="r_a41e7de2dfa31b4dbb25da61e51c4373b"><td class="memItemLeft" align="right" valign="top"><a id="a41e7de2dfa31b4dbb25da61e51c4373b" name="a41e7de2dfa31b4dbb25da61e51c4373b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateTabsSize</b> ()=0</td></tr>
+<tr class="memitem:a6979875b8c5a401304f86039994f6e3d" id="r_a6979875b8c5a401304f86039994f6e3d"><td class="memItemLeft" align="right" valign="top"><a id="a6979875b8c5a401304f86039994f6e3d" name="a6979875b8c5a401304f86039994f6e3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTextColors</b> ()</td></tr>
-<tr class="memitem:a0ce2428911a3051d6429a7fac299b7bc inherit pro_methods_classtgui_1_1TabsBase" id="r_a0ce2428911a3051d6429a7fac299b7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a0ce2428911a3051d6429a7fac299b7bc">rendererChanged</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property) override</td></tr>
-<tr class="memdesc:a0ce2428911a3051d6429a7fac299b7bc inherit pro_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when one of the properties of the renderer is changed.  <br /></td></tr>
-<tr class="memitem:a89758a760083564fdc86b92a59335c68 inherit pro_methods_classtgui_1_1TabsBase" id="r_a89758a760083564fdc86b92a59335c68"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a89758a760083564fdc86b92a59335c68">save</a> (SavingRenderersMap &amp;renderers) const override</td></tr>
-<tr class="memdesc:a89758a760083564fdc86b92a59335c68 inherit pro_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the widget as a tree node in order to save it to a file.  <br /></td></tr>
-<tr class="memitem:ada2949600c451aa9ccab26ef909df4bc inherit pro_methods_classtgui_1_1TabsBase" id="r_ada2949600c451aa9ccab26ef909df4bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#ada2949600c451aa9ccab26ef909df4bc">load</a> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</td></tr>
-<tr class="memdesc:ada2949600c451aa9ccab26ef909df4bc inherit pro_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes.  <br /></td></tr>
-<tr class="memitem:a6817c842e4c354f62a0b724328067600 inherit pro_methods_classtgui_1_1TabsBase" id="r_a6817c842e4c354f62a0b724328067600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1TabsBase.html#a6817c842e4c354f62a0b724328067600">updateTextSize</a> () override</td></tr>
-<tr class="memdesc:a6817c842e4c354f62a0b724328067600 inherit pro_methods_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the text size is changed (either by setTextSize or via the renderer).  <br /></td></tr>
+<tr class="memitem:a0ce2428911a3051d6429a7fac299b7bc" id="r_a0ce2428911a3051d6429a7fac299b7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce2428911a3051d6429a7fac299b7bc">rendererChanged</a> (const <a class="el" href="classtgui_1_1String.html">String</a> &amp;property) override</td></tr>
+<tr class="memdesc:a0ce2428911a3051d6429a7fac299b7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when one of the properties of the renderer is changed.  <br /></td></tr>
+<tr class="memitem:a89758a760083564fdc86b92a59335c68" id="r_a89758a760083564fdc86b92a59335c68"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; DataIO::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89758a760083564fdc86b92a59335c68">save</a> (SavingRenderersMap &amp;renderers) const override</td></tr>
+<tr class="memdesc:a89758a760083564fdc86b92a59335c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the widget as a tree node in order to save it to a file.  <br /></td></tr>
+<tr class="memitem:ada2949600c451aa9ccab26ef909df4bc" id="r_ada2949600c451aa9ccab26ef909df4bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2949600c451aa9ccab26ef909df4bc">load</a> (const std::unique_ptr&lt; DataIO::Node &gt; &amp;node, const LoadingRenderersMap &amp;renderers) override</td></tr>
+<tr class="memdesc:ada2949600c451aa9ccab26ef909df4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the widget from a tree of nodes.  <br /></td></tr>
+<tr class="memitem:a6817c842e4c354f62a0b724328067600" id="r_a6817c842e4c354f62a0b724328067600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6817c842e4c354f62a0b724328067600">updateTextSize</a> () override</td></tr>
+<tr class="memdesc:a6817c842e4c354f62a0b724328067600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the text size is changed (either by setTextSize or via the renderer).  <br /></td></tr>
 <tr class="inherit_header pro_methods_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:a6e3bbdea21eb583b3239103329e22f9b inherit pro_methods_classtgui_1_1Widget" id="r_a6e3bbdea21eb583b3239103329e22f9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a6e3bbdea21eb583b3239103329e22f9b">mouseEnteredWidget</a> ()</td></tr>
 <tr class="memdesc:a6e3bbdea21eb583b3239103329e22f9b inherit pro_methods_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the mouse enters the widget.  <br /></td></tr>
@@ -483,62 +479,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateBoundSizeL
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a5666afa4325546cd42e0f52ab2d5a61c" id="r_a5666afa4325546cd42e0f52ab2d5a61c"><td class="memItemLeft" align="right" valign="top"><a id="a5666afa4325546cd42e0f52ab2d5a61c" name="a5666afa4325546cd42e0f52ab2d5a61c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximumTabWidth</b> = 0</td></tr>
-<tr class="memitem:a3a14a4498825d404fa2097a9a036a1c5" id="r_a3a14a4498825d404fa2097a9a036a1c5"><td class="memItemLeft" align="right" valign="top"><a id="a3a14a4498825d404fa2097a9a036a1c5" name="a3a14a4498825d404fa2097a9a036a1c5"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumTabWidth</b> = 0</td></tr>
-<tr class="memitem:a9833666149ec98ad0f3b55f19ba71da0" id="r_a9833666149ec98ad0f3b55f19ba71da0"><td class="memItemLeft" align="right" valign="top"><a id="a9833666149ec98ad0f3b55f19ba71da0" name="a9833666149ec98ad0f3b55f19ba71da0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoSize</b> = true</td></tr>
-<tr class="inherit_header pro_attribs_classtgui_1_1TabsBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtgui_1_1TabsBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a></td></tr>
-<tr class="memitem:a9a3cf807e2b8502f24299f56909ebdef inherit pro_attribs_classtgui_1_1TabsBase" id="r_a9a3cf807e2b8502f24299f56909ebdef"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a9a3cf807e2b8502f24299f56909ebdef" id="r_a9a3cf807e2b8502f24299f56909ebdef"><td class="memItemLeft" align="right" valign="top"><a id="a9a3cf807e2b8502f24299f56909ebdef" name="a9a3cf807e2b8502f24299f56909ebdef"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedTab</b> = -1</td></tr>
-<tr class="memitem:a4500dbf78b24455304c84902829c11f1 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a4500dbf78b24455304c84902829c11f1"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a4500dbf78b24455304c84902829c11f1" id="r_a4500dbf78b24455304c84902829c11f1"><td class="memItemLeft" align="right" valign="top"><a id="a4500dbf78b24455304c84902829c11f1" name="a4500dbf78b24455304c84902829c11f1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_hoveringTab</b> = -1</td></tr>
-<tr class="memitem:aca38b8723138031f63ee1ed0ca48a766 inherit pro_attribs_classtgui_1_1TabsBase" id="r_aca38b8723138031f63ee1ed0ca48a766"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:aca38b8723138031f63ee1ed0ca48a766" id="r_aca38b8723138031f63ee1ed0ca48a766"><td class="memItemLeft" align="right" valign="top"><a id="aca38b8723138031f63ee1ed0ca48a766" name="aca38b8723138031f63ee1ed0ca48a766"></a>
 std::vector&lt; <a class="el" href="structtgui_1_1TabsBase_1_1Tab.html">Tab</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabs</b></td></tr>
-<tr class="memitem:afbec913c0303352503b84b5f04ca9102 inherit pro_attribs_classtgui_1_1TabsBase" id="r_afbec913c0303352503b84b5f04ca9102"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:afbec913c0303352503b84b5f04ca9102" id="r_afbec913c0303352503b84b5f04ca9102"><td class="memItemLeft" align="right" valign="top"><a id="afbec913c0303352503b84b5f04ca9102" name="afbec913c0303352503b84b5f04ca9102"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteTab</b></td></tr>
-<tr class="memitem:a4e43a45b7482ffa843d8a12413dc1cd9 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a4e43a45b7482ffa843d8a12413dc1cd9"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a4e43a45b7482ffa843d8a12413dc1cd9" id="r_a4e43a45b7482ffa843d8a12413dc1cd9"><td class="memItemLeft" align="right" valign="top"><a id="a4e43a45b7482ffa843d8a12413dc1cd9" name="a4e43a45b7482ffa843d8a12413dc1cd9"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteTabHover</b></td></tr>
-<tr class="memitem:a64f4a11846059d892820c79335319547 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a64f4a11846059d892820c79335319547"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a64f4a11846059d892820c79335319547" id="r_a64f4a11846059d892820c79335319547"><td class="memItemLeft" align="right" valign="top"><a id="a64f4a11846059d892820c79335319547" name="a64f4a11846059d892820c79335319547"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteSelectedTab</b></td></tr>
-<tr class="memitem:a2113ab5edb1f7aabd0a9ccc694ee2ce8 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a2113ab5edb1f7aabd0a9ccc694ee2ce8"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a2113ab5edb1f7aabd0a9ccc694ee2ce8" id="r_a2113ab5edb1f7aabd0a9ccc694ee2ce8"><td class="memItemLeft" align="right" valign="top"><a id="a2113ab5edb1f7aabd0a9ccc694ee2ce8" name="a2113ab5edb1f7aabd0a9ccc694ee2ce8"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteSelectedTabHover</b></td></tr>
-<tr class="memitem:a5573e8d795bd2a869e402fe952815aea inherit pro_attribs_classtgui_1_1TabsBase" id="r_a5573e8d795bd2a869e402fe952815aea"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a5573e8d795bd2a869e402fe952815aea" id="r_a5573e8d795bd2a869e402fe952815aea"><td class="memItemLeft" align="right" valign="top"><a id="a5573e8d795bd2a869e402fe952815aea" name="a5573e8d795bd2a869e402fe952815aea"></a>
 <a class="el" href="classtgui_1_1Sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_spriteDisabledTab</b></td></tr>
-<tr class="memitem:aa8b3ec35e55d9f406ef1565ba050e502 inherit pro_attribs_classtgui_1_1TabsBase" id="r_aa8b3ec35e55d9f406ef1565ba050e502"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:aa8b3ec35e55d9f406ef1565ba050e502" id="r_aa8b3ec35e55d9f406ef1565ba050e502"><td class="memItemLeft" align="right" valign="top"><a id="aa8b3ec35e55d9f406ef1565ba050e502" name="aa8b3ec35e55d9f406ef1565ba050e502"></a>
 Borders&#160;</td><td class="memItemRight" valign="bottom"><b>m_bordersCached</b></td></tr>
-<tr class="memitem:a4df69397b287b89362737a479c2fe88e inherit pro_attribs_classtgui_1_1TabsBase" id="r_a4df69397b287b89362737a479c2fe88e"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a4df69397b287b89362737a479c2fe88e" id="r_a4df69397b287b89362737a479c2fe88e"><td class="memItemLeft" align="right" valign="top"><a id="a4df69397b287b89362737a479c2fe88e" name="a4df69397b287b89362737a479c2fe88e"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_borderColorCached</b></td></tr>
-<tr class="memitem:a02d007a435e434408a93fd046890a0f8 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a02d007a435e434408a93fd046890a0f8"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a02d007a435e434408a93fd046890a0f8" id="r_a02d007a435e434408a93fd046890a0f8"><td class="memItemLeft" align="right" valign="top"><a id="a02d007a435e434408a93fd046890a0f8" name="a02d007a435e434408a93fd046890a0f8"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_borderColorHoverCached</b></td></tr>
-<tr class="memitem:a7487809f8f4e6d462df2adcef20f8589 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a7487809f8f4e6d462df2adcef20f8589"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a7487809f8f4e6d462df2adcef20f8589" id="r_a7487809f8f4e6d462df2adcef20f8589"><td class="memItemLeft" align="right" valign="top"><a id="a7487809f8f4e6d462df2adcef20f8589" name="a7487809f8f4e6d462df2adcef20f8589"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedBorderColorCached</b></td></tr>
-<tr class="memitem:ae5a5c08daf586c4652a829759fa7f8a4 inherit pro_attribs_classtgui_1_1TabsBase" id="r_ae5a5c08daf586c4652a829759fa7f8a4"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ae5a5c08daf586c4652a829759fa7f8a4" id="r_ae5a5c08daf586c4652a829759fa7f8a4"><td class="memItemLeft" align="right" valign="top"><a id="ae5a5c08daf586c4652a829759fa7f8a4" name="ae5a5c08daf586c4652a829759fa7f8a4"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedBorderColorHoverCached</b></td></tr>
-<tr class="memitem:a7d10c06c763ce2d23b39a1e79ef45204 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a7d10c06c763ce2d23b39a1e79ef45204"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a7d10c06c763ce2d23b39a1e79ef45204" id="r_a7d10c06c763ce2d23b39a1e79ef45204"><td class="memItemLeft" align="right" valign="top"><a id="a7d10c06c763ce2d23b39a1e79ef45204" name="a7d10c06c763ce2d23b39a1e79ef45204"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_backgroundColorCached</b></td></tr>
-<tr class="memitem:aea2d9ab4ff1dcc9cd7dfedb24178a6f4 inherit pro_attribs_classtgui_1_1TabsBase" id="r_aea2d9ab4ff1dcc9cd7dfedb24178a6f4"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:aea2d9ab4ff1dcc9cd7dfedb24178a6f4" id="r_aea2d9ab4ff1dcc9cd7dfedb24178a6f4"><td class="memItemLeft" align="right" valign="top"><a id="aea2d9ab4ff1dcc9cd7dfedb24178a6f4" name="aea2d9ab4ff1dcc9cd7dfedb24178a6f4"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_backgroundColorHoverCached</b></td></tr>
-<tr class="memitem:a42c27829b4c34649083bb63e55b9596a inherit pro_attribs_classtgui_1_1TabsBase" id="r_a42c27829b4c34649083bb63e55b9596a"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a42c27829b4c34649083bb63e55b9596a" id="r_a42c27829b4c34649083bb63e55b9596a"><td class="memItemLeft" align="right" valign="top"><a id="a42c27829b4c34649083bb63e55b9596a" name="a42c27829b4c34649083bb63e55b9596a"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_backgroundColorDisabledCached</b></td></tr>
-<tr class="memitem:af2e7b911f745117ce2d4ed9fe1ea5a1e inherit pro_attribs_classtgui_1_1TabsBase" id="r_af2e7b911f745117ce2d4ed9fe1ea5a1e"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:af2e7b911f745117ce2d4ed9fe1ea5a1e" id="r_af2e7b911f745117ce2d4ed9fe1ea5a1e"><td class="memItemLeft" align="right" valign="top"><a id="af2e7b911f745117ce2d4ed9fe1ea5a1e" name="af2e7b911f745117ce2d4ed9fe1ea5a1e"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedBackgroundColorCached</b></td></tr>
-<tr class="memitem:a3d5dde61d7d677882b2e22e2308d9cad inherit pro_attribs_classtgui_1_1TabsBase" id="r_a3d5dde61d7d677882b2e22e2308d9cad"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a3d5dde61d7d677882b2e22e2308d9cad" id="r_a3d5dde61d7d677882b2e22e2308d9cad"><td class="memItemLeft" align="right" valign="top"><a id="a3d5dde61d7d677882b2e22e2308d9cad" name="a3d5dde61d7d677882b2e22e2308d9cad"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedBackgroundColorHoverCached</b></td></tr>
-<tr class="memitem:a5be7bc7d1e87e61fc864d90ff8402ff8 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a5be7bc7d1e87e61fc864d90ff8402ff8"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a5be7bc7d1e87e61fc864d90ff8402ff8" id="r_a5be7bc7d1e87e61fc864d90ff8402ff8"><td class="memItemLeft" align="right" valign="top"><a id="a5be7bc7d1e87e61fc864d90ff8402ff8" name="a5be7bc7d1e87e61fc864d90ff8402ff8"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_textColorCached</b></td></tr>
-<tr class="memitem:a8cc3302a2b16c7fcb16bd8e81676419a inherit pro_attribs_classtgui_1_1TabsBase" id="r_a8cc3302a2b16c7fcb16bd8e81676419a"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a8cc3302a2b16c7fcb16bd8e81676419a" id="r_a8cc3302a2b16c7fcb16bd8e81676419a"><td class="memItemLeft" align="right" valign="top"><a id="a8cc3302a2b16c7fcb16bd8e81676419a" name="a8cc3302a2b16c7fcb16bd8e81676419a"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_textColorHoverCached</b></td></tr>
-<tr class="memitem:a3e129fcefbe704e9a0a5e2aa1e7fa13e inherit pro_attribs_classtgui_1_1TabsBase" id="r_a3e129fcefbe704e9a0a5e2aa1e7fa13e"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a3e129fcefbe704e9a0a5e2aa1e7fa13e" id="r_a3e129fcefbe704e9a0a5e2aa1e7fa13e"><td class="memItemLeft" align="right" valign="top"><a id="a3e129fcefbe704e9a0a5e2aa1e7fa13e" name="a3e129fcefbe704e9a0a5e2aa1e7fa13e"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_textColorDisabledCached</b></td></tr>
-<tr class="memitem:a9557c216ba8430a6447778bd15b486a4 inherit pro_attribs_classtgui_1_1TabsBase" id="r_a9557c216ba8430a6447778bd15b486a4"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a9557c216ba8430a6447778bd15b486a4" id="r_a9557c216ba8430a6447778bd15b486a4"><td class="memItemLeft" align="right" valign="top"><a id="a9557c216ba8430a6447778bd15b486a4" name="a9557c216ba8430a6447778bd15b486a4"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedTextColorCached</b></td></tr>
-<tr class="memitem:a40216dddf96788f3b7b3c3bb63f706ea inherit pro_attribs_classtgui_1_1TabsBase" id="r_a40216dddf96788f3b7b3c3bb63f706ea"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a40216dddf96788f3b7b3c3bb63f706ea" id="r_a40216dddf96788f3b7b3c3bb63f706ea"><td class="memItemLeft" align="right" valign="top"><a id="a40216dddf96788f3b7b3c3bb63f706ea" name="a40216dddf96788f3b7b3c3bb63f706ea"></a>
 <a class="el" href="classtgui_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedTextColorHoverCached</b></td></tr>
-<tr class="memitem:aca2ca3ef17509bd7877b778d61ed655b inherit pro_attribs_classtgui_1_1TabsBase" id="r_aca2ca3ef17509bd7877b778d61ed655b"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:aca2ca3ef17509bd7877b778d61ed655b" id="r_aca2ca3ef17509bd7877b778d61ed655b"><td class="memItemLeft" align="right" valign="top"><a id="aca2ca3ef17509bd7877b778d61ed655b" name="aca2ca3ef17509bd7877b778d61ed655b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_distanceToSideCached</b> = 0</td></tr>
-<tr class="memitem:aaff7272e54be6e8842e0abe2c1726fac inherit pro_attribs_classtgui_1_1TabsBase" id="r_aaff7272e54be6e8842e0abe2c1726fac"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:aaff7272e54be6e8842e0abe2c1726fac" id="r_aaff7272e54be6e8842e0abe2c1726fac"><td class="memItemLeft" align="right" valign="top"><a id="aaff7272e54be6e8842e0abe2c1726fac" name="aaff7272e54be6e8842e0abe2c1726fac"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_roundedBorderRadiusCached</b> = 0</td></tr>
 <tr class="inherit_header pro_attribs_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:a94d040fb97b2af149dabef7149bf7732 inherit pro_attribs_classtgui_1_1Widget" id="r_a94d040fb97b2af149dabef7149bf7732"><td class="memItemLeft" align="right" valign="top">
@@ -630,37 +619,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_textSizeCac
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classtgui_1_1TabsBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classtgui_1_1TabsBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a></td></tr>
-<tr class="memitem:aef09c5fdd4a76386edf145eb1e0ad477 inherit pub_attribs_classtgui_1_1TabsBase" id="r_aef09c5fdd4a76386edf145eb1e0ad477"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacetgui.html#acc734715f52d0e2f5b1cadf79eda3991">SignalString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onTabSelect</b> = {&quot;TabSelected&quot;}</td></tr>
-<tr class="memdesc:aef09c5fdd4a76386edf145eb1e0ad477 inherit pub_attribs_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tab that was selected. Optional parameter: selected item. <br /></td></tr>
-<tr class="memitem:a749779c5a6f08e4659d2380f56117d58 inherit pub_attribs_classtgui_1_1TabsBase" id="r_a749779c5a6f08e4659d2380f56117d58"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacetgui.html#acc734715f52d0e2f5b1cadf79eda3991">SignalString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onTabRightClick</b> = {&quot;TabRightClicked&quot;}</td></tr>
-<tr class="memdesc:a749779c5a6f08e4659d2380f56117d58 inherit pub_attribs_classtgui_1_1TabsBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right mouse pressed on a tab. Optional parameter: selected item. <br /></td></tr>
-<tr class="inherit_header pub_attribs_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
-<tr class="memitem:a3835e82146cd20f070cb1363bc183976 inherit pub_attribs_classtgui_1_1Widget" id="r_a3835e82146cd20f070cb1363bc183976"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacetgui.html#a627ed1a74e826fe2f617fe95553b555a">SignalVector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onPositionChange</b> = {&quot;PositionChanged&quot;}</td></tr>
-<tr class="memdesc:a3835e82146cd20f070cb1363bc183976 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position of the widget changed. Optional parameter: new position. <br /></td></tr>
-<tr class="memitem:afeab12e6d18dd931af50892aed72bc18 inherit pub_attribs_classtgui_1_1Widget" id="r_afeab12e6d18dd931af50892aed72bc18"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacetgui.html#a627ed1a74e826fe2f617fe95553b555a">SignalVector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onSizeChange</b> = {&quot;SizeChanged&quot;}</td></tr>
-<tr class="memdesc:afeab12e6d18dd931af50892aed72bc18 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the widget changed. Optional parameter: new size. <br /></td></tr>
-<tr class="memitem:a3e8abf6cc15ae2c78dd644f653c20778 inherit pub_attribs_classtgui_1_1Widget" id="r_a3e8abf6cc15ae2c78dd644f653c20778"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onFocus</b> = {&quot;Focused&quot;}</td></tr>
-<tr class="memdesc:a3e8abf6cc15ae2c78dd644f653c20778 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The widget was focused. <br /></td></tr>
-<tr class="memitem:a22d40dc010d14acdcb0d791adfddb3d6 inherit pub_attribs_classtgui_1_1Widget" id="r_a22d40dc010d14acdcb0d791adfddb3d6"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onUnfocus</b> = {&quot;Unfocused&quot;}</td></tr>
-<tr class="memdesc:a22d40dc010d14acdcb0d791adfddb3d6 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The widget was unfocused. <br /></td></tr>
-<tr class="memitem:a3592e865e88965ab647783948de93469 inherit pub_attribs_classtgui_1_1Widget" id="r_a3592e865e88965ab647783948de93469"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseEnter</b> = {&quot;MouseEntered&quot;}</td></tr>
-<tr class="memdesc:a3592e865e88965ab647783948de93469 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse entered the widget. <br /></td></tr>
-<tr class="memitem:ace62ad49b3e1fb9056f0a6431f1dcc12 inherit pub_attribs_classtgui_1_1Widget" id="r_ace62ad49b3e1fb9056f0a6431f1dcc12"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1Signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseLeave</b> = {&quot;MouseLeft&quot;}</td></tr>
-<tr class="memdesc:ace62ad49b3e1fb9056f0a6431f1dcc12 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse left the widget. <br /></td></tr>
-<tr class="memitem:ae9ec282abc6b00b79b3abb9d22845c3f inherit pub_attribs_classtgui_1_1Widget" id="r_ae9ec282abc6b00b79b3abb9d22845c3f"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classtgui_1_1SignalShowEffect.html">SignalShowEffect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onShowEffectFinish</b> = {&quot;ShowEffectFinished&quot;}</td></tr>
-<tr class="memdesc:ae9ec282abc6b00b79b3abb9d22845c3f inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">A show or hide effect finished. Optional parameters: effect type, new widget visibility or both. <br /></td></tr>
-<tr class="memitem:a386c173d59d3bfdf2b82dc7fe946fa20 inherit pub_attribs_classtgui_1_1Widget" id="r_a386c173d59d3bfdf2b82dc7fe946fa20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtgui_1_1SignalAnimationType.html">SignalAnimationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtgui_1_1Widget.html#a386c173d59d3bfdf2b82dc7fe946fa20">onAnimationFinish</a> = {&quot;AnimationFinished&quot;}</td></tr>
-<tr class="memdesc:a386c173d59d3bfdf2b82dc7fe946fa20 inherit pub_attribs_classtgui_1_1Widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">An animation has finished.  <br /></td></tr>
 <tr class="inherit_header pro_types_classtgui_1_1Widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_types_classtgui_1_1Widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Types inherited from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a></td></tr>
 <tr class="memitem:ab7ed649302b0c709abdc63723cd9e2f2 inherit pro_types_classtgui_1_1Widget" id="r_ab7ed649302b0c709abdc63723cd9e2f2"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SavingRenderersMap</b> = std::map&lt;const <a class="el" href="classtgui_1_1Widget.html#a8f4ca51beee3a57d6b49a39f42aa6183">Widget</a>*, std::pair&lt;std::unique_ptr&lt;DataIO::Node&gt;, <a class="el" href="classtgui_1_1String.html">String</a>&gt;&gt;</td></tr>
@@ -669,11 +627,73 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classtgui_1_1Tabs.html" title="Tabs widget.">Tabs</a> widget. </p>
-<p>If you are looking for something that allow holds multiple panels, displayed one panel at a time then check out the <a class="el" href="classtgui_1_1TabContainer.html" title="TabContainer widget.">TabContainer</a> class.</p>
-<p>If the tabs need to be placed below each other then check out the <a class="el" href="classtgui_1_1VerticalTabs.html" title="VerticalTabs widget.">VerticalTabs</a> widget. </p>
+<p>If you are looking for something that allow holds multiple panels, displayed one panel at a time then check out the <a class="el" href="classtgui_1_1TabContainer.html" title="TabContainer widget.">TabContainer</a> class. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aa8c8c4cf332ed47a2cfba19ce77614de" name="aa8c8c4cf332ed47a2cfba19ce77614de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8c8c4cf332ed47a2cfba19ce77614de">&#9670;&#160;</a></span>clone()</h2>
+<a id="adf3d62e1f391568cec2b9847ff8793c2" name="adf3d62e1f391568cec2b9847ff8793c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3d62e1f391568cec2b9847ff8793c2">&#9670;&#160;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t tgui::TabsBase::add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>select</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new tab. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text of the tab that will be drawn on top of it </td></tr>
+    <tr><td class="paramname">select</td><td>Do you want the new tab to be selected immediately?</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the tab in the list</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The index returned by this function may no longer be correct when a tab is removed </dd></dl>
+
+</div>
+</div>
+<a id="ab1837969f886f7820447cab9f7ffbaf7" name="ab1837969f886f7820447cab9f7ffbaf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1837969f886f7820447cab9f7ffbaf7">&#9670;&#160;</a></span>changeText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TabsBase::changeText </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the text of one of the tabs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab to be changed. The first tab has index 0 </td></tr>
+    <tr><td class="paramname">text</td><td>The new text of the tab that will be drawn on top of it</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when text was successfully changed, false when index was too high </dd></dl>
+
+</div>
+</div>
+<a id="a6cb8101aa0011b823369541666ffee4a" name="a6cb8101aa0011b823369541666ffee4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb8101aa0011b823369541666ffee4a">&#9670;&#160;</a></span>getHoveredIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,10 +702,184 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtgui_1_1Widget.html#a97659aaf84026b33d255172efa7d8b23">Widget::Ptr</a> tgui::Tabs::clone </td>
+          <td class="memname">int tgui::TabsBase::getHoveredIndex </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the index of the tab below the mouse cursor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index of the tab below the mouse, or -1 when the mouse isn't on top of any tab </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>TGUI 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a91e484f9d42a3c8cea958287c75c44d5" name="a91e484f9d42a3c8cea958287c75c44d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e484f9d42a3c8cea958287c75c44d5">&#9670;&#160;</a></span>getRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> * tgui::TabsBase::getRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the renderer, which gives access to functions that determine how the widget is displayed. </p>
+<dl class="section return"><dt>Returns</dt><dd>Temporary pointer to the renderer </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>After calling this function, the widget has its own copy of the renderer and it will no longer be shared. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a10a3f066a6ba7ec4479e4f5cd9997999">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="aa017c6fcf7f1532fb7fa1c511841d979" name="aa017c6fcf7f1532fb7fa1c511841d979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa017c6fcf7f1532fb7fa1c511841d979">&#9670;&#160;</a></span>getSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1String.html">String</a> tgui::TabsBase::getSelected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the text that is drawn on the currently selected tab. </p>
+<dl class="section return"><dt>Returns</dt><dd>The text on the tab. When no tab is selected then this function returns an empty string </dd></dl>
+
+</div>
+</div>
+<a id="aa031f4834aec7e253cc3958f2b34abfb" name="aa031f4834aec7e253cc3958f2b34abfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa031f4834aec7e253cc3958f2b34abfb">&#9670;&#160;</a></span>getSelectedIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tgui::TabsBase::getSelectedIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the index of the currently selected tab. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index of the tab. When no tab is selected then this function returns -1</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The index returned by this function may no longer be correct when a tab is removed </dd></dl>
+
+</div>
+</div>
+<a id="aea5c86ce9c43757f8e33e3e354856ccb" name="aea5c86ce9c43757f8e33e3e354856ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5c86ce9c43757f8e33e3e354856ccb">&#9670;&#160;</a></span>getSharedRenderer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> * tgui::TabsBase::getSharedRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="ad81eba69e0b8510f17e5c2c89d1a68dc" name="ad81eba69e0b8510f17e5c2c89d1a68dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81eba69e0b8510f17e5c2c89d1a68dc">&#9670;&#160;</a></span>getSharedRenderer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1TabsRenderer.html">TabsRenderer</a> * tgui::TabsBase::getSharedRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the renderer, which gives access to functions that determine how the widget is displayed. </p>
+<dl class="section return"><dt>Returns</dt><dd>Temporary pointer to the renderer that may be shared with other widgets using the same renderer </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a217f5259360e2fb9b0157b4030beb59d">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="a2c50b0d5b651b488fe22b420c3345323" name="a2c50b0d5b651b488fe22b420c3345323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c50b0d5b651b488fe22b420c3345323">&#9670;&#160;</a></span>getSignal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1Signal.html">Signal</a> &amp; tgui::TabsBase::getSignal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1String.html">String</a></td>          <td class="paramname"><span class="paramname"><em>signalName</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -695,50 +889,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </table>
 </div><div class="memdoc">
 
-<p>Makes a copy of the widget if you don't know its exact type. </p>
-<p>This function should only be used when you don't know the type of the widget. If you know what kind of widget you are copying, you should use the copy function.</p>
-<dl class="section return"><dt>Returns</dt><dd>Copy of the widget </dd></dl>
-
-<p>Implements <a class="el" href="classtgui_1_1Widget.html#a135aa28677e4ac3604c6285b469d6a89">tgui::Widget</a>.</p>
-
-</div>
-</div>
-<a id="a7a00fd2a70d1a078b674d0714f9076ee" name="a7a00fd2a70d1a078b674d0714f9076ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a00fd2a70d1a078b674d0714f9076ee">&#9670;&#160;</a></span>copy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a8f6d994cc5ea23613954fc83e0ea1f3e">Tabs::Ptr</a> tgui::Tabs::copy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a6713c94ca02ffaf439fa364860f51db1">Tabs::ConstPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tab</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes a copy of another tab. </p>
+<p>Retrieves a signal based on its name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tab</td><td>The other tab</td></tr>
+    <tr><td class="paramname">signalName</td><td>Name of the signal</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new tab </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classtgui_1_1Signal.html" title="Signal to which the user can subscribe to get callbacks from.">Signal</a> that corresponds to the name</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classtgui_1_1Exception.html">Exception</a></td><td>when the name does not match any signal </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a950792e7a622b0886a5de63d045606d4">tgui::Widget</a>.</p>
 
 </div>
 </div>
-<a id="a1812f439574eca22ce3e2bd97fa6ea01" name="a1812f439574eca22ce3e2bd97fa6ea01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1812f439574eca22ce3e2bd97fa6ea01">&#9670;&#160;</a></span>create()</h2>
+<a id="a07d2073df29966f53befe73452b167fe" name="a07d2073df29966f53befe73452b167fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d2073df29966f53befe73452b167fe">&#9670;&#160;</a></span>getTabEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -747,26 +918,32 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a8f6d994cc5ea23613954fc83e0ea1f3e">Tabs::Ptr</a> tgui::Tabs::create </td>
+          <td class="memname">bool tgui::TabsBase::getTabEnabled </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new tabs widget. </p>
-<dl class="section return"><dt>Returns</dt><dd>The new tabs </dd></dl>
+<p>Returns whether the tab is enabled or disabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the tab is enabled </dd></dl>
 
 </div>
 </div>
-<a id="a1ee72fd3845780674d609696ca4521b0" name="a1ee72fd3845780674d609696ca4521b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee72fd3845780674d609696ca4521b0">&#9670;&#160;</a></span>draw()</h2>
+<a id="a00e7821aba55804e86df0fcdef37fdde" name="a00e7821aba55804e86df0fcdef37fdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e7821aba55804e86df0fcdef37fdde">&#9670;&#160;</a></span>getTabsCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,38 +952,130 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::draw </td>
+          <td class="memname">std::size_t tgui::TabsBase::getTabsCount </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1BackendRenderTarget.html">BackendRenderTarget</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the amount of tabs. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of tabs </dd></dl>
+
+</div>
+</div>
+<a id="a58686c70a6b4a4e7007f8c9050d713fb" name="a58686c70a6b4a4e7007f8c9050d713fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58686c70a6b4a4e7007f8c9050d713fb">&#9670;&#160;</a></span>getTabVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TabsBase::getTabVisible </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether the tab is shown or hidden. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the tab is visible </dd></dl>
+
+</div>
+</div>
+<a id="ade20b77da0f3d1058bf1e1fcd54a672e" name="ade20b77da0f3d1058bf1e1fcd54a672e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade20b77da0f3d1058bf1e1fcd54a672e">&#9670;&#160;</a></span>getText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtgui_1_1String.html">String</a> tgui::TabsBase::getText </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the text of one of the tabs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab. The first tab has index 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The text on the tab or an empty string when index was too high </dd></dl>
+
+</div>
+</div>
+<a id="a84b8a97dd9853bf57c8b238ad802528e" name="a84b8a97dd9853bf57c8b238ad802528e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b8a97dd9853bf57c8b238ad802528e">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TabsBase::insert </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structtgui_1_1RenderStates.html">RenderStates</a></td>          <td class="paramname"><span class="paramname"><em>states</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>select</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Draw the widget to a render target. </p>
+<p>Inserts a new tab somewhere between the other tabs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target</td><td>Render target to draw to </td></tr>
-    <tr><td class="paramname">states</td><td>Current render states </td></tr>
+    <tr><td class="paramname">index</td><td>The index where the tab gets inserted. 0 means before the first tab, 1 means behind the first tab </td></tr>
+    <tr><td class="paramname">text</td><td>The text of the tab that will be drawn on top of it </td></tr>
+    <tr><td class="paramname">select</td><td>Do you want the new tab to be selected immediately? </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classtgui_1_1Widget.html#a365775b84c12fe31dc7d87f4534c8e35">tgui::Widget</a>.</p>
-
 </div>
 </div>
-<a id="ab3a17a92a3540fb4da7a27a9a1d2fde8" name="ab3a17a92a3540fb4da7a27a9a1d2fde8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a17a92a3540fb4da7a27a9a1d2fde8">&#9670;&#160;</a></span>getAutoSize()</h2>
+<a id="ab2fa3fbcab13fc47f5d654794554848e" name="ab2fa3fbcab13fc47f5d654794554848e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fa3fbcab13fc47f5d654794554848e">&#9670;&#160;</a></span>isMouseOnWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,122 +1084,28 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tgui::Tabs::getAutoSize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns whether the tabs are auto-sized or not. </p>
-<dl class="section return"><dt>Returns</dt><dd>Is the width of the tabs dependent on their content? </dd></dl>
-
-</div>
-</div>
-<a id="afe5aee3d5a20afd79e31c4c56cc8cf3c" name="afe5aee3d5a20afd79e31c4c56cc8cf3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe5aee3d5a20afd79e31c4c56cc8cf3c">&#9670;&#160;</a></span>getMaximumTabWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float tgui::Tabs::getMaximumTabWidth </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the maximum tab width of the tabs. </p>
-<dl class="section return"><dt>Returns</dt><dd>Maximum tab width</dd></dl>
-<p>This property only has effect when the tabs are auto-sizing.</p>
-<p>If the text on the tab is longer than this width then it will be cropped to fit inside the tab. By default, the maximum width is 0 which means that there is no limitation. </p>
-
-</div>
-</div>
-<a id="a7b3ee0e0ea64b4b4c59644e82dc5b27a" name="a7b3ee0e0ea64b4b4c59644e82dc5b27a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b3ee0e0ea64b4b4c59644e82dc5b27a">&#9670;&#160;</a></span>getMinimumTabWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float tgui::Tabs::getMinimumTabWidth </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the minimum tab width of the tabs. </p>
-<dl class="section return"><dt>Returns</dt><dd>Minimum tab width</dd></dl>
-<p>This property only has effect when the tabs are auto-sizing.</p>
-<p>Every tab is at least as wide as this minimum or twice the distance to side. </p>
-
-</div>
-</div>
-<a id="aa8ec3c235aa171e2e52c9583678c9b9c" name="aa8ec3c235aa171e2e52c9583678c9b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8ec3c235aa171e2e52c9583678c9b9c">&#9670;&#160;</a></span>leftMousePressed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool tgui::Tabs::leftMousePressed </td>
+          <td class="memname">bool tgui::TabsBase::isMouseOnWidget </td>
           <td>(</td>
           <td class="paramtype">Vector2f</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called by the parent when the left mouse button goes down on top of the widget. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pos</td><td>Mouse position in view coordinates relative to the parent widget </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the clicked part of the widget is draggable, i.e. if the widget should continue to receive mouse move events until the mouse is released, even when the mouse leaves the widget. When false is returned, the mouse move events will only be sent to the widget as long as the mouse is on top of the widget. </dd></dl>
+<p>Returns whether the mouse position (which is relative to the parent widget) lies on top of the widget. </p>
+<dl class="section return"><dt>Returns</dt><dd>Is the mouse on top of the widget? </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#ac1a46589d56c675826ed43080a9e3d8b">tgui::Widget</a>.</p>
+<p>Implements <a class="el" href="classtgui_1_1Widget.html#aada6f2200d774320d3b07536d7255550">tgui::Widget</a>.</p>
 
 </div>
 </div>
-<a id="a4f5a689fd111dabc20790caa251d8b66" name="a4f5a689fd111dabc20790caa251d8b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5a689fd111dabc20790caa251d8b66">&#9670;&#160;</a></span>load()</h2>
+<a id="ada2949600c451aa9ccab26ef909df4bc" name="ada2949600c451aa9ccab26ef909df4bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2949600c451aa9ccab26ef909df4bc">&#9670;&#160;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -939,7 +1114,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::load </td>
+          <td class="memname">void tgui::TabsBase::load </td>
           <td>(</td>
           <td class="paramtype">const std::unique_ptr&lt; DataIO::Node &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
@@ -960,10 +1135,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a8f5133ca1115809411c3c94c8c860fa7">tgui::Widget</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classtgui_1_1VerticalTabs.html#acf8b50f85e46ee4b43da2bc53441557b">tgui::VerticalTabs</a>.</p>
+
 </div>
 </div>
-<a id="a6c4a3f4d953719642dc492dea21e8d94" name="a6c4a3f4d953719642dc492dea21e8d94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c4a3f4d953719642dc492dea21e8d94">&#9670;&#160;</a></span>mouseMoved()</h2>
+<a id="a716bd42127dadbc43f5eaf767d175296" name="a716bd42127dadbc43f5eaf767d175296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716bd42127dadbc43f5eaf767d175296">&#9670;&#160;</a></span>mouseNoLongerOnWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +1149,123 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::mouseMoved </td>
+          <td class="memname">void tgui::TabsBase::mouseNoLongerOnWidget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="ab25da022a91ad5612f38ee04cbfa1c72" name="ab25da022a91ad5612f38ee04cbfa1c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25da022a91ad5612f38ee04cbfa1c72">&#9670;&#160;</a></span>remove() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TabsBase::remove </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a tab with a given text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text on the tab to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether a tab was removed, false is returned when the text didn't match any tab </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aad4f38ba4fa2f4c5e226476b9861306e" title="Removes a tab with a given index.">remove(std::size_t)</a> </dd></dl>
+
+</div>
+</div>
+<a id="aad4f38ba4fa2f4c5e226476b9861306e" name="aad4f38ba4fa2f4c5e226476b9861306e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4f38ba4fa2f4c5e226476b9861306e">&#9670;&#160;</a></span>remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tgui::TabsBase::remove </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a tab with a given index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether a tab was removed, false is returned when the index was too high </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>remove(String) </dd></dl>
+
+</div>
+</div>
+<a id="a0ce2428911a3051d6429a7fac299b7bc" name="a0ce2428911a3051d6429a7fac299b7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce2428911a3051d6429a7fac299b7bc">&#9670;&#160;</a></span>rendererChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TabsBase::rendererChanged </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function called when one of the properties of the renderer is changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td>Name of the property that was changed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a7fea2c7fd134088ce7d9f86b0d7d421a">tgui::Widget</a>.</p>
+
+</div>
+</div>
+<a id="af577f9f2fa0f6d34afedd5b278b80525" name="af577f9f2fa0f6d34afedd5b278b80525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af577f9f2fa0f6d34afedd5b278b80525">&#9670;&#160;</a></span>rightMousePressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TabsBase::rightMousePressed </td>
           <td>(</td>
           <td class="paramtype">Vector2f</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
           <td></td>
@@ -989,8 +1282,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 </div>
 </div>
-<a id="a2989bbdcbec41b57d2b986c25682407b" name="a2989bbdcbec41b57d2b986c25682407b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2989bbdcbec41b57d2b986c25682407b">&#9670;&#160;</a></span>recalculateTabsSize()</h2>
+<a id="a89758a760083564fdc86b92a59335c68" name="a89758a760083564fdc86b92a59335c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89758a760083564fdc86b92a59335c68">&#9670;&#160;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -999,34 +1292,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::recalculateTabsSize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classtgui_1_1TabsBase.html">tgui::TabsBase</a>.</p>
-
-</div>
-</div>
-<a id="ac9c218ac80ffc0e458f9a2484d3049b9" name="ac9c218ac80ffc0e458f9a2484d3049b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9c218ac80ffc0e458f9a2484d3049b9">&#9670;&#160;</a></span>save()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; DataIO::Node &gt; tgui::Tabs::save </td>
+          <td class="memname">std::unique_ptr&lt; DataIO::Node &gt; tgui::TabsBase::save </td>
           <td>(</td>
           <td class="paramtype">SavingRenderersMap &amp;</td>          <td class="paramname"><span class="paramname"><em>renderers</em></span></td><td>)</td>
           <td> const</td>
@@ -1043,91 +1309,68 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#a85f995f627c2b5c6f7dc73ed25438cab">tgui::Widget</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classtgui_1_1VerticalTabs.html#ad28d253f3c9bb4331876f5c259b5c851">tgui::VerticalTabs</a>.</p>
+
 </div>
 </div>
-<a id="a0c358ca09e962ce4c09165a6d1994eb0" name="a0c358ca09e962ce4c09165a6d1994eb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c358ca09e962ce4c09165a6d1994eb0">&#9670;&#160;</a></span>setAutoSize()</h2>
+<a id="acc50911c0f18570fc34f6958329017a8" name="acc50911c0f18570fc34f6958329017a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc50911c0f18570fc34f6958329017a8">&#9670;&#160;</a></span>select() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::setAutoSize </td>
+          <td class="memname">bool tgui::TabsBase::select </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>autoSize</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classtgui_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes whether the tabs are auto-sized or not. </p>
+<p>Selects the tab with a given text. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">autoSize</td><td>Should the size of the tabs depend on their content?</td></tr>
+    <tr><td class="paramname">text</td><td>The text of the tab to select </td></tr>
   </table>
   </dd>
 </dl>
-<p>When the tabs are in auto-size mode, the width of the tabs will be depend on the text which they contain. Otherwise, all tabs have an equal width to fill the size of the widget.</p>
-<p>The tabs are auto-sized by default. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether a tab was selected, false is returned if tab doesn't exist or is invisible or disabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#acb3a141f8d1c2f49c2679e14ab396bf1" title="Selects the tab with a given index.">select(std::size_t)</a></dd></dl>
+<p>If there are multiple tabs with the same text then the first one will be selected. When false is returned, the selected tab will still be deselected. </p>
 
 </div>
 </div>
-<a id="a7b95afff16cc96483d65bb9ea4a2f9fe" name="a7b95afff16cc96483d65bb9ea4a2f9fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b95afff16cc96483d65bb9ea4a2f9fe">&#9670;&#160;</a></span>setMaximumTabWidth()</h2>
+<a id="acb3a141f8d1c2f49c2679e14ab396bf1" name="acb3a141f8d1c2f49c2679e14ab396bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3a141f8d1c2f49c2679e14ab396bf1">&#9670;&#160;</a></span>select() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::setMaximumTabWidth </td>
+          <td class="memname">bool tgui::TabsBase::select </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>maximumWidth</em></span></td><td>)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the maximum tab width of the tabs. </p>
+<p>Selects the tab with a given index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">maximumWidth</td><td>Maximum width of a single tab</td></tr>
+    <tr><td class="paramname">index</td><td>The index of the tab to select </td></tr>
   </table>
   </dd>
 </dl>
-<p>This property only has effect when the tabs are auto-sizing.</p>
-<p>If the text on the tab is longer than this width then it will be cropped to fit inside the tab. By default, the maximum width is 0 which means that there is no limitation. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether a tab was selected, false is returned if the index was too high or if tab is invisible or disabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>select(String)</dd></dl>
+<p>When false is returned, the selected tab will still be deselected. </p>
 
 </div>
 </div>
-<a id="a97f8ca3b3edf13bd34bc8a8bce999b61" name="a97f8ca3b3edf13bd34bc8a8bce999b61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97f8ca3b3edf13bd34bc8a8bce999b61">&#9670;&#160;</a></span>setMinimumTabWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tgui::Tabs::setMinimumTabWidth </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>minimumWidth</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the minimum tab width of the tabs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minimumWidth</td><td>Minimum width of a single tab</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This property only has effect when the tabs are auto-sizing.</p>
-<p>Every tab is at least as wide as this minimum or twice the distance to side. </p>
-
-</div>
-</div>
-<a id="a9c423f93f83d868f65a4c45dd695447e" name="a9c423f93f83d868f65a4c45dd695447e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c423f93f83d868f65a4c45dd695447e">&#9670;&#160;</a></span>setSize() <span class="overload">[1/2]</span></h2>
+<a id="a7ae750da4046f9a2286646f570dd4152" name="a7ae750da4046f9a2286646f570dd4152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae750da4046f9a2286646f570dd4152">&#9670;&#160;</a></span>setEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1136,9 +1379,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tgui::Tabs::setSize </td>
+          <td class="memname">void tgui::TabsBase::setEnabled </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtgui_1_1Layout2d.html">Layout2d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1149,22 +1392,81 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
 </table>
 </div><div class="memdoc">
 
-<p>Changes the area used by the tabs. </p>
+<p>Enables or disables the widget. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Total size of the tabs</td></tr>
+    <tr><td class="paramname">enabled</td><td>Is the widget enabled?</td></tr>
   </table>
   </dd>
 </dl>
-<p>When this function is called, the tabs will no longer be auto-sizing, but each tab will get an equal width such that the total width corresponds to the size passed to this function.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a0c358ca09e962ce4c09165a6d1994eb0" title="Changes whether the tabs are auto-sized or not.">setAutoSize</a> </dd></dl>
+<p>The disabled widget will no longer receive events and thus no longer send callbacks. All widgets are enabled by default. </p>
 
-<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#aa593c0cf9c1dca1393e60849719417cf">tgui::Widget</a>.</p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html#aebe5ff11fc3812aefbf62d98baf2622c">tgui::Widget</a>.</p>
 
 </div>
 </div>
-<a id="a087a60617c86fcf6521da7bc9f4723bd" name="a087a60617c86fcf6521da7bc9f4723bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a087a60617c86fcf6521da7bc9f4723bd">&#9670;&#160;</a></span>setSize() <span class="overload">[2/2]</span></h2>
+<a id="acb907805df43bc8620f9ff8b03b26551" name="acb907805df43bc8620f9ff8b03b26551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb907805df43bc8620f9ff8b03b26551">&#9670;&#160;</a></span>setTabEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TabsBase::setTabEnabled </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes whether a tab is enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab to enable or disable </td></tr>
+    <tr><td class="paramname">enabled</td><td>Is the tab enabled? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ce139f67e13682dd7310b1a831f09ad" name="a2ce139f67e13682dd7310b1a831f09ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce139f67e13682dd7310b1a831f09ad">&#9670;&#160;</a></span>setTabVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tgui::TabsBase::setTabVisible </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes whether a tab is visible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the tab to show or hide </td></tr>
+    <tr><td class="paramname">visible</td><td>Is the tab shown? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6817c842e4c354f62a0b724328067600" name="a6817c842e4c354f62a0b724328067600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6817c842e4c354f62a0b724328067600">&#9670;&#160;</a></span>updateTextSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1173,63 +1475,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LoadingRenderersMap<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classtgui_1_1Widget.html#aa593c0cf9c1dca1393e60849719417cf">tgui::Widget::setSize</a> </td>
+          <td class="memname">void tgui::TabsBase::updateTextSize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1Layout.html">Layout</a></td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtgui_1_1Layout.html">Layout</a></td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Changes the size of the widget. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>Width of the widget </td></tr>
-    <tr><td class="paramname">height</td><td>Height of the widget</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section warning"><dt>Warning</dt><dd>This setSize overload must never be used from internal TGUI code or by custom widget implementations </dd></dl>
+<p>Called when the text size is changed (either by setTextSize or via the renderer). </p>
 
-</div>
-</div>
-<a id="a956d150e9d06b492165304634f3cdb12" name="a956d150e9d06b492165304634f3cdb12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956d150e9d06b492165304634f3cdb12">&#9670;&#160;</a></span>setTabHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tgui::Tabs::setTabHeight </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>height</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the height of the tabs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">height</td><td>Height of the tabs</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>When the tabs are auto-sizing, this function allows changing the height of the tabs without setting a fixed width like calling setSize would do. </p>
+<p>Reimplemented from <a class="el" href="classtgui_1_1Widget.html">tgui::Widget</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/TGUI/Widgets/<a class="el" href="Tabs_8hpp_source.html">Tabs.hpp</a></li>
+<li>include/TGUI/Widgets/<a class="el" href="TabsBase_8hpp_source.html">TabsBase.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.13.2-->
