@@ -5,6 +5,16 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 12
+    patches:
+    - version: 0
+      date: 26 January 2026
+      changes: |
+        New widget: VerticalTabs
+        Added Move cursor type (also known as SizeAll cursor)
+        ChildWindow's KeepInParent property didn't take parent borders into account
+        Fixed Gui Builder crash when attempting to open form while current form wasn't saved yet
+        Support more Android devices with SDL_GPU backend
   - version: 11
     patches:
     - version: 0

@@ -17,22 +17,22 @@ redirect_from: /bindings/index.html
 Packages:  
 **AUR** (Arch Linux): [tgui-git](https://aur.archlinux.org/packages/tgui-git/) (official, contains all backends)  
 
-### TGUI 1.11
+### TGUI 1.12
 
 **Latest stable version**. Minimum supported compilers: GCC 7, Clang 6, VS2019
 
-{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.11.0.zip" style="Green" %}
+{% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/v1.12.0.zip" style="Green" %}
 
 Precompiled libraries for Windows with SFML_GRAPHICS backend: (requires matching libraries from [SFML 3.0.2](https://www.sfml-dev.org/download/sfml/3.0.2/))
 
 <table>
 <tr>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.11.0/TGUI-1.11.0-vc17-32bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.11.0/TGUI-1.11.0-vc17-64bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.12.0/TGUI-1.12.0-vc17-32bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="Visual C++ 17 (2022) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.12.0/TGUI-1.12.0-vc17-64bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 <tr>
-  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.11.0/TGUI-1.11.0-mingw-14.2.0-32bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
-  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.11.0/TGUI-1.11.0-mingw-14.2.0-64bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 32bit" link="https://github.com/texus/TGUI/releases/download/v1.12.0/TGUI-1.12.0-mingw-14.2.0-32bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
+  <td><p>{% include button.ext text="GCC 14.2.0 MinGW (UCRT) (POSIX) - 64bit" link="https://github.com/texus/TGUI/releases/download/v1.12.0/TGUI-1.12.0-mingw-14.2.0-64bit-for-SFML-3.0.2.zip" style="Green DownloadBtnInTable" %}</p></td>
 </tr>
 </table>
 

@@ -44,7 +44,7 @@ var searchData=
   ['mousewheel_41',['mouseWheel',['../structtgui_1_1Event.html#a46fc514629894beaa24c662659e57aa2',1,'tgui::Event']]],
   ['mousewheelevent_42',['MouseWheelEvent',['../structtgui_1_1Event_1_1MouseWheelEvent.html',1,'tgui::Event']]],
   ['mousewheelscrolled_43',['MouseWheelScrolled',['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0aa9787e93d7821ce61637e6f9f19ef955b',1,'tgui::Event']]],
-  ['move_44',['Move',['../namespacetgui.html#aa728b924b1e93f5e2edd555dffffadbaa6bc362dbf494c61ea117fe3c71ca48a5',1,'tgui']]],
+  ['move_44',['Move',['../classtgui_1_1Cursor.html#a4e9a3c57acd4bf2b261aa2fe77f4d2f5a6bc362dbf494c61ea117fe3c71ca48a5',1,'tgui::Cursor::Move'],['../namespacetgui.html#aa728b924b1e93f5e2edd555dffffadbaa6bc362dbf494c61ea117fe3c71ca48a5',1,'tgui::Move']]],
   ['movetoback_45',['moveToBack',['../classtgui_1_1Widget.html#a828879b43785d167a5fb917cec3761ad',1,'tgui::Widget']]],
   ['movetofront_46',['moveToFront',['../classtgui_1_1Widget.html#a09fde59e06cb22e1740dbb1636802206',1,'tgui::Widget']]],
   ['movewidgetbackward_47',['moveWidgetBackward',['../classtgui_1_1Container.html#a2c4d8575b9f5cceac4c8f53e71ebb0e1',1,'tgui::Container::moveWidgetBackward()'],['../classtgui_1_1BackendGui.html#a7a4f046318b84a0d85c57d9afe02168d',1,'tgui::BackendGui::moveWidgetBackward()']]],
