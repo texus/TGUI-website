@@ -78,7 +78,7 @@ gui.add(canvas);
 
 Rendering to the canvas is done inside an SDL\_GPURenderPass for which the texture in SDL\_GPUColorTargetInfo was set to the texture of the canvas. Afterwards you can draw just like you would normally draw on the window.
 ```c++
-SDL_GPUColorTargetInfo colorTargetInfoCanvas;
+SDL_GPUColorTargetInfo colorTargetInfoCanvas = {};
 colorTargetInfoCanvas.texture = canvas->getTexture();
 colorTargetInfoCanvas.clear_color = clearColor;
 colorTargetInfoCanvas.load_op = SDL_GPU_LOADOP_CLEAR;
