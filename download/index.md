@@ -6,7 +6,7 @@ redirect_from: /bindings/index.html
 
 ### TGUI 1.x-dev
 
-**In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 7, Clang 6, VS2019
+**In development version** from [github](https://github.com/texus/TGUI/). Minimum supported compilers: GCC 8, Clang 7, VS2019
 
 <p>
   {% include button.ext text="Source code" link="https://github.com/texus/TGUI/archive/1.x.zip" style="Orange" %}<br><br>
