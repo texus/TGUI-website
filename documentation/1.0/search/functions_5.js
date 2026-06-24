@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['filedialog_0',['FileDialog',['../classtgui_1_1FileDialog.html#aeb204575636502fd16d9878e5a885cd3',1,'tgui::FileDialog::FileDialog(const FileDialog &amp;copy)'],['../classtgui_1_1FileDialog.html#adb9b791b0952a865f45796fdc61c5c15',1,'tgui::FileDialog::FileDialog(FileDialog &amp;&amp;copy) noexcept']]],
+  ['filedialog_0',['FileDialog',['../classtgui_1_1FileDialog.html#a00c39030b21dc03570363e8899c3aef1',1,'tgui::FileDialog::FileDialog(const FileDialog &amp;other)'],['../classtgui_1_1FileDialog.html#a21e160bad25cbc01c532143861d19258',1,'tgui::FileDialog::FileDialog(FileDialog &amp;&amp;other) noexcept']]],
   ['filedialogiconloader_1',['FileDialogIconLoader',['../classtgui_1_1FileDialogIconLoader.html#ac9d718cad748e920a261127b4c8575e1',1,'tgui::FileDialogIconLoader']]],
   ['fileexists_2',['fileExists',['../classtgui_1_1Filesystem.html#a77950a4c368f02674f2bd3093d87d65f',1,'tgui::Filesystem::fileExists(const Path &amp;path)'],['../classtgui_1_1Filesystem.html#a3d65d4669483489bb3ab6e62f56dc191',1,'tgui::Filesystem::fileExists(const String &amp;path)']]],
   ['findbesttextsize_3',['findBestTextSize',['../classtgui_1_1Text.html#ad47753d78fa6a0ade0a1018702acb73e',1,'tgui::Text']]],

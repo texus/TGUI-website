@@ -5,6 +5,18 @@ title: Changelog
 changelog:
 - version: 1
   minors:
+  - version: 13
+    patches:
+    - version: 0
+      date: 24 June 2026
+      changes: |
+        Implemented support for using themes in form files ([PR #348](https://github.com/texus/TGUI/pull/348))
+        Code quality improvements (e.g. adding clang-format [PR #318](https://github.com/texus/TGUI/pull/318))
+        Added Emscripten support
+        C++17 is now a minimum requirement
+        Added setTextInputUsesTextCursorByDefault to use I-beam cursor by default on edit boxes
+        Each tab in Tabs and VerticalTabs widgets can now be assigned a unique id
+        Position and size layout expressions weren't saved when the result equaled (0,0)
   - version: 12
     patches:
     - version: 0

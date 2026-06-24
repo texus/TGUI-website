@@ -8,7 +8,7 @@ var searchData=
   ['m_5fsize_5',['m_size',['../classtgui_1_1Widget.html#a0b0322cad4ececac6481830d373bd26d',1,'tgui::Widget']]],
   ['m_5fthemeloader_6',['m_themeLoader',['../classtgui_1_1Theme.html#a1e4e37599faf420ea1614c11683cdedd',1,'tgui::Theme']]],
   ['m_5fvisible_7',['m_visible',['../classtgui_1_1Widget.html#ac3d6e0c30e9513379809cfc5d284e3b3',1,'tgui::Widget']]],
-  ['magenta_8',['Magenta',['../classtgui_1_1Color.html#ad882fe860994837e785ebc5da6e9e796',1,'tgui::Color']]],
+  ['magenta_8',['Magenta',['../classtgui_1_1Color.html#ad0df38a47a8c98c8bcb9c99638e223dc',1,'tgui::Color']]],
   ['mousebutton_9',['mouseButton',['../structtgui_1_1Event.html#ab8e98ea1f6c46bdac15b5eb4657de953',1,'tgui::Event']]],
   ['mousemove_10',['mouseMove',['../structtgui_1_1Event.html#a99e53ea678f7a0847992715f3d539c77',1,'tgui::Event']]],
   ['mousewheel_11',['mouseWheel',['../structtgui_1_1Event.html#a46fc514629894beaa24c662659e57aa2',1,'tgui::Event']]]

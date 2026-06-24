@@ -17,7 +17,7 @@ var searchData=
   ['f8_14',['F8',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a4787509ad9f9d747a81a30e9dde3d4a7',1,'tgui::Event']]],
   ['f9_15',['F9',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a892a245e287c163080b23db737d3c4c9',1,'tgui::Event']]],
   ['fade_16',['Fade',['../namespacetgui.html#a21282b64e97068d726c1ba6b8fe17cf2a04e0385c10aefee8e4681617d2f3ef40',1,'tgui']]],
-  ['filedialog_17',['FileDialog',['../classtgui_1_1FileDialog.html',1,'tgui::FileDialog'],['../classtgui_1_1FileDialog.html#aeb204575636502fd16d9878e5a885cd3',1,'tgui::FileDialog::FileDialog(const FileDialog &amp;copy)'],['../classtgui_1_1FileDialog.html#adb9b791b0952a865f45796fdc61c5c15',1,'tgui::FileDialog::FileDialog(FileDialog &amp;&amp;copy) noexcept']]],
+  ['filedialog_17',['FileDialog',['../classtgui_1_1FileDialog.html',1,'tgui::FileDialog'],['../classtgui_1_1FileDialog.html#a00c39030b21dc03570363e8899c3aef1',1,'tgui::FileDialog::FileDialog(const FileDialog &amp;other)'],['../classtgui_1_1FileDialog.html#a21e160bad25cbc01c532143861d19258',1,'tgui::FileDialog::FileDialog(FileDialog &amp;&amp;other) noexcept']]],
   ['filedialogiconloader_18',['FileDialogIconLoader',['../classtgui_1_1FileDialogIconLoader.html',1,'tgui::FileDialogIconLoader'],['../classtgui_1_1FileDialogIconLoader.html#ac9d718cad748e920a261127b4c8575e1',1,'tgui::FileDialogIconLoader::FileDialogIconLoader()']]],
   ['filedialogrenderer_19',['FileDialogRenderer',['../classtgui_1_1FileDialogRenderer.html',1,'tgui']]],
   ['fileexists_20',['fileExists',['../classtgui_1_1Filesystem.html#a77950a4c368f02674f2bd3093d87d65f',1,'tgui::Filesystem::fileExists(const Path &amp;path)'],['../classtgui_1_1Filesystem.html#a3d65d4669483489bb3ab6e62f56dc191',1,'tgui::Filesystem::fileExists(const String &amp;path)']]],
@@ -40,6 +40,7 @@ var searchData=
   ['focuspreviouswidget_37',['focusPreviousWidget',['../classtgui_1_1Container.html#a34a067515faeaf05b4c5706d970681ae',1,'tgui::Container::focusPreviousWidget()'],['../classtgui_1_1BackendGui.html#a7b0feae87afd0e88e70dddaf40dc792a',1,'tgui::BackendGui::focusPreviousWidget()']]],
   ['font_38',['Font',['../classtgui_1_1Font.html',1,'tgui::Font'],['../classtgui_1_1Font.html#a2655726e74c22de4fc928cc92035c2f6',1,'tgui::Font::Font(std::nullptr_t=nullptr) noexcept'],['../classtgui_1_1Font.html#ae9a988a437f60f17613aa0e155328108',1,'tgui::Font::Font(const String &amp;id)'],['../classtgui_1_1Font.html#aa5c0dc1c5b7a43d03fd485636d6c7eb4',1,'tgui::Font::Font(const char *id)'],['../classtgui_1_1Font.html#aa54f50f019ef069ba32becd12f76e468',1,'tgui::Font::Font(const void *data, std::size_t sizeInBytes)'],['../classtgui_1_1Font.html#a31b9d068bab37073f9635b91e0786f2f',1,'tgui::Font::Font(std::shared_ptr&lt; BackendFont &gt; backendFont, String id)']]],
   ['fontglyph_39',['FontGlyph',['../structtgui_1_1FontGlyph.html',1,'tgui']]],
-  ['fromnumber_40',['fromNumber',['../classtgui_1_1String.html#a3eccff1e420bb71042d267dcf4c4ed60',1,'tgui::String']]],
-  ['fromnumberrounded_41',['fromNumberRounded',['../classtgui_1_1String.html#aa89b4a7bc4cf24118efa7f2fa4849813',1,'tgui::String']]]
+  ['formloadoptions_40',['FormLoadOptions',['../structtgui_1_1FormLoadOptions.html',1,'tgui']]],
+  ['fromnumber_41',['fromNumber',['../classtgui_1_1String.html#a3eccff1e420bb71042d267dcf4c4ed60',1,'tgui::String']]],
+  ['fromnumberrounded_42',['fromNumberRounded',['../classtgui_1_1String.html#aa89b4a7bc4cf24118efa7f2fa4849813',1,'tgui::String']]]
 ];
