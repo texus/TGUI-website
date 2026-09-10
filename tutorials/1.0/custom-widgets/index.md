@@ -153,6 +153,8 @@ class MyCustomWidget : public tgui::Widget
         // To render something you can call functions on the "target" object.
         // Note that the position in "states" is already relative to this widget,
         // so you no longer have to add getPosition() anywhere.
+        // This also means that you must call "states.transform.translate(subwidget.getPosition())"
+        // before calling the draw function on a subwidget.
 
         // This example code will draw a red rectangle with blue borders of 2px around it.
         // The m_opacityCached variable is defined in the Widget base class and contains
