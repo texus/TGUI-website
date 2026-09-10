@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['y_0',['Y',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a57cec4137b614c87cb4e24a3d003a3e0',1,'tgui::Event']]],
-  ['y_1',['y',['../structtgui_1_1Event_1_1MouseMoveEvent.html#a462277f5e1538381aa67414a3389a071',1,'tgui::Event::MouseMoveEvent::y'],['../structtgui_1_1Event_1_1MouseButtonEvent.html#a9bbdd8999b3b1539f35ae907c4740f04',1,'tgui::Event::MouseButtonEvent::y'],['../structtgui_1_1Event_1_1MouseWheelEvent.html#a72c78427f680f31c91458a61c86644a0',1,'tgui::Event::MouseWheelEvent::y'],['../structtgui_1_1Event_1_1FingerEvent.html#a532b4b3617950fdcfbe428a2e2652149',1,'tgui::Event::FingerEvent::y'],['../classtgui_1_1Vector2.html#a78979360352508b0d06a7d2781e6d25a',1,'tgui::Vector2::y']]],
-  ['yellow_2',['Yellow',['../classtgui_1_1Color.html#a72a3896eeb98600e80cf8c09972cfbde',1,'tgui::Color']]]
+  ['x_0',['X',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9a02129bb861061d1a052c592e2dc6b383',1,'tgui::Event']]],
+  ['x_1',['x',['../structtgui_1_1Event_1_1MouseMoveEvent.html#a77f36bc308353d2c306a405b87018523',1,'tgui::Event::MouseMoveEvent::x'],['../structtgui_1_1Event_1_1MouseButtonEvent.html#a823ec572076371762ae075a059b86315',1,'tgui::Event::MouseButtonEvent::x'],['../structtgui_1_1Event_1_1MouseWheelEvent.html#a20c584dad40c5e7d583c060f6ec418ef',1,'tgui::Event::MouseWheelEvent::x'],['../structtgui_1_1Event_1_1FingerEvent.html#ab0d15c3d67d941d1e6c5ccbe637e6836',1,'tgui::Event::FingerEvent::x'],['../classtgui_1_1Vector2.html#afcc7e42dfb13ac75ac047ab21691bd24',1,'tgui::Vector2::x']]]
 ];

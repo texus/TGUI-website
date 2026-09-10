@@ -9,7 +9,7 @@ var searchData=
   ['m_5fthemeloader_6',['m_themeLoader',['../classtgui_1_1Theme.html#a1e4e37599faf420ea1614c11683cdedd',1,'tgui::Theme']]],
   ['m_5fvisible_7',['m_visible',['../classtgui_1_1Widget.html#ac3d6e0c30e9513379809cfc5d284e3b3',1,'tgui::Widget']]],
   ['magenta_8',['Magenta',['../classtgui_1_1Color.html#ad0df38a47a8c98c8bcb9c99638e223dc',1,'tgui::Color']]],
-  ['mousebutton_9',['mouseButton',['../structtgui_1_1Event.html#ab8e98ea1f6c46bdac15b5eb4657de953',1,'tgui::Event']]],
-  ['mousemove_10',['mouseMove',['../structtgui_1_1Event.html#a99e53ea678f7a0847992715f3d539c77',1,'tgui::Event']]],
-  ['mousewheel_11',['mouseWheel',['../structtgui_1_1Event.html#a46fc514629894beaa24c662659e57aa2',1,'tgui::Event']]]
+  ['mousebutton_9',['mouseButton',['../uniontgui_1_1Event_1_1_0funion_0e_8____unnamed0____.html#a3b492bc6cd186b21d19081edcb1ef3b1',1,'tgui::Event::[union].__unnamed0__']]],
+  ['mousemove_10',['mouseMove',['../uniontgui_1_1Event_1_1_0funion_0e_8____unnamed0____.html#a68d04734de4c406970bace2da5801006',1,'tgui::Event::[union].__unnamed0__']]],
+  ['mousewheel_11',['mouseWheel',['../uniontgui_1_1Event_1_1_0funion_0e_8____unnamed0____.html#a6f59c272b6bbcc53fee493f533ff67f6',1,'tgui::Event::[union].__unnamed0__']]]
 ];

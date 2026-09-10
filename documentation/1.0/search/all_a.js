@@ -1,12 +1,5 @@
 var searchData=
 [
-  ['k_0',['K',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9aa5f3c6a11b03839d46af9fb43c97c188',1,'tgui::Event']]],
-  ['key_1',['key',['../structtgui_1_1Event.html#adb691eee843f7b4adcf04d1c9abe691f',1,'tgui::Event']]],
-  ['keyboardkey_2',['KeyboardKey',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9',1,'tgui::Event']]],
-  ['keycallback_3',['keyCallback',['../classtgui_1_1BackendGuiGLFW.html#ad36a1bf29d274e5aec50cdfd76a2a9a1',1,'tgui::BackendGuiGLFW']]],
-  ['keyevent_4',['KeyEvent',['../structtgui_1_1Event_1_1KeyEvent.html',1,'tgui::Event']]],
-  ['keymodifier_5',['KeyModifier',['../structtgui_1_1Event.html#a37932d1570a768aafff139c38e9734c5',1,'tgui::Event']]],
-  ['keypressed_6',['KeyPressed',['../structtgui_1_1Event.html#ad3ebeee16f4b6ed4691f09d2edbe8b0aac17e6984c1e5a887a49831beadee6bca',1,'tgui::Event']]],
-  ['knob_7',['Knob',['../classtgui_1_1Knob.html',1,'tgui']]],
-  ['knobrenderer_8',['KnobRenderer',['../classtgui_1_1KnobRenderer.html',1,'tgui']]]
+  ['j_0',['J',['../structtgui_1_1Event.html#a647c4342d425d6f03185126fc6eb5cd9aff44570aca8241914870afbc310cdb85',1,'tgui::Event']]],
+  ['join_1',['join',['../classtgui_1_1String.html#a6bdb3d324509a68c9b6d7f4a71a120d1',1,'tgui::String']]]
 ];

@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['getmenuselement_0',['GetMenusElement',['../structtgui_1_1MenuWidgetBase_1_1GetMenusElement.html',1,'tgui::MenuWidgetBase']]],
-  ['glyph_1',['Glyph',['../structtgui_1_1BackendFontFreeType_1_1Glyph.html',1,'tgui::BackendFontFreeType']]],
-  ['grid_2',['Grid',['../classtgui_1_1Grid.html',1,'tgui']]],
-  ['group_3',['Group',['../classtgui_1_1Group.html',1,'tgui']]],
-  ['grouprenderer_4',['GroupRenderer',['../classtgui_1_1GroupRenderer.html',1,'tgui']]],
-  ['growhorizontallayout_5',['GrowHorizontalLayout',['../classtgui_1_1GrowHorizontalLayout.html',1,'tgui']]],
-  ['growverticallayout_6',['GrowVerticalLayout',['../classtgui_1_1GrowVerticalLayout.html',1,'tgui']]],
-  ['gui_7',['Gui',['../classtgui_1_1GLFW__GLES2_1_1Gui.html',1,'tgui::GLFW_GLES2::Gui'],['../classtgui_1_1GLFW__OPENGL3_1_1Gui.html',1,'tgui::GLFW_OPENGL3::Gui'],['../classtgui_1_1GLFW__GLES2_1_1Gui.html',1,'tgui::Gui'],['../classtgui_1_1RAYLIB_1_1Gui.html',1,'tgui::RAYLIB::Gui'],['../classtgui_1_1SDL__GLES2_1_1Gui.html',1,'tgui::SDL_GLES2::Gui'],['../classtgui_1_1SDL__GPU_1_1Gui.html',1,'tgui::SDL_GPU::Gui'],['../classtgui_1_1SDL__OPENGL3_1_1Gui.html',1,'tgui::SDL_OPENGL3::Gui'],['../classtgui_1_1SDL__RENDERER_1_1Gui.html',1,'tgui::SDL_RENDERER::Gui'],['../classtgui_1_1SDL__TTF__GLES2_1_1Gui.html',1,'tgui::SDL_TTF_GLES2::Gui'],['../classtgui_1_1SDL__TTF__OPENGL3_1_1Gui.html',1,'tgui::SDL_TTF_OPENGL3::Gui'],['../classtgui_1_1SFML__GRAPHICS_1_1Gui.html',1,'tgui::SFML_GRAPHICS::Gui'],['../classtgui_1_1SFML__OPENGL3_1_1Gui.html',1,'tgui::SFML_OPENGL3::Gui']]]
+  ['filedialog_0',['FileDialog',['../classtgui_1_1FileDialog.html',1,'tgui']]],
+  ['filedialogiconloader_1',['FileDialogIconLoader',['../classtgui_1_1FileDialogIconLoader.html',1,'tgui']]],
+  ['filedialogrenderer_2',['FileDialogRenderer',['../classtgui_1_1FileDialogRenderer.html',1,'tgui']]],
+  ['fileinfo_3',['FileInfo',['../structtgui_1_1Filesystem_1_1FileInfo.html',1,'tgui::Filesystem']]],
+  ['filesystem_4',['Filesystem',['../classtgui_1_1Filesystem.html',1,'tgui']]],
+  ['fingerevent_5',['FingerEvent',['../structtgui_1_1Event_1_1FingerEvent.html',1,'tgui::Event']]],
+  ['font_6',['Font',['../classtgui_1_1Font.html',1,'tgui']]],
+  ['fontglyph_7',['FontGlyph',['../structtgui_1_1FontGlyph.html',1,'tgui']]],
+  ['formloadoptions_8',['FormLoadOptions',['../structtgui_1_1FormLoadOptions.html',1,'tgui']]]
 ];
