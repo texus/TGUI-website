@@ -40,7 +40,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.x-dev</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.14-dev</span>
    </div>
   </td>
  </tr>
@@ -128,9 +128,10 @@ Inheritance diagram for tgui::BackendGuiGLFW:</div>
  <div class="center">
   <img src="classtgui_1_1BackendGuiGLFW.png" usemap="#tgui_3A_3ABackendGuiGLFW_map" alt=""/>
   <map id="tgui_3A_3ABackendGuiGLFW_map" name="tgui_3A_3ABackendGuiGLFW_map">
-<area href="classtgui_1_1BackendGui.html" title="Base class for the Gui." alt="tgui::BackendGui" shape="rect" coords="86,0,249,24"/>
+<area href="classtgui_1_1BackendGui.html" title="Base class for the Gui." alt="tgui::BackendGui" shape="rect" coords="173,0,336,24"/>
 <area href="classtgui_1_1GLFW__GLES2_1_1Gui.html" title="Gui class for GLFW + GLES2 backend (using FreeType for fonts)." alt="tgui::GLFW_GLES2::Gui" shape="rect" coords="0,112,163,136"/>
 <area href="classtgui_1_1GLFW__OPENGL3_1_1Gui.html" title="Gui class for GLFW + OpenGL3 backend (using FreeType for fonts)." alt="tgui::GLFW_OPENGL3::Gui" shape="rect" coords="173,112,336,136"/>
+<area href="classtgui_1_1GLFW__VULKAN_1_1Gui.html" title="Gui class for GLFW, using Vulkan for rendering and FreeType for fonts." alt="tgui::GLFW_VULKAN::Gui" shape="rect" coords="346,112,509,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -320,6 +321,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a14bf44e03c5f90ddf503e3ff284caa2c" id="r_a14bf44e03c5f90ddf503e3ff284caa2c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14bf44e03c5f90ddf503e3ff284caa2c">setGuiWindow</a> (GLFWwindow *window)</td></tr>
 <tr class="memdesc:a14bf44e03c5f90ddf503e3ff284caa2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window on which the gui should be drawn.  <br /></td></tr>
 <tr class="memitem:afd6e0abbefd886b91b6e3817a5803b22" id="r_afd6e0abbefd886b91b6e3817a5803b22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afd6e0abbefd886b91b6e3817a5803b22">updateContainerSize</a> () override</td></tr>
+<tr class="memitem:ad8e30e4a4037614ac7b5eec3f2170b1b" id="r_ad8e30e4a4037614ac7b5eec3f2170b1b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad8e30e4a4037614ac7b5eec3f2170b1b">renderFrame</a> (<a class="el" href="classtgui_1_1Color.html">Color</a> clearColor)</td></tr>
+<tr class="memdesc:ad8e30e4a4037614ac7b5eec3f2170b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the screen, draws the gui and then presents the frame.  <br /></td></tr>
 <tr class="inherit_header pro_methods_classtgui_1_1BackendGui"><td colspan="2">Protected Member Functions inherited from <a class="el" href="classtgui_1_1BackendGui.html">tgui::BackendGui</a></td></tr>
 <tr class="memitem:ae42c3d3d0878c577d9e4e49898831c12 pro_methods_classtgui_1_1BackendGui" id="r_ae42c3d3d0878c577d9e4e49898831c12"><td class="memItemLeft">
 bool&#160;</td><td class="memItemRight"><b>handleTwoFingerScroll</b> (bool wasAlreadyScrolling)</td></tr>
@@ -630,6 +633,8 @@ static <a class="el" href="structtgui_1_1Event.html#a647c4342d425d6f03185126fc6e
 
 <p>Implements <a class="el" href="classtgui_1_1BackendGui.html#a544aa069b54b23af1eb39767bee57f77">tgui::BackendGui</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classtgui_1_1GLFW__VULKAN_1_1Gui.html#acf2ece89597edfcf2e15aaa70671a848">tgui::GLFW_VULKAN::Gui</a>.</p>
+
 </div>
 </div>
 <a id="a1342c695f3ad2348d39ca87f92e030ea" name="a1342c695f3ad2348d39ca87f92e030ea"></a>
@@ -666,6 +671,35 @@ static <a class="el" href="structtgui_1_1Event.html#a647c4342d425d6f03185126fc6e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has the event been consumed? This function returns false when the event was ignored by all widgets. </dd></dl>
+
+</div>
+</div>
+<a id="ad8e30e4a4037614ac7b5eec3f2170b1b" name="ad8e30e4a4037614ac7b5eec3f2170b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e30e4a4037614ac7b5eec3f2170b1b">&#9670;&#160;</a></span>renderFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tgui::BackendGuiGLFW::renderFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtgui_1_1Color.html">Color</a></td>          <td class="paramname"><span class="paramname"><em>clearColor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the screen, draws the gui and then presents the frame. </p>
+
+<p>Reimplemented in <a class="el" href="classtgui_1_1GLFW__VULKAN_1_1Gui.html#a1b22227c82ff1ce65af5d5f7f342817c">tgui::GLFW_VULKAN::Gui</a>.</p>
 
 </div>
 </div>

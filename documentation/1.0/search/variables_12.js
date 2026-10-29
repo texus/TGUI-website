@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['y_0',['y',['../structtgui_1_1Event_1_1MouseMoveEvent.html#a462277f5e1538381aa67414a3389a071',1,'tgui::Event::MouseMoveEvent::y'],['../structtgui_1_1Event_1_1MouseButtonEvent.html#a9bbdd8999b3b1539f35ae907c4740f04',1,'tgui::Event::MouseButtonEvent::y'],['../structtgui_1_1Event_1_1MouseWheelEvent.html#a72c78427f680f31c91458a61c86644a0',1,'tgui::Event::MouseWheelEvent::y'],['../structtgui_1_1Event_1_1FingerEvent.html#a532b4b3617950fdcfbe428a2e2652149',1,'tgui::Event::FingerEvent::y'],['../classtgui_1_1Vector2.html#a78979360352508b0d06a7d2781e6d25a',1,'tgui::Vector2::y']]],
-  ['yellow_1',['Yellow',['../classtgui_1_1Color.html#a72a3896eeb98600e80cf8c09972cfbde',1,'tgui::Color']]]
+  ['white_0',['White',['../classtgui_1_1Color.html#a9d35b4062d0d8a74985e2bf6691ae3ee',1,'tgui::Color']]],
+  ['width_1',['width',['../structtgui_1_1Event_1_1SizeEvent.html#a328b6ea4d20ebdb89bb38658d3995564',1,'tgui::Event::SizeEvent::width'],['../classtgui_1_1Rect.html#a4d5ccd7cdd807d5527dcec5520ba61be',1,'tgui::Rect::width'],['../structtgui_1_1BackendFontFreeType_1_1Row.html#a9b102a95765fce0c15032f924cf116bc',1,'tgui::BackendFontFreeType::Row::width'],['../structtgui_1_1BackendFontRaylib_1_1Row.html#a3ba254193697ddf3525eb3c0975dca27',1,'tgui::BackendFontRaylib::Row::width']]]
 ];

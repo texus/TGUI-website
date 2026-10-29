@@ -46,5 +46,6 @@ var searchData=
   ['sprite_43',['Sprite',['../classtgui_1_1Sprite.html',1,'tgui']]],
   ['string_44',['String',['../classtgui_1_1String.html',1,'tgui']]],
   ['subwidgetcontainer_45',['SubwidgetContainer',['../classtgui_1_1SubwidgetContainer.html',1,'tgui']]],
-  ['svgimage_46',['SvgImage',['../classtgui_1_1SvgImage.html',1,'tgui']]]
+  ['svgimage_46',['SvgImage',['../classtgui_1_1SvgImage.html',1,'tgui']]],
+  ['swapchainvulkan_47',['SwapchainVulkan',['../classtgui_1_1SwapchainVulkan.html',1,'tgui']]]
 ];

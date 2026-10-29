@@ -40,7 +40,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.x-dev</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.14-dev</span>
    </div>
   </td>
  </tr>
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaed90b35082aabdd70244d41f0d22246" id="r_aaed90b35082aabdd70244d41f0d22246"><td class="memItemLeft">SDL_GPUDevice *&#160;</td><td class="memItemRight"><a class="el" href="#aaed90b35082aabdd70244d41f0d22246">getDevice</a> () const</td></tr>
 <tr class="memdesc:aaed90b35082aabdd70244d41f0d22246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the renderer that was provided to the gui.  <br /></td></tr>
 <tr class="memitem:a956b07e3df438aabf396151972eec9be" id="r_a956b07e3df438aabf396151972eec9be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a956b07e3df438aabf396151972eec9be">draw</a> () override</td></tr>
-<tr class="memdesc:a956b07e3df438aabf396151972eec9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is not used by this backend, use draw(SDL_GPUCommandBuffer*, SDL_GPURenderPass*) instead.  <br /></td></tr>
+<tr class="memdesc:a956b07e3df438aabf396151972eec9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is not used by this backend, use prepareDraw and <a class="el" href="#a7d9ea8b54fe9c67408561e3f1992417d" title="Draws all the widgets that were added to the gui.">draw(SDL_GPURenderPass*)</a> instead.  <br /></td></tr>
 <tr class="memitem:a864c4f3f6e55d96ab376de915e1e185e" id="r_a864c4f3f6e55d96ab376de915e1e185e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a864c4f3f6e55d96ab376de915e1e185e">prepareDraw</a> (SDL_GPUCommandBuffer *cmdBuffer, SDL_GPUCopyPass *copyPass=nullptr)</td></tr>
 <tr class="memdesc:a864c4f3f6e55d96ab376de915e1e185e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares drawing the gui and all of its widgets.  <br /></td></tr>
 <tr class="memitem:a7d9ea8b54fe9c67408561e3f1992417d" id="r_a7d9ea8b54fe9c67408561e3f1992417d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7d9ea8b54fe9c67408561e3f1992417d">draw</a> (SDL_GPURenderPass *renderPass)</td></tr>
@@ -485,7 +485,7 @@ static <a class="el" href="structtgui_1_1Event.html#a647c4342d425d6f03185126fc6e
 </table>
 </div><div class="memdoc">
 
-<p>This function is not used by this backend, use draw(SDL_GPUCommandBuffer*, SDL_GPURenderPass*) instead. </p>
+<p>This function is not used by this backend, use prepareDraw and <a class="el" href="#a7d9ea8b54fe9c67408561e3f1992417d" title="Draws all the widgets that were added to the gui.">draw(SDL_GPURenderPass*)</a> instead. </p>
 
 <p>Reimplemented from <a class="el" href="classtgui_1_1BackendGui.html#a85a7ab208f745e1d33d1d216ba59382c">tgui::BackendGui</a>.</p>
 

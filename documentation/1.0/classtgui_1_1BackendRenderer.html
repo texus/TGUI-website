@@ -40,7 +40,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TGUI<span id="projectnumber">&#160;1.x-dev</span>
+   <div id="projectname">TGUI<span id="projectnumber">&#160;1.14-dev</span>
    </div>
   </td>
  </tr>
@@ -137,6 +137,7 @@ Inheritance diagram for tgui::BackendRenderer:</div>
 <area href="classtgui_1_1BackendRendererSDL.html" title="Backend renderer that uses SDL_Renderer." alt="tgui::BackendRendererSDL" shape="rect" coords="612,56,806,80"/>
 <area href="classtgui_1_1BackendRendererSDLGPU.html" title="Backend renderer that uses SDL3&#39;s GPU API." alt="tgui::BackendRendererSDLGPU" shape="rect" coords="816,56,1010,80"/>
 <area href="classtgui_1_1BackendRendererSFML.html" title="Backend renderer that uses sfml-graphics." alt="tgui::BackendRendererSFML" shape="rect" coords="1020,56,1214,80"/>
+<area href="classtgui_1_1BackendRendererVulkan.html" title="Backend renderer that uses Vulkan." alt="tgui::BackendRendererVulkan" shape="rect" coords="1224,56,1418,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -209,7 +210,7 @@ virtual&#160;</td><td class="memItemRight"><b>~BackendRenderer</b> ()=default</t
 <p>Creates a new empty texture object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Shared pointer to a new texture object </dd></dl>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#a9abf12b972ea5ae6a7418983faf22faf">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3b55d803973bee36cd2862314b7d664c">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a6446b1090fca4862caeea01ec3be8c07">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#ad7230359a8c02c7610756b7e1da17140">tgui::BackendRendererSDL</a>, <a class="el" href="classtgui_1_1BackendRendererSDLGPU.html#a39b8b0ae1360bfe210f266a7a5d6ec8d">tgui::BackendRendererSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#ac8ee9952529d55234b11de3508882db7">tgui::BackendRendererSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#a9abf12b972ea5ae6a7418983faf22faf">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3b55d803973bee36cd2862314b7d664c">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a6446b1090fca4862caeea01ec3be8c07">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#ad7230359a8c02c7610756b7e1da17140">tgui::BackendRendererSDL</a>, <a class="el" href="classtgui_1_1BackendRendererSDLGPU.html#a39b8b0ae1360bfe210f266a7a5d6ec8d">tgui::BackendRendererSDLGPU</a>, <a class="el" href="classtgui_1_1BackendRendererSFML.html#ac8ee9952529d55234b11de3508882db7">tgui::BackendRendererSFML</a>, and <a class="el" href="classtgui_1_1BackendRendererVulkan.html#afc25b3ad7aa825fa708e3ccbaea5078d">tgui::BackendRendererVulkan</a>.</p>
 
 </div>
 </div>
@@ -240,7 +241,7 @@ virtual&#160;</td><td class="memItemRight"><b>~BackendRenderer</b> ()=default</t
 <dl class="section return"><dt>Returns</dt><dd>Maximum width and height that you should try to use in a single texture</dd></dl>
 <p>This maximum size is defined by the graphics driver. Most likely this will return 8192 or 16384. </p>
 
-<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#ab14e29d2b0de33453eb269d8a86ae1a9">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3cba44c8caee3e21877a101bf73e9394">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a7d3c67afb589b42c66188061ee8e6ab3">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a22c33828424141a6dacbd6056890afa0">tgui::BackendRendererSDL</a>, <a class="el" href="classtgui_1_1BackendRendererSDLGPU.html#a91327ca0975f3958b5eca2d1e74efc3f">tgui::BackendRendererSDLGPU</a>, and <a class="el" href="classtgui_1_1BackendRendererSFML.html#a711607fa1a32b95fb3ba102d013998da">tgui::BackendRendererSFML</a>.</p>
+<p>Implemented in <a class="el" href="classtgui_1_1BackendRendererGLES2.html#ab14e29d2b0de33453eb269d8a86ae1a9">tgui::BackendRendererGLES2</a>, <a class="el" href="classtgui_1_1BackendRendererOpenGL3.html#a3cba44c8caee3e21877a101bf73e9394">tgui::BackendRendererOpenGL3</a>, <a class="el" href="classtgui_1_1BackendRendererRaylib.html#a7d3c67afb589b42c66188061ee8e6ab3">tgui::BackendRendererRaylib</a>, <a class="el" href="classtgui_1_1BackendRendererSDL.html#a22c33828424141a6dacbd6056890afa0">tgui::BackendRendererSDL</a>, <a class="el" href="classtgui_1_1BackendRendererSDLGPU.html#a91327ca0975f3958b5eca2d1e74efc3f">tgui::BackendRendererSDLGPU</a>, <a class="el" href="classtgui_1_1BackendRendererSFML.html#a711607fa1a32b95fb3ba102d013998da">tgui::BackendRendererSFML</a>, and <a class="el" href="classtgui_1_1BackendRendererVulkan.html#a568ebe2914eac9535a8c5dc8a0fd8757">tgui::BackendRendererVulkan</a>.</p>
 
 </div>
 </div>
